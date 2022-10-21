@@ -261,3 +261,5 @@
 エドワード・エルリック,https://game8.jp/epic-seven/472395
 ティル,https://game8.jp/epic-seven/453044
 バッドキャットアーミン,https://game8.jp/epic-seven/439293
+ルア,https://game8.jp/epic-seven/484321
+神託のエレナ,https://game8.jp/epic-seven/484322
