@@ -137,9 +137,10 @@ module.exports = async (includes, config) => {
 
     class ModuleApplication {
 
-        constructor(name, context) {
+        constructor(name, context, directries) {
             this.name = name;
             this.context = context;
+            this.directries = directries;
         }
 
         async callApi(name, parameter) {
@@ -205,7 +206,10 @@ module.exports = async (includes, config) => {
             }
         });
 
-        applications[target] = new ModuleApplication(target, m.build());
+        applications[target] = new ModuleApplication(target, m.build(), {
+            moduleDir : moduleDir + '/' + target,
+            publicDir : publicDir + '/' + target
+        });
     }
     
     const appKeys = Object.keys(applications);
@@ -217,6 +221,10 @@ module.exports = async (includes, config) => {
         promisses.push(p);
     }
     await Promise.all(promisses);
+
+    applications._context = {
+        lib : {request : request,cheerio : cheerio,fs : fs}
+    };
 
     return applications;
 };
