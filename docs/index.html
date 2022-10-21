@@ -261,7 +261,7 @@
     <script>
         $(() => {
             window.ep7manager.heros.forEach((e) => {
-                const label = e.substring(0, idx2);
+                const label = e.replace("\\.json", "");
                 $("#herolist").append($("<option>").attr("value", label));
             });
 
