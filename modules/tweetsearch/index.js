@@ -23,10 +23,47 @@ module.exports = async (parameter) => {
 
     const builder = parameter.instance();
 
-    const cronContext = {
-        invoked : false,
-        lastId  : '1576750883211079679'
+    const searchTweet = async (paramLastId) => {
+        const context = {max_id : paramLastId ,maxloop : 50};
+
+        const toDay = new Date();
+        const targetDate = new Date(toDay.getFullYear(), toDay.getMonth(), toDay.getDate()-2, 0,0,0);
+
+        const lastId = await parameter.twitter.search("#エピックセブン", context, async (data) => {
+            const media = data.entities.media;
+            if(media === undefined) {
+                return;
+            }
+            const createdAt = twitterDate(data.created_at);
+            if(targetDate > createdAt) {
+                return;
+            }
+
+            const tweetId = data.id_str;
+            const tweetText = data.text;
+            const urls = media.filter(m => m.type === 'photo').map(e => e.media_url_https);
+            for (let i = 0; i < urls.length; i++) {
+                const url = urls[i];
+                const filename = url.substring(url.lastIndexOf("/")+1);
+                const filepath = imageDir + '/' + filename;
+
+                if(await fileExist(parameter.lib.fs, filepath) == true) {
+                    continue;
+                }
+
+                const response = await parameter.lib.request(url, {encoding: null});
+                await parameter.lib.fs.writeFile(filepath, response);
+            }
+        });
+
+        return lastId;
     };
+
+    parameter.cron.schedule('0 0 11 * * *',async () => {
+        console.log("--tweetseach - start search");
+        await searchTweet(null);
+        console.log("--tweetseach - end search");
+    });
 
     builder.addApi('get', async (key) => {
         try {
@@ -91,39 +128,7 @@ module.exports = async (parameter) => {
     });
 
     builder.addApi('search', async (paramLastId) => {
-        const context = {max_id : paramLastId ,maxloop : 10};
-
-        const toDay = new Date();
-        const targetDate = new Date(toDay.getFullYear(), toDay.getMonth(), toDay.getDate()-1, 0,0,0);
-
-        const lastId = await parameter.twitter.search("#エピックセブン", context, async (data) => {
-            const media = data.entities.media;
-            if(media === undefined) {
-                return;
-            }
-            const createdAt = twitterDate(data.created_at);
-            if(targetDate > createdAt) {
-                return;
-            }
-
-            const tweetId = data.id_str;
-            const tweetText = data.text;
-            const urls = media.filter(m => m.type === 'photo').map(e => e.media_url_https);
-            for (let i = 0; i < urls.length; i++) {
-                const url = urls[i];
-                const filename = url.substring(url.lastIndexOf("/")+1);
-                const filepath = imageDir + '/' + filename;
-
-                if(await fileExist(parameter.lib.fs, filepath) == true) {
-                    continue;
-                }
-
-                const response = await parameter.lib.request(url, {encoding: null});
-                await parameter.lib.fs.writeFile(filepath, response);
-            }
-        });
-
-        return lastId;
+        return await searchTweet(paramLastId);
     });
 
     return builder;
