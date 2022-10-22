@@ -80,65 +80,80 @@ module.exports = async (parameter) => {
         });
 
         parameter.discord.on("build", async (context, params) => {
-            const heroName = await wikidata.callApi('normalize', [params[0], false]);
-            const pageNo = getPageNo(params[1]);
-            const data = await tweetsearch.callApi('get', [heroName]);
+            try {
+                console.log('- discrod - call build' + params);
+                const heroName = await wikidata.callApi('normalize', [params[0], false]);
+                const pageNo = getPageNo(params[1]);
+                const data = await tweetsearch.callApi('get', [heroName]);
 
-            if(data.length == 0) {
-                return heroName + 'のデータは存在しません';
+                if(data.length == 0) {
+                    return heroName + 'のデータは存在しません';
+                }
+                const sliced = splitArray(data, 3);
+                const target = sliced[pageNo-1];
+
+                if(target === undefined || target === null) {
+                    return pageNo + 'ページ目の' + heroName + 'のデータは存在しません'; 
+                }
+
+                const pageMax = sliced.length;
+                return target.map((e,i) => {
+                    const pageLabel = pageNo+'/'+pageMax+'ページ';
+                    const countLabel = (i+1) + '件目'
+                    return  context.embdedMessage().setTitle(heroName +' '+ countLabel +' '+ pageLabel).setImage(e);
+                });
+            } catch(e) {
+                return 'error :'+ e 
             }
-            const sliced = splitArray(data, 3);
-            const target = sliced[pageNo-1];
-
-            if(target === undefined || target === null) {
-                return pageNo + 'ページ目の' + heroName + 'のデータは存在しません'; 
-            }
-
-            const pageMax = sliced.length;
-            return target.map((e,i) => {
-                const pageLabel = pageNo+'/'+pageMax+'ページ';
-                const countLabel = (i+1) + '件目'
-                return  context.embdedMessage().setTitle(heroName +' '+ countLabel +' '+ pageLabel).setImage(e);
-            });
         });
 
         parameter.discord.on("upload", async (context, params) => {
-            if(context.attachment === undefined) {
-                return 'not found image';
+            try {
+                console.log('- discrod - call upload' + params);
+                if(context.attachment === undefined) {
+                    return 'not found image';
+                }
+                const tweetText = ["#ep7build #エピックセブン", 'post by : [' + context.guild + ']' + context.author].join("\r\n") + params.join(" ");
+                const response = await parameter.lib.request(context.attachment.url, {encoding: null});
+                const tweetResult = await parameter.twitter.tweet(tweetText, response);
+                return tweetResult.text;
+            } catch(e) {
+                return 'error :'+ e 
             }
-            const tweetText = ["#ep7build #エピックセブン", 'post by : [' + context.guild + ']' + context.author].join("\r\n") + params.join(" ");
-            const response = await parameter.lib.request(context.attachment.url, {encoding: null});
-            const tweetResult = await parameter.twitter.tweet(tweetText, response);
-            return tweetResult.text;
         });
 
         parameter.discord.on("st", async (context, params) => {
-            const heroName = await wikidata.callApi('normalize', [params[0], false]);
-            const data = await wikidata.callApi('load', [heroName, false]);
+            try {
+                console.log('- discrod - call st' + params);
+                const heroName = await wikidata.callApi('normalize', [params[0], false]);
+                const data = await wikidata.callApi('load', [heroName, false]);
 
-            const enbded = context.embdedMessage()
-                .setTitle(data["共通"]["名前"])
-                .setURL('https://manabu0516.github.io/wikidata/index.html#'+heroName)
-                .setThumbnail(data["画像"])
-                .setDescription(data["共通"]["レアリティ"] +' '+ data["共通"]["属性"] +' '+ data["共通"]["職業"])
-                .addFields([
-                    { name: '攻撃力', value: data["ステータス"]["攻撃力"]["最大値"] ,inline: true},
-                    { name: '生命力', value: data["ステータス"]["生命力"]["最大値"] ,inline: true},
-                    { name: 'スピード', value: data["ステータス"]["スピード"]["最大値"] ,inline: true},
-                    { name: '防御力', value: data["ステータス"]["防御力"]["最大値"] ,inline: true},
-                    { name: 'クリティカル発生率', value: data["ステータス"]["クリティカル発生率"]["最大値"] ,inline: true},
-                    { name: 'クリティカルダメージ', value: data["ステータス"]["クリティカルダメージ"]["最大値"] ,inline: true},
-                    { name: '効果命中率', value: data["ステータス"]["効果命中率"]["最大値"] ,inline: true},
-                    { name: '効果低効率', value: data["ステータス"]["効果命中率DOWN"]["最大値"] ,inline: true},
-                    { name: '連携攻撃率', value: data["ステータス"]["連続攻撃発生率"]["最大値"] ,inline: true},
+                const enbded = context.embdedMessage()
+                    .setTitle(data["共通"]["名前"])
+                    .setURL('https://manabu0516.github.io/wikidata/index.html#'+heroName)
+                    .setThumbnail(data["画像"])
+                    .setDescription(data["共通"]["レアリティ"] +' '+ data["共通"]["属性"] +' '+ data["共通"]["職業"])
+                    .addFields([
+                        { name: '攻撃力', value: data["ステータス"]["攻撃力"]["最大値"] ,inline: true},
+                        { name: '生命力', value: data["ステータス"]["生命力"]["最大値"] ,inline: true},
+                        { name: 'スピード', value: data["ステータス"]["スピード"]["最大値"] ,inline: true},
+                        { name: '防御力', value: data["ステータス"]["防御力"]["最大値"] ,inline: true},
+                        { name: 'クリティカル発生率', value: data["ステータス"]["クリティカル発生率"]["最大値"] ,inline: true},
+                        { name: 'クリティカルダメージ', value: data["ステータス"]["クリティカルダメージ"]["最大値"] ,inline: true},
+                        { name: '効果命中率', value: data["ステータス"]["効果命中率"]["最大値"] ,inline: true},
+                        { name: '効果低効率', value: data["ステータス"]["効果命中率DOWN"]["最大値"] ,inline: true},
+                        { name: '連携攻撃率', value: data["ステータス"]["連続攻撃発生率"]["最大値"] ,inline: true},
 
-                    { name: data["スキル"][0]["スキル名"], value: skillDesc(data["スキル"][0])},
-                    { name: data["スキル"][1]["スキル名"], value: skillDesc(data["スキル"][1])},
-                    { name: data["スキル"][2]["スキル名"], value: skillDesc(data["スキル"][2])}
-                ])
-                .setImage(data["画像"])
-
-            return [enbded];
+                        { name: data["スキル"][0]["スキル名"], value: skillDesc(data["スキル"][0])},
+                        { name: data["スキル"][1]["スキル名"], value: skillDesc(data["スキル"][1])},
+                        { name: data["スキル"][2]["スキル名"], value: skillDesc(data["スキル"][2])}
+                    ])
+                    .setImage(data["画像"])
+                return [enbded];
+            } catch(e) {
+                return 'error : ' + e;
+            }
+            
         });
         
     });
