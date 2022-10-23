@@ -75,9 +75,9 @@ module.exports = async (parameter) => {
         const scoreData = {score : 0, resultData : []};
 
         statusData = statusData !== undefined && statusData !== null ? statusData : {
-            "攻撃力" : "",
-            "生命力" : "",
-            "防御力" : ""
+            "攻撃力" : "1000",
+            "生命力" : "5000",
+            "防御力" : "600"
         };
 
         Object.keys(result).forEach(key => {

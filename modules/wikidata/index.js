@@ -212,6 +212,9 @@ module.exports = async (parameter) => {
         option = option ? option : {};
 
         const url = entires[key];
+        if(url === undefined || url === null) {
+            return null;
+        }
         const data = await loadHeroData(key, url, option.force === true, {
             request : parameter.lib.request,
             cheerio : parameter.lib.cheerio,
