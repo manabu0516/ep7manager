@@ -105,7 +105,11 @@ module.exports = async (parameter) => {
                     return  context.embdedMessage().setTitle(heroName +' '+ countLabel +' '+ pageLabel).setImage(e);
                 });
 
-                logger("build cmd --- end");
+                logger("build cmd --- end", {
+                    guild : context.guild,
+                    author : context.author
+                });
+
                 return result;
             } catch(e) {
                 return logger("error", e);
@@ -124,7 +128,10 @@ module.exports = async (parameter) => {
                 const response = await parameter.lib.request(context.attachment.url, {encoding: null});
                 const tweetResult = await parameter.twitter.tweet(tweetText, response);
 
-                logger("upload cmd --- end");
+                logger("upload cmd --- end", {
+                    guild : context.guild,
+                    author : context.author
+                });
                 return tweetResult.text;
             } catch(e) {
                 return logger("error", e);
@@ -160,7 +167,10 @@ module.exports = async (parameter) => {
                     ])
                     .setImage(data["画像"]);
 
-                logger("st cmd --- end");
+                logger("st cmd --- end", {
+                    guild : context.guild,
+                    author : context.author
+                });
                 return [enbded];
             } catch(e) {
                 return logger("error", e);
