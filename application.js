@@ -203,7 +203,7 @@ module.exports = async (includes, config) => {
                 const dateStr = new Date().toLocaleString();
                 const paramStr = JSON.stringify(parameter, null , "\t");
 
-                const fmtMessage = "[" + dataStr + "] [" + target + "] " + message + " :" + paramStr;
+                const fmtMessage = "[" + dateStr + "] [" + target + "] " + message + " :" + paramStr;
                 console.log(fmtMessage);
                 return fmtMessage;
             },
