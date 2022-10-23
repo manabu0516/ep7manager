@@ -203,9 +203,9 @@ module.exports = async (includes, config) => {
                 const dateStr = new Date().toLocaleString();
                 const paramStr = JSON.stringify(parameter, null , "\t");
 
-                const message = "[" + dataStr + "] [" + target + "] " + message + " :" + paramStr;
-                console.log(message);
-                return message;
+                const fmtMessage = "[" + dataStr + "] [" + target + "] " + message + " :" + paramStr;
+                console.log(fmtMessage);
+                return fmtMessage;
             },
             cron    : cron,
             instance : () => {
