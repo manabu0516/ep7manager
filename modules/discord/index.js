@@ -101,13 +101,12 @@ module.exports = async (parameter) => {
                     "防御力" : heroData["ステータス"]["防御力"]["最大値"]
                 } : undefined;
 
-                const score = await target.callApi("score", [result, statusData]);
-
+                const score = await ocrreader.callApi("score", [result, statusData]);
                 const enbded = context.embdedMessage()
-                    .setTitle("スコア:" + score.score);
+                    .setTitle("スコア: " + score.score);
 
                 const fields = score.resultData.map(entry => {
-                    return  { name: entry["key"], value: entry["value"] + " => " + entry["score"],inline: true};
+                    return  { name: entry["key"], value: entry["value"] + " (score: " + entry["score"] + ")",inline: false};
                 });
                 enbded.addFields(fields);
 
@@ -115,7 +114,7 @@ module.exports = async (parameter) => {
                     guild : context.guild,
                     author : context.author
                 });
-                return enbded;
+                return [enbded];
             } catch(e) {
                 return logger("error", e);
             }
