@@ -30,6 +30,7 @@ module.exports = async (parameter) => {
 
     builder.addEvt("app.initialize", async (application) => {
         const wikidata = application.wikidata;
+        const ocrreader = application.ocrreader;
         const tweetsearch = application.tweetsearch;
 
         parameter.discord.on("readme", async (context, params) => {
@@ -78,6 +79,46 @@ module.exports = async (parameter) => {
                 ]);
 
             return [build_cmd, st_cmd, upload_cmd];
+        });
+
+        parameter.discord.on("score", async (context, params) => {
+            try {
+                logger("score cmd --- start", params);
+
+                const heroName = await wikidata.callApi('normalize', [params[0], false]);
+                if(context.attachment === undefined) {
+                    logger("score cmd --- end :nf");
+                    return 'not found image';
+                }
+
+                const response = await parameter.lib.request(context.attachment.url, {encoding: null});
+                const result = await ocrreader.callApi("recognize", [response]);
+                const heroData = await wikidata.callApi("load", [heroName]);
+
+                const statusData = heroData != null ? {
+                    "攻撃力" : heroData["ステータス"]["攻撃力"]["最大値"],
+                    "生命力" : heroData["ステータス"]["生命力"]["最大値"],
+                    "防御力" : heroData["ステータス"]["防御力"]["最大値"]
+                } : undefined;
+
+                const score = await target.callApi("score", [result, statusData]);
+
+                const enbded = context.embdedMessage()
+                    .setTitle("スコア:" + score.score);
+
+                const fields = score.resultData.map(entry => {
+                    return  { name: entry["key"], value: entry["value"] + " => " + entry["score"],inline: true};
+                });
+                enbded.addFields(fields);
+
+                logger("score cmd --- end", {
+                    guild : context.guild,
+                    author : context.author
+                });
+                return enbded;
+            } catch(e) {
+                return logger("error", e);
+            }
         });
 
         parameter.discord.on("build", async (context, params) => {
