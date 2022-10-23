@@ -73,6 +73,7 @@ module.exports = async (parameter) => {
 
     builder.addApi('score', async (result, statusData) => {
         const scoreData = {score : 0, resultData : []};
+
         statusData = statusData !== undefined && statusData !== null ? statusData : {
             "攻撃力" : "",
             "生命力" : "",
@@ -83,34 +84,34 @@ module.exports = async (parameter) => {
             const value = result[key];
 
             if(key === "スピード") {
-                const score = parseInt(value) * 2;
+                const score = Math.floor(parseInt(value) * 2);
                 
                 scoreData.resultData.push({key:key, value:value, score:score});
                 scoreData.score += score;
             } else if(key === "クリティカル発生率") {
-                const score = parseInt(value.replace("%", "")) * 1.5;
+                const score = Math.floor(parseInt(value.replace("%", "")) * 1.5);
                 
                 scoreData.resultData.push({key:key, value:value, score:score});
                 scoreData.score += score;
             } else if(key === "クリティカルダメージ") {
-                const score = parseInt(value.replace("%", "")) * 1.33;
+                const score = Math.floor(parseInt(value.replace("%", "")) * 1.33);
                 
                 scoreData.resultData.push({key:key, value:value, score:score});
                 scoreData.score += score;
             } else if(key === "効果命中" || key === "効果抵抗") {
-                const score = parseInt(value.replace("%", ""));
+                const score = Math.floor(parseInt(value.replace("%", "")));
 
                 scoreData.resultData.push({key:key, value:value, score:score});
                 scoreData.score += score;
             } else if(value.indexOf("%") !== -1) {
-                const score = parseInt(value.replace("%", ""));
+                const score = Math.floor(parseInt(value.replace("%", "")));
 
                 scoreData.resultData.push({key:key, value:value, score:score});
                 scoreData.score += score;
             } else {
                 const fixValue = parseInt(value);
                 const statusValue = parseInt(statusData[key]);
-                const score = (fixValue / statusValue) * 100;
+                const score = Math.floor((fixValue / statusValue) * 100);
                 
                 scoreData.resultData.push({key:key, value:value, score:score});
                 scoreData.score += score;
