@@ -81,7 +81,6 @@ module.exports = async (parameter) => {
 
         parameter.discord.on("build", async (context, params) => {
             try {
-                console.log('- discrod - call build' + params);
                 const heroName = await wikidata.callApi('normalize', [params[0], false]);
                 const pageNo = getPageNo(params[1]);
                 const data = await tweetsearch.callApi('get', [heroName]);
@@ -109,7 +108,6 @@ module.exports = async (parameter) => {
 
         parameter.discord.on("upload", async (context, params) => {
             try {
-                console.log('- discrod - call upload' + params);
                 if(context.attachment === undefined) {
                     return 'not found image';
                 }
@@ -124,7 +122,6 @@ module.exports = async (parameter) => {
 
         parameter.discord.on("st", async (context, params) => {
             try {
-                console.log('- discrod - call st' + params);
                 const heroName = await wikidata.callApi('normalize', [params[0], false]);
                 const data = await wikidata.callApi('load', [heroName, false]);
 

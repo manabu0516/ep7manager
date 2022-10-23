@@ -200,6 +200,11 @@ module.exports = async (includes, config) => {
             },
             discord : discordManager,
             twitter : twitterManager,
+            logger  : (message, parameter) => {
+                const dateStr = new Date().toLocaleString();
+                const paramStr = JSON.stringify(parameter, null , "\t");
+                console.log("[" + dataStr + "] [" + target + "] " + message + " :" + paramStr);
+            },
             cron    : cron,
             instance : () => {
                 return new ApplicationBuilder();
