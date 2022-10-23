@@ -26,6 +26,7 @@ const splitArray = (array, n) => {
 
 module.exports = async (parameter) => {
     const builder = parameter.instance();
+    const logger = parameter.logger;
 
     builder.addEvt("app.initialize", async (application) => {
         const wikidata = application.wikidata;
@@ -81,6 +82,8 @@ module.exports = async (parameter) => {
 
         parameter.discord.on("build", async (context, params) => {
             try {
+                logger("build cmd --- start", params);
+
                 const heroName = await wikidata.callApi('normalize', [params[0], false]);
                 const pageNo = getPageNo(params[1]);
                 const data = await tweetsearch.callApi('get', [heroName]);
@@ -96,32 +99,42 @@ module.exports = async (parameter) => {
                 }
 
                 const pageMax = sliced.length;
-                return target.map((e,i) => {
+                const result = target.map((e,i) => {
                     const pageLabel = pageNo+'/'+pageMax+'ページ';
                     const countLabel = (i+1) + '件目'
                     return  context.embdedMessage().setTitle(heroName +' '+ countLabel +' '+ pageLabel).setImage(e);
                 });
+
+                logger("build cmd --- end");
+                return result;
             } catch(e) {
-                return 'error :'+ e 
+                return logger("error", e);
             }
         });
 
         parameter.discord.on("upload", async (context, params) => {
             try {
+                logger("upload cmd --- start", params);
+
                 if(context.attachment === undefined) {
+                    logger("upload cmd --- end :nf");
                     return 'not found image';
                 }
                 const tweetText = ["#ep7build #エピックセブン", 'post by : [' + context.guild + ']' + context.author].join("\r\n") + params.join(" ");
                 const response = await parameter.lib.request(context.attachment.url, {encoding: null});
                 const tweetResult = await parameter.twitter.tweet(tweetText, response);
+
+                logger("upload cmd --- end");
                 return tweetResult.text;
             } catch(e) {
-                return 'error :'+ e 
+                return logger("error", e);
             }
         });
 
         parameter.discord.on("st", async (context, params) => {
             try {
+                logger("st cmd --- start", params);
+
                 const heroName = await wikidata.callApi('normalize', [params[0], false]);
                 const data = await wikidata.callApi('load', [heroName, false]);
 
@@ -145,10 +158,12 @@ module.exports = async (parameter) => {
                         { name: data["スキル"][1]["スキル名"], value: skillDesc(data["スキル"][1])},
                         { name: data["スキル"][2]["スキル名"], value: skillDesc(data["スキル"][2])}
                     ])
-                    .setImage(data["画像"])
+                    .setImage(data["画像"]);
+
+                logger("st cmd --- end");
                 return [enbded];
             } catch(e) {
-                return 'error : ' + e;
+                return logger("error", e);
             }
             
         });

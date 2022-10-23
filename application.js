@@ -203,7 +203,10 @@ module.exports = async (includes, config) => {
             logger  : (message, parameter) => {
                 const dateStr = new Date().toLocaleString();
                 const paramStr = JSON.stringify(parameter, null , "\t");
-                console.log("[" + dataStr + "] [" + target + "] " + message + " :" + paramStr);
+
+                const message = "[" + dataStr + "] [" + target + "] " + message + " :" + paramStr;
+                console.log(message);
+                return message;
             },
             cron    : cron,
             instance : () => {
