@@ -21,7 +21,6 @@ const parseData = (text) => {
             value : checkValue(d)
         });
     }
-    console.log(data);
     return result.slice(1);
 };
 
