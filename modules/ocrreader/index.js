@@ -32,13 +32,13 @@ const checkValue = (text) => {
 const checkData = (text) => {
 
     if(text.indexOf("攻撃") !== -1) {
-        return "攻撃力";
+        return text.indexOf("%") !== -1 ? "攻撃力" : "攻撃力_実数";
     }
     if(text.indexOf("生命") !== -1) {
-        return "生命力";
+        return text.indexOf("%") !== -1 ? "生命力" : "生命力_実数";
     }
     if(text.indexOf("防御") !== -1) {
-        return "防御力";
+        return text.indexOf("%") !== -1 ? "防御" : "防御_実数";
     }
     if(text.indexOf("スピ") !== -1) {
         return "スピード";
