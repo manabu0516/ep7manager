@@ -21,7 +21,7 @@ const parseData = (text) => {
             value : checkValue(d)
         });
     }
-    return result.length == 5 ? result.slice(1) : null;
+    return result.slice(1);
 };
 
 const checkValue = (text) => {
@@ -32,27 +32,27 @@ const checkValue = (text) => {
 const checkData = (text) => {
 
     if(text.indexOf("攻撃") !== -1) {
-        return text.indexOf("%") !== -1 ? "攻撃力" : "攻撃力_実数";
+        return text.indexOf("%") !== -1 ? "攻撃力" : "攻撃力_実数"; 
     }
     if(text.indexOf("生命") !== -1) {
-        return text.indexOf("%") !== -1 ? "生命力" : "生命力_実数";
+        return text.indexOf("%") !== -1 ? "生命力" : "生命力_実数"; 
     }
     if(text.indexOf("防御") !== -1) {
-        return text.indexOf("%") !== -1 ? "防御" : "防御_実数";
+        return text.indexOf("%") !== -1 ? "防御力" : "防御力_実数"; 
     }
     if(text.indexOf("スピ") !== -1) {
         return "スピード";
     }
     if(text.indexOf("クリ") !== -1 && text.indexOf("発") !== -1) {
-        return "クリティカル発生率";
+        return "クリ発";
     }
     if(text.indexOf("クリ") !== -1 && text.indexOf("ダメ") !== -1) {
-        return "クリティカルダメージ";
+        return "クリダメ";
     }
     if(text.indexOf("命中") !== -1) {
         return "効果命中";
     }
-    if(text.indexOf("命中") !== -1) {
+    if(text.indexOf("抵抗") !== -1) {
         return "効果抵抗";
     }
 
@@ -68,7 +68,7 @@ module.exports = async (parameter) => {
     await worker.loadLanguage("jpn");
     await worker.initialize("jpn");
     await worker.setParameters({
-        tessedit_char_whitelist: '攻撃防御生命スピード効果命中抵抗クリティカルダメージ発生率0123456789%/',
+        tessedit_char_whitelist: '力攻撃防御生命スピード効果命中抵抗クリティカルダメージ発生率0123456789%/',
     });
 
     builder.addApi('score', async (result, statusData) => {
@@ -88,12 +88,12 @@ module.exports = async (parameter) => {
                 
                 scoreData.resultData.push({key:key, value:value, score:score});
                 scoreData.score += score;
-            } else if(key === "クリティカル発生率") {
+            } else if(key === "クリ発") {
                 const score = Math.floor(parseInt(value.replace("%", "")) * 1.5);
                 
                 scoreData.resultData.push({key:key, value:value, score:score});
                 scoreData.score += score;
-            } else if(key === "クリティカルダメージ") {
+            } else if(key === "クリダメ") {
                 const score = Math.floor(parseInt(value.replace("%", "")) * 1.33);
                 
                 scoreData.resultData.push({key:key, value:value, score:score});
@@ -110,7 +110,7 @@ module.exports = async (parameter) => {
                 scoreData.score += score;
             } else {
                 const fixValue = parseInt(value);
-                const statusValue = parseInt(statusData[key]);
+                const statusValue = parseInt(statusData[key.replace("_実数", "")]);
                 const score = Math.floor((fixValue / statusValue) * 100);
                 
                 scoreData.resultData.push({key:key, value:value, score:score});
@@ -123,7 +123,7 @@ module.exports = async (parameter) => {
     });
 
     builder.addApi('recognize', async (data) => {
-
+        const resultData = {};
         const prepareData = {};
         
         const resizeList = [600,700,800,900,1000,1100,1200];
@@ -135,10 +135,6 @@ module.exports = async (parameter) => {
             const result = await worker.recognize(buffer);
 
             const parsed = parseData(result.data.text);
-            if(parsed === null) {
-                continue;
-            }
-
             parsed.forEach(e => {
                 const k = e.key;
                 const v = e.value;
@@ -153,9 +149,17 @@ module.exports = async (parameter) => {
             });
         }
 
-        const resultData = {};
+        const dataKeys = Object.keys(prepareData).sort((k1, k2) => {
+            const a1 = prepareData[k1];
+            const a2 = prepareData[k2];
+            return a2.length - a1.length;
+        });
 
-        Object.keys(prepareData).forEach(k => {
+        if(dataKeys.length < 4) {
+            return resultData;
+        }
+
+        dataKeys.forEach(k => {
             const arr = prepareData[k];
             resultData[k] = arr.mode();
         });
