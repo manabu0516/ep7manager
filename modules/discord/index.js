@@ -41,11 +41,12 @@ module.exports = async (parameter) => {
                     .setDescription(
                         [
                             "アップロードされた装備画像のスコアを表示します",
+                            "β版のため精度と速度がチューニングできていないのでその点はご了承ください。",
                             "usage : @[bot-name] score [英雄名]"
                         ].join("\r\n")
                     )
                     .addFields([
-                        { name: '[英雄名]', value: "実数ステの割合換算に使用する英雄の名称" ,inline: false},
+                        { name: '[英雄名]', value: "実数ステの割合換算に使用する英雄の名称(任意)" ,inline: false},
                     ]);
 
                 const build_cmd = context.embdedMessage()
