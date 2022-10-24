@@ -8,7 +8,7 @@ const parseData = (text) => {
 
     for (let i = 0; i < data.length; i++) {
         const d = data[i];
-        if(d.indexOf("0/4") !== -1 || d.indexOf("0/2") !== -1) {
+        if(d.indexOf("/4") !== -1 || d.indexOf("/2") !== -1) {
             break;
         }
         const checked = checkData(d);

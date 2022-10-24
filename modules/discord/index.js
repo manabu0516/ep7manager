@@ -35,50 +35,66 @@ module.exports = async (parameter) => {
 
         parameter.discord.on("readme", async (context, params) => {
 
-            const build_cmd = context.embdedMessage()
-                .setTitle('build')
-                .setDescription(
-                    [
-                        "パラメータで指定された英雄の装備画像を表示します",
-                        "usage : @[bot-name] buld [英雄名] [ページ番号]"
-                    ].join("\r\n")
-                )
-                .addFields([
-                    { name: '[英雄名]', value: "装備画像を表示したい英雄の名前を入力します" ,inline: false},
-                ])
-                .addFields([
-                    { name: '[ページ番号]', value: "表示するページを指定します\r\n未指定の場合は1ページ目を表示" ,inline: false},
-                ]);
+            try {
+                const score_cmd = context.embdedMessage()
+                    .setTitle('score')
+                    .setDescription(
+                        [
+                            "アップロードされた装備画像のスコアを表示します",
+                            "usage : @[bot-name] score [英雄名]"
+                        ].join("\r\n")
+                    )
+                    .addFields([
+                        { name: '[英雄名]', value: "実数ステの割合換算に使用する英雄の名称" ,inline: false},
+                    ]);
 
-            const st_cmd = context.embdedMessage()
-                .setTitle('st')
-                .setDescription(
-                    [
-                        "パラメータで指定された英雄のステータス画像を表示します",
-                        "usage : @[bot-name] st [英雄名]"
-                    ].join("\r\n")
-                )
-                .addFields([
-                    { name: '[英雄名]', value: "ステータスを表示したい英雄の名前を入力します" ,inline: false},
-                ]);
+                const build_cmd = context.embdedMessage()
+                    .setTitle('build')
+                    .setDescription(
+                        [
+                            "パラメータで指定された英雄の装備画像を表示します",
+                            "usage : @[bot-name] buld [英雄名] [ページ番号]"
+                        ].join("\r\n")
+                    )
+                    .addFields([
+                        { name: '[英雄名]', value: "装備画像を表示したい英雄の名前を入力します" ,inline: false},
+                    ])
+                    .addFields([
+                        { name: '[ページ番号]', value: "表示するページを指定します\r\n未指定の場合は1ページ目を表示" ,inline: false},
+                    ]);
 
-            const upload_cmd = context.embdedMessage()
-                .setTitle('upload')
-                .setDescription(
-                    [
-                        "英雄のビルド画像をTwitterにアップロードします。",
-                        "※アップロード先のアカウントは本BOTの管理アカウントになります。",
-                        "※アップロード時にDiscordのサーバ名とユーザ名も併せて投稿されます。",
-                        "※添付ファイルの指定は必ず必要になります。",
-                        "usage : @[bot-name] upload [任意のコメント]"
-                    ].join("\r\n")
-                )
-                .addFields([
-                    { name: '[任意のコメント]', value: "ツイートに含めたい文言を設定します(任意)" ,inline: false},
-                    { name: '[添付ファイル]', value: "投稿する英雄のステータス画面を添付してください" ,inline: false},
-                ]);
+                const st_cmd = context.embdedMessage()
+                    .setTitle('st')
+                    .setDescription(
+                        [
+                            "パラメータで指定された英雄のステータス画像を表示します",
+                            "usage : @[bot-name] st [英雄名]"
+                        ].join("\r\n")
+                    )
+                    .addFields([
+                        { name: '[英雄名]', value: "ステータスを表示したい英雄の名前を入力します" ,inline: false},
+                    ]);
 
-            return [build_cmd, st_cmd, upload_cmd];
+                const upload_cmd = context.embdedMessage()
+                    .setTitle('upload')
+                    .setDescription(
+                        [
+                            "英雄のビルド画像をTwitterにアップロードします。",
+                            "※アップロード先のアカウントは本BOTの管理アカウントになります。",
+                            "※アップロード時にDiscordのサーバ名とユーザ名も併せて投稿されます。",
+                            "※添付ファイルの指定は必ず必要になります。",
+                            "usage : @[bot-name] upload [任意のコメント]"
+                        ].join("\r\n")
+                    )
+                    .addFields([
+                        { name: '[任意のコメント]', value: "ツイートに含めたい文言を設定します(任意)" ,inline: false},
+                        { name: '[添付ファイル]', value: "投稿する英雄のステータス画面を添付してください" ,inline: false},
+                    ]);
+
+                return [build_cmd, st_cmd, upload_cmd, score_cmd];
+            } catch (e) {
+                return logger("error", e);
+            }
         });
 
         parameter.discord.on("score", async (context, params) => {
