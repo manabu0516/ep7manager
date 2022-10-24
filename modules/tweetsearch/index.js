@@ -67,9 +67,23 @@ module.exports = async (parameter) => {
 
     builder.addApi('get', async (key) => {
         try {
+            const entries = [];
             const path = buildsDir + '/' + key;
-            const list = await parameter.lib.fs.readdir(path);
-            return list.map(e => 'https://manabu0516.github.io/ep7manager/tweetsearch/' + encodeURI(key) + '/' + e);
+            
+            const fileList = await parameter.lib.fs.readdir(path);
+            for (let i = 0; i < fileList.length; i++) {
+                const f = fileList[i];
+                const stat = await parameter.lib.fs.stat(path + '/' + f);
+                entries.push({
+                    name : f,
+                    mtime :  stat.mtimeMs
+                });
+            }
+
+            return entries.sort((e1, e2) => {
+                return e2.mtime - e1.mtime;
+            }).map(e => 'https://manabu0516.github.io/ep7manager/tweetsearch/' + encodeURI(key) + '/' + e.name);
+
         } catch(e) {
             return [];
         }
