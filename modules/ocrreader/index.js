@@ -40,7 +40,7 @@ const checkData = (text) => {
     if(text.indexOf("防御") !== -1) {
         return text.indexOf("%") !== -1 ? "防御力" : "防御力_実数"; 
     }
-    if(text.indexOf("スピ") !== -1) {
+    if(text.indexOf("スピ") !== -1 || text.indexOf("ピード") !== -1) {
         return "スピード";
     }
     if(text.indexOf("クリ") !== -1 && text.indexOf("発") !== -1) {
@@ -159,7 +159,7 @@ module.exports = async (parameter) => {
             return resultData;
         }
 
-        dataKeys.forEach(k => {
+        dataKeys.slice(0,4).forEach(k => {
             const arr = prepareData[k];
             resultData[k] = arr.mode();
         });
