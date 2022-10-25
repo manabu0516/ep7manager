@@ -98,6 +98,58 @@ module.exports = async (parameter) => {
             }
         });
 
+        parameter.discord.on("score2", async (context, params) => {
+            try {
+                const entries = {};
+                
+                params.map(str => str.trim()).forEach(str => {
+                    const key = str.substring(0,1);
+                    const value = str.substring(1);
+                    if(key === "a") {
+                        entries["攻撃力"] = paraseInt(value);
+                    } else if(key === "A") {
+                        entries["攻撃力_実数"] = paraseInt(value);
+                    } else if(key === "h") {
+                        entries["生命力"] = paraseInt(value);
+                    } else if(key === "H") {
+                        entries["生命力_実数"] = paraseInt(value);
+                    } else if(key === "d") {
+                        entries["防御力"] = paraseInt(value);
+                    } else if(key === "D") {
+                        entries["防御力_実数"] = paraseInt(value);
+                    } else if(key === "c") {
+                        entries["クリ初"] = paraseInt(value);
+                    } else if(key === "C") {
+                        entries["クリダメ"] = paraseInt(value);
+                    } else if(key === "e") {
+                        entries["効果命中"] = paraseInt(value);
+                    } else if(key === "r") {
+                        entries["効果抵抗"] = paraseInt(value);
+                    } else if(key === "s") {
+                        entries["速度"] = paraseInt(value);
+                    }
+                });
+
+                const score = await ocrreader.callApi("score", [entries]);
+                const enbded = context.embdedMessage()
+                    .setTitle("スコア: " + score.score);
+
+                const fields = score.resultData.map(entry => {
+                    return  { name: entry["key"], value: entry["value"] + " (score: " + entry["score"] + ")",inline: false};
+                });
+                enbded.addFields(fields);
+
+                logger("score cmd --- end", {
+                    guild : context.guild,
+                    author : context.author
+                });
+
+                return [enbded];
+            } catch (e) {
+                return logger("error", e);
+            }
+        });
+
         parameter.discord.on("score", async (context, params) => {
             try {
                 logger("score cmd --- start", params);
