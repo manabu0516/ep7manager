@@ -124,14 +124,18 @@ module.exports = async (parameter) => {
 
             const imageData = await parameter.lib.sharp(data).resize(size,null).normalise().toBuffer()
             const buffer = Buffer.from(imageData.toString('base64'), "base64");
-            const result = await tesseract.recognize(buffer, {
+            const result1 = await tesseract.recognize(buffer, {
                 lang: "jpn+eng",
                 tessedit_char_whitelist: '力攻撃防御生命スピード効果命中抵抗クリティカルダメージ発生率0987654321%/',
             });
+            const result2 = await tesseract.recognize(buffer, {
+                lang: "jpn+eng"
+            });
 
-            const parsed = parseData(result);
-            //console.log(parsed);
-            parsed.forEach(e => {
+            const parsed1 = parseData(result1);
+            const parsed2 = parseData(result2);
+
+            parsed1.concat(parsed2).forEach(e => {
                 const k = e.key;
                 const v = e.value;
                 if(v === '') {
