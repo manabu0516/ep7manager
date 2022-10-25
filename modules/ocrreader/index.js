@@ -61,15 +61,7 @@ const checkData = (text) => {
 
 module.exports = async (parameter) => {
     const builder = parameter.instance();
-    const tesseract = parameter.lib.tesseract;
-
-    const worker = tesseract.createWorker();
-    await worker.load();
-    await worker.loadLanguage("jpn");
-    await worker.initialize("jpn");
-    await worker.setParameters({
-        tessedit_char_whitelist: '力攻撃防御生命スピード効果命中抵抗クリティカルダメージ発生率0987654321%/',
-    });
+    const tesseract =  parameter.lib.tesseract_ocr;
 
     builder.addApi('score', async (result, statusData) => {
         const scoreData = {score : 0, resultData : []};
@@ -132,9 +124,12 @@ module.exports = async (parameter) => {
 
             const imageData = await parameter.lib.sharp(data).resize(size,null).toBuffer()
             const buffer = Buffer.from(imageData.toString('base64'), "base64");
-            const result = await worker.recognize(buffer);
+            const result = await tesseract.recognize(buffer, {
+                lang: "jpn+eng",
+                //tessedit_char_whitelist: '力攻撃防御生命スピード効果命中抵抗クリティカルダメージ発生率0987654321%/',
+            });
 
-            const parsed = parseData(result.data.text);
+            const parsed = parseData(result);
             parsed.forEach(e => {
                 const k = e.key;
                 const v = e.value;

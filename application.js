@@ -206,6 +206,7 @@ module.exports = async (includes, config) => {
     const express = require("express");
     const fs = require("fs").promises;
     const tesseract = require("tesseract.js");
+    const tesseract_ocr = require("node-tesseract-ocr");
     const sharp = require("sharp");
 
     const currentDir = __dirname;
@@ -234,6 +235,7 @@ module.exports = async (includes, config) => {
                 request : request,
                 cheerio : cheerio,
                 tesseract : tesseract,
+                tesseract_ocr : tesseract_ocr,
                 sharp : sharp,
                 fs : fs
             },
