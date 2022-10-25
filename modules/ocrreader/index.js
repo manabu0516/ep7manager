@@ -122,14 +122,15 @@ module.exports = async (parameter) => {
         for (let i = 0; i < resizeList.length; i++) {
             const size = resizeList[i];
 
-            const imageData = await parameter.lib.sharp(data).resize(size,null).toBuffer()
+            const imageData = await parameter.lib.sharp(data).resize(size,null).normalise().toBuffer()
             const buffer = Buffer.from(imageData.toString('base64'), "base64");
             const result = await tesseract.recognize(buffer, {
                 lang: "jpn+eng",
-                //tessedit_char_whitelist: '力攻撃防御生命スピード効果命中抵抗クリティカルダメージ発生率0987654321%/',
+                tessedit_char_whitelist: '力攻撃防御生命スピード効果命中抵抗クリティカルダメージ発生率0987654321%/',
             });
 
             const parsed = parseData(result);
+            //console.log(parsed);
             parsed.forEach(e => {
                 const k = e.key;
                 const v = e.value;
