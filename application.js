@@ -14,43 +14,47 @@ const initializeDiscord = (token) => {
     };
 
     client.on("messageCreate", async message => {
-        if(message.author.bot){
-            return;
+        try {
+            if(message.author.bot){
+                return;
+            }
+            if (message.mentions.has(client.user.id) === false) {
+                return;
+            }
+    
+            const messageText = message.content;
+    
+            const parameter = messageText.split(" ").map(e => e.trim()).filter(e => e !== '');
+            if(parameter.length < 2) {
+                message.channel.send("Not found command : " + messageText);
+                return;
+            }
+    
+            const command = parameter[1];
+            const invoker = handler[command];
+    
+            if(invoker === undefined || invoker === null) {
+                message.channel.send("Not found command : " + command);
+                return;
+            }
+    
+            const embdedMessage = () => new EmbedBuilder();
+            const attachment = message.attachments.first();
+    
+            const context = {
+                embdedMessage : embdedMessage,
+                attachment : attachment,
+                author : message.author.username,
+                guild  : message.guild.name
+            };
+            
+            const result = await invoker(context, parameter.slice(2));
+            message.channel.send(typeof result === 'string' ? result : { embeds: result.map(e => {
+                return e.setFooter({ text: "©️fmnb0516 | ep7manager"}).setTimestamp()
+            })});
+        } catch(e) {
+            console.log(e);
         }
-        if (message.mentions.has(client.user.id) === false) {
-            return;
-        }
-
-        const messageText = message.content;
-
-        const parameter = messageText.split(" ").map(e => e.trim()).filter(e => e !== '');
-        if(parameter.length < 2) {
-            message.channel.send("Not found command : " + messageText);
-            return;
-        }
-
-        const command = parameter[1];
-        const invoker = handler[command];
-
-        if(invoker === undefined || invoker === null) {
-            message.channel.send("Not found command : " + command);
-            return;
-        }
-
-        const embdedMessage = () => new EmbedBuilder();
-        const attachment = message.attachments.first();
-
-        const context = {
-            embdedMessage : embdedMessage,
-            attachment : attachment,
-            author : message.author.username,
-            guild  : message.guild.name
-        };
-        
-        const result = await invoker(context, parameter.slice(2));
-        message.channel.send(typeof result === 'string' ? result : { embeds: result.map(e => {
-            return e.setFooter({ text: "©️fmnb0516 | ep7manager"}).setTimestamp()
-        })});
     });
 
     client.login(token);
