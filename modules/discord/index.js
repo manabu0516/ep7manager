@@ -92,7 +92,7 @@ module.exports = async (parameter) => {
                         { name: '[添付ファイル]', value: "投稿する英雄のステータス画面を添付してください" ,inline: false},
                     ]);
 
-                return [build_cmd, st_cmd, upload_cmd, score_cmd];
+                return [score_cmd, upload_cmd, build_cmd, st_cmd];
             } catch (e) {
                 return logger("error", e);
             }
