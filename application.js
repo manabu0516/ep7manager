@@ -49,7 +49,7 @@ const initializeDiscord = (token) => {
             };
             
             const result = await invoker(context, parameter.slice(2));
-            message.channel.send(typeof result === 'string' ? result : { embeds: result.map(e => {
+            await message.channel.send(typeof result === 'string' ? result : { embeds: result.map(e => {
                 return e.setFooter({ text: "©️fmnb0516 | ep7manager"}).setTimestamp()
             })});
         } catch(e) {
