@@ -18,16 +18,28 @@ const parseData = (text) => {
 
         result.push({
             key : checked,
-            value : checkValue(d)
+            value : checkValue(d, checked)
         });
     }
     return result.slice(1);
 };
 
-const checkValue = (text) => {
-    const data = text.replace(/[^0-9]/g, '');
-    return data + (text.indexOf("%") !== -1 ? '%' : "");
-};
+const checkValue = (() => {
+    const filterData = {
+        "クリ発" : t => t.indexOf("%") === -1 ? t.replace("96", "%") : t,
+        "クリダメ" : t => t.indexOf("%") === -1 ? t.replace("96", "%") : t,
+        "効果命中" : t => t.indexOf("%") === -1 ? t.replace("96", "%") : t,
+        "効果抵抗" : t => t.indexOf("%") === -1 ? t.replace("96", "%") : t,
+    };
+
+    return (text, label) => {
+        const filter = filterData[label] ? filterData[label] : t => t;
+
+        const data = filter(text.replace(/[^0-9]/g, ''));
+        return data + (text.indexOf("%") !== -1 ? '%' : "");
+    };
+
+})();
 
 const checkData = (text) => {
 
@@ -147,6 +159,8 @@ module.exports = async (parameter) => {
                 }
                 prepareData[k].push(v);
             });
+
+            //console.log(parsed1.concat(parsed2));
         }
 
         const dataKeys = Object.keys(prepareData).sort((k1, k2) => {
