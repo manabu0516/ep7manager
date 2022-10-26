@@ -116,7 +116,7 @@ https://game8.jp/epic-seven
 
 ## ■ 最後に
 
-このBOTの管理・運営はすべて[https://twitter.com/fmnb0516_ep7bot]が行っています。
+このBOTの管理・運営はすべて https://twitter.com/fmnb0516_ep7bot が行っています。
 
 なので、ご協力頂ける方をお待ちしております。
 
