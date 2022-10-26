@@ -179,6 +179,8 @@ module.exports = async (parameter) => {
                 });
                 enbded.addFields(fields);
 
+                logger("score cmd --- info", score);
+
                 logger("score cmd --- end", {
                     guild : context.guild,
                     author : context.author
