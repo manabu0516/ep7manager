@@ -242,7 +242,7 @@ module.exports = async (includes, config) => {
             discord : discordManager,
             twitter : twitterManager,
             logger  : (message, parameter) => {
-                const dateStr = new Date().toLocaleString('ja-JP');
+                const dateStr = new Date() + "";
                 const paramStr = JSON.stringify(parameter, null , "\t");
 
                 const fmtMessage = "[" + dateStr + "] [" + target + "] " + message + " :" + paramStr;
