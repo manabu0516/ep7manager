@@ -93,12 +93,12 @@ module.exports = async (parameter) => {
                 scoreData.resultData.push({key:key, value:value, score:score});
                 scoreData.score += score;
             } else if(key === "クリ発") {
-                const score = Math.floor(parseInt(value.replace("%", "")) * 1.5);
+                const score = Math.floor(parseInt(value.replace("%", "")) * 1.6);
                 
                 scoreData.resultData.push({key:key, value:value, score:score});
                 scoreData.score += score;
             } else if(key === "クリダメ") {
-                const score = Math.floor(parseInt(value.replace("%", "")) * 1.33);
+                const score = Math.floor(parseInt(value.replace("%", "")) * 1.14);
                 
                 scoreData.resultData.push({key:key, value:value, score:score});
                 scoreData.score += score;
