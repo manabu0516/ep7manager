@@ -19,28 +19,32 @@ const initializeDiscord = (token) => {
     const embdedMessage = () => new Discord.EmbedBuilder().setFooter({ text: "©️fmnb0516 | ep7manager"}).setTimestamp();
 
     client.on("interactionCreate", async (interaction) => {
-        if (interaction.isCommand() === false) {
-            return;
+        try {
+            if (interaction.isCommand() === false) {
+                return;
+            }
+    
+            const commandName = interaction.commandName;
+            const commandInvoke =handler[commandName];
+    
+            const context = {
+                embdedMessage : embdedMessage,
+                author : interaction.member.displayName,
+                guild  : interaction.guild.id,
+                options: interaction.options,
+                deffer : async () => await interaction.deferReply()
+            };
+    
+            if(commandInvoke === undefined) {
+                interaction.reply("not found command");
+                return;
+            }
+            const result = await commandInvoke(context);
+            return interaction.replied || interaction.deferred ? await interaction.followUp(result) : interaction.reply(result);
+        } catch(e) {
+            return interaction.replied || interaction.deferred ? await interaction.followUp("error :" + e) : interaction.reply("error : "+e);
         }
-
-        const commandName = interaction.commandName;
-        const commandInvoke =handler[commandName];
-
-        const context = {
-            embdedMessage : embdedMessage,
-            author : interaction.member.displayName,
-            guild  : interaction.guild.id,
-            options: interaction.options,
-            deffer : async () => await interaction.deferReply()
-        };
-
-        if(commandInvoke === undefined) {
-            interaction.reply("not found command");
-            return;
-        }
-        const result = await commandInvoke(context);
-
-        return interaction.replied || interaction.deferred ? await interaction.followUp(result) : interaction.reply(result);
+        
     });
     
     client.login(token);
@@ -128,6 +132,17 @@ Array.prototype.mode = function () {
 
 };
 
+function formatDate (date, format) {
+    format = format.replace(/yyyy/g, date.getFullYear());
+    format = format.replace(/MM/g, ('0' + (date.getMonth() + 1)).slice(-2));
+    format = format.replace(/dd/g, ('0' + date.getDate()).slice(-2));
+    format = format.replace(/HH/g, ('0' + date.getHours()).slice(-2));
+    format = format.replace(/mm/g, ('0' + date.getMinutes()).slice(-2));
+    format = format.replace(/ss/g, ('0' + date.getSeconds()).slice(-2));
+    format = format.replace(/SSS/g, ('00' + date.getMilliseconds()).slice(-3));
+    return format;
+};
+
 module.exports = async (includes, config) => {
     config = config ? config : {};
 
@@ -190,6 +205,7 @@ module.exports = async (includes, config) => {
 
     const configure = require('./configure');
 
+    const crypto = require("crypto");
     const cron = require('node-cron');
     const request = require('request-promise');
     const cheerio = require('cheerio');
@@ -224,6 +240,7 @@ module.exports = async (includes, config) => {
             lib : {
                 request : request,
                 cheerio : cheerio,
+                crypto : crypto,
                 tesseract : tesseract,
                 tesseract_ocr : tesseract_ocr,
                 sharp : sharp,
@@ -232,7 +249,7 @@ module.exports = async (includes, config) => {
             discord : discordManager,
             twitter : twitterManager,
             logger  : (message, parameter) => {
-                const dateStr = new Date() + "";
+                const dateStr = formatDate(new Date(), "yyyy-MM-dd hh:mm:ss");
                 const paramStr = JSON.stringify(parameter, null , "\t");
 
                 const fmtMessage = "[" + dateStr + "] [" + target + "] " + message + " :" + paramStr;

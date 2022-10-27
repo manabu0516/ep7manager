@@ -36,6 +36,7 @@ module.exports = async (parameter) => {
         parameter.discord.on("ep7-st", async (context) => {
             try {
                 const param = context.options.get("heroname");
+                logger("ep7-st cmd start -- :start", {author : context.author,param  : [param]});
 
                 const heroName = await wikidata.callApi('normalize', [param.value, false]);
                 const data = await wikidata.callApi('load', [heroName, false]);
@@ -62,8 +63,10 @@ module.exports = async (parameter) => {
                     ])
                     .setImage(data["画像"]);
 
+                logger("ep7-st cmd end -- :success", {author : context.author, name  : heroName});
                 return { embeds: [enbded] };
             } catch(e) {
+                logger("ep7-st cmd end -- :error", {author : context.author, erroe : e+""});
                 return "error : " + e;
             }
             
@@ -73,17 +76,22 @@ module.exports = async (parameter) => {
             try {
                 const heroNameParam = context.options.get("heroname");
                 const pagenoParam = context.options.get("pageno");
+
+                logger("ep7-build cmd start -- :start", {author : context.author,param  : [heroNameParam, pagenoParam]});
+
                 const heroName = await wikidata.callApi('normalize', [heroNameParam.value, false]);
                 const pageNo = pagenoParam !== null ? getPageNo(pagenoParam.value) : 1;
                 const data = await tweetsearch.callApi('get', [heroName]);
 
                 if(data.length == 0) {
+                    logger("ep7-build cmd complete -- :notfound", {author : context.author, param  : [heroName, pageNo]});
                     return heroName + 'のデータは存在しません';
                 }
                 const sliced = splitArray(data, 3);
                 const target = sliced[pageNo-1];
 
                 if(target === undefined || target === null) {
+                    logger("ep7-build cmd complete -- :notpage", {author : context.author, param  : [heroName, pageNo]});
                     return pageNo + 'ページ目の' + heroName + 'のデータは存在しません'; 
                 }
 
@@ -94,8 +102,10 @@ module.exports = async (parameter) => {
                     return  context.embdedMessage().setTitle(heroName +' '+ countLabel +' '+ pageLabel).setImage(e);
                 });
 
+                logger("ep7-build cmd complete -- :success", {author : context.author, target  : target});
                 return { embeds: enbded};
             } catch(e) {
+                logger("ep7-build cmd end -- :error", {author : context.author, erroe : e+""});
                 return "error : " + e;
             }
         });
@@ -105,10 +115,9 @@ module.exports = async (parameter) => {
                 const heroNameParam = context.options.get("heroname");
                 const imageParam = context.options.get("image");
 
+                logger("ep7-score cmd start -- :start", {author : context.author,param  : [imageParam, heroNameParam]});
+
                 const heroName = await wikidata.callApi('normalize', [heroNameParam !== null ? heroNameParam.value : null, false]);
-                if(imageParam === null) {
-                    return 'not found image';
-                }
 
                 await context.deffer();
 
@@ -131,8 +140,10 @@ module.exports = async (parameter) => {
                 });
                 enbded.addFields(fields).setThumbnail(imageParam.attachment.url);
                 
+                logger("ep7-score cmd complete -- :success", {author : context.author, score  : score});
                 return { embeds: [enbded]};
             } catch(e) {
+                logger("ep7-score cmd end -- :error", {author : context.author, erroe : e+""});
                 return "error : " + e;
             }
         });
@@ -143,19 +154,19 @@ module.exports = async (parameter) => {
                 const imageParam = context.options.get("image");
                 const commentParam =  context.options.get("comment");
 
-                const comment = commentParam != null ? commentParam : "";
-                if(imageParam === null) {
-                    return 'not found image';
-                }
+                logger("ep7-upload cmd start -- :start", {author : context.author,param  : [imageParam, commentParam]});
 
+                const comment = commentParam != null ? commentParam : "";
                 await context.deffer();
 
                 const tweetText = ["#ep7build #エピックセブン", 'post by : [' + context.guild + ']' + context.author].join("\r\n") + comment;
                 const response = await parameter.lib.request(imageParam.attachment.url, {encoding: null});
                 const tweetResult = await parameter.twitter.tweet(tweetText, response);
 
+                logger("ep7-build cmd complete -- :success", {author : context.author, param  : [tweetResult.text]});
                 return tweetResult.text;
             } catch(e) {
+                logger("ep7-upload cmd end -- :error", {author : context.author, erroe : e+""});
                 return "error : " + e;
             }
         });
