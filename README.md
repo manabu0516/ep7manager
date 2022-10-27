@@ -11,7 +11,7 @@ Discord BOTを導入するとエピックセブンに関する以下のデータ
 
 ## ■ インストールURL
 
-https://t.co/rgJZwKjmTh
+https://discord.com/api/oauth2/authorize?client_id=1035058107899981854&permissions=2048&scope=applications.commands%20bot
 
 ## ■ 基本的な使い方
 

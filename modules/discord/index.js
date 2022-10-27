@@ -33,227 +33,11 @@ module.exports = async (parameter) => {
         const ocrreader = application.ocrreader;
         const tweetsearch = application.tweetsearch;
 
-        parameter.discord.on("readme", async (context, params) => {
-
+        parameter.discord.on("ep7-st", async (context) => {
             try {
-                const score_cmd = context.embdedMessage()
-                    .setTitle('score')
-                    .setDescription(
-                        [
-                            "アップロードされた装備画像のスコアを表示します",
-                            "β版のため精度と速度がチューニングできていないのでその点はご了承ください。",
-                            "usage : @[bot-name] score [英雄名]"
-                        ].join("\r\n")
-                    )
-                    .addFields([
-                        { name: '[英雄名]', value: "実数ステの割合換算に使用する英雄の名称(任意)" ,inline: false},
-                    ]);
+                const param = context.options.get("heroname");
 
-                const build_cmd = context.embdedMessage()
-                    .setTitle('build')
-                    .setDescription(
-                        [
-                            "パラメータで指定された英雄の装備画像を表示します",
-                            "usage : @[bot-name] buld [英雄名] [ページ番号]"
-                        ].join("\r\n")
-                    )
-                    .addFields([
-                        { name: '[英雄名]', value: "装備画像を表示したい英雄の名前を入力します" ,inline: false},
-                    ])
-                    .addFields([
-                        { name: '[ページ番号]', value: "表示するページを指定します\r\n未指定の場合は1ページ目を表示" ,inline: false},
-                    ]);
-
-                const st_cmd = context.embdedMessage()
-                    .setTitle('st')
-                    .setDescription(
-                        [
-                            "パラメータで指定された英雄のステータス画像を表示します",
-                            "usage : @[bot-name] st [英雄名]"
-                        ].join("\r\n")
-                    )
-                    .addFields([
-                        { name: '[英雄名]', value: "ステータスを表示したい英雄の名前を入力します" ,inline: false},
-                    ]);
-
-                const upload_cmd = context.embdedMessage()
-                    .setTitle('upload')
-                    .setDescription(
-                        [
-                            "英雄のビルド画像をTwitterにアップロードします。",
-                            "※アップロード先のアカウントは本BOTの管理アカウントになります。",
-                            "※アップロード時にDiscordのサーバ名とユーザ名も併せて投稿されます。",
-                            "※添付ファイルの指定は必ず必要になります。",
-                            "usage : @[bot-name] upload [任意のコメント]"
-                        ].join("\r\n")
-                    )
-                    .addFields([
-                        { name: '[任意のコメント]', value: "ツイートに含めたい文言を設定します(任意)" ,inline: false},
-                        { name: '[添付ファイル]', value: "投稿する英雄のステータス画面を添付してください" ,inline: false},
-                    ]);
-
-                return [score_cmd, upload_cmd, build_cmd, st_cmd];
-            } catch (e) {
-                return logger("error", e);
-            }
-        });
-
-        parameter.discord.on("score2", async (context, params) => {
-            try {
-                const entries = {};
-                
-                params.map(str => str.trim()).forEach(str => {
-                    const key = str.substring(0,1);
-                    const value = str.substring(1);
-                    if(key === "a") {
-                        entries["攻撃力"] = paraseInt(value);
-                    } else if(key === "A") {
-                        entries["攻撃力_実数"] = paraseInt(value);
-                    } else if(key === "h") {
-                        entries["生命力"] = paraseInt(value);
-                    } else if(key === "H") {
-                        entries["生命力_実数"] = paraseInt(value);
-                    } else if(key === "d") {
-                        entries["防御力"] = paraseInt(value);
-                    } else if(key === "D") {
-                        entries["防御力_実数"] = paraseInt(value);
-                    } else if(key === "c") {
-                        entries["クリ初"] = paraseInt(value);
-                    } else if(key === "C") {
-                        entries["クリダメ"] = paraseInt(value);
-                    } else if(key === "e") {
-                        entries["効果命中"] = paraseInt(value);
-                    } else if(key === "r") {
-                        entries["効果抵抗"] = paraseInt(value);
-                    } else if(key === "s") {
-                        entries["速度"] = paraseInt(value);
-                    }
-                });
-
-                const score = await ocrreader.callApi("score", [entries]);
-                const enbded = context.embdedMessage()
-                    .setTitle("スコア: " + score.score);
-
-                const fields = score.resultData.map(entry => {
-                    return  { name: entry["key"], value: entry["value"] + " (score: " + entry["score"] + ")",inline: false};
-                });
-                enbded.addFields(fields);
-
-                logger("score cmd --- end", {
-                    guild : context.guild,
-                    author : context.author
-                });
-
-                return [enbded];
-            } catch (e) {
-                return logger("error", e);
-            }
-        });
-
-        parameter.discord.on("score", async (context, params) => {
-            try {
-                logger("score cmd --- start", params);
-
-                const heroName = await wikidata.callApi('normalize', [params[0], false]);
-                if(context.attachment === undefined) {
-                    logger("score cmd --- end :nf");
-                    return 'not found image';
-                }
-
-                const response = await parameter.lib.request(context.attachment.url, {encoding: null});
-                const result = await ocrreader.callApi("recognize", [response]);
-                const heroData = await wikidata.callApi("load", [heroName]);
-
-                const statusData = heroData != null ? {
-                    "攻撃力" : heroData["ステータス"]["攻撃力"]["最大値"],
-                    "生命力" : heroData["ステータス"]["生命力"]["最大値"],
-                    "防御力" : heroData["ステータス"]["防御力"]["最大値"]
-                } : undefined;
-
-                const score = await ocrreader.callApi("score", [result, statusData]);
-                const enbded = context.embdedMessage()
-                    .setTitle("スコア: " + score.score);
-
-                const fields = score.resultData.map(entry => {
-                    return  { name: entry["key"], value: entry["value"] + " (score: " + entry["score"] + ")",inline: false};
-                });
-                enbded.addFields(fields);
-
-                logger("score cmd --- info", score);
-
-                logger("score cmd --- end", {
-                    guild : context.guild,
-                    author : context.author
-                });
-                return [enbded];
-            } catch(e) {
-                return logger("error", e);
-            }
-        });
-
-        parameter.discord.on("build", async (context, params) => {
-            try {
-                logger("build cmd --- start", params);
-
-                const heroName = await wikidata.callApi('normalize', [params[0], false]);
-                const pageNo = getPageNo(params[1]);
-                const data = await tweetsearch.callApi('get', [heroName]);
-
-                if(data.length == 0) {
-                    return heroName + 'のデータは存在しません';
-                }
-                const sliced = splitArray(data, 3);
-                const target = sliced[pageNo-1];
-
-                if(target === undefined || target === null) {
-                    return pageNo + 'ページ目の' + heroName + 'のデータは存在しません'; 
-                }
-
-                const pageMax = sliced.length;
-                const result = target.map((e,i) => {
-                    const pageLabel = pageNo+'/'+pageMax+'ページ';
-                    const countLabel = (i+1) + '件目'
-                    return  context.embdedMessage().setTitle(heroName +' '+ countLabel +' '+ pageLabel).setImage(e);
-                });
-
-                logger("build cmd --- end", {
-                    guild : context.guild,
-                    author : context.author
-                });
-
-                return result;
-            } catch(e) {
-                return logger("error", e);
-            }
-        });
-
-        parameter.discord.on("upload", async (context, params) => {
-            try {
-                logger("upload cmd --- start", params);
-
-                if(context.attachment === undefined) {
-                    logger("upload cmd --- end :nf");
-                    return 'not found image';
-                }
-                const tweetText = ["#ep7build #エピックセブン", 'post by : [' + context.guild + ']' + context.author].join("\r\n") + params.join(" ");
-                const response = await parameter.lib.request(context.attachment.url, {encoding: null});
-                const tweetResult = await parameter.twitter.tweet(tweetText, response);
-
-                logger("upload cmd --- end", {
-                    guild : context.guild,
-                    author : context.author
-                });
-                return tweetResult.text;
-            } catch(e) {
-                return logger("error", e);
-            }
-        });
-
-        parameter.discord.on("st", async (context, params) => {
-            try {
-                logger("st cmd --- start", params);
-
-                const heroName = await wikidata.callApi('normalize', [params[0], false]);
+                const heroName = await wikidata.callApi('normalize', [param.value, false]);
                 const data = await wikidata.callApi('load', [heroName, false]);
 
                 const enbded = context.embdedMessage()
@@ -278,18 +62,103 @@ module.exports = async (parameter) => {
                     ])
                     .setImage(data["画像"]);
 
-                logger("st cmd --- end", {
-                    guild : context.guild,
-                    author : context.author
-                });
-                return [enbded];
+                return { embeds: [enbded] };
             } catch(e) {
-                return logger("error", e);
+                return "error : " + e;
             }
             
         });
-        
-    });
 
+        parameter.discord.on("ep7-build", async (context, params) => {
+            try {
+                const heroNameParam = context.options.get("heroname");
+                const pagenoParam = context.options.get("pageno");
+                const heroName = await wikidata.callApi('normalize', [heroNameParam.value, false]);
+                const pageNo = pagenoParam !== null ? getPageNo(pagenoParam.value) : 1;
+                const data = await tweetsearch.callApi('get', [heroName]);
+
+                if(data.length == 0) {
+                    return heroName + 'のデータは存在しません';
+                }
+                const sliced = splitArray(data, 3);
+                const target = sliced[pageNo-1];
+
+                if(target === undefined || target === null) {
+                    return pageNo + 'ページ目の' + heroName + 'のデータは存在しません'; 
+                }
+
+                const pageMax = sliced.length;
+                const enbded = target.map((e,i) => {
+                    const pageLabel = pageNo+'/'+pageMax+'ページ';
+                    const countLabel = (i+1) + '件目'
+                    return  context.embdedMessage().setTitle(heroName +' '+ countLabel +' '+ pageLabel).setImage(e);
+                });
+
+                return { embeds: enbded};
+            } catch(e) {
+                return "error : " + e;
+            }
+        });
+
+        parameter.discord.on("ep7-score", async (context) => {
+            try {
+                const heroNameParam = context.options.get("heroname");
+                const imageParam = context.options.get("image");
+
+                const heroName = await wikidata.callApi('normalize', [heroNameParam !== null ? heroNameParam.value : null, false]);
+                if(imageParam === null) {
+                    return 'not found image';
+                }
+
+                await context.deffer();
+
+                const response = await parameter.lib.request(imageParam.attachment.url, {encoding: null});
+                const result = await ocrreader.callApi("recognize", [response]);
+                const heroData = await wikidata.callApi("load", [heroName]);
+
+                const statusData = heroData != null ? {
+                    "攻撃力" : heroData["ステータス"]["攻撃力"]["最大値"],
+                    "生命力" : heroData["ステータス"]["生命力"]["最大値"],
+                    "防御力" : heroData["ステータス"]["防御力"]["最大値"]
+                } : undefined;
+
+                const score = await ocrreader.callApi("score", [result, statusData]);
+                const enbded = context.embdedMessage()
+                    .setTitle("スコア: " + score.score);
+
+                const fields = score.resultData.map(entry => {
+                    return  { name: entry["key"], value: entry["value"] + " (score: " + entry["score"] + ")",inline: false};
+                });
+                enbded.addFields(fields).setThumbnail(imageParam.attachment.url);
+                
+                return { embeds: [enbded]};
+            } catch(e) {
+                return "error : " + e;
+            }
+        });
+
+
+        parameter.discord.on("upload", async (context, params) => {
+            try {
+                const imageParam = context.options.get("image");
+                const commentParam =  context.options.get("comment");
+
+                const comment = commentParam != null ? commentParam : "";
+                if(imageParam === null) {
+                    return 'not found image';
+                }
+
+                await context.deffer();
+
+                const tweetText = ["#ep7build #エピックセブン", 'post by : [' + context.guild + ']' + context.author].join("\r\n") + comment;
+                const response = await parameter.lib.request(imageParam.attachment.url, {encoding: null});
+                const tweetResult = await parameter.twitter.tweet(tweetText, response);
+
+                return tweetResult.text;
+            } catch(e) {
+                return "error : " + e;
+            }
+        });
+    });
     return builder;
 };

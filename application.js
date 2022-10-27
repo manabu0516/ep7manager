@@ -1,62 +1,48 @@
 
-//https://discord.com/api/oauth2/authorize?client_id=1028944952660611073&permissions=3072&scope=bot
+//https://discord.com/api/oauth2/authorize?client_id=1035058107899981854&permissions=2048&scope=applications.commands%20bot
 
 const initializeDiscord = (token) => {
-    const { Client, GatewayIntentBits, EmbedBuilder } = require("discord.js");
-    const client = new Client({intents: Object.values(GatewayIntentBits).reduce((a, b) => a | b)});
-    const handler = {};
+    const Discord = require("discord.js");
+    
+    const client = new Discord.Client({
+        intents: 0
+    });
 
+    const handler = {};
     const instance = {};
-    instance._client = client;
 
     instance.on = (command, hander) => {
         handler[command] = hander;
     };
+    instance._client = client;
 
-    client.on("messageCreate", async message => {
-        try {
-            if(message.author.bot){
-                return;
-            }
-            if (message.mentions.has(client.user.id) === false) {
-                return;
-            }
-    
-            const messageText = message.content;
-    
-            const parameter = messageText.split(" ").map(e => e.trim()).filter(e => e !== '');
-            if(parameter.length < 2) {
-                message.channel.send("Not found command : " + messageText);
-                return;
-            }
-    
-            const command = parameter[1];
-            const invoker = handler[command];
-    
-            if(invoker === undefined || invoker === null) {
-                message.channel.send("Not found command : " + command);
-                return;
-            }
-    
-            const embdedMessage = () => new EmbedBuilder();
-            const attachment = message.attachments.first();
-    
-            const context = {
-                embdedMessage : embdedMessage,
-                attachment : attachment,
-                author : message.author.username,
-                guild  : message.guild.name
-            };
-            
-            const result = await invoker(context, parameter.slice(2));
-            await message.channel.send(typeof result === 'string' ? result : { embeds: result.map(e => {
-                return e.setFooter({ text: "©️fmnb0516 | ep7manager"}).setTimestamp()
-            })});
-        } catch(e) {
-            console.log(e);
+    const embdedMessage = () => new Discord.EmbedBuilder().setFooter({ text: "©️fmnb0516 | ep7manager"}).setTimestamp();
+
+    client.on("interactionCreate", async (interaction) => {
+        if (interaction.isCommand() === false) {
+            return;
         }
-    });
 
+        const commandName = interaction.commandName;
+        const commandInvoke =handler[commandName];
+
+        const context = {
+            embdedMessage : embdedMessage,
+            author : interaction.member.displayName,
+            guild  : interaction.guild.id,
+            options: interaction.options,
+            deffer : async () => await interaction.deferReply()
+        };
+
+        if(commandInvoke === undefined) {
+            interaction.reply("not found command");
+            return;
+        }
+        const result = await commandInvoke(context);
+
+        return interaction.replied || interaction.deferred ? await interaction.followUp(result) : interaction.reply(result);
+    });
+    
     client.login(token);
 
     return new Promise((resolve, reject) => {
