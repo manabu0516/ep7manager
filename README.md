@@ -15,18 +15,17 @@ https://discord.com/api/oauth2/authorize?client_id=1035058107899981854&permissio
 
 ## ■ 基本的な使い方
 
-Discord BOTにメンションでコマンドとパラメータを送ることで、対応するメッセージ及びデータが返信されます
+インストールするとスラッシュコマンドとしてDiscordサーバに登録されます。
 
 ```
-@[botname] [command] [parameter]
+/ep7-score
+/ep7-build
+/ep7-st
+/ep7-upload
 ```
 
-詳細な利用方法は[readme]コマンドより確認をお願いします。
+詳細な利用方法は実際にコマンドを打ち込んで確認してください。
 
- ex)コマンド実行例
-```
-@fmnb0516-epicseven-manager readme
-```
 
 ## 実行環境
 
