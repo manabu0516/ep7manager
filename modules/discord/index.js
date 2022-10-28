@@ -23,10 +23,13 @@ const splitArray = (array, n) => {
     return array.reduce((a, c, i) => i % n == 0 ? [...a, [c]] : [...a.slice(0, -1), [...a[a.length - 1], c]], []);
 };
 
-
 module.exports = async (parameter) => {
     const builder = parameter.instance();
     const logger = parameter.logger;
+
+    const localizeManager = {
+        "ja_jp" : require(parameter.moduleDir + "/locale/ja_jp.js")
+    };
 
     builder.addEvt("app.initialize", async (application) => {
         const wikidata = application.wikidata;
@@ -35,6 +38,8 @@ module.exports = async (parameter) => {
 
         parameter.discord.on("ep7-st", async (context) => {
             try {
+                const localizer = localizeManager["ja_jp"];
+                
                 const param = context.options.get("heroname");
                 logger("ep7-st cmd start -- :start", {author : context.author,param  : [param]});
 
@@ -47,15 +52,15 @@ module.exports = async (parameter) => {
                     .setThumbnail(data["画像"])
                     .setDescription(data["共通"]["レアリティ"] +' '+ data["共通"]["属性"] +' '+ data["共通"]["職業"])
                     .addFields([
-                        { name: '攻撃力', value: data["ステータス"]["攻撃力"]["最大値"] ,inline: true},
-                        { name: '生命力', value: data["ステータス"]["生命力"]["最大値"] ,inline: true},
-                        { name: 'スピード', value: data["ステータス"]["スピード"]["最大値"] ,inline: true},
-                        { name: '防御力', value: data["ステータス"]["防御力"]["最大値"] ,inline: true},
-                        { name: 'クリティカル発生率', value: data["ステータス"]["クリティカル発生率"]["最大値"] ,inline: true},
-                        { name: 'クリティカルダメージ', value: data["ステータス"]["クリティカルダメージ"]["最大値"] ,inline: true},
-                        { name: '効果命中率', value: data["ステータス"]["効果命中率"]["最大値"] ,inline: true},
-                        { name: '効果低効率', value: data["ステータス"]["効果命中率DOWN"]["最大値"] ,inline: true},
-                        { name: '連携攻撃率', value: data["ステータス"]["連続攻撃発生率"]["最大値"] ,inline: true},
+                        { name: localizer.st_attack(), value: data["ステータス"]["攻撃力"]["最大値"] ,inline: true},
+                        { name: localizer.st_health(), value: data["ステータス"]["生命力"]["最大値"] ,inline: true},
+                        { name: localizer.st_speed(), value: data["ステータス"]["スピード"]["最大値"] ,inline: true},
+                        { name: localizer.st_defence(), value: data["ステータス"]["防御力"]["最大値"] ,inline: true},
+                        { name: localizer.st_crt_chance(), value: data["ステータス"]["クリティカル発生率"]["最大値"] ,inline: true},
+                        { name: localizer.st_crt_damage(), value: data["ステータス"]["クリティカルダメージ"]["最大値"] ,inline: true},
+                        { name: localizer.st_effect_hit(), value: data["ステータス"]["効果命中率"]["最大値"] ,inline: true},
+                        { name: localizer.st_effect_resist(), value: data["ステータス"]["効果命中率DOWN"]["最大値"] ,inline: true},
+                        { name: localizer.st_teameffort(), value: data["ステータス"]["連続攻撃発生率"]["最大値"] ,inline: true},
 
                         { name: data["スキル"][0]["スキル名"], value: skillDesc(data["スキル"][0])},
                         { name: data["スキル"][1]["スキル名"], value: skillDesc(data["スキル"][1])},
@@ -74,6 +79,8 @@ module.exports = async (parameter) => {
 
         parameter.discord.on("ep7-build", async (context, params) => {
             try {
+                const localizer = localizeManager["ja_jp"];
+
                 const heroNameParam = context.options.get("heroname");
                 const pagenoParam = context.options.get("pageno");
 
@@ -85,20 +92,20 @@ module.exports = async (parameter) => {
 
                 if(data.length == 0) {
                     logger("ep7-build cmd complete -- :notfound", {author : context.author, param  : [heroName, pageNo]});
-                    return heroName + 'のデータは存在しません';
+                    return localizer.build_nodfound(heroName);
                 }
                 const sliced = splitArray(data, 3);
                 const target = sliced[pageNo-1];
 
                 if(target === undefined || target === null) {
                     logger("ep7-build cmd complete -- :notpage", {author : context.author, param  : [heroName, pageNo]});
-                    return pageNo + 'ページ目の' + heroName + 'のデータは存在しません'; 
+                    return localizer.build_notpage(pageNo,heroName); 
                 }
 
                 const pageMax = sliced.length;
                 const enbded = target.map((e,i) => {
-                    const pageLabel = pageNo+'/'+pageMax+'ページ';
-                    const countLabel = (i+1) + '件目'
+                    const pageLabel = localizer.build_page_label(pageNo,pageMax);
+                    const countLabel = localizer.build_count_label(i+i);
                     return  context.embdedMessage().setTitle(heroName +' '+ countLabel +' '+ pageLabel).setImage(e);
                 });
 
@@ -112,6 +119,8 @@ module.exports = async (parameter) => {
 
         parameter.discord.on("ep7-score", async (context) => {
             try {
+                const localizer = localizeManager["ja_jp"];
+
                 const heroNameParam = context.options.get("heroname");
                 const imageParam = context.options.get("image");
 
@@ -133,10 +142,10 @@ module.exports = async (parameter) => {
 
                 const score = await ocrreader.callApi("score", [result, statusData]);
                 const enbded = context.embdedMessage()
-                    .setTitle("スコア: " + score.score);
+                    .setTitle(localizer.score_label("スコア")+": " + score.score);
 
                 const fields = score.resultData.map(entry => {
-                    return  { name: entry["key"], value: entry["value"] + " (score: " + entry["score"] + ")",inline: false};
+                    return  { name: ocalizer.score_label(entry["key"]), value: entry["value"] + " (score: " + entry["score"] + ")",inline: false};
                 });
                 enbded.addFields(fields).setThumbnail(imageParam.attachment.url);
                 
@@ -149,8 +158,10 @@ module.exports = async (parameter) => {
         });
 
 
-        parameter.discord.on("upload", async (context, params) => {
+        parameter.discord.on("ep7-upload", async (context, params) => {
             try {
+                const localizer = localizeManager["ja_jp"];
+
                 const imageParam = context.options.get("image");
                 const commentParam =  context.options.get("comment");
 
@@ -159,7 +170,7 @@ module.exports = async (parameter) => {
                 const comment = commentParam != null ? commentParam : "";
                 await context.deffer();
 
-                const tweetText = ["#ep7build #エピックセブン", 'post by : [' + context.guild + ']' + context.author].join("\r\n") + comment;
+                const tweetText = [localizer.upload_tweetText(), 'post by : [' + context.guild + ']' + context.author].join("\r\n") + comment;
                 const response = await parameter.lib.request(imageParam.attachment.url, {encoding: null});
                 const tweetResult = await parameter.twitter.tweet(tweetText, response);
 

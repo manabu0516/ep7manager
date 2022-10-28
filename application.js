@@ -249,7 +249,7 @@ module.exports = async (includes, config) => {
             discord : discordManager,
             twitter : twitterManager,
             logger  : (message, parameter) => {
-                const dateStr = formatDate(new Date(), "yyyy-MM-dd hh:mm:ss");
+                const dateStr = formatDate(new Date(), "yyyy-MM-dd HH:mm:ss");
                 const paramStr = JSON.stringify(parameter, null , "\t");
 
                 const fmtMessage = "[" + dateStr + "] [" + target + "] " + message + " :" + paramStr;
