@@ -30,7 +30,7 @@ const initializeDiscord = (token) => {
             const context = {
                 embdedMessage : embdedMessage,
                 author : interaction.member.displayName,
-                guild  : interaction.guild.id,
+                guild  : "",
                 options: interaction.options,
                 deffer : async () => await interaction.deferReply()
             };
