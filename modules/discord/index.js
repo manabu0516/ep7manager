@@ -145,7 +145,7 @@ module.exports = async (parameter) => {
                     .setTitle(localizer.score_label("スコア")+": " + score.score);
 
                 const fields = score.resultData.map(entry => {
-                    return  { name: ocalizer.score_label(entry["key"]), value: entry["value"] + " (score: " + entry["score"] + ")",inline: false};
+                    return  { name: localizer.score_label(entry["key"]), value: entry["value"] + " (score: " + entry["score"] + ")",inline: false};
                 });
                 enbded.addFields(fields).setThumbnail(imageParam.attachment.url);
                 

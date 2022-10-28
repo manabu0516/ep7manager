@@ -74,7 +74,7 @@ localize["ja_jp"] = (() => {
         tesseract_conf_lang : "jpn+eng",
         tesseract__whitelist: '力攻撃防御生命スピード効果命中抵抗クリティカルダメージ発生率0987654321%/',
     };
-});
+})();
 
 module.exports = async (parameter) => {
     const builder = parameter.instance();
