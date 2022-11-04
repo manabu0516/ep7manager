@@ -6,7 +6,10 @@ const run = async () => {
     if(key === undefined || key === null || key.trim() === "") {
         return;
     }
-    const data = await application.wikidata.callApi("load", [key.trim()]);
+    const data = await application.wikidata.callApi("load", [key.trim(), {
+        force : true
+    }]);
+
     console.log(JSON.stringify(data, null , "\t"));
 };
 
