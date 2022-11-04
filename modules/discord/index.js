@@ -105,7 +105,7 @@ module.exports = async (parameter) => {
                 const pageMax = sliced.length;
                 const enbded = target.map((e,i) => {
                     const pageLabel = localizer.build_page_label(pageNo,pageMax);
-                    const countLabel = localizer.build_count_label(i+i);
+                    const countLabel = localizer.build_count_label(i+1);
                     return  context.embdedMessage().setTitle(heroName +' '+ countLabel +' '+ pageLabel).setImage(e);
                 });
 
