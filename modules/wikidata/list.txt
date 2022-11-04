@@ -264,3 +264,4 @@
 ルア,https://game8.jp/epic-seven/484321
 神託のエレナ,https://game8.jp/epic-seven/484322
 自由騎士アロウェル,https://example.com/
+アルンカ,https://game8.jp/epic-seven/490810
