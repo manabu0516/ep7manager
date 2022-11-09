@@ -1,0 +1,614 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>EPIC SEVEN - JSON GENERATOR</title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-143765558-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-143765558-2');
+    </script>
+
+</head>
+
+<body>
+    <div class="navbar navbar-expand-lg fixed-top navbar-dark bg-info">
+        <div class="container">
+            <a href="./" class="navbar-brand">EPIC SEVEN - JSON GENERATO</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">英雄データ</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./build.html">装備データ</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container" style="padding-top: 60px;">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="form-group">
+                    <label for="hero-select">英雄選択</label>
+                    <input type="text" class="form-control" id="hero-select" autocomplete="on" list="herolist"
+                        placeholder="名前を入力...">
+                </div>
+                <datalist id="herolist">
+                </datalist>
+            </div>
+        </div>
+        <div class="row" id="content">
+        </div>
+    </div>
+
+    <footer class="container">
+        <hr />
+        <ul style="list-style: none;">
+            <li style="display: inline-block;margin-right: 10px;"><a
+                    href="https://maphe.github.io/e7-damage-calc/jp/">エピックセブン ダメージ 計算機</a></li>
+            <li style="display: inline-block;"><a href="https://game8.jp/epic-seven">エピックセブン攻略Wiki｜ゲームエイト</a></li>
+        </ul>
+        <p>COPYRIGHT &#169; <a href="https://github.com/manabu0516/ep7manager">fmnb0516</a> ALL RIGHTS
+            RESERVED. </p>
+    </footer>
+
+    <script type="text/x-handlebars" id="template">
+        {{#each images}}
+        <div class="col-lg-12" style="text-align: center; padding: 20px;">
+            <img src="./tweetsearch/{{this}}" alt="" class="img-thumbnail" style="width: 100%;">
+        </div>
+        {{/each}}
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.3/handlebars.min.js"
+        integrity="sha256-/PJBs6QWvXijOFIX04kZpLb6ZtSQckdOIavLWKKOgXU=" crossorigin="anonymous"></script>
+    
+    <script>
+        window.ep7manager = {};
+
+        function  __ep7manager_load_hero(collection) {
+            window.ep7manager.heros = collection;    
+        };
+    </script>
+
+    <script>
+        $(() => {
+            const entries = {};
+            const data = $("#contentlist").html().split("\n").map(e => e.trim()).filter(e => e !== '');
+
+            data.forEach(e => {
+                const idx = e.indexOf('/');
+                const key = e.substring(0,idx);
+                const file = e.substring(idx+1);
+
+                if(entries[key] === undefined) {
+                    entries[key] = [];
+                }
+                entries[key].push(e);
+            });
+
+
+            Object.keys(entries).forEach((e) => {
+                $("#herolist").append($("<option>").attr("value", e));
+            });
+            
+            $("#hero-select").change((e) => {
+                location.hash = $(e.target).val();
+                $("#hero-select").blur();
+            });
+
+            window.addEventListener('hashchange', () => {
+                const id = decodeURI((location.hash.startsWith("#") ? location.hash.substring(1) : location.hash).trim());
+                loadPage(id);
+            });
+
+            const template = Handlebars.compile($("#template").html());
+
+            const loadPage = (id) => {
+                const images = entries[id];
+                if (images === undefined) {
+                    $("#content").empty();
+                    return;
+                }
+
+                $("#content").html(template({
+                    images : images,
+                    name : id
+                }));
+            };
+
+            const id = decodeURI((location.hash.startsWith("#") ? location.hash.substring(1) : location.hash).trim());
+            $("#hero-select").val(id);
+            loadPage(id);
+        });
+    </script>
+
+<template id="contentlist">
+    アラミンタ/147c240f2190488cbda5478e9715b1f7.jpg
+    アリア/3f4a959e6b744919834306d6bef98e58.jpg
+    アリア/77eb111a36c04404a22919dd3b11b36d.jpg
+    アリア/81b410af9f5c4e2d8313f2447ceff2c8.jpg
+    アリア/92334aa11244451d9876a5fc168fe082.jpg
+    アリア/cf5b5994fc4345ffbd6709b43499701d.jpg
+    アリア/FgjvRV7akAAmGXT.jpg
+    アルンカ/FgndR14aMAIRh2J.jpg
+    アルンカ/FgnG9CRaYAADWYl.jpg
+    アルンカ/FgnK3z2VIAADGOP.jpg
+    アルンカ/FgnMR-AUYAAs6KF.jpg
+    アルンカ/FgnTtrzVUAA8Lw5.jpg
+    アルンカ/Fgo1csCagAAM7zn.jpg
+    アルンカ/Fgo6c8paEAAvSvB.jpg
+    アルンカ/FgoiM5SaMAEN4V_.jpg
+    アルンカ/FgpaqdmakAAFmcT.jpg
+    アルンカ/FgpCjJoUcAIY_mL.jpg
+    アルンカ/FgpJrdvUUAAJZ09.jpg
+    アルンカ/FgpWhSYaUAAweRz.jpg
+    アルンカ/Fgq4aQQUoAAqcXy.jpg
+    アルンカ/FgrmDMlacAY-JCL.jpg
+    アルンカ/FgzI3yaaEAEKPDB.jpg
+    アレンシア/1a0a4c2db5b145f686fe984833234b83.jpg
+    アレンシア/1d4116d4cd034233b45d2b3d127ae029.jpg
+    アレンシア/8fb3a74e2fa84d90b1b3188430ba0614.jpg
+    アレンシア/995739b43b584f0190978614ae92317c.jpg
+    アレンシア/9c0e17557716476f88d34aba12694339.jpg
+    アレンシア/ccc6d720af9b4137afca5c126fc76fc8.jpg
+    アレンシア/fd64458aa92d4be187ad1dea52b2a639.jpg
+    アレンシア/FeMNj3VacAA0p8m.jpg
+    アレンシア/FeoIox3aMAApB3Y.jpg
+    アレンシア/Ff9orldaEAAyVmw.jpg
+    アレンシア/FfPd9daaUAE6YNP.jpg
+    アレンシア/FfRjsVAaEAQZdgV.jpg
+    アレンシア/FgiKZOIakAAE1BZ.jpg
+    アレンシア/FgoMpIlacAA1aBT.jpg
+    アーミン/07452e8d90524680a885f1967716111b.jpg
+    アーミン/53ad158d72044edc9fc9b2f21350c0e2.jpg
+    アーミン/b3adb5f99aa847ac8fc4d3b88683ae87.jpg
+    アーミン/FfFpfXfVIAA-EYq.jpg
+    イリーナブ/Feh67DsaEAA9thp.jpg
+    イートン/e26af3e343e84ae1a6f5b74c7abf883c.jpg
+    エダ/03ae57eba4a7441db7fbce4f9787f230.jpg
+    エダ/03e42b50372b47d8b7008204a56a3c59.jpg
+    エダ/29ee660f47534c36bbea017cf018ac46.jpg
+    エダ/771eaa9c7fcf484a89b3835caca42f9f.jpg
+    エダ/b40832ddbaa64d6ab00cae0dad558cac.jpg
+    エダ/df75a9c5a2064b5baa1992a20ae8c4e2.jpg
+    エダ/Fe3ZXPuVUAEpM0O.jpg
+    エダ/FfFosUFUAAAXNVo.jpg
+    エドワード・エルリック/1d18218e112145f2910e049f6719643e.jpg
+    エドワード・エルリック/277db14560db458f8226340e916f00c5.jpg
+    エドワード・エルリック/63cf7f6a6ee74e65ad20b32ba2b28a95.jpg
+    エドワード・エルリック/6fa1a0dff6ec47b88523d9da7136bb8d.jpg
+    エドワード・エルリック/8d8d2b6e931448029f314b73b6190120.jpg
+    エドワード・エルリック/c575635831fa476ca8f71ea605a30c01.jpg
+    エドワード・エルリック/FeF3KfFaAAAXNIQ.jpg
+    エドワード・エルリック/FfFqtuMVUAASYf3.jpg
+    エドワード・エルリック/FgJQkw6VEAAcRTN.jpg
+    エミリア/242361d565d14bf08cc17b5db9ebe2f4.jpg
+    エミリア/88dcf7f918d046fd84aa1e5cc1ab5335.jpg
+    エミリア/911246c205fc4ab8ae83277aee2dfaa0.jpg
+    エミリア/916c86aa2013445cb2fc15ed5062529e.jpg
+    エミリア/c01cf9e1be6540e99ad14186d78f99e5.jpg
+    エルフェルト/7d86b507e1914c249b076deb8a000b4b.jpg
+    エルフェルト/a179f003b9cb47348239852ae5ac2f2e.jpg
+    エレナ/14d9db08a5444f9a85400f6475b58701.jpg
+    エレナ/2f73153fcd5a440bbbac29b41a8e90dd.jpg
+    エレナ/32a8adea617947d5b025b931f9318b01.jpg
+    エレナ/9da4e0866b4741dc89fec07545c14436.jpg
+    エレナ/be4250ddc03c4f4ca5b515b586541a0a.jpg
+    エレナ/f9d8a3a00f5145be91ae4f8e7024c0ed.jpg
+    エレナ/FfFo-KRUYAAuz_2.jpg
+    オペレーターセクレット/79fd910102ea414098dba5edd3b38259.jpg
+    オペレーターセクレット/a5332e0ed4354554a911beaa8ba16132.jpg
+    オペレーターセクレット/FfFrLguVEAE6LvJ.jpg
+    カイロン/a402e867a0574d6ba7d314250ad8eb7e.jpg
+    カイロン/aab9e2e20c0249b2a34a752be47a9360.jpg
+    カイロン/c349fb2cd29d4c34a21ac67adeaca997.jpg
+    カイロン/d3f0f6a1a2f245f6baa97813f57b1015.jpg
+    カイロン/da2503f7ec314016ba618c08ff4073f9.jpg
+    カイロン/Feh9XnYaEAAv9MI.jpg
+    カイロン/FeHYilUUAAA_6pV.jpg
+    カイロン/FeJIIl_VEAAhipI.jpg
+    カイロン/FentZiVaEAAnPd1.jpg
+    カイロン/FeTua71UoAANGTm.jpg
+    カイロン/FeYWy53VQAALQqb.jpg
+    カイロン/FfFo-KSUUAAeF4N.jpg
+    カイロン/Fg4OJISUUAACFBB.jpg
+    カーウェリック/7e1886269ec54de3ae47cdb0923ae227.jpg
+    カーウェリック/Fem8LB2acAEKSQe.jpg
+    カーウェリック/FewfWLoVIAEROq8.jpg
+    カーウェリック/FfFosULUAAAvYRz.jpg
+    カーウェリック/Fg9_DaIUUAAwv6b.jpg
+    キセ/8e52f602276043c28e6739d02fff6a1e.jpg
+    キセ/fc8c3e9edcf6451981b10a3bbd063b41.jpg
+    クラウ/24723a68bb07453ab23dd1e5863c0553.jpg
+    クラウ/50bf3058d0704d558caf8f7655e8508c.jpg
+    クラウ/a72b34c4e7104fb19b1168cba3069c05.jpg
+    ザハーク/6d47701c99044a05bec3befd96d0fbdb.jpg
+    ザハーク/d7be4c701fb349bfb304c04f6d3a4614.jpg
+    ザハーク/FfB_JzeakAciQtd.jpg
+    ザハーク/Fg5c6WrUYAEXbtH.jpg
+    ザハーク/FgnfAb7VsAMRzYz.jpg
+    ザハーク/Fgx8rBdaUAEmtyq.jpg
+    シェナ/0b9121ff6210416db0e8a9a5a1f3fcbb.jpg
+    シェナ/62035349269946e3af5e029a0a3c8ff1.jpg
+    シェナ/7e297493b81c45879323227bcd97a0e7.jpg
+    シェナ/ad327d8219b941f18160b5598e25baf5.jpg
+    シェナ/e9d473dba7df43b999d5ac48bdcc132e.jpg
+    シェナ/Ffdko0fVEAAgzdY.jpg
+    シェナ/FgpeJ50VsAEBat5.jpg
+    シダー/28fd90603f3b41e4a99e738fe890b841.jpg
+    シダー/bfb5809d24a345e097a966673a6726b2.jpg
+    シダー/f08b16cf152146ce8c6d5902529e89c8.jpg
+    シダー/fbfab7738d354aecb5a356393dd56215.jpg
+    シダー/feae35fdf65f4bc399a33cc04a31d35a.jpg
+    シダー/FfFod0rVUAAAXQn.jpg
+    シャルロッテ/4c0fc8414bef46adb5a80686df3706b0.jpg
+    シャルロッテ/d5cc9b4d17914739940a4d68cd945e99.jpg
+    シャルン/74479e287b904c6abc1ed50a52c0bb78.jpg
+    シャルン/923a9ef7c68c441f9efdd0ba8164aed1.jpg
+    シャルン/FeI5B22aEAInPU6.jpg
+    シャルン/FeN5G09VIAAUwrR.jpg
+    シャルン/FeV4_V7aMAEIQ7g.jpg
+    シュナ/Ffdko0fVEAAgzdY.jpg
+    シュー/686ae21d4efe48be88edd6c3d9565699.jpg
+    シュー/765132b496fa4951bd78f73d2ddc675b.jpg
+    シュー/ac5814ce2ad848a9b7549cc268f0d516.jpg
+    シュー/f521b29c4aa04791a62816e1c0c7edbc.jpg
+    シュー/FehKFFWUcAAkbdG.jpg
+    ストラゼス/10d6416fad7f4d5d982288e430311790.jpg
+    ストラゼス/22f0afb9ea654365934621db182bb6dd.jpg
+    ストラゼス/5e2e77e9166a4eed9b0a7b2adb0775b6.jpg
+    ストラゼス/88edabbf0ab9442782297648034c4c7a.jpg
+    ストラゼス/9202f6c291594b7cb4741dabf929497f.jpg
+    ストラゼス/956d762ed7df4874bcd36ab32575535c.jpg
+    ストラゼス/db03341f145244a8b8a68e918bbc3424.jpg
+    ストラゼス/dfe5124825af44c1bf7f073ef00cf1f8.jpg
+    ストラゼス/e7a0dd3e49c54bb98f391e455db228fd.jpg
+    ストラゼス/FfFrLguVQAAYIU1.jpg
+    セズ/FeBhcsSVEAAk7Ow.jpg
+    セリン/4cc96be8ee4f47dda610f883136a4763.jpg
+    セリン/f80b7885b1c542e4a9c28bc6787362dd.jpg
+    セリン/Fehc7h1VQAELFc4.jpg
+    セリン/FfFp7zoUAAAIU4R.jpg
+    セリン/FfLJrvwVQAAGNeH.jpg
+    セリン/FfY_Pn9aUAET6u5.jpg
+    チェルミア/a233e07eb43947f98ae86514661103c5.jpg
+    チャールズ/f677a86b5a53476eb41116029684b893.jpg
+    ディエネ/1f6aa9455d4c4ffa8ee5c574babb574b.jpg
+    ディエネ/21b33673d9da409e84befdf282bf2302.jpg
+    ディエネ/2f4d060da371499a9ac19ae95cb2a7d3.jpg
+    ディエネ/58cf961de3504120ae82f2b52fd21517.jpg
+    ディエネ/8338387caf0f48d1bdc0bf241acb7452.jpg
+    ディエネ/8362964dfba54e8685d2e354a5d4b05b.jpg
+    ディエネ/af84c29baec14aaaaca8ead6a78f407b.jpg
+    ディエネ/d2b826f14ef14251a2491cc80ad0ca27.jpg
+    ディエネ/Ff0bq5yaYAEsxRP.jpg
+    ディエネ/Fgy5T8YUAAA9Fp6.jpg
+    ディズィー/a6418bafeeb54aa0b43001113402515e.jpg
+    デザイナーリリベット/0115bffcd1e440f0b6aa1988588fa62b.jpg
+    デザイナーリリベット/4a1c176d65104693983f415e13bffbfa.jpg
+    デザイナーリリベット/73a97b212a1040d1837a904eee19cb56.jpg
+    デザイナーリリベット/9ce548b46d6f44488c2d593dc25c639d.jpg
+    デザイナーリリベット/b6cc2b048e7f411ca708042a4f55447c.jpg
+    デザイナーリリベット/dac1d51fad4f45028fc4fdb6a853b507.jpg
+    デザイナーリリベット/FfFpfXdUAAYhqwe.jpg
+    デスティーナ/8da39cddde4f485c936e098f8e2b4634.jpg
+    デスティーナ/d9a674fbce0d4b109bdfe2c085de1b45.jpg
+    デスティーナ/FguaGDgUUAEOUEN.jpg
+    バカンスのユピネ/ae0ac0a3de7e48199e016b185aac3c76.jpg
+    バカンスのユピネ/e0962e6ac1c8479fafc3d7fe76fff28e.jpg
+    バッドキャットアーミン/FgF9hG9akAAHGer.jpg
+    フィナス/Ff_VoCPVEAAo4U9.jpg
+    フィナス/FgFJxXhVQAI_vH2.jpg
+    フィナス/FgJXC_MUYAE9Uzq.jpg
+    フィナス/FgKK3T0UAAARz91.jpg
+    プラン/40e2923ba5194710a84d545698c16a99.jpg
+    ペイラ/25d7ae7d4f5b4504a2fecddfbd36d056.jpg
+    ペイラ/2a456e3b8f474cf6a7c8acd40cc7bac3.jpg
+    ペイラ/97b41f51bdf2408e94d43604a874614f.jpg
+    ペイラ/b725dd3c926f487c8e2afdf7a2efafed.jpg
+    ペイラ/Fg9KtUMacAIrAf8.jpg
+    ポリティス/0ae3ad393fca4f4fb3e179270ae99508.jpg
+    ポリティス/10eda03d68e94c64955bf2fc726c8d03.jpg
+    ポリティス/1e1c66f0a8694814982352bd332fa2f0.jpg
+    ポリティス/a5edbadd64dc477d8bb682c0f3b7d7aa.jpg
+    ポリティス/FfFo-KYUoAAvqnt.jpg
+    ミリム/20b079f29c1844359895dd0edf86762a.jpg
+    ミリム/739db2e8dd764f08a8749fddf6b8ea1e.jpg
+    ミリム/db3913ae561245289318cc3f417e9215.jpg
+    ミリム/ee319be1885c43fa8c5bab336160c8ea.jpg
+    ミリム/Fe4i5ysUcAAcGNZ.jpg
+    ミリム/FfuE9DHVEAEUTBe.jpg
+    メイド・クロエ/0b1c690a9c5b49f58ba054d7cf75630f.jpg
+    メイド・クロエ/5a552ed0308e4962901bff87ae724e2b.jpg
+    メイド・クロエ/FfLKwUrUcAEqmPF.jpg
+    メリッサ/33955449bb6a4ce4ad18342a29247b99.jpg
+    メルセデス/c97a52f981a14c228f5b13668264feaf.jpg
+    メルセデス/dd9e39c1fbb84221bce2c020e8edbade.jpg
+    メルセデス/FgmnXKJVsAEsyhW.jpg
+    メルヘンテネブレア/844c8b30e8a041aabdaff2c35a426086.jpg
+    メルヘンテネブレア/8709ef06165042ddb73c702cd44e780d.jpg
+    ユピネ /FfuZIVmUYAEVWh-.jpg
+    ユルハ/2986363aa48e47a6a53ed044ef11ba55.jpg
+    ユルハ/3aee6d09855f43f5a855953089bbfe46.jpg
+    ユルハ/706e381b83d94f1496f050e32c1020a8.jpg
+    ユルハ/Fgn55ZqacAAbOUU.jpg
+    ラストライダークラウ/03a9da58e7fe4f158774482e54f68ecf.jpg
+    ラストライダークラウ/63661e57887343d0a729732037ff574b.jpg
+    ラン/159d810dbf0a42b4a5414fa72c94d4c4.jpg
+    ラン/17105741be374145a45fc2d43013f617.jpg
+    ラン/6ce2f86c0c174e49a32fe6d5c77add7a.jpg
+    ラン/9136c3255e604865993892a8b32bcbb7.jpg
+    ラン/a50952041153408faa021fbbbd02b54e.jpg
+    ラン/ac62fcb2f24240a79e58ae7c54a1002a.jpg
+    ラン/FeHK2IeUAAA0q8R.jpg
+    ラン/FfHulWFUAAAoPZo.jpg
+    ラン/FfwmkWIUUAAZsoR.jpg
+    ランディ/24b6b901205c47369e190ba896a01ba7.jpg
+    ランディ/4031c1e4f63b434ca11e0c0a7f167dd8.jpg
+    ランディ/6998a710b5664e18af54553cfd2d0c66.jpg
+    ランディ/bc80150fcc5d4b37945db9aee1d8ef7f.jpg
+    ランディ/Fg30QwEakAEEufg.jpg
+    ラヴィ/272847ade6174d3e97f7162e3eb70066.jpg
+    ラヴィ/44f8920711714b0d888ada8af346fb77.jpg
+    ラヴィ/9578dcd36e2d46df97748d69b9a25467.jpg
+    ラヴィ/FePWVsGUYAE05jp.jpg
+    ラヴィ/FfA4PrZUoAQd-ZV.jpg
+    リムル/11b960f5820645089d378ea7943d55e9.jpg
+    リムル/85d14f150627486c87e99bf03bdcaa10.jpg
+    リムル/a26a4bc5f46d46aeb09d9a9e5d6aeb35.jpg
+    リムル/Fg4583RaYAA8OBK.jpg
+    リリベット/FgDP3pKUoAEQFh0.jpg
+    ルア/Fea2l2WUoAAfbzT.jpg
+    ルア/FeceVSvUcAAwnvC.jpg
+    ルア/FedsiKpVsAAWvDa.jpg
+    ルア/FeeEqZqVsAIoZu1.jpg
+    ルア/FeZPPSiVUAAtSQ7.jpg
+    ルア/Ffb2QGkaUAIQArt.jpg
+    ルエル/64fd8b3b0eab4b8c86926d82af2f59cd.jpg
+    ルエル/9a00877fe4a941cda3e28dd1258b5077.jpg
+    ルエル/cf4d1c8333e14878a91e1ef6d6fddf7d.jpg
+    ルエル/FfFronKUoAAk07o.jpg
+    ルナ/430e0b6a5629473c95f1a06e24170262.jpg
+    ルナ/8bc16ccf1e164266a106ca634b604af4.jpg
+    ルナ/FgGmqfiUcAETpsq.jpg
+    レム/14e6aa66fc754412ba76b1ceb9afbb34.jpg
+    レム/ccb3e50bdb0246edbb9fdd8aa1ae9171.jpg
+    レム/FfFqtuLUcAAtGYg.jpg
+    ロイ・マスタング/35ab6f861e3b4871b7557e01ee218d42.jpg
+    ロイ・マスタング/7e272d9422924dfb83e2c27a2287b0c3.jpg
+    ロイ・マスタング/dea7b00af8aa439891051e0c3b17f4ae.jpg
+    ロイ・マスタング/FfLJI5VUYAEYNj4.jpg
+    ロエンナ/ed2e254f453c45ac946b6d22da8f8e5d.jpg
+    ロエンナ/f585b0899b8e4d2487d7c6fe223a0fb1.jpg
+    ロエンナ/FfFrLgtVQAEkpsT.jpg
+    ヴィオレタ/2564fc03e5cc418d9c73f6a10ab98ec5.jpg
+    ヴィオレタ/a4f6cf2c3736406fbe8d7a159d575b58.jpg
+    ヴィオレタ/FeR6TFuUoAAKJCD.jpg
+    ヴィオレタ/FfFqtuSUYAA-FgH.jpg
+    ヴィルドレッド/08afe756c5c24f0b8e924aeddc5b3db1.jpg
+    ヴィルドレッド/16caf96f08bf4efcad278ec3be7c3aa2.jpg
+    ヴィルドレッド/a63adec6b7744f64b39309f3408e6edc.jpg
+    ヴィルドレッド/b5be8f7f0eee4f59a04f22aef93e06e2.jpg
+    ヴィルドレッド/e28325fe16514f4fa61da202147917f3.jpg
+    ヴェリアン/5e0b43d2ab1c488196e1981730883aa3.jpg
+    ヴェリアン/FfFpfXeVsAAw-Ag.jpg
+    不信者リディカ/6affe6a4e53b4421b71940fea114734d.jpg
+    不信者リディカ/FguqF_TaMAIsugj.jpg
+    不敵のゼラト/50bd2fb142134c2b8b5f68eb032bcbba.jpg
+    不敵のゼラト/9649973d75a84a6a9563cf086fa98454.jpg
+    光の天使アンジェリカ/9ace6097bffc41c9af8e566f9f418d40.jpg
+    光の天使アンジェリカ/a43b5071c2ec44999a0efe23d9931e30.jpg
+    光の天使アンジェリカ/FfLK6oXVsAEkh73.jpg
+    冒険者ラス/3e54a3d441c54726a792aa30719774ef.jpg
+    冒険者ラス/6372fae7afef4f1d812b26040d6dfdc5.jpg
+    冒険者ラス/8fcdeade257645cbb0f343b9e7d7c5b1.jpg
+    冒険者ラス/ad0e41aa33bd4fe3b2140bd2337270c8.jpg
+    冒険者ラス/c18a2385bc4d4b649ec47244c577cf79.jpg
+    冒険者ラス/ef4446d27d6d43c49a1fc36c5da7acde.jpg
+    冒険者ラス/f43ecd6f464648cdbd9a87ce2643e996.jpg
+    冒険者ラス/ff5276d7075a48cda507944f5aba7c01.jpg
+    勇将ファジス/FgKZnqZVsAEIPNM.jpg
+    南国のイセリア/1086e51fcdb44a0cbd0acf48b2a1edf6.jpg
+    南国のイセリア/33ff8a26d0b44bb2896885f984070132.jpg
+    南国のイセリア/eb03986a109a43d7b100bf458bbd6d09.jpg
+    司令官パヴェル/948c5fc10b5d4ff592576a858fa200a0.jpg
+    司令官パヴェル/Fet9-3xaEAgrXOW.jpg
+    司令官パヴェル/FfLvJvbVUAAwVyS.jpg
+    執行人ヴィルドレッド/12171fdb550a4592a129f98c8d94f0be.jpg
+    執行人ヴィルドレッド/30cc589549b84963a1ecaced205200e1.jpg
+    執行人ヴィルドレッド/486a7636e91f4c6c9b04b79311633fe5.jpg
+    執行人ヴィルドレッド/49334d459e454e03be5ff2eaa97b5372.jpg
+    執行人ヴィルドレッド/7e66263f4fe8475d8e8c357404dc297e.jpg
+    執行人ヴィルドレッド/b354a1129afd42a5b521b0c89b9995f6.jpg
+    執行人ヴィルドレッド/ee0eafab99a14163a98d1e2769888cd8.jpg
+    執行人ヴィルドレッド/FfFp7zrVUAATwCg.jpg
+    執行人ヴィルドレッド/Fg4PNaYacAIfN6E.jpg
+    執行人ヴィルドレッド/FhCTgzKaUAAIXpr.jpg
+    奈落のセシリア/0140f9b823074ba9b9d8b0ae0b03c312.jpg
+    奈落のセシリア/0d16b4068cda49f6ade561b6dafcd59f.jpg
+    奈落のセシリア/97e56e1051b74a7eb58e65345bfbc441.jpg
+    奈落のセシリア/cbe8d1a21517422a9db3a767f3a16ddb.jpg
+    奈落のセシリア/eca96ce7519345b1a2af1ecdf539590a.jpg
+    奈落のセシリア/FeZZPfdUYAE2qrQ.jpg
+    審判者キセ/95dbec1809c3496fbbee53d72747a825.jpg
+    幻影のテネブレア/57560ce6596d49b291e2ff8de047117c.jpg
+    幻影のテネブレア/73257357bad34d7d9fd641fac3ec2135.jpg
+    幻影のテネブレア/73f977bb32d744b98963e3c664f39e5f.jpg
+    幻影のテネブレア/80fb4e0cb8fb48a9a2702c5087b0c394.jpg
+    幻影のテネブレア/d33b69806c684be7b911a94872334783.jpg
+    挑戦者ドミニエル/FfFosUMVEAAu4tx.jpg
+    支配者リリアス/32102488dffa4b3688cc4e52a747cf90.jpg
+    支配者リリアス/f6ddee1060ca45f9ac58a8ef4eb689a8.jpg
+    支配者リリアス/f965bb6f002846119fc59469cb129b66.jpg
+    放浪勇者レオ/692d5d4cd6cd45c88745e220fbed44a5.jpg
+    暗殺者シダー/7c5b0ff730e24209950c7a9f7c03c485.jpg
+    最強モデルルルカ/FfBUR8HUcAArSDp.jpg
+    最強モデルルルカ/FfEzXehaUAAlyaA.jpg
+    最強モデルルルカ/FgpFinzaAAY7ziP.jpg
+    梅喧/a93e9e9acedb43f196561ed91c8cf525.jpg
+    梅喧/bc463755aaac4068ab2174e1ebb701d6.jpg
+    森の賢者ヴィヴィアン/0c2a042d31324c0bb2a8bab8c4dc994f.jpg
+    森の賢者ヴィヴィアン/9f43128c0ab24212b0ad5291d00cb453.jpg
+    森の賢者ヴィヴィアン/c9564d43328042db84da82824e72be83.jpg
+    森の賢者ヴィヴィアン/e46bf03f301a40bbbe9afed0fe4f4e40.jpg
+    森の賢者ヴィヴィアン/e497ddd944064bbb924e5b7699d9b3a6.jpg
+    森の賢者ヴィヴィアン/FfKU5aAVsAA2Dbv.jpg
+    残影のヴィオレタ/21e697e883ef48f79d134f2292e78ec6.jpg
+    残影のヴィオレタ/44729157db6d48869b1679f0c00345d8.jpg
+    残影のヴィオレタ/757e6c58580d4f46b3badb76c7413c55.jpg
+    残影のヴィオレタ/781111e24f6f499899e803e363a1a463.jpg
+    残影のヴィオレタ/86edd7bff09c46558c1820748df74639.jpg
+    残影のヴィオレタ/aaf217fdf72c4cd0aafa2b3b61ac7097.jpg
+    残影のヴィオレタ/FgKGZCgaMAEaAvy.jpg
+    残影のヴィオレタ/Fgms0_SUcAAoJ3q.jpg
+    法学者ドリス/34eaa35b8b674ff9bc0f8b8453bd7b9f.jpg
+    流浪者シルク/10ff8ee0c707463195326b83f5b8757c.jpg
+    流浪者シルク/494104df9c464f859ed4b8b813a55e43.jpg
+    海賊船長プラン/FfFEDEwUcAclHOq.jpg
+    海賊船長プラン/FfTZPZMUoAApU5P.jpg
+    海賊船長プラン/FgC0asHUAAA3n7W.jpg
+    海辺のヴェローナ(SSB)/8bdf9e590c7f4d0aadbbd2362eb366f0.jpg
+    海辺のヴェローナ(SSB)/b3eddac3224944f3881eeb4863d39edd.jpg
+    海辺のヴェローナ(SSB)/FfFronJUcAEFVp0.jpg
+    灰森のイセリア/b53d76d2df074af3bc967b32c2c98e3d.jpg
+    灰森のイセリア/FfFrLg3UoAAeZL7.jpg
+    無法者クロゼ/3bc4765d99f74b2ca87349b09643edb6.jpg
+    無法者クロゼ/db87ed983a9648b18d4542140e60ae1a.jpg
+    無法者クロゼ/f4aead4d601b4bfaa70c3d7609107385.jpg
+    焼尽のディンゴ/30325601b92940749f47223cbce6356f.jpg
+    狂炎のカワズ/5cae43d4b5fc40c1a0492dc06ec0dce1.jpg
+    狂炎のカワズ/FfFp7zsVsAEohJI.jpg
+    獅子王チェルミア/38baf91248e54c52b9227231367b4e80.jpg
+    獅子王チェルミア/a639756b725840378fcd8088fe85e30e.jpg
+    獅子王チェルミア/fc6383bcc68843148d634ad38c681784.jpg
+    獅子王チェルミア/FfLIuhMUYAAerJi.jpg
+    監視者シュリ/5c561c0650ee4c439b59b333ca4a41ff.jpg
+    監視者シュリ/c4485a14ebf54cb1997cd3e8e03d73de.jpg
+    監視者シュリ/d1a03b5574684196875715285816e33e.jpg
+    監視者シュリ/f384c72e4e1841ef98c6a21d4151a749.jpg
+    監視者シュリ/FfFosUGUoAI8ExC.jpg
+    砂漠の宝石バサール/0e9c7ff70ceb492286342768f6cc57e7.jpg
+    砂漠の宝石バサール/1776a31df42b440d8c40eb52f0b67864.jpg
+    砂漠の宝石バサール/1d0e779081b14bf6a3edce8f992e2169.jpg
+    砂漠の宝石バサール/4372f341cd2a44a89676235e8719f49b.jpg
+    砂漠の宝石バサール/67a06612fe8947e79c4413169f07d5d2.jpg
+    砂漠の宝石バサール/851e750a385943e898c11ede5816d4ca.jpg
+    砂漠の宝石バサール/a92074ea43984e58b7a9905166880da5.jpg
+    砂漠の宝石バサール/eb7e578f7d614878ad141f50ae416f57.jpg
+    砂漠の宝石バサール/FfZ9mhoaYAEIako.jpg
+    研究者キャロット/6ab05af86a054575a224bea6598ad9c6.jpg
+    研究者キャロット/FfkVBxlacAEAFnj.jpg
+    神託のエレナ/FfRK74pVsAAjamK.jpg
+    神託のエレナ/FfUtNvMVUAE2qB3.jpg
+    紅焔のアーミン/33d0e6474caf4b918e0444c99642e029.jpg
+    終結者チャールズ/4693121557d54af4a1bfd269538642a2.jpg
+    終結者チャールズ/52d341aa71614c7e9dcad8fcd11744e5.jpg
+    終結者チャールズ/a01a5907eccb4289971e6584638a814b.jpg
+    終結者チャールズ/a28ac40deb994cc9b3b4dbac68c5487e.jpg
+    自由騎士アロウェル/Fe81dGyVEAEqwtk.jpg
+    自由騎士アロウェル/Fe9UsbEacAAvwG-.jpg
+    自由騎士アロウェル/FfASgggaUAMDsp2.jpg
+    自由騎士アロウェル/FfB9DhqUoAIRX2r.jpg
+    自由騎士アロウェル/FfBZd-qaUAAES1_.jpg
+    自由騎士アロウェル/Ffhj0JVaUAEhmWE.jpg
+    自由騎士アロウェル/FfHPmFDakAAuNgg.jpg
+    自由騎士アロウェル/FgkGGQJUcAAnglx.jpg
+    若き女王シャルロッテ/2ad595daf9bd48339a477b225f7737d7.jpg
+    若き女王シャルロッテ/56f92fe2c29445e899f9e7dadc13778f.jpg
+    若き女王シャルロッテ/881076d70e0d488b89720e51e50537cb.jpg
+    若き女王シャルロッテ/c95dc7e0b9d34eb6a143a6e6cafbb4c4.jpg
+    若き女王シャルロッテ/FeJf5WNaAAI-N8n.jpg
+    若き女王シャルロッテ/Ff0L3NCacAAikUo.jpg
+    若き女王シャルロッテ/Fgjh7BsacAAvceO.jpg
+    血剣のカリン/c4f5a6a2bdc448cc9128ca7c0b770ec7.jpg
+    血剣のカリン/FeotDklakAEbDuu.jpg
+    血剣のカリン/FepSw1mVUAAbc43.jpg
+    血剣のカリン/FfFo-KSVEAAVdTW.jpg
+    覇者ケン/FfFronKVQAIkHnJ.jpg
+    調整者カーウェリック/62ea5121ad4d41e8be8cdf4f10351d1b.jpg
+    調整者カーウェリック/756bc82c1f464c98852d3ff6c2efa40a.jpg
+    調整者カーウェリック/c57282faa96a43bc9ed6f667a15cdc3a.jpg
+    調整者カーウェリック/d897afaff5ee4c4c9715b59b89d8084e.jpg
+    調整者カーウェリック/FgpLnleUAAAMnSQ.jpg
+    赤月の貴族ヘイスト/3013c1b1082e4a9fb6aa3cfde6805c06.jpg
+    赤月の貴族ヘイスト/aa7bc196b3db4ed8903870044d299368.jpg
+    野心家タイウィン/8d5c11a120914285bb46d2c2dcba885d.jpg
+    野心家タイウィン/bb9434c5a95c4c60b39bd5ec9a48b0f9.jpg
+    野心家タイウィン/c6cb504a47a345508373aaa67d2ead11.jpg
+    野心家タイウィン/e35894b77edd42b596f5ae033fcf697a.jpg
+    雪国のソリタリア/39a123de7cfe4107a239661e1346ef46.jpg
+    雪国のソリタリア/60e3d1b8e2a84c2f950f3d81712f408a.jpg
+    雪国のソリタリア/668d272d0d584a22bfd7925a45707762.jpg
+    雪国のソリタリア/eeb8be0dffbb4ed88745929b0f16c05d.jpg
+    雪国のソリタリア/f639b79503a74371af8f7504dab233d0.jpg
+    霊眼のセリン/2882f0b2333b4b37a373b5de096b6446.jpg
+    霊眼のセリン/3ebdf9eb2c4e4ee8a04ab249f96f7a07.jpg
+    霊眼のセリン/68124e0400dc472384aec4c51cd560e1.jpg
+    霊眼のセリン/70fe329281aa4643ad6fd8edb67ffc1f.jpg
+    霊眼のセリン/FfGPmZ9aEAA2_KR.jpg
+    霊眼のセリン/Fg1Hsm4aEAAvkei.jpg
+    風雲のスーリン/f6bfda14f3ba47fdb4fcca065e54be0e.jpg
+    風雲のスーリン/FfFpfXdVQAArq1e.jpg
+    魔神の影/82d8651170304c9ba28e4bf17eb51081.jpg
+    魔神の影/a5f1c742212d4685a78a65e8b439afa0.jpg
+    魔神の影/eb84a7d0359c498481ed4c0fb176a99e.jpg
+    魔神の影/FfRaoLKagAABknf.jpg
+    魔神の影/FgK-Dl-UAAEJXvN.jpg
+    鷹狩のクルリ/da95211a3c7b4ae1832e19bba024d38a.jpg
+    黒騎士ピィリス/3755479724a2442eb104b726ef148a0b.jpg
+    黒騎士ピィリス/FfFronBVIAAYNeu.jpg
+    黙示録のラヴィ/283f829548384b3490507add5b2dd1c2.jpg
+    黙示録のラヴィ/36505b23e7f046b6a8fdbbb149f00350.jpg
+    黙示録のラヴィ/3daa81018655437bafb1463aa14f351f.jpg
+    黙示録のラヴィ/52ea5abb4d8944ada89943c5482c87cc.jpg
+    黙示録のラヴィ/9aa3b67f75204f979cd5f1c49e26dc45.jpg
+    黙示録のラヴィ/a22d862f38084b02ad30c0c57596b60c.jpg
+    黙示録のラヴィ/bff97307755d48e3bbce2c9bce21ca5c.jpg
+    黙示録のラヴィ/dfc174c1e00e46069e7134e2296012f0.jpg
+    黙示録のラヴィ/e3bca3fb9ec14f93b2c6b7cfeaeab369.jpg
+    黙示録のラヴィ/f7f47d875b134bf18e4a3aec853bee92.jpg
+    黙示録のラヴィ/FeeKigqUoAAnCny.jpg
+    黙示録のラヴィ/FeOHhoiaUAArQNg.jpg
+    黙示録のラヴィ/FeWkvE8UAAA8GP9.jpg
+    黙示録のラヴィ/FeYOJvsVUAM6ztu.jpg
+    黙示録のラヴィ/FfbWrdUagAAmxAq.jpg
+    黙示録のラヴィ/FfF3GZ_VEAESCvj.jpg
+    黙示録のラヴィ/FfFgwWIaYAAom0q.jpg
+    黙示録のラヴィ/FfGxpEUaAAARSy7.jpg
+    黙示録のラヴィ/FfIQLXgaAAAuDmi.jpg
+    黙示録のラヴィ/FfRRnOUUcAEFklb.jpg
+    黙示録のラヴィ/Fgl_v9NVQAAihHr.jpg
+    黙示録のラヴィ/Fgot3FxUAAA85tx.jpg
+        </template>
+</body>
+
+</html>
