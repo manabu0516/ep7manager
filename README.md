@@ -103,6 +103,13 @@ jpn
 osd
 ```
 
+memcached
+```
+$ sudo apt -y install memcached
+
+$ memcached --version
+memcached 1.5.22
+
 ## ■ WEBページ
 
 Discord BOTからアクセスするデータは以下のサイト(GH Pages)で公開しています。

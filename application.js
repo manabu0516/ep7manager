@@ -214,6 +214,7 @@ module.exports = async (includes, config) => {
     const tesseract = require("tesseract.js");
     const tesseract_ocr = require("node-tesseract-ocr");
     const sharp = require("sharp");
+    var memcached = require('memcached-promise');
 
     const currentDir = __dirname;
     const moduleDir = currentDir + '/modules';    
@@ -224,6 +225,7 @@ module.exports = async (includes, config) => {
 
     const discordManager = config.discord === false ? null : await initializeDiscord(configure.discordToken);
     const twitterManager = config.twitter === false ? null : await initializeTwitter(configure.twitterToken);
+    const memcachedManager = new memcached('127.0.0.1');
 
     const applications = {};
     for (let i = 0; i < moduleList.length; i++) {
@@ -248,6 +250,7 @@ module.exports = async (includes, config) => {
             },
             discord : discordManager,
             twitter : twitterManager,
+            memcached : memcachedManager,
             logger  : (message, parameter) => {
                 const dateStr = formatDate(new Date(), "yyyy-MM-dd HH:mm:ss");
                 const paramStr = JSON.stringify(parameter, null , "\t");
