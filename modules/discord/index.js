@@ -42,10 +42,11 @@ module.exports = async (parameter) => {
                 const param = context.options.get("count");
                 logger("ep7-info cmd start -- :start", {author : context.author,param  : [param]});
 
-                const infos = await infoManager.callApi("get", [param]);
+                const paramValue = param !== null ? param.value : 1;
+                const infos = await infoManager.callApi("get", [paramValue]);
                 const localizer = localizeManager["ja_jp"];
 
-                const enbdeds = info.map(e => {
+                const enbdeds = infos.map(e => {
                     const enbded = context.embdedMessage()
                         .setTitle(e.title)
                         .setDescription(e.description)
@@ -56,7 +57,7 @@ module.exports = async (parameter) => {
                     return enbded;
                 });
 
-                logger("ep7-st cmd end -- :success", {author : context.author, name  : heroName});
+                logger("ep7-info cmd end -- :success", {author : context.author});
                 return { embeds: enbdeds };
             } catch(e) {
                 logger("ep7-info cmd end -- :error", {author : context.author, erroe : e+""});
