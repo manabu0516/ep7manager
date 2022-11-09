@@ -33,4 +33,6 @@ module.exports = {
     st_teameffort : () => "連携攻撃率",
     st_effect_hit : () => "効果命中率",
     st_effect_resist : () => "効果抵抗率",
+
+    info_label_1 : () => "内容",
 };

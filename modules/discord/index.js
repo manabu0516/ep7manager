@@ -35,6 +35,34 @@ module.exports = async (parameter) => {
         const wikidata = application.wikidata;
         const ocrreader = application.ocrreader;
         const tweetsearch = application.tweetsearch;
+        const infoManager = application.info;
+
+        parameter.discord.on("ep7-info", async (context) => {
+            try {
+                const param = context.options.get("count");
+                logger("ep7-info cmd start -- :start", {author : context.author,param  : [param]});
+
+                const infos = await infoManager.callApi("get", [param]);
+                const localizer = localizeManager["ja_jp"];
+
+                const enbdeds = info.map(e => {
+                    const enbded = context.embdedMessage()
+                        .setTitle(e.title)
+                        .setDescription(e.description)
+                        .addFields([
+                            { name: localizer.info_label_1(), value: e.data ,inline: false}
+                        ]);
+
+                    return enbded;
+                });
+
+                logger("ep7-st cmd end -- :success", {author : context.author, name  : heroName});
+                return { embeds: enbdeds };
+            } catch(e) {
+                logger("ep7-info cmd end -- :error", {author : context.author, erroe : e+""});
+                return "error : " + e;
+            }
+        });
 
         parameter.discord.on("ep7-st", async (context) => {
             try {
