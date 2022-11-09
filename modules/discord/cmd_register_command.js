@@ -7,6 +7,8 @@ commands ["ep7-score"] = {
     description : "Shows the score of the uploaded equipment image.",
     description_localizations : {
         "en-US" : "Shows the score of the uploaded equipment image.",
+        "zh-CN" : "Shows the score of the uploaded equipment image.",
+        "ko" : "Shows the score of the uploaded equipment image.",
         "ja" : "アップロードされた装備画像のスコアを表示します。"
     },
 
@@ -17,6 +19,8 @@ commands ["ep7-score"] = {
             description: "Equipped image to calculate the score",
             description_localizations : {
                 "en-US" : "Equipped image to calculate the score",
+                "zh-CN" : "Equipped image to calculate the score",
+                "ko" : "Equipped image to calculate the score",
                 "ja" : "スコアを計算する装備画像"
             },
             required : true
@@ -27,6 +31,8 @@ commands ["ep7-score"] = {
             description: "The name of the hero used for percentage conversion of real number status",
             description_localizations : {
                 "en-US" : "The name of the hero used for percentage conversion of real number status",
+                "zh-CN" : "The name of the hero used for percentage conversion of real number status",
+                "ko" : "The name of the hero used for percentage conversion of real number status",
                 "ja" : "実数ステの割合換算に使用する英雄の名称"
             },
             required : false
@@ -37,6 +43,8 @@ commands ["ep7-score"] = {
             description: "Equipment image language",
             description_localizations : {
                 "en-US" : "Equipment image language",
+                "zh-CN" : "Equipment image language",
+                "ko" : "Equipment image language",
                 "ja" : "装備画像の言語"
             },
             required : false,
@@ -55,6 +63,8 @@ commands ["ep7-build"] = {
     description : "Displays the equipped image of the hero specified by the parameter",
     description_localizations : {
         "en-US" : "Displays the equipped image of the hero specified by the parameter",
+        "zh-CN" : "Displays the equipped image of the hero specified by the parameter",
+        "ko" : "Displays the equipped image of the hero specified by the parameter",
         "ja" : "パラメータで指定された英雄の装備画像を表示します"
     },
 
@@ -65,6 +75,8 @@ commands ["ep7-build"] = {
             description: "The name of the hero whose equipment image you want to display",
             description_localizations : {
                 "en-US" : "The name of the hero whose equipment image you want to display",
+                "zh-CN" : "The name of the hero whose equipment image you want to display",
+                "ko" : "The name of the hero whose equipment image you want to display",
                 "ja" : "装備画像を表示したい英雄の名称"
             },
             required : true
@@ -75,6 +87,8 @@ commands ["ep7-build"] = {
             description: "Specify the page to display (if not specified, page 1 will be displayed)",
             description_localizations : {
                 "en-US" : "Specify the page to display (if not specified, page 1 will be displayed)",
+                "zh-CN" : "Specify the page to display (if not specified, page 1 will be displayed)",
+                "ko" : "Specify the page to display (if not specified, page 1 will be displayed)",
                 "ja" : "表示するページを指定します(未指定の場合は1ページ目を表示)"
             },
             required : false
@@ -87,6 +101,8 @@ commands ["ep7-st"] = {
     description : "Shows the status of the hero specified by the parameter",
     description_localizations : {
         "en-US" : "Shows the status of the hero specified by the parameter",
+        "zh-CN" : "Shows the status of the hero specified by the parameter",
+        "ko" : "Shows the status of the hero specified by the parameter",
         "ja" : "パラメータで指定された英雄のステータスを表示します"
     },
 
@@ -97,6 +113,8 @@ commands ["ep7-st"] = {
             description: "The name of the hero whose status you want to display",
             description_localizations : {
                 "en-US" : "The name of the hero whose status you want to display",
+                "zh-CN" : "The name of the hero whose status you want to display",
+                "ko" : "The name of the hero whose status you want to display",
                 "ja" : "ステータスを表示したい英雄の名称"
             },
             required : true
@@ -107,6 +125,8 @@ commands ["ep7-st"] = {
             description: "Display language",
             description_localizations : {
                 "en-US" : "Display language",
+                "zh-CN" : "Display language",
+                "ko" : "Display language",
                 "ja" : "表示言語"
             },
             required : false,
@@ -123,6 +143,8 @@ commands ["ep7-upload"] = {
     description : "Upload your hero build image to Twitter.",
     description_localizations : {
         "en-US" : "Upload your hero build image to Twitter.",
+        "zh-CN" : "Upload your hero build image to Twitter.",
+        "ko" : "Upload your hero build image to Twitter.",
         "ja" : "英雄のビルド画像をTwitterにアップロードします。※アップロード先のアカウントは本BOTの管理アカウントになります。※アップロード時にDiscordのサーバ名とユーザ名も併せて投稿されます"
     },
 
@@ -133,6 +155,8 @@ commands ["ep7-upload"] = {
             description: "Status image to upload",
             description_localizations : {
                 "en-US" : "Status image to upload",
+                "zh-CN" : "Status image to upload",
+                "ko" : "Status image to upload",
                 "ja" : "アップロードするステータス画像"
             },
             required : true
@@ -143,6 +167,8 @@ commands ["ep7-upload"] = {
             description: "Set the wording you want to include in the tweet (optional)",
             description_localizations : {
                 "en-US" : "Set the wording you want to include in the tweet (optional)",
+                "zh-CN" : "Set the wording you want to include in the tweet (optional)",
+                "ko" : "Set the wording you want to include in the tweet (optional)",
                 "ja" : "ツイートに含めたい文言を設定します(任意)"
             },
             required : false
@@ -155,6 +181,8 @@ commands ["ep7-info"] = {
     description : "Display BOT update information",
     description_localizations : {
         "en-US" : "Display BOT update information",
+        "zh-CN" : "Display BOT update information",
+        "ko" : "Display BOT update information",
         "ja" : "BOTの更新情報を表示します"
     },
 
@@ -165,6 +193,8 @@ commands ["ep7-info"] = {
             description: "Specify the number of items to display (all items when 0 is specified)",
             description_localizations : {
                 "en-US" : "Specify the number of items to display (all items when 0 is specified)",
+                "zh-CN" : "Specify the number of items to display (all items when 0 is specified)",
+                "ko" : "Specify the number of items to display (all items when 0 is specified)",
                 "ja" : "表示件数を指定します(0指定時は全件)"
             },
             required : false
