@@ -87,6 +87,22 @@ commands ["ep7-upload"] = {
     ]
 };
 
+commands ["ep7-info"] = {
+    name : "ep7-info",
+    description : [
+        "BOTの更新情報を表示します"
+    ].join("\r\n"),
+
+    options : [
+        {
+            type: 3,
+            name: "count",
+            description: "表示件数を指定します(0指定時は全件)",
+            required : false
+        }
+    ]
+};
+
 const run = async () => {
     const configure = require("../../configure.js");
 
@@ -98,7 +114,8 @@ const run = async () => {
             commands["ep7-score"],
             commands["ep7-build"],
             commands["ep7-st"],
-            commands["ep7-upload"]
+            commands["ep7-upload"],
+            commands["ep7-info"]
         ]);
 
         console.log("complete");
