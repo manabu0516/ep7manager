@@ -27,9 +27,20 @@ module.exports = async (parameter) => {
     const builder = parameter.instance();
     const logger = parameter.logger;
 
-    const localizeManager = {
-        "ja_jp" : require(parameter.moduleDir + "/locale/ja_jp.js")
-    };
+
+    const localizeManager = (() => {
+        const locales = {
+            "en-US" : require(parameter.moduleDir + "/locale/en-US.js"),
+            "zh-CN" : require(parameter.moduleDir + "/locale/zh-CN.js"),
+            "ko" : require(parameter.moduleDir + "/locale/ko.js"),
+            "ja" : require(parameter.moduleDir + "/locale/ja.js"),
+        };
+
+        return (locale) => {
+            const data = locales[locale];
+            return data !== undefined ? data : locales["en-US"];
+        };
+    })();
 
     builder.addEvt("app.initialize", async (application) => {
         const wikidata = application.wikidata;
@@ -39,12 +50,13 @@ module.exports = async (parameter) => {
 
         parameter.discord.on("ep7-info", async (context) => {
             try {
+                const localizer = localizeManager(context.locale);
+
                 const param = context.options.get("count");
                 logger("ep7-info cmd start -- :start", {author : context.author,param  : [param]});
 
                 const paramValue = param !== null ? param.value : 1;
                 const infos = await infoManager.callApi("get", [paramValue]);
-                const localizer = localizeManager["ja_jp"];
 
                 const enbdeds = infos.map(e => {
                     const enbded = context.embdedMessage()
@@ -67,7 +79,7 @@ module.exports = async (parameter) => {
 
         parameter.discord.on("ep7-st", async (context) => {
             try {
-                const localizer = localizeManager["ja_jp"];
+                const localizer = localizeManager(context.locale);
                 
                 const param = context.options.get("heroname");
                 logger("ep7-st cmd start -- :start", {author : context.author,param  : [param]});
@@ -108,7 +120,7 @@ module.exports = async (parameter) => {
 
         parameter.discord.on("ep7-build", async (context, params) => {
             try {
-                const localizer = localizeManager["ja_jp"];
+                const localizer = localizeManager(context.locale);
 
                 const heroNameParam = context.options.get("heroname");
                 const pagenoParam = context.options.get("pageno");
@@ -148,7 +160,7 @@ module.exports = async (parameter) => {
 
         parameter.discord.on("ep7-score", async (context) => {
             try {
-                const localizer = localizeManager["ja_jp"];
+                const localizer = localizeManager(context.locale);
 
                 const heroNameParam = context.options.get("heroname");
                 const imageParam = context.options.get("image");
@@ -189,7 +201,7 @@ module.exports = async (parameter) => {
 
         parameter.discord.on("ep7-upload", async (context, params) => {
             try {
-                const localizer = localizeManager["ja_jp"];
+                const localizer = localizeManager(context.locale);
 
                 const imageParam = context.options.get("image");
                 const commentParam =  context.options.get("comment");

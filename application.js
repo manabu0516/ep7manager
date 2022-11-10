@@ -32,6 +32,7 @@ const initializeDiscord = (token) => {
                 author : interaction.member.displayName,
                 guild  : "",
                 options: interaction.options,
+                locale : interaction.locale,
                 deffer : async () => await interaction.deferReply()
             };
     
