@@ -21,8 +21,8 @@ module.exports = {
 
     build_nodfound : (name) => "Nofound data : " + name,
     build_notpage : (pageNo,heroName) => 'Notfoud data :' + heroName + ', '+pageNo+'page',
-    build_page_label : (pageNo, pageMax) => pageNo + '/' + pageMax+'page',
-    build_count_label : (idx) => 'Count :' +idx,
+    build_page_label : (pageNo, pageMax) => pageNo + '/' + pageMax+' page',
+    build_count_label : (idx) => 'Count :' +idx + ' ,',
 
     st_attack : () => "Attack",
     st_health : () => "Health",
