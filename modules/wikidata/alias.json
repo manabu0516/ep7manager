@@ -1,0 +1,2973 @@
+
+{
+    "Achates": {
+        "localize" : {
+            "ja" : "アカテス",
+            "ko" : "Achates",
+            "zh-CN" : "Achates",
+            "en-US" : "Achates"
+        },
+        "alias" : [
+
+        ]
+    },
+    "Adin": {
+        "localize" : {
+            "ja" : "アーディン",
+            "ko" : "Adin",
+            "zh-CN" : "Adin",
+            "en-US" : "Adin"
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Adlay": {
+        "localize" : {
+            "ja" : "アドレー",
+            "ko" : "Adlay",
+            "zh-CN" : "Adlay",
+            "en-US" : "Adlay"
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Adventurer Ras": {
+        "localize" : {
+            "ja" : "冒険者ラス",
+            "ko" : "Adventurer Ras",
+            "zh-CN" : "Adventurer Ras",
+            "en-US" : "Adventurer Ras"
+        },
+        "alias" : [
+            "CCラス"
+        ]
+    },
+    "Ainos": {
+        "localize" : {
+            "ja" : "アイノス",
+            "ko" : "Ainos",
+            "zh-CN" : "Ainos",
+            "en-US" : "Ainos"
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Ains": {
+        "localize" : {
+            "ja" : "エインズ",
+            "ko" : "Ains",
+            "zh-CN" : "Ains",
+            "en-US" : "Ains"
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Aither": {
+        "localize" : {
+            "ja" : "アイテール",
+            "ko" : "Aither",
+            "zh-CN" : "Aither",
+            "en-US" : "Aither"
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Alencia": {
+        "localize" : {
+            "ja" : "アレンシア",
+            "ko" : "Alencia",
+            "zh-CN" : "Alencia",
+            "en-US" : "Alencia"
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Alexa": {
+        "localize" : {
+            "ja" : "アレクサ",
+            "ko" : "Alexa",
+            "zh-CN" : "Alexa",
+            "en-US" : "Alexa"
+        },
+        "alias" : [
+            
+        ]
+    },
+    "All-Rounder Wanda": {
+        "localize" : {
+            "ja" : "万能解決士ワンダ",
+            "ko" : "All-Rounder Wanda",
+            "zh-CN" : "All-Rounder Wanda",
+            "en-US" : "All-Rounder Wanda"
+        },
+        "alias" : [
+            "CCワンダ"
+        ]
+    },
+    "Ambitious Tywin": {
+        "localize" : {
+            "ja" : "野心家タイウィン",
+            "ko" : "Ambitious Tywin",
+            "zh-CN" : "Ambitious Tywin",
+            "en-US" : "Ambitious Tywin"
+        },
+        "alias" : [
+            "ピカウィン", "光タイウィン"
+        ]
+    },
+    "Angel of Light Angelica": {
+        "localize" : {
+            "ja" : "光の天使アンジェリカ",
+            "ko" : "Angel of Light Angelica",
+            "zh-CN" : "Angel of Light Angelica",
+            "en-US" : "Angel of Light Angelica"
+        },
+        "alias" : [
+            "エンジェ","光アンジェ","エンジェリカ","光アンジェリカ"
+        ]
+    },
+    "Angelic Montmorancy": {
+        "localize" : {
+            "ja" : "守護天使モンモランシー",
+            "ko" : "Angelic Montmorancy",
+            "zh-CN" : "Angelic Montmorancy",
+            "en-US" : "Angelic Montmorancy"
+        },
+        "alias" : [
+            "CCモンモランシー","CCモンモ"
+        ]
+    },
+    "Angelica": {
+        "localize" : {
+            "ja" : "アンジェリカ",
+            "ko" : "Angelica",
+            "zh-CN" : "Angelica",
+            "en-US" : "Angelica"
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Apocalypse Ravi": {
+        "localize" : {
+            "ja" : "黙示録のラヴィ",
+            "ko" : "Apocalypse Ravi",
+            "zh-CN" : "Apocalypse Ravi",
+            "en-US" : "Apocalypse Ravi"
+        },
+        "alias" : [
+            "闇ラヴィ","軍神"
+        ]
+    },
+    "Aramintha": {
+        "localize" : {
+            "ja" : "アラミンタ",
+            "ko" : "Aramintha",
+            "zh-CN" : "Aramintha",
+            "en-US" : "Aramintha"
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Arbiter Vildred": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "Arbiter Vildred",
+            "zh-CN" : "Arbiter Vildred",
+            "en-US" : "Arbiter Vildred"
+        },
+        "alias" : [
+            "闇ヴィル","闇ヴィルドレッド","闇川"
+        ]
+    },
+    "Archdemon&#8217;s Shadow": {
+        "localize" : {
+            "ja" : "魔神の影",
+            "ko" : "Archdemon's Shadow",
+            "zh-CN" : "Archdemon's Shadow",
+            "en-US" : "Archdemon's Shadow"
+        },
+        "alias" : [
+            "魔神", "魔メル"
+        ]
+    },
+    "Aria": {
+        "localize" : {
+            "ja" : "アリア",
+            "ko" : "Aria",
+            "zh-CN" : "Aria",
+            "en-US" : "Aria"
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Armin": {
+        "localize" : {
+            "ja" : "アーミン",
+            "ko" : "Armin",
+            "zh-CN" : "Armin",
+            "en-US" : "Armin"
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Arowell": {
+        "localize" : {
+            "ja" : "アロウェル",
+            "ko" : "Arowell",
+            "zh-CN" : "Arowell",
+            "en-US" : "Arowell"
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Arunka": {
+        "localize" : {
+            "ja" : "アルンカ",
+            "ko" : "Arunka",
+            "zh-CN" : "Arunka",
+            "en-US" : "Arunka"
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Assassin Cartuja": {
+        "localize" : {
+            "ja" : "暗幕殺法カルトゥハ",
+            "ko" : "Assassin Cartuja",
+            "zh-CN" : "Assassin Cartuja",
+            "en-US" : "Assassin Cartuja"
+        },
+        "alias" : [
+            "闇カル","闇カルトゥハ"
+        ]
+    },
+    "Assassin Cidd": {
+        "localize" : {
+            "ja" : "暗殺者シダー",
+            "ko" : "Assassin Cidd",
+            "zh-CN" : "Assassin Cidd",
+            "en-US" : "Assassin Cidd"
+        },
+        "alias" : [
+            "闇シダー"
+        ]
+    },
+    "Assassin Coli": {
+        "localize" : {
+            "ja" : "静寂のコリー",
+            "ko" : "Assassin Coli",
+            "zh-CN" : "Assassin Coli",
+            "en-US" : "Assassin Coli"
+        },
+        "alias" : [
+            "闇コリー"            
+        ]
+    },
+    "Astromancer Elena": {
+        "localize" : {
+            "ja" : "神託のエレナ",
+            "ko" : "Astromancer Elena",
+            "zh-CN" : "Astromancer Elena",
+            "en-US" : "Astromancer Elena"
+        },
+        "alias" : [
+            "光エレナ"
+        ]
+    },
+    "Auxiliary Lots": {
+        "localize" : {
+            "ja" : "戮力のラッツ",
+            "ko" : "Auxiliary Lots",
+            "zh-CN" : "Auxiliary Lots",
+            "en-US" : "Auxiliary Lots"
+        },
+        "alias" : [
+            "闇ラッツ"
+        ]
+    },
+    "Azalea": {
+        "localize" : {
+            "ja" : "アゼリア",
+            "ko" : "Azalea",
+            "zh-CN" : "Azalea",
+            "en-US" : "Azalea"
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Baal and Sezan": {
+        "localize" : {
+            "ja" : "バアル＆セザン",
+            "ko" : "Baal and Sezan",
+            "zh-CN" : "Baal and Sezan",
+            "en-US" : "Baal and Sezan"
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Bad Cat Armin": {
+        "localize" : {
+            "ja" : "バッドキャットアーミン",
+            "ko" : "Bad Cat Armin",
+            "zh-CN" : "Bad Cat Armin",
+            "en-US" : "Bad Cat Armin"
+        },
+        "alias" : [
+            "闇アーミン","ニャーミン"
+        ]
+    },
+    "Baiken": {
+        "localize" : {
+            "ja" : "梅喧",
+            "ko" : "Baiken",
+            "zh-CN" : "Baiken",
+            "en-US" : "Baiken"
+        },
+        "alias" : [
+            "バイケン","ばいけん"
+        ]
+    },
+    "Basar": {
+        "localize" : {
+            "ja" : "バサール",
+            "ko" : "Basar",
+            "zh-CN" : "Basar",
+            "en-US" : "Basar"
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Bask": {
+        "localize" : {
+            "ja" : "バスク",
+            "ko" : "Bask",
+            "zh-CN" : "Bask",
+            "en-US" : "Bask"
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Batisse": {
+        "localize" : {
+            "ja" : "バータス",
+            "ko" : "Batisse",
+            "zh-CN" : "Batisse",
+            "en-US" : "Batisse"
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Belian": {
+        "localize" : {
+            "ja" : "ヴェリアン",
+            "ko" : "Belian",
+            "zh-CN" : "Belian",
+            "en-US" : "Belian"
+        },
+        "alias" : [
+            "ヴェリママ", "ママ"
+        ]
+    },
+    "Bellona": {
+        "localize" : {
+            "ja" : "ヴェローナ",
+            "ko" : "Bellona",
+            "zh-CN" : "Bellona",
+            "en-US" : "Bellona"
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Benevolent Romann": {
+        "localize" : {
+            "ja" : "慈愛のローマン",
+            "ko" : "Benevolent Romann",
+            "zh-CN" : "Benevolent Romann",
+            "en-US" : "Benevolent Romann"
+        },
+        "alias" : [
+            "光ローマン","ピーマン"
+        ]
+    },
+    "Blaze Dingo": {
+        "localize" : {
+            "ja" : "焼尽のディンゴ",
+            "ko" : "Blaze Dingo",
+            "zh-CN" : "Blaze Dingo",
+            "en-US" : "Blaze Dingo"
+        },
+        "alias" : [
+            "光ディンゴ"
+        ]
+    },
+    "Blood Blade Karin": {
+        "localize" : {
+            "ja" : "血剣のカリン",
+            "ko" : "Blood Blade Karin",
+            "zh-CN" : "Blood Blade Karin",
+            "en-US" : "Blood Blade Karin"
+        },
+        "alias" : [
+            "闇カリン","BBK"
+        ]
+    },
+    "Blood Moon Haste": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "Blood Moon Haste",
+            "zh-CN" : "Blood Moon Haste",
+            "en-US" : "Blood Moon Haste"
+        },
+        "alias" : [
+            "闇ヘイスト","闇ヘイ"
+        ]
+    },
+    "Bomb Model Kanna": {
+        "localize" : {
+            "ja" : "爆撃型カノン",
+            "ko" : "Bomb Model Kanna",
+            "zh-CN" : "Bomb Model Kanna",
+            "en-US" : "Bomb Model Kanna"
+        },
+        "alias" : [
+            "カノン"
+        ]
+    },
+    "Briar Witch Iseria": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "Briar Witch Iseria",
+            "zh-CN" : "Briar Witch Iseria",
+            "en-US" : "Briar Witch Iseria"
+        },
+        "alias" : [
+            "闇イセリア","闇イセ"
+        ]
+    },
+    "Butcher Corps Inquisitor": {
+        "localize" : {
+            "ja" : "エクスキューショナー",
+            "ko" : "Butcher Corps Inquisitor",
+            "zh-CN" : "Butcher Corps Inquisitor",
+            "en-US" : "Butcher Corps Inquisitor"
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Camilla": {
+        "localize" : {
+            "ja" : "チェルミア",
+            "ko" : "Camilla",
+            "zh-CN" : "Camilla",
+            "en-US" : "Camilla"
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Captain Rikoris": {
+        "localize" : {
+            "ja" : "先遣部隊長リコリス",
+            "ko" : "Captain Rikoris",
+            "zh-CN" : "Captain Rikoris",
+            "en-US" : "Captain Rikoris"
+        },
+        "alias" : [
+            "CCリコリス", "リコイル"
+        ]
+    },
+    "Carmainerose": {
+        "localize" : {
+            "ja" : "カーマイン・ローズ",
+            "ko" : "Carmainerose",
+            "zh-CN" : "Carmainerose",
+            "en-US" : "Carmainerose"
+        },
+        "alias" : [
+            "カーマインローズ"
+        ]
+    },
+    "Carrot": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Cartuja": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Cecilia": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Celeste": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Celestial Mercedes": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Celine": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Cerise": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Cermia": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Challenger Dominiel": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Champion Zerato": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Chaos Inquisitor": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Chaos Sect Axe": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Charles": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Charlotte": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Chloe": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Choux": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Christy": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Church of Ilryos Axe": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Cidd": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Clarissa": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Closer Charles": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Coli": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Command Model Laika": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Commander Lorina": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Commander Pavel": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Conqueror Lilias": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Corvus": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Crescent Moon Rin": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Crimson Armin": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Crozet": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Dark Corvus": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Desert Jewel Basar": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Designer Lilibet": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Destina": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Diene": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Dingo": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Dizzy": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Doll Maker Pearlhorizon": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Dominiel": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Doris": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Eaton": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Eda": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Edward Elric": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Elena": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Elphelt Valentine": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Elson": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Emilia": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Enott": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Ervalen": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Fairytale Tenebria": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Faithless Lidica": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Falconer Kluri": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Fallen Cecilia": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Fighter Maya": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Flan": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Free Spirit Tieria": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Furious": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "General Purrgis": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Glenn": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Gloomyrain": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Godmother": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Great Chief Khawana": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Guider Aither": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Gunther": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Hasol": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Haste": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Hataan": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Hazel": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Helen": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Helga": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Holiday Yufine": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Holy Flame Adin": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Hurado": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Hwayoung": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Ian": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Ilynav": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Inferno Khawazu": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Iseria": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Jack-O&#8217;": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Januta": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Jecht": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Jena": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Judge Kise": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Judith": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Karin": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Kawerik": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Kayron": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Ken": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Khawana": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Khawazu": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Kikirat V2": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Kiris": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Kise": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Kitty Clarissa": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Kizuna AI": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Kluri": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Krau": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Landy": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Last Rider Krau": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Lena": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Leo": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Lidica": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Lilias": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Lilibet": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Lionheart Cermia": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Little Queen Charlotte": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Lorina": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Lots": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Lua": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Lucy": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Ludwig": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Luluca": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Luna": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Magic Scholar Doris": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Maid Chloe": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Martial Artist Ken": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Mascot Hazel": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Maya": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Mediator Kawerik": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Melany": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Melissa": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Mercedes": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Mercenary Helga": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Milim": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Mirsa": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Mistychain": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Montmorancy": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Moon Bunny Dominiel": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Mort": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Mucacha": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Mui": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Muse Rima": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Muwi": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Nemunas": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Operator Sigret": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Orte": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Otillie": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Pavel": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Pearlhorizon": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Peira": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Penelope": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Pirate Captain Flan": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Politis": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Purrgis": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Pyllis": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Ram": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Ran": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Ras": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Ravi": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Ray": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Rem": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Remnant Violet": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Requiemroar": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Researcher Carrot": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Righteous Thief Roozid": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Rikoris": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Rima": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Rimuru": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Rin": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Riza Hawkeye": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Roaming Warrior Leo": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Roana": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Romann": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Roozid": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Rose": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Roy Mustang": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Ruele of Light": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Sage Baal and Sezan": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Schuri": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Seaside Bellona": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Senya": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Serene Purity Adin": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Serila": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Sez": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Shadow Knight Pyllis": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Shadow Rose": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Sharun": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Shooting Star Achates": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Shuna": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Silk": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Silver Blade Aramintha": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Sinful Angelica": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Sol Badguy": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Solitaria of the Snow": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Sonia": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Specimen Sez": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Specter Tenebria": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Spirit Eye Celine": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Straze": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Summer Break Charlotte": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Summer&#8217;s Disciple Alexa": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Summertime Iseria": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Support Model Brinus": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Surin": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Sven": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Sylvan Sage Vivian": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Taeyou": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Tamarinne": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Taranor Guard": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Taranor Royal Guard": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Tempest Surin": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Tenebria": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Tieria": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Top Model Luluca": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Troublemaker Crozet": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Tywin": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Unbound Knight Arowell": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Verdant Adin": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Vigilante Leader Glenn": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Vildred": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Violet": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Vivian": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Wanda": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Wanderer Silk": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Watcher Schuri": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Yoonryoung": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Yufine": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Yulha": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Yuna": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Zahhak": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Zealot Carmainerose": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Zeno": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Zerato": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    },
+    "Zio": {
+        "localize" : {
+            "ja" : "",
+            "ko" : "",
+            "zh-CN" : "",
+            "en-US" : ""
+        },
+        "alias" : [
+            
+        ]
+    }
+}
