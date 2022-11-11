@@ -1,0 +1,240 @@
+{
+	"common": {
+		"name": "Batisse",
+		"image": "https://epic7x.com/wp-content/uploads/2019/01/Batisse.png",
+		"attribute": "dark",
+		"sign": "taurus",
+		"clazz": "warrior",
+		"rarity": "3",
+		"name_ja": "バータス"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "8%",
+		"Critical_Hit_Damage": "15%",
+		"dual_attack": "5%",
+		"Effectiveness": "0%",
+		"Effect_Resistance": "0%",
+		"Speed": "104",
+		"Atk": "1039",
+		"HP": "5097",
+		"Def": "518"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": 1
+		},
+		{
+			"key": "Belief",
+			"score": 6
+		},
+		{
+			"key": "Bizarre Story",
+			"score": 5
+		},
+		{
+			"key": "Comforting",
+			"score": 1
+		},
+		{
+			"key": "Complain",
+			"score": -7
+		},
+		{
+			"key": "Criticism",
+			"score": 6
+		},
+		{
+			"key": "Cute Cheer",
+			"score": 2
+		},
+		{
+			"key": "Dream",
+			"score": 5
+		},
+		{
+			"key": "Food Story",
+			"score": -1
+		},
+		{
+			"key": "Gossip",
+			"score": -3
+		},
+		{
+			"key": "Happy Memory",
+			"score": -1
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": 0
+		},
+		{
+			"key": "Heroic Tale",
+			"score": -1
+		},
+		{
+			"key": "Horror",
+			"score": 5
+		},
+		{
+			"key": "Interesting Story",
+			"score": 2
+		},
+		{
+			"key": "Joyful Memories",
+			"score": 1
+		},
+		{
+			"key": "Myth",
+			"score": 1
+		},
+		{
+			"key": "Occult",
+			"score": 5
+		},
+		{
+			"key": "Reality Check",
+			"score": 2
+		},
+		{
+			"key": "Sad Memory",
+			"score": 3
+		},
+		{
+			"key": "Self Indulgent",
+			"score": 3
+		},
+		{
+			"key": "Unique Comment",
+			"score": 6
+		}
+	],
+	"memory": {
+		"potision": "pos-all",
+		"release": [
+			{
+				"key": "Health",
+				"value": "120"
+			},
+			{
+				"key": "Health",
+				"value": "180"
+			},
+			{
+				"key": "Health",
+				"value": "240"
+			},
+			{
+				"key": "Health",
+				"value": "300"
+			},
+			{
+				"key": "Health",
+				"value": "360"
+			},
+			{
+				"key": "Health",
+				"value": "420"
+			},
+			{
+				"key": "Health",
+				"value": "480"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Attack",
+				"value": "36"
+			},
+			{
+				"key": "Attack",
+				"value": "54"
+			},
+			{
+				"key": "Attack",
+				"value": "72"
+			},
+			{
+				"key": "Attack",
+				"value": "90"
+			},
+			{
+				"key": "Attack",
+				"value": "108"
+			},
+			{
+				"key": "Attack",
+				"value": "126"
+			},
+			{
+				"key": "Attack",
+				"value": "144"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Brawl",
+			"type": "Active",
+			"description": {
+				"text": "Hits the enemy in the face. When used against an enemy inflicted with decreased Attack, activates Rock Smash as an extra attack. Rock Smash: Attacks all enemies. This attack receives effects that are applied to the basic skill.",
+				"burn": "Activates Rock Smash even when used against an enemy without decreased Attack. (-20 Souls)",
+				"soul": "+1",
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt by Brawl and Rock Smash",
+					"+5% damage dealt by Brawl and Rock Smash",
+					"+5% damage dealt by Brawl and Rock Smash",
+					"+10% damage dealt by Brawl and Rock Smash",
+					"+10% damage dealt by Brawl and Rock Smash"
+				],
+				"multipliers": "ATK*0.8*0.95*1.871\n                                        \n                                                                                    ATK*0.5*0.95*1.871 (Rock Smash)",
+				"text_ja": "敵単体に攻撃し、対象が攻撃力DOWN状態の場合、【岩撃破】を発動する。岩撃破：敵全体に攻撃する。この攻撃は、基本スキルの関連効果の影響を受ける。",
+				"burn_ja": "対象が攻撃力DOWN状態であるかに関係なく、追加で【岩撃破】が発動する。(魂力20消費)"
+			},
+			"title_ja": "乱闘"
+		},
+		{
+			"title": "Justified Provoke",
+			"type": "Passive",
+			"description": {
+				"text": "At the start of the turn, has 85% chance to decrease Attack of the enemy with highest Combat Readiness for 2 turns.",
+				"burn": "",
+				"soul": null,
+				"ct": null,
+				"enhance": [
+					"+2% effect chance",
+					"+2% effect chance",
+					"+3% effect chance",
+					"+3% effect chance",
+					"+5% effect chance"
+				],
+				"multipliers": "",
+				"text_ja": "ターン開始時、アクションゲージが最も高い敵に85%の確率で攻撃力DOWNを2ターンの間付与する。",
+				"burn_ja": ""
+			},
+			"title_ja": "理にかなった挑発"
+		},
+		{
+			"title": "Certain Victory",
+			"type": "Active",
+			"description": {
+				"text": "Attacks the enemy with blindingly fast speed. When used against enemy with decreased Attack, decreases Defense for 2 turns.",
+				"burn": "",
+				"soul": "+2",
+				"ct": "4",
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"-1 turn cooldown",
+					"+10% damage dealt",
+					"+10% damage dealt"
+				],
+				"multipliers": "ATK*1.5*1*1.871",
+				"text_ja": "敵単体に攻撃し、対象が攻撃力DOWN状態の場合、防御力DOWNを2ターンの間付与する。",
+				"burn_ja": ""
+			},
+			"title_ja": "先手必勝"
+		}
+	]
+}

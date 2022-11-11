@@ -11,6 +11,7 @@ const resolveData = async (alias, option, context) => {
 class AliasManager {
     constructor() {
         this.datamap = {};
+        this.normalizeKeys = [];
     };
 
     load(json) {
@@ -19,28 +20,31 @@ class AliasManager {
             const key = keys[i];
             const data = json[key];
 
-            data["_name"] = this.key;
-            data["_path"] = this.normalize(this.key) + '.json';
+            data["_name"] = key;
+            data["_path"] = this.normalize(key) + '.json';
+            this.normalizeKeys.push(this.normalize(key));
 
             for (let j = 0; j < data.alias.length; j++) {
                 const alias = data.alias[j];
                 this.datamap[alias] = data;           
             }
 
-            const localize = Object.keys(data.localize);
-            for (let j = 0; j < localize.length; j++) {
-                const locale = localize[j];
-                const normalizeKey = this.normalize(localize[locale]);
+            const localizeKeys = Object.keys(data.localize);
+            for (let j = 0; j < localizeKeys.length; j++) {
+                const locale = localizeKeys[j];
+                
+                const normalizeKey = this.normalize(data.localize[locale]);
                 if(normalizeKey === "") {
                     continue;
                 }
                 this.datamap[normalizeKey] = data;
             }
         }
+        return this;
     };
 
     normalize(text) {
-        return text.replace(" ", "").toLocaleLowerCase().trim();
+        return text.replaceAll(" ", "-").toLocaleLowerCase().trim();
     }
 
     get(key) {
@@ -49,7 +53,7 @@ class AliasManager {
     }
 
     entries() {
-        return Object.keys(this.datamap);
+        return this.normalizeKeys;
     }
 };
 
@@ -68,9 +72,13 @@ module.exports = async (parameter) => {
         return aliasData.entries();
     });
 
+    builder.addApi('alias', (key) => {
+        const data = aliasData.get(key);
+        return data;
+    });
+
     builder.addApi('normalize', (key) => {
         const data = aliasData.get(key);
-
         return data != undefined ? data._name : key;
     });
 

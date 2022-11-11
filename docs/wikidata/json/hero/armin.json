@@ -1,0 +1,232 @@
+{
+	"common": {
+		"name": "Armin",
+		"image": "https://epic7x.com/wp-content/uploads/2019/01/Armin-1.png",
+		"attribute": "earth",
+		"sign": "capricorn",
+		"clazz": "knight",
+		"rarity": "4",
+		"name_ja": "アーミン"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "15%",
+		"Critical_Hit_Damage": "150%",
+		"dual_attack": "5%",
+		"Effectiveness": "0%",
+		"Effect_Resistance": "12%",
+		"Speed": "91",
+		"Atk": "721",
+		"HP": "6189",
+		"Def": "785"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": 0
+		},
+		{
+			"key": "Belief",
+			"score": 4
+		},
+		{
+			"key": "Bizarre Story",
+			"score": 2
+		},
+		{
+			"key": "Comforting",
+			"score": 1
+		},
+		{
+			"key": "Complain",
+			"score": -2
+		},
+		{
+			"key": "Criticism",
+			"score": 3
+		},
+		{
+			"key": "Cute Cheer",
+			"score": 5
+		},
+		{
+			"key": "Dream",
+			"score": 5
+		},
+		{
+			"key": "Food Story",
+			"score": 3
+		},
+		{
+			"key": "Gossip",
+			"score": 2
+		},
+		{
+			"key": "Happy Memory",
+			"score": 3
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": 6
+		},
+		{
+			"key": "Heroic Tale",
+			"score": 5
+		},
+		{
+			"key": "Horror",
+			"score": 3
+		},
+		{
+			"key": "Interesting Story",
+			"score": 3
+		},
+		{
+			"key": "Joyful Memories",
+			"score": 4
+		},
+		{
+			"key": "Myth",
+			"score": 5
+		},
+		{
+			"key": "Occult",
+			"score": 3
+		},
+		{
+			"key": "Reality Check",
+			"score": 0
+		},
+		{
+			"key": "Sad Memory",
+			"score": -3
+		},
+		{
+			"key": "Self Indulgent",
+			"score": 4
+		},
+		{
+			"key": "Unique Comment",
+			"score": 1
+		}
+	],
+	"memory": {
+		"potision": "pos-all",
+		"release": [
+			{
+				"key": "Health",
+				"value": "2.4%"
+			},
+			{
+				"key": "Health",
+				"value": "3.6%"
+			},
+			{
+				"key": "Health",
+				"value": "4.8%"
+			},
+			{
+				"key": "Health",
+				"value": "6.0%"
+			},
+			{
+				"key": "Health",
+				"value": "7.2%"
+			},
+			{
+				"key": "Health",
+				"value": "8.4%"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Defense",
+				"value": "4%"
+			},
+			{
+				"key": "Defense",
+				"value": "6%"
+			},
+			{
+				"key": "Defense",
+				"value": "8%"
+			},
+			{
+				"key": "Defense",
+				"value": "10%"
+			},
+			{
+				"key": "Defense",
+				"value": "12%"
+			},
+			{
+				"key": "Defense",
+				"value": "14%"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Takedown",
+			"type": "Active",
+			"description": {
+				"text": "Attacks with a shield, with a 35% chance to stun for 1 turn. Damage dealt increases proportional to the caster's Defense. When it is not the caster's turn, this attack changes into an attack that target's all enemies.",
+				"burn": "",
+				"soul": "+1",
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+5% effect chance",
+					"+5% effect chance",
+					"+10% damage dealt",
+					"+10% damage dealt",
+					"+10% damage dealt"
+				],
+				"multipliers": "(ATK*0.8+DEF*0.6)*1.6839",
+				"text_ja": "敵単体に攻撃し、25%の確率でスタンを1ターンの間付与する。自身の防御力が高いほどダメージがUPする。自身のターンではない場合、全体攻撃に変化する。",
+				"burn_ja": ""
+			},
+			"title_ja": "シールドバッシュ"
+		},
+		{
+			"title": "Protect",
+			"type": "Passive",
+			"description": {
+				"text": "When attacked, has a 15% chance to counter attack. When an ally except for the caster is attacked by a Single Attack, decreases damage suffered by 20%. When more than one damage reduction effect is granted, only the strongest effect is applied.",
+				"burn": "",
+				"soul": null,
+				"ct": null,
+				"enhance": [
+					"+0.5% counterattack chance",
+					"+0.5% counterattack chance",
+					"+1% counterattack chance",
+					"+1% counterattack chance",
+					"+1% counterattack chance",
+					"+1% counterattack chance"
+				],
+				"multipliers": "",
+				"text_ja": "攻撃を受けた時、20%の確率で反撃する。自身以外の味方が単体攻撃を受けた時、ダメージが20%DOWNする。ダメージDOWN効果が重複した場合、一番高い効果のみ適用される。",
+				"burn_ja": ""
+			},
+			"title_ja": "防御体勢"
+		},
+		{
+			"title": "Shield Wall",
+			"type": "Active",
+			"description": {
+				"text": "Uses the Shield of Light to dispel one debuff from all allies and grants increased Defense to the caster for 2 turns and barrier to all allies for 2 turns. Barrier strength increases proportional to the caster's Defense.",
+				"burn": "Extends duration of buffs granted by this skill by 1 turn. (-10 Souls)",
+				"soul": "+1",
+				"ct": "4",
+				"enhance": [
+					"Acquire +1 Soul",
+					"-1 turn cooldown"
+				],
+				"multipliers": "Barrier strength: 60% self Defense",
+				"text_ja": "味方全体の弱体効果を1つ解除し、自身に防御力UP・味方全体にシールドを2ターンの間付与する。自身の防御力が高いほどシールド効果がUPする。",
+				"burn_ja": "このスキルによる強化効果の持続ターンが1UPする。(魂力10消費)"
+			},
+			"title_ja": "シールドブロック"
+		}
+	]
+}

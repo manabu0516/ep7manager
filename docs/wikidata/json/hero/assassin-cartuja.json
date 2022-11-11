@@ -1,0 +1,232 @@
+{
+	"common": {
+		"name": "Assassin Cartuja",
+		"image": "https://epic7x.com/wp-content/uploads/2019/01/Assassin-Cartuja-1.png",
+		"attribute": "dark",
+		"sign": "scorpio",
+		"clazz": "warrior",
+		"rarity": "4",
+		"name_ja": "暗幕殺法カルトゥハ"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "15%",
+		"Critical_Hit_Damage": "150%",
+		"dual_attack": "5%",
+		"Effectiveness": "0%",
+		"Effect_Resistance": "0%",
+		"Speed": "100",
+		"Atk": "1119",
+		"HP": "6091",
+		"Def": "594"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": 5
+		},
+		{
+			"key": "Belief",
+			"score": -1
+		},
+		{
+			"key": "Bizarre Story",
+			"score": 0
+		},
+		{
+			"key": "Comforting",
+			"score": 3
+		},
+		{
+			"key": "Complain",
+			"score": 2
+		},
+		{
+			"key": "Criticism",
+			"score": -5
+		},
+		{
+			"key": "Cute Cheer",
+			"score": 6
+		},
+		{
+			"key": "Dream",
+			"score": 5
+		},
+		{
+			"key": "Food Story",
+			"score": 3
+		},
+		{
+			"key": "Gossip",
+			"score": 2
+		},
+		{
+			"key": "Happy Memory",
+			"score": 5
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": 5
+		},
+		{
+			"key": "Heroic Tale",
+			"score": 0
+		},
+		{
+			"key": "Horror",
+			"score": -1
+		},
+		{
+			"key": "Interesting Story",
+			"score": 0
+		},
+		{
+			"key": "Joyful Memories",
+			"score": 7
+		},
+		{
+			"key": "Myth",
+			"score": 2
+		},
+		{
+			"key": "Occult",
+			"score": 0
+		},
+		{
+			"key": "Reality Check",
+			"score": -5
+		},
+		{
+			"key": "Sad Memory",
+			"score": 6
+		},
+		{
+			"key": "Self Indulgent",
+			"score": -1
+		},
+		{
+			"key": "Unique Comment",
+			"score": 3
+		}
+	],
+	"memory": {
+		"potision": "pos-all",
+		"release": [
+			{
+				"key": "Defense",
+				"value": "2.4%"
+			},
+			{
+				"key": "Defense",
+				"value": "3.6%"
+			},
+			{
+				"key": "Defense",
+				"value": "4.8%"
+			},
+			{
+				"key": "Defense",
+				"value": "6.0%"
+			},
+			{
+				"key": "Defense",
+				"value": "7.2%"
+			},
+			{
+				"key": "Defense",
+				"value": "8.4%"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Attack",
+				"value": "4%"
+			},
+			{
+				"key": "Attack",
+				"value": "6%"
+			},
+			{
+				"key": "Attack",
+				"value": "8%"
+			},
+			{
+				"key": "Attack",
+				"value": "10%"
+			},
+			{
+				"key": "Attack",
+				"value": "12%"
+			},
+			{
+				"key": "Attack",
+				"value": "14%"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Shred",
+			"type": "Active",
+			"description": {
+				"text": "Attacks with sharp claws, with a 35% chance to inflict bleeding for 2 turns.",
+				"burn": "",
+				"soul": "+1",
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+5% effect chance",
+					"+10% damage dealt",
+					"+10% effect chance",
+					"+15% damage dealt"
+				],
+				"multipliers": "ATK*1*1*1.871",
+				"text_ja": "敵単体に攻撃し、35%の確率で出血を2ターンの間付与する。",
+				"burn_ja": ""
+			},
+			"title_ja": "切り裂く"
+		},
+		{
+			"title": "Battle Frenzy",
+			"type": "Passive",
+			"description": {
+				"text": "Increases Evasion Chance of all allies by 15% . When the turn ends, successfully evades the next attack once. Combat Readiness increases by 10% each time evading the enemy's attack.",
+				"burn": "",
+				"soul": null,
+				"ct": null,
+				"enhance": [
+					"+1% Combat Readiness",
+					"+1% Combat Readiness",
+					"+1% Combat Readiness",
+					"+1% Combat Readiness",
+					"+1% Combat Readiness"
+				],
+				"multipliers": "",
+				"text_ja": "味方全体の回避率を15%UPし、自身のターンが終了した後に受けた最初の攻撃を必ず回避する。攻撃を回避した時、自身のアクションゲージを10%UPさせる。",
+				"burn_ja": ""
+			},
+			"title_ja": "戦闘狂"
+		},
+		{
+			"title": "Sudden Assault",
+			"type": "Active",
+			"description": {
+				"text": "Dashes towards the enemy to attack, stunning for 1 turn. Decreases Defense for 2 turns.",
+				"burn": "Ignores effect resistance (-20 Souls)",
+				"soul": "+2",
+				"ct": "5",
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"-1 turn cooldown",
+					"+10% damage dealt",
+					"+15% damage dealt"
+				],
+				"multipliers": "ATK*1.5*0.95*1.871",
+				"text_ja": "敵単体に攻撃し、スタンを1ターンの間付与し、防御力DOWNを2ターンの間付与する。",
+				"burn_ja": "効果抵抗を無視する。(魂力20消費)"
+			},
+			"title_ja": "強襲"
+		}
+	]
+}

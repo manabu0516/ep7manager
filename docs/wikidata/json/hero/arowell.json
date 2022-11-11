@@ -1,0 +1,240 @@
+{
+	"common": {
+		"name": "Arowell",
+		"image": "https://epic7x.com/wp-content/uploads/2019/01/Arowell-1.png",
+		"attribute": "light",
+		"sign": "libra",
+		"clazz": "knight",
+		"rarity": "3",
+		"name_ja": "アロウェル"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "15%",
+		"Critical_Hit_Damage": "150%",
+		"dual_attack": "5%",
+		"Effectiveness": "0%",
+		"Effect_Resistance": "12%",
+		"Speed": "95",
+		"Atk": "758",
+		"HP": "5826",
+		"Def": "672"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": 2
+		},
+		{
+			"key": "Belief",
+			"score": 1
+		},
+		{
+			"key": "Bizarre Story",
+			"score": -2
+		},
+		{
+			"key": "Comforting",
+			"score": 0
+		},
+		{
+			"key": "Complain",
+			"score": 2
+		},
+		{
+			"key": "Criticism",
+			"score": 4
+		},
+		{
+			"key": "Cute Cheer",
+			"score": 1
+		},
+		{
+			"key": "Dream",
+			"score": 2
+		},
+		{
+			"key": "Food Story",
+			"score": 1
+		},
+		{
+			"key": "Gossip",
+			"score": -2
+		},
+		{
+			"key": "Happy Memory",
+			"score": 2
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": 2
+		},
+		{
+			"key": "Heroic Tale",
+			"score": 0
+		},
+		{
+			"key": "Horror",
+			"score": 0
+		},
+		{
+			"key": "Interesting Story",
+			"score": 2
+		},
+		{
+			"key": "Joyful Memories",
+			"score": 4
+		},
+		{
+			"key": "Myth",
+			"score": 0
+		},
+		{
+			"key": "Occult",
+			"score": 0
+		},
+		{
+			"key": "Reality Check",
+			"score": 4
+		},
+		{
+			"key": "Sad Memory",
+			"score": 1
+		},
+		{
+			"key": "Self Indulgent",
+			"score": 0
+		},
+		{
+			"key": "Unique Comment",
+			"score": 3
+		}
+	],
+	"memory": {
+		"potision": "pos-all",
+		"release": [
+			{
+				"key": "Health",
+				"value": "120"
+			},
+			{
+				"key": "Health",
+				"value": "180"
+			},
+			{
+				"key": "Health",
+				"value": "240"
+			},
+			{
+				"key": "Health",
+				"value": "300"
+			},
+			{
+				"key": "Health",
+				"value": "360"
+			},
+			{
+				"key": "Health",
+				"value": "420"
+			},
+			{
+				"key": "Health",
+				"value": "480"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Health",
+				"value": "180"
+			},
+			{
+				"key": "Health",
+				"value": "270"
+			},
+			{
+				"key": "Health",
+				"value": "360"
+			},
+			{
+				"key": "Health",
+				"value": "450"
+			},
+			{
+				"key": "Health",
+				"value": "540"
+			},
+			{
+				"key": "Health",
+				"value": "630"
+			},
+			{
+				"key": "Health",
+				"value": "720"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Shield Thrust",
+			"type": "Active",
+			"description": {
+				"text": "Attacks with a sword and a shield, with a 50% chance each to dispel two buffs. Damage dealt increases proportional to the caster's max Health.",
+				"burn": "Increases effect chance to 100%. (-10 Souls)",
+				"soul": "+1",
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+10% effect chance",
+					"+10% damage dealt",
+					"+15% effect chance",
+					"+15% damage dealt"
+				],
+				"multipliers": "(ATK*0.7+Def*0.02)*1.77745\n                                        \n                                                                                    2% self max Health (0.02 * Health)",
+				"text_ja": "敵単体に攻撃し、それぞれ50%の確率で強化効果を2つ解除する。自身の最大生命力が高いほどダメージがUPする。",
+				"burn_ja": "効果発生率が100%になる。(魂力10消費)"
+			},
+			"title_ja": "盾突"
+		},
+		{
+			"title": "Escort",
+			"type": "Passive",
+			"description": {
+				"text": "At the start of battle and at the end of the caster's turn, grants escort to the caster for 1 turn. After an ally except the caster suffers a Single Attack, increases Combat Readiness of the caster by 10%.",
+				"burn": "",
+				"soul": null,
+				"ct": null,
+				"enhance": [
+					"+0.5% Combat Readiness",
+					"+1% Combat Readiness",
+					"+1.5% Combat Readiness"
+				],
+				"multipliers": "2% Defense increase per stack, scales up to 3% with molagora",
+				"text_ja": "バトル開始時・自身のターン開始時、自身に護衛を1ターンの間付与する。自身以外の味方が単体攻撃を受けた後、自身のアクションゲージを10%UPさせる。",
+				"burn_ja": ""
+			},
+			"title_ja": "護衛"
+		},
+		{
+			"title": "Defensive Position",
+			"type": "Active",
+			"description": {
+				"text": "Attacks with a sword, with a 75% chance to stun for 1 turn and grants a barrier to all allies for 2 turns. Damage dealt and barrier strength increases proportional to the caster's max Health.",
+				"burn": "",
+				"soul": "+2",
+				"ct": "4",
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+10% effect chance",
+					"+10% damage dealt",
+					"+15% effect chance",
+					"+15% damage dealt"
+				],
+				"multipliers": "(ATK*1.5+Def*0.07)*1.77745\n                                        \n                                                                                    70% self Defense (0.7 * Defense), Barrier strength: 60% self Defense",
+				"text_ja": "敵単体に攻撃し、75%の確率でスタンを1ターンの間付与し、味方全体にシールドを2ターンの間付与する。自身の最大生命力が高いほどダメージとシールド効果がUPする。",
+				"burn_ja": ""
+			},
+			"title_ja": "防御態勢"
+		}
+	]
+}

@@ -1,0 +1,232 @@
+{
+	"common": {
+		"name": "Angel of Light Angelica",
+		"image": "https://epic7x.com/wp-content/uploads/2021/08/Angel-of-Light-Angelica.png",
+		"attribute": "light",
+		"sign": "taurus",
+		"clazz": "mage",
+		"rarity": "4",
+		"name_ja": "光の天使アンジェリカ"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "15%",
+		"Critical_Hit_Damage": "150%",
+		"dual_attack": "5%",
+		"Effectiveness": "18%",
+		"Effect_Resistance": "18%",
+		"Speed": "4",
+		"Atk": "957",
+		"HP": "5016",
+		"Def": "645"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": 1
+		},
+		{
+			"key": "Belief",
+			"score": 0
+		},
+		{
+			"key": "Bizarre Story",
+			"score": 0
+		},
+		{
+			"key": "Comforting",
+			"score": 2
+		},
+		{
+			"key": "Complain",
+			"score": 1
+		},
+		{
+			"key": "Criticism",
+			"score": 2
+		},
+		{
+			"key": "Cute Cheer",
+			"score": 2
+		},
+		{
+			"key": "Dream",
+			"score": 2
+		},
+		{
+			"key": "Food Story",
+			"score": 4
+		},
+		{
+			"key": "Gossip",
+			"score": 1
+		},
+		{
+			"key": "Happy Memory",
+			"score": 2
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": 2
+		},
+		{
+			"key": "Heroic Tale",
+			"score": 2
+		},
+		{
+			"key": "Horror",
+			"score": 0
+		},
+		{
+			"key": "Interesting Story",
+			"score": 2
+		},
+		{
+			"key": "Joyful Memories",
+			"score": 3
+		},
+		{
+			"key": "Myth",
+			"score": 2
+		},
+		{
+			"key": "Occult",
+			"score": 0
+		},
+		{
+			"key": "Reality Check",
+			"score": 2
+		},
+		{
+			"key": "Sad Memory",
+			"score": 2
+		},
+		{
+			"key": "Self Indulgent",
+			"score": 2
+		},
+		{
+			"key": "Unique Comment",
+			"score": 3
+		}
+	],
+	"memory": {
+		"potision": "pos-all",
+		"release": [
+			{
+				"key": "Defense",
+				"value": "2.4%"
+			},
+			{
+				"key": "Defense",
+				"value": "3.6%"
+			},
+			{
+				"key": "Defense",
+				"value": "4.8%"
+			},
+			{
+				"key": "Defense",
+				"value": "6.0%"
+			},
+			{
+				"key": "Defense",
+				"value": "7.2%"
+			},
+			{
+				"key": "Defense",
+				"value": "8.4%"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Effectiveness",
+				"value": "6.80%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "10.20%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "13.60%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "17%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "20.40%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "22.80%"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Ritualistic Touch",
+			"type": "Active",
+			"description": {
+				"text": "Attacks the enemy with fragments of a shimmering star, with a 50% chance to silence for 1 turn. When the target is silenced after attacking, decreases Combat Readiness of the target by 25%.",
+				"burn": "Increases effect chance to 100%. (-10 Souls)",
+				"soul": "+1",
+				"ct": null,
+				"enhance": [
+					"+10% damage dealt",
+					"+10% effect chance",
+					"+10% damage dealt",
+					"+15% effect chance",
+					"+10% damage dealt"
+				],
+				"multipliers": "",
+				"text_ja": "敵単体に攻撃し、50%の確率で沈黙を1ターンの間付与する。攻撃後、対象が沈黙状態の場合、対象のアクションゲージを25%DOWNさせる。",
+				"burn_ja": "効果発生率が100%になる。(魂力10消費)"
+			},
+			"title_ja": "洗礼の手"
+		},
+		{
+			"title": "Guardian of Light",
+			"type": "Passive",
+			"description": {
+				"text": "Immune to stun, and when an ally except for the caster is attacked, increases Combat Readiness of the caster by 8%. When suffering an attack that targets all allies, has a 75% chance to activate Guardian Angel. Guardian Angel can only be activated once every 3 turns. Guardian Angel: Dispels one debuff from all allies before granting Skill Nullifier once.",
+				"burn": "",
+				"soul": null,
+				"ct": null,
+				"enhance": [
+					"+5% effect chance",
+					"+5% effect chance",
+					"+5% effect chance",
+					"+5% effect chance",
+					"+5% effect chance"
+				],
+				"multipliers": "",
+				"text_ja": "スタン状態にならない。自身以外の味方が攻撃を受けた時、自身のアクションゲージを攻撃を受けた自身以外の味方の数×8%UPさせる。全体攻撃を受けた時、75%の確率で【守護天使】を発動する。【守護天使】は3ターンに1回まで発動する。守護天使：味方全体の弱体効果を1つ解除した後、スキルダメージ無効を1回付与する。",
+				"burn_ja": ""
+			},
+			"title_ja": "光の守護者"
+		},
+		{
+			"title": "Judgment of Angels",
+			"type": "Active",
+			"description": {
+				"text": "Dispels two buffs from all enemies with holy light before a 70% chance to make them unable to be buffed for 2 turns and silencing for 1 turn.",
+				"burn": "",
+				"soul": "+3",
+				"ct": "5",
+				"enhance": [
+					"+5% effect chance",
+					"+5% effect chance",
+					"-1 turn cooldown",
+					"+10% effect chance",
+					"+10% effect chance"
+				],
+				"multipliers": "",
+				"text_ja": "敵全体の強化効果を2つ解除した後、70%の確率で強化不可を2ターン・沈黙を1ターンの間付与する。",
+				"burn_ja": ""
+			},
+			"title_ja": "天使の審判"
+		}
+	]
+}

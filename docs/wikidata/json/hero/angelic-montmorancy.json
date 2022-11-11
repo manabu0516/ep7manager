@@ -1,0 +1,240 @@
+{
+	"common": {
+		"name": "Angelic Montmorancy",
+		"image": "https://epic7x.com/wp-content/uploads/2019/05/Angelic-Montmorancy-1.png",
+		"attribute": "ice",
+		"sign": "pisces",
+		"clazz": "soul-weaver",
+		"rarity": "3",
+		"name_ja": "守護天使モンモランシー"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "15%",
+		"Critical_Hit_Damage": "150%",
+		"dual_attack": "5%",
+		"Effectiveness": "0%",
+		"Effect_Resistance": "12%",
+		"Speed": "98",
+		"Atk": "540",
+		"HP": "4900",
+		"Def": "729"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": 3
+		},
+		{
+			"key": "Belief",
+			"score": 3
+		},
+		{
+			"key": "Bizarre Story",
+			"score": -3
+		},
+		{
+			"key": "Comforting",
+			"score": 5
+		},
+		{
+			"key": "Complain",
+			"score": 3
+		},
+		{
+			"key": "Criticism",
+			"score": -5
+		},
+		{
+			"key": "Cute Cheer",
+			"score": 2
+		},
+		{
+			"key": "Dream",
+			"score": 4
+		},
+		{
+			"key": "Food Story",
+			"score": 5
+		},
+		{
+			"key": "Gossip",
+			"score": 0
+		},
+		{
+			"key": "Happy Memory",
+			"score": 4
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": 4
+		},
+		{
+			"key": "Heroic Tale",
+			"score": 2
+		},
+		{
+			"key": "Horror",
+			"score": -5
+		},
+		{
+			"key": "Interesting Story",
+			"score": 1
+		},
+		{
+			"key": "Joyful Memories",
+			"score": 4
+		},
+		{
+			"key": "Myth",
+			"score": 5
+		},
+		{
+			"key": "Occult",
+			"score": -4
+		},
+		{
+			"key": "Reality Check",
+			"score": -2
+		},
+		{
+			"key": "Sad Memory",
+			"score": 6
+		},
+		{
+			"key": "Self Indulgent",
+			"score": 2
+		},
+		{
+			"key": "Unique Comment",
+			"score": 2
+		}
+	],
+	"memory": {
+		"potision": "pos-all",
+		"release": [
+			{
+				"key": "Def",
+				"value": "12"
+			},
+			{
+				"key": "Def",
+				"value": "18"
+			},
+			{
+				"key": "Def",
+				"value": "24"
+			},
+			{
+				"key": "Def",
+				"value": "30"
+			},
+			{
+				"key": "Def",
+				"value": "36"
+			},
+			{
+				"key": "Def",
+				"value": "42"
+			},
+			{
+				"key": "Def",
+				"value": "48"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Effect Resistance",
+				"value": "4.50%"
+			},
+			{
+				"key": "Effect Resistance",
+				"value": "6.80%"
+			},
+			{
+				"key": "Effect Resistance",
+				"value": "9%"
+			},
+			{
+				"key": "Effect Resistance",
+				"value": "11.20%"
+			},
+			{
+				"key": "Effect Resistance",
+				"value": "13.50%"
+			},
+			{
+				"key": "Effect Resistance",
+				"value": "15.80%"
+			},
+			{
+				"key": "Effect Resistance",
+				"value": "18%"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Sleep Sorcery",
+			"type": "Active",
+			"description": {
+				"text": "Attack the enemy with water energy, with a 40% chance to put them to sleep for 1 turn.",
+				"burn": "",
+				"soul": "+1",
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+10% damage dealt",
+					"+5% effect chance",
+					"+5% effect chance",
+					"+15% damage dealt"
+				],
+				"multipliers": "ATK*1*1*1.871",
+				"text_ja": "敵単体に攻撃する。40%の確率で睡眠を1ターンの間付与する。",
+				"burn_ja": ""
+			},
+			"title_ja": "睡眠魔法"
+		},
+		{
+			"title": "Purification",
+			"type": "Active",
+			"description": {
+				"text": "Dispels one debuff from all allies, and heals debuffed allies. Amount recovered is proportional to the ally's max Health.",
+				"burn": "",
+				"soul": "+1",
+				"ct": "2",
+				"enhance": [
+					"+5% healing",
+					"+5% healing",
+					"+10% healing",
+					"+10% healing",
+					"+15% healing"
+				],
+				"multipliers": "Heal strength: 7% target max Health",
+				"text_ja": "味方全体の弱体効果を1つ解除し、弱体状態の対象の生命力を回復する。対象の最大生命力が高いほど回復量がUPする。",
+				"burn_ja": ""
+			},
+			"title_ja": "浄化"
+		},
+		{
+			"title": "Earnest Prayer",
+			"type": "Active",
+			"description": {
+				"text": "Dispels two debuffs from an ally before recovering Health and granting immunity for 2 turns. Increases the caster's Combat Readiness by 50%. Amount recovered increases proportional to the target's max Health.",
+				"burn": "Effect is granted to all allies. (-20 Souls)",
+				"soul": "+2",
+				"ct": "3",
+				"enhance": [
+					"+5% healing",
+					"+5% healing",
+					"+10% healing",
+					"+10% healing",
+					"+10% healing"
+				],
+				"multipliers": "Heal strength: 35% target max Health",
+				"text_ja": "味方単体の弱体効果を2つ解除した後、生命力を回復し、免疫を2ターンの間付与する。更に自身のアクションゲージを50%UPさせる。対象の最大生命力が高いほど回復量がUPする。",
+				"burn_ja": "効果対象が味方全体になる。(魂力20消費)"
+			},
+			"title_ja": "敬虔なる祈り"
+		}
+	]
+}

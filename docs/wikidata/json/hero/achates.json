@@ -1,0 +1,232 @@
+{
+	"common": {
+		"name": "Achates",
+		"image": "https://epic7x.com/wp-content/uploads/2019/01/Achates-Portrait.png",
+		"attribute": "fire",
+		"sign": "gemini",
+		"clazz": "soul-weaver",
+		"rarity": "4",
+		"name_ja": "アカテス"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "15%",
+		"Critical_Hit_Damage": "150%",
+		"dual_attack": "5%",
+		"Effectiveness": "0%",
+		"Effect_Resistance": "30%",
+		"Speed": "103",
+		"Atk": "603",
+		"HP": "4945",
+		"Def": "662"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": 8
+		},
+		{
+			"key": "Belief",
+			"score": 0
+		},
+		{
+			"key": "Bizarre Story",
+			"score": 1
+		},
+		{
+			"key": "Comforting",
+			"score": 6
+		},
+		{
+			"key": "Complain",
+			"score": -2
+		},
+		{
+			"key": "Criticism",
+			"score": -4
+		},
+		{
+			"key": "Cute Cheer",
+			"score": 6
+		},
+		{
+			"key": "Dream",
+			"score": 4
+		},
+		{
+			"key": "Food Story",
+			"score": 0
+		},
+		{
+			"key": "Gossip",
+			"score": 4
+		},
+		{
+			"key": "Happy Memory",
+			"score": 5
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": 5
+		},
+		{
+			"key": "Heroic Tale",
+			"score": -2
+		},
+		{
+			"key": "Horror",
+			"score": -3
+		},
+		{
+			"key": "Interesting Story",
+			"score": 3
+		},
+		{
+			"key": "Joyful Memories",
+			"score": 5
+		},
+		{
+			"key": "Myth",
+			"score": 2
+		},
+		{
+			"key": "Occult",
+			"score": -1
+		},
+		{
+			"key": "Reality Check",
+			"score": -6
+		},
+		{
+			"key": "Sad Memory",
+			"score": 5
+		},
+		{
+			"key": "Self Indulgent",
+			"score": -5
+		},
+		{
+			"key": "Unique Comment",
+			"score": 0
+		}
+	],
+	"memory": {
+		"potision": "pos-tr",
+		"release": [
+			{
+				"key": "Defense",
+				"value": "2.9%"
+			},
+			{
+				"key": "Defense",
+				"value": "3.6%"
+			},
+			{
+				"key": "Defense",
+				"value": "5.8%"
+			},
+			{
+				"key": "Defense",
+				"value": "7.2%"
+			},
+			{
+				"key": "Defense",
+				"value": "8.7%"
+			},
+			{
+				"key": "Defense",
+				"value": "10.2%"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Health",
+				"value": "4%"
+			},
+			{
+				"key": "Health",
+				"value": "6%"
+			},
+			{
+				"key": "Health",
+				"value": "8%"
+			},
+			{
+				"key": "Health",
+				"value": "10%"
+			},
+			{
+				"key": "Health",
+				"value": "12%"
+			},
+			{
+				"key": "Health",
+				"value": "14%"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Magic Design",
+			"type": "Active",
+			"description": {
+				"text": "Attacks with a staff, with a 35% chance to decrease Attack for 2 turns.",
+				"burn": "",
+				"soul": "+1",
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+5% effect chance",
+					"+10% damage dealt",
+					"+10% effect chance",
+					"+15% damage dealt"
+				],
+				"multipliers": "ATK*1*0.95*1.871",
+				"text_ja": "敵単体に攻撃し、35%の確率で攻撃力DOWNを2ターンの間付与する。",
+				"burn_ja": ""
+			},
+			"title_ja": "魔法紋様"
+		},
+		{
+			"title": "Rapid Cure",
+			"type": "Active",
+			"description": {
+				"text": "Recovers ally's Health and grants invincibility for 1 turn, before decreasing the target's skill cooldown by 1 turn. Amount recovered is proportional to the caster's max Health.",
+				"burn": "",
+				"soul": "+2",
+				"ct": "3",
+				"enhance": [
+					"+5% healing",
+					"+5% healing",
+					"+5% healing",
+					"+5% healing",
+					"+10% healing"
+				],
+				"multipliers": "Heal strength: 15% self max Health",
+				"text_ja": "味方単体の生命力を回復し、無敵を1ターンの間付与する。更に対象のスキルターンを1減少させる。自身の最大生命力が高いほど回復量がUPする。",
+				"burn_ja": ""
+			},
+			"title_ja": "急速回復"
+		},
+		{
+			"title": "Curing Prayer",
+			"type": "Active",
+			"description": {
+				"text": "Dispel debuffs from all allies before healing them. Healing increases proportional to the caster's max Health.",
+				"burn": "Increases the amount recovered (-10 Souls)",
+				"soul": "+2",
+				"ct": "4",
+				"enhance": [
+					"+5% healing",
+					"+5% healing",
+					"-1 turn cooldown",
+					"+10% healing",
+					"+10% healing"
+				],
+				"multipliers": "Heal strength: 30% self max Health (50% soulburn)",
+				"text_ja": "味方全体の弱体効果を解除し、生命力を回復する。自身の最大生命力が高いほど回復量がUPする。",
+				"burn_ja": "回復量がUPする。(魂力10消費)"
+			},
+			"title_ja": "治癒の祈り"
+		}
+	]
+}

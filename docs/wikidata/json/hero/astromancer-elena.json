@@ -1,0 +1,224 @@
+{
+	"common": {
+		"name": "Astromancer Elena",
+		"image": "https://epic7x.com/wp-content/uploads/2022/09/astromancer-elena.png",
+		"attribute": "light",
+		"sign": "libra",
+		"clazz": "ranger",
+		"rarity": "5",
+		"name_ja": "神託のエレナ"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "12%",
+		"Critical_Hit_Damage": "10%",
+		"dual_attack": "5%",
+		"Effectiveness": "0%",
+		"Effect_Resistance": "0%",
+		"Speed": "115",
+		"Atk": "1079",
+		"HP": "5502",
+		"Def": "564"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": null
+		},
+		{
+			"key": "Belief",
+			"score": null
+		},
+		{
+			"key": "Bizarre Story",
+			"score": null
+		},
+		{
+			"key": "Comforting",
+			"score": null
+		},
+		{
+			"key": "Complain",
+			"score": null
+		},
+		{
+			"key": "Criticism",
+			"score": null
+		},
+		{
+			"key": "Cute Cheer",
+			"score": null
+		},
+		{
+			"key": "Dream",
+			"score": null
+		},
+		{
+			"key": "Food Story",
+			"score": null
+		},
+		{
+			"key": "Gossip",
+			"score": null
+		},
+		{
+			"key": "Happy Memory",
+			"score": null
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": null
+		},
+		{
+			"key": "Heroic Tale",
+			"score": null
+		},
+		{
+			"key": "Horror",
+			"score": null
+		},
+		{
+			"key": "Interesting Story",
+			"score": null
+		},
+		{
+			"key": "Joyful Memories",
+			"score": null
+		},
+		{
+			"key": "Myth",
+			"score": null
+		},
+		{
+			"key": "Occult",
+			"score": null
+		},
+		{
+			"key": "Reality Check",
+			"score": null
+		},
+		{
+			"key": "Sad Memory",
+			"score": null
+		},
+		{
+			"key": "Self Indulgent",
+			"score": null
+		},
+		{
+			"key": "Unique Comment",
+			"score": null
+		}
+	],
+	"memory": {
+		"potision": "pos-tl",
+		"release": [
+			{
+				"key": "Attack",
+				"value": "4.3%"
+			},
+			{
+				"key": "Attack",
+				"value": "6.4%"
+			},
+			{
+				"key": "Attack",
+				"value": "8.6%"
+			},
+			{
+				"key": "Attack",
+				"value": "10.7%"
+			},
+			{
+				"key": "Attack",
+				"value": "12.9%"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Attack",
+				"value": "6%"
+			},
+			{
+				"key": "Attack",
+				"value": "9%"
+			},
+			{
+				"key": "Attack",
+				"value": "12%"
+			},
+			{
+				"key": "Attack",
+				"value": "15%"
+			},
+			{
+				"key": "Attack",
+				"value": "18%"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Melody of Damnation",
+			"type": "Active",
+			"description": {
+				"text": "Attacks the enemy with a punishing melody. When the target has a debuff, increases damage dealt.",
+				"burn": "",
+				"soul": "+1",
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+10% damage dealt"
+				],
+				"multipliers": "",
+				"text_ja": "敵単体に攻撃する。対象が弱体状態の場合、ダメージがUPする。",
+				"burn_ja": ""
+			},
+			"title_ja": "断罪の旋律"
+		},
+		{
+			"title": "Disciple of the Stars",
+			"type": "Passive",
+			"description": {
+				"text": "After an ally except for the caster attacks, when the target is unable to counterattack, activates Worship Me!. Worship Me! can only be activated once very 4 turns. \nWorship Me!: Increases Combat Readiness of all allies by 15%.",
+				"burn": "",
+				"soul": null,
+				"ct": null,
+				"enhance": [
+					"-1 turn cooldown"
+				],
+				"multipliers": "",
+				"text_ja": "自身以外の味方が攻撃した後、対象が反撃不可状態の場合、【崇めよ！】を発動する。【崇めよ！】は4ターンに1回まで発動する。崇めよ！",
+				"burn_ja": ""
+			},
+			"title_ja": "星の崇拝者"
+		},
+		{
+			"title": "Enraged Star's Retribution",
+			"type": "Active",
+			"description": {
+				"text": "Attacks all enemies with the energy of the enraged star, decreasing buff durations by 1 turn before restricting and making them unable to counterattack for 2 turns. When using this skill, increases Hit Chance by 35%. This skill cannot trigger a counterattack.",
+				"burn": "Ignores Effect Resistance. (-20 Souls)",
+				"soul": "+3",
+				"ct": "5",
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"-1 turn cooldown",
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+10% damage dealt",
+					"+10% damage dealt"
+				],
+				"multipliers": "",
+				"text_ja": "敵全体に攻撃し、強化効果を1ターン短縮させた後、束縛・反撃不可を2ターンの間付与する。この攻撃の命中率が35%UPする。この攻撃は反撃されない。",
+				"burn_ja": "効果抵抗を無視する。(魂力20消費)"
+			},
+			"title_ja": "激怒せし星の裁き"
+		}
+	]
+}

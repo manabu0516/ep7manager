@@ -1,0 +1,224 @@
+{
+	"common": {
+		"name": "Belian",
+		"image": "https://epic7x.com/wp-content/uploads/2021/09/Belian.png",
+		"attribute": "light",
+		"sign": "aries",
+		"clazz": "knight",
+		"rarity": "5",
+		"name_ja": "ヴェリアン"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "15%",
+		"Critical_Hit_Damage": "150%",
+		"dual_attack": "5%",
+		"Effectiveness": "18%",
+		"Effect_Resistance": "0%",
+		"Speed": "4",
+		"Atk": "821",
+		"HP": "6751",
+		"Def": "648"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": 1
+		},
+		{
+			"key": "Belief",
+			"score": 0
+		},
+		{
+			"key": "Bizarre Story",
+			"score": 0
+		},
+		{
+			"key": "Comforting",
+			"score": 1
+		},
+		{
+			"key": "Complain",
+			"score": 1
+		},
+		{
+			"key": "Criticism",
+			"score": 4
+		},
+		{
+			"key": "Cute Cheer",
+			"score": 1
+		},
+		{
+			"key": "Dream",
+			"score": 0
+		},
+		{
+			"key": "Food Story",
+			"score": 0
+		},
+		{
+			"key": "Gossip",
+			"score": 2
+		},
+		{
+			"key": "Happy Memory",
+			"score": 0
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": 1
+		},
+		{
+			"key": "Heroic Tale",
+			"score": 0
+		},
+		{
+			"key": "Horror",
+			"score": 0
+		},
+		{
+			"key": "Interesting Story",
+			"score": 3
+		},
+		{
+			"key": "Joyful Memories",
+			"score": 1
+		},
+		{
+			"key": "Myth",
+			"score": 5
+		},
+		{
+			"key": "Occult",
+			"score": 3
+		},
+		{
+			"key": "Reality Check",
+			"score": 4
+		},
+		{
+			"key": "Sad Memory",
+			"score": 0
+		},
+		{
+			"key": "Self Indulgent",
+			"score": 5
+		},
+		{
+			"key": "Unique Comment",
+			"score": 3
+		}
+	],
+	"memory": {
+		"potision": "pos-all",
+		"release": [
+			{
+				"key": "Effect Resistance",
+				"value": "4.8%"
+			},
+			{
+				"key": "Effect Resistance",
+				"value": "7.2%"
+			},
+			{
+				"key": "Effect Resistance",
+				"value": "9.6%"
+			},
+			{
+				"key": "Effect Resistance",
+				"value": "12%"
+			},
+			{
+				"key": "Effect Resistance",
+				"value": "14.4%"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Health",
+				"value": "6%"
+			},
+			{
+				"key": "Health",
+				"value": "9%"
+			},
+			{
+				"key": "Health",
+				"value": "12%"
+			},
+			{
+				"key": "Health",
+				"value": "15%"
+			},
+			{
+				"key": "Health",
+				"value": "18%"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Light of Destruction",
+			"type": "Active",
+			"description": {
+				"text": "Attacks all enemies with a ray, with a 50% chance to dispel one buff. When used on the caster's turn, has a 35% chance to activate Incursion as an extra attack. Damage dealt increases proportional to the caster's max Health. Incursion: Attacks all enemies, decreasing Speed and Hit Chance for 1 turn. Damage dealt increases proportional to the caster's max Health.",
+				"burn": "Increases effect chance of activating Incursion to 100%. (-10 Souls)",
+				"soul": "+1",
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+5% buff dispel chance",
+					"+5% damage dealt",
+					"+5% buff dispel chance",
+					"+5% damage dealt",
+					"+5% buff dispel chance",
+					"+10% damage dealt"
+				],
+				"multipliers": "",
+				"text_ja": "敵全体に攻撃し、50%の確率で強化効果を1つ解除する。自身のターンに発動時、35%の確率で追加で【奇襲】を発動する。自身の最大生命力が高いほどダメージがUPする。奇襲：敵全体に攻撃し、スピードDOWN・命中率DOWNを1ターンの間付与する。自身の最大生命力が高いほどダメージがUPする。",
+				"burn_ja": "【奇襲】の発動率が100%になる。(魂力10消費)"
+			},
+			"title_ja": "破滅の光"
+		},
+		{
+			"title": "Shackles of Suppression",
+			"type": "Passive",
+			"description": {
+				"text": "Decreases the amount of Souls gained by the enemy by 100%. At the start of the turn, has a 70% chance to grant a random buff to the caster for 1 turn. (Increase Effectiveness, Increase Critical Hit Chance, Continuous Healing)",
+				"burn": "",
+				"soul": null,
+				"ct": null,
+				"enhance": [
+					"+2% effect chance",
+					"+2% effect chance",
+					"+3% effect chance",
+					"+3% effect chance",
+					"+5% effect chance",
+					"+5% effect chance",
+					"+10% effect chance"
+				],
+				"multipliers": "",
+				"text_ja": "敵の【魂力】獲得量を100%DOWNさせる。ターン開始時、自身に70%の確率でランダム強化効果を1ターンの間付与する。ランダム強化効果：効果命中率UP・クリティカル発生率UP・持続回復",
+				"burn_ja": ""
+			},
+			"title_ja": "制圧の足かせ"
+		},
+		{
+			"title": "Apocalypse",
+			"type": "Active",
+			"description": {
+				"text": "Attacks all enemies with the power of duties, decreasing Combat Readiness by a random amount between 20% and 40% and provokes for 1 turn. Increases Defense of the caster for 2 turns. Damage dealt increases proportional to the caster's max Health.",
+				"burn": "",
+				"soul": "+3",
+				"ct": "5",
+				"enhance": [
+					"-1 turn cooldown"
+				],
+				"multipliers": "",
+				"text_ja": "敵全体に攻撃し、アクションゲージを20%〜40%DOWNさせ、挑発を1ターンの間付与する。自身に防御力UPを2ターンの間付与する。自身の最大生命力が高いほどダメージがUPする。",
+				"burn_ja": ""
+			},
+			"title_ja": "終末"
+		}
+	]
+}

@@ -1,0 +1,224 @@
+{
+	"common": {
+		"name": "Apocalypse Ravi",
+		"image": "https://epic7x.com/wp-content/uploads/2019/07/Apocalypse-Ravi-1.png",
+		"attribute": "dark",
+		"sign": "cancer",
+		"clazz": "warrior",
+		"rarity": "5",
+		"name_ja": "黙示録のラヴィ"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "15%",
+		"Critical_Hit_Damage": "150%",
+		"dual_attack": "5%",
+		"Effectiveness": "0%",
+		"Effect_Resistance": "0%",
+		"Speed": "106",
+		"Atk": "975",
+		"HP": "7054",
+		"Def": "652"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": 6
+		},
+		{
+			"key": "Belief",
+			"score": 0
+		},
+		{
+			"key": "Bizarre Story",
+			"score": 2
+		},
+		{
+			"key": "Comforting",
+			"score": 6
+		},
+		{
+			"key": "Complain",
+			"score": -7
+		},
+		{
+			"key": "Criticism",
+			"score": 8
+		},
+		{
+			"key": "Cute Cheer",
+			"score": 4
+		},
+		{
+			"key": "Dream",
+			"score": 2
+		},
+		{
+			"key": "Food Story",
+			"score": 0
+		},
+		{
+			"key": "Gossip",
+			"score": -4
+		},
+		{
+			"key": "Happy Memory",
+			"score": 0
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": -6
+		},
+		{
+			"key": "Heroic Tale",
+			"score": 2
+		},
+		{
+			"key": "Horror",
+			"score": 3
+		},
+		{
+			"key": "Interesting Story",
+			"score": 0
+		},
+		{
+			"key": "Joyful Memories",
+			"score": 0
+		},
+		{
+			"key": "Myth",
+			"score": 2
+		},
+		{
+			"key": "Occult",
+			"score": 6
+		},
+		{
+			"key": "Reality Check",
+			"score": -1
+		},
+		{
+			"key": "Sad Memory",
+			"score": 4
+		},
+		{
+			"key": "Self Indulgent",
+			"score": -2
+		},
+		{
+			"key": "Unique Comment",
+			"score": 5
+		}
+	],
+	"memory": {
+		"potision": "pos-tb",
+		"release": [
+			{
+				"key": "Health",
+				"value": "4.3%"
+			},
+			{
+				"key": "Health",
+				"value": "6.4%"
+			},
+			{
+				"key": "Health",
+				"value": "8.6%"
+			},
+			{
+				"key": "Health",
+				"value": "10.7%"
+			},
+			{
+				"key": "Health",
+				"value": "12.0%"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Effect Resistance",
+				"value": "9%"
+			},
+			{
+				"key": "Effect Resistance",
+				"value": "13.50%"
+			},
+			{
+				"key": "Effect Resistance",
+				"value": "18%"
+			},
+			{
+				"key": "Effect Resistance",
+				"value": "22.50%"
+			},
+			{
+				"key": "Effect Resistance",
+				"value": "27%"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Spectral Axe",
+			"type": "Active",
+			"description": {
+				"text": "Attacks the enemy with an axe, inflicting injuries before absorbing some of the damage dealt as Health. Damage dealt increases proportional to the caster's max Health. The severity of injuries increases proportional to damage dealt. Injuries decrease max Health of the target by up to 10% every time this skill is used.",
+				"burn": "Greatly increases amount of damage dealt. Does not trigger a Dual Attack. (-20 Souls)",
+				"soul": "+1",
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+10% damage dealt"
+				],
+				"multipliers": "(ATK*1*0.95+HP*0.12)*1.871 (1.8 soul burn)\n                                        \n                                                                                    Health leech 30% damage dealt and additional 12% self max Health (20% soulburn)",
+				"text_ja": "敵単体に攻撃し、裂傷を付与した後、与えたダメージに応じて自身の生命力を回復する。自身の最大生命力が高いほどダメージがUPする。ダメージが高いほど裂傷効果がUPし、1回のスキルで対象の最大生命力の10%まで、最大生命力を減少させられる。",
+				"burn_ja": "ダメージが大きくUPする。連携攻撃が発生しない。(魂力20消費)"
+			},
+			"title_ja": "神隠し"
+		},
+		{
+			"title": "War God's Might",
+			"type": "Passive",
+			"description": {
+				"text": "Increases Critical Hit Chance by 30%. Starts the first battle with 50 Fighting Spirit. At the moment the caster is attacked, consumes 10 Fighting Spirit to increase Combat Readiness of the caster by 15% and recovers the caster's Health. Amount recovered increases proportional to the caster's max Health.",
+				"burn": "",
+				"soul": null,
+				"ct": null,
+				"enhance": [
+					"+5% healing",
+					"+10% healing",
+					"+15% healing"
+				],
+				"multipliers": "Heal strength: 6-8% self max Health",
+				"text_ja": "クリティカル発生率が30%UPする。初回のバトル開始時、【闘志】を50獲得する。攻撃を受けた時、その攻撃に伴う効果が発生する前に【闘志】を10消費して自身のアクションゲージを15%UPさせ、自身の生命力を回復する。回復量は自身の最大生命力が高いほどUPする。",
+				"burn_ja": ""
+			},
+			"title_ja": "軍神の力"
+		},
+		{
+			"title": "Deliverance: Soul Exchange",
+			"type": "Active",
+			"description": {
+				"text": "Delivers divine judgment down upon the enemy. When an enemy is defeated, revives one random dead ally with 30% Health and increases their Combat Readiness by 100% before granting Skill Nullifier once. Damage dealt increases proportional to the caster's max Health. Damage dealt by this skill increases every time somebody dies. Effect can only stack up to 3 times.",
+				"burn": "",
+				"soul": "+2",
+				"ct": "5",
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"-1 turn cooldown",
+					"+5% damage dealt",
+					"+10% damage dealt",
+					"+10% damage dealt"
+				],
+				"multipliers": "(ATK*1.3*0.95+HP*0.20)*1.871\n                                        \n                                                                                    20% self max Health",
+				"text_ja": "敵単体に攻撃する。このスキルで敵を気絶させた場合、気絶したランダムな味方単体を30%の生命力で復活させ、アクションゲージを100%UPさせた後、スキルダメージ無効を1回付与する。自身の最大生命力に応じてダメージがUPする。このスキルは敵・味方が気絶するたびにダメージがUPし、最大3回まで累積する。",
+				"burn_ja": ""
+			},
+			"title_ja": "審判：魂替え"
+		}
+	]
+}
