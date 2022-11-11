@@ -1,0 +1,232 @@
+{
+	"common": {
+		"name": "Assassin Coli",
+		"image": "https://epic7x.com/wp-content/uploads/2019/01/Assassin-Coli-1.png",
+		"attribute": "dark",
+		"sign": "taurus",
+		"clazz": "thief",
+		"rarity": "4",
+		"name_ja": "静寂のコリー"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "15",
+		"Critical_Hit_Damage": "150",
+		"dual_attack": "5",
+		"Effectiveness": "0",
+		"Effect_Resistance": "0",
+		"Speed": "126",
+		"Atk": "1027",
+		"HP": "5299",
+		"Def": "469"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": 4
+		},
+		{
+			"key": "Belief",
+			"score": 4
+		},
+		{
+			"key": "Bizarre Story",
+			"score": 3
+		},
+		{
+			"key": "Comforting",
+			"score": 1
+		},
+		{
+			"key": "Complain",
+			"score": -3
+		},
+		{
+			"key": "Criticism",
+			"score": 2
+		},
+		{
+			"key": "Cute Cheer",
+			"score": 2
+		},
+		{
+			"key": "Dream",
+			"score": 4
+		},
+		{
+			"key": "Food Story",
+			"score": 1
+		},
+		{
+			"key": "Gossip",
+			"score": -2
+		},
+		{
+			"key": "Happy Memory",
+			"score": 1
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": 3
+		},
+		{
+			"key": "Heroic Tale",
+			"score": 0
+		},
+		{
+			"key": "Horror",
+			"score": 3
+		},
+		{
+			"key": "Interesting Story",
+			"score": 1
+		},
+		{
+			"key": "Joyful Memories",
+			"score": 3
+		},
+		{
+			"key": "Myth",
+			"score": 0
+		},
+		{
+			"key": "Occult",
+			"score": 1
+		},
+		{
+			"key": "Reality Check",
+			"score": -1
+		},
+		{
+			"key": "Sad Memory",
+			"score": -2
+		},
+		{
+			"key": "Self Indulgent",
+			"score": -1
+		},
+		{
+			"key": "Unique Comment",
+			"score": 3
+		}
+	],
+	"memory": {
+		"potision": "pos-br",
+		"release": [
+			{
+				"key": "Critical Hit Chance",
+				"value": "4.3%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "6.5%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "8.6%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "10.7%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "12.9%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "15%"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Critical Hit Chance",
+				"value": "4.20%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "6.30%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "8.40%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "10.50%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "12.60%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "14.70%"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Ambush",
+			"type": "Active",
+			"description": {
+				"text": "Ambushes the enemy. When the caster is stealthed, increases damage dealt and increases Speed of the caster for 1 turn. Damage dealt increases proportional to the caster's Speed.",
+				"burn": "",
+				"soul": "+1",
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+10% damage dealt",
+					"+10% damage dealt"
+				],
+				"multipliers": "(ATK*1.4968) * (1+Speed*0.00075) [1.1 Stealth]\n                                        \n                                                                                    0.075% self Speed (0.00075 * Speed)",
+				"text_ja": "敵単体に攻撃する。自身が潜伏状態の場合、ダメージがUPし、自身にスピードUPを1ターンの間付与する。更に自身のスピードが高いほどダメージがUPする。",
+				"burn_ja": ""
+			},
+			"title_ja": "奇襲"
+		},
+		{
+			"title": "Cloak and Dagger",
+			"type": "Passive",
+			"description": {
+				"text": "When the caster is free of debuffs, has a 80% chance each to be granted increase Attack for 1 turn at the beginning of turn, and stealth for 1 turn at the end of the turn.",
+				"burn": "",
+				"soul": null,
+				"ct": null,
+				"enhance": [
+					"+5% trigger chance",
+					"+5% trigger chance",
+					"+5% trigger chance",
+					"+5% trigger chance"
+				],
+				"multipliers": "",
+				"text_ja": "自身が弱体状態でない場合、それぞれ80％の確率でターン開始時に攻撃力UPを1ターンの間付与し、ターン終了時に潜伏を1ターンの間付与する。",
+				"burn_ja": ""
+			},
+			"title_ja": "待ち伏せ"
+		},
+		{
+			"title": "Murder",
+			"type": "Active",
+			"description": {
+				"text": "Moves silently to attack the enemy, stunning for 1 turn. Silences all enemies for 1 turn when the target is defeated. Damage dealt increases proportional to the caster's Speed.",
+				"burn": "Increases damage dealt. (-20 Souls)",
+				"soul": "+3",
+				"ct": "5",
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"-1 turn cooldown",
+					"+10% damage dealt",
+					"+10% damage dealt",
+					"+15% damage dealt"
+				],
+				"multipliers": "(ATK*2.2452) * (1+Speed*0.001125) [3 soul burn]\n                                        \n                                                                                    0.1125% self Speed (0.001125 * Speed)",
+				"text_ja": "敵単体に攻撃し、スタンを1ターンの間付与する。このスキルで敵を気絶させた場合、敵全体に沈黙を1ターンの間付与する。自身のスピードが高いほどダメージがUPする。",
+				"burn_ja": "ダメージがUPする。(魂力20消費)"
+			},
+			"title_ja": "暗殺"
+		}
+	]
+}

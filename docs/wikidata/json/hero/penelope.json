@@ -1,0 +1,240 @@
+{
+	"common": {
+		"name": "Penelope",
+		"image": "https://epic7x.com/wp-content/uploads/2021/08/Penelope-1.png",
+		"attribute": "dark",
+		"sign": "scorpio",
+		"clazz": "thief",
+		"rarity": "3",
+		"name_ja": "ペネロペ"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "23",
+		"Critical_Hit_Damage": "150",
+		"dual_attack": "5",
+		"Effectiveness": "0",
+		"Effect_Resistance": "0",
+		"Speed": "108",
+		"Atk": "1039",
+		"HP": "5517",
+		"Def": "452"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": 2
+		},
+		{
+			"key": "Belief",
+			"score": 0
+		},
+		{
+			"key": "Bizarre Story",
+			"score": 0
+		},
+		{
+			"key": "Comforting",
+			"score": 3
+		},
+		{
+			"key": "Complain",
+			"score": 0
+		},
+		{
+			"key": "Criticism",
+			"score": 0
+		},
+		{
+			"key": "Cute Cheer",
+			"score": 2
+		},
+		{
+			"key": "Dream",
+			"score": 2
+		},
+		{
+			"key": "Food Story",
+			"score": 6
+		},
+		{
+			"key": "Gossip",
+			"score": 0
+		},
+		{
+			"key": "Happy Memory",
+			"score": 3
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": 3
+		},
+		{
+			"key": "Heroic Tale",
+			"score": 4
+		},
+		{
+			"key": "Horror",
+			"score": 2
+		},
+		{
+			"key": "Interesting Story",
+			"score": 2
+		},
+		{
+			"key": "Joyful Memories",
+			"score": 4
+		},
+		{
+			"key": "Myth",
+			"score": 3
+		},
+		{
+			"key": "Occult",
+			"score": 0
+		},
+		{
+			"key": "Reality Check",
+			"score": 0
+		},
+		{
+			"key": "Sad Memory",
+			"score": 3
+		},
+		{
+			"key": "Self Indulgent",
+			"score": 0
+		},
+		{
+			"key": "Unique Comment",
+			"score": 3
+		}
+	],
+	"memory": {
+		"potision": "pos-all",
+		"release": [
+			{
+				"key": "Attack",
+				"value": "24"
+			},
+			{
+				"key": "Attack",
+				"value": "36"
+			},
+			{
+				"key": "Attack",
+				"value": "48"
+			},
+			{
+				"key": "Attack",
+				"value": "60"
+			},
+			{
+				"key": "Attack",
+				"value": "72"
+			},
+			{
+				"key": "Attack",
+				"value": "84"
+			},
+			{
+				"key": "Attack",
+				"value": "96"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Critical Hit Chance",
+				"value": "2.80%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "4.20%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "5.60%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "7%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "8.40%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "9.80%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "11.20%"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Merciless Sword",
+			"type": "Active",
+			"description": {
+				"text": "Attacks the enemy before increasing Attack of the caster by 15%. When an enemy is defeated, increases Combat Readiness of the caster by 75%.",
+				"burn": "Increases damage dealt. (-10 Souls)",
+				"soul": "+1",
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+10% damage dealt"
+				],
+				"multipliers": "ATK*1*1*1.871 (1.6 Soul Burn)",
+				"text_ja": "敵単体に攻撃した後、自身の攻撃力を15%UPさせる。このスキルで敵を気絶させた場合、自身のアクションゲージを75%UPさせる。攻撃力UP効果は最大3回まで累積する。",
+				"burn_ja": "ダメージがUPする。(魂力10消費)"
+			},
+			"title_ja": "無慈悲な剣"
+		},
+		{
+			"title": "Preliminary Plans",
+			"type": "Active",
+			"description": {
+				"text": "Decreases debuff durations of all allies by 1 turn before granting a barrier to the caster for 3 turns. Grants an extra turn to the caster. Barrier strength increases proportional to the caster's Attack.",
+				"burn": "",
+				"soul": "+2",
+				"ct": "4",
+				"enhance": [
+					"+10% barrier strength",
+					"+10% barrier strength",
+					"+10% barrier strength",
+					"+10% barrier strength",
+					"+10% barrier strength"
+				],
+				"multipliers": "",
+				"text_ja": "味方全体の弱体効果を1ターン短縮させ、自身にシールドを3ターンの間付与する。自身に追加ターンが発生する。自身の攻撃力が高いほどシールド効果がUPする。",
+				"burn_ja": ""
+			},
+			"title_ja": "事前計画"
+		},
+		{
+			"title": "Disarm",
+			"type": "Active",
+			"description": {
+				"text": "Inflicts resource reduction on the target by 100% before attacking them, with a 75% chance each to decrease Attack for 2 turns, and stun them for 1 turn. Grants stealth to the caster for 2 turns.",
+				"burn": "",
+				"soul": "+2",
+				"ct": "4",
+				"enhance": [
+					"+5% effect chance",
+					"+10% damage dealt",
+					"-1 turn cooldown",
+					"+10% effect chance",
+					"+10% effect chance"
+				],
+				"multipliers": "ATK*1.8*1.2*1.871",
+				"text_ja": "対象にエネルギーDOWNを100%発生させた後、対象に攻撃し、75%の確率で攻撃力DOWNを2ターン・スタンを1ターンの間付与する。自身に潜伏を2ターンの間付与する。",
+				"burn_ja": ""
+			},
+			"title_ja": "武装解除"
+		}
+	]
+}

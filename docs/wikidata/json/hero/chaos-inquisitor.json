@@ -1,0 +1,240 @@
+{
+	"common": {
+		"name": "Chaos Inquisitor",
+		"image": "https://epic7x.com/wp-content/uploads/2019/01/Chaos-Inquisitor.png",
+		"attribute": "fire",
+		"sign": "leo",
+		"clazz": "knight",
+		"rarity": "3",
+		"name_ja": "カオス教団執行追跡者"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "23",
+		"Critical_Hit_Damage": "150",
+		"dual_attack": "5",
+		"Effectiveness": "0",
+		"Effect_Resistance": "0",
+		"Speed": "95",
+		"Atk": "963",
+		"HP": "5138",
+		"Def": "606"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": 0
+		},
+		{
+			"key": "Belief",
+			"score": 2
+		},
+		{
+			"key": "Bizarre Story",
+			"score": -3
+		},
+		{
+			"key": "Comforting",
+			"score": 0
+		},
+		{
+			"key": "Complain",
+			"score": -4
+		},
+		{
+			"key": "Criticism",
+			"score": 2
+		},
+		{
+			"key": "Cute Cheer",
+			"score": 2
+		},
+		{
+			"key": "Dream",
+			"score": 3
+		},
+		{
+			"key": "Food Story",
+			"score": 2
+		},
+		{
+			"key": "Gossip",
+			"score": -6
+		},
+		{
+			"key": "Happy Memory",
+			"score": 2
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": 5
+		},
+		{
+			"key": "Heroic Tale",
+			"score": 4
+		},
+		{
+			"key": "Horror",
+			"score": 0
+		},
+		{
+			"key": "Interesting Story",
+			"score": 1
+		},
+		{
+			"key": "Joyful Memories",
+			"score": 5
+		},
+		{
+			"key": "Myth",
+			"score": 1
+		},
+		{
+			"key": "Occult",
+			"score": 1
+		},
+		{
+			"key": "Reality Check",
+			"score": -2
+		},
+		{
+			"key": "Sad Memory",
+			"score": 6
+		},
+		{
+			"key": "Self Indulgent",
+			"score": -1
+		},
+		{
+			"key": "Unique Comment",
+			"score": 3
+		}
+	],
+	"memory": {
+		"potision": "pos-all",
+		"release": [
+			{
+				"key": "Attack",
+				"value": "24"
+			},
+			{
+				"key": "Attack",
+				"value": "36"
+			},
+			{
+				"key": "Attack",
+				"value": "48"
+			},
+			{
+				"key": "Attack",
+				"value": "60"
+			},
+			{
+				"key": "Attack",
+				"value": "72"
+			},
+			{
+				"key": "Attack",
+				"value": "84"
+			},
+			{
+				"key": "Attack",
+				"value": "96"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Effectiveness",
+				"value": "4.50%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "6.80%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "9%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "11.20%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "13.50%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "15.80%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "18%"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Heavy Strike",
+			"type": "Active",
+			"description": {
+				"text": "Strikes the enemy with a blade, with a 35% chance each to dispel two buffs.",
+				"burn": "",
+				"soul": "+1",
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+5% effect chance",
+					"+10% damage dealt",
+					"+5% effect chance",
+					"+5% effect chance",
+					"+15% damage dealt"
+				],
+				"multipliers": "ATK*1*1*1.871",
+				"text_ja": "敵単体に攻撃し、それぞれ35%の確率で2つの強化効果を解除する。",
+				"burn_ja": ""
+			},
+			"title_ja": "強撃"
+		},
+		{
+			"title": "Butcher Corps Gear",
+			"type": "Passive",
+			"description": {
+				"text": "Damage suffered in one attack does not exceed 50% of max Health.",
+				"burn": "",
+				"soul": null,
+				"ct": null,
+				"enhance": [
+					"-5% damage recieved limit",
+					"-5% damage recieved limit",
+					"-5% damage recieved limit"
+				],
+				"multipliers": "",
+				"text_ja": "1回に受けるダメージが最大生命力の50%を超えない。",
+				"burn_ja": ""
+			},
+			"title_ja": "解体部隊の武装"
+		},
+		{
+			"title": "Preach",
+			"type": "Active",
+			"description": {
+				"text": "Attacks the enemy in the name of Chaos, recovering Health proportional to damage dealt. When the enemy is buffed, has a 50% chance to activate Heavy Strike. Damage dealt increases proportional to the caster’s lost Health.",
+				"burn": "",
+				"soul": "+2",
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"-1 turn cooldown",
+					"+10% damage dealt",
+					"+10% damage dealt",
+					"+15% damage dealt"
+				],
+				"multipliers": "ATK*1.5*0.85*1.871\n                                        \n                                                                                    0.5% increased damage per 1% self Health missing",
+				"text_ja": "敵単体に攻撃する。与えたダメージに応じて生命力を回復する。対象が強化状態の場合、50%の確率で【強撃】を発動する。自身の生命力が低いほどダメージがUPする。",
+				"burn_ja": "ダメージがUPする。(魂力10消費)"
+			},
+			"title_ja": "説法"
+		}
+	]
+}

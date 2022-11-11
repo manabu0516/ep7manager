@@ -1,0 +1,240 @@
+{
+	"common": {
+		"name": "Alexa",
+		"image": "https://epic7x.com/wp-content/uploads/2019/01/Alexa-1.png",
+		"attribute": "ice",
+		"sign": "leo",
+		"clazz": "thief",
+		"rarity": "3",
+		"name_ja": "アレクサ"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "23",
+		"Critical_Hit_Damage": "150",
+		"dual_attack": "5",
+		"Effectiveness": "0",
+		"Effect_Resistance": "0",
+		"Speed": "111",
+		"Atk": "1081",
+		"HP": "4572",
+		"Def": "494"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": 4
+		},
+		{
+			"key": "Belief",
+			"score": -2
+		},
+		{
+			"key": "Bizarre Story",
+			"score": -1
+		},
+		{
+			"key": "Comforting",
+			"score": 8
+		},
+		{
+			"key": "Complain",
+			"score": -6
+		},
+		{
+			"key": "Criticism",
+			"score": 1
+		},
+		{
+			"key": "Cute Cheer",
+			"score": 3
+		},
+		{
+			"key": "Dream",
+			"score": 4
+		},
+		{
+			"key": "Food Story",
+			"score": 5
+		},
+		{
+			"key": "Gossip",
+			"score": -6
+		},
+		{
+			"key": "Happy Memory",
+			"score": -1
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": 7
+		},
+		{
+			"key": "Heroic Tale",
+			"score": 5
+		},
+		{
+			"key": "Horror",
+			"score": -1
+		},
+		{
+			"key": "Interesting Story",
+			"score": 1
+		},
+		{
+			"key": "Joyful Memories",
+			"score": 5
+		},
+		{
+			"key": "Myth",
+			"score": 1
+		},
+		{
+			"key": "Occult",
+			"score": -2
+		},
+		{
+			"key": "Reality Check",
+			"score": 2
+		},
+		{
+			"key": "Sad Memory",
+			"score": 6
+		},
+		{
+			"key": "Self Indulgent",
+			"score": -5
+		},
+		{
+			"key": "Unique Comment",
+			"score": 0
+		}
+	],
+	"memory": {
+		"potision": "pos-all",
+		"release": [
+			{
+				"key": "Attack",
+				"value": "24"
+			},
+			{
+				"key": "Attack",
+				"value": "36"
+			},
+			{
+				"key": "Attack",
+				"value": "48"
+			},
+			{
+				"key": "Attack",
+				"value": "60"
+			},
+			{
+				"key": "Attack",
+				"value": "72"
+			},
+			{
+				"key": "Attack",
+				"value": "84"
+			},
+			{
+				"key": "Attack",
+				"value": "96"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Attack",
+				"value": "36"
+			},
+			{
+				"key": "Attack",
+				"value": "54"
+			},
+			{
+				"key": "Attack",
+				"value": "72"
+			},
+			{
+				"key": "Attack",
+				"value": "90"
+			},
+			{
+				"key": "Attack",
+				"value": "108"
+			},
+			{
+				"key": "Attack",
+				"value": "126"
+			},
+			{
+				"key": "Attack",
+				"value": "144"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Fell",
+			"type": "Active",
+			"description": {
+				"text": "Cuts the enemy with dual-wielded swords. A critical hit will activate Lightning Bolt. Lightning Bolt can only be activated once per turn of the caster. Lightning Bolt (Acquire 1 Soul): Rapidly cuts the enemy with dual-wielded swords.",
+				"burn": "",
+				"soul": "+1",
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+10% damage dealt",
+					"+10% damage dealt"
+				],
+				"multipliers": "ATK*1*1*1.871\n                                        \n                                                                                    Proc on crit is ATK*0.75*1*1.871",
+				"text_ja": "敵単体に攻撃する。この攻撃でクリティカルが発生した時、【電光石火】を発動する。【電光石火】は自身のターンに1回まで発生する。電光石火",
+				"burn_ja": ""
+			},
+			"title_ja": "斬り渡し"
+		},
+		{
+			"title": "Cold Edge",
+			"type": "Active",
+			"description": {
+				"text": "Attacks with a cold blade with an 80% chance to inflict two Poison effects for 2 turns, and increase the caster's Combat Readiness by 30%.",
+				"burn": "Ignores effect resistance (-20 Souls)",
+				"soul": "+2",
+				"ct": "3",
+				"enhance": [
+					"+5% damage dealt",
+					"+5% effect chance",
+					"+5% effect chance",
+					"+10% damage dealt",
+					"+10% effect chance",
+					"+15% damage dealt"
+				],
+				"multipliers": "ATK*1*1*1.871",
+				"text_ja": "敵単体に攻撃し、それぞれ80%の確率で2つの毒を2ターンの間付与し、自身のアクションゲージを30%UPさせる。",
+				"burn_ja": "効果抵抗を無視する。(魂力20消費)"
+			},
+			"title_ja": "冷たき刃"
+		},
+		{
+			"title": "Crushing Blow",
+			"type": "Active",
+			"description": {
+				"text": "Attacks the enemy continuously, dealing damage proportional to number of debuffs inflicted on the enemy.",
+				"burn": "",
+				"soul": "+2",
+				"ct": "5",
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"-1 turn cooldown",
+					"+10% damage dealt",
+					"+10% damage dealt",
+					"+10% damage dealt"
+				],
+				"multipliers": "ATK*1.5*0.9*1.871\n                                        \n                                                                                    15% increased damage per target debuff",
+				"text_ja": "敵単体に攻撃する。対象の弱体効果の数が多いほどダメージがUPする。",
+				"burn_ja": ""
+			},
+			"title_ja": "制圧の一撃"
+		}
+	]
+}

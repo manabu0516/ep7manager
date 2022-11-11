@@ -1,0 +1,232 @@
+{
+	"common": {
+		"name": "Inferno Khawazu",
+		"image": "https://epic7x.com/wp-content/uploads/2021/05/Inferno-Khawazu-icon.png",
+		"attribute": "dark",
+		"sign": "scorpio",
+		"clazz": "warrior",
+		"rarity": "4",
+		"name_ja": "狂炎のカワズ"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "15",
+		"Critical_Hit_Damage": "150",
+		"dual_attack": "5",
+		"Effectiveness": "0",
+		"Effect_Resistance": "0",
+		"Speed": "100",
+		"Atk": "1119",
+		"HP": "6091",
+		"Def": "594"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": 3
+		},
+		{
+			"key": "Belief",
+			"score": 6
+		},
+		{
+			"key": "Bizarre Story",
+			"score": 5
+		},
+		{
+			"key": "Comforting",
+			"score": 3
+		},
+		{
+			"key": "Complain",
+			"score": 0
+		},
+		{
+			"key": "Criticism",
+			"score": 6
+		},
+		{
+			"key": "Cute Cheer",
+			"score": 2
+		},
+		{
+			"key": "Dream",
+			"score": 5
+		},
+		{
+			"key": "Food Story",
+			"score": 2
+		},
+		{
+			"key": "Gossip",
+			"score": 0
+		},
+		{
+			"key": "Happy Memory",
+			"score": 1
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": 3
+		},
+		{
+			"key": "Heroic Tale",
+			"score": 2
+		},
+		{
+			"key": "Horror",
+			"score": 5
+		},
+		{
+			"key": "Interesting Story",
+			"score": 2
+		},
+		{
+			"key": "Joyful Memories",
+			"score": 1
+		},
+		{
+			"key": "Myth",
+			"score": 4
+		},
+		{
+			"key": "Occult",
+			"score": 5
+		},
+		{
+			"key": "Reality Check",
+			"score": 2
+		},
+		{
+			"key": "Sad Memory",
+			"score": 4
+		},
+		{
+			"key": "Self Indulgent",
+			"score": 3
+		},
+		{
+			"key": "Unique Comment",
+			"score": 6
+		}
+	],
+	"memory": {
+		"potision": "pos-all",
+		"release": [
+			{
+				"key": "Health",
+				"value": "2.9%"
+			},
+			{
+				"key": "Health",
+				"value": "3.6%"
+			},
+			{
+				"key": "Health",
+				"value": "5.8%"
+			},
+			{
+				"key": "Health",
+				"value": "7.2%"
+			},
+			{
+				"key": "Health",
+				"value": "8.7%"
+			},
+			{
+				"key": "Health",
+				"value": "10.2%"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Attack",
+				"value": "4%"
+			},
+			{
+				"key": "Attack",
+				"value": "6%"
+			},
+			{
+				"key": "Attack",
+				"value": "8%"
+			},
+			{
+				"key": "Attack",
+				"value": "10%"
+			},
+			{
+				"key": "Attack",
+				"value": "12%"
+			},
+			{
+				"key": "Attack",
+				"value": "14%"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Jealous Strike",
+			"type": "Active",
+			"description": {
+				"text": "Attacks the enemy with flames, with a 65% chance to burn for 1 turn. When the caster is granted vigor, increases effect chance by 25% and inflicts one additional burn effect.",
+				"burn": "Grants an extra turn. (-20 Souls)",
+				"soul": "+1",
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+5% effect chance",
+					"+5% damage dealt",
+					"+5% effect chance",
+					"+10% damage dealt",
+					"+10% damage dealt"
+				],
+				"multipliers": "ATK*0.95*1*1.871",
+				"text_ja": "敵単体に攻撃し、65%の確率で火傷を1ターンの間付与する。自身が覇気状態の場合、効果発生率が25%UPし、追加で火傷をもう1つ付与する。",
+				"burn_ja": "追加ターンが発生する。(魂力20消費)"
+			},
+			"title_ja": "嫉視の一撃"
+		},
+		{
+			"title": "Malicus's Power",
+			"type": "Passive",
+			"description": {
+				"text": "After suffering an attack that targets all allies, dispels all debuffs from the caster and activates Blazing Fury. Can be activated once every 2 turns. Blazing Fury: With an outraged cry, grants vigor to the caster for 2 turns before recovering health and increasing Combat Readiness by 20%. Amount recovered increases proportional to the caster's Attack.",
+				"burn": "",
+				"soul": null,
+				"ct": "2",
+				"enhance": [
+					"+5% healing",
+					"+5% healing",
+					"+5% healing",
+					"+5% healing",
+					"+5% healing",
+					"+10% healing"
+				],
+				"multipliers": "",
+				"text_ja": "全体攻撃を受けた後、自身の弱体効果をすべて解除し、【湧き上がる怒り】を発動する。【湧き上がる怒り】は2ターンに1回まで発生する。湧き上がる怒り：自身に覇気を2ターンの間付与し、生命力を回復し、アクションゲージを20%UPさせる。自身の攻撃力が高いほど回復量がUPする。",
+				"burn_ja": ""
+			},
+			"title_ja": "マリクスの力"
+		},
+		{
+			"title": "Flames of Destruction",
+			"type": "Active",
+			"description": {
+				"text": "Attacks the enemy with an inferno, dispelling all buffs, before a 75% chance each to inflict two burn effects for 2 turns, and at the end of the turn, detonates burn effects. Ignores Effect Resistance when the caster is granted vigor.",
+				"burn": "",
+				"soul": "+2",
+				"ct": "4",
+				"enhance": [
+					"+10% effect chance",
+					"-1 turn cooldown",
+					"+15% effect chance"
+				],
+				"multipliers": "ATK*0.7*1*1.871",
+				"text_ja": "敵単体に攻撃し、強化効果をすべて解除した後、それぞれ75%の確率で2つの火傷を2ターンの間付与し、ターン終了時に火傷を激爆させる。自身が覇気状態の場合、効果抵抗を無視する。",
+				"burn_ja": ""
+			},
+			"title_ja": "撃滅の炎"
+		}
+	]
+}

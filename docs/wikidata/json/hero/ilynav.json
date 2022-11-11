@@ -1,0 +1,224 @@
+{
+	"common": {
+		"name": "Ilynav",
+		"image": "https://epic7x.com/wp-content/uploads/2021/05/Ilynav.png",
+		"attribute": "fire",
+		"sign": "gemini",
+		"clazz": "knight",
+		"rarity": "5",
+		"name_ja": "イリーナブ"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "27",
+		"Critical_Hit_Damage": "150",
+		"dual_attack": "5",
+		"Effectiveness": "0",
+		"Effect_Resistance": "0",
+		"Speed": "109",
+		"Atk": "957",
+		"HP": "6148",
+		"Def": "634"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": 3
+		},
+		{
+			"key": "Belief",
+			"score": 6
+		},
+		{
+			"key": "Bizarre Story",
+			"score": 0
+		},
+		{
+			"key": "Comforting",
+			"score": 3
+		},
+		{
+			"key": "Complain",
+			"score": 2
+		},
+		{
+			"key": "Criticism",
+			"score": 5
+		},
+		{
+			"key": "Cute Cheer",
+			"score": 4
+		},
+		{
+			"key": "Dream",
+			"score": 5
+		},
+		{
+			"key": "Food Story",
+			"score": 5
+		},
+		{
+			"key": "Gossip",
+			"score": 0
+		},
+		{
+			"key": "Happy Memory",
+			"score": 2
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": 6
+		},
+		{
+			"key": "Heroic Tale",
+			"score": 5
+		},
+		{
+			"key": "Horror",
+			"score": 0
+		},
+		{
+			"key": "Interesting Story",
+			"score": 4
+		},
+		{
+			"key": "Joyful Memories",
+			"score": 3
+		},
+		{
+			"key": "Myth",
+			"score": 4
+		},
+		{
+			"key": "Occult",
+			"score": 2
+		},
+		{
+			"key": "Reality Check",
+			"score": 0
+		},
+		{
+			"key": "Sad Memory",
+			"score": 1
+		},
+		{
+			"key": "Self Indulgent",
+			"score": 4
+		},
+		{
+			"key": "Unique Comment",
+			"score": 2
+		}
+	],
+	"memory": {
+		"potision": "pos-all",
+		"release": [
+			{
+				"key": "Critical Hit Chance",
+				"value": "4.8%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "7.2%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "9.8%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "9.0%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "14.4%"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Critical Hit Chance",
+				"value": "5.60%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "8.40%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "11.20%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "14%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "16.8%"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Rush",
+			"type": "Active",
+			"description": {
+				"text": "Attacks the enemy with a spear. Damage dealt increases proportional to the caster's max Health. When this skill is used, if it was not triggered by a Dual Attack, has a 50% chance to use Punish instead of Rush. This skill does not trigger a Dual Attack.",
+				"burn": "",
+				"soul": "+1",
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt by Rush",
+					"+5% damage dealt by Rush",
+					"+5% damage dealt by Rush",
+					"+5% damage dealt by Rush",
+					"+10% damage dealt by Rush"
+				],
+				"multipliers": "ATK*0.7*1*1.871\n                                        \n                                                                                    8% Ilynav's Max HP",
+				"text_ja": "敵単体に攻撃する。自身の最大生命力が高いほどダメージがUPする。連携攻撃以外の場合、50%の確率で【突進】の代わりとして【制裁】を発動する。このスキルでは連携攻撃が発生しない。",
+				"burn_ja": ""
+			},
+			"title_ja": "突進"
+		},
+		{
+			"title": "Punish",
+			"type": "Active",
+			"description": {
+				"text": "Attacks and pierces the enemy, inflicting injuries. Increases Defense of the caster for 2 turns. Damage dealt increases proportional to the caster's max Health. The severity of injuries increases proportional to the damage dealt. Injuries decrease max Health of the target by up to 20% every time this skill is used.",
+				"burn": "Skill cooldown is decreased by 2 turns. (-10 Souls)",
+				"soul": "+1",
+				"ct": "4",
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"-1 turn cooldown",
+					"+10% damage dealt",
+					"+10% damage dealt"
+				],
+				"multipliers": "ATK*1.0*1*1.871\n                                        \n                                                                                    18% Ilynav's Max HP",
+				"text_ja": "敵単体に攻撃し、裂傷を付与する。自身に防御力UPを2ターンの間付与する。自身の最大生命力が高いほどダメージがUPする。ダメージが高いほど裂傷効果がUPし、1回のスキルで対象の最大生命力の20%まで、最大生命力を減少させられる。",
+				"burn_ja": "スキルターンが2減少する。(魂力10消費)"
+			},
+			"title_ja": "制裁"
+		},
+		{
+			"title": "Repel",
+			"type": "Active",
+			"description": {
+				"text": "Attacks all enemies mercilessly and grants increased Critical Hit Damage to all allies for 2 turns and immunity to the caster for 2 turns. Damage dealt increases proportional to the caster's max Health.",
+				"burn": "",
+				"soul": "+3",
+				"ct": "5",
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"-1 turn cooldown",
+					"+10% damage dealt",
+					"+10% damage dealt"
+				],
+				"multipliers": "ATK*0.7*1*1.871\n                                        \n                                                                                    12% Ilynav's Max HP",
+				"text_ja": "敵全体に攻撃し、味方全体にクリティカルダメージUPを2ターンの間付与し、自身に弱体効果免疫を2ターンの間付与する。自身の最大生命力が高いほどダメージがUPする。",
+				"burn_ja": ""
+			},
+			"title_ja": "撃退"
+		}
+	]
+}

@@ -1,0 +1,224 @@
+{
+	"common": {
+		"name": "Lilias",
+		"image": "https://epic7x.com/wp-content/uploads/2019/09/lilias.png",
+		"attribute": "fire",
+		"sign": "aries",
+		"clazz": "knight",
+		"rarity": "5",
+		"name_ja": "リリアス"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "15",
+		"Critical_Hit_Damage": "150",
+		"dual_attack": "5",
+		"Effectiveness": "18",
+		"Effect_Resistance": "0",
+		"Speed": "110",
+		"Atk": "821",
+		"HP": "6751",
+		"Def": "648"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": 0
+		},
+		{
+			"key": "Belief",
+			"score": 4
+		},
+		{
+			"key": "Bizarre Story",
+			"score": 2
+		},
+		{
+			"key": "Comforting",
+			"score": 1
+		},
+		{
+			"key": "Complain",
+			"score": -2
+		},
+		{
+			"key": "Criticism",
+			"score": 3
+		},
+		{
+			"key": "Cute Cheer",
+			"score": 5
+		},
+		{
+			"key": "Dream",
+			"score": 5
+		},
+		{
+			"key": "Food Story",
+			"score": 3
+		},
+		{
+			"key": "Gossip",
+			"score": 2
+		},
+		{
+			"key": "Happy Memory",
+			"score": 3
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": 6
+		},
+		{
+			"key": "Heroic Tale",
+			"score": 5
+		},
+		{
+			"key": "Horror",
+			"score": 3
+		},
+		{
+			"key": "Interesting Story",
+			"score": 3
+		},
+		{
+			"key": "Joyful Memories",
+			"score": 4
+		},
+		{
+			"key": "Myth",
+			"score": 5
+		},
+		{
+			"key": "Occult",
+			"score": 3
+		},
+		{
+			"key": "Reality Check",
+			"score": 0
+		},
+		{
+			"key": "Sad Memory",
+			"score": -3
+		},
+		{
+			"key": "Self Indulgent",
+			"score": 4
+		},
+		{
+			"key": "Unique Comment",
+			"score": 1
+		}
+	],
+	"memory": {
+		"potision": "pos-all",
+		"release": [
+			{
+				"key": "Attack",
+				"value": "4.3%"
+			},
+			{
+				"key": "Attack",
+				"value": "6.4%"
+			},
+			{
+				"key": "Attack",
+				"value": "8.6%"
+			},
+			{
+				"key": "Attack",
+				"value": "10.7%"
+			},
+			{
+				"key": "Attack",
+				"value": "12.9%"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Health",
+				"value": "6%"
+			},
+			{
+				"key": "Health",
+				"value": "9%"
+			},
+			{
+				"key": "Health",
+				"value": "12%"
+			},
+			{
+				"key": "Health",
+				"value": "15%"
+			},
+			{
+				"key": "Health",
+				"value": "18%"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Follow Me! Charge!",
+			"type": "Active",
+			"description": {
+				"text": "Takes the lead and attacks, triggering a Dual Attack from a random ally. Damage dealt increases proportional to the caster's max Health.",
+				"burn": "",
+				"soul": "+1",
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+10% damage dealt"
+				],
+				"multipliers": "(ATK*0.8*0.95+HP*0.12)*1.871",
+				"text_ja": "敵単体に攻撃し、ランダムな味方に連携攻撃を付与する。自身の最大生命力が高いほどダメージがUPする。",
+				"burn_ja": ""
+			},
+			"title_ja": "我に続け！突撃！"
+		},
+		{
+			"title": "Defensive Formation",
+			"type": "Active",
+			"description": {
+				"text": "Deploys a divine weapon, granting a barrier to the caster for 2 turns, before a 85% chance to provoke the enemy for 2 turns.",
+				"burn": "Ignores effect resistance. (-20 Souls)",
+				"soul": "+2",
+				"ct": "5",
+				"enhance": [
+					"+5% effect chance",
+					"-1 turn cooldown",
+					"+10% effect chance"
+				],
+				"multipliers": "",
+				"text_ja": "自身にシールドを2ターンの間付与し、敵単体に85%の確率で挑発を2ターンの間付与する。",
+				"burn_ja": "効果抵抗を無視する。(魂力20消費)"
+			},
+			"title_ja": "防御態勢、散開せよ！"
+		},
+		{
+			"title": "Ready, Load, Fire!",
+			"type": "Active",
+			"description": {
+				"text": "Dispels all debuffs from all allies and commands the Perland Army to fire on all enemies, decreasing Combat Readiness by 25% and inflicting damage according to the Attack of the Hero with the highest Attack. Increases the caster's Combat Readiness by 50%.",
+				"burn": "",
+				"soul": "+3",
+				"ct": "5",
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"-1 turn cooldown",
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+10% damage dealt"
+				],
+				"multipliers": "90% of highest attack allies' attack",
+				"text_ja": "味方全体の弱体効果をすべて解除し、敵全体に攻撃し、アクションゲージを25%DOWNさせる。このスキルは攻撃力が最も高い味方の攻撃力で攻撃する。自身のアクションゲージを50%UPする。",
+				"burn_ja": ""
+			},
+			"title_ja": "銃兵、位置につけ！装填、発砲！"
+		}
+	]
+}

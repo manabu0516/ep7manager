@@ -1,0 +1,232 @@
+{
+	"common": {
+		"name": "Surin",
+		"image": "https://epic7x.com/wp-content/uploads/2019/01/suri.png",
+		"attribute": "fire",
+		"sign": "gemini",
+		"clazz": "thief",
+		"rarity": "4",
+		"name_ja": "スーリン"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "23",
+		"Critical_Hit_Damage": "150",
+		"dual_attack": "5",
+		"Effectiveness": "12",
+		"Effect_Resistance": "0",
+		"Speed": "117",
+		"Atk": "1010",
+		"HP": "5097",
+		"Def": "497"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": 5
+		},
+		{
+			"key": "Belief",
+			"score": -1
+		},
+		{
+			"key": "Bizarre Story",
+			"score": 0
+		},
+		{
+			"key": "Comforting",
+			"score": 3
+		},
+		{
+			"key": "Complain",
+			"score": 2
+		},
+		{
+			"key": "Criticism",
+			"score": -5
+		},
+		{
+			"key": "Cute Cheer",
+			"score": 6
+		},
+		{
+			"key": "Dream",
+			"score": 5
+		},
+		{
+			"key": "Food Story",
+			"score": 3
+		},
+		{
+			"key": "Gossip",
+			"score": 2
+		},
+		{
+			"key": "Happy Memory",
+			"score": 5
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": 5
+		},
+		{
+			"key": "Heroic Tale",
+			"score": 0
+		},
+		{
+			"key": "Horror",
+			"score": -1
+		},
+		{
+			"key": "Interesting Story",
+			"score": 3
+		},
+		{
+			"key": "Joyful Memories",
+			"score": 7
+		},
+		{
+			"key": "Myth",
+			"score": 2
+		},
+		{
+			"key": "Occult",
+			"score": 0
+		},
+		{
+			"key": "Reality Check",
+			"score": -5
+		},
+		{
+			"key": "Sad Memory",
+			"score": 6
+		},
+		{
+			"key": "Self Indulgent",
+			"score": -1
+		},
+		{
+			"key": "Unique Comment",
+			"score": 1
+		}
+	],
+	"memory": {
+		"potision": "pos-lr",
+		"release": [
+			{
+				"key": "Speed",
+				"value": "4"
+			},
+			{
+				"key": "Speed",
+				"value": "6"
+			},
+			{
+				"key": "Speed",
+				"value": "8"
+			},
+			{
+				"key": "Speed",
+				"value": "10"
+			},
+			{
+				"key": "Speed",
+				"value": "12"
+			},
+			{
+				"key": "Speed",
+				"value": "14"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Effectiveness",
+				"value": "6.80%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "10.20%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "13.60%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "17%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "20.40%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "22.80%"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Chain Dagger",
+			"type": "Active",
+			"description": {
+				"text": "Attacks with a chain axe. If the enemy is bleeding, causes two bleeding effects for 2 turns.",
+				"burn": "",
+				"soul": "+1",
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+10% damage dealt",
+					"+10% damage dealt",
+					"+10% damage dealt"
+				],
+				"multipliers": "ATK*1*0.9*1.871",
+				"text_ja": "敵単体に攻撃する。敵が出血状態の場合、2つの出血を2ターンの間付与する。",
+				"burn_ja": ""
+			},
+			"title_ja": "鎖手裏剣"
+		},
+		{
+			"title": "Edge Smash",
+			"type": "Active",
+			"description": {
+				"text": "Batters the enemy with a chain axe and inflicts two to four bleeding effects for 2 turns, decreasing Attack for 1 turn.",
+				"burn": "Grants an extra turn (-20 Souls)",
+				"soul": "+2",
+				"ct": "3",
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+10% damage dealt"
+				],
+				"multipliers": "ATK*1.4*1*1.871",
+				"text_ja": "敵単体に攻撃し、2〜4つの出血を2ターンの間付与し、攻撃力DOWNを1ターンの間付与する。",
+				"burn_ja": "追加ターンが発生する。(魂力20消費)"
+			},
+			"title_ja": "刀刃粉砕"
+		},
+		{
+			"title": "Implosion",
+			"type": "Active",
+			"description": {
+				"text": "Triggers all the bleeding effects currently inflicted on the enemy. Damage dealt increases proportional to the number of bleeding effects inflicted on the enemy, and debuff duration is extended by 1 turn. Additionally, the caster's Combat Readiness increases by 15% per every bleeding effect inflicted on the enemy. Effect can only be applied up to 5 times.",
+				"burn": "",
+				"soul": "+2",
+				"ct": "5",
+				"enhance": [
+					"+10% damage dealt",
+					"+10% damage dealt",
+					"-1 turn cooldown",
+					"+15% damage dealt",
+					"+15% damage dealt"
+				],
+				"multipliers": "ATK*1.8*0.8*1.871\n                                        \n                                                                                    If one bleed, +40% damage. +15% damage for each additional up to 5.",
+				"text_ja": "敵単体に攻撃し、弱体効果を1ターン延長させる。対象の出血効果の数が多いほどダメージがUPする。対象の出血効果の数x15%自身のアクションゲージをUPさせる。この効果は最大5回まで発動する。",
+				"burn_ja": ""
+			},
+			"title_ja": "桜花閃乱"
+		}
+	]
+}

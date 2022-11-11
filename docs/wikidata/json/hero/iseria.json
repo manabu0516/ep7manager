@@ -1,0 +1,224 @@
+{
+	"common": {
+		"name": "Iseria",
+		"image": "https://epic7x.com/wp-content/uploads/2019/01/Iseria-2.png",
+		"attribute": "earth",
+		"sign": "leo",
+		"clazz": "ranger",
+		"rarity": "5",
+		"name_ja": "イセリア"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "23",
+		"Critical_Hit_Damage": "150",
+		"dual_attack": "5",
+		"Effectiveness": "0",
+		"Effect_Resistance": "0",
+		"Speed": "112",
+		"Atk": "1158",
+		"HP": "6002",
+		"Def": "553"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": 3
+		},
+		{
+			"key": "Belief",
+			"score": 0
+		},
+		{
+			"key": "Bizarre Story",
+			"score": 0
+		},
+		{
+			"key": "Comforting",
+			"score": 6
+		},
+		{
+			"key": "Complain",
+			"score": 0
+		},
+		{
+			"key": "Criticism",
+			"score": 0
+		},
+		{
+			"key": "Cute Cheer",
+			"score": 4
+		},
+		{
+			"key": "Dream",
+			"score": 3
+		},
+		{
+			"key": "Food Story",
+			"score": 2
+		},
+		{
+			"key": "Gossip",
+			"score": 1
+		},
+		{
+			"key": "Happy Memory",
+			"score": 4
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": 5
+		},
+		{
+			"key": "Heroic Tale",
+			"score": 3
+		},
+		{
+			"key": "Horror",
+			"score": 0
+		},
+		{
+			"key": "Interesting Story",
+			"score": 1
+		},
+		{
+			"key": "Joyful Memories",
+			"score": 4
+		},
+		{
+			"key": "Myth",
+			"score": 1
+		},
+		{
+			"key": "Occult",
+			"score": 0
+		},
+		{
+			"key": "Reality Check",
+			"score": 1
+		},
+		{
+			"key": "Sad Memory",
+			"score": 6
+		},
+		{
+			"key": "Self Indulgent",
+			"score": 0
+		},
+		{
+			"key": "Unique Comment",
+			"score": 1
+		}
+	],
+	"memory": {
+		"potision": "pos-all",
+		"release": [
+			{
+				"key": "Attack",
+				"value": "3.6%"
+			},
+			{
+				"key": "Attack",
+				"value": "5.4%"
+			},
+			{
+				"key": "Attack",
+				"value": "7.2%"
+			},
+			{
+				"key": "Attack",
+				"value": "9.0%"
+			},
+			{
+				"key": "Attack",
+				"value": "10.8%"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Effectiveness",
+				"value": "9%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "13.50%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "18%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "22.50%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "27%"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Refined Flower",
+			"type": "Active",
+			"description": {
+				"text": "Throws swords at the enemy, with a 35% chance to decreases Defense for 2 turns.",
+				"burn": "Increases effect chance by 50% and increases damage dealt. Does not trigger a Dual Attack. (-10 Souls)",
+				"soul": "+1",
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+5% effect chance",
+					"+10% effect chance",
+					"+5% damage dealt",
+					"+10% damage dealt",
+					"+10% damage dealt"
+				],
+				"multipliers": "ATK*1*0.95*1.871 (2 soul burn)",
+				"text_ja": "敵単体に攻撃し、35%の確率で防御力DOWNを2ターンの間付与する。",
+				"burn_ja": "効果発生率が50%UPし、ダメージがUPする。連携攻撃が発生しない。(魂力10消費)"
+			},
+			"title_ja": "開花"
+		},
+		{
+			"title": "Oathkeeper",
+			"type": "Active",
+			"description": {
+				"text": "Resets skill cooldown of an ally except for the caster with light energy. Grants an extra turn.",
+				"burn": "",
+				"soul": "+2",
+				"ct": "6",
+				"enhance": [
+					"Acquire +1 Soul",
+					"-1 turn cooldown"
+				],
+				"multipliers": "",
+				"text_ja": "自身以外の味方対象のスキルターンを0にする。更に追加ターンが発生する。",
+				"burn_ja": ""
+			},
+			"title_ja": "誓いの剣"
+		},
+		{
+			"title": "Full Bloom",
+			"type": "Active",
+			"description": {
+				"text": "Attacks with a giant Magic Sword, dispelling all buffs, decreasing Defense, and making them unable to be buffed for 2 turns.",
+				"burn": "",
+				"soul": "+2",
+				"ct": "5",
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"-1 turn cooldown",
+					"+10% damage dealt",
+					"+10% damage dealt",
+					"+10% damage dealt"
+				],
+				"multipliers": "ATK*2*0.9*1.871",
+				"text_ja": "敵単体に攻撃し、強化効果をすべて解除し、防御力DOWN・強化不可を2ターンの間付与する。",
+				"burn_ja": ""
+			},
+			"title_ja": "満開"
+		}
+	]
+}

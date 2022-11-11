@@ -1,0 +1,224 @@
+{
+	"common": {
+		"name": "Spirit Eye Celine",
+		"image": "https://epic7x.com/wp-content/uploads/2021/10/spirit-eye-celine.png",
+		"attribute": "light",
+		"sign": "sagittarius",
+		"clazz": "thief",
+		"rarity": "5",
+		"name_ja": "霊眼のセリン"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "27",
+		"Critical_Hit_Damage": "150",
+		"dual_attack": "5",
+		"Effectiveness": "0",
+		"Effect_Resistance": "0",
+		"Speed": "122",
+		"Atk": "1158",
+		"HP": "5016",
+		"Def": "532"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": 2
+		},
+		{
+			"key": "Belief",
+			"score": 0
+		},
+		{
+			"key": "Bizarre Story",
+			"score": 0
+		},
+		{
+			"key": "Comforting",
+			"score": 3
+		},
+		{
+			"key": "Complain",
+			"score": 0
+		},
+		{
+			"key": "Criticism",
+			"score": 0
+		},
+		{
+			"key": "Cute Cheer",
+			"score": 2
+		},
+		{
+			"key": "Dream",
+			"score": 1
+		},
+		{
+			"key": "Food Story",
+			"score": 6
+		},
+		{
+			"key": "Gossip",
+			"score": 0
+		},
+		{
+			"key": "Happy Memory",
+			"score": 2
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": 5
+		},
+		{
+			"key": "Heroic Tale",
+			"score": 4
+		},
+		{
+			"key": "Horror",
+			"score": 0
+		},
+		{
+			"key": "Interesting Story",
+			"score": 1
+		},
+		{
+			"key": "Joyful Memories",
+			"score": 3
+		},
+		{
+			"key": "Myth",
+			"score": 1
+		},
+		{
+			"key": "Occult",
+			"score": 0
+		},
+		{
+			"key": "Reality Check",
+			"score": 1
+		},
+		{
+			"key": "Sad Memory",
+			"score": 3
+		},
+		{
+			"key": "Self Indulgent",
+			"score": 0
+		},
+		{
+			"key": "Unique Comment",
+			"score": 1
+		}
+	],
+	"memory": {
+		"potision": "pos-lb",
+		"release": [
+			{
+				"key": "Effect Resistance",
+				"value": "4.8%"
+			},
+			{
+				"key": "Effect Resistance",
+				"value": "7.2%"
+			},
+			{
+				"key": "Effect Resistance",
+				"value": "9.6%"
+			},
+			{
+				"key": "Effect Resistance",
+				"value": "12%"
+			},
+			{
+				"key": "Effect Resistance",
+				"value": "14.4%"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Critical Hit Chance",
+				"value": "5.60%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "8.40%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "11.20%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "14%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "16.8%"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Mighty Strike",
+			"type": "Active",
+			"description": {
+				"text": "Attacks the enemy with a sheath. When this skill is used, if it was not triggered by a Dual Attack, has a 35% chance to use Nimble Sword instead of Mighty Strike. When the caster is possessed, effect chance is doubled. This skill does not trigger a Dual Attack. Nimble Sword: Dispels one debuff from the caster before swiftly attacking the enemy. Penetrates the target's Defense by 35%.",
+				"burn": "Grants an extra turn. (-20 Souls)",
+				"soul": "+1",
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+10% damage dealt"
+				],
+				"multipliers": "ATK*1*0.9*1.871 (Nimble Sword: ATK*1.3*0.9*1.871)",
+				"text_ja": "敵単体に攻撃する。連携攻撃以外の場合、35%の確率で【重斬】の代わりに【快剣】を発動する。自身が降神状態の場合、発動率が2倍になる。このスキルでは連携攻撃が発生しない。快剣：自身の弱体効果を1つ解除した後、敵に攻撃する。対象の防御力を35%貫通する。",
+				"burn_ja": "追加ターンが発生する。(魂力20消費)"
+			},
+			"title_ja": "重斬"
+		},
+		{
+			"title": "Sixth Sense",
+			"type": "Passive",
+			"description": {
+				"text": "Damage suffered in one attack does not exceed 70% of max Health. Decreases skill cooldown by 1 turn when somebody dies, and acquires 5 Souls. Effects upon death are only activated once per turn, upon a Hero's death.",
+				"burn": "",
+				"soul": null,
+				"ct": null,
+				"enhance": [
+					"-2% max damage received",
+					"-2% max damage received",
+					"-2% max damage received",
+					"-3% max damage received",
+					"-3% max damage received",
+					"-3% max damage received",
+					"-4% max damage received"
+				],
+				"multipliers": "",
+				"text_ja": "攻撃を受けた時、1回に受けるダメージが最大生命力の70%を超えない。敵・味方が気絶する時、スキルターンが1減少し、魂力を5獲得する。気絶時の効果は1ターンに1回まで発生し、英雄の気絶時のみ発動する。",
+				"burn_ja": ""
+			},
+			"title_ja": "第六感"
+		},
+		{
+			"title": "Spirit Gate: Burning Possession",
+			"type": "Active",
+			"description": {
+				"text": "Opens the gate of the spirits, dispelling all debuffs from the caster and making the caster possessed for 3 turns. Revives all dead allies before granting immortality to all allies for 1 turn.",
+				"burn": "",
+				"soul": "+3",
+				"ct": "6",
+				"enhance": [
+					"-1 turn cooldown"
+				],
+				"multipliers": "",
+				"text_ja": "自身の弱体効果をすべて解除し、自身に降神を3ターンの間付与する。気絶した味方全体を復活させた後、味方全体に不死を1ターンの間付与する。",
+				"burn_ja": ""
+			},
+			"title_ja": "鬼門：降神烈火"
+		}
+	]
+}

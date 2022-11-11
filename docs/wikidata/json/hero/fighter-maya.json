@@ -1,0 +1,232 @@
+{
+	"common": {
+		"name": "Fighter Maya",
+		"image": "https://epic7x.com/wp-content/uploads/2019/01/Fighter-Maya.png",
+		"attribute": "light",
+		"sign": "libra",
+		"clazz": "knight",
+		"rarity": "4",
+		"name_ja": "戦闘人形マヤ"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "15",
+		"Critical_Hit_Damage": "150",
+		"dual_attack": "5",
+		"Effectiveness": "0",
+		"Effect_Resistance": "12",
+		"Speed": "97",
+		"Atk": "821",
+		"HP": "6266",
+		"Def": "703"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": 4
+		},
+		{
+			"key": "Belief",
+			"score": 4
+		},
+		{
+			"key": "Bizarre Story",
+			"score": 7
+		},
+		{
+			"key": "Comforting",
+			"score": 3
+		},
+		{
+			"key": "Complain",
+			"score": 0
+		},
+		{
+			"key": "Criticism",
+			"score": 0
+		},
+		{
+			"key": "Cute Cheer",
+			"score": 4
+		},
+		{
+			"key": "Dream",
+			"score": 4
+		},
+		{
+			"key": "Food Story",
+			"score": 1
+		},
+		{
+			"key": "Gossip",
+			"score": 2
+		},
+		{
+			"key": "Happy Memory",
+			"score": 2
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": 4
+		},
+		{
+			"key": "Heroic Tale",
+			"score": 3
+		},
+		{
+			"key": "Horror",
+			"score": 6
+		},
+		{
+			"key": "Interesting Story",
+			"score": 2
+		},
+		{
+			"key": "Joyful Memories",
+			"score": 3
+		},
+		{
+			"key": "Myth",
+			"score": 1
+		},
+		{
+			"key": "Occult",
+			"score": 2
+		},
+		{
+			"key": "Reality Check",
+			"score": 0
+		},
+		{
+			"key": "Sad Memory",
+			"score": 0
+		},
+		{
+			"key": "Self Indulgent",
+			"score": 2
+		},
+		{
+			"key": "Unique Comment",
+			"score": 3
+		}
+	],
+	"memory": {
+		"potision": "pos-lb",
+		"release": [
+			{
+				"key": "Effect Resistance",
+				"value": "3.6%"
+			},
+			{
+				"key": "Effect Resistance",
+				"value": "5.4%"
+			},
+			{
+				"key": "Effect Resistance",
+				"value": "7.2%"
+			},
+			{
+				"key": "Effect Resistance",
+				"value": "9.0%"
+			},
+			{
+				"key": "Effect Resistance",
+				"value": "10.8%"
+			},
+			{
+				"key": "Effect Resistance",
+				"value": "12.6%"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Defense",
+				"value": "4%"
+			},
+			{
+				"key": "Defense",
+				"value": "6%"
+			},
+			{
+				"key": "Defense",
+				"value": "8%"
+			},
+			{
+				"key": "Defense",
+				"value": "10%"
+			},
+			{
+				"key": "Defense",
+				"value": "12%"
+			},
+			{
+				"key": "Defense",
+				"value": "14%"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Strike of Provocation",
+			"type": "Active",
+			"description": {
+				"text": "Attacks with a blunt weapon, with a 75% chance to provoke for 1 turn. Damage dealt increases proportional to the caster's Defense.",
+				"burn": "Provoke chance increases to 100%. (-10 Souls)",
+				"soul": "+1",
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+10% damage dealt",
+					"+15% damage dealt"
+				],
+				"multipliers": "(ATK*0.5+Def*0.75)*1.871",
+				"text_ja": "敵単体に攻撃し、75%の確率で挑発を1ターンの間付与する。自身の防御力が高いほどダメージがUPする。",
+				"burn_ja": "挑発の効果発生率が100%になる。(魂力10消費)"
+			},
+			"title_ja": "挑発の一撃"
+		},
+		{
+			"title": "Reclaim",
+			"type": "Passive",
+			"description": {
+				"text": "Has a 80% chance to dispel one debuff and be granted increased Defense for 2 turns when attacked.",
+				"burn": "",
+				"soul": null,
+				"ct": null,
+				"enhance": [
+					"+3% trigger chance",
+					"+3% trigger chance",
+					"+4% trigger chance",
+					"+5% trigger chance",
+					"+5% trigger chance"
+				],
+				"multipliers": "",
+				"text_ja": "攻撃を受けた時、80%の確率で弱体効果を1つ解除し、防御力UPを2ターンの間付与する。",
+				"burn_ja": ""
+			},
+			"title_ja": "修繕"
+		},
+		{
+			"title": "Finishing Attack",
+			"type": "Active",
+			"description": {
+				"text": "Attacks with a powerful smash. Damage dealt increases by 300% if the enemy's Health is less than 30%. Damage dealt increases proportional to the caster's Defense. Grants the caster an extra turn when the enemy is defeated.",
+				"burn": "",
+				"soul": "+2",
+				"ct": "5",
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"-1 turn cooldown",
+					"+10% damage dealt",
+					"+10% damage dealt"
+				],
+				"multipliers": "(ATK*1+Def*1.5)*1.871",
+				"text_ja": "敵単体に攻撃する。対象の生命力が30%以下の場合、ダメージが300%UPする。自身の防御力が高いほどダメージがUPする。このスキルで敵を気絶させた時、追加ターンが発生する。",
+				"burn_ja": ""
+			},
+			"title_ja": "結束の一撃"
+		}
+	]
+}

@@ -1,0 +1,240 @@
+{
+	"common": {
+		"name": "Christy",
+		"image": "https://epic7x.com/wp-content/uploads/2021/08/Christy-1.png",
+		"attribute": "earth",
+		"sign": "capricorn",
+		"clazz": "knight",
+		"rarity": "3",
+		"name_ja": "クリスティ"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "15",
+		"Critical_Hit_Damage": "150",
+		"dual_attack": "5",
+		"Effectiveness": "0",
+		"Effect_Resistance": "18",
+		"Speed": "90",
+		"Atk": "667",
+		"HP": "5784",
+		"Def": "749"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": null
+		},
+		{
+			"key": "Belief",
+			"score": null
+		},
+		{
+			"key": "Bizarre Story",
+			"score": null
+		},
+		{
+			"key": "Comforting",
+			"score": null
+		},
+		{
+			"key": "Complain",
+			"score": null
+		},
+		{
+			"key": "Criticism",
+			"score": null
+		},
+		{
+			"key": "Cute Cheer",
+			"score": null
+		},
+		{
+			"key": "Dream",
+			"score": null
+		},
+		{
+			"key": "Food Story",
+			"score": null
+		},
+		{
+			"key": "Gossip",
+			"score": null
+		},
+		{
+			"key": "Happy Memory",
+			"score": null
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": null
+		},
+		{
+			"key": "Heroic Tale",
+			"score": null
+		},
+		{
+			"key": "Horror",
+			"score": null
+		},
+		{
+			"key": "Interesting Story",
+			"score": null
+		},
+		{
+			"key": "Joyful Memories",
+			"score": null
+		},
+		{
+			"key": "Myth",
+			"score": null
+		},
+		{
+			"key": "Occult",
+			"score": null
+		},
+		{
+			"key": "Reality Check",
+			"score": null
+		},
+		{
+			"key": "Sad Memory",
+			"score": null
+		},
+		{
+			"key": "Self Indulgent",
+			"score": null
+		},
+		{
+			"key": "Unique Comment",
+			"score": null
+		}
+	],
+	"memory": {
+		"potision": "pos-all",
+		"release": [
+			{
+				"key": "Def",
+				"value": "12"
+			},
+			{
+				"key": "Def",
+				"value": "18"
+			},
+			{
+				"key": "Def",
+				"value": "24"
+			},
+			{
+				"key": "Def",
+				"value": "30"
+			},
+			{
+				"key": "Def",
+				"value": "36"
+			},
+			{
+				"key": "Def",
+				"value": "42"
+			},
+			{
+				"key": "Def",
+				"value": "48"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Effect Resistance",
+				"value": "4.50%"
+			},
+			{
+				"key": "Effect Resistance",
+				"value": "6.80%"
+			},
+			{
+				"key": "Effect Resistance",
+				"value": "9%"
+			},
+			{
+				"key": "Effect Resistance",
+				"value": "11.20%"
+			},
+			{
+				"key": "Effect Resistance",
+				"value": "13.50%"
+			},
+			{
+				"key": "Effect Resistance",
+				"value": "15.80%"
+			},
+			{
+				"key": "Effect Resistance",
+				"value": "18%"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Sword of Protection",
+			"type": "Active",
+			"description": {
+				"text": "Attacks the enemy, with a 50% chance to provoke for 1 turn. Damage dealt increases proportional to the caster's max Health.",
+				"burn": "",
+				"soul": "+1",
+				"ct": null,
+				"enhance": [
+					"+5% effect chance",
+					"+10% damage dealt",
+					"+10% effect chance",
+					"+10% damage dealt",
+					"+10% effect chance"
+				],
+				"multipliers": "",
+				"text_ja": "敵単体に攻撃し、50%の確率で挑発を1ターンの間付与する。自身の最大生命力が高いほどダメージがUPする。",
+				"burn_ja": ""
+			},
+			"title_ja": "守護の剣"
+		},
+		{
+			"title": "Oath Shield",
+			"type": "Passive",
+			"description": {
+				"text": "Has a 10% chance to counterattack when attacked. At the start of the first battle, increases Effect Resistance of the ally in the back row by 50% of the caster's Effect Resistance. The rate of this effect does not change after it is activated, and the effect is dispelled only when the ally in the back row is defeated. When the caster is in the back row, the effect is not activated.",
+				"burn": "",
+				"soul": null,
+				"ct": null,
+				"enhance": [
+					"+1% counterattack chance",
+					"+1% counterattack chance",
+					"+1% counterattack chance",
+					"+1% counterattack chance",
+					"+1% counterattack chance"
+				],
+				"multipliers": "",
+				"text_ja": "攻撃を受けた時、10%の確率で反撃する。初回のバトル開始時、後衛の味方の効果抵抗率を自身の効果抵抗率の50%分UPさせる。この効果による効果抵抗率の上昇値は効果発動後に変化せず、後衛の味方が気絶した時のみ解除される。この効果は自身が後衛にいる時に発動しない。",
+				"burn_ja": ""
+			},
+			"title_ja": "誓約の盾"
+		},
+		{
+			"title": "Hymn of Courage",
+			"type": "Active",
+			"description": {
+				"text": "Increases Attack of all allies for 2 turns. Increases Defense of the caster for 2 turns and recovers Health. Amount recovered increases proportional to the caster's max Health.",
+				"burn": "Skill cooldown is decreased by 2 turns. (-10 Souls)",
+				"soul": "+2",
+				"ct": "5",
+				"enhance": [
+					"+10% healing",
+					"+10% healing",
+					"-1 turn cooldown",
+					"+10% healing",
+					"+10% healing"
+				],
+				"multipliers": "",
+				"text_ja": "味方全体に攻撃力UPを2ターンの間付与する。自身に防御力UPを2ターンの間付与し、生命力を回復する。自身の最大生命力が高いほど回復量がUPする。",
+				"burn_ja": "スキルターンが2減少する。(魂力10消費)"
+			},
+			"title_ja": "勇気の賛歌"
+		}
+	]
+}

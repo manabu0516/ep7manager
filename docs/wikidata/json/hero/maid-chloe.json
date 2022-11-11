@@ -1,0 +1,224 @@
+{
+	"common": {
+		"name": "Maid Chloe",
+		"image": "https://epic7x.com/wp-content/uploads/2019/01/maid-chloe.png",
+		"attribute": "light",
+		"sign": "virgo",
+		"clazz": "soul-weaver",
+		"rarity": "5",
+		"name_ja": "メイド・クロエ"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "15",
+		"Critical_Hit_Damage": "150",
+		"dual_attack": "5",
+		"Effectiveness": "12",
+		"Effect_Resistance": "0",
+		"Speed": "106",
+		"Atk": "640",
+		"HP": "5340",
+		"Def": "720"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": 1
+		},
+		{
+			"key": "Belief",
+			"score": 3
+		},
+		{
+			"key": "Bizarre Story",
+			"score": 0
+		},
+		{
+			"key": "Comforting",
+			"score": 2
+		},
+		{
+			"key": "Complain",
+			"score": 2
+		},
+		{
+			"key": "Criticism",
+			"score": -4
+		},
+		{
+			"key": "Cute Cheer",
+			"score": 5
+		},
+		{
+			"key": "Dream",
+			"score": 4
+		},
+		{
+			"key": "Food Story",
+			"score": 7
+		},
+		{
+			"key": "Gossip",
+			"score": 2
+		},
+		{
+			"key": "Happy Memory",
+			"score": 4
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": 5
+		},
+		{
+			"key": "Heroic Tale",
+			"score": 5
+		},
+		{
+			"key": "Horror",
+			"score": -4
+		},
+		{
+			"key": "Interesting Story",
+			"score": 3
+		},
+		{
+			"key": "Joyful Memories",
+			"score": 6
+		},
+		{
+			"key": "Myth",
+			"score": 3
+		},
+		{
+			"key": "Occult",
+			"score": 0
+		},
+		{
+			"key": "Reality Check",
+			"score": -4
+		},
+		{
+			"key": "Sad Memory",
+			"score": 3
+		},
+		{
+			"key": "Self Indulgent",
+			"score": 3
+		},
+		{
+			"key": "Unique Comment",
+			"score": 3
+		}
+	],
+	"memory": {
+		"potision": "pos-all",
+		"release": [
+			{
+				"key": "Effect Resistance",
+				"value": "4.8%"
+			},
+			{
+				"key": "Effect Resistance",
+				"value": "7.2%"
+			},
+			{
+				"key": "Effect Resistance",
+				"value": "9.6%"
+			},
+			{
+				"key": "Effect Resistance",
+				"value": "12%"
+			},
+			{
+				"key": "Effect Resistance",
+				"value": "14.4%"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Effect Resistance",
+				"value": "9%"
+			},
+			{
+				"key": "Effect Resistance",
+				"value": "13.50%"
+			},
+			{
+				"key": "Effect Resistance",
+				"value": "18%"
+			},
+			{
+				"key": "Effect Resistance",
+				"value": "22.50%"
+			},
+			{
+				"key": "Effect Resistance",
+				"value": "27%"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Heavy Strike",
+			"type": "Active",
+			"description": {
+				"text": "Attacks with a hammer with a 25% chance to stun for 1 turn. When the target is stunned after attacking, increases Combat Readiness of all allies except for the caster by 15%.",
+				"burn": "Grants an extra turn (-20 Souls)",
+				"soul": "+1",
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+5% effect chance",
+					"+5% damage dealt",
+					"+5% effect chance",
+					"+10% damage dealt",
+					"+5% effect chance",
+					"+10% damage dealt"
+				],
+				"multipliers": "ATK*1*1*1.871",
+				"text_ja": "敵単体にダメージを与え、25％の確率でスタンを1ターンの間付与する。攻撃後、対象がスタン状態の場合、自身以外の味方全体のアクションゲージを15%UPさせる。",
+				"burn_ja": "追加ターンが発生する。(魂力20消費)"
+			},
+			"title_ja": "メイドからのご褒美"
+		},
+		{
+			"title": "Maid's Cheer",
+			"type": "Passive",
+			"description": {
+				"text": "Increases Effect Resistance of all allies by 20%. At the start of the turn, recovers Health of the two allies with the lowest Health. Amount recovered increases proportional to the caster's max Health.",
+				"burn": "",
+				"soul": null,
+				"ct": null,
+				"enhance": [
+					"+5% healing",
+					"+5% healing",
+					"+5% healing",
+					"+5% healing",
+					"+10% healing",
+					"+10% healing",
+					"+10% healing"
+				],
+				"multipliers": "Heal strength: 8% self max Health (12% full Molgora)",
+				"text_ja": "味方全体の効果抵抗率が20%UPする。ターン開始時、生命力状態が最も悪い味方2体の生命力を回復する。自身の最大生命力が高いほど回復量がUPする。",
+				"burn_ja": ""
+			},
+			"title_ja": "メイドの声援"
+		},
+		{
+			"title": "VIP Treatment",
+			"type": "Active",
+			"description": {
+				"text": "Entertains all allies with VIP Treatment, reviving all dead allies to 20% Health. Dispels two debuffs from all living allies and grants revive for 3, before increasing Attack of all allies for 3 turns.",
+				"burn": "",
+				"soul": "+3",
+				"ct": "6",
+				"enhance": [
+					"-1 turn cooldown"
+				],
+				"multipliers": "",
+				"text_ja": "気絶した味方全体を最大生命力の20%の状態で復活させ、気絶していない味方全体の弱体効果を2つ解除し、蘇生を3ターンの間付与する。更に、味方全体に攻撃力UPを3ターンの間付与する。",
+				"burn_ja": ""
+			},
+			"title_ja": "女王様のサービス！"
+		}
+	]
+}

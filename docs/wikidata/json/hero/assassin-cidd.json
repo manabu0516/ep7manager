@@ -1,0 +1,232 @@
+{
+	"common": {
+		"name": "Assassin Cidd",
+		"image": "https://epic7x.com/wp-content/uploads/2019/01/Assassin-Cidd-1.png",
+		"attribute": "dark",
+		"sign": "aquarius",
+		"clazz": "thief",
+		"rarity": "4",
+		"name_ja": "暗殺者シダー"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "35",
+		"Critical_Hit_Damage": "150",
+		"dual_attack": "5",
+		"Effectiveness": "0",
+		"Effect_Resistance": "0",
+		"Speed": "128",
+		"Atk": "930",
+		"HP": "4774",
+		"Def": "497"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": 0
+		},
+		{
+			"key": "Belief",
+			"score": 0
+		},
+		{
+			"key": "Bizarre Story",
+			"score": 0
+		},
+		{
+			"key": "Comforting",
+			"score": 0
+		},
+		{
+			"key": "Complain",
+			"score": 0
+		},
+		{
+			"key": "Criticism",
+			"score": 0
+		},
+		{
+			"key": "Cute Cheer",
+			"score": 1
+		},
+		{
+			"key": "Dream",
+			"score": 0
+		},
+		{
+			"key": "Food Story",
+			"score": 4
+		},
+		{
+			"key": "Gossip",
+			"score": 0
+		},
+		{
+			"key": "Happy Memory",
+			"score": 0
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": 0
+		},
+		{
+			"key": "Heroic Tale",
+			"score": 1
+		},
+		{
+			"key": "Horror",
+			"score": -2
+		},
+		{
+			"key": "Interesting Story",
+			"score": 1
+		},
+		{
+			"key": "Joyful Memories",
+			"score": 1
+		},
+		{
+			"key": "Myth",
+			"score": 0
+		},
+		{
+			"key": "Occult",
+			"score": 0
+		},
+		{
+			"key": "Reality Check",
+			"score": 0
+		},
+		{
+			"key": "Sad Memory",
+			"score": 0
+		},
+		{
+			"key": "Self Indulgent",
+			"score": 0
+		},
+		{
+			"key": "Unique Comment",
+			"score": 1
+		}
+	],
+	"memory": {
+		"potision": "pos-all",
+		"release": [
+			{
+				"key": "Attack",
+				"value": "2.4%"
+			},
+			{
+				"key": "Attack",
+				"value": "3.6%"
+			},
+			{
+				"key": "Attack",
+				"value": "4.8%"
+			},
+			{
+				"key": "Attack",
+				"value": "6.0%"
+			},
+			{
+				"key": "Attack",
+				"value": "7.2%"
+			},
+			{
+				"key": "Attack",
+				"value": "8.4%"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Critical Hit Chance",
+				"value": "4.20%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "6.30%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "8.40%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "10.50%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "12.60%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "14.70%"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Slice",
+			"type": "Active",
+			"description": {
+				"text": "Attacks with an axe, with a 40% chance to decrease Defense for 2 turns. Damage dealt increases proportional to the caster's Speed.",
+				"burn": "",
+				"soul": "+1",
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+5% effect chance",
+					"+10% damage dealt",
+					"+10% damage dealt"
+				],
+				"multipliers": "(ATK*1.6839) * (1+Speed*0.00075)\n                                        \n                                                                                    0.075% self Speed (0.00075 * Speed)",
+				"text_ja": "敵単体にダメージを与え、40％の確率で防御力DOWN2ターンの間付与する。自身のスピードが高いほどダメージがUPする。",
+				"burn_ja": ""
+			},
+			"title_ja": "切り落とし"
+		},
+		{
+			"title": "Swift Action",
+			"type": "Passive",
+			"description": {
+				"text": "When somebody dies, caster is granted increased Attack for 1 turn and Combat Readiness increases by 15%.",
+				"burn": "",
+				"soul": null,
+				"ct": "1",
+				"enhance": [
+					"3% Combat Readiness",
+					"5% Combat Readiness",
+					"7% Combat Readiness"
+				],
+				"multipliers": "",
+				"text_ja": "敵・味方が気絶する時、自身のアクションゲージを15%UPさせ、自身に攻撃力UPを1ターンの間付与する。",
+				"burn_ja": ""
+			},
+			"title_ja": "迅速果断"
+		},
+		{
+			"title": "Execution",
+			"type": "Active",
+			"description": {
+				"text": "Attacks the enemy with a powerful ground pound, silencing them for 1 turn and decreasing their Combat Readiness by 50%, before increasing Evasion Chance of the caster for 2 turns. Damage dealt increases proportional to the caster and the enemy’s speed.\n\nRemoves 20 Souls from the opponent.",
+				"burn": "Increases damage dealt. (-10 Souls)",
+				"soul": "+2",
+				"ct": "4",
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"-1 turn cooldown",
+					"+5% damage dealt",
+					"+10% damage dealt",
+					"+10% damage dealt"
+				],
+				"multipliers": "(ATK*2.666175) * (1+Speed*0.001) [2 soul burn]\n                                        \n                                                                                    0.10% self Speed (0.001 * Speed), 0.30% target Speed (0.003 * Speed)",
+				"text_ja": "敵単体にダメージを与え、沈黙を1ターンの間付与し、アクションゲージを50％DOWNさせる。自身に回避率UPを2ターンの間付与する。自身のスピードと対象のスピードが高いほどダメージがUPする。敵の魂力を20除去する。",
+				"burn_ja": "ダメージがUPする。(魂力10消費)"
+			},
+			"title_ja": "執行"
+		}
+	]
+}

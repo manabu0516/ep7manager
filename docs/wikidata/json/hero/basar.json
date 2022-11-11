@@ -1,0 +1,224 @@
+{
+	"common": {
+		"name": "Basar",
+		"image": "https://epic7x.com/wp-content/uploads/2019/04/Basar.png",
+		"attribute": "earth",
+		"sign": "aquarius",
+		"clazz": "mage",
+		"rarity": "5",
+		"name_ja": "バサール"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "15",
+		"Critical_Hit_Damage": "150",
+		"dual_attack": "5",
+		"Effectiveness": "18",
+		"Effect_Resistance": "0",
+		"Speed": "108",
+		"Atk": "1316",
+		"HP": "4777",
+		"Def": "715"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": 4
+		},
+		{
+			"key": "Belief",
+			"score": 3
+		},
+		{
+			"key": "Bizarre Story",
+			"score": 0
+		},
+		{
+			"key": "Comforting",
+			"score": 3
+		},
+		{
+			"key": "Complain",
+			"score": 0
+		},
+		{
+			"key": "Criticism",
+			"score": 3
+		},
+		{
+			"key": "Cute Cheer",
+			"score": 4
+		},
+		{
+			"key": "Dream",
+			"score": -1
+		},
+		{
+			"key": "Food Story",
+			"score": 1
+		},
+		{
+			"key": "Gossip",
+			"score": 3
+		},
+		{
+			"key": "Happy Memory",
+			"score": 2
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": 5
+		},
+		{
+			"key": "Heroic Tale",
+			"score": 2
+		},
+		{
+			"key": "Horror",
+			"score": 5
+		},
+		{
+			"key": "Interesting Story",
+			"score": 1
+		},
+		{
+			"key": "Joyful Memories",
+			"score": 3
+		},
+		{
+			"key": "Myth",
+			"score": 0
+		},
+		{
+			"key": "Occult",
+			"score": 0
+		},
+		{
+			"key": "Reality Check",
+			"score": 3
+		},
+		{
+			"key": "Sad Memory",
+			"score": -2
+		},
+		{
+			"key": "Self Indulgent",
+			"score": 1
+		},
+		{
+			"key": "Unique Comment",
+			"score": 0
+		}
+	],
+	"memory": {
+		"potision": "pos-all",
+		"release": [
+			{
+				"key": "Effectiveness",
+				"value": "4.8%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "7.2%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "9.6%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "12.0%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "14.4%"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Effectiveness",
+				"value": "9%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "13.50%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "18%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "22.50%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "27%"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Sand Wind",
+			"type": "Active",
+			"description": {
+				"text": "Attacks with magic, with a 50% chance to transfer one debuff from the caster to the enemy before inflicting a random debuff for 2 turns.",
+				"burn": "",
+				"soul": "+1",
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+10% transfer chance",
+					"+15% transfer chance",
+					"+10% damage dealt",
+					"+15% damage dealt"
+				],
+				"multipliers": "ATK*1*1*1.871",
+				"text_ja": "敵単体に攻撃し、自身が弱体状態の場合、50%の確率で自身の弱体効果を1個転移させ、ランダム弱体効果を2ターンの間付与する。",
+				"burn_ja": ""
+			},
+			"title_ja": "砂風"
+		},
+		{
+			"title": "Hurricane",
+			"type": "Active",
+			"description": {
+				"text": "Attacks all enemies by releasing a hot sand hurricane, with a 60% chance to decrease Hit Chance and Attack for 2 turns.",
+				"burn": "",
+				"soul": "+2",
+				"ct": "3",
+				"enhance": [
+					"+5% damage dealt",
+					"+5% effect chance",
+					"+10% effect chance",
+					"+10% damage dealt",
+					"+15% damage dealt"
+				],
+				"multipliers": "ATK*0.9*1*1.871",
+				"text_ja": "敵全体に攻撃し、60%の確率で命中率DOWN・攻撃力DOWNを2ターンの間付与する。",
+				"burn_ja": ""
+			},
+			"title_ja": "颶風"
+		},
+		{
+			"title": "Sandstorm",
+			"type": "Active",
+			"description": {
+				"text": "Attacks all enemies with sand magic, dispelling all buffs, and making them unable to be buffed for 2 turns, before decreasing Combat Readiness by 30%.",
+				"burn": "Ignores Effect Resistance. (-20 Souls)",
+				"soul": "+3",
+				"ct": "5",
+				"enhance": [
+					"+5% damage dealt",
+					"+10% damage dealt",
+					"-1 turn cooldown",
+					"+10% damage dealt",
+					"+15% damage dealt"
+				],
+				"multipliers": "ATK*0.9*0.9*1.871",
+				"text_ja": "敵全体に攻撃し、強化効果をすべて解除し、強化不可を2ターンの間付与する。更にアクションゲージを30%DOWNさせる。",
+				"burn_ja": "効果抵抗を無視する。(魂力20消費)"
+			},
+			"title_ja": "砂嵐"
+		}
+	]
+}

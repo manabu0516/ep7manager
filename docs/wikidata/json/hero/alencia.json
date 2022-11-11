@@ -1,0 +1,224 @@
+{
+	"common": {
+		"name": "Alencia",
+		"image": "https://epic7x.com/wp-content/uploads/2019/01/Alencia.png",
+		"attribute": "earth",
+		"sign": "cancer",
+		"clazz": "warrior",
+		"rarity": "5",
+		"name_ja": "アレンシア"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "15",
+		"Critical_Hit_Damage": "150",
+		"dual_attack": "5",
+		"Effectiveness": "0",
+		"Effect_Resistance": "0",
+		"Speed": "106",
+		"Atk": "975",
+		"HP": "7054",
+		"Def": "652"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": 3
+		},
+		{
+			"key": "Belief",
+			"score": -3
+		},
+		{
+			"key": "Bizarre Story",
+			"score": -3
+		},
+		{
+			"key": "Comforting",
+			"score": 1
+		},
+		{
+			"key": "Complain",
+			"score": -2
+		},
+		{
+			"key": "Criticism",
+			"score": 7
+		},
+		{
+			"key": "Cute Cheer",
+			"score": 4
+		},
+		{
+			"key": "Dream",
+			"score": 0
+		},
+		{
+			"key": "Food Story",
+			"score": 3
+		},
+		{
+			"key": "Gossip",
+			"score": -1
+		},
+		{
+			"key": "Happy Memory",
+			"score": 2
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": -3
+		},
+		{
+			"key": "Heroic Tale",
+			"score": 5
+		},
+		{
+			"key": "Horror",
+			"score": -2
+		},
+		{
+			"key": "Interesting Story",
+			"score": 0
+		},
+		{
+			"key": "Joyful Memories",
+			"score": 1
+		},
+		{
+			"key": "Myth",
+			"score": 5
+		},
+		{
+			"key": "Occult",
+			"score": 3
+		},
+		{
+			"key": "Reality Check",
+			"score": -1
+		},
+		{
+			"key": "Sad Memory",
+			"score": 0
+		},
+		{
+			"key": "Self Indulgent",
+			"score": -3
+		},
+		{
+			"key": "Unique Comment",
+			"score": 3
+		}
+	],
+	"memory": {
+		"potision": "pos-tb",
+		"release": [
+			{
+				"key": "Defense",
+				"value": "4.3%"
+			},
+			{
+				"key": "Defense",
+				"value": "6.4%"
+			},
+			{
+				"key": "Defense",
+				"value": "8.6%"
+			},
+			{
+				"key": "Defense",
+				"value": "10.7%"
+			},
+			{
+				"key": "Defense",
+				"value": "12.9%"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Health",
+				"value": "6%"
+			},
+			{
+				"key": "Health",
+				"value": "9%"
+			},
+			{
+				"key": "Health",
+				"value": "12%"
+			},
+			{
+				"key": "Health",
+				"value": "15%"
+			},
+			{
+				"key": "Health",
+				"value": "18%"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Eradicate",
+			"type": "Active",
+			"description": {
+				"text": "Batters the enemy, with a 60% chance to decrease enemy Defense for 1 turn. Damage dealt increases proportional to the caster's max Health.",
+				"burn": "Increases effect chance to 100% and decreases Defense of the target for 2 turns. (-10 Souls)",
+				"soul": "+1",
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+5% effect chance",
+					"+10% damage dealt",
+					"+10% effect chance",
+					"+15% damage dealt"
+				],
+				"multipliers": "(ATK*0.5+Hp*0.08)*1.871",
+				"text_ja": "敵単体に攻撃し、60%の確率で防御力DOWNを1ターンの間付与する。自身の最大生命力が高いほどダメージがUPする。",
+				"burn_ja": "効果発生率が100%になり、防御力DOWNを2ターンの間付与する。(魂力10消費)"
+			},
+			"title_ja": "殲滅"
+		},
+		{
+			"title": "Noble Blood",
+			"type": "Passive",
+			"description": {
+				"text": "At the start of the turn, has a 100% chance to grant Mind's Eye to the caster for 1 turn. After using Eradicate, when the caster is granted Mind's Eye, activates Trample. Trample: Strikes the enemy, inflicting injuries. Damage dealt increases proportional to the caster's max Health. The severity of injuries decrease the max Health of the target by up to 10% every time the skill is used. Mind's Eye: Increases Effectiveness by 50%. Cannot be dispelled.",
+				"burn": "",
+				"soul": null,
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+10% effect chance",
+					"+10% damage dealt",
+					"+15% effect chance",
+					"+15% damage dealt"
+				],
+				"multipliers": "(ATK*0.5+Hp*0.11)*1.871",
+				"text_ja": "ターン開始時、75%の確率で自身に心眼を1ターンの間付与する。【殲滅】を使用した後、自身が心眼状態の場合、【圧殺】を追加で発動する。圧殺：敵単体に攻撃し、裂傷を付与する。自身の最大生命力が高いほどダメージがUPする。ダメージが高いほど裂傷効果がUPし、1回のスキルで対象の最大生命力の10%まで、最大生命力を減少させられる。",
+				"burn_ja": ""
+			},
+			"title_ja": "高貴なる血統"
+		},
+		{
+			"title": "Genesis",
+			"type": "Active",
+			"description": {
+				"text": "Attacks all enemies with Dragon's Might, dispelling all buffs and granting increased Defense to all allies for 2 turns. Increases Combat Readiness of the caster by 50%. Damage dealt increases proportional to the caster's max Health.",
+				"burn": "",
+				"soul": "+3",
+				"ct": "5",
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"-1 turn cooldown",
+					"+5% damage dealt",
+					"+15% damage dealt"
+				],
+				"multipliers": "(ATK*0.5+Hp*0.15)*1.871",
+				"text_ja": "敵全体に攻撃し、強化効果をすべて解除し、味方全体に防御力UPを2ターンの間付与する。更に自身のアクションゲージを50%UPさせる。自身の最大生命力が高いほどダメージがUPする。",
+				"burn_ja": ""
+			},
+			"title_ja": "天地創造"
+		}
+	]
+}

@@ -1,0 +1,224 @@
+{
+	"common": {
+		"name": "Edward Elric",
+		"image": "https://epic7x.com/wp-content/uploads/2022/08/edward-elric1.png",
+		"attribute": "fire",
+		"sign": "aries",
+		"clazz": "warrior",
+		"rarity": "5",
+		"name_ja": "エドワード・エルリック"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "15",
+		"Critical_Hit_Damage": "150",
+		"dual_attack": "5",
+		"Effectiveness": "0",
+		"Effect_Resistance": "0",
+		"Speed": "117",
+		"Atk": "984",
+		"HP": "6266",
+		"Def": "637"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": null
+		},
+		{
+			"key": "Belief",
+			"score": null
+		},
+		{
+			"key": "Bizarre Story",
+			"score": null
+		},
+		{
+			"key": "Comforting",
+			"score": null
+		},
+		{
+			"key": "Complain",
+			"score": null
+		},
+		{
+			"key": "Criticism",
+			"score": null
+		},
+		{
+			"key": "Cute Cheer",
+			"score": null
+		},
+		{
+			"key": "Dream",
+			"score": null
+		},
+		{
+			"key": "Food Story",
+			"score": null
+		},
+		{
+			"key": "Gossip",
+			"score": null
+		},
+		{
+			"key": "Happy Memory",
+			"score": null
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": null
+		},
+		{
+			"key": "Heroic Tale",
+			"score": null
+		},
+		{
+			"key": "Horror",
+			"score": null
+		},
+		{
+			"key": "Interesting Story",
+			"score": null
+		},
+		{
+			"key": "Joyful Memories",
+			"score": null
+		},
+		{
+			"key": "Myth",
+			"score": null
+		},
+		{
+			"key": "Occult",
+			"score": null
+		},
+		{
+			"key": "Reality Check",
+			"score": null
+		},
+		{
+			"key": "Sad Memory",
+			"score": null
+		},
+		{
+			"key": "Self Indulgent",
+			"score": null
+		},
+		{
+			"key": "Unique Comment",
+			"score": null
+		}
+	],
+	"memory": {
+		"potision": "pos-all",
+		"release": [
+			{
+				"key": "Effect Resistance",
+				"value": "4.8%"
+			},
+			{
+				"key": "Effect Resistance",
+				"value": "7.2%"
+			},
+			{
+				"key": "Effect Resistance",
+				"value": "9.6%"
+			},
+			{
+				"key": "Effect Resistance",
+				"value": "12%"
+			},
+			{
+				"key": "Effect Resistance",
+				"value": "14.4%"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Critical Hit Chance",
+				"value": "5.60%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "8.40%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "11.20%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "14%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "16.8%"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "I'll Take You On!",
+			"type": "Active",
+			"description": {
+				"text": "Attacks the enemy with a transmuted blade, and grants a barrier to the caster for 1 turn. Damage dealt and barrier strength increase proportional to the caster's max Health.",
+				"burn": "",
+				"soul": "+1",
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+10% barrier strength",
+					"+10% damage dealt",
+					"+15% barrier strength",
+					"+15% damage dealt"
+				],
+				"multipliers": "",
+				"text_ja": "敵単体に攻撃し、自身にシールドを1ターンの間付与する。自身の最大生命力が高いほどダメージとシールド効果がUPする。",
+				"burn_ja": ""
+			},
+			"title_ja": "一丁やるか！"
+		},
+		{
+			"title": "Equivalent Exchange",
+			"type": "Passive",
+			"description": {
+				"text": "After being attacked, when the caster has a debuff, dispels one debuff and activates Rise!. Rise!: Attacks all enemies with ground thorns, dispelling one buff and inflicting a random debuff for 2 turns, before increasing Combat Readiness of the caster by 20%. Damage dealt increases proportional to the caster's max Health.  (Random Debuff: Decreased Hit Chance, Decreased Attack, Provoke, Silence, Restrict)",
+				"burn": "",
+				"soul": null,
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+10% damage dealt"
+				],
+				"multipliers": "",
+				"text_ja": "攻撃を受けた後、自身が弱体状態の場合、弱体効果を1つ解除して【突き飛ばせ！】を発動する。【突き飛ばせ】は1ターンに1回まで発動する。突き飛ばせ：敵全体を攻撃し、強化効果を1つ解除し、ランダム弱体効果を2ターンの間付与した後、自身のアクションゲージを20%UPさせる。自身の最大生命力が高いほどダメージがUPする。",
+				"burn_ja": ""
+			},
+			"title_ja": "等価交換だ！"
+		},
+		{
+			"title": "I'll Show You Our Difference",
+			"type": "Active",
+			"description": {
+				"text": "Attacks the enemy together with Alphonse, and increases Combat Readiness of the caster by 50%. When the enemy is not an Elite or Boss monster, damage sharing effects are ignored. Damage dealt increases proportional to the caster's max Health. Damage dealt increases every time this skill is used and can stack up to 3 times.",
+				"burn": "-2 turn cooldown (-10 Souls)",
+				"soul": "+3",
+				"ct": "5",
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"-1 turn cooldown",
+					"+10% damage dealt",
+					"+10% damage dealt"
+				],
+				"multipliers": "",
+				"text_ja": "敵単体を攻撃し、自身のアクションゲージを50%UPさせる。対象が精鋭・ボスモンスターでない場合、ダメージ分配効果を無視する。自身の最大生命力が高いほどダメージがUPする。このスキルは使用するたびにダメージがUPし、最大3回まで累積する。",
+				"burn_ja": "スキルターンが2減少する。(魂力10消費)"
+			},
+			"title_ja": "格の違いってやつを見せてやる！"
+		}
+	]
+}

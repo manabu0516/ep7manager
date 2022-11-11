@@ -1,0 +1,177 @@
+{
+	"common": {
+		"name": "Specimen Sez",
+		"image": "https://epic7x.com/wp-content/uploads/2019/01/specimen-full.png",
+		"attribute": "light",
+		"sign": "scorpio",
+		"clazz": "thief",
+		"rarity": "5",
+		"name_ja": "実験体セズ"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "23",
+		"Critical_Hit_Damage": "150",
+		"dual_attack": "5",
+		"Effectiveness": "0",
+		"Effect_Resistance": "0",
+		"Speed": "113",
+		"Atk": "1228",
+		"HP": "6266",
+		"Def": "473"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": 5
+		},
+		{
+			"key": "Belief",
+			"score": 6
+		},
+		{
+			"key": "Bizarre Story",
+			"score": 10
+		},
+		{
+			"key": "Comforting",
+			"score": 2
+		},
+		{
+			"key": "Complain",
+			"score": -10
+		},
+		{
+			"key": "Criticism",
+			"score": 3
+		},
+		{
+			"key": "Cute Cheer",
+			"score": 1
+		},
+		{
+			"key": "Dream",
+			"score": 4
+		},
+		{
+			"key": "Food Story",
+			"score": -3
+		},
+		{
+			"key": "Gossip",
+			"score": -3
+		},
+		{
+			"key": "Happy Memory",
+			"score": -3
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": -2
+		},
+		{
+			"key": "Heroic Tale",
+			"score": -3
+		},
+		{
+			"key": "Horror",
+			"score": 8
+		},
+		{
+			"key": "Interesting Story",
+			"score": 1
+		},
+		{
+			"key": "Joyful Memories",
+			"score": 0
+		},
+		{
+			"key": "Myth",
+			"score": -3
+		},
+		{
+			"key": "Occult",
+			"score": 4
+		},
+		{
+			"key": "Reality Check",
+			"score": -1
+		},
+		{
+			"key": "Sad Memory",
+			"score": 1
+		},
+		{
+			"key": "Self Indulgent",
+			"score": 0
+		},
+		{
+			"key": "Unique Comment",
+			"score": 8
+		}
+	],
+	"skills": [
+		{
+			"title": "Dreamy Iron Mace",
+			"type": "Active",
+			"description": {
+				"text": "Attacks with an iron mace, with a 50% chance to stun the enemy for 1 turn. When the target is stunned after the attack, increases Combat Readiness of the caster by 25%.",
+				"burn": "",
+				"soul": "+1",
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+10% damage dealt"
+				],
+				"multipliers": "ATK*1*1*1.871",
+				"text_ja": "敵単体にダメージを与え、50%の確率でスタンを1ターンの間付与する。攻撃後、対象がスタン状態の場合、自身のアクションゲージを25%UPさせる。",
+				"burn_ja": ""
+			},
+			"title_ja": "夢幻の錘"
+		},
+		{
+			"title": "Evil Claws",
+			"type": "Active",
+			"description": {
+				"text": "Attacks all enemies with evil claws, with a 60% chance to stun for 1 turn, before increasing the caster's Combat Readiness by 50%.",
+				"burn": "Increases damage dealt. (-10 Souls)",
+				"soul": "+2",
+				"ct": "3",
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+10% damage dealt"
+				],
+				"multipliers": "ATK*0.8*1*1.871 (1.05 soul burn)",
+				"text_ja": "敵全体にダメージを与え、60％の確率でスタンを1ターンの間付与する。更に自身のアクションゲージを50%UPさせる。",
+				"burn_ja": "ダメージがUPする。(魂力10消費)"
+			},
+			"title_ja": "魔獣の鉤爪"
+		},
+		{
+			"title": "Light Storm",
+			"type": "Active",
+			"description": {
+				"text": "Attacks with a light storm, inflicting extinction and resetting cooldown for this skill when the enemy is defeated. Penetrates Defense by 30%, or by 100% when the enemy is stunned. If this skill is available, when an ally except for the caster is attacked, has a 20% chance to counterattack.",
+				"burn": "",
+				"soul": "+3",
+				"ct": "5",
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+10% damage dealt"
+				],
+				"multipliers": "ATK*1.5*1*1.871",
+				"text_ja": "敵単体にダメージを与え、防御力を30％貫通する。対象がスタン状態の場合、防御力を100％貫通する。このスキルで敵を気絶させた場合、対象を消滅させ、スキルターンが0になる。このスキルがスキルターン上使用可能な状態の時、自身以外の味方が攻撃を受けた時、20%の確率で反撃する。",
+				"burn_ja": ""
+			},
+			"title_ja": "閃光の嵐"
+		}
+	]
+}

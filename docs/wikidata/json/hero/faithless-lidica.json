@@ -1,0 +1,224 @@
+{
+	"common": {
+		"name": "Faithless Lidica",
+		"image": "https://epic7x.com/wp-content/uploads/2019/11/Faithless-Lidica-2.png",
+		"attribute": "light",
+		"sign": "gemini",
+		"clazz": "ranger",
+		"rarity": "5",
+		"name_ja": "不信者リディカ"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "15",
+		"Critical_Hit_Damage": "150",
+		"dual_attack": "5",
+		"Effectiveness": "18",
+		"Effect_Resistance": "0",
+		"Speed": "114",
+		"Atk": "1182",
+		"HP": "5299",
+		"Def": "571"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": 0
+		},
+		{
+			"key": "Belief",
+			"score": 6
+		},
+		{
+			"key": "Bizarre Story",
+			"score": 0
+		},
+		{
+			"key": "Comforting",
+			"score": 2
+		},
+		{
+			"key": "Complain",
+			"score": 2
+		},
+		{
+			"key": "Criticism",
+			"score": 5
+		},
+		{
+			"key": "Cute Cheer",
+			"score": 2
+		},
+		{
+			"key": "Dream",
+			"score": 4
+		},
+		{
+			"key": "Food Story",
+			"score": 1
+		},
+		{
+			"key": "Gossip",
+			"score": 0
+		},
+		{
+			"key": "Happy Memory",
+			"score": 2
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": 2
+		},
+		{
+			"key": "Heroic Tale",
+			"score": 1
+		},
+		{
+			"key": "Horror",
+			"score": 0
+		},
+		{
+			"key": "Interesting Story",
+			"score": 2
+		},
+		{
+			"key": "Joyful Memories",
+			"score": 6
+		},
+		{
+			"key": "Myth",
+			"score": 0
+		},
+		{
+			"key": "Occult",
+			"score": 3
+		},
+		{
+			"key": "Reality Check",
+			"score": 2
+		},
+		{
+			"key": "Sad Memory",
+			"score": 4
+		},
+		{
+			"key": "Self Indulgent",
+			"score": 1
+		},
+		{
+			"key": "Unique Comment",
+			"score": 3
+		}
+	],
+	"memory": {
+		"potision": "pos-all",
+		"release": [
+			{
+				"key": "Attack",
+				"value": "3.6%"
+			},
+			{
+				"key": "Attack",
+				"value": "5.4%"
+			},
+			{
+				"key": "Attack",
+				"value": "7.2%"
+			},
+			{
+				"key": "Attack",
+				"value": "9.0%"
+			},
+			{
+				"key": "Attack",
+				"value": "10.8%"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Effectiveness",
+				"value": "9%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "13.50%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "18%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "22.50%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "27%"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Thorn",
+			"type": "Active",
+			"description": {
+				"text": "Attacks with a sword, with a 60% chance to decrease Hit Chance for 1 turn.",
+				"burn": "",
+				"soul": "+1",
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+5% effect chance",
+					"+5% damage dealt",
+					"+10% effect chance",
+					"+10% damage dealt"
+				],
+				"multipliers": "ATK*1*1.1*1.871",
+				"text_ja": "敵単体に攻撃し、60%の確率で命中率DOWNを1ターンの間付与する。",
+				"burn_ja": ""
+			},
+			"title_ja": "棘撃"
+		},
+		{
+			"title": "Larkspur",
+			"type": "Active",
+			"description": {
+				"text": "Binds all enemies with a sword, with a 85% chance to dispel one buff, and a critical hit will dispel one additional buff. Increases Combat Readiness of the caster by 25%. This skill cannot trigger a counterattack.",
+				"burn": "",
+				"soul": "+1",
+				"ct": "4",
+				"enhance": [
+					"+5% damage dealt",
+					"+5% effect chance",
+					"+5% damage dealt",
+					"+10% effect chance",
+					"+15% damage dealt"
+				],
+				"multipliers": "ATK*0.9*1.1*1.871",
+				"text_ja": "敵全体に攻撃し、85%の確率で強化効果を1つ解除する。更にクリティカルが発生した場合、強化効果を1つ解除する。自身のアクションゲージを対象の数×25%UPさせる。この攻撃は反撃されない。",
+				"burn_ja": ""
+			},
+			"title_ja": "飛燕草"
+		},
+		{
+			"title": "Hysteria",
+			"type": "Active",
+			"description": {
+				"text": "Attacks the enemy indiscriminately, increasing skill cooldown to max and increases Combat Readiness of all allies by 25%. A critical hit grants all allies skill nullifier once, negating damage received from the next attack.",
+				"burn": "Ignores Effect Resistance. (-20 Souls)",
+				"soul": "+2",
+				"ct": "6",
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"-1 turn cooldown",
+					"+10% damage dealt",
+					"+15% damage dealt"
+				],
+				"multipliers": "ATK*1.4*0.95*1.871",
+				"text_ja": "敵単体に攻撃し、スキルターンを最大まで増加させる。更に味方全体のアクションゲージを25%UPさせる。クリティカル発生時、味方全体にスキルダメージ無効を1回付与する。",
+				"burn_ja": "効果抵抗を無視する。(魂力20消費)"
+			},
+			"title_ja": "ヒステリア"
+		}
+	]
+}

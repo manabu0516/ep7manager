@@ -1,0 +1,224 @@
+{
+	"common": {
+		"name": "Cermia",
+		"image": "https://epic7x.com/wp-content/uploads/2019/03/Cermia-2.png",
+		"attribute": "fire",
+		"sign": "leo",
+		"clazz": "warrior",
+		"rarity": "5",
+		"name_ja": "チェルミア"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "23",
+		"Critical_Hit_Damage": "150",
+		"dual_attack": "5",
+		"Effectiveness": "0",
+		"Effect_Resistance": "0",
+		"Speed": "105",
+		"Atk": "1359",
+		"HP": "5542",
+		"Def": "585"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": -1
+		},
+		{
+			"key": "Belief",
+			"score": 2
+		},
+		{
+			"key": "Bizarre Story",
+			"score": 2
+		},
+		{
+			"key": "Comforting",
+			"score": -1
+		},
+		{
+			"key": "Complain",
+			"score": -1
+		},
+		{
+			"key": "Criticism",
+			"score": 4
+		},
+		{
+			"key": "Cute Cheer",
+			"score": 4
+		},
+		{
+			"key": "Dream",
+			"score": 7
+		},
+		{
+			"key": "Food Story",
+			"score": 3
+		},
+		{
+			"key": "Gossip",
+			"score": 1
+		},
+		{
+			"key": "Happy Memory",
+			"score": 2
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": 4
+		},
+		{
+			"key": "Heroic Tale",
+			"score": 2
+		},
+		{
+			"key": "Horror",
+			"score": 1
+		},
+		{
+			"key": "Interesting Story",
+			"score": 6
+		},
+		{
+			"key": "Joyful Memories",
+			"score": 2
+		},
+		{
+			"key": "Myth",
+			"score": 5
+		},
+		{
+			"key": "Occult",
+			"score": 3
+		},
+		{
+			"key": "Reality Check",
+			"score": -1
+		},
+		{
+			"key": "Sad Memory",
+			"score": 0
+		},
+		{
+			"key": "Self Indulgent",
+			"score": 3
+		},
+		{
+			"key": "Unique Comment",
+			"score": 3
+		}
+	],
+	"memory": {
+		"potision": "pos-all",
+		"release": [
+			{
+				"key": "Critical Hit Chance",
+				"value": "4.8%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "7.2%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "9.8%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "9.0%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "14.4%"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Attack",
+				"value": "6%"
+			},
+			{
+				"key": "Attack",
+				"value": "9%"
+			},
+			{
+				"key": "Attack",
+				"value": "12%"
+			},
+			{
+				"key": "Attack",
+				"value": "15%"
+			},
+			{
+				"key": "Attack",
+				"value": "18%"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Playing with Fire",
+			"type": "Active",
+			"description": {
+				"text": "Attacks with a flaming sword, with a 55% chance to make the target unhealable for 1 turn.",
+				"burn": "",
+				"soul": "+1",
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+5% effect chance",
+					"+5% damage dealt",
+					"+5% effect chance",
+					"+10% damage dealt",
+					"+10% effect chance",
+					"+10% damage dealt"
+				],
+				"multipliers": "ATK*1.2*1*1.871",
+				"text_ja": "敵単体にダメージを与え、55%の確率で回復不可を1ターンの間付与する。",
+				"burn_ja": ""
+			},
+			"title_ja": "電光石火"
+		},
+		{
+			"title": "Hot Streak!",
+			"type": "Active",
+			"description": {
+				"text": "Shoots fire, granting the caster Increase Attack (Greater), resetting the cooldown of All-In!, and granting an extra turn.",
+				"burn": "",
+				"soul": "+2",
+				"ct": "5",
+				"enhance": [
+					"-1 turn cooldown"
+				],
+				"multipliers": "",
+				"text_ja": "自身に攻撃力UP(大)を2ターンの間付与し、【紅蓮爆炎斬】のスキルターンが0になる。追加ターンが発生する。",
+				"burn_ja": ""
+			},
+			"title_ja": "不死鳥の加護"
+		},
+		{
+			"title": "All-In!",
+			"type": "Active",
+			"description": {
+				"text": "Attacks with a blazing inferno, penetrating Defense by 50%.",
+				"burn": "Increases damage dealt (-10 Souls)",
+				"soul": "+3",
+				"ct": "5",
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+10% damage dealt"
+				],
+				"multipliers": "ATK*1.15*0.9*1.871 (1.65 Soulburn)",
+				"text_ja": "敵単体にダメージを与える。防御力を50%貫通する。",
+				"burn_ja": "ダメージがUPする。(魂力10消費)"
+			},
+			"title_ja": "紅蓮爆炎斬"
+		}
+	]
+}

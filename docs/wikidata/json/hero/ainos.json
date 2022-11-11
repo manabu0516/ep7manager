@@ -1,0 +1,240 @@
+{
+	"common": {
+		"name": "Ainos",
+		"image": "https://epic7x.com/wp-content/uploads/2020/10/Ainos.png",
+		"attribute": "dark",
+		"sign": "sagittarius",
+		"clazz": "soul-weaver",
+		"rarity": "3",
+		"name_ja": "アイノス"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "15",
+		"Critical_Hit_Damage": "150",
+		"dual_attack": "5",
+		"Effectiveness": "12",
+		"Effect_Resistance": "18",
+		"Speed": "107",
+		"Atk": "812",
+		"HP": "3925",
+		"Def": "599"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": -1
+		},
+		{
+			"key": "Belief",
+			"score": 3
+		},
+		{
+			"key": "Bizarre Story",
+			"score": 0
+		},
+		{
+			"key": "Comforting",
+			"score": -1
+		},
+		{
+			"key": "Complain",
+			"score": -1
+		},
+		{
+			"key": "Criticism",
+			"score": 5
+		},
+		{
+			"key": "Cute Cheer",
+			"score": 3
+		},
+		{
+			"key": "Dream",
+			"score": 3
+		},
+		{
+			"key": "Food Story",
+			"score": 2
+		},
+		{
+			"key": "Gossip",
+			"score": 2
+		},
+		{
+			"key": "Happy Memory",
+			"score": 1
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": 4
+		},
+		{
+			"key": "Heroic Tale",
+			"score": 2
+		},
+		{
+			"key": "Horror",
+			"score": -5
+		},
+		{
+			"key": "Interesting Story",
+			"score": 3
+		},
+		{
+			"key": "Joyful Memories",
+			"score": 1
+		},
+		{
+			"key": "Myth",
+			"score": 9
+		},
+		{
+			"key": "Occult",
+			"score": 5
+		},
+		{
+			"key": "Reality Check",
+			"score": 2
+		},
+		{
+			"key": "Sad Memory",
+			"score": -1
+		},
+		{
+			"key": "Self Indulgent",
+			"score": 7
+		},
+		{
+			"key": "Unique Comment",
+			"score": -2
+		}
+	],
+	"memory": {
+		"potision": "pos-all",
+		"release": [
+			{
+				"key": "Attack",
+				"value": "24"
+			},
+			{
+				"key": "Attack",
+				"value": "36"
+			},
+			{
+				"key": "Attack",
+				"value": "48"
+			},
+			{
+				"key": "Attack",
+				"value": "60"
+			},
+			{
+				"key": "Attack",
+				"value": "72"
+			},
+			{
+				"key": "Attack",
+				"value": "84"
+			},
+			{
+				"key": "Attack",
+				"value": "96"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Effectiveness",
+				"value": "4.50%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "6.80%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "9%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "11.20%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "13.50%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "15.80%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "18%"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Silent Fire",
+			"type": "Active",
+			"description": {
+				"text": "Silently shoots the enemy, with a 50% chance to decrease Defense for 1 turn.",
+				"burn": "Increases effect chance to 100% and decreases Defense of the target for 2 turns. (-10 Souls)",
+				"soul": "+1",
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+10% effect chance",
+					"+10% damage dealt",
+					"+15% effect chance",
+					"+15% damage dealt"
+				],
+				"multipliers": "",
+				"text_ja": "敵単体に攻撃し、50%の確率で防御力DOWNを1ターンの間付与する。",
+				"burn_ja": "効果発生率が100%にUPし、防御力DOWNを2ターンの間付与する。(魂力10消費)"
+			},
+			"title_ja": "狙撃"
+		},
+		{
+			"title": "Maneuver Support",
+			"type": "Passive",
+			"description": {
+				"text": "At the end of the turn, increases Combat Readiness of the ally except for the caster with the highest Attack by 15% and dispels one debuff from an ally.",
+				"burn": "",
+				"soul": null,
+				"ct": null,
+				"enhance": [
+					"+1% Combat Readiness",
+					"+1% Combat Readiness",
+					"+1% Combat Readiness",
+					"+1% Combat Readiness",
+					"+1% Combat Readiness"
+				],
+				"multipliers": "",
+				"text_ja": "ターン終了時、自身以外の攻撃力が最も高い味方のアクションゲージを15%UPさせ、弱体状態の味方単体の弱体効果を1つ解除する。",
+				"burn_ja": ""
+			},
+			"title_ja": "行動支援"
+		},
+		{
+			"title": "Firepower Cube",
+			"type": "Active",
+			"description": {
+				"text": "Throws a firepower cube to attack all enemies, before healing all allies and granting increased Attack and Speed for 2 turns. Amount recovered increases proportional to the target's max Health.",
+				"burn": "",
+				"soul": "+3",
+				"ct": "4",
+				"enhance": [
+					"+5% healing",
+					"+5% healing",
+					"+5% healing",
+					"+10% healing",
+					"+15% healing"
+				],
+				"multipliers": "",
+				"text_ja": "敵全体に攻撃し、味方全体の生命力を回復し、攻撃力UP・スピードUPを2ターンの間付与する。対象の最大生命力が高いほど回復量がUPする。",
+				"burn_ja": ""
+			},
+			"title_ja": "火力キューブ"
+		}
+	]
+}

@@ -1,0 +1,224 @@
+{
+	"common": {
+		"name": "Peira",
+		"image": "https://epic7x.com/wp-content/uploads/2022/01/Peira.png",
+		"attribute": "ice",
+		"sign": "virgo",
+		"clazz": "thief",
+		"rarity": "5",
+		"name_ja": "ペイラ"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "15",
+		"Critical_Hit_Damage": "150",
+		"dual_attack": "5",
+		"Effectiveness": "18",
+		"Effect_Resistance": "0",
+		"Speed": "128",
+		"Atk": "1075",
+		"HP": "5562",
+		"Def": "487"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": 0
+		},
+		{
+			"key": "Belief",
+			"score": 3
+		},
+		{
+			"key": "Bizarre Story",
+			"score": 3
+		},
+		{
+			"key": "Comforting",
+			"score": 5
+		},
+		{
+			"key": "Complain",
+			"score": 0
+		},
+		{
+			"key": "Criticism",
+			"score": 6
+		},
+		{
+			"key": "Cute Cheer",
+			"score": 2
+		},
+		{
+			"key": "Dream",
+			"score": 3
+		},
+		{
+			"key": "Food Story",
+			"score": 2
+		},
+		{
+			"key": "Gossip",
+			"score": 0
+		},
+		{
+			"key": "Happy Memory",
+			"score": 2
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": 3
+		},
+		{
+			"key": "Heroic Tale",
+			"score": 2
+		},
+		{
+			"key": "Horror",
+			"score": 0
+		},
+		{
+			"key": "Interesting Story",
+			"score": 2
+		},
+		{
+			"key": "Joyful Memories",
+			"score": 2
+		},
+		{
+			"key": "Myth",
+			"score": 4
+		},
+		{
+			"key": "Occult",
+			"score": 6
+		},
+		{
+			"key": "Reality Check",
+			"score": 3
+		},
+		{
+			"key": "Sad Memory",
+			"score": 0
+		},
+		{
+			"key": "Self Indulgent",
+			"score": 2
+		},
+		{
+			"key": "Unique Comment",
+			"score": 1
+		}
+	],
+	"memory": {
+		"potision": "pos-tl",
+		"release": [
+			{
+				"key": "Defense",
+				"value": "4.3%"
+			},
+			{
+				"key": "Defense",
+				"value": "6.4%"
+			},
+			{
+				"key": "Defense",
+				"value": "8.6%"
+			},
+			{
+				"key": "Defense",
+				"value": "10.7%"
+			},
+			{
+				"key": "Defense",
+				"value": "12.9%"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Effectiveness",
+				"value": "9%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "13.50%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "18%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "22.50%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "27%"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Wolven Claw",
+			"type": "Active",
+			"description": {
+				"text": "Slashes the enemy with sharp claws, with a 30% chance to stun for 1 turn. When the caster is granted a barrier, effect chance increases by 25%.",
+				"burn": "Increases effect chance to 100%. (-10 Souls)",
+				"soul": "+1",
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+5% effect chance",
+					"+10% damage dealt",
+					"+5% effect chance",
+					"+10% damage dealt"
+				],
+				"multipliers": "ATK*1*1*1,875",
+				"text_ja": "敵単体に攻撃し、30%の確率でスタンを1ターンの間付与する。自身がシールド状態の場合、効果発生率が25%UPする。",
+				"burn_ja": "効果発生率が100%になる。(魂力10消費)"
+			},
+			"title_ja": "狼の鉤爪"
+		},
+		{
+			"title": "Punishing Blade",
+			"type": "Active",
+			"description": {
+				"text": "Attacks all enemies with guardian spirits, decreasing buff duration by 1 turn, before restricting and making them unable to be buffed for 2 turns. Grants an extra turn to the caster.",
+				"burn": "",
+				"soul": "+2",
+				"ct": "6",
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"-1 turn cooldown",
+					"+10% damage dealt",
+					"+10% damage dealt"
+				],
+				"multipliers": "ATK*1*1*1,875",
+				"text_ja": "敵全体に攻撃し、強化効果を1ターン短縮させた後、束縛・強化不可を2ターンの間付与する。自身に追加ターンが発生する。",
+				"burn_ja": ""
+			},
+			"title_ja": "処刑の刃"
+		},
+		{
+			"title": "Pack Hunt",
+			"type": "Active",
+			"description": {
+				"text": "Using the power of the Goblet of Oath, increases Attack of all allies except for the caster for 2 turns, before granting stealth, escort, and a barrier to the caster for 3 turns. Barrier strength increases proportional to the caster's level.",
+				"burn": "",
+				"soul": "+2",
+				"ct": "5",
+				"enhance": [
+					"+5% barrier strength",
+					"+5% barrier strength",
+					"-1 turn cooldown",
+					"+10% barrier strength",
+					"+10% barrier strength"
+				],
+				"multipliers": "",
+				"text_ja": "自身以外の味方全体に攻撃力UPを2ターンの間付与し、自身に潜伏・護衛・シールドを3ターンの間付与する。自身のレベルが高いほどシールド効果がUPする。",
+				"burn_ja": ""
+			},
+			"title_ja": "集団狩り"
+		}
+	]
+}

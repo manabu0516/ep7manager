@@ -1,0 +1,240 @@
+{
+	"common": {
+		"name": "Tieria",
+		"image": "https://epic7x.com/wp-content/uploads/2019/01/tieria-full.png",
+		"attribute": "fire",
+		"sign": "aries",
+		"clazz": "warrior",
+		"rarity": "3",
+		"name_ja": "ディエリア"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "15",
+		"Critical_Hit_Damage": "150",
+		"dual_attack": "5",
+		"Effectiveness": "0",
+		"Effect_Resistance": "0",
+		"Speed": "100",
+		"Atk": "839",
+		"HP": "5517",
+		"Def": "591"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": 2
+		},
+		{
+			"key": "Belief",
+			"score": 1
+		},
+		{
+			"key": "Bizarre Story",
+			"score": -2
+		},
+		{
+			"key": "Comforting",
+			"score": 2
+		},
+		{
+			"key": "Complain",
+			"score": 2
+		},
+		{
+			"key": "Criticism",
+			"score": 2
+		},
+		{
+			"key": "Cute Cheer",
+			"score": 2
+		},
+		{
+			"key": "Dream",
+			"score": 0
+		},
+		{
+			"key": "Food Story",
+			"score": 5
+		},
+		{
+			"key": "Gossip",
+			"score": -2
+		},
+		{
+			"key": "Happy Memory",
+			"score": 2
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": 2
+		},
+		{
+			"key": "Heroic Tale",
+			"score": 1
+		},
+		{
+			"key": "Horror",
+			"score": -2
+		},
+		{
+			"key": "Interesting Story",
+			"score": 2
+		},
+		{
+			"key": "Joyful Memories",
+			"score": 4
+		},
+		{
+			"key": "Myth",
+			"score": 0
+		},
+		{
+			"key": "Occult",
+			"score": 0
+		},
+		{
+			"key": "Reality Check",
+			"score": 2
+		},
+		{
+			"key": "Sad Memory",
+			"score": 1
+		},
+		{
+			"key": "Self Indulgent",
+			"score": 0
+		},
+		{
+			"key": "Unique Comment",
+			"score": 1
+		}
+	],
+	"memory": {
+		"potision": "pos-all",
+		"release": [
+			{
+				"key": "Speed",
+				"value": "2"
+			},
+			{
+				"key": "Speed",
+				"value": "3"
+			},
+			{
+				"key": "Speed",
+				"value": "4"
+			},
+			{
+				"key": "Speed",
+				"value": "5"
+			},
+			{
+				"key": "Speed",
+				"value": "6"
+			},
+			{
+				"key": "Speed",
+				"value": "7"
+			},
+			{
+				"key": "Speed",
+				"value": "8"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Attack",
+				"value": "36"
+			},
+			{
+				"key": "Attack",
+				"value": "54"
+			},
+			{
+				"key": "Attack",
+				"value": "72"
+			},
+			{
+				"key": "Attack",
+				"value": "90"
+			},
+			{
+				"key": "Attack",
+				"value": "108"
+			},
+			{
+				"key": "Attack",
+				"value": "126"
+			},
+			{
+				"key": "Attack",
+				"value": "144"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Demon Cutter",
+			"type": "Active",
+			"description": {
+				"text": "Attacks with an axe, with a 50% chance to decrease Hit Chance for 1 turn.",
+				"burn": "",
+				"soul": "+1",
+				"ct": null,
+				"enhance": [
+					"+10% damage dealt",
+					"+10% effect chance",
+					"+15% damage dealt",
+					"+15% effect chance"
+				],
+				"multipliers": "ATK*1*1.05*1.871",
+				"text_ja": "敵単体に攻撃し、50%の確率で命中率DOWNを1ターンの間付与する。",
+				"burn_ja": ""
+			},
+			"title_ja": "悪魔斬り"
+		},
+		{
+			"title": "Dance of Sands",
+			"type": "Passive",
+			"description": {
+				"text": "Increases the Combat Readiness of allies except for the caster by 10% when an attacks hits.",
+				"burn": "",
+				"soul": null,
+				"ct": null,
+				"enhance": [
+					"+1% Combat Readiness",
+					"+1% Combat Readiness",
+					"+1% Combat Readiness",
+					"+2% Combat Readiness"
+				],
+				"multipliers": "",
+				"text_ja": "攻撃命中時、自身以外の味方全体のアクションゲージを10%UPさせる。",
+				"burn_ja": ""
+			},
+			"title_ja": "砂の舞"
+		},
+		{
+			"title": "Soul Break",
+			"type": "Active",
+			"description": {
+				"text": "Strikes the enemy strongly, dealing damage proportional to the target's max Health.",
+				"burn": "Grants an extra turn (-20 Souls)",
+				"soul": "+2",
+				"ct": "5",
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"-1 turn cooldown",
+					"+5% damage dealt",
+					"+10% damage dealt",
+					"+10% damage dealt"
+				],
+				"multipliers": "ATK*1.2*0.9*1.871 (1.8 soul burn)\n                                        \n                                                                                    4% target max Health, 6% soul burn",
+				"text_ja": "敵単体に強力に攻撃する。対象の最大生命力に応じてダメージがUPする。",
+				"burn_ja": "追加ターンが発生する。(魂力20消費)"
+			},
+			"title_ja": "斬魂斧"
+		}
+	]
+}

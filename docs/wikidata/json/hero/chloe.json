@@ -1,0 +1,224 @@
+{
+	"common": {
+		"name": "Chloe",
+		"image": "https://epic7x.com/wp-content/uploads/2019/01/Chloe-2.png",
+		"attribute": "ice",
+		"sign": "sagittarius",
+		"clazz": "warrior",
+		"rarity": "5",
+		"name_ja": "クロエ"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "27",
+		"Critical_Hit_Damage": "150",
+		"dual_attack": "5",
+		"Effectiveness": "0",
+		"Effect_Resistance": "0",
+		"Speed": "119",
+		"Atk": "1177",
+		"HP": "5542",
+		"Def": "553"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": 2
+		},
+		{
+			"key": "Belief",
+			"score": 1
+		},
+		{
+			"key": "Bizarre Story",
+			"score": -2
+		},
+		{
+			"key": "Comforting",
+			"score": 4
+		},
+		{
+			"key": "Complain",
+			"score": 2
+		},
+		{
+			"key": "Criticism",
+			"score": -4
+		},
+		{
+			"key": "Cute Cheer",
+			"score": 4
+		},
+		{
+			"key": "Dream",
+			"score": 4
+		},
+		{
+			"key": "Food Story",
+			"score": 8
+		},
+		{
+			"key": "Gossip",
+			"score": 2
+		},
+		{
+			"key": "Happy Memory",
+			"score": 4
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": 4
+		},
+		{
+			"key": "Heroic Tale",
+			"score": 4
+		},
+		{
+			"key": "Horror",
+			"score": -10
+		},
+		{
+			"key": "Interesting Story",
+			"score": 2
+		},
+		{
+			"key": "Joyful Memories",
+			"score": 4
+		},
+		{
+			"key": "Myth",
+			"score": 4
+		},
+		{
+			"key": "Occult",
+			"score": -2
+		},
+		{
+			"key": "Reality Check",
+			"score": -4
+		},
+		{
+			"key": "Sad Memory",
+			"score": 4
+		},
+		{
+			"key": "Self Indulgent",
+			"score": 4
+		},
+		{
+			"key": "Unique Comment",
+			"score": 0
+		}
+	],
+	"memory": {
+		"potision": "pos-all",
+		"release": [
+			{
+				"key": "Attack",
+				"value": "3.6%"
+			},
+			{
+				"key": "Attack",
+				"value": "5.4%"
+			},
+			{
+				"key": "Attack",
+				"value": "7.2%"
+			},
+			{
+				"key": "Attack",
+				"value": "9.0%"
+			},
+			{
+				"key": "Attack",
+				"value": "10.8%"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Attack",
+				"value": "6%"
+			},
+			{
+				"key": "Attack",
+				"value": "9%"
+			},
+			{
+				"key": "Attack",
+				"value": "12%"
+			},
+			{
+				"key": "Attack",
+				"value": "15%"
+			},
+			{
+				"key": "Attack",
+				"value": "18%"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Heavy Strike",
+			"type": "Active",
+			"description": {
+				"text": "Hammers the enemy. Damage dealt is increased if the enemy is inflicted with Magic Nail.",
+				"burn": "",
+				"soul": "+1",
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+10% damage dealt",
+					"+10% damage dealt",
+					"+10% damage dealt"
+				],
+				"multipliers": "ATK*1*0.9*1.871\n                                        \n                                                                                    30% bonus dmg if target is Magic Nail'd",
+				"text_ja": "敵単体に攻撃する。対象が魔法釘状態の場合、ダメージがUPする。",
+				"burn_ja": ""
+			},
+			"title_ja": "鎚強撃"
+		},
+		{
+			"title": "Magic Bolt",
+			"type": "Active",
+			"description": {
+				"text": "Inflicts Magic Nail for 3 turns before increasing Combat Readiness of the caster by 50%. This effect cannot be resisted.",
+				"burn": "",
+				"soul": "+1",
+				"ct": "3",
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+10% damage dealt",
+					"+10% damage dealt",
+					"+10% damage dealt"
+				],
+				"multipliers": "ATK*0.9*0.9*1.871\n                                        \n                                                                                    Nail adds damage equal to 2% target max Health, ignores defense, not improved by attacker's crit, etc",
+				"text_ja": "敵単体に攻撃し、魔法釘を3ターンの間付与した後、自身のアクションゲージを50%UPさせる。魔法釘の付与は効果抵抗を無視する。",
+				"burn_ja": ""
+			},
+			"title_ja": "魔法釘"
+		},
+		{
+			"title": "Hyper Strike",
+			"type": "Active",
+			"description": {
+				"text": "Soars into the air and attacks the enemy, stunning for 1 turn. If the enemy is inflicted with Magic Nail, damage dealt increases.",
+				"burn": "Increases damage dealt. (-20 Souls)",
+				"soul": "+2",
+				"ct": "4",
+				"enhance": [
+					"+10% damage dealt",
+					"+10% damage dealt",
+					"-1 turn cooldown",
+					"+15% damage dealt",
+					"+15% damage dealt"
+				],
+				"multipliers": "ATK*2*0.8*1.871 (3.5 soul burn)\n                                        \n                                                                                    35% bonus dmg if target is Magic Nail'd",
+				"text_ja": "敵単体に攻撃し、スタンを1ターンの間付与する。対象が魔法釘状態の場合、ダメージがUPする。",
+				"burn_ja": "ダメージがUPする。(魂力20消費)"
+			},
+			"title_ja": "超強撃"
+		}
+	]
+}

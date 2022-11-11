@@ -1,0 +1,240 @@
+{
+	"common": {
+		"name": "Researcher Carrot",
+		"image": "https://epic7x.com/wp-content/uploads/2019/09/researcher-carrot.png",
+		"attribute": "fire",
+		"sign": "sagittarius",
+		"clazz": "mage",
+		"rarity": "3",
+		"name_ja": "研究者キャロット"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "27",
+		"Critical_Hit_Damage": "150",
+		"dual_attack": "5",
+		"Effectiveness": "0",
+		"Effect_Resistance": "0",
+		"Speed": "110",
+		"Atk": "1039",
+		"HP": "3925",
+		"Def": "606"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": 2
+		},
+		{
+			"key": "Belief",
+			"score": 1
+		},
+		{
+			"key": "Bizarre Story",
+			"score": 0
+		},
+		{
+			"key": "Comforting",
+			"score": 3
+		},
+		{
+			"key": "Complain",
+			"score": -5
+		},
+		{
+			"key": "Criticism",
+			"score": 4
+		},
+		{
+			"key": "Cute Cheer",
+			"score": 2
+		},
+		{
+			"key": "Dream",
+			"score": 3
+		},
+		{
+			"key": "Food Story",
+			"score": 3
+		},
+		{
+			"key": "Gossip",
+			"score": -3
+		},
+		{
+			"key": "Happy Memory",
+			"score": -3
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": 2
+		},
+		{
+			"key": "Heroic Tale",
+			"score": 2
+		},
+		{
+			"key": "Horror",
+			"score": -1
+		},
+		{
+			"key": "Interesting Story",
+			"score": 2
+		},
+		{
+			"key": "Joyful Memories",
+			"score": 4
+		},
+		{
+			"key": "Myth",
+			"score": 0
+		},
+		{
+			"key": "Occult",
+			"score": 0
+		},
+		{
+			"key": "Reality Check",
+			"score": 3
+		},
+		{
+			"key": "Sad Memory",
+			"score": 3
+		},
+		{
+			"key": "Self Indulgent",
+			"score": -3
+		},
+		{
+			"key": "Unique Comment",
+			"score": 3
+		}
+	],
+	"memory": {
+		"potision": "pos-all",
+		"release": [
+			{
+				"key": "Attack",
+				"value": "24"
+			},
+			{
+				"key": "Attack",
+				"value": "36"
+			},
+			{
+				"key": "Attack",
+				"value": "48"
+			},
+			{
+				"key": "Attack",
+				"value": "60"
+			},
+			{
+				"key": "Attack",
+				"value": "72"
+			},
+			{
+				"key": "Attack",
+				"value": "84"
+			},
+			{
+				"key": "Attack",
+				"value": "96"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Attack",
+				"value": "36"
+			},
+			{
+				"key": "Attack",
+				"value": "54"
+			},
+			{
+				"key": "Attack",
+				"value": "72"
+			},
+			{
+				"key": "Attack",
+				"value": "90"
+			},
+			{
+				"key": "Attack",
+				"value": "108"
+			},
+			{
+				"key": "Attack",
+				"value": "126"
+			},
+			{
+				"key": "Attack",
+				"value": "144"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Swing",
+			"type": "Active",
+			"description": {
+				"text": "Attacks with a staff, with a 35% chance to decrease Speed for 2 turns, before detonating burn effects inflicted on the enemy at the end of the turn.",
+				"burn": "",
+				"soul": "+1",
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+5% effect chance",
+					"+10% damage dealt",
+					"+10% effect chance",
+					"+15% damage dealt"
+				],
+				"multipliers": "ATK*1*0.95*1.871",
+				"text_ja": "敵単体に攻撃し、35%の確率でスピードDOWNを2ターンの間付与する。ターン終了時、対象の火傷を激爆させる。",
+				"burn_ja": ""
+			},
+			"title_ja": "振り回し"
+		},
+		{
+			"title": "Flame Barrier",
+			"type": "Passive",
+			"description": {
+				"text": "After being attacked, grants the caster a barrier for 1 turn and burns the attacker for 1 turn. Barrier effect can only be activated once per turn, and barrier strength increases proportional to the caster’s Attack.",
+				"burn": "",
+				"soul": null,
+				"ct": null,
+				"enhance": [
+					"+15% barrier strength",
+					"+15% barrier strength"
+				],
+				"multipliers": "Barrier strength: 60-78% self Attack",
+				"text_ja": "攻撃を受けた時、その攻撃に伴う効果が発生する前に自身にシールドを1ターンの間付与し、攻撃者に火傷を1ターンの間付与する。シールドを付与する効果は1ターンに1回まで発生する。自身の攻撃力が高いほどシールド効果がUPする。",
+				"burn_ja": ""
+			},
+			"title_ja": "炎のバリア"
+		},
+		{
+			"title": "Flame Spurt",
+			"type": "Active",
+			"description": {
+				"text": "Attack with powerful fire, dispelling one buff before a 60% chance each to inflict two burn effects for 2 turns.",
+				"burn": "",
+				"soul": "+3",
+				"ct": "4",
+				"enhance": [
+					"+5% damage dealt",
+					"+5% effect chance",
+					"+5% effect chance",
+					"-1 turn cooldown",
+					"+10% damage dealt",
+					"+5% effect chance",
+					"+15% damage dealt"
+				],
+				"multipliers": "ATK*1*1*1.871",
+				"text_ja": "敵全体に攻撃し、強化効果を1つ解除し、60%の確率で火傷を2ターンの間付与する。",
+				"burn_ja": "追加ターンが発生する。(魂力20消費)"
+			},
+			"title_ja": "火炎爆風"
+		}
+	]
+}

@@ -1,0 +1,230 @@
+{
+	"common": {
+		"name": "Unbound Knight Arowell",
+		"image": "https://epic7x.com/wp-content/uploads/2022/10/unbound-knight-arowell-1.png",
+		"attribute": "light",
+		"sign": "libra",
+		"clazz": "knight",
+		"rarity": "3"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "15",
+		"Critical_Hit_Damage": "150",
+		"dual_attack": "5",
+		"Effectiveness": "0",
+		"Effect_Resistance": "12",
+		"Speed": "95",
+		"Atk": "758",
+		"HP": "5826",
+		"Def": "672"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": null
+		},
+		{
+			"key": "Belief",
+			"score": null
+		},
+		{
+			"key": "Bizarre Story",
+			"score": null
+		},
+		{
+			"key": "Comforting",
+			"score": null
+		},
+		{
+			"key": "Complain",
+			"score": null
+		},
+		{
+			"key": "Criticism",
+			"score": null
+		},
+		{
+			"key": "Cute Cheer",
+			"score": null
+		},
+		{
+			"key": "Dream",
+			"score": null
+		},
+		{
+			"key": "Food Story",
+			"score": null
+		},
+		{
+			"key": "Gossip",
+			"score": null
+		},
+		{
+			"key": "Happy Memory",
+			"score": null
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": null
+		},
+		{
+			"key": "Heroic Tale",
+			"score": null
+		},
+		{
+			"key": "Horror",
+			"score": null
+		},
+		{
+			"key": "Interesting Story",
+			"score": null
+		},
+		{
+			"key": "Joyful Memories",
+			"score": null
+		},
+		{
+			"key": "Myth",
+			"score": null
+		},
+		{
+			"key": "Occult",
+			"score": null
+		},
+		{
+			"key": "Reality Check",
+			"score": null
+		},
+		{
+			"key": "Sad Memory",
+			"score": null
+		},
+		{
+			"key": "Self Indulgent",
+			"score": null
+		},
+		{
+			"key": "Unique Comment",
+			"score": null
+		}
+	],
+	"memory": {
+		"potision": "pos-all",
+		"release": [
+			{
+				"key": "Health",
+				"value": "120"
+			},
+			{
+				"key": "Health",
+				"value": "180"
+			},
+			{
+				"key": "Health",
+				"value": "240"
+			},
+			{
+				"key": "Health",
+				"value": "300"
+			},
+			{
+				"key": "Health",
+				"value": "360"
+			},
+			{
+				"key": "Health",
+				"value": "420"
+			},
+			{
+				"key": "Health",
+				"value": "480"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Health",
+				"value": "180"
+			},
+			{
+				"key": "Health",
+				"value": "270"
+			},
+			{
+				"key": "Health",
+				"value": "360"
+			},
+			{
+				"key": "Health",
+				"value": "450"
+			},
+			{
+				"key": "Health",
+				"value": "540"
+			},
+			{
+				"key": "Health",
+				"value": "630"
+			},
+			{
+				"key": "Health",
+				"value": "720"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Shield Thrust",
+			"type": "Active",
+			"description": {
+				"text": "Attacks with a sword and a shield, with a 50% chance each to dispel two buffs. Damage dealt increases proportional to the caster's max Health.",
+				"burn": "",
+				"soul": "+1",
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+10% effect chance",
+					"+10% damage dealt",
+					"+15% effect chance",
+					"+15% damage dealt"
+				],
+				"multipliers": "(ATK*0.7+Def*0.02)*1.77745\n                                        \n                                                                                    2% self max Health (0.02 * Health)"
+			}
+		},
+		{
+			"title": "Escort",
+			"type": "Active",
+			"description": {
+				"text": "At the start of battle and at the end of the caster's turn, grants escort to the caster for 1 turn. After an ally except the caster suffers a Single Attack, increases Combat Readiness of the caster by 10%.",
+				"burn": "",
+				"soul": null,
+				"ct": null,
+				"enhance": [
+					"+0.5% Combat Readiness",
+					"+1% Combat Readiness",
+					"+1.5% Combat Readiness"
+				],
+				"multipliers": "2% Defense increase per stack, scales up to 3% with molagora"
+			}
+		},
+		{
+			"title": "Judgement of Light",
+			"type": "Active",
+			"description": {
+				"text": "Attacks the enemy with a shield, dispelling all buffs and a 75% chance to stun them for 1 turn, before granting a barrier to all allies for 2 turns. Damage dealt and barrier strength increases proportional to the caster's max Health.",
+				"burn": "",
+				"soul": null,
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+10% effect chance",
+					"+10% damage dealt",
+					"+15% effect chance",
+					"+15% damage dealt"
+				],
+				"multipliers": ""
+			}
+		}
+	]
+}

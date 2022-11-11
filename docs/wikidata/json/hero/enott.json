@@ -1,0 +1,240 @@
+{
+	"common": {
+		"name": "Enott",
+		"image": "https://epic7x.com/wp-content/uploads/2019/01/Enott-1.png",
+		"attribute": "ice",
+		"sign": "scorpio",
+		"clazz": "warrior",
+		"rarity": "3",
+		"name_ja": "エノット"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "15",
+		"Critical_Hit_Damage": "150",
+		"dual_attack": "5",
+		"Effectiveness": "0",
+		"Effect_Resistance": "0",
+		"Speed": "98",
+		"Atk": "1019",
+		"HP": "5738",
+		"Def": "571"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": 3
+		},
+		{
+			"key": "Belief",
+			"score": 0
+		},
+		{
+			"key": "Bizarre Story",
+			"score": -3
+		},
+		{
+			"key": "Comforting",
+			"score": 3
+		},
+		{
+			"key": "Complain",
+			"score": 1
+		},
+		{
+			"key": "Criticism",
+			"score": 8
+		},
+		{
+			"key": "Cute Cheer",
+			"score": 5
+		},
+		{
+			"key": "Dream",
+			"score": 0
+		},
+		{
+			"key": "Food Story",
+			"score": 3
+		},
+		{
+			"key": "Gossip",
+			"score": 2
+		},
+		{
+			"key": "Happy Memory",
+			"score": 2
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": -3
+		},
+		{
+			"key": "Heroic Tale",
+			"score": -1
+		},
+		{
+			"key": "Horror",
+			"score": 1
+		},
+		{
+			"key": "Interesting Story",
+			"score": -1
+		},
+		{
+			"key": "Joyful Memories",
+			"score": 2
+		},
+		{
+			"key": "Myth",
+			"score": 5
+		},
+		{
+			"key": "Occult",
+			"score": 3
+		},
+		{
+			"key": "Reality Check",
+			"score": -3
+		},
+		{
+			"key": "Sad Memory",
+			"score": 0
+		},
+		{
+			"key": "Self Indulgent",
+			"score": -5
+		},
+		{
+			"key": "Unique Comment",
+			"score": 0
+		}
+	],
+	"memory": {
+		"potision": "pos-all",
+		"release": [
+			{
+				"key": "Attack",
+				"value": "24"
+			},
+			{
+				"key": "Attack",
+				"value": "36"
+			},
+			{
+				"key": "Attack",
+				"value": "48"
+			},
+			{
+				"key": "Attack",
+				"value": "60"
+			},
+			{
+				"key": "Attack",
+				"value": "72"
+			},
+			{
+				"key": "Attack",
+				"value": "84"
+			},
+			{
+				"key": "Attack",
+				"value": "96"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Critical Hit Chance",
+				"value": "2.80%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "4.20%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "5.60%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "7%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "8.40%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "9.80%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "11.20%"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Smash",
+			"type": "Active",
+			"description": {
+				"text": "Attacks with an axe, with a 30% chance to cause bleeding for 2 turns. Damage dealt increases proportional to the amount of the enemy's lost Health.",
+				"burn": "",
+				"soul": "+1",
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+10% effect chance",
+					"+10% effect chance",
+					"+10% damage dealt",
+					"+15% damage dealt"
+				],
+				"multipliers": "ATK*1*1*1.871\n                                        \n                                                                                    0.5% increased damage per 1% target Health missing",
+				"text_ja": "敵単体に攻撃し、30%の確率で出血を2ターン付与する。対象の現在生命力が低いほどダメージがUPする。",
+				"burn_ja": ""
+			},
+			"title_ja": "粉砕斧"
+		},
+		{
+			"title": "Judgment",
+			"type": "Active",
+			"description": {
+				"text": "Attacks with a sharp blow, with a 50% chance each to decrease Defense and make them unable to be buffed for 2 turns.",
+				"burn": "",
+				"soul": "+2",
+				"ct": "5",
+				"enhance": [
+					"+10% damage dealt",
+					"+10% effect chance",
+					"-1 turn cooldown",
+					"+15% effect chance",
+					"+15% damage dealt"
+				],
+				"multipliers": "ATK*1.5*1.05*1.871",
+				"text_ja": "敵単体に攻撃し、それぞれ50%の確率で防御DOWN・強化不可を2ターンの間付与する。",
+				"burn_ja": ""
+			},
+			"title_ja": "審判の斧"
+		},
+		{
+			"title": "Prepare Judgment",
+			"type": "Active",
+			"description": {
+				"text": "Corrects stance, increasing Attack and Critical Hit Rate for 2 turns and Combat Readiness by 30%.",
+				"burn": "Extends duration of buffs granted by this skill by 1 turn. (-10 Souls)",
+				"soul": "+1",
+				"ct": "4",
+				"enhance": [
+					"Acquire +1 Soul",
+					"+5% Combat Readiness",
+					"-1 turn cooldown",
+					"+5% Combat Readiness",
+					"+10% Combat Readiness"
+				],
+				"multipliers": "",
+				"text_ja": "自身に攻撃力UP・クリティカル発生率UPを2ターンの間付与する。自身のアクションゲージを30%UPさせる。",
+				"burn_ja": "このスキルによる強化効果の持続ターンが1UPする。(魂力10消費)"
+			},
+			"title_ja": "審判者"
+		}
+	]
+}

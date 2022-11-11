@@ -1,0 +1,232 @@
+{
+	"common": {
+		"name": "Shooting Star Achates",
+		"image": "https://epic7x.com/wp-content/uploads/2019/01/shooting-star-full.png",
+		"attribute": "dark",
+		"sign": "cancer",
+		"clazz": "soul-weaver",
+		"rarity": "4",
+		"name_ja": "流れ星☆アカテス"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "15",
+		"Critical_Hit_Damage": "150",
+		"dual_attack": "5",
+		"Effectiveness": "0",
+		"Effect_Resistance": "0",
+		"Speed": "98",
+		"Atk": "576",
+		"HP": "5700",
+		"Def": "743"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": 2
+		},
+		{
+			"key": "Belief",
+			"score": -1
+		},
+		{
+			"key": "Bizarre Story",
+			"score": 1
+		},
+		{
+			"key": "Comforting",
+			"score": 3
+		},
+		{
+			"key": "Complain",
+			"score": 2
+		},
+		{
+			"key": "Criticism",
+			"score": -1
+		},
+		{
+			"key": "Cute Cheer",
+			"score": 4
+		},
+		{
+			"key": "Dream",
+			"score": 6
+		},
+		{
+			"key": "Food Story",
+			"score": 5
+		},
+		{
+			"key": "Gossip",
+			"score": 2
+		},
+		{
+			"key": "Happy Memory",
+			"score": 3
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": 3
+		},
+		{
+			"key": "Heroic Tale",
+			"score": 2
+		},
+		{
+			"key": "Horror",
+			"score": -4
+		},
+		{
+			"key": "Interesting Story",
+			"score": 6
+		},
+		{
+			"key": "Joyful Memories",
+			"score": 3
+		},
+		{
+			"key": "Myth",
+			"score": 3
+		},
+		{
+			"key": "Occult",
+			"score": 0
+		},
+		{
+			"key": "Reality Check",
+			"score": -3
+		},
+		{
+			"key": "Sad Memory",
+			"score": 3
+		},
+		{
+			"key": "Self Indulgent",
+			"score": 3
+		},
+		{
+			"key": "Unique Comment",
+			"score": 2
+		}
+	],
+	"memory": {
+		"potision": "pos-tb",
+		"release": [
+			{
+				"key": "Effect Resistance",
+				"value": "4.3%"
+			},
+			{
+				"key": "Effect Resistance",
+				"value": "6.5%"
+			},
+			{
+				"key": "Effect Resistance",
+				"value": "8.6%"
+			},
+			{
+				"key": "Effect Resistance",
+				"value": "10.7%"
+			},
+			{
+				"key": "Effect Resistance",
+				"value": "12.9%"
+			},
+			{
+				"key": "Effect Resistance",
+				"value": "15%"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Health",
+				"value": "4%"
+			},
+			{
+				"key": "Health",
+				"value": "6%"
+			},
+			{
+				"key": "Health",
+				"value": "8%"
+			},
+			{
+				"key": "Health",
+				"value": "10%"
+			},
+			{
+				"key": "Health",
+				"value": "12%"
+			},
+			{
+				"key": "Health",
+				"value": "14%"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Magic Design",
+			"type": "Active",
+			"description": {
+				"text": "Attacks with a staff, with a 50% chance to decrease Hit Chance for 1 turn.",
+				"burn": "",
+				"soul": "+1",
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+10% damage dealt",
+					"+10% effect chance",
+					"+15% effect chance",
+					"+10% damage dealt",
+					"+10% damage dealt"
+				],
+				"multipliers": "ATK*1*0.95*1.871",
+				"text_ja": "敵単体に攻撃し、50％の確率で命中率DOWNを1ターンの間付与する。",
+				"burn_ja": ""
+			},
+			"title_ja": "魔法紋様"
+		},
+		{
+			"title": "Resurrection Magic",
+			"type": "Active",
+			"description": {
+				"text": "Revives a dead ally with recovery magic and grants immortality for 1 turn. If the target is not dead, grants immortality and two random buffs for 3 turns.",
+				"burn": "Grants an extra turn (-20 Souls)",
+				"soul": "+2",
+				"ct": "6",
+				"enhance": [
+					"Acquire +1 Soul",
+					"-1 turn cooldown"
+				],
+				"multipliers": "",
+				"text_ja": "気絶した味方単体を復活させ、不死を1ターンの間付与する。対象が気絶状態でない場合、不死・2つのランダム強化効果を3ターンの間付与する。",
+				"burn_ja": "追加ターンが発生する。(魂力20消費)"
+			},
+			"title_ja": "蘇生魔法"
+		},
+		{
+			"title": "Sparkling Star",
+			"type": "Active",
+			"description": {
+				"text": "Dispels all debuffs from the caster and the target, heals the ally with the lowest Health to the point that their Health matches the other, before healing further on top. Effect is unaffected by Health buffs or debuffs. Health recovered is proportional to the max Health of each ally.",
+				"burn": "",
+				"soul": "+2",
+				"ct": "4",
+				"enhance": [
+					"+5% healing",
+					"+5% healing",
+					"+5% healing",
+					"-1 turn cooldown",
+					"+10% healing",
+					"+10% healing",
+					"+10% healing"
+				],
+				"multipliers": "15% further target max Health healed on top",
+				"text_ja": "対象と自身の弱体効果を全て解除し、【現在生命力の割合】を比較し、低い方を高い方まで上昇させた上で更に両者の生命力を回復する。生命力の割合変化は、回復量UP・DOWNの影響を受けない。それぞれ最大生命力が高いほど回復量がUPする。",
+				"burn_ja": ""
+			},
+			"title_ja": "シューティングスター"
+		}
+	]
+}

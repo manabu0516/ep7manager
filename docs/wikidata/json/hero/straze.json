@@ -1,0 +1,224 @@
+{
+	"common": {
+		"name": "Straze",
+		"image": "https://epic7x.com/wp-content/uploads/2019/06/Straze-1.png",
+		"attribute": "dark",
+		"sign": "taurus",
+		"clazz": "warrior",
+		"rarity": "5",
+		"name_ja": "ストラゼス"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "23",
+		"Critical_Hit_Damage": "165",
+		"dual_attack": "5",
+		"Effectiveness": "0",
+		"Effect_Resistance": "0",
+		"Speed": "109",
+		"Atk": "1228",
+		"HP": "5784",
+		"Def": "553"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": 5
+		},
+		{
+			"key": "Belief",
+			"score": 4
+		},
+		{
+			"key": "Bizarre Story",
+			"score": 0
+		},
+		{
+			"key": "Comforting",
+			"score": 8
+		},
+		{
+			"key": "Complain",
+			"score": 0
+		},
+		{
+			"key": "Criticism",
+			"score": 8
+		},
+		{
+			"key": "Cute Cheer",
+			"score": 9
+		},
+		{
+			"key": "Dream",
+			"score": 2
+		},
+		{
+			"key": "Food Story",
+			"score": 3
+		},
+		{
+			"key": "Gossip",
+			"score": 1
+		},
+		{
+			"key": "Happy Memory",
+			"score": 2
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": 3
+		},
+		{
+			"key": "Heroic Tale",
+			"score": 8
+		},
+		{
+			"key": "Horror",
+			"score": 0
+		},
+		{
+			"key": "Interesting Story",
+			"score": 1
+		},
+		{
+			"key": "Joyful Memories",
+			"score": 0
+		},
+		{
+			"key": "Myth",
+			"score": 7
+		},
+		{
+			"key": "Occult",
+			"score": 3
+		},
+		{
+			"key": "Reality Check",
+			"score": 3
+		},
+		{
+			"key": "Sad Memory",
+			"score": 0
+		},
+		{
+			"key": "Self Indulgent",
+			"score": 0
+		},
+		{
+			"key": "Unique Comment",
+			"score": 2
+		}
+	],
+	"memory": {
+		"potision": "pos-all",
+		"release": [
+			{
+				"key": "Attack",
+				"value": "3.6%"
+			},
+			{
+				"key": "Attack",
+				"value": "5.4%"
+			},
+			{
+				"key": "Attack",
+				"value": "7.2%"
+			},
+			{
+				"key": "Attack",
+				"value": "9.0%"
+			},
+			{
+				"key": "Attack",
+				"value": "10.8%"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Attack",
+				"value": "6%"
+			},
+			{
+				"key": "Attack",
+				"value": "9%"
+			},
+			{
+				"key": "Attack",
+				"value": "12%"
+			},
+			{
+				"key": "Attack",
+				"value": "15%"
+			},
+			{
+				"key": "Attack",
+				"value": "18%"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Powerful Strike",
+			"type": "Active",
+			"description": {
+				"text": "Swings a sword to attack the enemy and increases Combat Readiness of the caster by 20%.",
+				"burn": "",
+				"soul": "+1",
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+10% damage dealt"
+				],
+				"multipliers": "",
+				"text_ja": "敵単体に攻撃し、自身のアクションゲージを20%UPさせる。",
+				"burn_ja": ""
+			},
+			"title_ja": "強烈な剣撃"
+		},
+		{
+			"title": "Destructive Gaze",
+			"type": "Active",
+			"description": {
+				"text": "Attacks all enemies with a wave of force and dispels two buffs. Ignores Effect Resistance of any targets with Attack lower than the caster's Attack. When there are three or fewer enemies, damage dealt increases with fewer enemies.",
+				"burn": "Skill cooldown is decreased by 2 turns. (-10 Souls)",
+				"soul": "+1",
+				"ct": "3",
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+10% damage dealt"
+				],
+				"multipliers": "",
+				"text_ja": "敵全体に攻撃し、強化効果を2つ解除する。対象が自身より攻撃力が低い場合、対象の効果抵抗を無視する。対象が3人以下の場合、対象が少ないほどダメージがUPする。",
+				"burn_ja": "スキルターンが2減少する。(魂力10消費)"
+			},
+			"title_ja": "破滅の視線"
+		},
+		{
+			"title": "Star Extinction",
+			"type": "Active",
+			"description": {
+				"text": "Attacks all enemies with a sword. Penetrates Defense of the target with the highest max Health by 30%. When the caster's Attack is greater than the penetration target's Attack, penetration rate increases proportional to the difference, up to a maximum of 100%. Grants invincibility to the caster for 1 turn. This skill cannot trigger a counterattack.",
+				"burn": "",
+				"soul": "+3",
+				"ct": "6",
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"-1 turn cooldown",
+					"+10% damage dealt",
+					"+10% damage dealt"
+				],
+				"multipliers": "",
+				"text_ja": "敵全体に攻撃する。最大生命力が最も高い対象の防御力を30%貫通する。自身の攻撃力が防御力を貫通する対象の攻撃力よりも高いほど貫通効果がUPし、最大100%までUPする。自身に無敵を1ターンの間付与する。",
+				"burn_ja": ""
+			},
+			"title_ja": "星の消滅"
+		}
+	]
+}

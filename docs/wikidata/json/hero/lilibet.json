@@ -1,0 +1,224 @@
+{
+	"common": {
+		"name": "Lilibet",
+		"image": "https://epic7x.com/wp-content/uploads/2019/06/lilibet.png",
+		"attribute": "earth",
+		"sign": "libra",
+		"clazz": "warrior",
+		"rarity": "5",
+		"name_ja": "リリベット"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "15",
+		"Critical_Hit_Damage": "150",
+		"dual_attack": "5",
+		"Effectiveness": "0",
+		"Effect_Resistance": "0",
+		"Speed": "109",
+		"Atk": "1119",
+		"HP": "6266",
+		"Def": "627"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": -1
+		},
+		{
+			"key": "Belief",
+			"score": 4
+		},
+		{
+			"key": "Bizarre Story",
+			"score": 0
+		},
+		{
+			"key": "Comforting",
+			"score": -2
+		},
+		{
+			"key": "Complain",
+			"score": -2
+		},
+		{
+			"key": "Criticism",
+			"score": 4
+		},
+		{
+			"key": "Cute Cheer",
+			"score": 3
+		},
+		{
+			"key": "Dream",
+			"score": 6
+		},
+		{
+			"key": "Food Story",
+			"score": 1
+		},
+		{
+			"key": "Gossip",
+			"score": -2
+		},
+		{
+			"key": "Happy Memory",
+			"score": 1
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": 1
+		},
+		{
+			"key": "Heroic Tale",
+			"score": 1
+		},
+		{
+			"key": "Horror",
+			"score": 1
+		},
+		{
+			"key": "Interesting Story",
+			"score": 6
+		},
+		{
+			"key": "Joyful Memories",
+			"score": 4
+		},
+		{
+			"key": "Myth",
+			"score": 1
+		},
+		{
+			"key": "Occult",
+			"score": 4
+		},
+		{
+			"key": "Reality Check",
+			"score": -4
+		},
+		{
+			"key": "Sad Memory",
+			"score": 4
+		},
+		{
+			"key": "Self Indulgent",
+			"score": 2
+		},
+		{
+			"key": "Unique Comment",
+			"score": 5
+		}
+	],
+	"memory": {
+		"potision": "pos-all",
+		"release": [
+			{
+				"key": "Critical Hit Chance",
+				"value": "4.8%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "7.2%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "9.8%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "9.0%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "14.4%"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Attack",
+				"value": "6%"
+			},
+			{
+				"key": "Attack",
+				"value": "9%"
+			},
+			{
+				"key": "Attack",
+				"value": "12%"
+			},
+			{
+				"key": "Attack",
+				"value": "15%"
+			},
+			{
+				"key": "Attack",
+				"value": "18%"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Slice-Slice",
+			"type": "Active",
+			"description": {
+				"text": "Strikes and slices the enemy, with a 35% chance to make them unable to be buffed for 2 turns.",
+				"burn": "",
+				"soul": "+1",
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+5% effect chance",
+					"+10% damage dealt",
+					"+10% effect chance",
+					"+15% damage dealt"
+				],
+				"multipliers": "ATK*1*1*1.871",
+				"text_ja": "敵単体に攻撃し、35%の確率で強化不可を2ターンの間付与する。",
+				"burn_ja": ""
+			},
+			"title_ja": "一文字斬り"
+		},
+		{
+			"title": "Snip-Snip",
+			"type": "Active",
+			"description": {
+				"text": "Brutally cuts the enemy, with a 40% chance each to inflict three bleeding effects for 2 turns before increasing the caster's combat readiness by 50%. When the target is bleeding after the attack, increases Combat Readiness of the caster by an additional 50%.",
+				"burn": "",
+				"soul": "+1",
+				"ct": "3",
+				"enhance": [
+					"+5% damage dealt",
+					"+5% effect chance",
+					"+10% damage dealt",
+					"+10% effect chance",
+					"+15% damage dealt"
+				],
+				"multipliers": "ATK*1.5*1*1.871",
+				"text_ja": "敵単体に攻撃し、それぞれ40%の確率で3つの出血を2ターンの間付与した後、自身のアクションゲージを50%UPさせる。攻撃後、対象が出血状態の場合、追加で自身のアクションゲージを50%UPさせる。",
+				"burn_ja": ""
+			},
+			"title_ja": "チョキチョキ"
+		},
+		{
+			"title": "Soul Cutter",
+			"type": "Active",
+			"description": {
+				"text": "Slashes the enemy with Cho & Mal, inflicting extinction when the enemy is defeated and decreases the caster's cooldown by 1 turn. Grants the caster Skill Nullifier, negating damage received from the next attack. Hit Chance is increased by 20% when using this skill.",
+				"burn": "Increases damage dealt. (-10 Souls)",
+				"soul": "+2",
+				"ct": "5",
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"-1 turn cooldown",
+					"+10% damage dealt",
+					"+15% damage dealt"
+				],
+				"multipliers": "ATK*2*0.95*1.871 (2.6 soul burn)",
+				"text_ja": "敵単体に攻撃した後、自身にスキルダメージ無効を1回付与する。このスキルで敵を気絶させた場合、対象を消滅させ、自身のスキルターンを1減少させる。この攻撃の命中率が20%UPする。",
+				"burn_ja": "ダメージがUPする。(魂力10消費)"
+			},
+			"title_ja": "魂の粉砕"
+		}
+	]
+}

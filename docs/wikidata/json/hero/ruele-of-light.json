@@ -1,0 +1,224 @@
+{
+	"common": {
+		"name": "Ruele of Light",
+		"image": "https://epic7x.com/wp-content/uploads/2019/01/ruele.png",
+		"attribute": "light",
+		"sign": "pisces",
+		"clazz": "soul-weaver",
+		"rarity": "5",
+		"name_ja": "神光のルエル"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "15",
+		"Critical_Hit_Damage": "150",
+		"dual_attack": "5",
+		"Effectiveness": "0",
+		"Effect_Resistance": "12",
+		"Speed": "102",
+		"Atk": "621",
+		"HP": "5474",
+		"Def": "802"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": 5
+		},
+		{
+			"key": "Belief",
+			"score": -1
+		},
+		{
+			"key": "Bizarre Story",
+			"score": 0
+		},
+		{
+			"key": "Comforting",
+			"score": 3
+		},
+		{
+			"key": "Complain",
+			"score": 2
+		},
+		{
+			"key": "Criticism",
+			"score": -5
+		},
+		{
+			"key": "Cute Cheer",
+			"score": 6
+		},
+		{
+			"key": "Dream",
+			"score": 5
+		},
+		{
+			"key": "Food Story",
+			"score": 3
+		},
+		{
+			"key": "Gossip",
+			"score": 2
+		},
+		{
+			"key": "Happy Memory",
+			"score": 5
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": 5
+		},
+		{
+			"key": "Heroic Tale",
+			"score": 0
+		},
+		{
+			"key": "Horror",
+			"score": -1
+		},
+		{
+			"key": "Interesting Story",
+			"score": 3
+		},
+		{
+			"key": "Joyful Memories",
+			"score": 7
+		},
+		{
+			"key": "Myth",
+			"score": 2
+		},
+		{
+			"key": "Occult",
+			"score": 0
+		},
+		{
+			"key": "Reality Check",
+			"score": -5
+		},
+		{
+			"key": "Sad Memory",
+			"score": 6
+		},
+		{
+			"key": "Self Indulgent",
+			"score": -1
+		},
+		{
+			"key": "Unique Comment",
+			"score": 3
+		}
+	],
+	"memory": {
+		"potision": "pos-all",
+		"release": [
+			{
+				"key": "Defense",
+				"value": "3.6%"
+			},
+			{
+				"key": "Defense",
+				"value": "5.4%"
+			},
+			{
+				"key": "Defense",
+				"value": "7.2%"
+			},
+			{
+				"key": "Defense",
+				"value": "9.0%"
+			},
+			{
+				"key": "Defense",
+				"value": "10.8%"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Health",
+				"value": "6%"
+			},
+			{
+				"key": "Health",
+				"value": "9%"
+			},
+			{
+				"key": "Health",
+				"value": "12%"
+			},
+			{
+				"key": "Health",
+				"value": "15%"
+			},
+			{
+				"key": "Health",
+				"value": "18%"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Key to an Oath",
+			"type": "Active",
+			"description": {
+				"text": "Attacks the enemy with a staff and heals the ally with the lowest Health. Damage dealt increases proportional to the caster's max Health, and healing increases proportional to the ally's max Health.",
+				"burn": "Attacks the enemy and greatly heals all allies. Does not trigger a Dual Attack. (-20 Souls)",
+				"soul": "+1",
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+10% healing",
+					"+5% damage dealt",
+					"+15% healing",
+					"+10% damage dealt",
+					"+15% damage dealt"
+				],
+				"multipliers": "(ATK*0.81+HP*0.07)*1.77745\n                                        \n                                                                                    Heal strength: 7% target max Health (35% self max Health soulburn)",
+				"text_ja": "敵単体に攻撃し、生命力状態が最も悪い味方の生命力を回復する。自身の最大生命力が高いほどダメージがUPし、対象の最大生命力が高いほど回復量がUPする。",
+				"burn_ja": "攻撃後、味方全体の生命力を大きく回復する。連携攻撃が発生しない。(魂力20消費)"
+			},
+			"title_ja": "誓いの鍵"
+		},
+		{
+			"title": "Light Pillar",
+			"type": "Active",
+			"description": {
+				"text": "Summons a light pillar, dispelling all debuffs, recovering Health and granting a barrier for 2 turns. Amount recovered and barrier strength increases proportional the caster's max Health.",
+				"burn": "",
+				"soul": "+2",
+				"ct": "3",
+				"enhance": [
+					"+5% healing",
+					"+5% healing",
+					"+5% healing",
+					"+5% healing",
+					"+5% healing",
+					"+5% healing",
+					"+10% healing"
+				],
+				"multipliers": "Heal strength: 35% self max Health\n                                        \n                                                                                    Barrier strength: 20% self max Health",
+				"text_ja": "対象の弱体効果をすべて解除し、生命力を回復し、シールドを2ターンの間付与する。自身の最大生命力が高いほど回復量とシールド効果がUPする。",
+				"burn_ja": ""
+			},
+			"title_ja": "光の柱"
+		},
+		{
+			"title": "Light Ascending",
+			"type": "Active",
+			"description": {
+				"text": "Revives one dead ally with healing magic, recovering all of their Health and granting them invincibility for 1 turn. Living allies will receive the same effect after having all debuffs dispelled.",
+				"burn": "",
+				"soul": "+2",
+				"ct": "5",
+				"enhance": [
+					"Acquire +1 Soul",
+					"-1 turn cooldown"
+				],
+				"multipliers": "",
+				"text_ja": "気絶した味方単体を生命力全回復状態で復活させ、無敵を1ターンの間付与する。対象が気絶していない場合、弱体効果をすべて解除し、同じ効果が適用される。",
+				"burn_ja": ""
+			},
+			"title_ja": "光の奇蹟"
+		}
+	]
+}

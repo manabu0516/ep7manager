@@ -1,0 +1,232 @@
+{
+	"common": {
+		"name": "Blaze Dingo",
+		"image": "https://epic7x.com/wp-content/uploads/2019/03/Blaze-Dingo-1.png",
+		"attribute": "light",
+		"sign": "sagittarius",
+		"clazz": "soul-weaver",
+		"rarity": "4",
+		"name_ja": "焼尽のディンゴ"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "15",
+		"Critical_Hit_Damage": "150",
+		"dual_attack": "5",
+		"Effectiveness": "12",
+		"Effect_Resistance": "18",
+		"Speed": "109",
+		"Atk": "885",
+		"HP": "4167",
+		"Def": "627"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": 5
+		},
+		{
+			"key": "Belief",
+			"score": -4
+		},
+		{
+			"key": "Bizarre Story",
+			"score": -5
+		},
+		{
+			"key": "Comforting",
+			"score": 6
+		},
+		{
+			"key": "Complain",
+			"score": -5
+		},
+		{
+			"key": "Criticism",
+			"score": 0
+		},
+		{
+			"key": "Cute Cheer",
+			"score": 5
+		},
+		{
+			"key": "Dream",
+			"score": 2
+		},
+		{
+			"key": "Food Story",
+			"score": 5
+		},
+		{
+			"key": "Gossip",
+			"score": -3
+		},
+		{
+			"key": "Happy Memory",
+			"score": 5
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": 0
+		},
+		{
+			"key": "Heroic Tale",
+			"score": 8
+		},
+		{
+			"key": "Horror",
+			"score": 0
+		},
+		{
+			"key": "Interesting Story",
+			"score": 0
+		},
+		{
+			"key": "Joyful Memories",
+			"score": 3
+		},
+		{
+			"key": "Myth",
+			"score": 8
+		},
+		{
+			"key": "Occult",
+			"score": 3
+		},
+		{
+			"key": "Reality Check",
+			"score": -6
+		},
+		{
+			"key": "Sad Memory",
+			"score": 3
+		},
+		{
+			"key": "Self Indulgent",
+			"score": -4
+		},
+		{
+			"key": "Unique Comment",
+			"score": 2
+		}
+	],
+	"memory": {
+		"potision": "pos-all",
+		"release": [
+			{
+				"key": "Attack",
+				"value": "2.4%"
+			},
+			{
+				"key": "Attack",
+				"value": "3.6%"
+			},
+			{
+				"key": "Attack",
+				"value": "4.8%"
+			},
+			{
+				"key": "Attack",
+				"value": "6.0%"
+			},
+			{
+				"key": "Attack",
+				"value": "7.2%"
+			},
+			{
+				"key": "Attack",
+				"value": "8.4%"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Critical Hit Chance",
+				"value": "4.20%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "6.30%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "8.40%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "10.50%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "12.60%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "14.70%"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Punishment",
+			"type": "Active",
+			"description": {
+				"text": "Attacks an enemy with a sharp dagger, healing the ally with the lowest Health. Amount recovered increases proportional to the damage dealt.",
+				"burn": "",
+				"soul": "+1",
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+10% damage dealt",
+					"+10% damage dealt"
+				],
+				"multipliers": "ATK*1.5*0.95*1.871\n                                        \n                                                                                    Heal strength: 50% of damage done",
+				"text_ja": "敵単体に攻撃し、ダメージに応じて生命力状態が最も悪い味方の生命力を回復する。",
+				"burn_ja": ""
+			},
+			"title_ja": "戒め"
+		},
+		{
+			"title": "Divine Punishment",
+			"type": "Active",
+			"description": {
+				"text": "Attacks all enemies with a giant gauntlet, with a 75% chance to decrease Defense for 2 turns, healing the ally with the lowest Health. A Critical Hit activates Retribution. Amount recovered increases proportional to the damage dealt.",
+				"burn": "",
+				"soul": "+2",
+				"ct": "3",
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+10% damage dealt",
+					"+10% damage dealt"
+				],
+				"multipliers": "ATK*1.2*0.95*1.871\n                                        \n                                                                                    Heal strength: 30% of damage done",
+				"text_ja": "敵全体に攻撃し、ダメージに応じて生命力状態が最も悪い味方の生命力を回復する。クリティカル発生時、ランダムな対象に【戒め】を発動する。",
+				"burn_ja": ""
+			},
+			"title_ja": "神聖なる戒め"
+		},
+		{
+			"title": "Sacred Power",
+			"type": "Active",
+			"description": {
+				"text": "Heals an ally and the caster with sacred power, grants Invincibility for 1 turn and increases Attack for 2 turns. Amount recovered increases proportional to the caster's Attack.",
+				"burn": "Extends the duration of Sacred Power granted to the caster by 1 turn and grants an extra turn. (-20 Souls)",
+				"soul": "+2",
+				"ct": "5",
+				"enhance": [
+					"+5% healing",
+					"+5% healing",
+					"-1 turn cooldown",
+					"+10% healing",
+					"+10% healing"
+				],
+				"multipliers": "Heal strength: 200% self attack",
+				"text_ja": "対象と自身の生命力を回復し、無敵を1ターンの間、攻撃力UPを2ターンの間付与する。自身の攻撃力が高いほど回復量がUPする。",
+				"burn_ja": "自身に付与される【聖なる力】の強化効果が1ターン延長し、追加ターンが発生する。(魂力20消費)"
+			},
+			"title_ja": "聖なる力"
+		}
+	]
+}

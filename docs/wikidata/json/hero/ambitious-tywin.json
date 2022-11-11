@@ -1,0 +1,224 @@
+{
+	"common": {
+		"name": "Ambitious Tywin",
+		"image": "https://epic7x.com/wp-content/uploads/2020/01/Ambitious-Tywin-portrait.png",
+		"attribute": "light",
+		"sign": "sagittarius",
+		"clazz": "knight",
+		"rarity": "5",
+		"name_ja": "野心家タイウィン"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "15",
+		"Critical_Hit_Damage": "150",
+		"dual_attack": "5",
+		"Effectiveness": "0",
+		"Effect_Resistance": "0",
+		"Speed": "104",
+		"Atk": "894",
+		"HP": "6840",
+		"Def": "694"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": -2
+		},
+		{
+			"key": "Belief",
+			"score": 6
+		},
+		{
+			"key": "Bizarre Story",
+			"score": 0
+		},
+		{
+			"key": "Comforting",
+			"score": -2
+		},
+		{
+			"key": "Complain",
+			"score": 1
+		},
+		{
+			"key": "Criticism",
+			"score": 6
+		},
+		{
+			"key": "Cute Cheer",
+			"score": 3
+		},
+		{
+			"key": "Dream",
+			"score": 3
+		},
+		{
+			"key": "Food Story",
+			"score": 2
+		},
+		{
+			"key": "Gossip",
+			"score": 3
+		},
+		{
+			"key": "Happy Memory",
+			"score": 1
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": 3
+		},
+		{
+			"key": "Heroic Tale",
+			"score": 2
+		},
+		{
+			"key": "Horror",
+			"score": 3
+		},
+		{
+			"key": "Interesting Story",
+			"score": 1
+		},
+		{
+			"key": "Joyful Memories",
+			"score": 3
+		},
+		{
+			"key": "Myth",
+			"score": 4
+		},
+		{
+			"key": "Occult",
+			"score": 2
+		},
+		{
+			"key": "Reality Check",
+			"score": 0
+		},
+		{
+			"key": "Sad Memory",
+			"score": -1
+		},
+		{
+			"key": "Self Indulgent",
+			"score": 0
+		},
+		{
+			"key": "Unique Comment",
+			"score": 1
+		}
+	],
+	"memory": {
+		"potision": "pos-lr",
+		"release": [
+			{
+				"key": "Health",
+				"value": "4.3%"
+			},
+			{
+				"key": "Health",
+				"value": "6.4%"
+			},
+			{
+				"key": "Health",
+				"value": "8.6%"
+			},
+			{
+				"key": "Health",
+				"value": "10.7%"
+			},
+			{
+				"key": "Health",
+				"value": "12.0%"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Health",
+				"value": "6%"
+			},
+			{
+				"key": "Health",
+				"value": "9%"
+			},
+			{
+				"key": "Health",
+				"value": "12%"
+			},
+			{
+				"key": "Health",
+				"value": "15%"
+			},
+			{
+				"key": "Health",
+				"value": "18%"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Icy Sword Storm",
+			"type": "Active",
+			"description": {
+				"text": "Attacks with a sword, with a 60% chance to provoke for 1 turn. Removes 4 Souls from the opponent. Damage dealt increases proportional to the caster's max Health.",
+				"burn": "",
+				"soul": "+1",
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+15% effect chance",
+					"+10% damage dealt",
+					"+15% damage dealt"
+				],
+				"multipliers": "(ATK*0.6+Hp*0.10)*1.77745",
+				"text_ja": "敵単体に攻撃し、60%の確率で挑発を1ターンの間付与する。敵の魂力を4除去する。自身の最大生命力が高いほどダメージがUPする。",
+				"burn_ja": ""
+			},
+			"title_ja": "不気味な剣気"
+		},
+		{
+			"title": "Battle Command",
+			"type": "Passive",
+			"description": {
+				"text": "Has a 75% chance to dispel one debuff from all allies when an ally is debuffed after the caster is attacked. Can only activate once per turn.",
+				"burn": "",
+				"soul": null,
+				"ct": null,
+				"enhance": [
+					"+5% dispel debuff effect chance",
+					"+5% dispel debuff effect chance",
+					"+5% dispel debuff effect chance",
+					"+10% dispel debuff effect chance"
+				],
+				"multipliers": "",
+				"text_ja": "攻撃を受けた時、弱体状態の味方が存在する場合、75%の確率で味方全体の弱体効果を1つ解除する。この効果は1ターンに1回まで発動する。",
+				"burn_ja": ""
+			},
+			"title_ja": "戦場指揮"
+		},
+		{
+			"title": "Flash",
+			"type": "Active",
+			"description": {
+				"text": "Attacks all enemies with an instant swordstorm, with a 65% chance each to to stun for 1 turn and decrease Speed for 2 turns. Damage dealt increases proportional to the caster's max Health.",
+				"burn": "Skill cooldown is decreased by 2 turns. (-10 Souls)",
+				"soul": "+3",
+				"ct": "5",
+				"enhance": [
+					"+5% damage dealt",
+					"+5% effect chance",
+					"+5% damage dealt",
+					"-1 turn cooldown",
+					"+10% effect chance",
+					"+5% damage dealt",
+					"+15% damage dealt"
+				],
+				"multipliers": "(ATK*0.5+Hp*0.12)*1.77745",
+				"text_ja": "敵全体に攻撃し、65%の確率でスタンを1ターン・スピードDOWNを2ターンの間付与する。自身の最大生命力が高いほどダメージがUPする。",
+				"burn_ja": "スキルターンが2減少する。(魂力10消費)"
+			},
+			"title_ja": "一閃"
+		}
+	]
+}

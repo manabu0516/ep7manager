@@ -1,0 +1,232 @@
+{
+	"common": {
+		"name": "Crimson Armin",
+		"image": "https://epic7x.com/wp-content/uploads/2019/01/Crimson-Armin-1.png",
+		"attribute": "light",
+		"sign": "libra",
+		"clazz": "knight",
+		"rarity": "4",
+		"name_ja": "紅焔のアーミン"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "15",
+		"Critical_Hit_Damage": "150",
+		"dual_attack": "5",
+		"Effectiveness": "0",
+		"Effect_Resistance": "12",
+		"Speed": "97",
+		"Atk": "821",
+		"HP": "6266",
+		"Def": "703"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": -1
+		},
+		{
+			"key": "Belief",
+			"score": 3
+		},
+		{
+			"key": "Bizarre Story",
+			"score": -1
+		},
+		{
+			"key": "Comforting",
+			"score": 0
+		},
+		{
+			"key": "Complain",
+			"score": -1
+		},
+		{
+			"key": "Criticism",
+			"score": 1
+		},
+		{
+			"key": "Cute Cheer",
+			"score": 4
+		},
+		{
+			"key": "Dream",
+			"score": 5
+		},
+		{
+			"key": "Food Story",
+			"score": 6
+		},
+		{
+			"key": "Gossip",
+			"score": 1
+		},
+		{
+			"key": "Happy Memory",
+			"score": 3
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": 5
+		},
+		{
+			"key": "Heroic Tale",
+			"score": 4
+		},
+		{
+			"key": "Horror",
+			"score": -5
+		},
+		{
+			"key": "Interesting Story",
+			"score": 2
+		},
+		{
+			"key": "Joyful Memories",
+			"score": 3
+		},
+		{
+			"key": "Myth",
+			"score": 6
+		},
+		{
+			"key": "Occult",
+			"score": 1
+		},
+		{
+			"key": "Reality Check",
+			"score": -2
+		},
+		{
+			"key": "Sad Memory",
+			"score": 1
+		},
+		{
+			"key": "Self Indulgent",
+			"score": 4
+		},
+		{
+			"key": "Unique Comment",
+			"score": 1
+		}
+	],
+	"memory": {
+		"potision": "pos-all",
+		"release": [
+			{
+				"key": "Effect Resistance",
+				"value": "3.6%"
+			},
+			{
+				"key": "Effect Resistance",
+				"value": "5.4%"
+			},
+			{
+				"key": "Effect Resistance",
+				"value": "7.2%"
+			},
+			{
+				"key": "Effect Resistance",
+				"value": "9.0%"
+			},
+			{
+				"key": "Effect Resistance",
+				"value": "10.8%"
+			},
+			{
+				"key": "Effect Resistance",
+				"value": "12.6%"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Defense",
+				"value": "4%"
+			},
+			{
+				"key": "Defense",
+				"value": "6%"
+			},
+			{
+				"key": "Defense",
+				"value": "8%"
+			},
+			{
+				"key": "Defense",
+				"value": "10%"
+			},
+			{
+				"key": "Defense",
+				"value": "12%"
+			},
+			{
+				"key": "Defense",
+				"value": "14%"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Takedown",
+			"type": "Active",
+			"description": {
+				"text": "Attacks with a large shield, with a 75% chance to provoke for 1 turn. Damage dealt increases proportional to the caster's Defense.",
+				"burn": "",
+				"soul": "+1",
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+5% effect chance",
+					"+10% damage dealt",
+					"+5% effect chance",
+					"+15% effect chance",
+					"+15% damage dealt"
+				],
+				"multipliers": "(ATK*0.8+Def*0.6)*1.871",
+				"text_ja": "敵単体にダメージを与え、75%の確率で挑発を1ターンの間付与する。自身の防御力が高いほどダメージがUPする。",
+				"burn_ja": ""
+			},
+			"title_ja": "シールドバニッシュ"
+		},
+		{
+			"title": "Security State",
+			"type": "Passive",
+			"description": {
+				"text": "Decreases damage received by allies by 10%. When more than one damage reduction effect is granted, only the strongest effect is applied.",
+				"burn": "",
+				"soul": null,
+				"ct": null,
+				"enhance": [
+					"Additional -0.5% damage received",
+					"Additional -0.5% damage received",
+					"Additional -0.5% damage received",
+					"Additional -0.5% damage received",
+					"Additional -1% damage received",
+					"Additional -1% damage received",
+					"Additional -1% damage received"
+				],
+				"multipliers": "",
+				"text_ja": "味方が攻撃を受けた時、ダメージが10.0%DOWNする。ダメージDOWN効果が重複した場合、一番高い効果のみ適用される。",
+				"burn_ja": ""
+			},
+			"title_ja": "警戒態勢"
+		},
+		{
+			"title": "Shield of Holy Spirit",
+			"type": "Active",
+			"description": {
+				"text": "Covers all allies with an aura of holy spirit, granting immunity for 2 turns and invincibility for 1 turn.",
+				"burn": "Skill cooldown is decreased by 2 turns. (-10 Souls)",
+				"soul": "+2",
+				"ct": "6",
+				"enhance": [
+					"Acquire +1 Soul",
+					"-1 turn cooldown"
+				],
+				"multipliers": "",
+				"text_ja": "味方全体に弱体効果免疫を2ターンの間付与し、無敵を1ターンの間付与する。",
+				"burn_ja": "スキルターンが2減少する。(魂力10消費)"
+			},
+			"title_ja": "聖霊の盾"
+		}
+	]
+}

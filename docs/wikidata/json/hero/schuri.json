@@ -1,0 +1,232 @@
+{
+	"common": {
+		"name": "Schuri",
+		"image": "https://epic7x.com/wp-content/uploads/2019/01/schuri-full.png",
+		"attribute": "fire",
+		"sign": "leo",
+		"clazz": "ranger",
+		"rarity": "4",
+		"name_ja": "シュリ"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "23",
+		"Critical_Hit_Damage": "150",
+		"dual_attack": "5",
+		"Effectiveness": "0",
+		"Effect_Resistance": "0",
+		"Speed": "110",
+		"Atk": "1068",
+		"HP": "5650",
+		"Def": "536"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": 0
+		},
+		{
+			"key": "Belief",
+			"score": 4
+		},
+		{
+			"key": "Bizarre Story",
+			"score": 0
+		},
+		{
+			"key": "Comforting",
+			"score": 3
+		},
+		{
+			"key": "Complain",
+			"score": -7
+		},
+		{
+			"key": "Criticism",
+			"score": 5
+		},
+		{
+			"key": "Cute Cheer",
+			"score": 4
+		},
+		{
+			"key": "Dream",
+			"score": 6
+		},
+		{
+			"key": "Food Story",
+			"score": 5
+		},
+		{
+			"key": "Gossip",
+			"score": -3
+		},
+		{
+			"key": "Happy Memory",
+			"score": -2
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": 5
+		},
+		{
+			"key": "Heroic Tale",
+			"score": 4
+		},
+		{
+			"key": "Horror",
+			"score": -1
+		},
+		{
+			"key": "Interesting Story",
+			"score": 2
+		},
+		{
+			"key": "Joyful Memories",
+			"score": 4
+		},
+		{
+			"key": "Myth",
+			"score": 4
+		},
+		{
+			"key": "Occult",
+			"score": 2
+		},
+		{
+			"key": "Reality Check",
+			"score": 1
+		},
+		{
+			"key": "Sad Memory",
+			"score": 2
+		},
+		{
+			"key": "Self Indulgent",
+			"score": -1
+		},
+		{
+			"key": "Unique Comment",
+			"score": 1
+		}
+	],
+	"memory": {
+		"potision": "pos-tl",
+		"release": [
+			{
+				"key": "Speed",
+				"value": "4"
+			},
+			{
+				"key": "Speed",
+				"value": "6"
+			},
+			{
+				"key": "Speed",
+				"value": "8"
+			},
+			{
+				"key": "Speed",
+				"value": "10"
+			},
+			{
+				"key": "Speed",
+				"value": "12"
+			},
+			{
+				"key": "Speed",
+				"value": "14"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Critical Hit Chance",
+				"value": "4.20%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "6.30%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "8.40%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "10.50%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "12.60%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "14.70%"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Rapid Fire",
+			"type": "Active",
+			"description": {
+				"text": "Attack the enemy with a pistol, with a 25% chance to inflict poison for 2 turns.",
+				"burn": "",
+				"soul": "+1 focus\n                                                                                +1",
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+5% effect chance",
+					"+10% damage dealt",
+					"+10% damage dealt"
+				],
+				"multipliers": "ATK*1*1*1.871",
+				"text_ja": "敵単体に攻撃し、25%の確率で毒を2ターンの間付与する。",
+				"burn_ja": ""
+			},
+			"title_ja": "ラピッドショット"
+		},
+		{
+			"title": "Explosive Gentleman",
+			"type": "Passive",
+			"description": {
+				"text": "After delivering a critical hit, the caster gains 1 Focus, and the Combat Readiness of all allies except the caster is increased by 15%.",
+				"burn": "",
+				"soul": null,
+				"ct": null,
+				"enhance": [
+					"+1% Combat Readiness",
+					"+2% Combat Readiness",
+					"+2% Combat Readiness",
+					"+2% Combat Readiness",
+					"+3% Combat Readiness"
+				],
+				"multipliers": "",
+				"text_ja": "クリティカル発生時、【集中】が1獲得し、自身以外の味方全体のアクションゲージを15%UPさせる。",
+				"burn_ja": ""
+			},
+			"title_ja": "爆音の貴公子"
+		},
+		{
+			"title": "Rifle Shot",
+			"type": "Active",
+			"description": {
+				"text": "Shoots all enemies with a rifle, Enhanced into Full Burst when the number of stacked Focus is more than 3. Full Burst always results in a critical hit, decreasing Combat Readiness of all enemies by 30%.",
+				"burn": "Grants an extra turn. (-20 Souls)",
+				"soul": "3 focus consumed\n                                                                                +2",
+				"ct": "4",
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"-1 turn cooldown",
+					"+10% damage dealt",
+					"+10% damage dealt"
+				],
+				"multipliers": "ATK*1*1*1.871",
+				"text_ja": "敵全体に攻撃する。【集中】が3以上の場合、スキルが【全弾発射】に強化される。【全弾発射】は攻撃命中時にクリティカルが発生し、敵全体のアクションゲージを30%DOWNさせる。",
+				"burn_ja": "追加ターンが発生する。(魂力20消費)"
+			},
+			"title_ja": "ライフルショット"
+		}
+	]
+}

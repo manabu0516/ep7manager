@@ -1,0 +1,240 @@
+{
+	"common": {
+		"name": "Hataan",
+		"image": "https://epic7x.com/wp-content/uploads/2019/10/Hataan-2.png",
+		"attribute": "fire",
+		"sign": "leo",
+		"clazz": "thief",
+		"rarity": "3",
+		"name_ja": "ハタン"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "23",
+		"Critical_Hit_Damage": "150",
+		"dual_attack": "5",
+		"Effectiveness": "0",
+		"Effect_Resistance": "0",
+		"Speed": "111",
+		"Atk": "1081",
+		"HP": "4572",
+		"Def": "494"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": 0
+		},
+		{
+			"key": "Belief",
+			"score": 5
+		},
+		{
+			"key": "Bizarre Story",
+			"score": 3
+		},
+		{
+			"key": "Comforting",
+			"score": 5
+		},
+		{
+			"key": "Complain",
+			"score": 0
+		},
+		{
+			"key": "Criticism",
+			"score": 6
+		},
+		{
+			"key": "Cute Cheer",
+			"score": 1
+		},
+		{
+			"key": "Dream",
+			"score": 2
+		},
+		{
+			"key": "Food Story",
+			"score": 0
+		},
+		{
+			"key": "Gossip",
+			"score": 0
+		},
+		{
+			"key": "Happy Memory",
+			"score": 1
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": 0
+		},
+		{
+			"key": "Heroic Tale",
+			"score": 1
+		},
+		{
+			"key": "Horror",
+			"score": 0
+		},
+		{
+			"key": "Interesting Story",
+			"score": 2
+		},
+		{
+			"key": "Joyful Memories",
+			"score": 4
+		},
+		{
+			"key": "Myth",
+			"score": 0
+		},
+		{
+			"key": "Occult",
+			"score": 7
+		},
+		{
+			"key": "Reality Check",
+			"score": 3
+		},
+		{
+			"key": "Sad Memory",
+			"score": 3
+		},
+		{
+			"key": "Self Indulgent",
+			"score": 1
+		},
+		{
+			"key": "Unique Comment",
+			"score": 3
+		}
+	],
+	"memory": {
+		"potision": "pos-all",
+		"release": [
+			{
+				"key": "Def",
+				"value": "12"
+			},
+			{
+				"key": "Def",
+				"value": "18"
+			},
+			{
+				"key": "Def",
+				"value": "24"
+			},
+			{
+				"key": "Def",
+				"value": "30"
+			},
+			{
+				"key": "Def",
+				"value": "36"
+			},
+			{
+				"key": "Def",
+				"value": "42"
+			},
+			{
+				"key": "Def",
+				"value": "48"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Critical Hit Chance",
+				"value": "2.80%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "4.20%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "5.60%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "7%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "8.40%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "9.80%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "11.20%"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Knee Smash",
+			"type": "Active",
+			"description": {
+				"text": "Smashes the enemy with their knee, with a 50% chance to decrease Hit Chance for 1 turn. Damage dealt increases proportional to the caster's Speed.",
+				"burn": "Ignores Effect Resistance. (-10 Souls)",
+				"soul": "+1",
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+5% effect chance",
+					"+5% damage dealt",
+					"+10% effect chance",
+					"+10% damage dealt",
+					"+15% damage dealt",
+					"+15% damage dealt"
+				],
+				"multipliers": "(ATK*1.6885)*(1+Speed*0.00075)",
+				"text_ja": "敵単体に攻撃し、50%の確率で命中率DOWNを1ターンの間付与する。自身のスピードが高いほどダメージがUPする。",
+				"burn_ja": "効果抵抗を無視する。(魂力10消費)"
+			},
+			"title_ja": "膝撃"
+		},
+		{
+			"title": "Wind Pressure",
+			"type": "Active",
+			"description": {
+				"text": "Attacks the enemy with wind pressure. Activates Wind Pressure again when an enemy is defeated. Damage dealt increases proportional to caster's Speed.",
+				"burn": "",
+				"soul": "+1",
+				"ct": "3",
+				"enhance": [
+					"+5% damage dealt",
+					"+5% effect chance",
+					"+5% damage dealt",
+					"+5% effect chance",
+					"+5% damage dealt",
+					"+10% damage dealt",
+					"+10% damage dealt"
+				],
+				"multipliers": "(ATK*2.0674)*(1+Speed*0.00125)\n                                        \n                                                                                    repeat skill is same ratios",
+				"text_ja": "敵単体に攻撃する。このスキルで敵を気絶させた場合、【風圧】をもう一度発動する。自身のスピードが高いほどダメージがUPする。",
+				"burn_ja": ""
+			},
+			"title_ja": "風圧"
+		},
+		{
+			"title": "Unbeatable Will",
+			"type": "Active",
+			"description": {
+				"text": "Releases energy to all allies, increasing Attack for 2 turns, before increasing Speed of the caster for 2 turns.",
+				"burn": "",
+				"soul": "+2",
+				"ct": "4",
+				"enhance": [
+					"-1 turn cooldown"
+				],
+				"multipliers": "",
+				"text_ja": "味方全体に攻撃力UPを2ターンの間付与する。更に自身にスピードUPを2ターンの間付与する。",
+				"burn_ja": ""
+			},
+			"title_ja": "折れぬ闘志"
+		}
+	]
+}

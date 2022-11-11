@@ -1,0 +1,224 @@
+{
+	"common": {
+		"name": "Violet",
+		"image": "https://epic7x.com/wp-content/uploads/2019/01/Violet-2.png",
+		"attribute": "earth",
+		"sign": "scorpio",
+		"clazz": "thief",
+		"rarity": "5",
+		"name_ja": "ヴィオレタ"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "23",
+		"Critical_Hit_Damage": "150",
+		"dual_attack": "5",
+		"Effectiveness": "0",
+		"Effect_Resistance": "0",
+		"Speed": "113",
+		"Atk": "1228",
+		"HP": "6266",
+		"Def": "473"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": 4
+		},
+		{
+			"key": "Belief",
+			"score": 5
+		},
+		{
+			"key": "Bizarre Story",
+			"score": -1
+		},
+		{
+			"key": "Comforting",
+			"score": 8
+		},
+		{
+			"key": "Complain",
+			"score": -2
+		},
+		{
+			"key": "Criticism",
+			"score": 3
+		},
+		{
+			"key": "Cute Cheer",
+			"score": 8
+		},
+		{
+			"key": "Dream",
+			"score": 4
+		},
+		{
+			"key": "Food Story",
+			"score": 1
+		},
+		{
+			"key": "Gossip",
+			"score": 3
+		},
+		{
+			"key": "Happy Memory",
+			"score": 2
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": 6
+		},
+		{
+			"key": "Heroic Tale",
+			"score": 6
+		},
+		{
+			"key": "Horror",
+			"score": 0
+		},
+		{
+			"key": "Interesting Story",
+			"score": 3
+		},
+		{
+			"key": "Joyful Memories",
+			"score": 3
+		},
+		{
+			"key": "Myth",
+			"score": 3
+		},
+		{
+			"key": "Occult",
+			"score": -2
+		},
+		{
+			"key": "Reality Check",
+			"score": 3
+		},
+		{
+			"key": "Sad Memory",
+			"score": -2
+		},
+		{
+			"key": "Self Indulgent",
+			"score": 2
+		},
+		{
+			"key": "Unique Comment",
+			"score": 2
+		}
+	],
+	"memory": {
+		"potision": "pos-all",
+		"release": [
+			{
+				"key": "Attack",
+				"value": "3.6%"
+			},
+			{
+				"key": "Attack",
+				"value": "5.4%"
+			},
+			{
+				"key": "Attack",
+				"value": "7.2%"
+			},
+			{
+				"key": "Attack",
+				"value": "9.0%"
+			},
+			{
+				"key": "Attack",
+				"value": "10.8%"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Attack",
+				"value": "6%"
+			},
+			{
+				"key": "Attack",
+				"value": "9%"
+			},
+			{
+				"key": "Attack",
+				"value": "12%"
+			},
+			{
+				"key": "Attack",
+				"value": "15%"
+			},
+			{
+				"key": "Attack",
+				"value": "18%"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Graceful Cut",
+			"type": "Active",
+			"description": {
+				"text": "Attacks with a sword, with a 65% chance to decrease Attack for 1 turn. When it is not the caster's turn, increases Combat Readiness by 15% and gains double the amount of Focus.",
+				"burn": "Increases effect chance to 100% and decreases Attack of the target for 2 turns. (-10 Souls)",
+				"soul": "+1 focus\n                                                                                +1",
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+10% effect chance",
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+10% damage dealt",
+					"+10% damage dealt"
+				],
+				"multipliers": "ATK*1*0.9*1.871",
+				"text_ja": "敵単体に攻撃し、65%の確率で攻撃力DOWNを1ターンの間付与する。自身以外のターンの場合、アクションゲージが15%UPし、【集中】獲得量が2倍になる。",
+				"burn_ja": "効果発生率が100%になり、攻撃力DOWNを2ターンの間付与する。(魂力10消費)"
+			},
+			"title_ja": "優雅なる斬撃"
+		},
+		{
+			"title": "Duel Accepted",
+			"type": "Active",
+			"description": {
+				"text": "Prepares for a duel by dispelling two debuffs and granting perception for 3 turns before recovering Health by 15%. Grants an extra turn to the caster.",
+				"burn": "",
+				"soul": "+3 focus\n                                                                                +2",
+				"ct": "5",
+				"enhance": [
+					"-1 turn cooldown"
+				],
+				"multipliers": "Heal strength: 15% self max health",
+				"text_ja": "自身の弱体効果を2つ解除し、見切りを3ターンの間付与した後、生命力の15%を回復する。追加ターンが発生する。見切り：クリティカル発生率・クリティカルダメージが15%UPする。【見切り】は強化解除されない｡",
+				"burn_ja": ""
+			},
+			"title_ja": "準備万端"
+		},
+		{
+			"title": "Butterfly Cut",
+			"type": "Active",
+			"description": {
+				"text": "Pierces the enemy with a sword, and loses all Focus. Damage dealt increases proportional to the amount of Focus consumed. If 5 Focus is consumed, resets cooldown of Butterfly Cut. When Butterfly Cut is available, increases Evasion by 35%, and after successfully evading, counterattacks with Graceful Cut.",
+				"burn": "",
+				"soul": "+3",
+				"ct": "6",
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"-1 turn cooldown",
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+10% damage dealt",
+					"+10% damage dealt"
+				],
+				"multipliers": "ATK*1.5*0.9*1.871\n                                        \n                                                                                    15% increased damage per Focus",
+				"text_ja": "敵単体に攻撃した後、【集中】をすべて消費する。消費した【集中】の数が多いほどダメージがUPし、消費した【集中】が5の場合、【胡蝶斬】のスキルターンが0になる。【胡蝶斬】がスキルターン上使用可能な状態の時、回避率が35%UPし、回避時に【優雅なる斬撃】で反撃する。",
+				"burn_ja": ""
+			},
+			"title_ja": "胡蝶斬"
+		}
+	]
+}

@@ -1,0 +1,240 @@
+{
+	"common": {
+		"name": "Judith",
+		"image": "https://epic7x.com/wp-content/uploads/2019/01/judith-full.png",
+		"attribute": "fire",
+		"sign": "pisces",
+		"clazz": "thief",
+		"rarity": "3",
+		"name_ja": "ジュディス"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "27",
+		"Critical_Hit_Damage": "150",
+		"dual_attack": "5",
+		"Effectiveness": "18",
+		"Effect_Resistance": "0",
+		"Speed": "117",
+		"Atk": "848",
+		"HP": "4289",
+		"Def": "494"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": 4
+		},
+		{
+			"key": "Belief",
+			"score": 2
+		},
+		{
+			"key": "Bizarre Story",
+			"score": 0
+		},
+		{
+			"key": "Comforting",
+			"score": 5
+		},
+		{
+			"key": "Complain",
+			"score": 2
+		},
+		{
+			"key": "Criticism",
+			"score": 2
+		},
+		{
+			"key": "Cute Cheer",
+			"score": 4
+		},
+		{
+			"key": "Dream",
+			"score": 4
+		},
+		{
+			"key": "Food Story",
+			"score": 2
+		},
+		{
+			"key": "Gossip",
+			"score": 0
+		},
+		{
+			"key": "Happy Memory",
+			"score": 4
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": 5
+		},
+		{
+			"key": "Heroic Tale",
+			"score": 3
+		},
+		{
+			"key": "Horror",
+			"score": 3
+		},
+		{
+			"key": "Interesting Story",
+			"score": 3
+		},
+		{
+			"key": "Joyful Memories",
+			"score": 6
+		},
+		{
+			"key": "Myth",
+			"score": 1
+		},
+		{
+			"key": "Occult",
+			"score": 1
+		},
+		{
+			"key": "Reality Check",
+			"score": 2
+		},
+		{
+			"key": "Sad Memory",
+			"score": -1
+		},
+		{
+			"key": "Self Indulgent",
+			"score": 2
+		},
+		{
+			"key": "Unique Comment",
+			"score": 0
+		}
+	],
+	"memory": {
+		"potision": "pos-all",
+		"release": [
+			{
+				"key": "Health",
+				"value": "120"
+			},
+			{
+				"key": "Health",
+				"value": "180"
+			},
+			{
+				"key": "Health",
+				"value": "240"
+			},
+			{
+				"key": "Health",
+				"value": "300"
+			},
+			{
+				"key": "Health",
+				"value": "360"
+			},
+			{
+				"key": "Health",
+				"value": "420"
+			},
+			{
+				"key": "Health",
+				"value": "480"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Attack",
+				"value": "36"
+			},
+			{
+				"key": "Attack",
+				"value": "54"
+			},
+			{
+				"key": "Attack",
+				"value": "72"
+			},
+			{
+				"key": "Attack",
+				"value": "90"
+			},
+			{
+				"key": "Attack",
+				"value": "108"
+			},
+			{
+				"key": "Attack",
+				"value": "126"
+			},
+			{
+				"key": "Attack",
+				"value": "144"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Weakness Attack",
+			"type": "Active",
+			"description": {
+				"text": "Attacks with dual-wielded swords. When the caster is stealthed, has a 75% chance to stun the enemy.",
+				"burn": "",
+				"soul": "+1",
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+10% effect chance",
+					"+10% damage dealt",
+					"+15% effect chance",
+					"+15% damage dealt"
+				],
+				"multipliers": "ATK*1*1*1.871",
+				"text_ja": "敵単体に攻撃する。自身が潜伏状態の場合、75%の確率でスタンを1ターンの間付与する。",
+				"burn_ja": ""
+			},
+			"title_ja": "弱点攻撃"
+		},
+		{
+			"title": "Urgent Evasion",
+			"type": "Active",
+			"description": {
+				"text": "When attacked, has a 70% chance to become stealthed for 1 turn.",
+				"burn": "",
+				"soul": null,
+				"ct": "1",
+				"enhance": [
+					"+5% trigger chance",
+					"+5% trigger chance",
+					"+5% trigger chance",
+					"+5% trigger chance",
+					"+10% trigger chance"
+				],
+				"multipliers": "",
+				"text_ja": "攻撃を受けた時、その攻撃に伴う効果が発生する前に自身に70%の確率で潜伏を1ターンの間付与する。",
+				"burn_ja": ""
+			},
+			"title_ja": "緊急回避"
+		},
+		{
+			"title": "Mark of Acceleration",
+			"type": "Active",
+			"description": {
+				"text": "Increases the Combat Readiness of allies by 20%, and grant stealth for 1 turn.",
+				"burn": "Grants an extra turn (-20 Souls)",
+				"soul": "+2",
+				"ct": "4",
+				"enhance": [
+					"+2% Combat Readiness",
+					"+2% Combat Readiness",
+					"-1 turn cooldown",
+					"+3% Combat Readiness",
+					"+3% Combat Readiness"
+				],
+				"multipliers": "",
+				"text_ja": "味方全体のアクションゲージを20%UPさせ、自身に潜伏を1ターンの間付与する。",
+				"burn_ja": "追加ターンが発生する。(魂力20消費)"
+			},
+			"title_ja": "加速の紋章"
+		}
+	]
+}

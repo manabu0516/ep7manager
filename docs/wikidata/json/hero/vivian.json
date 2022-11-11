@@ -1,0 +1,224 @@
+{
+	"common": {
+		"name": "Vivian",
+		"image": "https://epic7x.com/wp-content/uploads/2019/08/vivian.png",
+		"attribute": "earth",
+		"sign": "sagittarius",
+		"clazz": "mage",
+		"rarity": "5",
+		"name_ja": "ヴィヴィアン"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "27",
+		"Critical_Hit_Damage": "150",
+		"dual_attack": "5",
+		"Effectiveness": "0",
+		"Effect_Resistance": "0",
+		"Speed": "115",
+		"Atk": "1228",
+		"HP": "4378",
+		"Def": "662"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": 4
+		},
+		{
+			"key": "Belief",
+			"score": -3
+		},
+		{
+			"key": "Bizarre Story",
+			"score": -3
+		},
+		{
+			"key": "Comforting",
+			"score": 4
+		},
+		{
+			"key": "Complain",
+			"score": -1
+		},
+		{
+			"key": "Criticism",
+			"score": 7
+		},
+		{
+			"key": "Cute Cheer",
+			"score": 5
+		},
+		{
+			"key": "Dream",
+			"score": 0
+		},
+		{
+			"key": "Food Story",
+			"score": 3
+		},
+		{
+			"key": "Gossip",
+			"score": 1
+		},
+		{
+			"key": "Happy Memory",
+			"score": 2
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": -2
+		},
+		{
+			"key": "Heroic Tale",
+			"score": 5
+		},
+		{
+			"key": "Horror",
+			"score": -7
+		},
+		{
+			"key": "Interesting Story",
+			"score": 1
+		},
+		{
+			"key": "Joyful Memories",
+			"score": 0
+		},
+		{
+			"key": "Myth",
+			"score": 10
+		},
+		{
+			"key": "Occult",
+			"score": 6
+		},
+		{
+			"key": "Reality Check",
+			"score": -1
+		},
+		{
+			"key": "Sad Memory",
+			"score": 0
+		},
+		{
+			"key": "Self Indulgent",
+			"score": 2
+		},
+		{
+			"key": "Unique Comment",
+			"score": -3
+		}
+	],
+	"memory": {
+		"potision": "pos-all",
+		"release": [
+			{
+				"key": "Attack",
+				"value": "4.3%"
+			},
+			{
+				"key": "Attack",
+				"value": "6.4%"
+			},
+			{
+				"key": "Attack",
+				"value": "8.6%"
+			},
+			{
+				"key": "Attack",
+				"value": "10.7%"
+			},
+			{
+				"key": "Attack",
+				"value": "12.9%"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Critical Hit Chance",
+				"value": "5.60%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "8.40%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "11.20%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "14%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "16.8%"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Vitality Drain",
+			"type": "Active",
+			"description": {
+				"text": "Smashes the enemy with a rock, increasing the Caster's combat readiness by 10%. A critical hit will increase the Caster's combat readiness by another 10%.",
+				"burn": "",
+				"soul": "+1",
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+2% Combat Readiness",
+					"+5% damage dealt",
+					"+3% Combat Readiness",
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+10% damage dealt"
+				],
+				"multipliers": "ATK*1.2*1*1.871",
+				"text_ja": "敵単体に攻撃し、自身のアクションゲージを10%UPさせる。クリティカル発生時、追加でアクションゲージを10%UPさせる。",
+				"burn_ja": ""
+			},
+			"title_ja": "活力吸収"
+		},
+		{
+			"title": "Thunder God's Cry",
+			"type": "Active",
+			"description": {
+				"text": "Attacks all enemies with a thunderstorm. Activate Thunder God's Cry again when an enemy is defeated. Each subsequent Thunder God's Cry activated deals decreased damage, and can be activated up to 3 times.",
+				"burn": "Increases damage dealt. (-10 Souls)",
+				"soul": "+2",
+				"ct": "2",
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+10% damage dealt"
+				],
+				"multipliers": "ATK*1.05*1*1.871 (1.3 soulburn)\n                                        \n                                                                                    first trigger on kill is 0.55 attack rate, second trigger is 0.3 attack rate",
+				"text_ja": "敵全体に攻撃する。このスキルで敵を気絶させた場合、【雷神の咆哮】をもう一度発動する。追加で発動した【雷神の咆哮】のダメージがDOWNする。【雷神の咆哮】は最大3回まで発動する。",
+				"burn_ja": "ダメージがUPする。(魂力10消費)"
+			},
+			"title_ja": "雷神の咆哮"
+		},
+		{
+			"title": "Mana Amplification",
+			"type": "Active",
+			"description": {
+				"text": "Fully amplifies mana, granting immunity to all allies for 3 turns before granting increased Attack (Greater) to the caster for 3 turns while increasing Attack of all allies except for the caster for 3 turns.",
+				"burn": "",
+				"soul": "+3",
+				"ct": "6",
+				"enhance": [
+					"-1 turn cooldown"
+				],
+				"multipliers": "",
+				"text_ja": "味方全体に弱体効果免疫を3ターンの間付与し、自身に攻撃力UP(大)を3ターンの間付与し、自身以外の味方全体に攻撃力UPを3ターンの間付与する。",
+				"burn_ja": ""
+			},
+			"title_ja": "魔力増幅"
+		}
+	]
+}

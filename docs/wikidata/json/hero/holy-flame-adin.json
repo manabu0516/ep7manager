@@ -1,0 +1,230 @@
+{
+	"common": {
+		"name": "Holy Flame Adin",
+		"image": "https://epic7x.com/wp-content/uploads/2022/01/Holy-Flame-Adin.png",
+		"attribute": "fire",
+		"sign": "leo",
+		"clazz": "thief",
+		"rarity": "3"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "23",
+		"Critical_Hit_Damage": "150",
+		"dual_attack": "5",
+		"Effectiveness": "0",
+		"Effect_Resistance": "0",
+		"Speed": "111",
+		"Atk": "1081",
+		"HP": "4572",
+		"Def": "494"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": 1
+		},
+		{
+			"key": "Belief",
+			"score": 2
+		},
+		{
+			"key": "Bizarre Story",
+			"score": 3
+		},
+		{
+			"key": "Comforting",
+			"score": 1
+		},
+		{
+			"key": "Complain",
+			"score": 2
+		},
+		{
+			"key": "Criticism",
+			"score": 1
+		},
+		{
+			"key": "Cute Cheer",
+			"score": 5
+		},
+		{
+			"key": "Dream",
+			"score": 6
+		},
+		{
+			"key": "Food Story",
+			"score": 4
+		},
+		{
+			"key": "Gossip",
+			"score": 2
+		},
+		{
+			"key": "Happy Memory",
+			"score": 3
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": 4
+		},
+		{
+			"key": "Heroic Tale",
+			"score": 3
+		},
+		{
+			"key": "Horror",
+			"score": 2
+		},
+		{
+			"key": "Interesting Story",
+			"score": 7
+		},
+		{
+			"key": "Joyful Memories",
+			"score": 5
+		},
+		{
+			"key": "Myth",
+			"score": 2
+		},
+		{
+			"key": "Occult",
+			"score": 2
+		},
+		{
+			"key": "Reality Check",
+			"score": 0
+		},
+		{
+			"key": "Sad Memory",
+			"score": 2
+		},
+		{
+			"key": "Self Indulgent",
+			"score": 2
+		},
+		{
+			"key": "Unique Comment",
+			"score": 5
+		}
+	],
+	"memory": {
+		"potision": "pos-all",
+		"release": [
+			{
+				"key": "Attack",
+				"value": "24"
+			},
+			{
+				"key": "Attack",
+				"value": "36"
+			},
+			{
+				"key": "Attack",
+				"value": "48"
+			},
+			{
+				"key": "Attack",
+				"value": "60"
+			},
+			{
+				"key": "Attack",
+				"value": "72"
+			},
+			{
+				"key": "Attack",
+				"value": "84"
+			},
+			{
+				"key": "Attack",
+				"value": "96"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Attack",
+				"value": "36"
+			},
+			{
+				"key": "Attack",
+				"value": "54"
+			},
+			{
+				"key": "Attack",
+				"value": "72"
+			},
+			{
+				"key": "Attack",
+				"value": "90"
+			},
+			{
+				"key": "Attack",
+				"value": "108"
+			},
+			{
+				"key": "Attack",
+				"value": "126"
+			},
+			{
+				"key": "Attack",
+				"value": "144"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Ankle Cut",
+			"type": "Active",
+			"description": {
+				"text": "Attacks the enemy with a sword, recovering Health of the ally with the lowest Health. Amount recovered increases proportional to the damage dealt.",
+				"burn": "",
+				"soul": "+1",
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+10% damage dealt",
+					"+10% damage dealt"
+				],
+				"multipliers": "ATK*1*0.95*1.875"
+			}
+		},
+		{
+			"title": "Defensive Spirit",
+			"type": "Passive",
+			"description": {
+				"text": "After suffering an attack that targets all allies, when the caster has a debuff, has a 85% chance to counterattack with Fiery Blade Gust. Fiery Blade Gust takes priority over a counterattack with a basic skill. This effect can only be activated once every 2 turns. Fiery Blade Gust: Attacks all enemies with a blade gust, and increases Speed of the caster for 1 turn.",
+				"burn": "",
+				"soul": null,
+				"ct": null,
+				"enhance": [
+					"+2% counterattack chance",
+					"+2% counterattack chance",
+					"+3% counterattack chance",
+					"+3% counterattack chance",
+					"+5% counterattack chance"
+				],
+				"multipliers": "Fiery Blade Gust: ATK*0.8*1*1.875"
+			}
+		},
+		{
+			"title": "Explosive Cut",
+			"type": "Active",
+			"description": {
+				"text": "Attacks the enemy repeatedly, decreasing Speed of the target for 2 turns and a 75% chance to decrease Defense for 2 turns. Grants Willful Flame to the caster for 2 turns.",
+				"burn": "",
+				"soul": "+2",
+				"ct": "5",
+				"enhance": [
+					"+10% damage dealt",
+					"+10% effect chance",
+					"-1 turn cooldown",
+					"+15% effect chance",
+					"+15% damage dealt"
+				],
+				"multipliers": "ATK*1.8*1.05*1.875"
+			}
+		}
+	]
+}

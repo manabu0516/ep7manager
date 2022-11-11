@@ -1,0 +1,224 @@
+{
+	"common": {
+		"name": "Zeno",
+		"image": "https://epic7x.com/wp-content/uploads/2019/01/zeno-full.png",
+		"attribute": "ice",
+		"sign": "taurus",
+		"clazz": "mage",
+		"rarity": "5",
+		"name_ja": "ゼノ"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "15",
+		"Critical_Hit_Damage": "150",
+		"dual_attack": "5",
+		"Effectiveness": "18",
+		"Effect_Resistance": "18",
+		"Speed": "115",
+		"Atk": "1039",
+		"HP": "5299",
+		"Def": "673"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": 1
+		},
+		{
+			"key": "Belief",
+			"score": 0
+		},
+		{
+			"key": "Bizarre Story",
+			"score": -3
+		},
+		{
+			"key": "Comforting",
+			"score": 1
+		},
+		{
+			"key": "Complain",
+			"score": -4
+		},
+		{
+			"key": "Criticism",
+			"score": 8
+		},
+		{
+			"key": "Cute Cheer",
+			"score": 6
+		},
+		{
+			"key": "Dream",
+			"score": 3
+		},
+		{
+			"key": "Food Story",
+			"score": 5
+		},
+		{
+			"key": "Gossip",
+			"score": -1
+		},
+		{
+			"key": "Happy Memory",
+			"score": 3
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": 0
+		},
+		{
+			"key": "Heroic Tale",
+			"score": 7
+		},
+		{
+			"key": "Horror",
+			"score": -2
+		},
+		{
+			"key": "Interesting Story",
+			"score": 0
+		},
+		{
+			"key": "Joyful Memories",
+			"score": 1
+		},
+		{
+			"key": "Myth",
+			"score": 9
+		},
+		{
+			"key": "Occult",
+			"score": 5
+		},
+		{
+			"key": "Reality Check",
+			"score": -3
+		},
+		{
+			"key": "Sad Memory",
+			"score": -1
+		},
+		{
+			"key": "Self Indulgent",
+			"score": -1
+		},
+		{
+			"key": "Unique Comment",
+			"score": 1
+		}
+	],
+	"memory": {
+		"potision": "pos-all",
+		"release": [
+			{
+				"key": "Effectiveness",
+				"value": "4.8%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "7.2%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "9.6%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "12.0%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "14.4%"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Defense",
+				"value": "6%"
+			},
+			{
+				"key": "Defense",
+				"value": "9%"
+			},
+			{
+				"key": "Defense",
+				"value": "12%"
+			},
+			{
+				"key": "Defense",
+				"value": "15%"
+			},
+			{
+				"key": "Defense",
+				"value": "18%"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Black Thorn",
+			"type": "Active",
+			"description": {
+				"text": "Attacks with thorns, with a 25% chance to stun for 1 turn. Damage dealt increases proportional to the caster's max Health.",
+				"burn": "",
+				"soul": "+1",
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+5% effect chance",
+					"+10% damage dealt",
+					"+5% effect chance",
+					"+15% damage dealt"
+				],
+				"multipliers": "(ATK*0.5*1+HP*0.10)*1.871\n                                        \n                                                                                    10% self max Health (0.10 * Health)",
+				"text_ja": "敵単体に攻撃し、25%の確率でスタンを1ターンの間付与する。自身の最大生命力が高いほどダメージがUPする。",
+				"burn_ja": ""
+			},
+			"title_ja": "黒き棘"
+		},
+		{
+			"title": "Star's Armor",
+			"type": "Passive",
+			"description": {
+				"text": "Increases Defense and damage dealt by Ancient Beast by 10% and Effectiveness by 5% when the enemy uses a non-attack skill. Can stack up 8times.",
+				"burn": "",
+				"soul": null,
+				"ct": null,
+				"enhance": [
+					"+0.5% effect",
+					"+0.5% effect",
+					"+0.5% effect",
+					"+0.5% effect",
+					"+1% effect"
+				],
+				"multipliers": "5% def and 5% to skill 3 damage per stack, up to 8% with molagora",
+				"text_ja": "敵が攻撃以外のスキルを使用した時、自身の防御力と【太古の魔獣】のダメージが7.0%UPし、効果命中率が5%UPする。最大8回まで累積する。",
+				"burn_ja": ""
+			},
+			"title_ja": "星辰の鎧"
+		},
+		{
+			"title": "Ancient Beast",
+			"type": "Active",
+			"description": {
+				"text": "Summons an ancient beast to attack all enemies, with a 80% chance to silence for 1 turn and inflict bleeding for 2 turns. Damage dealt increases proportional to the caster's Max Health.",
+				"burn": "Grants an extra turn (-20 Souls)",
+				"soul": "+2",
+				"ct": "4",
+				"enhance": [
+					"+5% damage dealt",
+					"+5% effect chance",
+					"+10% damage dealt",
+					"+10% effect chance",
+					"+15% damage dealt"
+				],
+				"multipliers": "(ATK*0.5*1+HP*0.12)*1.871\n                                        \n                                                                                    12% self max Health (0.12 * Health)",
+				"text_ja": "敵全体に攻撃し、65%の確率で沈黙を1ターンの間付与し、出血を2ターンの間付与する。自身の最大生命力が高いほどダメージがUPする。",
+				"burn_ja": "追加ターンが発生する。(魂力20消費)"
+			},
+			"title_ja": "太古の魔獣"
+		}
+	]
+}

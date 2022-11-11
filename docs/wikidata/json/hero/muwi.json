@@ -1,0 +1,240 @@
+{
+	"common": {
+		"name": "Muwi",
+		"image": "https://epic7x.com/wp-content/uploads/2022/01/Muwi.png",
+		"attribute": "ice",
+		"sign": "scorpio",
+		"clazz": "thief",
+		"rarity": "3",
+		"name_ja": "ムーム"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "23",
+		"Critical_Hit_Damage": "150",
+		"dual_attack": "5",
+		"Effectiveness": "0",
+		"Effect_Resistance": "0",
+		"Speed": "108",
+		"Atk": "1039",
+		"HP": "5517",
+		"Def": "452"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": 2
+		},
+		{
+			"key": "Belief",
+			"score": 0
+		},
+		{
+			"key": "Bizarre Story",
+			"score": 0
+		},
+		{
+			"key": "Comforting",
+			"score": 3
+		},
+		{
+			"key": "Complain",
+			"score": 0
+		},
+		{
+			"key": "Criticism",
+			"score": 0
+		},
+		{
+			"key": "Cute Cheer",
+			"score": 2
+		},
+		{
+			"key": "Dream",
+			"score": 1
+		},
+		{
+			"key": "Food Story",
+			"score": 6
+		},
+		{
+			"key": "Gossip",
+			"score": 0
+		},
+		{
+			"key": "Happy Memory",
+			"score": 2
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": 5
+		},
+		{
+			"key": "Heroic Tale",
+			"score": 4
+		},
+		{
+			"key": "Horror",
+			"score": 0
+		},
+		{
+			"key": "Interesting Story",
+			"score": 1
+		},
+		{
+			"key": "Joyful Memories",
+			"score": 3
+		},
+		{
+			"key": "Myth",
+			"score": 1
+		},
+		{
+			"key": "Occult",
+			"score": 0
+		},
+		{
+			"key": "Reality Check",
+			"score": 1
+		},
+		{
+			"key": "Sad Memory",
+			"score": 3
+		},
+		{
+			"key": "Self Indulgent",
+			"score": 0
+		},
+		{
+			"key": "Unique Comment",
+			"score": 1
+		}
+	],
+	"memory": {
+		"potision": "pos-all",
+		"release": [
+			{
+				"key": "Health",
+				"value": "120"
+			},
+			{
+				"key": "Health",
+				"value": "180"
+			},
+			{
+				"key": "Health",
+				"value": "240"
+			},
+			{
+				"key": "Health",
+				"value": "300"
+			},
+			{
+				"key": "Health",
+				"value": "360"
+			},
+			{
+				"key": "Health",
+				"value": "420"
+			},
+			{
+				"key": "Health",
+				"value": "480"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Effectiveness",
+				"value": "4.50%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "6.80%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "9%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "11.20%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "13.50%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "15.80%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "18%"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Leap Strike",
+			"type": "Active",
+			"description": {
+				"text": "Leaps to attack the enemy, with a 35% chance to inflict bleeding for 2 turns.",
+				"burn": "",
+				"soul": "+1",
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+5% effect chance",
+					"+10% damage dealt",
+					"+10% effect chance",
+					"+15% damage dealt"
+				],
+				"multipliers": "ATK*1*1*1.871",
+				"text_ja": "敵単体に攻撃し、35%の確率で出血を2ターンの間付与する。",
+				"burn_ja": ""
+			},
+			"title_ja": "飛び斬り"
+		},
+		{
+			"title": "Coldhearted Management",
+			"type": "Passive",
+			"description": {
+				"text": "After the foremost ally is attacked, counterattacks with Blade Flurry, and when all allies are ice elemental Heroes, increases Combat Readiness of all allies by 10%. Blade Flurry takes priority over a counterattack with a basic skill and can only be activated once very 2 turns. Blade Flurry: Attacks the enemy with a swordstorm, decreasing Attack for 2 turns.",
+				"burn": "",
+				"soul": null,
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+10% damage dealt"
+				],
+				"multipliers": "ATK*0.8*1*1.871",
+				"text_ja": "前衛の味方が攻撃を受けた後、【疾風撃】で反撃し、味方全体が氷属性の場合、味方全体のアクションゲージを10%UPさせる。【疾風撃】での反撃は、基本スキルでの反撃より優先される。【疾風撃】は2ターンに1回まで発動する。疾風撃：敵単体に攻撃し、攻撃力DOWNを2ターンの間付与する。",
+				"burn_ja": ""
+			},
+			"title_ja": "冷静な管理"
+		},
+		{
+			"title": "Wind Cutter",
+			"type": "Active",
+			"description": {
+				"text": "Attacks all enemies with a sword, with a 50% chance to decrease Defense for 2 turns. Increases Attack of the caster for 2 turns.",
+				"burn": "Increases damage dealt. (-10 Souls)",
+				"soul": "+2",
+				"ct": "4",
+				"enhance": [
+					"+5% damage dealt",
+					"+10% effect chance",
+					"-1 turn cooldown",
+					"+15% effect chance",
+					"+15% damage dealt"
+				],
+				"multipliers": "ATK*1*1.1*1.871 \n                                        \n                                                                                    ATK*1.25*1.1*1.871  (Soul Burn)",
+				"text_ja": "敵全体に攻撃し、50%の確率で防御力DOWNを2ターンの間付与する。自身に攻撃力UPを2ターンの間付与する。",
+				"burn_ja": "ダメージがUPする。(魂力10消費)"
+			},
+			"title_ja": "風斬"
+		}
+	]
+}

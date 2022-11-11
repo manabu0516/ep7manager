@@ -1,0 +1,224 @@
+{
+	"common": {
+		"name": "Solitaria of the Snow",
+		"image": "https://epic7x.com/wp-content/uploads/2021/03/Solitaria-of-the-Snow.png",
+		"attribute": "light",
+		"sign": "taurus",
+		"clazz": "mage",
+		"rarity": "5",
+		"name_ja": "雪国のソリタリア"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "15",
+		"Critical_Hit_Damage": "150",
+		"dual_attack": "5",
+		"Effectiveness": "18",
+		"Effect_Resistance": "18",
+		"Speed": "115",
+		"Atk": "1039",
+		"HP": "5299",
+		"Def": "673"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": 4
+		},
+		{
+			"key": "Belief",
+			"score": 4
+		},
+		{
+			"key": "Bizarre Story",
+			"score": 0
+		},
+		{
+			"key": "Comforting",
+			"score": 8
+		},
+		{
+			"key": "Complain",
+			"score": 2
+		},
+		{
+			"key": "Criticism",
+			"score": 5
+		},
+		{
+			"key": "Cute Cheer",
+			"score": 7
+		},
+		{
+			"key": "Dream",
+			"score": 2
+		},
+		{
+			"key": "Food Story",
+			"score": 2
+		},
+		{
+			"key": "Gossip",
+			"score": 2
+		},
+		{
+			"key": "Happy Memory",
+			"score": 2
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": 3
+		},
+		{
+			"key": "Heroic Tale",
+			"score": 3
+		},
+		{
+			"key": "Horror",
+			"score": 0
+		},
+		{
+			"key": "Interesting Story",
+			"score": 4
+		},
+		{
+			"key": "Joyful Memories",
+			"score": 3
+		},
+		{
+			"key": "Myth",
+			"score": 2
+		},
+		{
+			"key": "Occult",
+			"score": 2
+		},
+		{
+			"key": "Reality Check",
+			"score": 3
+		},
+		{
+			"key": "Sad Memory",
+			"score": 3
+		},
+		{
+			"key": "Self Indulgent",
+			"score": 0
+		},
+		{
+			"key": "Unique Comment",
+			"score": 3
+		}
+	],
+	"memory": {
+		"potision": "pos-all",
+		"release": [
+			{
+				"key": "Health",
+				"value": "4.3%"
+			},
+			{
+				"key": "Health",
+				"value": "6.4%"
+			},
+			{
+				"key": "Health",
+				"value": "8.6%"
+			},
+			{
+				"key": "Health",
+				"value": "10.7%"
+			},
+			{
+				"key": "Health",
+				"value": "12.0%"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Effectiveness",
+				"value": "9%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "13.50%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "18%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "22.50%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "27%"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Pew! Pew! Pew!",
+			"type": "Active",
+			"description": {
+				"text": "Attacks the enemy with a staff, with a 75% chance to dispel one buff. When the caster is granted daydream, activates Fwoooosh-Ha! as an extra attack. Fwoooosh-Ha!: Attacks all enemies with mana, with a 25% chance to stun for 1 turn.",
+				"burn": "",
+				"soul": null,
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+10% damage dealt"
+				],
+				"multipliers": "ATK*0.8*1*1.871",
+				"text_ja": "敵単体に攻撃し、75%の確率で対象の強化効果を1つ解除する。自身が妄想状態の場合、【シュパーン！】を追加で発動する。シュパーン！：敵全体に攻撃し、25%の確率でスタンを1ターンの間付与する。",
+				"burn_ja": ""
+			},
+			"title_ja": "シューン！"
+		},
+		{
+			"title": "I Wanna Go Home...",
+			"type": "Passive",
+			"description": {
+				"text": "Decreases the amount of Focus gained by the enemy by 100%. At the start of the turn, has a 75% chance to grant daydream for 1 turn, and at the end of the turn, has a 75% chance to grant stealth for 1 turn.",
+				"burn": "",
+				"soul": null,
+				"ct": null,
+				"enhance": [
+					"+5% effect chance",
+					"+5% effect chance",
+					"+5% effect chance",
+					"+5% effect chance",
+					"+10% effect chance"
+				],
+				"multipliers": "",
+				"text_ja": "敵の【集中】獲得量を100%DOWNさせる。ターン開始時に70%の確率で自身に妄想を1ターンの間付与し、ターン終了時に70%の確率で自身に潜伏を1ターンの間を付与する。",
+				"burn_ja": ""
+			},
+			"title_ja": "もうやだお家に帰るぅ…"
+		},
+		{
+			"title": "Boom! Starlight Fall!",
+			"type": "Active",
+			"description": {
+				"text": "Decreases the enemy's buff durations by 1 turn and attacks with starlight, stunning for 1 turn before decreasing Combat Readiness by 30%. Grants a barrier to the caster for 2 turns. Barrier strength increases proportional to the caster's max Health.",
+				"burn": "Extends the duration of buffs granted to the caster by Boom! Starlight Fall! by 1 turn and grants an extra turn. (-20 Souls)",
+				"soul": "+2",
+				"ct": "4",
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"-1 turn cooldown",
+					"+10% damage dealt",
+					"+10% damage dealt"
+				],
+				"multipliers": "",
+				"text_ja": "敵単体の強化効果を1ターン短縮させ、対象に攻撃し、スタンを1ターンの間付与し、アクションゲージを30%DOWNさせる。自身にシールドを2ターンの間付与する。自身の最大生命力が高いほどシールド効果がUPする。",
+				"burn_ja": "自身に付与される【いけっ！スターライトドロップ！】の強化効果を1ターン延長し、追加ターンが発生する。(魂力20消費)"
+			},
+			"title_ja": "いけっ！スターライトドロップ！"
+		}
+	]
+}

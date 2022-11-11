@@ -1,0 +1,224 @@
+{
+	"common": {
+		"name": "Arbiter Vildred",
+		"image": "https://epic7x.com/wp-content/uploads/2019/01/Arbiter-Vildred-portrait.png",
+		"attribute": "dark",
+		"sign": "leo",
+		"clazz": "thief",
+		"rarity": "5",
+		"name_ja": "執行人ヴィルドレッド"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "23",
+		"Critical_Hit_Damage": "150",
+		"dual_attack": "5",
+		"Effectiveness": "0",
+		"Effect_Resistance": "0",
+		"Speed": "116",
+		"Atk": "1283",
+		"HP": "5138",
+		"Def": "522"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": 1
+		},
+		{
+			"key": "Belief",
+			"score": 5
+		},
+		{
+			"key": "Bizarre Story",
+			"score": -2
+		},
+		{
+			"key": "Comforting",
+			"score": -2
+		},
+		{
+			"key": "Complain",
+			"score": -2
+		},
+		{
+			"key": "Criticism",
+			"score": 6
+		},
+		{
+			"key": "Cute Cheer",
+			"score": 3
+		},
+		{
+			"key": "Dream",
+			"score": 0
+		},
+		{
+			"key": "Food Story",
+			"score": 2
+		},
+		{
+			"key": "Gossip",
+			"score": 1
+		},
+		{
+			"key": "Happy Memory",
+			"score": 1
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": 5
+		},
+		{
+			"key": "Heroic Tale",
+			"score": 1
+		},
+		{
+			"key": "Horror",
+			"score": 2
+		},
+		{
+			"key": "Interesting Story",
+			"score": 0
+		},
+		{
+			"key": "Joyful Memories",
+			"score": 1
+		},
+		{
+			"key": "Myth",
+			"score": 3
+		},
+		{
+			"key": "Occult",
+			"score": 1
+		},
+		{
+			"key": "Reality Check",
+			"score": 3
+		},
+		{
+			"key": "Sad Memory",
+			"score": -1
+		},
+		{
+			"key": "Self Indulgent",
+			"score": 1
+		},
+		{
+			"key": "Unique Comment",
+			"score": 1
+		}
+	],
+	"memory": {
+		"potision": "pos-lr",
+		"release": [
+			{
+				"key": "Effectiveness",
+				"value": "5.8%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "8.7%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "11.6%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "14.5%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "17.4%"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Attack",
+				"value": "6%"
+			},
+			{
+				"key": "Attack",
+				"value": "9%"
+			},
+			{
+				"key": "Attack",
+				"value": "12%"
+			},
+			{
+				"key": "Attack",
+				"value": "15%"
+			},
+			{
+				"key": "Attack",
+				"value": "18%"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Sweep",
+			"type": "Active",
+			"description": {
+				"text": "Rapidly attacks two enemies with a Swordstorm, decreasing their Combat Readiness by 10%.",
+				"burn": "",
+				"soul": "+1",
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+2% Combat Readiness",
+					"+5% damage dealt",
+					"+3% Combat Readiness",
+					"+10% damage dealt",
+					"+10% damage dealt"
+				],
+				"multipliers": "ATK*0.975*1*1.871",
+				"text_ja": "対象を含む敵2体に攻撃し、アクションゲージを10％DOWNさせる。",
+				"burn_ja": ""
+			},
+			"title_ja": "掃尽"
+		},
+		{
+			"title": "Dark Contract",
+			"type": "Passive",
+			"description": {
+				"text": "After receiving lethal damage, caster regenerates to 70% Health, 100% Combat Readiness, full Focus, and reset cooldown for Dark Blade.",
+				"burn": "",
+				"soul": null,
+				"ct": "5",
+				"enhance": [
+					"+10% Health recovered when revived",
+					"+10% Health recovered when revived",
+					"+10% Health recovered when revived"
+				],
+				"multipliers": "",
+				"text_ja": "気絶するダメージを受けた時、70％の生命力で復活し、自身のアクションゲージが100％UPさせる。【集中】を最大まで獲得し、【覇剣漆黒】のスキルターンが0になる。",
+				"burn_ja": ""
+			},
+			"title_ja": "漆黒の契約"
+		},
+		{
+			"title": "Dark Blade",
+			"type": "Active",
+			"description": {
+				"text": "Attacks all enemies, decreasing Hit Chance for 2 turns. When Focus is full, consumes it all, increasing damage dealt. When the enemy is defeated with this skill, cooldown does not occur.",
+				"burn": "Increases damage dealt. (-10 Souls)",
+				"soul": "+3",
+				"ct": "5",
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+10% damage dealt",
+					"+10% damage dealt",
+					"+10% damage dealt"
+				],
+				"multipliers": "ATK*1.04*0.85*1.871 (1.29 soulburn)\n                                        \n                                                                                    1.23 attack rate with focus spent, 1.55 attack rate with focus and soul burn",
+				"text_ja": "敵全体に攻撃し、命中率DOWNを2ターンの間付与する。【集中】が最大の場合、すべて消費してダメージがUPする。このスキルで敵を気絶させた場合、スキルターンが0になる。",
+				"burn_ja": "ダメージがUPする。(魂力10消費)"
+			},
+			"title_ja": "覇剣漆黒"
+		}
+	]
+}

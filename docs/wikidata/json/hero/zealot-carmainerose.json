@@ -1,0 +1,240 @@
+{
+	"common": {
+		"name": "Zealot Carmainerose",
+		"image": "https://epic7x.com/wp-content/uploads/2021/01/Zealot-Carmainerose.png",
+		"attribute": "fire",
+		"sign": "aquarius",
+		"clazz": "mage",
+		"rarity": "3",
+		"name_ja": "伝道師カーマイン・ローズ"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "15",
+		"Critical_Hit_Damage": "150",
+		"dual_attack": "5",
+		"Effectiveness": "18",
+		"Effect_Resistance": "0",
+		"Speed": "101",
+		"Atk": "1168",
+		"HP": "3877",
+		"Def": "666"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": 3
+		},
+		{
+			"key": "Belief",
+			"score": 0
+		},
+		{
+			"key": "Bizarre Story",
+			"score": -3
+		},
+		{
+			"key": "Comforting",
+			"score": 3
+		},
+		{
+			"key": "Complain",
+			"score": 1
+		},
+		{
+			"key": "Criticism",
+			"score": 8
+		},
+		{
+			"key": "Cute Cheer",
+			"score": 5
+		},
+		{
+			"key": "Dream",
+			"score": 0
+		},
+		{
+			"key": "Food Story",
+			"score": 3
+		},
+		{
+			"key": "Gossip",
+			"score": 2
+		},
+		{
+			"key": "Happy Memory",
+			"score": 2
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": -3
+		},
+		{
+			"key": "Heroic Tale",
+			"score": 5
+		},
+		{
+			"key": "Horror",
+			"score": 1
+		},
+		{
+			"key": "Interesting Story",
+			"score": -1
+		},
+		{
+			"key": "Joyful Memories",
+			"score": 2
+		},
+		{
+			"key": "Myth",
+			"score": 5
+		},
+		{
+			"key": "Occult",
+			"score": 3
+		},
+		{
+			"key": "Reality Check",
+			"score": -3
+		},
+		{
+			"key": "Sad Memory",
+			"score": 0
+		},
+		{
+			"key": "Self Indulgent",
+			"score": -5
+		},
+		{
+			"key": "Unique Comment",
+			"score": 0
+		}
+	],
+	"memory": {
+		"potision": "pos-all",
+		"release": [
+			{
+				"key": "Def",
+				"value": "12"
+			},
+			{
+				"key": "Def",
+				"value": "18"
+			},
+			{
+				"key": "Def",
+				"value": "24"
+			},
+			{
+				"key": "Def",
+				"value": "30"
+			},
+			{
+				"key": "Def",
+				"value": "36"
+			},
+			{
+				"key": "Def",
+				"value": "42"
+			},
+			{
+				"key": "Def",
+				"value": "48"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Defense",
+				"value": "36"
+			},
+			{
+				"key": "Defense",
+				"value": "54"
+			},
+			{
+				"key": "Defense",
+				"value": "72"
+			},
+			{
+				"key": "Defense",
+				"value": "90"
+			},
+			{
+				"key": "Defense",
+				"value": "108"
+			},
+			{
+				"key": "Defense",
+				"value": "126"
+			},
+			{
+				"key": "Defense",
+				"value": "144"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Vampirism",
+			"type": "Active",
+			"description": {
+				"text": "Claws the enemy, absorbing some of the damage as Health.",
+				"burn": "",
+				"soul": null,
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+10% damage dealt",
+					"+15% healing",
+					"+15% healing",
+					"+15% damage dealt"
+				],
+				"multipliers": "",
+				"text_ja": "敵単体に攻撃し、与えたダメージに応じて自身の生命力を回復する。",
+				"burn_ja": ""
+			},
+			"title_ja": "吸血"
+		},
+		{
+			"title": "Vengeful Strike",
+			"type": "Active",
+			"description": {
+				"text": "Attacks the enemy, decreasing Combat Readiness by 35%, and decreasing Speed of the enemy and increasing Speed of the caster for 2 turns each.",
+				"burn": "",
+				"soul": null,
+				"ct": "4",
+				"enhance": [
+					"+10% damage dealt",
+					"+10% Combat Readiness",
+					"-1 turn cooldown",
+					"+10% Combat Readiness",
+					"+15% damage dealt"
+				],
+				"multipliers": "",
+				"text_ja": "敵単体に攻撃し、アクションゲージを35%DOWNし、スピードDOWNを2ターンの間付与する。自身にスピードUPを2ターンの間付与する。",
+				"burn_ja": ""
+			},
+			"title_ja": "怨恨の一撃"
+		},
+		{
+			"title": "Spiteful Annihilation",
+			"type": "Active",
+			"description": {
+				"text": "Attacks the enemy dispelling all buffs and making them unable to be buffed for 2 turns, before increasing Attack and Defense of the caster for 2 turns.",
+				"burn": "",
+				"soul": null,
+				"ct": "4",
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"-1 turn cooldown",
+					"+10% damage dealt",
+					"+15% damage dealt"
+				],
+				"multipliers": "",
+				"text_ja": "敵単体に攻撃し、強化効果をすべて解除し、強化不可を2ターンの間付与する。自身に攻撃力UP・防御力UPを2ターンの間付与する。",
+				"burn_ja": "このスキルによる強化効果の持続ターンが1UPする。(魂力10消費)"
+			},
+			"title_ja": "怨魂抹殺"
+		}
+	]
+}

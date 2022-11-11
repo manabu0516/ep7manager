@@ -1,0 +1,224 @@
+{
+	"common": {
+		"name": "Top Model Luluca",
+		"image": "https://epic7x.com/wp-content/uploads/2020/10/luluca-full.png",
+		"attribute": "dark",
+		"sign": "sagittarius",
+		"clazz": "mage",
+		"rarity": "5",
+		"name_ja": "最強モデルルルカ"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "27",
+		"Critical_Hit_Damage": "150",
+		"dual_attack": "5",
+		"Effectiveness": "0",
+		"Effect_Resistance": "0",
+		"Speed": "115",
+		"Atk": "1228",
+		"HP": "4370",
+		"Def": "662"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": 5
+		},
+		{
+			"key": "Belief",
+			"score": -2
+		},
+		{
+			"key": "Bizarre Story",
+			"score": -1
+		},
+		{
+			"key": "Comforting",
+			"score": 6
+		},
+		{
+			"key": "Complain",
+			"score": -2
+		},
+		{
+			"key": "Criticism",
+			"score": 5
+		},
+		{
+			"key": "Cute Cheer",
+			"score": 7
+		},
+		{
+			"key": "Dream",
+			"score": 2
+		},
+		{
+			"key": "Food Story",
+			"score": 4
+		},
+		{
+			"key": "Gossip",
+			"score": 1
+		},
+		{
+			"key": "Happy Memory",
+			"score": 4
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": 0
+		},
+		{
+			"key": "Heroic Tale",
+			"score": 8
+		},
+		{
+			"key": "Horror",
+			"score": 1
+		},
+		{
+			"key": "Interesting Story",
+			"score": 1
+		},
+		{
+			"key": "Joyful Memories",
+			"score": 3
+		},
+		{
+			"key": "Myth",
+			"score": 6
+		},
+		{
+			"key": "Occult",
+			"score": 4
+		},
+		{
+			"key": "Reality Check",
+			"score": -3
+		},
+		{
+			"key": "Sad Memory",
+			"score": -2
+		},
+		{
+			"key": "Self Indulgent",
+			"score": -1
+		},
+		{
+			"key": "Unique Comment",
+			"score": 0
+		}
+	],
+	"memory": {
+		"potision": "pos-all",
+		"release": [
+			{
+				"key": "Attack",
+				"value": "4.3%"
+			},
+			{
+				"key": "Attack",
+				"value": "6.4%"
+			},
+			{
+				"key": "Attack",
+				"value": "8.6%"
+			},
+			{
+				"key": "Attack",
+				"value": "10.7%"
+			},
+			{
+				"key": "Attack",
+				"value": "12.9%"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Attack",
+				"value": "6%"
+			},
+			{
+				"key": "Attack",
+				"value": "9%"
+			},
+			{
+				"key": "Attack",
+				"value": "12%"
+			},
+			{
+				"key": "Attack",
+				"value": "15%"
+			},
+			{
+				"key": "Attack",
+				"value": "18%"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Energy Blast",
+			"type": "Active",
+			"description": {
+				"text": "Uses the suit's energy to attack the enemy. When used on the caster's turn, has a 40% chance to grant an extra attack with the same skill. When the enemy is not an Elite or Boss monster, damage sharing effects are ignored.",
+				"burn": "Increases effect chance to 100%. (-10 Souls)",
+				"soul": "+1",
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+10% damage dealt"
+				],
+				"multipliers": "ATK*1*1*1.871",
+				"text_ja": "敵単体に攻撃する。自身のターンに【エネルギー爆発】を使用した時、40%の確率で同じスキルで追加攻撃を発動する。対象が精鋭・ボスモンスターでない場合、ダメージ分配効果を無視する。",
+				"burn_ja": "追加攻撃の発動率が100%になる。(魂力10消費)"
+			},
+			"title_ja": "エネルギー爆発"
+		},
+		{
+			"title": "Victory Pose",
+			"type": "Active",
+			"description": {
+				"text": "Manifests the suit's energy, increasing Combat Readiness of all allies by 15% and increasing Attack of the caster for 2 turns. Grants the caster and extra turn.",
+				"burn": "",
+				"soul": "+2",
+				"ct": "5",
+				"enhance": [
+					"+1% Combat Readiness",
+					"+1% Combat Readiness",
+					"-1 turn cooldown",
+					"+1% Combat Readiness",
+					"+2% Combat Readiness"
+				],
+				"multipliers": "",
+				"text_ja": "味方全体のアクションゲージを15%UPさせ、自身に攻撃力UPを2ターンの間付与する。自身に追加ターンが発生する。",
+				"burn_ja": ""
+			},
+			"title_ja": "勝利のポーズ"
+		},
+		{
+			"title": "Demolish",
+			"type": "Active",
+			"description": {
+				"text": "Transcends cosmic space to attack the enemy with dimensional energy, before granting the caster stealth for 2 turns, and increasing the Attack of all allies except the caster for 2 turns. When the enemy is defeated, inflicts extinction and decreases the caster's skill cooldown by 1 turn. Damage dealt increases proportional to the caster's Speed.",
+				"burn": "",
+				"soul": "+2",
+				"ct": "5",
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"-1 turn cooldown",
+					"+10% damage dealt",
+					"+10% damage dealt"
+				],
+				"multipliers": "",
+				"text_ja": "敵単体に攻撃し、自身に潜伏を2ターンの間・自身以外の味方全体に攻撃力UPを2ターンの間付与する。このスキルで敵を気絶させた場合、対象を消滅させ、自身のスキルターンが1減少する。自身のスピードが高いほどダメージがUPする。",
+				"burn_ja": ""
+			},
+			"title_ja": "撲殺"
+		}
+	]
+}

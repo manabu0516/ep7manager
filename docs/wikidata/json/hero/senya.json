@@ -1,0 +1,224 @@
+{
+	"common": {
+		"name": "Senya",
+		"image": "https://epic7x.com/wp-content/uploads/2021/04/Senya.png",
+		"attribute": "earth",
+		"sign": "taurus",
+		"clazz": "knight",
+		"rarity": "5",
+		"name_ja": "シェナ"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "15",
+		"Critical_Hit_Damage": "150",
+		"dual_attack": "5",
+		"Effectiveness": "0",
+		"Effect_Resistance": "0",
+		"Speed": "100",
+		"Atk": "1445",
+		"HP": "6321",
+		"Def": "645"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": 0
+		},
+		{
+			"key": "Belief",
+			"score": 6
+		},
+		{
+			"key": "Bizarre Story",
+			"score": -2
+		},
+		{
+			"key": "Comforting",
+			"score": 2
+		},
+		{
+			"key": "Complain",
+			"score": -8
+		},
+		{
+			"key": "Criticism",
+			"score": 5
+		},
+		{
+			"key": "Cute Cheer",
+			"score": 3
+		},
+		{
+			"key": "Dream",
+			"score": 5
+		},
+		{
+			"key": "Food Story",
+			"score": 3
+		},
+		{
+			"key": "Gossip",
+			"score": -6
+		},
+		{
+			"key": "Happy Memory",
+			"score": -3
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": 2
+		},
+		{
+			"key": "Heroic Tale",
+			"score": 3
+		},
+		{
+			"key": "Horror",
+			"score": -1
+		},
+		{
+			"key": "Interesting Story",
+			"score": 2
+		},
+		{
+			"key": "Joyful Memories",
+			"score": 6
+		},
+		{
+			"key": "Myth",
+			"score": 0
+		},
+		{
+			"key": "Occult",
+			"score": 3
+		},
+		{
+			"key": "Reality Check",
+			"score": -2
+		},
+		{
+			"key": "Sad Memory",
+			"score": 6
+		},
+		{
+			"key": "Self Indulgent",
+			"score": -2
+		},
+		{
+			"key": "Unique Comment",
+			"score": 3
+		}
+	],
+	"memory": {
+		"potision": "pos-all",
+		"release": [
+			{
+				"key": "Health",
+				"value": "3.6%"
+			},
+			{
+				"key": "Health",
+				"value": "5.4%"
+			},
+			{
+				"key": "Health",
+				"value": "7.2%"
+			},
+			{
+				"key": "Health",
+				"value": "9.0%"
+			},
+			{
+				"key": "Health",
+				"value": "10.8%"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Attack",
+				"value": "6%"
+			},
+			{
+				"key": "Attack",
+				"value": "9%"
+			},
+			{
+				"key": "Attack",
+				"value": "12%"
+			},
+			{
+				"key": "Attack",
+				"value": "15%"
+			},
+			{
+				"key": "Attack",
+				"value": "18%"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Spear of Vengeance",
+			"type": "Active",
+			"description": {
+				"text": "Attacks the enemy with a spear, with a 65% chance to provoke for 1 turn. When it is not the caster's turn, effect chance increases by 25%.",
+				"burn": "",
+				"soul": "+1",
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+10% effect chance",
+					"+10% damage dealt",
+					"+10% damage dealt"
+				],
+				"multipliers": "ATK*0.95*1*1.871",
+				"text_ja": "敵単体に攻撃し、65%の確率で挑発を1ターンの間付与する。自身以外のターンの場合、効果発生率が25%UPする。",
+				"burn_ja": ""
+			},
+			"title_ja": "復讐の槍"
+		},
+		{
+			"title": "Indomitable Spirit",
+			"type": "Passive",
+			"description": {
+				"text": "The caster cannot trigger a critical hit, but Attack increases by 30% and Critical Hit Resistance increases by 35%. When attacked, if the caster suffers a non-critical hit, deals damage to the attacker proportional to the caster's Attack before activating Grace of the Battlefield. Grace of the Battlefield can only be activated once every 2 turns. Grace of the Battlefield: Grants a barrier to all allies for 2 turns and increases Speed of the caster for 2 turns. Barrier strength increases proportional to the caster's Attack.",
+				"burn": "",
+				"soul": null,
+				"ct": null,
+				"enhance": [
+					"+2% Critical Hit Resistance",
+					"+3% Critical Hit Resistance",
+					"+3% Critical Hit Resistance",
+					"+3% Critical Hit Resistance",
+					"+4% Critical Hit Resistance"
+				],
+				"multipliers": "",
+				"text_ja": "クリティカルが発生しない。攻撃力が30%UPし、クリティカル抵抗率が35%UPする。攻撃を受けた時、クリティカルが発生しなかった場合、自身の攻撃力に応じて攻撃者にダメージを与え、【戦場の加護】を発動する。【戦場の加護】は2ターンに1回まで発動する。戦場の加護：味方全体にシールド・自身にスピードUPを2ターンの間付与する。自身の攻撃力が高いほどシールド効果がUPする。",
+				"burn_ja": ""
+			},
+			"title_ja": "不屈の闘志"
+		},
+		{
+			"title": "Dragon Slayer's Strike",
+			"type": "Active",
+			"description": {
+				"text": "Strikes all enemies with a spear, with a 75% chance to decrease Hit Chance for 2 turns and an 60% chance to provoke for 1 turn. Adopts a counterattacking stance for 2 turns.",
+				"burn": "Skill cooldown is decreased by 2 turns. (-10 Souls)",
+				"soul": "+3",
+				"ct": "5",
+				"enhance": [
+					"+5% damage dealt",
+					"+10% effect chance",
+					"-1 turn cooldown",
+					"+15% effect chance",
+					"+15% damage dealt"
+				],
+				"multipliers": "ATK*1.5*1.1*1.871",
+				"text_ja": "敵全体に攻撃し、75%の確率で命中率DOWNを2ターンの間、60%の確率で挑発を1ターンの間付与する。自身に反撃を3ターンの間付与する。",
+				"burn_ja": "スキルターンが2減少する。(魂力10消費)"
+			},
+			"title_ja": "龍狩りの一撃"
+		}
+	]
+}

@@ -1,0 +1,224 @@
+{
+	"common": {
+		"name": "Rem",
+		"image": "https://epic7x.com/wp-content/uploads/2021/08/Rem-1.png",
+		"attribute": "ice",
+		"sign": "scorpio",
+		"clazz": "warrior",
+		"rarity": "5",
+		"name_ja": "レム"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "15",
+		"Critical_Hit_Damage": "150",
+		"dual_attack": "5",
+		"Effectiveness": "0",
+		"Effect_Resistance": "0",
+		"Speed": "102",
+		"Atk": "1208",
+		"HP": "6488",
+		"Def": "616"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": 3
+		},
+		{
+			"key": "Belief",
+			"score": 8
+		},
+		{
+			"key": "Bizarre Story",
+			"score": 2
+		},
+		{
+			"key": "Comforting",
+			"score": 3
+		},
+		{
+			"key": "Complain",
+			"score": 0
+		},
+		{
+			"key": "Criticism",
+			"score": 3
+		},
+		{
+			"key": "Cute Cheer",
+			"score": 4
+		},
+		{
+			"key": "Dream",
+			"score": 3
+		},
+		{
+			"key": "Food Story",
+			"score": 0
+		},
+		{
+			"key": "Gossip",
+			"score": 3
+		},
+		{
+			"key": "Happy Memory",
+			"score": 2
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": 3
+		},
+		{
+			"key": "Heroic Tale",
+			"score": 2
+		},
+		{
+			"key": "Horror",
+			"score": 0
+		},
+		{
+			"key": "Interesting Story",
+			"score": 3
+		},
+		{
+			"key": "Joyful Memories",
+			"score": 5
+		},
+		{
+			"key": "Myth",
+			"score": 1
+		},
+		{
+			"key": "Occult",
+			"score": 3
+		},
+		{
+			"key": "Reality Check",
+			"score": 0
+		},
+		{
+			"key": "Sad Memory",
+			"score": 3
+		},
+		{
+			"key": "Self Indulgent",
+			"score": 1
+		},
+		{
+			"key": "Unique Comment",
+			"score": 3
+		}
+	],
+	"memory": {
+		"potision": "pos-all",
+		"release": [
+			{
+				"key": "Health",
+				"value": "4.3%"
+			},
+			{
+				"key": "Health",
+				"value": "6.4%"
+			},
+			{
+				"key": "Health",
+				"value": "8.6%"
+			},
+			{
+				"key": "Health",
+				"value": "10.7%"
+			},
+			{
+				"key": "Health",
+				"value": "12.0%"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Critical Hit Chance",
+				"value": "5.60%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "8.40%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "11.20%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "14%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "16.8%"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Leave It To Me.",
+			"type": "Active",
+			"description": {
+				"text": "Attacks the enemy with a morning star, with a 35% change to decrease Defense for 2 turns. When the caster is granted Demon Mode, grants the caster an extra attack with this skill.",
+				"burn": "Increases effect chance to 100%. (-10 Souls)",
+				"soul": "+1",
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+5% effect chance",
+					"+10% damage dealt",
+					"+10% effect chance",
+					"+15% damage dealt"
+				],
+				"multipliers": "ATK*0.95*1*1.871",
+				"text_ja": "敵単体に攻撃し、35%の確率で防御力DOWNを2ターンの間付与する。自身が鬼化状態の場合、同じスキルで追加攻撃を発動する。",
+				"burn_ja": "効果発生率が100%になる。(魂力10消費)"
+			},
+			"title_ja": "レムにお任せください"
+		},
+		{
+			"title": "A Maid's Pride",
+			"type": "Passive",
+			"description": {
+				"text": "When somebody dies, dispels all debuffs from the caster and grants Demon Mode for 2 turns. Can only be activated once every 5 turns. When an ally except for the caster is attacked, has a 15% chance to counterattack with Iron Strike. Iron Strike takes priority over a counterattack with a basic skill. Iron Strike: Attacks all enemies, decreasing buff durations by 1 turn and making them unhealable for 1 turn.",
+				"burn": "",
+				"soul": null,
+				"ct": null,
+				"enhance": [
+					"+0.5% counterattack chance",
+					"+0.5% counterattack chance",
+					"+1% counterattack chance",
+					"+1% counterattack chance",
+					"+2% counterattack chance"
+				],
+				"multipliers": "ATK*0.5*1*1.871 (Iron Strike)",
+				"text_ja": "敵・味方が気絶する時、自身の弱体効果をすべて解除し、鬼化を2ターンの間付与する。5ターンに1回まで発動する。自身以外の味方が攻撃を受けた時、15%の確率で【鉄球の連撃】で反撃する。【鉄球の連撃】での反撃は、基本スキルでの反撃より優先される。鉄球の連撃：敵全体に攻撃し、強化効果を1ターン短縮させ、回復不可を1ターンの間付与する。",
+				"burn_ja": ""
+			},
+			"title_ja": "使用人の矜持"
+		},
+		{
+			"title": "I Will Punish You!",
+			"type": "Active",
+			"description": {
+				"text": "Increases Attack of the caster for 3 turns, before leaping up to attack all enemies and decrease Hit Chance for 2 turns, before increasing Combat Readiness of the caster by 50%.",
+				"burn": "",
+				"soul": "+3",
+				"ct": "5",
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"-1 turn cooldown",
+					"+10% damage dealt",
+					"+10% damage dealt"
+				],
+				"multipliers": "ATK*1*1*1.871",
+				"text_ja": "自身に攻撃力UPを3ターンの間付与し、敵全体に攻撃し、命中率DOWNを2ターンの間付与する。自身のアクションゲージを50%UPさせる。",
+				"burn_ja": ""
+			},
+			"title_ja": "レムが誅を下します"
+		}
+	]
+}

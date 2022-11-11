@@ -1,0 +1,211 @@
+{
+	"common": {
+		"name": "Pyllis",
+		"image": "https://epic7x.com/wp-content/uploads/2019/01/pyllis-full.png",
+		"attribute": "dark",
+		"sign": "cancer",
+		"clazz": "knight",
+		"rarity": "3",
+		"name_ja": "ピィリス"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "15",
+		"Critical_Hit_Damage": "150",
+		"dual_attack": "5",
+		"Effectiveness": "0",
+		"Effect_Resistance": "0",
+		"Speed": "91",
+		"Atk": "685",
+		"HP": "6403",
+		"Def": "703"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": 2
+		},
+		{
+			"key": "Belief",
+			"score": -3
+		},
+		{
+			"key": "Bizarre Story",
+			"score": -1
+		},
+		{
+			"key": "Comforting",
+			"score": 3
+		},
+		{
+			"key": "Complain",
+			"score": -1
+		},
+		{
+			"key": "Criticism",
+			"score": -1
+		},
+		{
+			"key": "Cute Cheer",
+			"score": 2
+		},
+		{
+			"key": "Dream",
+			"score": 1
+		},
+		{
+			"key": "Food Story",
+			"score": 6
+		},
+		{
+			"key": "Gossip",
+			"score": -3
+		},
+		{
+			"key": "Happy Memory",
+			"score": 2
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": 5
+		},
+		{
+			"key": "Heroic Tale",
+			"score": 4
+		},
+		{
+			"key": "Horror",
+			"score": -2
+		},
+		{
+			"key": "Interesting Story",
+			"score": 1
+		},
+		{
+			"key": "Joyful Memories",
+			"score": 3
+		},
+		{
+			"key": "Myth",
+			"score": 1
+		},
+		{
+			"key": "Occult",
+			"score": -2
+		},
+		{
+			"key": "Reality Check",
+			"score": 1
+		},
+		{
+			"key": "Sad Memory",
+			"score": 3
+		},
+		{
+			"key": "Self Indulgent",
+			"score": -2
+		},
+		{
+			"key": "Unique Comment",
+			"score": 1
+		}
+	],
+	"memory": {
+		"potision": "pos-all",
+		"release": [
+			{
+				"key": "Def",
+				"value": "12"
+			},
+			{
+				"key": "Def",
+				"value": "18"
+			},
+			{
+				"key": "Def",
+				"value": "24"
+			},
+			{
+				"key": "Def",
+				"value": "30"
+			},
+			{
+				"key": "Def",
+				"value": "36"
+			},
+			{
+				"key": "Def",
+				"value": "42"
+			},
+			{
+				"key": "Def",
+				"value": "48"
+			}
+		],
+		"concentration": []
+	},
+	"skills": [
+		{
+			"title": "Weak Blow",
+			"type": "Active",
+			"description": {
+				"text": "Attacks the enemy, with a 50% chance to provoke for 1 turn. Damage dealt increases proportional to the caster's Defense.",
+				"burn": "",
+				"soul": "+1",
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+10% effect chance",
+					"+10% damage dealt",
+					"+15% effect chance",
+					"+15% damage dealt"
+				],
+				"multipliers": "(ATK*0.7+Def*0.4)*1.871",
+				"text_ja": "敵単体に攻撃し、50%の確率で挑発を付与する。自身の防御力が高いほどダメージがUPする。",
+				"burn_ja": ""
+			},
+			"title_ja": "挑発"
+		},
+		{
+			"title": "Will",
+			"type": "Active",
+			"description": {
+				"text": "Increases Defense when attacked. Increases Defense of all allies for 2 turns every fourth attacked received. Effect can only stack up to 3 times.",
+				"burn": "",
+				"soul": null,
+				"ct": null,
+				"enhance": [
+					"+10% additional defense increase when attacked",
+					"+10% additional defense increase when attacked",
+					"+10% additional defense increase when attacked",
+					"+10% additional defense increase when attacked",
+					"+10% additional defense increase when attacked"
+				],
+				"multipliers": "2% Defense increase per stack, scales up to 3% with molagora",
+				"text_ja": "攻撃を受けた時、その攻撃に伴う効果が発生する前に自身の防御力がUPする。攻撃を4回受けるごとに、4回目の攻撃に伴う効果が発生する前に味方全体に防御力UPを2ターンの間付与する。自身の防御力UP効果は最大3回まで累積する。",
+				"burn_ja": ""
+			},
+			"title_ja": "意志"
+		},
+		{
+			"title": "Guard",
+			"type": "Active",
+			"description": {
+				"text": "Attacks the enemy before provoking for 1 turn, and grants barrier to all allies for 2 turns. Damage dealt and barrier strength increases in proportion to the caster's Defense.",
+				"burn": "Skill cooldown is decreased by 2 turns. (-10 Souls)",
+				"soul": "+2",
+				"ct": "4",
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"-1 turn cooldown",
+					"+10% damage dealt",
+					"+15% damage dealt"
+				],
+				"multipliers": "(ATK*1.3+Def*0.7)*1.77745\n                                        \n                                                                                    Barrier strength: 60% self Defense",
+				"text_ja": "敵単体に攻撃し、対象に挑発を1ターンの間付与し、味方全体にシールドを2ターンの間付与する。自身の防御力が高いほどダメージとシールド効果がUPする。",
+				"burn_ja": "スキルターンが2減少する。(魂力10消費)"
+			},
+			"title_ja": "態勢維持"
+		}
+	]
+}

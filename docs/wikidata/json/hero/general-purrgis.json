@@ -1,0 +1,232 @@
+{
+	"common": {
+		"name": "General Purrgis",
+		"image": "https://epic7x.com/wp-content/uploads/2019/01/General-Purrgis-1.png",
+		"attribute": "light",
+		"sign": "cancer",
+		"clazz": "warrior",
+		"rarity": "4",
+		"name_ja": "勇将ファジス"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "15",
+		"Critical_Hit_Damage": "150",
+		"dual_attack": "5",
+		"Effectiveness": "0",
+		"Effect_Resistance": "0",
+		"Speed": "103",
+		"Atk": "903",
+		"HP": "6635",
+		"Def": "630"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": 7
+		},
+		{
+			"key": "Belief",
+			"score": 0
+		},
+		{
+			"key": "Bizarre Story",
+			"score": 0
+		},
+		{
+			"key": "Comforting",
+			"score": 6
+		},
+		{
+			"key": "Complain",
+			"score": 1
+		},
+		{
+			"key": "Criticism",
+			"score": 0
+		},
+		{
+			"key": "Cute Cheer",
+			"score": 4
+		},
+		{
+			"key": "Dream",
+			"score": 4
+		},
+		{
+			"key": "Food Story",
+			"score": 2
+		},
+		{
+			"key": "Gossip",
+			"score": 1
+		},
+		{
+			"key": "Happy Memory",
+			"score": 5
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": 7
+		},
+		{
+			"key": "Heroic Tale",
+			"score": 3
+		},
+		{
+			"key": "Horror",
+			"score": 0
+		},
+		{
+			"key": "Interesting Story",
+			"score": 1
+		},
+		{
+			"key": "Joyful Memories",
+			"score": 5
+		},
+		{
+			"key": "Myth",
+			"score": 2
+		},
+		{
+			"key": "Occult",
+			"score": 0
+		},
+		{
+			"key": "Reality Check",
+			"score": 1
+		},
+		{
+			"key": "Sad Memory",
+			"score": 8
+		},
+		{
+			"key": "Self Indulgent",
+			"score": 0
+		},
+		{
+			"key": "Unique Comment",
+			"score": 0
+		}
+	],
+	"memory": {
+		"potision": "pos-all",
+		"release": [
+			{
+				"key": "Dual Attack Chance",
+				"value": "0.7%"
+			},
+			{
+				"key": "Dual Attack Chance",
+				"value": "1.0%"
+			},
+			{
+				"key": "Dual Attack Chance",
+				"value": "1.4%"
+			},
+			{
+				"key": "Dual Attack Chance",
+				"value": "1.7%"
+			},
+			{
+				"key": "Dual Attack Chance",
+				"value": "2.1%"
+			},
+			{
+				"key": "Dual Attack Chance",
+				"value": "2.5%"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Health",
+				"value": "4%"
+			},
+			{
+				"key": "Health",
+				"value": "6%"
+			},
+			{
+				"key": "Health",
+				"value": "8%"
+			},
+			{
+				"key": "Health",
+				"value": "10%"
+			},
+			{
+				"key": "Health",
+				"value": "12%"
+			},
+			{
+				"key": "Health",
+				"value": "14%"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Heroic Strike",
+			"type": "Active",
+			"description": {
+				"text": "Mows down enemies with a great sword, with a 50% chance to provoke for 1 turn. Damage dealt increases proportional to the caster's max Health.",
+				"burn": "",
+				"soul": "+1",
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+5% effect chance",
+					"+5% effect chance",
+					"+10% damage dealt",
+					"+15% effect chance",
+					"+15% damage dealt"
+				],
+				"multipliers": "ATK*1*1*1.871",
+				"text_ja": "敵単体に攻撃し、50％の確率で挑発を1ターンの間付与する。自身の最大生命力が高いほどダメージがUPする。",
+				"burn_ja": ""
+			},
+			"title_ja": "英雄の一撃"
+		},
+		{
+			"title": "Spearhead",
+			"type": "Passive",
+			"description": {
+				"text": "After being attacked, increases Combat Readiness of all allies by 10%.",
+				"burn": "",
+				"soul": null,
+				"ct": null,
+				"enhance": [
+					"+1% Combat Readiness",
+					"+2% Combat Readiness",
+					"+2% Combat Readiness"
+				],
+				"multipliers": "",
+				"text_ja": "自身が攻撃を受けた時、味方全員のアクションゲージを10％UPさせる。",
+				"burn_ja": ""
+			},
+			"title_ja": "先鋒"
+		},
+		{
+			"title": "Command to Charge",
+			"type": "Active",
+			"description": {
+				"text": "Gives the command to charge, dealing damage to all enemies, with a 75% chance of stunning two random enemies for 1 turn, before increasing Attack of all allies for 2 turns. Damage dealt increases proportional to the caster's max Health.",
+				"burn": "Skill cooldown is decreased by 2 turns. (-10 Souls)",
+				"soul": "+3",
+				"ct": "6",
+				"enhance": [
+					"+5% damage dealt",
+					"+10% effect chance",
+					"-1 turn cooldown",
+					"+15% effect chance",
+					"+10% damage dealt",
+					"+15% damage dealt"
+				],
+				"multipliers": "ATK*0.8*1*1.871",
+				"text_ja": "敵全体に攻撃し、ランダムな対象2体に75％の確率でスタンを1ターンの間付与し、味方全体に攻撃力UPを2ターンの間付与する。自身の最大生命力が高いほどダメージがUPする。",
+				"burn_ja": "スキルターンが2減少する。(魂力10消費)"
+			},
+			"title_ja": "突撃指令"
+		}
+	]
+}

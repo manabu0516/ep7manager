@@ -1,0 +1,240 @@
+{
+	"common": {
+		"name": "Kluri",
+		"image": "https://epic7x.com/wp-content/uploads/2019/01/kluri-full.png",
+		"attribute": "earth",
+		"sign": "aries",
+		"clazz": "knight",
+		"rarity": "3",
+		"name_ja": "クルリ"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "15",
+		"Critical_Hit_Damage": "150",
+		"dual_attack": "5",
+		"Effectiveness": "18",
+		"Effect_Resistance": "0",
+		"Speed": "105",
+		"Atk": "703",
+		"HP": "5914",
+		"Def": "596"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": 2
+		},
+		{
+			"key": "Belief",
+			"score": -3
+		},
+		{
+			"key": "Bizarre Story",
+			"score": -2
+		},
+		{
+			"key": "Comforting",
+			"score": 3
+		},
+		{
+			"key": "Complain",
+			"score": 2
+		},
+		{
+			"key": "Criticism",
+			"score": 2
+		},
+		{
+			"key": "Cute Cheer",
+			"score": 3
+		},
+		{
+			"key": "Dream",
+			"score": 0
+		},
+		{
+			"key": "Food Story",
+			"score": 6
+		},
+		{
+			"key": "Gossip",
+			"score": 1
+		},
+		{
+			"key": "Happy Memory",
+			"score": 2
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": -3
+		},
+		{
+			"key": "Heroic Tale",
+			"score": 0
+		},
+		{
+			"key": "Horror",
+			"score": -4
+		},
+		{
+			"key": "Interesting Story",
+			"score": 4
+		},
+		{
+			"key": "Joyful Memories",
+			"score": 4
+		},
+		{
+			"key": "Myth",
+			"score": -3
+		},
+		{
+			"key": "Occult",
+			"score": 2
+		},
+		{
+			"key": "Reality Check",
+			"score": -3
+		},
+		{
+			"key": "Sad Memory",
+			"score": 3
+		},
+		{
+			"key": "Self Indulgent",
+			"score": -2
+		},
+		{
+			"key": "Unique Comment",
+			"score": 2
+		}
+	],
+	"memory": {
+		"potision": "pos-all",
+		"release": [
+			{
+				"key": "Def",
+				"value": "12"
+			},
+			{
+				"key": "Def",
+				"value": "18"
+			},
+			{
+				"key": "Def",
+				"value": "24"
+			},
+			{
+				"key": "Def",
+				"value": "30"
+			},
+			{
+				"key": "Def",
+				"value": "36"
+			},
+			{
+				"key": "Def",
+				"value": "42"
+			},
+			{
+				"key": "Def",
+				"value": "48"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Defense",
+				"value": "36"
+			},
+			{
+				"key": "Defense",
+				"value": "54"
+			},
+			{
+				"key": "Defense",
+				"value": "72"
+			},
+			{
+				"key": "Defense",
+				"value": "90"
+			},
+			{
+				"key": "Defense",
+				"value": "108"
+			},
+			{
+				"key": "Defense",
+				"value": "126"
+			},
+			{
+				"key": "Defense",
+				"value": "144"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Light Step",
+			"type": "Active",
+			"description": {
+				"text": "Strikes in the direction of the enemy, increasing the caster's Combat Readiness by 15%. Damage dealt increases proportional to the caster's Defense.",
+				"burn": "",
+				"soul": "+1",
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+5% Combat Readiness",
+					"+5% damage dealt",
+					"+10% damage dealt",
+					"+15% damage dealt"
+				],
+				"multipliers": "(ATK*0.5+Def*0.07)*1.6839\n                                        \n                                                                                    70% self Defense (0.7 * Defense)",
+				"text_ja": "敵単体に攻撃し、自身のアクションゲージを15%UPさせる。自身の防御力が高いほどダメージがUPする。",
+				"burn_ja": ""
+			},
+			"title_ja": "軽やかなステップ"
+		},
+		{
+			"title": "Magic Resist",
+			"type": "Active",
+			"description": {
+				"text": "Recovers 5% Health at the beginning of a turn.",
+				"burn": "",
+				"soul": null,
+				"ct": null,
+				"enhance": [
+					"+0.5% healing",
+					"+0.5% healing",
+					"+1% healing",
+					"+1% healing",
+					"+1% healing",
+					"+1% healing"
+				],
+				"multipliers": "",
+				"text_ja": "毎ターン開始時、自身の生命力を5.0%回復する。",
+				"burn_ja": ""
+			},
+			"title_ja": "魔法耐性"
+		},
+		{
+			"title": "Fortitude",
+			"type": "Active",
+			"description": {
+				"text": "Has a 75% chance to provoke and decrease Defense for 2 turns.",
+				"burn": "Ignores effect resistance. (-20 Souls)",
+				"soul": "+3",
+				"ct": "6",
+				"enhance": [
+					"+10% effect chance",
+					"-1 turn cooldown",
+					"+15% effect chance"
+				],
+				"multipliers": "",
+				"text_ja": "敵単体に75%の確率で挑発・防御力DOWNを2ターンの間付与する。",
+				"burn_ja": "効果抵抗を無視する。(魂力20消費)"
+			},
+			"title_ja": "弱体化"
+		}
+	]
+}

@@ -1,0 +1,232 @@
+{
+	"common": {
+		"name": "Karin",
+		"image": "https://epic7x.com/wp-content/uploads/2019/01/karin-full.png",
+		"attribute": "ice",
+		"sign": "leo",
+		"clazz": "thief",
+		"rarity": "4",
+		"name_ja": "カリン"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "23",
+		"Critical_Hit_Damage": "150",
+		"dual_attack": "5",
+		"Effectiveness": "0",
+		"Effect_Resistance": "0",
+		"Speed": "113",
+		"Atk": "1188",
+		"HP": "4855",
+		"Def": "508"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": 1
+		},
+		{
+			"key": "Belief",
+			"score": 3
+		},
+		{
+			"key": "Bizarre Story",
+			"score": 0
+		},
+		{
+			"key": "Comforting",
+			"score": 2
+		},
+		{
+			"key": "Complain",
+			"score": 2
+		},
+		{
+			"key": "Criticism",
+			"score": -4
+		},
+		{
+			"key": "Cute Cheer",
+			"score": 5
+		},
+		{
+			"key": "Dream",
+			"score": 4
+		},
+		{
+			"key": "Food Story",
+			"score": 7
+		},
+		{
+			"key": "Gossip",
+			"score": 2
+		},
+		{
+			"key": "Happy Memory",
+			"score": 4
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": 5
+		},
+		{
+			"key": "Heroic Tale",
+			"score": 5
+		},
+		{
+			"key": "Horror",
+			"score": -4
+		},
+		{
+			"key": "Interesting Story",
+			"score": 3
+		},
+		{
+			"key": "Joyful Memories",
+			"score": 6
+		},
+		{
+			"key": "Myth",
+			"score": 3
+		},
+		{
+			"key": "Occult",
+			"score": 0
+		},
+		{
+			"key": "Reality Check",
+			"score": -4
+		},
+		{
+			"key": "Sad Memory",
+			"score": 3
+		},
+		{
+			"key": "Self Indulgent",
+			"score": 3
+		},
+		{
+			"key": "Unique Comment",
+			"score": 3
+		}
+	],
+	"memory": {
+		"potision": "pos-tl",
+		"release": [
+			{
+				"key": "Critical Hit Chance",
+				"value": "4.3%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "6.5%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "8.6%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "10.7%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "12.9%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "15%"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Critical Hit Chance",
+				"value": "4.20%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "6.30%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "8.40%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "10.50%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "12.60%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "14.70%"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Sequential Cutter",
+			"type": "Active",
+			"description": {
+				"text": "Strikes the enemy with a sword. A critical hit will decrease cooldown for 1 turn.",
+				"burn": "",
+				"soul": "+1",
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+10% damage dealt",
+					"+10% damage dealt",
+					"+10% damage dealt"
+				],
+				"multipliers": "ATK*1*0.95*1.871",
+				"text_ja": "敵単体に攻撃する。この攻撃でクリティカルが発生した時、自身のスキルターンが1減少する。",
+				"burn_ja": ""
+			},
+			"title_ja": "連撃斬"
+		},
+		{
+			"title": "Blade Art: Flash",
+			"type": "Active",
+			"description": {
+				"text": "Slashes the enemy. A critical hit will decrease Defense for 1 turn and grant an extra turn.",
+				"burn": "",
+				"soul": "+2",
+				"ct": "4",
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+5% damage dealt"
+				],
+				"multipliers": "ATK*1*0.9*1.871",
+				"text_ja": "敵単体に攻撃する。この攻撃でクリティカルが発生した時、対象に防御力DOWNを1ターンの間付与する。更に追加ターンが発生する。",
+				"burn_ja": ""
+			},
+			"title_ja": "居合：一閃"
+		},
+		{
+			"title": "Blade Art: Thunder",
+			"type": "Active",
+			"description": {
+				"text": "Cuts the enemy with lightning speed. A critical hit will increase damage.",
+				"burn": "Increases damage dealt (-10 Souls)",
+				"soul": "+3",
+				"ct": "7",
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"-1 turn cooldown",
+					"+10% damage dealt",
+					"+10% damage dealt",
+					"+10% damage dealt"
+				],
+				"multipliers": "ATK*1.6*0.85*1.871 (2.3 soul burn)\n                                        \n                                                                                    50% increase to critical damage multiplier",
+				"text_ja": "敵単体に攻撃する。この攻撃でクリティカルが発生した時、ダメージがUPする。",
+				"burn_ja": "ダメージがUPする。(魂力10消費)"
+			},
+			"title_ja": "居合：雷神"
+		}
+	]
+}

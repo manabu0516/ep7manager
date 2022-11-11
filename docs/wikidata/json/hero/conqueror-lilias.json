@@ -1,0 +1,224 @@
+{
+	"common": {
+		"name": "Conqueror Lilias",
+		"image": "https://epic7x.com/wp-content/uploads/2021/12/Conqueror-Lilias.png",
+		"attribute": "light",
+		"sign": "aquarius",
+		"clazz": "warrior",
+		"rarity": "5",
+		"name_ja": "支配者リリアス"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "15",
+		"Critical_Hit_Damage": "150",
+		"dual_attack": "5",
+		"Effectiveness": "18",
+		"Effect_Resistance": "0",
+		"Speed": "121",
+		"Atk": "885",
+		"HP": "6149",
+		"Def": "613"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": 2
+		},
+		{
+			"key": "Belief",
+			"score": 7
+		},
+		{
+			"key": "Bizarre Story",
+			"score": 0
+		},
+		{
+			"key": "Comforting",
+			"score": 5
+		},
+		{
+			"key": "Complain",
+			"score": 0
+		},
+		{
+			"key": "Criticism",
+			"score": 6
+		},
+		{
+			"key": "Cute Cheer",
+			"score": 7
+		},
+		{
+			"key": "Dream",
+			"score": 5
+		},
+		{
+			"key": "Food Story",
+			"score": 2
+		},
+		{
+			"key": "Gossip",
+			"score": 1
+		},
+		{
+			"key": "Happy Memory",
+			"score": 1
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": 6
+		},
+		{
+			"key": "Heroic Tale",
+			"score": 5
+		},
+		{
+			"key": "Horror",
+			"score": 0
+		},
+		{
+			"key": "Interesting Story",
+			"score": 2
+		},
+		{
+			"key": "Joyful Memories",
+			"score": 1
+		},
+		{
+			"key": "Myth",
+			"score": 6
+		},
+		{
+			"key": "Occult",
+			"score": 2
+		},
+		{
+			"key": "Reality Check",
+			"score": 3
+		},
+		{
+			"key": "Sad Memory",
+			"score": 0
+		},
+		{
+			"key": "Self Indulgent",
+			"score": 2
+		},
+		{
+			"key": "Unique Comment",
+			"score": 3
+		}
+	],
+	"memory": {
+		"potision": "pos-all",
+		"release": [
+			{
+				"key": "Attack",
+				"value": "3.6%"
+			},
+			{
+				"key": "Attack",
+				"value": "5.4%"
+			},
+			{
+				"key": "Attack",
+				"value": "7.2%"
+			},
+			{
+				"key": "Attack",
+				"value": "9.0%"
+			},
+			{
+				"key": "Attack",
+				"value": "10.8%"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Health",
+				"value": "6%"
+			},
+			{
+				"key": "Health",
+				"value": "9%"
+			},
+			{
+				"key": "Health",
+				"value": "12%"
+			},
+			{
+				"key": "Health",
+				"value": "15%"
+			},
+			{
+				"key": "Health",
+				"value": "18%"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Kneel Down",
+			"type": "Active",
+			"description": {
+				"text": "Attacks the enemy with a sword, triggering a Dual Attack from a random ally.",
+				"burn": "",
+				"soul": "+1",
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+10% damage dealt"
+				],
+				"multipliers": "ATK*1.2*0.95*1.871",
+				"text_ja": "敵単体に攻撃し、ランダムな味方に連携攻撃を付与する。",
+				"burn_ja": ""
+			},
+			"title_ja": "服従せよ"
+		},
+		{
+			"title": "Cover!",
+			"type": "Active",
+			"description": {
+				"text": "Distracts the enemy, decreasing Combat Readiness by 25%, with up to a 70% chance to inflict redirected provoke for 1 turn. Grants a barrier to the caster and the ally except for the caster with the highest max Health for 2 turns. Barrier strength increases proportional to the ally's max Health.",
+				"burn": "Inflicts Redirected Provoke for 2 turns. (-10 Souls)",
+				"soul": "+1",
+				"ct": "4",
+				"enhance": [
+					"+5% effect chance",
+					"+5% effect chance",
+					"-1 turn cooldown",
+					"+5% effect chance",
+					"+5% effect chance",
+					"+10% effect chance"
+				],
+				"multipliers": "Shield Strength: 25% of Max HP",
+				"text_ja": "敵単体のアクションゲージを25%DOWNさせ、70%の確率で指定挑発を1ターンの間付与する。自身と自身以外の最大生命力が最も高い味方にシールドを2ターンの間付与する。対象の最大生命力が高いほどがシールド効果がUPする。",
+				"burn_ja": "指定挑発を2ターンの間付与する。(魂力10消費)"
+			},
+			"title_ja": "掩護せよ！"
+		},
+		{
+			"title": "For Honor!",
+			"type": "Active",
+			"description": {
+				"text": "Encourages the Perland Army, granting vigor to all allies for 2 turns. Decreases buff duration of all enemies by 1 turn and has a 75% chance to decrease Attack for 2 turns. Grants an extra turn to the caster.",
+				"burn": "",
+				"soul": "+3",
+				"ct": "6",
+				"enhance": [
+					"+10% effect chance",
+					"-1 turn cooldown",
+					"+15% effect chance"
+				],
+				"multipliers": "",
+				"text_ja": "味方全体に覇気を2ターンの間付与する。敵全体の強化効果を1ターン短縮させ、75%の確率で攻撃力DOWNを2ターンの間付与する。自身に追加ターンが発生する。",
+				"burn_ja": ""
+			},
+			"title_ja": "栄光のために！"
+		}
+	]
+}

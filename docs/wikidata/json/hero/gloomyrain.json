@@ -1,0 +1,240 @@
+{
+	"common": {
+		"name": "Gloomyrain",
+		"image": "https://epic7x.com/wp-content/uploads/2019/01/Gloomyrain-1.png",
+		"attribute": "light",
+		"sign": "cancer",
+		"clazz": "mage",
+		"rarity": "3",
+		"name_ja": "グルーミー・レイン"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "23",
+		"Critical_Hit_Damage": "150",
+		"dual_attack": "5",
+		"Effectiveness": "0",
+		"Effect_Resistance": "0",
+		"Speed": "107",
+		"Atk": "1199",
+		"HP": "4491",
+		"Def": "613"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": 5
+		},
+		{
+			"key": "Belief",
+			"score": 4
+		},
+		{
+			"key": "Bizarre Story",
+			"score": 5
+		},
+		{
+			"key": "Comforting",
+			"score": 5
+		},
+		{
+			"key": "Complain",
+			"score": 2
+		},
+		{
+			"key": "Criticism",
+			"score": 5
+		},
+		{
+			"key": "Cute Cheer",
+			"score": 1
+		},
+		{
+			"key": "Dream",
+			"score": 4
+		},
+		{
+			"key": "Food Story",
+			"score": 1
+		},
+		{
+			"key": "Gossip",
+			"score": 0
+		},
+		{
+			"key": "Happy Memory",
+			"score": 2
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": 2
+		},
+		{
+			"key": "Heroic Tale",
+			"score": 0
+		},
+		{
+			"key": "Horror",
+			"score": 5
+		},
+		{
+			"key": "Interesting Story",
+			"score": 2
+		},
+		{
+			"key": "Joyful Memories",
+			"score": 3
+		},
+		{
+			"key": "Myth",
+			"score": 0
+		},
+		{
+			"key": "Occult",
+			"score": 3
+		},
+		{
+			"key": "Reality Check",
+			"score": 4
+		},
+		{
+			"key": "Sad Memory",
+			"score": 5
+		},
+		{
+			"key": "Self Indulgent",
+			"score": 1
+		},
+		{
+			"key": "Unique Comment",
+			"score": 5
+		}
+	],
+	"memory": {
+		"potision": "pos-all",
+		"release": [
+			{
+				"key": "Speed",
+				"value": "2"
+			},
+			{
+				"key": "Speed",
+				"value": "3"
+			},
+			{
+				"key": "Speed",
+				"value": "4"
+			},
+			{
+				"key": "Speed",
+				"value": "5"
+			},
+			{
+				"key": "Speed",
+				"value": "6"
+			},
+			{
+				"key": "Speed",
+				"value": "7"
+			},
+			{
+				"key": "Speed",
+				"value": "8"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Effectiveness",
+				"value": "4.50%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "6.80%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "9%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "11.20%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "13.50%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "15.80%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "18%"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Wail",
+			"type": "Active",
+			"description": {
+				"text": "Has a 10% chance of being granted an extra turn after attacking the enemy. If the caster is debuffed, the chance is doubled.",
+				"burn": "",
+				"soul": "+1",
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+10% damage dealt",
+					"+2% effect chance",
+					"+3% effect chance",
+					"+15% damage dealt"
+				],
+				"multipliers": "ATK*1*0.95*1.871",
+				"text_ja": "敵単体に攻撃し、10%の確率で追加ターンが発生する。自身が弱体状態の場合、効果発生率が2倍になる。",
+				"burn_ja": ""
+			},
+			"title_ja": "慟哭"
+		},
+		{
+			"title": "Ill Will",
+			"type": "Passive",
+			"description": {
+				"text": "Increases Attack by 20% and Speed by 10% when the caster is debuffed. Grants immunity to stun, sleep, and provoke.",
+				"burn": "",
+				"soul": null,
+				"ct": null,
+				"enhance": [
+					"+5% Speed and Attack",
+					"+5% Speed and Attack",
+					"+5% Speed and Attack"
+				],
+				"multipliers": "",
+				"text_ja": "自身が弱体状態の場合、攻撃力が20%、スピードが10%UPする。\r\nスタン・睡眠・挑発状態にならない。",
+				"burn_ja": ""
+			},
+			"title_ja": "悪意"
+		},
+		{
+			"title": "Soul Destruction",
+			"type": "Active",
+			"description": {
+				"text": "Attacks all enemies with magic, with a 75% chance to transfer debuffs inflicted on the caster, and dispels all debuffs from the caster.",
+				"burn": "Increases damage dealt. (-20 Souls)",
+				"soul": "+2",
+				"ct": "4",
+				"enhance": [
+					"+5% damage dealt",
+					"+10% damage dealt",
+					"-1 turn cooldown",
+					"+10% effect chance",
+					"+15% damage dealt",
+					"+15% effect chance"
+				],
+				"multipliers": "ATK*0.7(0.95 soul burn)*1*1.871",
+				"text_ja": "敵全体に攻撃し、75%の確率で自身の弱体効果をすべて転移させ、自身の弱体効果をすべて解除する。",
+				"burn_ja": "ダメージがUPする。(魂力20消費)"
+			},
+			"title_ja": "霊魂破壊"
+		}
+	]
+}

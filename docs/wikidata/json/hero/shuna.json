@@ -1,0 +1,224 @@
+{
+	"common": {
+		"name": "Shuna",
+		"image": "https://epic7x.com/wp-content/uploads/2021/10/Shuna.png",
+		"attribute": "fire",
+		"sign": "gemini",
+		"clazz": "soul-weaver",
+		"rarity": "5",
+		"name_ja": "シュナ"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "15",
+		"Critical_Hit_Damage": "150",
+		"dual_attack": "5",
+		"Effectiveness": "0",
+		"Effect_Resistance": "30",
+		"Speed": "105",
+		"Atk": "649",
+		"HP": "5254",
+		"Def": "694"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": 4
+		},
+		{
+			"key": "Belief",
+			"score": 3
+		},
+		{
+			"key": "Bizarre Story",
+			"score": 0
+		},
+		{
+			"key": "Comforting",
+			"score": 6
+		},
+		{
+			"key": "Complain",
+			"score": 2
+		},
+		{
+			"key": "Criticism",
+			"score": 0
+		},
+		{
+			"key": "Cute Cheer",
+			"score": 1
+		},
+		{
+			"key": "Dream",
+			"score": 3
+		},
+		{
+			"key": "Food Story",
+			"score": 3
+		},
+		{
+			"key": "Gossip",
+			"score": 0
+		},
+		{
+			"key": "Happy Memory",
+			"score": 4
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": 7
+		},
+		{
+			"key": "Heroic Tale",
+			"score": 3
+		},
+		{
+			"key": "Horror",
+			"score": 0
+		},
+		{
+			"key": "Interesting Story",
+			"score": 0
+		},
+		{
+			"key": "Joyful Memories",
+			"score": 4
+		},
+		{
+			"key": "Myth",
+			"score": 4
+		},
+		{
+			"key": "Occult",
+			"score": 0
+		},
+		{
+			"key": "Reality Check",
+			"score": 1
+		},
+		{
+			"key": "Sad Memory",
+			"score": 7
+		},
+		{
+			"key": "Self Indulgent",
+			"score": 0
+		},
+		{
+			"key": "Unique Comment",
+			"score": 2
+		}
+	],
+	"memory": {
+		"potision": "pos-all",
+		"release": [
+			{
+				"key": "Health",
+				"value": "4.3%"
+			},
+			{
+				"key": "Health",
+				"value": "6.4%"
+			},
+			{
+				"key": "Health",
+				"value": "8.6%"
+			},
+			{
+				"key": "Health",
+				"value": "10.7%"
+			},
+			{
+				"key": "Health",
+				"value": "12.0%"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Effect Resistance",
+				"value": "9%"
+			},
+			{
+				"key": "Effect Resistance",
+				"value": "13.50%"
+			},
+			{
+				"key": "Effect Resistance",
+				"value": "18%"
+			},
+			{
+				"key": "Effect Resistance",
+				"value": "22.50%"
+			},
+			{
+				"key": "Effect Resistance",
+				"value": "27%"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Magicule Explosion",
+			"type": "Active",
+			"description": {
+				"text": "Attacks the enemy by manipulating magicules and recovers Health of the caster. Damage dealt and amount recovered increases proportional to the caster's max Health.",
+				"burn": "Grants an extra turn. (-20 Souls)",
+				"soul": "+1 focus\n                                                                                +1",
+				"ct": null,
+				"enhance": [
+					"+10% damage dealt",
+					"+10% healing",
+					"+10% damage dealt",
+					"+10% healing",
+					"+10% damage dealt"
+				],
+				"multipliers": "ATK*0.75*1*1.871 \n                                        \n                                                                                    Proportional to 9% of caster's Max Health",
+				"text_ja": "敵単体に攻撃し、自身の生命力を回復する。自身の最大生命力が高いほどダメージと回復量がUPする。",
+				"burn_ja": "追加ターンが発生する。(魂力20消費)"
+			},
+			"title_ja": "魔素爆発"
+		},
+		{
+			"title": "Blooming Lotus",
+			"type": "Active",
+			"description": {
+				"text": "Dispels two debuffs from all allies and redistributes Health of all allies to be equal before granting a barrier for 3 turns. Barrier strength increases proportional to the caster's max Health.",
+				"burn": "",
+				"soul": "+3 focus\n                                                                                +2",
+				"ct": "5",
+				"enhance": [
+					"+10% barrier strength",
+					"+10% barrier strength",
+					"-1 turn cooldown",
+					"+10% barrier strength",
+					"+10% barrier strength"
+				],
+				"multipliers": "",
+				"text_ja": "味方全体の弱体効果を2つ解除し、それぞれの味方の生命力の割合が同じになるように生命力を再分配した後、シールドを3ターンの間付与する。自身の最大生命力が高いほどシールド効果がUPする。",
+				"burn_ja": ""
+			},
+			"title_ja": "蓮華開花"
+		},
+		{
+			"title": "Sleeping Spell",
+			"type": "Active",
+			"description": {
+				"text": "Dispels two buffs from all enemies with fluttering flower petals before a 50% chance to put them to sleep for 2 turns.",
+				"burn": "",
+				"soul": "-5 focus\n                                                                                +2",
+				"ct": null,
+				"enhance": [
+					"+5% effect chance",
+					"+5% effect chance",
+					"+5% effect chance",
+					"+10% effect chance",
+					"+10% effect chance"
+				],
+				"multipliers": "",
+				"text_ja": "敵全体の強化効果を2つ解除した後、50%の確率で睡眠を2ターンの間付与する。",
+				"burn_ja": ""
+			},
+			"title_ja": "昏睡の香り"
+		}
+	]
+}
