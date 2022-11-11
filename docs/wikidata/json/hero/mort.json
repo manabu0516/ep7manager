@@ -1,0 +1,224 @@
+{
+	"common": {
+		"name": "Mort",
+		"image": "https://epic7x.com/wp-content/uploads/2020/12/Mort.png",
+		"attribute": "earth",
+		"sign": "gemini",
+		"clazz": "knight",
+		"rarity": "5",
+		"name_ja": "モルト"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "12%",
+		"Critical_Hit_Damage": "150%",
+		"dual_attack": "5%",
+		"Effectiveness": "0%",
+		"Effect_Resistance": "0%",
+		"Speed": "6",
+		"Atk": "957",
+		"HP": "6148",
+		"Def": "634"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": 3
+		},
+		{
+			"key": "Belief",
+			"score": 6
+		},
+		{
+			"key": "Bizarre Story",
+			"score": 5
+		},
+		{
+			"key": "Comforting",
+			"score": 3
+		},
+		{
+			"key": "Complain",
+			"score": 0
+		},
+		{
+			"key": "Criticism",
+			"score": 6
+		},
+		{
+			"key": "Cute Cheer",
+			"score": 2
+		},
+		{
+			"key": "Dream",
+			"score": 5
+		},
+		{
+			"key": "Food Story",
+			"score": 2
+		},
+		{
+			"key": "Gossip",
+			"score": 0
+		},
+		{
+			"key": "Happy Memory",
+			"score": 1
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": 3
+		},
+		{
+			"key": "Heroic Tale",
+			"score": 2
+		},
+		{
+			"key": "Horror",
+			"score": 5
+		},
+		{
+			"key": "Interesting Story",
+			"score": 2
+		},
+		{
+			"key": "Joyful Memories",
+			"score": 1
+		},
+		{
+			"key": "Myth",
+			"score": 4
+		},
+		{
+			"key": "Occult",
+			"score": 5
+		},
+		{
+			"key": "Reality Check",
+			"score": 2
+		},
+		{
+			"key": "Sad Memory",
+			"score": 4
+		},
+		{
+			"key": "Self Indulgent",
+			"score": 3
+		},
+		{
+			"key": "Unique Comment",
+			"score": 6
+		}
+	],
+	"memory": {
+		"potision": "pos-tl",
+		"release": [
+			{
+				"key": "Attack",
+				"value": "4.3%"
+			},
+			{
+				"key": "Attack",
+				"value": "6.4%"
+			},
+			{
+				"key": "Attack",
+				"value": "8.6%"
+			},
+			{
+				"key": "Attack",
+				"value": "10.7%"
+			},
+			{
+				"key": "Attack",
+				"value": "12.9%"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Critical Hit Chance",
+				"value": "5.60%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "8.40%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "11.20%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "14%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "16.8%"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Extermination",
+			"type": "Active",
+			"description": {
+				"text": "Pierces the enemy, with a 40% chance to decrease Defense for 2 turns. Ignores Effect Resistance when caster is enraged. Damage increases proportional to the caster's max Health.",
+				"burn": "Increases effect chance to 100%. (-10 Souls)",
+				"soul": "+1",
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+10% effect chance",
+					"+10% damage dealt",
+					"+10% damage dealt"
+				],
+				"multipliers": "",
+				"text_ja": "敵単体に攻撃し、40%の確率で防御力DOWNを2ターンの間付与する。自身が狂気状態の場合、効果抵抗を無視する。自身の最大生命力が高いほどダメージがUPする。",
+				"burn_ja": "効果発生率が100%になる。(魂力10消費)"
+			},
+			"title_ja": "滅絶"
+		},
+		{
+			"title": "Absolute Dignity",
+			"type": "Passive",
+			"description": {
+				"text": "Immune to stun and sleep. Has a 30% chance to counterattack when attacked. If the caster inflicts a critical hit when using a basic attack, has a 40% chance to activate Sacred Blessing. Can be activated once every 2 turns. Sacred Blessing: Increases Critical Hit Resistance of all allies for 1 turn and increases Speed of the caster for 2 turns.",
+				"burn": "",
+				"soul": null,
+				"ct": null,
+				"enhance": [
+					"+1% effect chance",
+					"+2% effect chance",
+					"+2% effect chance",
+					"+2% effect chance",
+					"+3% effect chance"
+				],
+				"multipliers": "",
+				"text_ja": "スタン・睡眠状態にならない。攻撃を受けた時、30%の確率で反撃する。基本スキルでクリティカルが発生した場合、40%の確率で【恩寵】を発動する。【恩寵】は2ターンに1回まで発生する。恩寵：味方全体にクリティカル抵抗率UPを1ターン・自身にスピードUPを2ターンの間付与する。",
+				"burn_ja": ""
+			},
+			"title_ja": "絶対的な威厳"
+		},
+		{
+			"title": "Advent: Mortelix",
+			"type": "Active",
+			"description": {
+				"text": "Descends and attacks all enemies, inflicting injuries. The caster becomes enraged for 2 turns and recovers Health. Damage dealt and amount recovered increase proportional to the caster's max Health. The severity of injuries increases proportional to the damage dealt. Injuries decrease the max Health of the target by up to 20% every time this skill is used.",
+				"burn": "",
+				"soul": "+3",
+				"ct": "5",
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"-1 turn cooldown",
+					"+10% damage dealt",
+					"+10% damage dealt"
+				],
+				"multipliers": "",
+				"text_ja": "敵全体に攻撃し、裂傷を付与する。自身に狂気を2ターン付与し、生命力を回復する。自身の最大生命力が高いほどダメージと回復量がUPする。ダメージが高いほど裂傷効果がUPし、1回のスキルで対象の最大生命力の20%まで、最大生命力を減少させられる。",
+				"burn_ja": ""
+			},
+			"title_ja": "降臨：モルテリクス"
+		}
+	]
+}

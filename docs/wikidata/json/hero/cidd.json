@@ -1,0 +1,232 @@
+{
+	"common": {
+		"name": "Cidd",
+		"image": "https://epic7x.com/wp-content/uploads/2019/01/Cidd-2.png",
+		"attribute": "earth",
+		"sign": "aries",
+		"clazz": "thief",
+		"rarity": "4",
+		"name_ja": "シダー"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "8%",
+		"Critical_Hit_Damage": "150%",
+		"dual_attack": "5%",
+		"Effectiveness": "0%",
+		"Effect_Resistance": "0%",
+		"Speed": "6",
+		"Atk": "1029",
+		"HP": "5097",
+		"Def": "473"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": 0
+		},
+		{
+			"key": "Belief",
+			"score": 6
+		},
+		{
+			"key": "Bizarre Story",
+			"score": 0
+		},
+		{
+			"key": "Comforting",
+			"score": 0
+		},
+		{
+			"key": "Complain",
+			"score": -3
+		},
+		{
+			"key": "Criticism",
+			"score": 3
+		},
+		{
+			"key": "Cute Cheer",
+			"score": 4
+		},
+		{
+			"key": "Dream",
+			"score": 4
+		},
+		{
+			"key": "Food Story",
+			"score": 1
+		},
+		{
+			"key": "Gossip",
+			"score": -1
+		},
+		{
+			"key": "Happy Memory",
+			"score": 2
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": 3
+		},
+		{
+			"key": "Heroic Tale",
+			"score": 4
+		},
+		{
+			"key": "Horror",
+			"score": 3
+		},
+		{
+			"key": "Interesting Story",
+			"score": 3
+		},
+		{
+			"key": "Joyful Memories",
+			"score": 6
+		},
+		{
+			"key": "Myth",
+			"score": 1
+		},
+		{
+			"key": "Occult",
+			"score": 4
+		},
+		{
+			"key": "Reality Check",
+			"score": -3
+		},
+		{
+			"key": "Sad Memory",
+			"score": 1
+		},
+		{
+			"key": "Self Indulgent",
+			"score": 3
+		},
+		{
+			"key": "Unique Comment",
+			"score": 3
+		}
+	],
+	"memory": {
+		"potision": "pos-all",
+		"release": [
+			{
+				"key": "Speed",
+				"value": "3"
+			},
+			{
+				"key": "Speed",
+				"value": "4"
+			},
+			{
+				"key": "Speed",
+				"value": "6"
+			},
+			{
+				"key": "Speed",
+				"value": "7"
+			},
+			{
+				"key": "Speed",
+				"value": "9"
+			},
+			{
+				"key": "Speed",
+				"value": "10"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Critical Hit Chance",
+				"value": "4.20%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "6.30%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "8.40%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "10.50%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "12.60%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "14.70%"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Whirlwind",
+			"type": "Active",
+			"description": {
+				"text": "Attacks with a dagger. Damage dealt increases proportional to the caster's Speed. When the caster is granted increased Speed, uses Whirlwind instead of Relentless Strike. Whirlwind: Attacks the enemy repeatedly, decreasing Defense for 1 turn. Damage dealt increases proportional to the caster's Speed.",
+				"burn": "",
+				"soul": "+1",
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+10% damage dealt",
+					"+10% damage dealt"
+				],
+				"multipliers": "(ATK*1.599705)*(1+Speed*0.00075)\n                                        \n                                                                                    0.075% self Speed (0.00075 * Speed), Skill 2 fully upgraded increases power from 0.95 to 1.35",
+				"text_ja": "敵単体に攻撃する。自身のスピードが高いほどダメージがUPする。自身がスピードUP状態の場合、【連撃】の代わりに【回転乱舞】を発動する。回転乱舞：敵単体に攻撃し、防御力DOWNを1ターンの間付与する。自身のスピードが高いほどダメージがUPする。",
+				"burn_ja": ""
+			},
+			"title_ja": "連撃"
+		},
+		{
+			"title": "Wind's Resolve",
+			"type": "Passive",
+			"description": {
+				"text": "A critical hit will increase Speed of the caster for 1 turn, with a 70% chance to grant a random buff for 1 turn. A random buff can be granted once per turn.",
+				"burn": "",
+				"soul": null,
+				"ct": null,
+				"enhance": [
+					"+5% effect chance",
+					"+5% effect chance",
+					"+5% effect chance",
+					"+5% effect chance",
+					"+10% effect chance"
+				],
+				"multipliers": "",
+				"text_ja": "クリティカル発生時、自身にスピードUPを1ターンの間付与し、70%の確率でランダム強化効果を1ターンの間付与する。ランダム強化効果の付与は1ターンに1回まで発生する。ランダム強化効果：クリティカルダメージUP・効果命中率UP・回避率UP・弱体効果免疫",
+				"burn_ja": ""
+			},
+			"title_ja": "風の心得"
+		},
+		{
+			"title": "Hack",
+			"type": "Active",
+			"description": {
+				"text": "Cuts with a dagger, granting an extra turn if the enemy is defeated. Attacks using an advantageous element when the caster is granted increased Speed. Damage dealt increases proportional to the caster's Speed.",
+				"burn": "Increases damage dealt. (-10 Souls)",
+				"soul": "+2",
+				"ct": "4",
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"-1 turn cooldown",
+					"+10% damage dealt",
+					"+10% damage dealt"
+				],
+				"multipliers": "(ATK*2.9936)*(1+Speed*0.0021) [2.2 soul burn]\n                                        \n                                                                                    0.21% self Speed (0.0021 * Speed)",
+				"text_ja": "敵単体に攻撃する。このスキルで敵を気絶させた場合、追加ターンが発生する。自身がスピードUP状態の場合、このスキルは有利属性で攻撃する。自身のスピードが高いほどダメージがUPする。",
+				"burn_ja": "ダメージがUPする。(魂力10消費)"
+			},
+			"title_ja": "乱れ切り"
+		}
+	]
+}

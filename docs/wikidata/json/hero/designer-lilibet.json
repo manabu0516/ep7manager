@@ -1,0 +1,224 @@
+{
+	"common": {
+		"name": "Designer Lilibet",
+		"image": "https://epic7x.com/wp-content/uploads/2021/02/Designer-Lilibet.png",
+		"attribute": "dark",
+		"sign": "cancer",
+		"clazz": "warrior",
+		"rarity": "5",
+		"name_ja": "デザイナーリリベット"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "15%",
+		"Critical_Hit_Damage": "150%",
+		"dual_attack": "5%",
+		"Effectiveness": "0%",
+		"Effect_Resistance": "0%",
+		"Speed": "106",
+		"Atk": "975",
+		"HP": "7054",
+		"Def": "652"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": 4
+		},
+		{
+			"key": "Belief",
+			"score": 5
+		},
+		{
+			"key": "Bizarre Story",
+			"score": -3
+		},
+		{
+			"key": "Comforting",
+			"score": 10
+		},
+		{
+			"key": "Complain",
+			"score": -7
+		},
+		{
+			"key": "Criticism",
+			"score": 5
+		},
+		{
+			"key": "Cute Cheer",
+			"score": 7
+		},
+		{
+			"key": "Dream",
+			"score": 5
+		},
+		{
+			"key": "Food Story",
+			"score": 3
+		},
+		{
+			"key": "Gossip",
+			"score": -2
+		},
+		{
+			"key": "Happy Memory",
+			"score": -3
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": 5
+		},
+		{
+			"key": "Heroic Tale",
+			"score": 5
+		},
+		{
+			"key": "Horror",
+			"score": -4
+		},
+		{
+			"key": "Interesting Story",
+			"score": 2
+		},
+		{
+			"key": "Joyful Memories",
+			"score": 3
+		},
+		{
+			"key": "Myth",
+			"score": 2
+		},
+		{
+			"key": "Occult",
+			"score": -3
+		},
+		{
+			"key": "Reality Check",
+			"score": 4
+		},
+		{
+			"key": "Sad Memory",
+			"score": 3
+		},
+		{
+			"key": "Self Indulgent",
+			"score": -3
+		},
+		{
+			"key": "Unique Comment",
+			"score": 2
+		}
+	],
+	"memory": {
+		"potision": "pos-lb",
+		"release": [
+			{
+				"key": "Health",
+				"value": "4.3%"
+			},
+			{
+				"key": "Health",
+				"value": "6.5%"
+			},
+			{
+				"key": "Health",
+				"value": "8.6%"
+			},
+			{
+				"key": "Health",
+				"value": "10.7%"
+			},
+			{
+				"key": "Health",
+				"value": "12.9%"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Critical Hit Chance",
+				"value": "5.60%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "8.40%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "11.20%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "14%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "16.8%"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Slice to Pieces",
+			"type": "Active",
+			"description": {
+				"text": "Attacks the enemy with scissors, with a maximum chance of 65% to silence for 1 turn. Damage dealt increases proportional to the caster's Defense.",
+				"burn": "Increases effect chance to 100%. (-10 Souls)",
+				"soul": "+25 fighting spirit\n                                                                                +1",
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+10% effect chance",
+					"+10% damage dealt",
+					"+10% damage dealt"
+				],
+				"multipliers": "(ATK*0.6+1.0*DEF)*1*1.871",
+				"text_ja": "敵単体に攻撃し、65%の確率で沈黙を1ターンの間付与する。自身の防御力が高いほどダメージがUPする。",
+				"burn_ja": "効果発生率が100%になる。(魂力10消費)"
+			},
+			"title_ja": "切り出し"
+		},
+		{
+			"title": "Emergency Stitching",
+			"type": "Passive",
+			"description": {
+				"text": "Starts the first battle with 30 Fighting Spirit. When an enemy's turn ends, gains 10 Fighting Spirit for each debuff inflicted on an ally, and when the caster's Fighting Spirit is full, consumes all Fighting Spirit to dispel all debuffs from the caster and increases Defense for 1 turn, before increasing Combat Readiness by 40%.",
+				"burn": "",
+				"soul": null,
+				"ct": null,
+				"enhance": [
+					"+3 Fighting Spirit acquired",
+					"+4 Fighting Spirit acquired",
+					"+4 Fighting Spirit acquired",
+					"+4 Fighting Spirit acquired",
+					"+5 Fighting Spirit acquired"
+				],
+				"multipliers": "",
+				"text_ja": "初回のバトル開始時、【闘志】を30獲得する。敵のターン終了時、味方全体の弱体効果の数×10の【闘志】を獲得し、自身の【闘志】が最大の場合、【闘志】をすべて消費し、自身の弱体効果をすべて解除し、防御力UPを1ターンの間付与し、アクションゲージを40%UPさせる。",
+				"burn_ja": ""
+			},
+			"title_ja": "緊急裁縫"
+		},
+		{
+			"title": "Model Disqualification",
+			"type": "Active",
+			"description": {
+				"text": "Decreases debuff durations of all allies for 2 turns and gets on stage to attack all enemies, increasing their skill cooldown by 1 turn. Increases Combat Readiness of all allies except for the caster by 15%. Damage dealt increases proportional to the caster's Defense.",
+				"burn": "",
+				"soul": "+50 fighting spirit\n                                                                                +3",
+				"ct": "5",
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"-1 turn cooldown",
+					"+5% damage dealt",
+					"+15% damage dealt"
+				],
+				"multipliers": "(ATK*0.6+1.15*DEF)*1*1.871",
+				"text_ja": "味方全体の弱体効果を2ターン短縮させ、敵全体に攻撃し、スキルターンを1ターン増加させる。自身以外の味方全体のアクションゲージを15%UPさせる。自身の防御力が高いほどダメージがUPする。",
+				"burn_ja": ""
+			},
+			"title_ja": "モデル失格"
+		}
+	]
+}

@@ -1,0 +1,224 @@
+{
+	"common": {
+		"name": "Seaside Bellona",
+		"image": "https://epic7x.com/wp-content/uploads/2019/07/belona-new.png",
+		"attribute": "ice",
+		"sign": "gemini",
+		"clazz": "ranger",
+		"rarity": "5",
+		"name_ja": "海辺のヴェローナ(SSB)"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "15%",
+		"Critical_Hit_Damage": "150%",
+		"dual_attack": "5%",
+		"Effectiveness": "18%",
+		"Effect_Resistance": "0%",
+		"Speed": "114",
+		"Atk": "1182",
+		"HP": "5299",
+		"Def": "571"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": 1
+		},
+		{
+			"key": "Belief",
+			"score": 1
+		},
+		{
+			"key": "Bizarre Story",
+			"score": 3
+		},
+		{
+			"key": "Comforting",
+			"score": 1
+		},
+		{
+			"key": "Complain",
+			"score": 2
+		},
+		{
+			"key": "Criticism",
+			"score": -1
+		},
+		{
+			"key": "Cute Cheer",
+			"score": 5
+		},
+		{
+			"key": "Dream",
+			"score": 6
+		},
+		{
+			"key": "Food Story",
+			"score": 4
+		},
+		{
+			"key": "Gossip",
+			"score": 2
+		},
+		{
+			"key": "Happy Memory",
+			"score": 3
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": 4
+		},
+		{
+			"key": "Heroic Tale",
+			"score": 3
+		},
+		{
+			"key": "Horror",
+			"score": 2
+		},
+		{
+			"key": "Interesting Story",
+			"score": 7
+		},
+		{
+			"key": "Joyful Memories",
+			"score": 5
+		},
+		{
+			"key": "Myth",
+			"score": 2
+		},
+		{
+			"key": "Occult",
+			"score": 2
+		},
+		{
+			"key": "Reality Check",
+			"score": -3
+		},
+		{
+			"key": "Sad Memory",
+			"score": 2
+		},
+		{
+			"key": "Self Indulgent",
+			"score": 2
+		},
+		{
+			"key": "Unique Comment",
+			"score": 5
+		}
+	],
+	"memory": {
+		"potision": "pos-tr",
+		"release": [
+			{
+				"key": "Health",
+				"value": "4.3%"
+			},
+			{
+				"key": "Health",
+				"value": "6.4%"
+			},
+			{
+				"key": "Health",
+				"value": "8.6%"
+			},
+			{
+				"key": "Health",
+				"value": "10.7%"
+			},
+			{
+				"key": "Health",
+				"value": "12.0%"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Effectiveness",
+				"value": "9%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "13.50%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "18%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "22.50%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "27%"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Watch Out",
+			"type": "Active",
+			"description": {
+				"text": "Attacks the enemy with a fan, with 60% chance to target the enemy for 2 turns.",
+				"burn": "",
+				"soul": "+1",
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+5% effect chance",
+					"+5% damage dealt",
+					"+10% effect chance",
+					"+10% damage dealt",
+					"+10% damage dealt"
+				],
+				"multipliers": "ATK*1*1*1.871",
+				"text_ja": "敵単体に攻撃し、60%の確率で標的を2ターンの間付与する。",
+				"burn_ja": ""
+			},
+			"title_ja": "気をつけなさい！"
+		},
+		{
+			"title": "I'm with My Friends",
+			"type": "Passive",
+			"description": {
+				"text": "Shares 30% of damage suffered by the caster with the foremost ally. When more than one damage sharing effect is granted, only the strongest effect is applied. The caster gains 1 Focus when ally is attacked. When an ally is attacked and the caster's stacked Focus is 5, loses all Focus and activates You're not Cute. You're not Cute: Attacks all enemies with a fan, with 50% chance to decrease Defense for 2 turns.",
+				"burn": "",
+				"soul": null,
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+10% damage dealt",
+					"+15% damage dealt"
+				],
+				"multipliers": "ATK*0.7*1*1.871",
+				"text_ja": "自身が受けるダメージの30%を前衛の味方が代わりに受ける。ダメージ分配効果が重複した場合、最も高い効果のみ適用される。味方が攻撃を受けた時に【集中】を1獲得し、【集中】が5の場合、【集中】をすべて消費して【あなたに魅力なんてないわ】を発動する。あなたに魅力なんてないわ：敵全体に攻撃し、50%の確率で防御力DOWNを2ターンの間付与する。",
+				"burn_ja": ""
+			},
+			"title_ja": "友人と一緒に来ました"
+		},
+		{
+			"title": "Haven't I Warned You?",
+			"type": "Active",
+			"description": {
+				"text": "Attacks all enemies with a spray of water, with a 85% chance to make them unabled to be buffed and unhealable for 2 turns. Damage dealt increases with a critical hit.",
+				"burn": "Ignores effect resistance. (-20 Souls)",
+				"soul": "+3",
+				"ct": "5",
+				"enhance": [
+					"+5% damage dealt",
+					"+5% effect chance",
+					"-1 turn cooldown",
+					"+10% effect chance",
+					"+10% damage dealt",
+					"+15% damage dealt"
+				],
+				"multipliers": "ATK*1*1*1.871\n                                        \n                                                                                    20% increased critical strike damage",
+				"text_ja": "敵全体に攻撃し、85%の確率で強化不可・回復不可を2ターンの間付与する。クリティカル発生時、ダメージがUPする。",
+				"burn_ja": "効果抵抗を無視する。(魂力20消費)"
+			},
+			"title_ja": "わたくし、警告しましたよ？"
+		}
+	]
+}

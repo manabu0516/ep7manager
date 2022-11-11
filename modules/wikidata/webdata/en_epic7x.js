@@ -68,7 +68,11 @@ const skillDescParse = ($, $div) => {
             const extType = $elem.prev().text().trim();
             if(extType.indexOf("Enhancements") !== -1) {
                 $elem.find(".f-14").each((i,e) => {
-                    const enhanceValues = $(e).text().trim().replace(";", ":").split(":");
+                    const enhanceText = $(e).text().trim().replace(";", ":");
+                    if(enhanceText === '') {
+                        return;
+                    }
+                    const enhanceValues = enhanceText.split(":");
                     data.enhance.push(enhanceValues[1].trim());
                 })
             }
@@ -158,13 +162,15 @@ module.exports = async (key) => {
     });
 
     const $memory = $("#MemoryImprint");
-    const $memoryContainer = $memory.find(".pure-g .pure-u-md-1-3")
+    const $memoryContainer = $memory.find(".pure-g .pure-u-md-1-3");
 
-    result.memory = {
-        potision : path.basename($memory.find("div.pure-g div.pure-u-1-2 img").attr("data-src"), ".png"),
-        release : memoryParse($, $memoryContainer[1]),
-        concentration : memoryParse($, $memoryContainer[2])
-    };
+    if($memory.length != 0) {
+        result.memory = {
+            potision : path.basename($memory.find("div.pure-g div.pure-u-1-2 img").attr("data-src"), ".png"),
+            release : memoryParse($, $memoryContainer[1]),
+            concentration : memoryParse($, $memoryContainer[2])
+        };
+    }
 
     const $skills = $("#Skills .skill");
 

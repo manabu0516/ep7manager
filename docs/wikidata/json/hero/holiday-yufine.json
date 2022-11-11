@@ -1,0 +1,224 @@
+{
+	"common": {
+		"name": "Holiday Yufine",
+		"image": "https://epic7x.com/wp-content/uploads/2020/07/Holiday-Yufine-3.png",
+		"attribute": "fire",
+		"sign": "libra",
+		"clazz": "warrior",
+		"rarity": "5",
+		"name_ja": "バカンスのユピネ"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "15%",
+		"Critical_Hit_Damage": "150%",
+		"dual_attack": "5%",
+		"Effectiveness": "0%",
+		"Effect_Resistance": "0%",
+		"Speed": "109",
+		"Atk": "1119",
+		"HP": "6266",
+		"Def": "627"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": 2
+		},
+		{
+			"key": "Belief",
+			"score": 3
+		},
+		{
+			"key": "Bizarre Story",
+			"score": 3
+		},
+		{
+			"key": "Comforting",
+			"score": 3
+		},
+		{
+			"key": "Complain",
+			"score": 1
+		},
+		{
+			"key": "Criticism",
+			"score": 0
+		},
+		{
+			"key": "Cute Cheer",
+			"score": 6
+		},
+		{
+			"key": "Dream",
+			"score": 4
+		},
+		{
+			"key": "Food Story",
+			"score": 4
+		},
+		{
+			"key": "Gossip",
+			"score": 3
+		},
+		{
+			"key": "Happy Memory",
+			"score": 4
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": 6
+		},
+		{
+			"key": "Heroic Tale",
+			"score": 6
+		},
+		{
+			"key": "Horror",
+			"score": 4
+		},
+		{
+			"key": "Interesting Story",
+			"score": 4
+		},
+		{
+			"key": "Joyful Memories",
+			"score": 7
+		},
+		{
+			"key": "Myth",
+			"score": 2
+		},
+		{
+			"key": "Occult",
+			"score": 2
+		},
+		{
+			"key": "Reality Check",
+			"score": 0
+		},
+		{
+			"key": "Sad Memory",
+			"score": 1
+		},
+		{
+			"key": "Self Indulgent",
+			"score": 3
+		},
+		{
+			"key": "Unique Comment",
+			"score": 3
+		}
+	],
+	"memory": {
+		"potision": "pos-all",
+		"release": [
+			{
+				"key": "Health",
+				"value": "4.3%"
+			},
+			{
+				"key": "Health",
+				"value": "6.5%"
+			},
+			{
+				"key": "Health",
+				"value": "8.6%"
+			},
+			{
+				"key": "Health",
+				"value": "10.7%"
+			},
+			{
+				"key": "Health",
+				"value": "12.9%"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Attack",
+				"value": "6%"
+			},
+			{
+				"key": "Attack",
+				"value": "9%"
+			},
+			{
+				"key": "Attack",
+				"value": "12%"
+			},
+			{
+				"key": "Attack",
+				"value": "15%"
+			},
+			{
+				"key": "Attack",
+				"value": "18%"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Just One Bite! ❤",
+			"type": "Active",
+			"description": {
+				"text": "Attacks the enemy by tearing up a food market, with a 50% chance to burn for 1 turn. When used on the caster's turn. Just One Bite! ❤ becomes an attack that targets all enemies. Changed attack is unaffected by elemental disadvantage and does not trigger a Dual Attack.",
+				"burn": "",
+				"soul": "+1",
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+5% effect chance",
+					"+10% damage dealt",
+					"+10% effect chance",
+					"+15% damage dealt"
+				],
+				"multipliers": "",
+				"text_ja": "敵単体に攻撃し、60%の確率で火傷を1ターンの間付与する。自身のターンで発動する【ひとくち、あ～ん♡】が全体攻撃に変化する。変化した攻撃は、属性不利の影響を受けず、連携攻撃が発生しない。",
+				"burn_ja": ""
+			},
+			"title_ja": "ひとくち、あ〜ん♡"
+		},
+		{
+			"title": "Let's Eat Together!",
+			"type": "Passive",
+			"description": {
+				"text": "Reduces the effect of decreased Combat Readiness debuffs inflicted on all allies by 30%. This skill effect does not stack with other passive skills of the same name. Increases Evasion by 35%, and increases Evasion by an additional 35% when the caster is at max Health.",
+				"burn": "",
+				"soul": null,
+				"ct": null,
+				"enhance": [
+					"-2% Combat Readiness decrease",
+					"-3% Combat Readiness decrease",
+					"-4% Combat Readiness decrease",
+					"-5% Combat Readiness decrease",
+					"-6% Combat Readiness decrease"
+				],
+				"multipliers": "",
+				"text_ja": "味方全体が受けるアクションゲージのDOWN効果が30%DOWNする。同名のパッシブスキルの効果と重複しない。回避率が35%UPし、自身の生命力が最大の場合、更に回避率が35%UPする。",
+				"burn_ja": ""
+			},
+			"title_ja": "一緒に食べる？"
+		},
+		{
+			"title": "Yufine's ☆ Special",
+			"type": "Active",
+			"description": {
+				"text": "Dispels two debuffs from all allies and attacks all enemies in the middle of the night market. Increases Attack of all allies for [orange]2 turns[/orange] and [blue]Combat Readiness by 20%.",
+				"burn": "Skill cooldown is reduced by 2 turns. (-10 Souls)",
+				"soul": "+3",
+				"ct": "5",
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"-1 turn cooldown",
+					"+5% damage dealt",
+					"+15% damage dealt"
+				],
+				"multipliers": "",
+				"text_ja": "味方全体の弱体効果を2つ解除し、敵全体に攻撃する。更に味方全体に攻撃力UPを2ターンの間付与し、味方全体のアクションゲージを20%UPさせる。",
+				"burn_ja": "スキルターンが2減少する。(魂力10消費)"
+			},
+			"title_ja": "ユピネ☆スペシャル"
+		}
+	]
+}

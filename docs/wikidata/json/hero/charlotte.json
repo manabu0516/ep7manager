@@ -1,0 +1,224 @@
+{
+	"common": {
+		"name": "Charlotte",
+		"image": "https://epic7x.com/wp-content/uploads/2019/03/Charlotte.png",
+		"attribute": "fire",
+		"sign": "leo",
+		"clazz": "knight",
+		"rarity": "5",
+		"name_ja": "シャルロッテ"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "8%",
+		"Critical_Hit_Damage": "150%",
+		"dual_attack": "5%",
+		"Effectiveness": "0%",
+		"Effect_Resistance": "0%",
+		"Speed": "99",
+		"Atk": "1134",
+		"HP": "5825",
+		"Def": "662"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": 5
+		},
+		{
+			"key": "Belief",
+			"score": -4
+		},
+		{
+			"key": "Bizarre Story",
+			"score": -5
+		},
+		{
+			"key": "Comforting",
+			"score": 6
+		},
+		{
+			"key": "Complain",
+			"score": -5
+		},
+		{
+			"key": "Criticism",
+			"score": 0
+		},
+		{
+			"key": "Cute Cheer",
+			"score": 5
+		},
+		{
+			"key": "Dream",
+			"score": 2
+		},
+		{
+			"key": "Food Story",
+			"score": 5
+		},
+		{
+			"key": "Gossip",
+			"score": -3
+		},
+		{
+			"key": "Happy Memory",
+			"score": 5
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": 0
+		},
+		{
+			"key": "Heroic Tale",
+			"score": 8
+		},
+		{
+			"key": "Horror",
+			"score": 0
+		},
+		{
+			"key": "Interesting Story",
+			"score": 0
+		},
+		{
+			"key": "Joyful Memories",
+			"score": 3
+		},
+		{
+			"key": "Myth",
+			"score": 8
+		},
+		{
+			"key": "Occult",
+			"score": 3
+		},
+		{
+			"key": "Reality Check",
+			"score": -6
+		},
+		{
+			"key": "Sad Memory",
+			"score": 3
+		},
+		{
+			"key": "Self Indulgent",
+			"score": -4
+		},
+		{
+			"key": "Unique Comment",
+			"score": 2
+		}
+	],
+	"memory": {
+		"potision": "pos-all",
+		"release": [
+			{
+				"key": "Attack",
+				"value": "3.6%"
+			},
+			{
+				"key": "Attack",
+				"value": "5.4%"
+			},
+			{
+				"key": "Attack",
+				"value": "7.2%"
+			},
+			{
+				"key": "Attack",
+				"value": "9.0%"
+			},
+			{
+				"key": "Attack",
+				"value": "10.8%"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Attack",
+				"value": "6%"
+			},
+			{
+				"key": "Attack",
+				"value": "9%"
+			},
+			{
+				"key": "Attack",
+				"value": "12%"
+			},
+			{
+				"key": "Attack",
+				"value": "15%"
+			},
+			{
+				"key": "Attack",
+				"value": "18%"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Dual Swords",
+			"type": "Active",
+			"description": {
+				"text": "Attacks with dual swords, with a 35% chance to decrease Attack for 1 turn. When the caster is buffed, Dual Swords becomes an attack that targets all enemies when used on the caster's turn. Increases caster's Combat Readiness by 20% after attacking with this changed attack, and a successful attack with this changed attack always results in a critical hit. This changed attack does not trigger a Dual Attack.",
+				"burn": "",
+				"soul": "+20 fighting spirit\n                                                                                +1",
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+5% effect chance",
+					"+10% damage dealt",
+					"+10% effect chance",
+					"+15% damage dealt"
+				],
+				"multipliers": "ATK*1*1*1.871",
+				"text_ja": "敵単体に攻撃し、35%の確率で攻撃力DOWNを1ターンの間付与する。自身が強化状態の場合、自身のターンに発動する【双刃】が全体攻撃になり、発動後、自身のアクションゲージが20%UPする。攻撃命中時、クリティカルが発生する。この攻撃では連携攻撃が発生しない。",
+				"burn_ja": ""
+			},
+			"title_ja": "双刃"
+		},
+		{
+			"title": "Will of the Swamp",
+			"type": "Passive",
+			"description": {
+				"text": "When attacked, the caster gains 10 Fighting Spirit and is granted increased Attack and Defense for 1 turn. When attacked on caster's turn, acquired Fighting Spirit is doubled. Increased Attack and Defense can only be granted once per turn.",
+				"burn": "",
+				"soul": "+1",
+				"ct": null,
+				"enhance": [
+					"+1 Fighting Spirit acquired",
+					"+2 Fighting Spirit acquired",
+					"+2 Fighting Spirit acquired",
+					"+2 Fighting Spirit acquired",
+					"+3 Fighting Spirit acquired"
+				],
+				"multipliers": "",
+				"text_ja": "攻撃を受けた後、【闘志】が10UPし、自身に攻撃力UP・防御力UPを1ターンの間付与する。自身のターンに攻撃を受けた場合、【闘志】獲得量が2倍になる。攻撃力UP・防御力UP効果は1ターンに1回まで発動する。",
+				"burn_ja": ""
+			},
+			"title_ja": "沼の意志"
+		},
+		{
+			"title": "Vortex",
+			"type": "Active",
+			"description": {
+				"text": "Cuts all enemies while spinning, making them unhealable for 2 turns. A successful attack always results in a critical hit.",
+				"burn": "Acquires 100 Fighting Spirit after using this skill. (-10 Souls)",
+				"soul": "-100 fighting spirit\n                                                                                +2",
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+10% damage dealt",
+					"+10% damage dealt"
+				],
+				"multipliers": "",
+				"text_ja": "敵全体に攻撃し、回復不可を2ターンの間付与する。攻撃命中時、クリティカルが発生する。",
+				"burn_ja": "スキル発動後、【闘志】を100獲得する。(魂力10消費)"
+			},
+			"title_ja": "双刃旋風"
+		}
+	]
+}

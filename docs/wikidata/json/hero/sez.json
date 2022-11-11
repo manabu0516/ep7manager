@@ -1,0 +1,224 @@
+{
+	"common": {
+		"name": "Sez",
+		"image": "https://epic7x.com/wp-content/uploads/2019/01/sez-full.png",
+		"attribute": "ice",
+		"sign": "scorpio",
+		"clazz": "thief",
+		"rarity": "5",
+		"name_ja": "セズ"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "8%",
+		"Critical_Hit_Damage": "150%",
+		"dual_attack": "5%",
+		"Effectiveness": "0%",
+		"Effect_Resistance": "0%",
+		"Speed": "113",
+		"Atk": "1228",
+		"HP": "6266",
+		"Def": "473"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": 3
+		},
+		{
+			"key": "Belief",
+			"score": 3
+		},
+		{
+			"key": "Bizarre Story",
+			"score": 5
+		},
+		{
+			"key": "Comforting",
+			"score": 3
+		},
+		{
+			"key": "Complain",
+			"score": -5
+		},
+		{
+			"key": "Criticism",
+			"score": 3
+		},
+		{
+			"key": "Cute Cheer",
+			"score": 1
+		},
+		{
+			"key": "Dream",
+			"score": 2
+		},
+		{
+			"key": "Food Story",
+			"score": 1
+		},
+		{
+			"key": "Gossip",
+			"score": -3
+		},
+		{
+			"key": "Happy Memory",
+			"score": -2
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": -3
+		},
+		{
+			"key": "Heroic Tale",
+			"score": -2
+		},
+		{
+			"key": "Horror",
+			"score": 3
+		},
+		{
+			"key": "Interesting Story",
+			"score": 0
+		},
+		{
+			"key": "Joyful Memories",
+			"score": 1
+		},
+		{
+			"key": "Myth",
+			"score": -3
+		},
+		{
+			"key": "Occult",
+			"score": 3
+		},
+		{
+			"key": "Reality Check",
+			"score": 2
+		},
+		{
+			"key": "Sad Memory",
+			"score": 4
+		},
+		{
+			"key": "Self Indulgent",
+			"score": 1
+		},
+		{
+			"key": "Unique Comment",
+			"score": 6
+		}
+	],
+	"memory": {
+		"potision": "pos-all",
+		"release": [
+			{
+				"key": "Attack",
+				"value": "3.6%"
+			},
+			{
+				"key": "Attack",
+				"value": "5.4%"
+			},
+			{
+				"key": "Attack",
+				"value": "7.2%"
+			},
+			{
+				"key": "Attack",
+				"value": "9.0%"
+			},
+			{
+				"key": "Attack",
+				"value": "10.8%"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Critical Hit Chance",
+				"value": "5.60%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "8.40%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "11.20%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "14%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "16.8%"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Dark Shadow",
+			"type": "Active",
+			"description": {
+				"text": "Penetrates the enemy with dark energy, making the enemy unhealable for 1 turn. Damage dealt increases proportional to the amount of enemy's lost Health.",
+				"burn": "",
+				"soul": "+1",
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+10% damage dealt",
+					"+10% damage dealt"
+				],
+				"multipliers": "ATK*1*0.95*1.871\n                                        \n                                                                                    0.2% increased damage per 1% target missing Health",
+				"text_ja": "敵単体に攻撃し、回復不可を1ターンの間付与する。対象の現在生命力が低いほどダメージがUPする。",
+				"burn_ja": ""
+			},
+			"title_ja": "漆黒"
+		},
+		{
+			"title": "Enroach",
+			"type": "Passive",
+			"description": {
+				"text": "When the enemy's Health is 50% or less after attacking with Dark Shadow, activates Encroach. Encroach can only be activated once per turn the caster. Encroach (Acquire 1 Soul): Releases dark power to attack all enemies, with a 50% chance to make them unhealable for 1 turn.",
+				"burn": "",
+				"soul": null,
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt by additional skill",
+					"+5% damage dealt by additional skill",
+					"+5% damage dealt by additional skill",
+					"+5% damage dealt by additional skill",
+					"+10% damage dealt by additional skill"
+				],
+				"multipliers": "ATK*0.5*1*1.871",
+				"text_ja": "【漆黒】で攻撃した時、対象の生命力が50%未満の場合、【蚕食】を発動する。【蚕食】は自身のターンに1回まで発生する。蚕食",
+				"burn_ja": ""
+			},
+			"title_ja": "蚕食"
+		},
+		{
+			"title": "Conviction",
+			"type": "Active",
+			"description": {
+				"text": "Inflicts lethal damage to the enemy, dealing damage proportional to the enemy's lost Health. If the enemy dies, inflicts additional damage to all enemies proportional to the caster's Attack.",
+				"burn": "Increases damage dealt. (-20 Souls)",
+				"soul": "+3",
+				"ct": "6",
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"-1 turn cooldown",
+					"+10% damage dealt",
+					"+15% damage dealt"
+				],
+				"multipliers": "ATK*1.8*0.95*1.871 (3.2 soul burn)\n                                        \n                                                                                    0.3% (0.7% soulburn) increased damage per 1% target missing Health, explosion on kill does 150% of self Attack",
+				"text_ja": "敵単体に攻撃し、対象の現在生命力が低いほどダメージがUPする。このスキルで敵を気絶させた場合、対象以外の敵全体に自身の攻撃力に応じて追加ダメージを与える。",
+				"burn_ja": "ダメージがUPする。(魂力20消費)"
+			},
+			"title_ja": "断罪"
+		}
+	]
+}

@@ -1,0 +1,240 @@
+{
+	"common": {
+		"name": "Gunther",
+		"image": "https://epic7x.com/wp-content/uploads/2019/01/Gunther-1.png",
+		"attribute": "light",
+		"sign": "libra",
+		"clazz": "warrior",
+		"rarity": "3",
+		"name_ja": "ギュンター"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "15%",
+		"Critical_Hit_Damage": "150%",
+		"dual_attack": "5%",
+		"Effectiveness": "0%",
+		"Effect_Resistance": "0%",
+		"Speed": "104",
+		"Atk": "1426",
+		"HP": "5517",
+		"Def": "583"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": 5
+		},
+		{
+			"key": "Belief",
+			"score": 3
+		},
+		{
+			"key": "Bizarre Story",
+			"score": 0
+		},
+		{
+			"key": "Comforting",
+			"score": 6
+		},
+		{
+			"key": "Complain",
+			"score": 2
+		},
+		{
+			"key": "Criticism",
+			"score": 2
+		},
+		{
+			"key": "Cute Cheer",
+			"score": 3
+		},
+		{
+			"key": "Dream",
+			"score": 3
+		},
+		{
+			"key": "Food Story",
+			"score": 5
+		},
+		{
+			"key": "Gossip",
+			"score": 0
+		},
+		{
+			"key": "Happy Memory",
+			"score": 3
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": 8
+		},
+		{
+			"key": "Heroic Tale",
+			"score": 6
+		},
+		{
+			"key": "Horror",
+			"score": 0
+		},
+		{
+			"key": "Interesting Story",
+			"score": 3
+		},
+		{
+			"key": "Joyful Memories",
+			"score": 4
+		},
+		{
+			"key": "Myth",
+			"score": 1
+		},
+		{
+			"key": "Occult",
+			"score": 0
+		},
+		{
+			"key": "Reality Check",
+			"score": 1
+		},
+		{
+			"key": "Sad Memory",
+			"score": 4
+		},
+		{
+			"key": "Self Indulgent",
+			"score": 2
+		},
+		{
+			"key": "Unique Comment",
+			"score": 1
+		}
+	],
+	"memory": {
+		"potision": "pos-all",
+		"release": [
+			{
+				"key": "Attack",
+				"value": "24"
+			},
+			{
+				"key": "Attack",
+				"value": "36"
+			},
+			{
+				"key": "Attack",
+				"value": "48"
+			},
+			{
+				"key": "Attack",
+				"value": "60"
+			},
+			{
+				"key": "Attack",
+				"value": "72"
+			},
+			{
+				"key": "Attack",
+				"value": "84"
+			},
+			{
+				"key": "Attack",
+				"value": "96"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Dual Attack Chance",
+				"value": "0.90%"
+			},
+			{
+				"key": "Dual Attack Chance",
+				"value": "1.30%"
+			},
+			{
+				"key": "Dual Attack Chance",
+				"value": "1.80%"
+			},
+			{
+				"key": "Dual Attack Chance",
+				"value": "2.30%"
+			},
+			{
+				"key": "Dual Attack Chance",
+				"value": "2.70%"
+			},
+			{
+				"key": "Dual Attack Chance",
+				"value": "3.10%"
+			},
+			{
+				"key": "Dual Attack Chance",
+				"value": "3.60%"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Spirited Blow",
+			"type": "Active",
+			"description": {
+				"text": "Attacks with an axe, with a 50% chance to cause bleeding for 2 turns.",
+				"burn": "",
+				"soul": "+1",
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+10% damage dealt",
+					"+10% damage dealt",
+					"+15% damage dealt"
+				],
+				"multipliers": "ATK*1*0.85*1.871",
+				"text_ja": "敵単体に攻撃し、50%の確率で出血を2ターンの間付与する。",
+				"burn_ja": ""
+			},
+			"title_ja": "根性の一撃"
+		},
+		{
+			"title": "Veteran",
+			"type": "Active",
+			"description": {
+				"text": "The caster does not deal a critical hit, but Attack increases by 50% and Increases Critical Hit Resistance by 70%.",
+				"burn": "",
+				"soul": null,
+				"ct": null,
+				"enhance": [
+					"+5% Attack",
+					"+5% Attack",
+					"+5% Attack",
+					"+5% Attack",
+					"+5% Attack"
+				],
+				"multipliers": "",
+				"text_ja": "クリティカルが発生しない。攻撃力が50%UPし、クリティカル抵抗率が70%UPする。",
+				"burn_ja": ""
+			},
+			"title_ja": "百戦錬磨"
+		},
+		{
+			"title": "Tenacious Strike",
+			"type": "Active",
+			"description": {
+				"text": "Attacks with an axe, stunning for 1 turn and decreasing Defense for 2 turns.",
+				"burn": "Increases damage dealt. (-10 Souls)",
+				"soul": "+2",
+				"ct": "4",
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"-1 turn cooldown",
+					"+10% damage dealt",
+					"+15% damage dealt"
+				],
+				"multipliers": "ATK*2.2*0.95*1.871 (2.9 soul burn)",
+				"text_ja": "敵単体に攻撃し、スタンを1ターンの間付与し、防御力DOWNを2ターンの間付与する。",
+				"burn_ja": "ダメージがUPする。(魂力10消費)"
+			},
+			"title_ja": "強靭な一撃"
+		}
+	]
+}

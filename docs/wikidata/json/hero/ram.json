@@ -1,0 +1,224 @@
+{
+	"common": {
+		"name": "Ram",
+		"image": "https://epic7x.com/wp-content/uploads/2021/08/Ram-1.png",
+		"attribute": "earth",
+		"sign": "gemini",
+		"clazz": "mage",
+		"rarity": "5",
+		"name_ja": "ラム"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "15%",
+		"Critical_Hit_Damage": "150%",
+		"dual_attack": "5%",
+		"Effectiveness": "30%",
+		"Effect_Resistance": "0%",
+		"Speed": "106",
+		"Atk": "1556",
+		"HP": "4572",
+		"Def": "683"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": 2
+		},
+		{
+			"key": "Belief",
+			"score": 0
+		},
+		{
+			"key": "Bizarre Story",
+			"score": 0
+		},
+		{
+			"key": "Comforting",
+			"score": 3
+		},
+		{
+			"key": "Complain",
+			"score": 0
+		},
+		{
+			"key": "Criticism",
+			"score": 2
+		},
+		{
+			"key": "Cute Cheer",
+			"score": 1
+		},
+		{
+			"key": "Dream",
+			"score": 1
+		},
+		{
+			"key": "Food Story",
+			"score": 2
+		},
+		{
+			"key": "Gossip",
+			"score": 0
+		},
+		{
+			"key": "Happy Memory",
+			"score": 2
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": 5
+		},
+		{
+			"key": "Heroic Tale",
+			"score": 3
+		},
+		{
+			"key": "Horror",
+			"score": 0
+		},
+		{
+			"key": "Interesting Story",
+			"score": 1
+		},
+		{
+			"key": "Joyful Memories",
+			"score": 3
+		},
+		{
+			"key": "Myth",
+			"score": 1
+		},
+		{
+			"key": "Occult",
+			"score": 0
+		},
+		{
+			"key": "Reality Check",
+			"score": 3
+		},
+		{
+			"key": "Sad Memory",
+			"score": 3
+		},
+		{
+			"key": "Self Indulgent",
+			"score": 0
+		},
+		{
+			"key": "Unique Comment",
+			"score": 3
+		}
+	],
+	"memory": {
+		"potision": "pos-all",
+		"release": [
+			{
+				"key": "Health",
+				"value": "3.6%"
+			},
+			{
+				"key": "Health",
+				"value": "5.4%"
+			},
+			{
+				"key": "Health",
+				"value": "7.2%"
+			},
+			{
+				"key": "Health",
+				"value": "9.0%"
+			},
+			{
+				"key": "Health",
+				"value": "10.8%"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Effectiveness",
+				"value": "9%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "13.50%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "18%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "22.50%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "27%"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "How Boring.",
+			"type": "Active",
+			"description": {
+				"text": "Attacks the enemy with wind, with a 60% chance to decrease Attack for 1 turn. When the caster is buffed, effect chance increases by 25%.",
+				"burn": "Attacks all enemies. This attack does not trigger a Dual Attack. (-10 Souls)",
+				"soul": null,
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+5% effect chance",
+					"+10% damage dealt",
+					"+10% effect chance",
+					"+15% damage dealt"
+				],
+				"multipliers": "ATK*1*1*1.871",
+				"text_ja": "敵単体に攻撃し、60%の確率で攻撃力DOWNを1ターンの間付与する。自身が強化状態の場合、効果発生率が25%UPする。",
+				"burn_ja": "全体攻撃で攻撃する。連携攻撃が発生しない。(魂力10消費)"
+			},
+			"title_ja": "本当につまらないわ"
+		},
+		{
+			"title": "What Are You Looking At?",
+			"type": "Passive",
+			"description": {
+				"text": "Increases Attack by 30%. Reduces the effect of decreased Combat Readiness debuffs inflicted on the caster by 80%.",
+				"burn": "",
+				"soul": null,
+				"ct": null,
+				"enhance": [
+					"-2% Combat Readiness decrease",
+					"-2% Combat Readiness decrease",
+					"-3% Combat Readiness decrease",
+					"-3% Combat Readiness decrease",
+					"-10% Combat Readiness decrease"
+				],
+				"multipliers": "",
+				"text_ja": "攻撃力が30%UPする。自身が受けるアクションゲージDOWN効果が80%DOWNする。",
+				"burn_ja": ""
+			},
+			"title_ja": "なにをじろじろ見ているの"
+		},
+		{
+			"title": "El Fura",
+			"type": "Active",
+			"description": {
+				"text": "Attacks the enemy with a gust of wind, decreasing Defense for 2 turns and grants increased Attack (Greater) to the caster for 2 turns.",
+				"burn": "",
+				"soul": "+3",
+				"ct": "5",
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"-1 turn cooldown",
+					"+10% damage dealt",
+					"+10% damage dealt"
+				],
+				"multipliers": "ATK*1.8*1*1.871",
+				"text_ja": "敵単体に攻撃し、防御力DOWNを2ターンの間付与し、自身に攻撃力UP(大)を2ターンの間付与する。",
+				"burn_ja": ""
+			},
+			"title_ja": "エル・フーラ"
+		}
+	]
+}

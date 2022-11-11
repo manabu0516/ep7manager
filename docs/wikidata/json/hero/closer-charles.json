@@ -1,0 +1,224 @@
+{
+	"common": {
+		"name": "Closer Charles",
+		"image": "https://epic7x.com/wp-content/uploads/2021/08/Closer-Charles-1.png",
+		"attribute": "dark",
+		"sign": "scorpio",
+		"clazz": "thief",
+		"rarity": "5",
+		"name_ja": "終結者チャールズ"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "8%",
+		"Critical_Hit_Damage": "150%",
+		"dual_attack": "5%",
+		"Effectiveness": "0%",
+		"Effect_Resistance": "0%",
+		"Speed": "113",
+		"Atk": "1228",
+		"HP": "6266",
+		"Def": "473"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": 2
+		},
+		{
+			"key": "Belief",
+			"score": 2
+		},
+		{
+			"key": "Bizarre Story",
+			"score": 0
+		},
+		{
+			"key": "Comforting",
+			"score": 0
+		},
+		{
+			"key": "Complain",
+			"score": 0
+		},
+		{
+			"key": "Criticism",
+			"score": 5
+		},
+		{
+			"key": "Cute Cheer",
+			"score": 1
+		},
+		{
+			"key": "Dream",
+			"score": 0
+		},
+		{
+			"key": "Food Story",
+			"score": 0
+		},
+		{
+			"key": "Gossip",
+			"score": 1
+		},
+		{
+			"key": "Happy Memory",
+			"score": 0
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": 2
+		},
+		{
+			"key": "Heroic Tale",
+			"score": 0
+		},
+		{
+			"key": "Horror",
+			"score": 2
+		},
+		{
+			"key": "Interesting Story",
+			"score": 1
+		},
+		{
+			"key": "Joyful Memories",
+			"score": 1
+		},
+		{
+			"key": "Myth",
+			"score": 0
+		},
+		{
+			"key": "Occult",
+			"score": 0
+		},
+		{
+			"key": "Reality Check",
+			"score": 5
+		},
+		{
+			"key": "Sad Memory",
+			"score": 0
+		},
+		{
+			"key": "Self Indulgent",
+			"score": 0
+		},
+		{
+			"key": "Unique Comment",
+			"score": 3
+		}
+	],
+	"memory": {
+		"potision": "pos-lb",
+		"release": [
+			{
+				"key": "Effectiveness",
+				"value": "5.8%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "8.7%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "11.6%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "14.5%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "17.4%"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Critical Hit Chance",
+				"value": "5.60%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "8.40%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "11.20%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "14%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "16.8%"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Elimination",
+			"type": "Active",
+			"description": {
+				"text": "Sharply cuts the enemy. When used on the caster's turn, if the caster is granted perception, uses Demolition instead of Elimination. Demolition: Attacks the enemy with a sword. Damage dealt increases proportional to the target's lost Health. When the enemy is defeated, decreases cooldown of Descent by 1 turn. This attack does not trigger a Dual Attack.",
+				"burn": "",
+				"soul": "+1",
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+10% damage dealt"
+				],
+				"multipliers": "ATK*1*1*1.871 (Demolition: ATK*1.2*1*1.871)\n                                        \n                                                                                    Demolition modifier: 0.4% increased damage per 1% target missing Health",
+				"text_ja": "敵単体に攻撃する。自身のターンに【除去】を使用した時、自身が見切り状態の場合、【除去】の代わりに【抹殺】を発動する。抹殺：敵単体に攻撃する。対象の現在生命力が低いほどダメージがUPする。このスキルで敵を気絶させた時、【空挺落下】のスキルターンを1減少させる。この攻撃では連携攻撃が発生しない。",
+				"burn_ja": ""
+			},
+			"title_ja": "除去"
+		},
+		{
+			"title": "Closer",
+			"type": "Passive",
+			"description": {
+				"text": "After an ally except for the caster attacks, if the enemy's Health is less than 30%, increases Combat Readiness of the caster by 35% and grants perception for 2 turns. Can only be activated once every 2 turns.",
+				"burn": "",
+				"soul": null,
+				"ct": null,
+				"enhance": [
+					"+2% Combat Readiness",
+					"+2% Combat Readiness",
+					"+3% Combat Readiness",
+					"+3% Combat Readiness",
+					"+5% Combat Readiness"
+				],
+				"multipliers": "",
+				"text_ja": "自身以外の味方の攻撃後に対象の生命力が30%未満の場合、自身のアクションゲージを35%UPさせ、見切りを2ターンの間付与する。この効果は2ターンに1回まで発動する。",
+				"burn_ja": ""
+			},
+			"title_ja": "終結者"
+		},
+		{
+			"title": "Descent",
+			"type": "Active",
+			"description": {
+				"text": "Attacks all enemies after descending, increasing Attack of all allies for 2 turns before increasing Combat Readiness by 20%. Increases Evasion of the caster for 3 turns.",
+				"burn": "Increases damage dealt. (-10 Souls)",
+				"soul": "+3",
+				"ct": "5",
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"-1 turn cooldown",
+					"+10% damage dealt",
+					"+10% damage dealt"
+				],
+				"multipliers": "ATK*1*1*1.871 (Soul Burn: ATK*1.25*1*1.871)",
+				"text_ja": "敵全体に攻撃し、味方全体に攻撃力UPを2ターンの間付与した後、アクションゲージを20%UPさせる。自身に回避率UPを3ターンの間付与する。",
+				"burn_ja": "ダメージがUPする。(魂力消費)"
+			},
+			"title_ja": "空挺落下"
+		}
+	]
+}

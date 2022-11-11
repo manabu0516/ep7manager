@@ -1,0 +1,232 @@
+{
+	"common": {
+		"name": "Coli",
+		"image": "https://epic7x.com/wp-content/uploads/2019/01/Coli-1.png",
+		"attribute": "ice",
+		"sign": "scorpio",
+		"clazz": "thief",
+		"rarity": "4",
+		"name_ja": "コリー"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "8%",
+		"Critical_Hit_Damage": "150%",
+		"dual_attack": "5%",
+		"Effectiveness": "0%",
+		"Effect_Resistance": "0%",
+		"Speed": "111",
+		"Atk": "1138",
+		"HP": "5871",
+		"Def": "462"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": 0
+		},
+		{
+			"key": "Belief",
+			"score": 0
+		},
+		{
+			"key": "Bizarre Story",
+			"score": -1
+		},
+		{
+			"key": "Comforting",
+			"score": 1
+		},
+		{
+			"key": "Complain",
+			"score": -3
+		},
+		{
+			"key": "Criticism",
+			"score": 2
+		},
+		{
+			"key": "Cute Cheer",
+			"score": 3
+		},
+		{
+			"key": "Dream",
+			"score": 4
+		},
+		{
+			"key": "Food Story",
+			"score": 4
+		},
+		{
+			"key": "Gossip",
+			"score": -3
+		},
+		{
+			"key": "Happy Memory",
+			"score": 3
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": 8
+		},
+		{
+			"key": "Heroic Tale",
+			"score": 5
+		},
+		{
+			"key": "Horror",
+			"score": 0
+		},
+		{
+			"key": "Interesting Story",
+			"score": 1
+		},
+		{
+			"key": "Joyful Memories",
+			"score": 3
+		},
+		{
+			"key": "Myth",
+			"score": 5
+		},
+		{
+			"key": "Occult",
+			"score": 0
+		},
+		{
+			"key": "Reality Check",
+			"score": 1
+		},
+		{
+			"key": "Sad Memory",
+			"score": 2
+		},
+		{
+			"key": "Self Indulgent",
+			"score": 0
+		},
+		{
+			"key": "Unique Comment",
+			"score": 1
+		}
+	],
+	"memory": {
+		"potision": "pos-all",
+		"release": [
+			{
+				"key": "Attack",
+				"value": "2.4%"
+			},
+			{
+				"key": "Attack",
+				"value": "3.6%"
+			},
+			{
+				"key": "Attack",
+				"value": "4.8%"
+			},
+			{
+				"key": "Attack",
+				"value": "6.0%"
+			},
+			{
+				"key": "Attack",
+				"value": "7.2%"
+			},
+			{
+				"key": "Attack",
+				"value": "8.4%"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Attack",
+				"value": "4%"
+			},
+			{
+				"key": "Attack",
+				"value": "6%"
+			},
+			{
+				"key": "Attack",
+				"value": "8%"
+			},
+			{
+				"key": "Attack",
+				"value": "10%"
+			},
+			{
+				"key": "Attack",
+				"value": "12%"
+			},
+			{
+				"key": "Attack",
+				"value": "14%"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Ambush",
+			"type": "Active",
+			"description": {
+				"text": "Ambushes the enemy, with a 75% chance to steal one buff.",
+				"burn": "Increases effect chance to 100% and steals two buffs. (-10 Souls)",
+				"soul": "+1",
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+10% damage dealt",
+					"+10% damage dealt"
+				],
+				"multipliers": "(ATK*1.34712)*(1+Speed*0.00075)",
+				"text_ja": "敵単体に攻撃し、75%の確率で対象の強化効果を1つ奪う。",
+				"burn_ja": "効果発生率が100%になり、対象の強化効果を2つ奪う。(魂力10消費)"
+			},
+			"title_ja": "奇襲"
+		},
+		{
+			"title": "Accurate Strike",
+			"type": "Active",
+			"description": {
+				"text": "Attacks the enemy with an unseen blade and grants stealth to the caster for 2 turns. At the end of the turn, detonates any bleeding effects and bombs inflicted on the target.",
+				"burn": "",
+				"soul": "+2",
+				"ct": "3",
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+10% damage dealt",
+					"+15% damage dealt"
+				],
+				"multipliers": "(ATK*2.02068)(1+Speed*0.00075)\n                                        \n                                                                                    Barrier strength: 100% self Attack",
+				"text_ja": "敵単体に攻撃し、自身に潜伏を2ターンの間付与する。ターン終了時に対象の出血と爆弾を激爆させる。",
+				"burn_ja": ""
+			},
+			"title_ja": "急所突き"
+		},
+		{
+			"title": "Baptism of Fire",
+			"type": "Active",
+			"description": {
+				"text": "Attacks the enemy with a dagger and bomb, decreasing buff duration by 1 turn, inflicting bleeding and planting a bomb for 2 turns, before increasing Combat Readiness of the caster by 50%. When the target is a Fire elemental Hero, ignores Effect Resistance and increases Combat Readiness of the caster by another additional 50%.",
+				"burn": "",
+				"soul": "+2",
+				"ct": "5",
+				"enhance": [
+					"+5% damage dealt",
+					"+10% damage dealt",
+					"-1 turn cooldown",
+					"+10% damage dealt",
+					"+15% damage dealt"
+				],
+				"multipliers": "(ATK*3.03102)(1+Speed*0.001125)",
+				"text_ja": "敵単体に攻撃し、強化効果を1ターン短縮させ、出血と爆弾を2ターンの間付与する。更に自身のアクションゲージを50%UPさせる。対象が火属性の場合、効果抵抗を無視し、自身のアクションゲージを更に50%UPさせる。",
+				"burn_ja": ""
+			},
+			"title_ja": "爆弾の洗礼"
+		}
+	]
+}

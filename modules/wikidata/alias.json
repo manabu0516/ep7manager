@@ -178,7 +178,7 @@
     },
     "Arbiter Vildred": {
         "localize" : {
-            "ja" : "",
+            "ja" : "執行人ヴィルドレッド",
             "ko" : "Arbiter Vildred",
             "zh-CN" : "Arbiter Vildred",
             "en-US" : "Arbiter Vildred"
@@ -431,7 +431,7 @@
     },
     "Blood Moon Haste": {
         "localize" : {
-            "ja" : "",
+            "ja" : "赤月の貴族ヘイスト",
             "ko" : "Blood Moon Haste",
             "zh-CN" : "Blood Moon Haste",
             "en-US" : "Blood Moon Haste"
@@ -453,7 +453,7 @@
     },
     "Briar Witch Iseria": {
         "localize" : {
-            "ja" : "",
+            "ja" : "灰森のイセリア",
             "ko" : "Briar Witch Iseria",
             "zh-CN" : "Briar Witch Iseria",
             "en-US" : "Briar Witch Iseria"
@@ -508,7 +508,7 @@
     },
     "Carrot": {
         "localize" : {
-            "ja" : "キャッロット",
+            "ja" : "キャロット",
             "ko" : "Carrot",
             "zh-CN" : "Carrot",
             "en-US" : "Carrot"
@@ -2334,13 +2334,13 @@
     },
     "Ruele of Light": {
         "localize" : {
-            "ja" : "ルエル",
+            "ja" : "神光のルエル",
             "ko" : "Ruele of Light",
             "zh-CN" : "Ruele of Light",
             "en-US" : "Ruele of Light"
         },
         "alias" : [
-            
+            "ルエル"
         ]
     },
     "Sage Baal and Sezan": {
@@ -2616,17 +2616,6 @@
         },
         "alias" : [
             "夏イセ","火イセ"
-        ]
-    },
-    "Support Model Brinus": {
-        "localize" : {
-            "ja" : "Support Model Brinus",
-            "ko" : "Support Model Brinus",
-            "zh-CN" : "Support Model Brinus",
-            "en-US" : "Support Model Brinus"
-        },
-        "alias" : [
-            
         ]
     },
     "Surin": {

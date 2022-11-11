@@ -1,0 +1,224 @@
+{
+	"common": {
+		"name": "Command Model Laika",
+		"image": "https://epic7x.com/wp-content/uploads/2021/12/Command-Model-Laika.png",
+		"attribute": "earth",
+		"sign": "gemini",
+		"clazz": "ranger",
+		"rarity": "5",
+		"name_ja": "指揮型ライカ"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "15%",
+		"Critical_Hit_Damage": "150%",
+		"dual_attack": "5%",
+		"Effectiveness": "18%",
+		"Effect_Resistance": "0%",
+		"Speed": "114",
+		"Atk": "1182",
+		"HP": "5299",
+		"Def": "571"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": 2
+		},
+		{
+			"key": "Belief",
+			"score": 1
+		},
+		{
+			"key": "Bizarre Story",
+			"score": 2
+		},
+		{
+			"key": "Comforting",
+			"score": 3
+		},
+		{
+			"key": "Complain",
+			"score": 0
+		},
+		{
+			"key": "Criticism",
+			"score": 0
+		},
+		{
+			"key": "Cute Cheer",
+			"score": 4
+		},
+		{
+			"key": "Dream",
+			"score": 2
+		},
+		{
+			"key": "Food Story",
+			"score": 5
+		},
+		{
+			"key": "Gossip",
+			"score": 2
+		},
+		{
+			"key": "Happy Memory",
+			"score": 2
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": 3
+		},
+		{
+			"key": "Heroic Tale",
+			"score": 4
+		},
+		{
+			"key": "Horror",
+			"score": 3
+		},
+		{
+			"key": "Interesting Story",
+			"score": 3
+		},
+		{
+			"key": "Joyful Memories",
+			"score": 4
+		},
+		{
+			"key": "Myth",
+			"score": 1
+		},
+		{
+			"key": "Occult",
+			"score": 1
+		},
+		{
+			"key": "Reality Check",
+			"score": 0
+		},
+		{
+			"key": "Sad Memory",
+			"score": 0
+		},
+		{
+			"key": "Self Indulgent",
+			"score": 2
+		},
+		{
+			"key": "Unique Comment",
+			"score": 1
+		}
+	],
+	"memory": {
+		"potision": "pos-tb",
+		"release": [
+			{
+				"key": "Effectiveness",
+				"value": "5.8%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "8.7%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "11.6%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "14.5%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "17.4%"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Effectiveness",
+				"value": "9%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "13.50%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "18%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "22.50%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "27%"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Supporting Fire",
+			"type": "Active",
+			"description": {
+				"text": "Attacks the enemy, increasing Combat Readiness of the caster and a random ally except for the caster by 10%.",
+				"burn": "",
+				"soul": "+1",
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+2% Combat Readiness",
+					"+5% damage dealt",
+					"+3% Combat Readiness",
+					"+10% damage dealt",
+					"+10% damage dealt"
+				],
+				"multipliers": "ATK*1*1*1.871",
+				"text_ja": "敵単体に攻撃し、自身と自身以外のランダムな味方のアクションゲージを10%UPさせる。",
+				"burn_ja": ""
+			},
+			"title_ja": "支援射撃"
+		},
+		{
+			"title": "Strike Order",
+			"type": "Active",
+			"description": {
+				"text": "Selects an enemy, with a 75% chance to target them for 2 turns. Increases Attack of the ally except for the caster with the highest Attack for 2 turns, and decreases skill cooldown by 1 turn, before triggering a Dual Attack.",
+				"burn": "",
+				"soul": "+2",
+				"ct": "4",
+				"enhance": [
+					"+10% effect chance",
+					"-1 turn cooldown",
+					"+15% effect chance"
+				],
+				"multipliers": "",
+				"text_ja": "75%の確率で敵単体に標的を2ターンの間付与する。自身以外の攻撃力が最も高い味方単体に攻撃力UPを2ターンの間付与し、スキルターンを1減少させた後、連携攻撃を付与する。",
+				"burn_ja": ""
+			},
+			"title_ja": "攻撃命令"
+		},
+		{
+			"title": "Volley Fire!",
+			"type": "Active",
+			"description": {
+				"text": "Shoots out all wings to attack all enemies, with a 75% to decrease Speed for 2 turns, and a 50% chance to put them to sleep for 1 turn, before granting Immunity to all allies for 2 turns.",
+				"burn": "Decreases skill cooldown by 2 turns. (-10 Souls)",
+				"soul": "+3",
+				"ct": "5",
+				"enhance": [
+					"+5% damage dealt",
+					"+10% effect chance",
+					"-1 turn cooldown",
+					"+15% effect chance",
+					"+10% damage dealt",
+					"+15% damage dealt"
+				],
+				"multipliers": "ATK*1.1*1*1.871",
+				"text_ja": "敵全体に攻撃し、75%の確率でスピードDOWNを2ターン、50%の確率で睡眠を1ターンの間付与した後、味方全体に免疫を2ターンの間付与する。",
+				"burn_ja": "スキルターンが2減少する。(魂力10消費)"
+			},
+			"title_ja": "全弾一斉射撃"
+		}
+	]
+}

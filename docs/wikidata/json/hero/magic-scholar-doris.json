@@ -1,0 +1,240 @@
+{
+	"common": {
+		"name": "Magic Scholar Doris",
+		"image": "https://epic7x.com/wp-content/uploads/2020/10/Magic-Scholar-Doris-fixed.png",
+		"attribute": "light",
+		"sign": "cancer",
+		"clazz": "soul-weaver",
+		"rarity": "3",
+		"name_ja": "魔法学者ドリス"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "15%",
+		"Critical_Hit_Damage": "150%",
+		"dual_attack": "5%",
+		"Effectiveness": "0%",
+		"Effect_Resistance": "0%",
+		"Speed": "96",
+		"Atk": "540",
+		"HP": "5319",
+		"Def": "705"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": 1
+		},
+		{
+			"key": "Belief",
+			"score": 0
+		},
+		{
+			"key": "Bizarre Story",
+			"score": 0
+		},
+		{
+			"key": "Comforting",
+			"score": -1
+		},
+		{
+			"key": "Complain",
+			"score": 1
+		},
+		{
+			"key": "Criticism",
+			"score": 4
+		},
+		{
+			"key": "Cute Cheer",
+			"score": 1
+		},
+		{
+			"key": "Dream",
+			"score": 0
+		},
+		{
+			"key": "Food Story",
+			"score": 0
+		},
+		{
+			"key": "Gossip",
+			"score": 2
+		},
+		{
+			"key": "Happy Memory",
+			"score": 0
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": 1
+		},
+		{
+			"key": "Heroic Tale",
+			"score": 0
+		},
+		{
+			"key": "Horror",
+			"score": -5
+		},
+		{
+			"key": "Interesting Story",
+			"score": 3
+		},
+		{
+			"key": "Joyful Memories",
+			"score": 1
+		},
+		{
+			"key": "Myth",
+			"score": 5
+		},
+		{
+			"key": "Occult",
+			"score": 3
+		},
+		{
+			"key": "Reality Check",
+			"score": 4
+		},
+		{
+			"key": "Sad Memory",
+			"score": 0
+		},
+		{
+			"key": "Self Indulgent",
+			"score": 5
+		},
+		{
+			"key": "Unique Comment",
+			"score": 0
+		}
+	],
+	"memory": {
+		"potision": "pos-all",
+		"release": [
+			{
+				"key": "Health",
+				"value": "120"
+			},
+			{
+				"key": "Health",
+				"value": "180"
+			},
+			{
+				"key": "Health",
+				"value": "240"
+			},
+			{
+				"key": "Health",
+				"value": "300"
+			},
+			{
+				"key": "Health",
+				"value": "360"
+			},
+			{
+				"key": "Health",
+				"value": "420"
+			},
+			{
+				"key": "Health",
+				"value": "480"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Health",
+				"value": "180"
+			},
+			{
+				"key": "Health",
+				"value": "270"
+			},
+			{
+				"key": "Health",
+				"value": "360"
+			},
+			{
+				"key": "Health",
+				"value": "450"
+			},
+			{
+				"key": "Health",
+				"value": "540"
+			},
+			{
+				"key": "Health",
+				"value": "630"
+			},
+			{
+				"key": "Health",
+				"value": "720"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Mana Bullet",
+			"type": "Active",
+			"description": {
+				"text": "Attacks with light energy, before a 50% chance to decrease Hit Chance for 1 turn.",
+				"burn": "",
+				"soul": "+1",
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+10% damage dealt",
+					"+10% effect chance",
+					"+15% effect chance",
+					"+15% damage dealt"
+				],
+				"multipliers": "",
+				"text_ja": "敵単体に攻撃し、50%の確率で命中率DOWNを1ターンの間付与する。",
+				"burn_ja": ""
+			},
+			"title_ja": "魔力弾"
+		},
+		{
+			"title": "Celebration of Light",
+			"type": "Active",
+			"description": {
+				"text": "Recites the Celebration of Light, recovering the Health of all allies and granting continuous healing and increased Defense for 2 turns. Amount recovered increases proportional to the target's max Health.",
+				"burn": "Extends duration of buffs granted by this skill by 1 turn. (-10 Souls Souls)",
+				"soul": "+2",
+				"ct": "5",
+				"enhance": [
+					"+10% healing",
+					"+10% healing",
+					"-1 turn cooldown",
+					"+15% healing",
+					"+15% healing"
+				],
+				"multipliers": "",
+				"text_ja": "味方全体の生命力を回復し、持続回復・防御力UPを2ターンの間付与する。対象の最大生命力が高いほど回復量がUPする。",
+				"burn_ja": "このスキルによる強化効果の持続ターンが1UPする。(魂力10消費)"
+			},
+			"title_ja": "光の祝辞"
+		},
+		{
+			"title": "Primal Light",
+			"type": "Active",
+			"description": {
+				"text": "Dispels one debuff from an ally with light magic, before recovering their Health and increasing their Combat Readiness by 50%. Amount recovered increases proportional to the target's max Health.",
+				"burn": "",
+				"soul": "+2",
+				"ct": "3",
+				"enhance": [
+					"+5% healing",
+					"+5% healing",
+					"+10% healing",
+					"+15% healing",
+					"+15% healing"
+				],
+				"multipliers": "",
+				"text_ja": "味方単体の弱体効果を1つ解除し、対象の生命力を回復し、アクションゲージを50%UPさせる。対象の最大生命力が高いほど回復量がUPする。",
+				"burn_ja": ""
+			},
+			"title_ja": "太古の光"
+		}
+	]
+}

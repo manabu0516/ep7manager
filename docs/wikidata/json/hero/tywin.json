@@ -1,0 +1,224 @@
+{
+	"common": {
+		"name": "Tywin",
+		"image": "https://epic7x.com/wp-content/uploads/2019/01/tywin-full.png",
+		"attribute": "ice",
+		"sign": "aries",
+		"clazz": "knight",
+		"rarity": "5",
+		"name_ja": "タイウィン"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "15%",
+		"Critical_Hit_Damage": "150%",
+		"dual_attack": "5%",
+		"Effectiveness": "18%",
+		"Effect_Resistance": "0%",
+		"Speed": "4",
+		"Atk": "821",
+		"HP": "6751",
+		"Def": "648"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": 7
+		},
+		{
+			"key": "Belief",
+			"score": -6
+		},
+		{
+			"key": "Bizarre Story",
+			"score": -2
+		},
+		{
+			"key": "Comforting",
+			"score": 6
+		},
+		{
+			"key": "Complain",
+			"score": 0
+		},
+		{
+			"key": "Criticism",
+			"score": -4
+		},
+		{
+			"key": "Cute Cheer",
+			"score": 4
+		},
+		{
+			"key": "Dream",
+			"score": 4
+		},
+		{
+			"key": "Food Story",
+			"score": 2
+		},
+		{
+			"key": "Gossip",
+			"score": -2
+		},
+		{
+			"key": "Happy Memory",
+			"score": 5
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": 7
+		},
+		{
+			"key": "Heroic Tale",
+			"score": 0
+		},
+		{
+			"key": "Horror",
+			"score": -2
+		},
+		{
+			"key": "Interesting Story",
+			"score": 1
+		},
+		{
+			"key": "Joyful Memories",
+			"score": 5
+		},
+		{
+			"key": "Myth",
+			"score": 2
+		},
+		{
+			"key": "Occult",
+			"score": -3
+		},
+		{
+			"key": "Reality Check",
+			"score": -2
+		},
+		{
+			"key": "Sad Memory",
+			"score": 8
+		},
+		{
+			"key": "Self Indulgent",
+			"score": -4
+		},
+		{
+			"key": "Unique Comment",
+			"score": 0
+		}
+	],
+	"memory": {
+		"potision": "pos-all",
+		"release": [
+			{
+				"key": "Health",
+				"value": "4.3%"
+			},
+			{
+				"key": "Health",
+				"value": "6.4%"
+			},
+			{
+				"key": "Health",
+				"value": "8.6%"
+			},
+			{
+				"key": "Health",
+				"value": "10.7%"
+			},
+			{
+				"key": "Health",
+				"value": "12.0%"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Health",
+				"value": "6%"
+			},
+			{
+				"key": "Health",
+				"value": "9%"
+			},
+			{
+				"key": "Health",
+				"value": "12%"
+			},
+			{
+				"key": "Health",
+				"value": "15%"
+			},
+			{
+				"key": "Health",
+				"value": "18%"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Sword Storm",
+			"type": "Active",
+			"description": {
+				"text": "Attacks with a swordstorm, With a 50% chance to dispel one buff. Damage dealt increases proportional to the caster's max Health.",
+				"burn": "",
+				"soul": "+1",
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+10% effect chance",
+					"+10% damage dealt",
+					"+15% effect chance",
+					"+15% damage dealt"
+				],
+				"multipliers": "(ATK*0.8+Hp*0.04)*1.77745\n                                        \n                                                                                    4% self max Health (0.04 * Health)",
+				"text_ja": "敵単体に攻撃し、50%の確率で強化効果を1つ解除する。自身の最大生命力が高いほどダメージがUPする。",
+				"burn_ja": ""
+			},
+			"title_ja": "剣気"
+		},
+		{
+			"title": "Commanding Shout",
+			"type": "Active",
+			"description": {
+				"text": "Grants increased Attack and Critical Hit Chance to the caster and an ally for 2 turns, and increases Combat Readiness by 30%.",
+				"burn": "",
+				"soul": "+1",
+				"ct": "4",
+				"enhance": [
+					"Acquire +1 Soul",
+					"-1 turn cooldown"
+				],
+				"multipliers": "",
+				"text_ja": "味方単体と自身に攻撃力UP・クリティカル発生率UPを2ターンの間付与し、アクションゲージを30%UPさせる。",
+				"burn_ja": ""
+			},
+			"title_ja": "叱咤激励"
+		},
+		{
+			"title": "All-Out Attack",
+			"type": "Active",
+			"description": {
+				"text": "Attacks all enemies again after a swordstorm, with a 75% chance to decrease Defense for 2 turns and increase Defense of the caster for 3 turns. Damage dealt increases proportional to the caster's max Health.",
+				"burn": "Grants an extra turn (-20 Souls)",
+				"soul": "+2",
+				"ct": "5",
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+10% effect chance",
+					"-1 turn cooldown",
+					"+15% effect chance",
+					"+10% damage dealt",
+					"+15% damage dealt"
+				],
+				"multipliers": "(ATK*0.5+Hp*0.10)*1.77745",
+				"text_ja": "敵全体に攻撃し、75%の確率で防御力DOWNを2ターンの間付与する。更に自身に防御力UPを3ターンの間付与する。自身の最大生命力が高いほどダメージがUPする。",
+				"burn_ja": "追加ターンが発生する。(魂力20消費)"
+			},
+			"title_ja": "総攻撃"
+		}
+	]
+}

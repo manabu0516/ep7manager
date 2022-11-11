@@ -1,0 +1,240 @@
+{
+	"common": {
+		"name": "Mirsa",
+		"image": "https://epic7x.com/wp-content/uploads/2019/01/mirsa-full.png",
+		"attribute": "light",
+		"sign": "pisces",
+		"clazz": "thief",
+		"rarity": "3",
+		"name_ja": "ミルサ"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "12%",
+		"Critical_Hit_Damage": "150%",
+		"dual_attack": "5%",
+		"Effectiveness": "18%",
+		"Effect_Resistance": "0%",
+		"Speed": "4",
+		"Atk": "885",
+		"HP": "4410",
+		"Def": "501"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": 2
+		},
+		{
+			"key": "Belief",
+			"score": 2
+		},
+		{
+			"key": "Bizarre Story",
+			"score": -2
+		},
+		{
+			"key": "Comforting",
+			"score": -2
+		},
+		{
+			"key": "Complain",
+			"score": 1
+		},
+		{
+			"key": "Criticism",
+			"score": 5
+		},
+		{
+			"key": "Cute Cheer",
+			"score": 1
+		},
+		{
+			"key": "Dream",
+			"score": -3
+		},
+		{
+			"key": "Food Story",
+			"score": 0
+		},
+		{
+			"key": "Gossip",
+			"score": 1
+		},
+		{
+			"key": "Happy Memory",
+			"score": 0
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": 2
+		},
+		{
+			"key": "Heroic Tale",
+			"score": -1
+		},
+		{
+			"key": "Horror",
+			"score": 2
+		},
+		{
+			"key": "Interesting Story",
+			"score": 0
+		},
+		{
+			"key": "Joyful Memories",
+			"score": 1
+		},
+		{
+			"key": "Myth",
+			"score": -1
+		},
+		{
+			"key": "Occult",
+			"score": -1
+		},
+		{
+			"key": "Reality Check",
+			"score": 5
+		},
+		{
+			"key": "Sad Memory",
+			"score": 0
+		},
+		{
+			"key": "Self Indulgent",
+			"score": -1
+		},
+		{
+			"key": "Unique Comment",
+			"score": 3
+		}
+	],
+	"memory": {
+		"potision": "pos-all",
+		"release": [
+			{
+				"key": "Speed",
+				"value": "2"
+			},
+			{
+				"key": "Speed",
+				"value": "3"
+			},
+			{
+				"key": "Speed",
+				"value": "4"
+			},
+			{
+				"key": "Speed",
+				"value": "5"
+			},
+			{
+				"key": "Speed",
+				"value": "6"
+			},
+			{
+				"key": "Speed",
+				"value": "7"
+			},
+			{
+				"key": "Speed",
+				"value": "8"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Attack",
+				"value": "36"
+			},
+			{
+				"key": "Attack",
+				"value": "54"
+			},
+			{
+				"key": "Attack",
+				"value": "72"
+			},
+			{
+				"key": "Attack",
+				"value": "90"
+			},
+			{
+				"key": "Attack",
+				"value": "108"
+			},
+			{
+				"key": "Attack",
+				"value": "126"
+			},
+			{
+				"key": "Attack",
+				"value": "144"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Double Edge",
+			"type": "Active",
+			"description": {
+				"text": "Attacks with dual-wielded swords, with a 35% chance to decrease Speed for 2 turns. Damage dealt increases proportional to the caster's Speed.",
+				"burn": "",
+				"soul": "+1",
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+5% effect chance",
+					"+10% damage dealt",
+					"+5% effect chance",
+					"+5% effect chance",
+					"+15% damage dealt"
+				],
+				"multipliers": "(ATK*1.6839) * (1+Speed*0.00075)\n                                        \n                                                                                    0.075% self Speed (0.00075 * Speed)",
+				"text_ja": "敵単体にダメージを与え、35％の確率でスピードDOWNを2ターンの間付与する。自身のスピードが高いほどダメージがUPする。",
+				"burn_ja": ""
+			},
+			"title_ja": "双刃斬撃"
+		},
+		{
+			"title": "Brush Off",
+			"type": "Active",
+			"description": {
+				"text": "Increases Evasion Chance by 35%. After successfully evading, decreases cooldown of the caster by 1 turn and increases Speed for 2 turns.",
+				"burn": "",
+				"soul": null,
+				"ct": null,
+				"enhance": [
+					"+5% Evasion Chance",
+					"+5% Evasion Chance",
+					"+5% Evasion Chance"
+				],
+				"multipliers": "",
+				"text_ja": "回避率が35%UPする。攻撃を回避した時、その攻撃に伴う効果が発生する前に自身のスキルターンが1減少し、スピードUPを2ターンの間付与する。",
+				"burn_ja": ""
+			},
+			"title_ja": "見切り"
+		},
+		{
+			"title": "Raid",
+			"type": "Active",
+			"description": {
+				"text": "Ambushes the target, silencing them for 2 turns. Damage dealt is proportional to the caster's Speed.",
+				"burn": "Increase damage dealt. (-10 Souls)",
+				"soul": "+2",
+				"ct": "5",
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"-1 turn cooldown",
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+5% damage dealt"
+				],
+				"multipliers": "(ATK*2.9421475) * (1+Speed*0.0015) [2.5 soul burn]\n                                        \n                                                                                    0.15% self Speed (0.0015 * Speed)",
+				"text_ja": "敵単体にダメージを与え、沈黙を2ターンの間付与する。自分のスピードが高いほどダメージがUPする。",
+				"burn_ja": "ダメージがUPする。(魂力10消費)"
+			},
+			"title_ja": "急襲"
+		}
+	]
+}

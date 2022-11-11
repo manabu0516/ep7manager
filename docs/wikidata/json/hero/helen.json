@@ -1,0 +1,240 @@
+{
+	"common": {
+		"name": "Helen",
+		"image": "https://epic7x.com/wp-content/uploads/2021/08/Helen.png",
+		"attribute": "ice",
+		"sign": "cancer",
+		"clazz": "knight",
+		"rarity": "3",
+		"name_ja": "ヘレン"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "15%",
+		"Critical_Hit_Damage": "150%",
+		"dual_attack": "5%",
+		"Effectiveness": "0%",
+		"Effect_Resistance": "0%",
+		"Speed": "91",
+		"Atk": "685",
+		"HP": "6403",
+		"Def": "703"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": 2
+		},
+		{
+			"key": "Belief",
+			"score": 1
+		},
+		{
+			"key": "Bizarre Story",
+			"score": 0
+		},
+		{
+			"key": "Comforting",
+			"score": 4
+		},
+		{
+			"key": "Complain",
+			"score": 2
+		},
+		{
+			"key": "Criticism",
+			"score": 0
+		},
+		{
+			"key": "Cute Cheer",
+			"score": 4
+		},
+		{
+			"key": "Dream",
+			"score": 4
+		},
+		{
+			"key": "Food Story",
+			"score": 8
+		},
+		{
+			"key": "Gossip",
+			"score": 2
+		},
+		{
+			"key": "Happy Memory",
+			"score": 4
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": 4
+		},
+		{
+			"key": "Heroic Tale",
+			"score": 4
+		},
+		{
+			"key": "Horror",
+			"score": 0
+		},
+		{
+			"key": "Interesting Story",
+			"score": 2
+		},
+		{
+			"key": "Joyful Memories",
+			"score": 4
+		},
+		{
+			"key": "Myth",
+			"score": 4
+		},
+		{
+			"key": "Occult",
+			"score": 0
+		},
+		{
+			"key": "Reality Check",
+			"score": 0
+		},
+		{
+			"key": "Sad Memory",
+			"score": 4
+		},
+		{
+			"key": "Self Indulgent",
+			"score": 4
+		},
+		{
+			"key": "Unique Comment",
+			"score": 0
+		}
+	],
+	"memory": {
+		"potision": "pos-all",
+		"release": [
+			{
+				"key": "Health",
+				"value": "120"
+			},
+			{
+				"key": "Health",
+				"value": "180"
+			},
+			{
+				"key": "Health",
+				"value": "240"
+			},
+			{
+				"key": "Health",
+				"value": "300"
+			},
+			{
+				"key": "Health",
+				"value": "360"
+			},
+			{
+				"key": "Health",
+				"value": "420"
+			},
+			{
+				"key": "Health",
+				"value": "480"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Defense",
+				"value": "36"
+			},
+			{
+				"key": "Defense",
+				"value": "54"
+			},
+			{
+				"key": "Defense",
+				"value": "72"
+			},
+			{
+				"key": "Defense",
+				"value": "90"
+			},
+			{
+				"key": "Defense",
+				"value": "108"
+			},
+			{
+				"key": "Defense",
+				"value": "126"
+			},
+			{
+				"key": "Defense",
+				"value": "144"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Blunt Strike",
+			"type": "Active",
+			"description": {
+				"text": "Attacks the enemy before increasing Combat Readiness of a random ally except for the caster by 10%. Damage dealt increases proportional to the caster's Defense.",
+				"burn": "Combat Readiness increase effect will be applied to all allies. (-10 Souls)",
+				"soul": "+1",
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+1% Combat Readiness",
+					"+1% Combat Readiness",
+					"+2% Combat Readiness",
+					"+10% damage dealt",
+					"+10% damage dealt"
+				],
+				"multipliers": "",
+				"text_ja": "敵単体に攻撃した後、自身以外のランダムな味方のアクションゲージを10%UPさせる。自身の防御力が高いほどダメージがUPする。",
+				"burn_ja": "味方全体にアクションゲージUP効果が適用される。(魂力10消費)"
+			},
+			"title_ja": "鈍い一撃"
+		},
+		{
+			"title": "Wild Swing",
+			"type": "Active",
+			"description": {
+				"text": "Attacks the enemy before increasing Defense of the caster for 2 turns and recovers Health. Damage dealt increases proportional to the caster's Defense, and amount recovered increases proportional to the caster's max Health.",
+				"burn": "",
+				"soul": "+2",
+				"ct": "4",
+				"enhance": [
+					"+10% damage dealt",
+					"+10% damage dealt",
+					"+10% damage dealt",
+					"-1 turn cooldown",
+					"+10% healing",
+					"+10% healing",
+					"+10% healing"
+				],
+				"multipliers": "",
+				"text_ja": "敵単体に攻撃した後、自身に防御力UPを2ターンの間付与し、生命力を回復する。自身の防御力が高いほどダメージがUPし、自身の最大生命力が高いほど回復量がUPする。",
+				"burn_ja": ""
+			},
+			"title_ja": "やぶれかぶれ"
+		},
+		{
+			"title": "Sword of Grace",
+			"type": "Active",
+			"description": {
+				"text": "Adopts a counterattacking stance for 3 turns, and grants increased Speed and a barrier to all allies except for the caster for 2 turns. Barrier strength increases proportional to the caster's defense. After suffering an attack that targets all allies, decreases skill cooldown by 2 turns.",
+				"burn": "",
+				"soul": "+3",
+				"ct": "8",
+				"enhance": [
+					"-1 turn cooldown"
+				],
+				"multipliers": "",
+				"text_ja": "自身に反撃を3ターンの間付与し、自身以外の味方全体にスピードUP・シールドを2ターンの間付与する。自身の防御力が高いほどシールド効果がUPする。全体攻撃を受けた時、このスキルのスキルターンが2減少する。",
+				"burn_ja": ""
+			},
+			"title_ja": "恩恵の剣"
+		}
+	]
+}

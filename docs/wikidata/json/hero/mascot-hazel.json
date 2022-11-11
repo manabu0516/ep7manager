@@ -1,0 +1,240 @@
+{
+	"common": {
+		"name": "Mascot Hazel",
+		"image": "https://epic7x.com/wp-content/uploads/2019/01/mascot-full.png",
+		"attribute": "fire",
+		"sign": "aquarius",
+		"clazz": "soul-weaver",
+		"rarity": "3",
+		"name_ja": "生徒会広報ヘイゼル"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "15%",
+		"Critical_Hit_Damage": "150%",
+		"dual_attack": "5%",
+		"Effectiveness": "0%",
+		"Effect_Resistance": "0%",
+		"Speed": "6",
+		"Atk": "849",
+		"HP": "4450",
+		"Def": "662"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": 3
+		},
+		{
+			"key": "Belief",
+			"score": 0
+		},
+		{
+			"key": "Bizarre Story",
+			"score": -3
+		},
+		{
+			"key": "Comforting",
+			"score": 3
+		},
+		{
+			"key": "Complain",
+			"score": 1
+		},
+		{
+			"key": "Criticism",
+			"score": 8
+		},
+		{
+			"key": "Cute Cheer",
+			"score": 5
+		},
+		{
+			"key": "Dream",
+			"score": 0
+		},
+		{
+			"key": "Food Story",
+			"score": 3
+		},
+		{
+			"key": "Gossip",
+			"score": 2
+		},
+		{
+			"key": "Happy Memory",
+			"score": 2
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": -3
+		},
+		{
+			"key": "Heroic Tale",
+			"score": 5
+		},
+		{
+			"key": "Horror",
+			"score": 1
+		},
+		{
+			"key": "Interesting Story",
+			"score": -1
+		},
+		{
+			"key": "Joyful Memories",
+			"score": 2
+		},
+		{
+			"key": "Myth",
+			"score": 5
+		},
+		{
+			"key": "Occult",
+			"score": 3
+		},
+		{
+			"key": "Reality Check",
+			"score": -3
+		},
+		{
+			"key": "Sad Memory",
+			"score": 0
+		},
+		{
+			"key": "Self Indulgent",
+			"score": -5
+		},
+		{
+			"key": "Unique Comment",
+			"score": 0
+		}
+	],
+	"memory": {
+		"potision": "pos-all",
+		"release": [
+			{
+				"key": "Attack",
+				"value": "24"
+			},
+			{
+				"key": "Attack",
+				"value": "36"
+			},
+			{
+				"key": "Attack",
+				"value": "48"
+			},
+			{
+				"key": "Attack",
+				"value": "60"
+			},
+			{
+				"key": "Attack",
+				"value": "72"
+			},
+			{
+				"key": "Attack",
+				"value": "84"
+			},
+			{
+				"key": "Attack",
+				"value": "96"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Attack",
+				"value": "36"
+			},
+			{
+				"key": "Attack",
+				"value": "54"
+			},
+			{
+				"key": "Attack",
+				"value": "72"
+			},
+			{
+				"key": "Attack",
+				"value": "90"
+			},
+			{
+				"key": "Attack",
+				"value": "108"
+			},
+			{
+				"key": "Attack",
+				"value": "126"
+			},
+			{
+				"key": "Attack",
+				"value": "144"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Book of Fire",
+			"type": "Active",
+			"description": {
+				"text": "Attacks enemy with fire magic, with a 30% chance to make them unhealable for 2 turns.",
+				"burn": "",
+				"soul": "+1",
+				"ct": null,
+				"enhance": [
+					"+10% damage dealt",
+					"+5% effect chance",
+					"+15% effect chance",
+					"+15% damage dealt"
+				],
+				"multipliers": "ATK*1*1.05*1.871",
+				"text_ja": "敵単体にダメージを与え、30%の確率で回復不可を2ターンの間付与する。",
+				"burn_ja": ""
+			},
+			"title_ja": "炎の書"
+		},
+		{
+			"title": "Urgent Regen",
+			"type": "Active",
+			"description": {
+				"text": "Heals the ally proportional to the caster's Attack and the target's max Health, before increasing Combat Readiness of the caster by 15%. Amount recovered is doubled when the target's Health is 50% or less.",
+				"burn": "",
+				"soul": "+1",
+				"ct": "2",
+				"enhance": [
+					"+5% healing",
+					"+10% healing",
+					"+10% healing",
+					"+15% healing"
+				],
+				"multipliers": "Heal strength: 15% self attack + 7% target max health\n                                        \n                                                                                    If target at <50% health: 30%, 15%",
+				"text_ja": "味方単体の生命力を回復し、自身のアクションゲージを15%UPさせる。対象の最大生命力と自身の攻撃力が高いほど回復量がUPする。対象の生命力が50%以下の場合、回復量が2倍になる。",
+				"burn_ja": ""
+			},
+			"title_ja": "緊急回復"
+		},
+		{
+			"title": "A Girl in Uniform",
+			"type": "Active",
+			"description": {
+				"text": "Encourages the target and all other allies, increasing Attack for 2 turns before recovering Health of all allies and dispelling one debuff. If the initial target is a Fire elemental Hero, increases Attack (Greater) for 1 turn. This effect will only be applied to one ally. Health recovered increases proportional to the target's max Health and the caster's Attack.",
+				"burn": "Extends buff duration by 1 turn (-10 Souls)",
+				"soul": "+2",
+				"ct": "4",
+				"enhance": [
+					"+5% healing",
+					"+5% healing",
+					"+5% healing",
+					"-1 turn cooldown",
+					"+10% healing",
+					"+10% healing",
+					"+15% healing"
+				],
+				"multipliers": "Heal strength: 30% self attack + 12% target max health",
+				"text_ja": "味方全体に攻撃力UPを2ターンの間付与し、生命力を回復し、弱体効果を1つ解除する。火属性英雄を指定した場合、攻撃力UPの代わりに攻撃力UP(大)を付与する。対象の最大生命力と自身の攻撃力が高いほど回復量がUPする。",
+				"burn_ja": "強化効果の持続ターンが1UPする。(魂力10消費)"
+			},
+			"title_ja": "マスコット･ヘイゼル"
+		}
+	]
+}

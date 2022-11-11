@@ -1,0 +1,224 @@
+{
+	"common": {
+		"name": "Cecilia",
+		"image": "https://epic7x.com/wp-content/uploads/2019/01/Cecilia-2.png",
+		"attribute": "fire",
+		"sign": "aries",
+		"clazz": "knight",
+		"rarity": "5",
+		"name_ja": "セシリア"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "15%",
+		"Critical_Hit_Damage": "150%",
+		"dual_attack": "5%",
+		"Effectiveness": "18%",
+		"Effect_Resistance": "0%",
+		"Speed": "4",
+		"Atk": "821",
+		"HP": "6751",
+		"Def": "648"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": 5
+		},
+		{
+			"key": "Belief",
+			"score": -3
+		},
+		{
+			"key": "Bizarre Story",
+			"score": -1
+		},
+		{
+			"key": "Comforting",
+			"score": 3
+		},
+		{
+			"key": "Complain",
+			"score": 1
+		},
+		{
+			"key": "Criticism",
+			"score": -3
+		},
+		{
+			"key": "Cute Cheer",
+			"score": 4
+		},
+		{
+			"key": "Dream",
+			"score": 3
+		},
+		{
+			"key": "Food Story",
+			"score": 4
+		},
+		{
+			"key": "Gossip",
+			"score": 1
+		},
+		{
+			"key": "Happy Memory",
+			"score": 3
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": 2
+		},
+		{
+			"key": "Heroic Tale",
+			"score": -2
+		},
+		{
+			"key": "Horror",
+			"score": -4
+		},
+		{
+			"key": "Interesting Story",
+			"score": 2
+		},
+		{
+			"key": "Joyful Memories",
+			"score": 4
+		},
+		{
+			"key": "Myth",
+			"score": 1
+		},
+		{
+			"key": "Occult",
+			"score": -1
+		},
+		{
+			"key": "Reality Check",
+			"score": -3
+		},
+		{
+			"key": "Sad Memory",
+			"score": 5
+		},
+		{
+			"key": "Self Indulgent",
+			"score": -2
+		},
+		{
+			"key": "Unique Comment",
+			"score": 1
+		}
+	],
+	"memory": {
+		"potision": "pos-all",
+		"release": [
+			{
+				"key": "Defense",
+				"value": "3.6%"
+			},
+			{
+				"key": "Defense",
+				"value": "5.4%"
+			},
+			{
+				"key": "Defense",
+				"value": "7.2%"
+			},
+			{
+				"key": "Defense",
+				"value": "9.0%"
+			},
+			{
+				"key": "Defense",
+				"value": "10.8%"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Health",
+				"value": "6%"
+			},
+			{
+				"key": "Health",
+				"value": "9%"
+			},
+			{
+				"key": "Health",
+				"value": "12%"
+			},
+			{
+				"key": "Health",
+				"value": "15%"
+			},
+			{
+				"key": "Health",
+				"value": "18%"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Deliverance",
+			"type": "Active",
+			"description": {
+				"text": "Attacks with a spear, with a 35% chance to decrease Defense for 2 turns. When the target is inflicted with decreased Attack, effect chance increases by 25%. Damage dealt increases proportional to the caster's max Health.",
+				"burn": "",
+				"soul": "+1",
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+5% effect chance",
+					"+10% damage dealt",
+					"+10% effect chance",
+					"+15% damage dealt"
+				],
+				"multipliers": "(ATK*0.7*1+HP*0.07)*1.871\n                                        \n                                                                                    7% self max Health (0.07 * Health)",
+				"text_ja": "敵単体に攻撃し、35%の確率で防御力DOWNを2ターンの間付与する。対象が攻撃力DOWN状態の場合、効果発生率が25%UPする。自身の最大生命力が高いほどダメージがUPする。",
+				"burn_ja": ""
+			},
+			"title_ja": "審判"
+		},
+		{
+			"title": "Steel Cloudburst",
+			"type": "Active",
+			"description": {
+				"text": "Attacks all enemies with a magical spear, with an 85% chance to decrease Attack for 2 turns, before dispelling one buff. Damage dealt increases proportional to the caster's max Health.",
+				"burn": "Skill cooldown is decreased by 2 turns. (-10 Souls)",
+				"soul": "+2",
+				"ct": "3",
+				"enhance": [
+					"+5% damage dealt",
+					"+5% effect chance",
+					"+10% damage dealt",
+					"+10% effect chance",
+					"+15% damage dealt"
+				],
+				"multipliers": "(ATK*0.4*1+HP*0.06)*1.871\n                                        \n                                                                                    6% self max Health (0.06 * Health)",
+				"text_ja": "敵全体に攻撃し、85%の確率で攻撃力DOWNを2ターンの間付与し、強化効果を1つ解除する。自身の最大生命力が高いほどダメージがUPする。",
+				"burn_ja": "スキルターンが2減少する。(魂力10消費)"
+			},
+			"title_ja": "鋼鉄の烙印"
+		},
+		{
+			"title": "Ruinous Retribution",
+			"type": "Active",
+			"description": {
+				"text": "Attacks all enemies with a spear infused with dark energy, with a 85% chance to provoke for 1 turn, before granting immunity to all allies for 2 turns and a barrier to the caster for 2 turns. Damage dealt and barrier strength increases proportional to the caster's max Health.",
+				"burn": "",
+				"soul": "+2",
+				"ct": "5",
+				"enhance": [
+					"+10% damage dealt",
+					"+5% effect chance",
+					"-1 turn cooldown",
+					"+10% effect chance",
+					"+15% damage dealt"
+				],
+				"multipliers": "(ATK*0.6+HP*0.12)*1.96455\n                                        \n                                                                                    12% self max Health (0.12 * Health)",
+				"text_ja": "敵全体に攻撃し、85%の確率で挑発を1ターンの間付与し、味方全体に弱体効果免疫を2ターンの間付与し、自身にシールドを2ターンの間付与する。自身の最大生命力が高いほどダメージとシールド効果がUPする。",
+				"burn_ja": ""
+			},
+			"title_ja": "破壊の戒め"
+		}
+	]
+}

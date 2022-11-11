@@ -1,0 +1,240 @@
+{
+	"common": {
+		"name": "Hasol",
+		"image": "https://epic7x.com/wp-content/uploads/2022/01/Hasol-1.png",
+		"attribute": "dark",
+		"sign": "sagittarius",
+		"clazz": "knight",
+		"rarity": "3",
+		"name_ja": "ソリア"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "15%",
+		"Critical_Hit_Damage": "150%",
+		"dual_attack": "5%",
+		"Effectiveness": "0%",
+		"Effect_Resistance": "0%",
+		"Speed": "6",
+		"Atk": "758",
+		"HP": "6002",
+		"Def": "639"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": 3
+		},
+		{
+			"key": "Belief",
+			"score": 1
+		},
+		{
+			"key": "Bizarre Story",
+			"score": 4
+		},
+		{
+			"key": "Comforting",
+			"score": 4
+		},
+		{
+			"key": "Complain",
+			"score": 1
+		},
+		{
+			"key": "Criticism",
+			"score": 1
+		},
+		{
+			"key": "Cute Cheer",
+			"score": 5
+		},
+		{
+			"key": "Dream",
+			"score": 6
+		},
+		{
+			"key": "Food Story",
+			"score": 2
+		},
+		{
+			"key": "Gossip",
+			"score": 3
+		},
+		{
+			"key": "Happy Memory",
+			"score": 3
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": 4
+		},
+		{
+			"key": "Heroic Tale",
+			"score": 3
+		},
+		{
+			"key": "Horror",
+			"score": 4
+		},
+		{
+			"key": "Interesting Story",
+			"score": 7
+		},
+		{
+			"key": "Joyful Memories",
+			"score": 4
+		},
+		{
+			"key": "Myth",
+			"score": 2
+		},
+		{
+			"key": "Occult",
+			"score": 2
+		},
+		{
+			"key": "Reality Check",
+			"score": 0
+		},
+		{
+			"key": "Sad Memory",
+			"score": 1
+		},
+		{
+			"key": "Self Indulgent",
+			"score": 3
+		},
+		{
+			"key": "Unique Comment",
+			"score": 2
+		}
+	],
+	"memory": {
+		"potision": "pos-all",
+		"release": [
+			{
+				"key": "Def",
+				"value": "12"
+			},
+			{
+				"key": "Def",
+				"value": "18"
+			},
+			{
+				"key": "Def",
+				"value": "24"
+			},
+			{
+				"key": "Def",
+				"value": "30"
+			},
+			{
+				"key": "Def",
+				"value": "36"
+			},
+			{
+				"key": "Def",
+				"value": "42"
+			},
+			{
+				"key": "Def",
+				"value": "48"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Health",
+				"value": "180"
+			},
+			{
+				"key": "Health",
+				"value": "270"
+			},
+			{
+				"key": "Health",
+				"value": "360"
+			},
+			{
+				"key": "Health",
+				"value": "450"
+			},
+			{
+				"key": "Health",
+				"value": "540"
+			},
+			{
+				"key": "Health",
+				"value": "630"
+			},
+			{
+				"key": "Health",
+				"value": "720"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Swift Cut",
+			"type": "Active",
+			"description": {
+				"text": "Attacks the enemy, before recovering Health of the caster. Additionally inflicts 500 fixed damage regardless of whether the attack hits. Damage dealt and amount recovered increase proportional to the caster's max Health.",
+				"burn": "Grants an extra turn. (-20 Souls)",
+				"soul": "+1",
+				"ct": null,
+				"enhance": [
+					"5% damage dealt",
+					"5% damage dealt",
+					"5% damage dealt",
+					"5% damage dealt",
+					"10% damage dealt"
+				],
+				"multipliers": "(ATK*0.7*1+HP*0.05)*1.871\n                                        \n                                                                                    5% self max Health (0.05 * Health)",
+				"text_ja": "敵単体に攻撃した後、自身の生命力を回復する。自身のターンに発動時に命中したかに関係なく、追加で500の固定ダメージを与える。自身の最大生命力が高いほどダメージと回復量がUPする。",
+				"burn_ja": "追加ターンが発生する。(魂力20消費)"
+			},
+			"title_ja": "快速斬り"
+		},
+		{
+			"title": "Blade of Vengeance",
+			"type": "Passive",
+			"description": {
+				"text": "When an ally suffers a counterattack decreases damage suffered by 25%. When more than one damage reduction effect is granted, only the strongest effect is applied. After an enemy counterattacks, increases Combat Readiness of the caster by 25%, and increases the fixed damage of Swift Cut and Punishing Strike by 1000. The fixed damage increase effect can be stack up to 4 times.",
+				"burn": "",
+				"soul": null,
+				"ct": null,
+				"enhance": [
+					"+1% Combat Readiness",
+					"+2% Combat Readiness",
+					"+2% Combat Readiness",
+					"+2% Combat Readiness",
+					"+3% Combat Readiness"
+				],
+				"multipliers": "",
+				"text_ja": "敵が反撃した後、自身のアクションゲージが20%UPし、【快速斬り】の固定ダメージが1000UPする。固定ダメージがUPする効果は最大4回累積する。",
+				"burn_ja": ""
+			},
+			"title_ja": "復讐の刃"
+		},
+		{
+			"title": "Punishing Strike",
+			"type": "Active",
+			"description": {
+				"text": "Attacks all enemies with a secret skill and additionally inflicts 500 fixed damage regardless of whether the attack hits. Increase the Defense of all allies for 3 turns. Damage dealt increases proportional to the caster's max Health. After suffering a counterattack, decreases skill cooldown of this skill by 1 turn.",
+				"burn": "",
+				"soul": "+3",
+				"ct": "6",
+				"enhance": [
+					"5% damage dealt",
+					"5% damage dealt",
+					"-1 turn cooldown",
+					"10% damage dealt",
+					"10% damage dealt"
+				],
+				"multipliers": "(ATK*0.7*1+HP*0.10)*1.871\n                                        \n                                                                                    10% self max Health (0.10 * Health)",
+				"text_ja": "敵全体に攻撃した後、味方全体に防御力UPを3ターン・自身にスピードUPを3ターンの間付与する。自身の最大生命力が高いほどダメージがUPする。",
+				"burn_ja": ""
+			},
+			"title_ja": "制裁の一撃"
+		}
+	]
+}

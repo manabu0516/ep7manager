@@ -1,0 +1,224 @@
+{
+	"common": {
+		"name": "Emilia",
+		"image": "https://epic7x.com/wp-content/uploads/2021/08/Emilia-1.png",
+		"attribute": "ice",
+		"sign": "gemini",
+		"clazz": "soul-weaver",
+		"rarity": "5",
+		"name_ja": "エミリア"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "15%",
+		"Critical_Hit_Damage": "150%",
+		"dual_attack": "5%",
+		"Effectiveness": "0%",
+		"Effect_Resistance": "30%",
+		"Speed": "105",
+		"Atk": "649",
+		"HP": "5254",
+		"Def": "694"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": 5
+		},
+		{
+			"key": "Belief",
+			"score": 2
+		},
+		{
+			"key": "Bizarre Story",
+			"score": 1
+		},
+		{
+			"key": "Comforting",
+			"score": 3
+		},
+		{
+			"key": "Complain",
+			"score": 2
+		},
+		{
+			"key": "Criticism",
+			"score": 0
+		},
+		{
+			"key": "Cute Cheer",
+			"score": 6
+		},
+		{
+			"key": "Dream",
+			"score": 5
+		},
+		{
+			"key": "Food Story",
+			"score": 3
+		},
+		{
+			"key": "Gossip",
+			"score": 2
+		},
+		{
+			"key": "Happy Memory",
+			"score": 5
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": 5
+		},
+		{
+			"key": "Heroic Tale",
+			"score": 3
+		},
+		{
+			"key": "Horror",
+			"score": 1
+		},
+		{
+			"key": "Interesting Story",
+			"score": 3
+		},
+		{
+			"key": "Joyful Memories",
+			"score": 7
+		},
+		{
+			"key": "Myth",
+			"score": 2
+		},
+		{
+			"key": "Occult",
+			"score": 1
+		},
+		{
+			"key": "Reality Check",
+			"score": 0
+		},
+		{
+			"key": "Sad Memory",
+			"score": 6
+		},
+		{
+			"key": "Self Indulgent",
+			"score": 1
+		},
+		{
+			"key": "Unique Comment",
+			"score": 3
+		}
+	],
+	"memory": {
+		"potision": "pos-all",
+		"release": [
+			{
+				"key": "Attack",
+				"value": "4.3%"
+			},
+			{
+				"key": "Attack",
+				"value": "6.4%"
+			},
+			{
+				"key": "Attack",
+				"value": "8.6%"
+			},
+			{
+				"key": "Attack",
+				"value": "10.7%"
+			},
+			{
+				"key": "Attack",
+				"value": "12.9%"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Effect Resistance",
+				"value": "9%"
+			},
+			{
+				"key": "Effect Resistance",
+				"value": "13.50%"
+			},
+			{
+				"key": "Effect Resistance",
+				"value": "18%"
+			},
+			{
+				"key": "Effect Resistance",
+				"value": "22.50%"
+			},
+			{
+				"key": "Effect Resistance",
+				"value": "27%"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Huma",
+			"type": "Active",
+			"description": {
+				"text": "Attacks the enemy with ice, before recovering Health of the ally with the lowest Health. Amount recovered increases proportional to the caster's max Health.",
+				"burn": "",
+				"soul": "+1",
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+10% healing",
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+15% healing",
+					"+10% damage dealt",
+					"+10% damage dealt"
+				],
+				"multipliers": "",
+				"text_ja": "敵単体に攻撃し、生命力状態が最も悪い味方の生命力を回復する。自身の最大生命力が高いほど回復量がUPする。",
+				"burn_ja": ""
+			},
+			"title_ja": "ヒューマ"
+		},
+		{
+			"title": "Spirit's Blessing",
+			"type": "Active",
+			"description": {
+				"text": "Grants a blessing to an ally except for the caster, dispelling two debuffs and increasing Attack for 2 turns before increasing Combat Readiness by 40%. Increases Combat Readiness of the caster by 25%.",
+				"burn": "Recovers Health of the target. Amount recovered increases proportional to the caster's max Health. (-10 Souls)",
+				"soul": "+1",
+				"ct": "3",
+				"enhance": [
+					"+1% Target's Combat Readiness",
+					"+1% Target's Combat Readiness",
+					"+1% Target's Combat Readiness",
+					"-1 turn cooldown",
+					"+2% Target's Combat Readiness",
+					"+2% Target's Combat Readiness",
+					"+3% Target's Combat Readiness"
+				],
+				"multipliers": "",
+				"text_ja": "自身以外の味方単体の弱体効果を2つ解除し、攻撃力UPを2ターンの間付与し、アクションゲージを40%UPさせる。自身のアクションゲージを25%UPさせる。",
+				"burn_ja": "対象の生命力を回復する。自身の最大生命力が高いほど回復量がUPする。(魂力10消費)"
+			},
+			"title_ja": "精霊の祝福"
+		},
+		{
+			"title": "Divine Protection of the Great Spirit",
+			"type": "Active",
+			"description": {
+				"text": "Uses spiritual arts to dispel two debuffs from all allies, before recovering Health and granting a barrier for 2 turns. Amount recovered and barrier strength increase proportional to the caster's max Health.",
+				"burn": "",
+				"soul": "+3",
+				"ct": "5",
+				"enhance": [
+					"-1 turn cooldown"
+				],
+				"multipliers": "",
+				"text_ja": "味方全体の弱体効果を2つ解除し、生命力を回復し、シールドを2ターンの間付与する。自身の最大生命力が高いほど回復量とシールド効果がUPする。",
+				"burn_ja": ""
+			},
+			"title_ja": "大精霊の加護"
+		}
+	]
+}

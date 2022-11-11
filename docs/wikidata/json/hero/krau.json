@@ -1,0 +1,224 @@
+{
+	"common": {
+		"name": "Krau",
+		"image": "https://epic7x.com/wp-content/uploads/2019/01/krau-full.png",
+		"attribute": "ice",
+		"sign": "pisces",
+		"clazz": "knight",
+		"rarity": "5",
+		"name_ja": "クラウ"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "15%",
+		"Critical_Hit_Damage": "150%",
+		"dual_attack": "5%",
+		"Effectiveness": "0%",
+		"Effect_Resistance": "18%",
+		"Speed": "100",
+		"Atk": "839",
+		"HP": "6405",
+		"Def": "752"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": 5
+		},
+		{
+			"key": "Belief",
+			"score": 4
+		},
+		{
+			"key": "Bizarre Story",
+			"score": 0
+		},
+		{
+			"key": "Comforting",
+			"score": 6
+		},
+		{
+			"key": "Complain",
+			"score": 2
+		},
+		{
+			"key": "Criticism",
+			"score": 2
+		},
+		{
+			"key": "Cute Cheer",
+			"score": 5
+		},
+		{
+			"key": "Dream",
+			"score": 4
+		},
+		{
+			"key": "Food Story",
+			"score": 4
+		},
+		{
+			"key": "Gossip",
+			"score": 2
+		},
+		{
+			"key": "Happy Memory",
+			"score": 3
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": 6
+		},
+		{
+			"key": "Heroic Tale",
+			"score": 6
+		},
+		{
+			"key": "Horror",
+			"score": 0
+		},
+		{
+			"key": "Interesting Story",
+			"score": 5
+		},
+		{
+			"key": "Joyful Memories",
+			"score": 5
+		},
+		{
+			"key": "Myth",
+			"score": 1
+		},
+		{
+			"key": "Occult",
+			"score": -1
+		},
+		{
+			"key": "Reality Check",
+			"score": -2
+		},
+		{
+			"key": "Sad Memory",
+			"score": -1
+		},
+		{
+			"key": "Self Indulgent",
+			"score": 4
+		},
+		{
+			"key": "Unique Comment",
+			"score": 1
+		}
+	],
+	"memory": {
+		"potision": "pos-all",
+		"release": [
+			{
+				"key": "Health",
+				"value": "4.3%"
+			},
+			{
+				"key": "Health",
+				"value": "6.4%"
+			},
+			{
+				"key": "Health",
+				"value": "8.6%"
+			},
+			{
+				"key": "Health",
+				"value": "10.7%"
+			},
+			{
+				"key": "Health",
+				"value": "12.0%"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Health",
+				"value": "6%"
+			},
+			{
+				"key": "Health",
+				"value": "9%"
+			},
+			{
+				"key": "Health",
+				"value": "12%"
+			},
+			{
+				"key": "Health",
+				"value": "15%"
+			},
+			{
+				"key": "Health",
+				"value": "18%"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Swordstorm",
+			"type": "Active",
+			"description": {
+				"text": "Attack an enemy with a swordstorm with 50% chance to provoke for 1 turn. Damage dealt increases proportional to the caster's max Health.",
+				"burn": "",
+				"soul": "+1",
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+5% effect chance",
+					"+10% effect chance",
+					"+10% damage dealt",
+					"+10% effect chance",
+					"+15% damage dealt"
+				],
+				"multipliers": "(ATK*0.7+Hp*0.085)*1.871\n                                        \n                                                                                    8.5% self max Health (0.085 * Health)",
+				"text_ja": "敵単体に攻撃し、50%の確率で挑発を1ターンの間付与する。自身の最大生命力が高いほどダメージがUPする。",
+				"burn_ja": ""
+			},
+			"title_ja": "ソードストーム"
+		},
+		{
+			"title": "Charge",
+			"type": "Active",
+			"description": {
+				"text": "Shoves the enemy with a shield, decreasing Combat Readiness by 35%, before granting increased Defense to all allies for 2 turns. Damage dealt increases proportional to the caster's Health.",
+				"burn": "",
+				"soul": "+2",
+				"ct": "4",
+				"enhance": [
+					"+5% damage dealt",
+					"+5% Combat Readiness",
+					"+5% damage dealt",
+					"-1 turn cooldown",
+					"+10% Combat Readiness",
+					"+10% damage dealt",
+					"+10% damage dealt"
+				],
+				"multipliers": "(ATK*0.8+HP*0.13)*1.871",
+				"text_ja": "敵単体に攻撃し、アクションゲージを35%DOWNさせる。味方全体に防御力UPを2ターンの間付与する。自身の最大生命力が高いほどダメージがUPする。",
+				"burn_ja": ""
+			},
+			"title_ja": "シールドアサルト"
+		},
+		{
+			"title": "Summon Ziegfried",
+			"type": "Active",
+			"description": {
+				"text": "Summons the Guardian Ziegfried to attack, dealing damage proportional to the caster's lost Health, penetrating Defense. Also grants a barrier to the caster for 2 turns, with strength proportional to the caster's max Health. This attack cannot trigger a critical hit.",
+				"burn": "Grants an extra turn. (-20 Souls)",
+				"soul": "+2",
+				"ct": "6",
+				"enhance": [
+					"Acquire +1 Soul",
+					"-1 turn cooldown"
+				],
+				"multipliers": "ATK*0.3*1*1.871\n                                        \n                                                                                    0.53571 flat per 1 hp missing",
+				"text_ja": "敵単体に攻撃し、自身にシールドを2ターンの間付与する。このスキルはクリティカルが発生しないが、防御力を貫通する。現在生命力が低いほどダメージがUPし、自身の最大生命力が高いほどシールド効果がUPする。",
+				"burn_ja": "追加ターンが発生する。(魂力20消費)"
+			},
+			"title_ja": "ザイフリートの召喚"
+		}
+	]
+}

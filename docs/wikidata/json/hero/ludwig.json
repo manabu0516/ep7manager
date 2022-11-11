@@ -1,0 +1,224 @@
+{
+	"common": {
+		"name": "Ludwig",
+		"image": "https://epic7x.com/wp-content/uploads/2019/01/ludwig-full.png",
+		"attribute": "earth",
+		"sign": "leo",
+		"clazz": "mage",
+		"rarity": "5",
+		"name_ja": "ルートヴィヒ"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "15%",
+		"Critical_Hit_Damage": "150%",
+		"dual_attack": "5%",
+		"Effectiveness": "0%",
+		"Effect_Resistance": "0%",
+		"Speed": "6",
+		"Atk": "1412",
+		"HP": "4248",
+		"Def": "645"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": 4
+		},
+		{
+			"key": "Belief",
+			"score": 3
+		},
+		{
+			"key": "Bizarre Story",
+			"score": 2
+		},
+		{
+			"key": "Comforting",
+			"score": 6
+		},
+		{
+			"key": "Complain",
+			"score": -4
+		},
+		{
+			"key": "Criticism",
+			"score": -3
+		},
+		{
+			"key": "Cute Cheer",
+			"score": 6
+		},
+		{
+			"key": "Dream",
+			"score": 3
+		},
+		{
+			"key": "Food Story",
+			"score": 0
+		},
+		{
+			"key": "Gossip",
+			"score": 4
+		},
+		{
+			"key": "Happy Memory",
+			"score": 4
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": 3
+		},
+		{
+			"key": "Heroic Tale",
+			"score": 1
+		},
+		{
+			"key": "Horror",
+			"score": -3
+		},
+		{
+			"key": "Interesting Story",
+			"score": 3
+		},
+		{
+			"key": "Joyful Memories",
+			"score": 4
+		},
+		{
+			"key": "Myth",
+			"score": 1
+		},
+		{
+			"key": "Occult",
+			"score": 0
+		},
+		{
+			"key": "Reality Check",
+			"score": -3
+		},
+		{
+			"key": "Sad Memory",
+			"score": 3
+		},
+		{
+			"key": "Self Indulgent",
+			"score": -6
+		},
+		{
+			"key": "Unique Comment",
+			"score": 1
+		}
+	],
+	"memory": {
+		"potision": "pos-all",
+		"release": [
+			{
+				"key": "Attack",
+				"value": "3.6%"
+			},
+			{
+				"key": "Attack",
+				"value": "5.4%"
+			},
+			{
+				"key": "Attack",
+				"value": "7.2%"
+			},
+			{
+				"key": "Attack",
+				"value": "9.0%"
+			},
+			{
+				"key": "Attack",
+				"value": "10.8%"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Critical Hit Chance",
+				"value": "5.60%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "8.40%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "11.20%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "14%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "16.8%"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Starlight",
+			"type": "Active",
+			"description": {
+				"text": "Attacks with magic, with a 60% chance to steal one buff. Increases caster’s Combat Readiness by 15% if buffed.",
+				"burn": "",
+				"soul": "+1",
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+5% effect chance",
+					"+10% damage dealt",
+					"+10% effect chance",
+					"+15% damage dealt"
+				],
+				"multipliers": "ATK*1*1*1.871",
+				"text_ja": "敵単体に攻撃し、60%の確率で強化効果を1つ自身に移す。攻撃後、自身が強化状態の場合、自身のアクションゲージを15%UPさせる。",
+				"burn_ja": ""
+			},
+			"title_ja": "星光"
+		},
+		{
+			"title": "Moonlight Blow",
+			"type": "Active",
+			"description": {
+				"text": "Attacks with light, decreasing buff duration by 1 turn before a 85% chance to stun for 1 turn. Grants the caster invincibility for 1 turn. After the attack, when the target is stunned, increases Combat Readiness of the caster by 50%.",
+				"burn": "Ignores Effect Resistance. (-20 Souls)",
+				"soul": "+2",
+				"ct": "4",
+				"enhance": [
+					"+5% damage dealt",
+					"+5% effect chance",
+					"-1 turn cooldown",
+					"+10% effect chance",
+					"+10% damage dealt"
+				],
+				"multipliers": "ATK*1.65*1.05*1.871",
+				"text_ja": "敵単体に攻撃し、強化効果を1ターン短縮させ、85%の確率でスタンを1ターンの間付与する。自身に無敵を1ターンの間付与する。攻撃後、対象がスタン状態の場合、自身のアクションゲージを50%UPさせる。",
+				"burn_ja": "効果抵抗を無視する。(魂力20消費)"
+			},
+			"title_ja": "月光撃"
+		},
+		{
+			"title": "Call of the Full Moon",
+			"type": "Active",
+			"description": {
+				"text": "Attacks all enemies with Nocturne magic, and when an enemy is defeated, extends the caster's buff duration by 1 turn. Penetrates the target's Defense by 30%. When the caster is invincible, penetrates the target's Defense by an additional 30%.",
+				"burn": "",
+				"soul": "+3",
+				"ct": "5",
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"-1 turn cooldown",
+					"+10% damage dealt",
+					"+15% damage dealt"
+				],
+				"multipliers": "ATK*0.85*0.95*1.871 (1.1 soul burn)",
+				"text_ja": "敵全体に攻撃する。このスキルで敵を気絶させた場合、自身の強化効果を1ターン延長させる。防御力を30%貫通する。自身が無敵状態の場合、防御力を更に30%貫通する。",
+				"burn_ja": ""
+			},
+			"title_ja": "満月の召喚"
+		}
+	]
+}

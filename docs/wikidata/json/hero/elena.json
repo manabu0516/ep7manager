@@ -1,0 +1,224 @@
+{
+	"common": {
+		"name": "Elena",
+		"image": "https://epic7x.com/wp-content/uploads/2019/11/Elena-1.png",
+		"attribute": "ice",
+		"sign": "gemini",
+		"clazz": "soul-weaver",
+		"rarity": "5",
+		"name_ja": "エレナ"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "15%",
+		"Critical_Hit_Damage": "150%",
+		"dual_attack": "5%",
+		"Effectiveness": "0%",
+		"Effect_Resistance": "30%",
+		"Speed": "105",
+		"Atk": "649",
+		"HP": "5254",
+		"Def": "694"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": 2
+		},
+		{
+			"key": "Belief",
+			"score": 0
+		},
+		{
+			"key": "Bizarre Story",
+			"score": 1
+		},
+		{
+			"key": "Comforting",
+			"score": 8
+		},
+		{
+			"key": "Complain",
+			"score": 0
+		},
+		{
+			"key": "Criticism",
+			"score": 0
+		},
+		{
+			"key": "Cute Cheer",
+			"score": -3
+		},
+		{
+			"key": "Dream",
+			"score": 2
+		},
+		{
+			"key": "Food Story",
+			"score": -1
+		},
+		{
+			"key": "Gossip",
+			"score": -4
+		},
+		{
+			"key": "Happy Memory",
+			"score": 3
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": 1
+		},
+		{
+			"key": "Heroic Tale",
+			"score": -2
+		},
+		{
+			"key": "Horror",
+			"score": -2
+		},
+		{
+			"key": "Interesting Story",
+			"score": 1
+		},
+		{
+			"key": "Joyful Memories",
+			"score": 3
+		},
+		{
+			"key": "Myth",
+			"score": 0
+		},
+		{
+			"key": "Occult",
+			"score": 1
+		},
+		{
+			"key": "Reality Check",
+			"score": 3
+		},
+		{
+			"key": "Sad Memory",
+			"score": 2
+		},
+		{
+			"key": "Self Indulgent",
+			"score": -2
+		},
+		{
+			"key": "Unique Comment",
+			"score": 1
+		}
+	],
+	"memory": {
+		"potision": "pos-lb",
+		"release": [
+			{
+				"key": "Attack",
+				"value": "4.3%"
+			},
+			{
+				"key": "Attack",
+				"value": "6.4%"
+			},
+			{
+				"key": "Attack",
+				"value": "8.6%"
+			},
+			{
+				"key": "Attack",
+				"value": "10.7%"
+			},
+			{
+				"key": "Attack",
+				"value": "12.9%"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Effect Resistance",
+				"value": "9%"
+			},
+			{
+				"key": "Effect Resistance",
+				"value": "13.50%"
+			},
+			{
+				"key": "Effect Resistance",
+				"value": "18%"
+			},
+			{
+				"key": "Effect Resistance",
+				"value": "22.50%"
+			},
+			{
+				"key": "Effect Resistance",
+				"value": "27%"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Starlight's Will",
+			"type": "Active",
+			"description": {
+				"text": "Attacks with the power of the stars, dispelling one debuff each from two allies.",
+				"burn": "Dispels all debuffs from all allies. (-20 Souls)",
+				"soul": "+1",
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+10% damage dealt",
+					"+10% damage dealt"
+				],
+				"multipliers": "ATK*1*1*1.871",
+				"text_ja": "敵単体に攻撃し、味方2体の弱体効果を1つ解除する。",
+				"burn_ja": "味方全員の弱体効果をすべて解除する。(魂力20消費)"
+			},
+			"title_ja": "星の意志"
+		},
+		{
+			"title": "Guardian's Authority",
+			"type": "Passive",
+			"description": {
+				"text": "Decreases the damage received from attacks that target all enemies by 15% and activates Consecrated Ground. When this effect is granted more than once, only the strongest effect is applied. Consecrated Ground can be activated once every 2 turns. Consecrated Ground: Recovers the Health of all allies before increasing Combat Readiness of the caster by 20%. Amount recovered increases proportional to the caster's max Health.",
+				"burn": "",
+				"soul": null,
+				"ct": null,
+				"enhance": [
+					"-0.5% damage received",
+					"-0.5% damage received",
+					"-0.5% damage received",
+					"-0.5% damage received",
+					"-0.5% damage received",
+					"-0.5% damage received",
+					"-2% damage received"
+				],
+				"multipliers": "",
+				"text_ja": "味方が全体攻撃を受けた時、ダメージが15.0%DOWNし、【祝福されし大地】を発動する。ダメージDOWN効果が重複した場合、一番高い効果のみ適用される。【祝福されし大地】は2ターンに1回まで発動する。祝福されし大地：味方全体の生命力を回復し、自身のアクションゲージを20%UPさせる。自身の最大生命力が高いほど回復量がUPする。",
+				"burn_ja": ""
+			},
+			"title_ja": "守護の力"
+		},
+		{
+			"title": "Eternally Shining Comet",
+			"type": "Active",
+			"description": {
+				"text": "Attacks all enemies with a meteor shower, granting invincibility for 1 turn and increased Effect Resistance for 2 turns to all allies.",
+				"burn": "",
+				"soul": "+3",
+				"ct": "6",
+				"enhance": [
+					"+5% damage dealt",
+					"-1 turn cooldown",
+					"+10% damage dealt",
+					"+15% damage dealt"
+				],
+				"multipliers": "ATK*0.9*1*1.871",
+				"text_ja": "敵全体に攻撃し、味方全体に無敵を1ターン、効果抵抗率UPを2ターンの間付与する。",
+				"burn_ja": ""
+			},
+			"title_ja": "永久に輝く彗星"
+		}
+	]
+}

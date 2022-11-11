@@ -1,0 +1,224 @@
+{
+	"common": {
+		"name": "Sage Baal and Sezan",
+		"image": "https://epic7x.com/wp-content/uploads/2019/04/Sage-Baal-Sezan.png",
+		"attribute": "light",
+		"sign": "taurus",
+		"clazz": "mage",
+		"rarity": "5",
+		"name_ja": "賢者バアル＆セザン"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "15%",
+		"Critical_Hit_Damage": "150%",
+		"dual_attack": "5%",
+		"Effectiveness": "18%",
+		"Effect_Resistance": "18%",
+		"Speed": "4",
+		"Atk": "1039",
+		"HP": "5299",
+		"Def": "673"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": -1
+		},
+		{
+			"key": "Belief",
+			"score": 3
+		},
+		{
+			"key": "Bizarre Story",
+			"score": 0
+		},
+		{
+			"key": "Comforting",
+			"score": -1
+		},
+		{
+			"key": "Complain",
+			"score": -1
+		},
+		{
+			"key": "Criticism",
+			"score": 5
+		},
+		{
+			"key": "Cute Cheer",
+			"score": 3
+		},
+		{
+			"key": "Dream",
+			"score": 3
+		},
+		{
+			"key": "Food Story",
+			"score": 2
+		},
+		{
+			"key": "Gossip",
+			"score": 2
+		},
+		{
+			"key": "Happy Memory",
+			"score": 1
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": 4
+		},
+		{
+			"key": "Heroic Tale",
+			"score": 2
+		},
+		{
+			"key": "Horror",
+			"score": -5
+		},
+		{
+			"key": "Interesting Story",
+			"score": 3
+		},
+		{
+			"key": "Joyful Memories",
+			"score": 1
+		},
+		{
+			"key": "Myth",
+			"score": 9
+		},
+		{
+			"key": "Occult",
+			"score": 5
+		},
+		{
+			"key": "Reality Check",
+			"score": 2
+		},
+		{
+			"key": "Sad Memory",
+			"score": -1
+		},
+		{
+			"key": "Self Indulgent",
+			"score": 7
+		},
+		{
+			"key": "Unique Comment",
+			"score": -2
+		}
+	],
+	"memory": {
+		"potision": "pos-all",
+		"release": [
+			{
+				"key": "Health",
+				"value": "3.6%"
+			},
+			{
+				"key": "Health",
+				"value": "5.4%"
+			},
+			{
+				"key": "Health",
+				"value": "7.2%"
+			},
+			{
+				"key": "Health",
+				"value": "9.0%"
+			},
+			{
+				"key": "Health",
+				"value": "10.8%"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Effectiveness",
+				"value": "9%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "13.50%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "18%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "22.50%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "27%"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Evil Spirit's Call",
+			"type": "Active",
+			"description": {
+				"text": "Summons an evil spirit, with a 50% chance to put an enemy to sleep for 1 turn. When the target is asleep after the attack, increases the caster's Combat Readiness by 20%. This skill does not trigger a Dual Attack.",
+				"burn": "",
+				"soul": "+1",
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+10% effect chance",
+					"+5% damage dealt",
+					"+15% effect chance",
+					"+10% damage dealt"
+				],
+				"multipliers": "ATK*1*1.1*1.871",
+				"text_ja": "敵単体に攻撃し、50%の確率で睡眠を1ターンの間付与する。攻撃後、対象が睡眠状態の場合、自身のアクションゲージを20%UPさせる。このスキルでは連携攻撃が発生しない。",
+				"burn_ja": ""
+			},
+			"title_ja": "悪霊召喚"
+		},
+		{
+			"title": "Cloud of Ruin",
+			"type": "Active",
+			"description": {
+				"text": "Attacks all enemies by summoning storm clouds, with a 85% chance to dispel one buff and a 70% chance to put them to sleep. If this skill is available, increases the caster's Combat Readiness by 10% at the end of the enemy's turn.",
+				"burn": "",
+				"soul": "+2",
+				"ct": "4",
+				"enhance": [
+					"+3% Combat Readiness",
+					"+5% effect chance",
+					"+3% Combat Readiness",
+					"+10% effect chance",
+					"+4% Combat Readiness"
+				],
+				"multipliers": "ATK*0.85*1.3*1.871",
+				"text_ja": "敵全体に攻撃し、85%の確率で強化効果を1つ解除し、70%の確率で睡眠を1ターンの間付与する。このスキルのスキルターン上使用可能な状態の時、敵のターン終了時に自身のアクションゲージが10%UPする。",
+				"burn_ja": ""
+			},
+			"title_ja": "破滅の雲"
+		},
+		{
+			"title": "Eye of Death",
+			"type": "Active",
+			"description": {
+				"text": "Attacks with an evil eye. When the enemy is defeated, silences all remaining enemies for 1 turn, before recovering the caster to max Health. Penetrates defense, but cannot trigger a critical hit. Damage dealt increases proportional to the amount of the caster's lost Health.",
+				"burn": "All skill cooldown is decreased by 2 turns. (-20 Souls)",
+				"soul": "+2",
+				"ct": "5",
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"-1 turn cooldown",
+					"+10% damage dealt",
+					"+10% damage dealt"
+				],
+				"multipliers": "ATK*1.2*1*1.871\n                                        \n                                                                                    30% self missing Health (0.3 * missing Health)",
+				"text_ja": "敵単体に攻撃する。このスキルで敵を気絶させた場合、対象以外の敵全体に沈黙を1ターンの間付与し、自身の生命力をすべて回復する。このスキルは敵の防御力を貫通し、クリティカルが発生しない。自身の現在生命力が低いほどダメージがUPする。",
+				"burn_ja": "本英雄の全スキルのスキルターンが2減少する。(魂力20消費)"
+			},
+			"title_ja": "死滅の眼"
+		}
+	]
+}

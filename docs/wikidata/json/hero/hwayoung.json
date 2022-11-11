@@ -1,0 +1,224 @@
+{
+	"common": {
+		"name": "Hwayoung",
+		"image": "https://epic7x.com/wp-content/uploads/2022/01/Hwayoung.png",
+		"attribute": "fire",
+		"sign": "libra",
+		"clazz": "warrior",
+		"rarity": "5",
+		"name_ja": "フィナス"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "15%",
+		"Critical_Hit_Damage": "150%",
+		"dual_attack": "5%",
+		"Effectiveness": "0%",
+		"Effect_Resistance": "0%",
+		"Speed": "109",
+		"Atk": "1510",
+		"HP": "6226",
+		"Def": "627"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": 3
+		},
+		{
+			"key": "Belief",
+			"score": 1
+		},
+		{
+			"key": "Bizarre Story",
+			"score": 2
+		},
+		{
+			"key": "Comforting",
+			"score": 6
+		},
+		{
+			"key": "Complain",
+			"score": 1
+		},
+		{
+			"key": "Criticism",
+			"score": 3
+		},
+		{
+			"key": "Cute Cheer",
+			"score": 4
+		},
+		{
+			"key": "Dream",
+			"score": 7
+		},
+		{
+			"key": "Food Story",
+			"score": 4
+		},
+		{
+			"key": "Gossip",
+			"score": 1
+		},
+		{
+			"key": "Happy Memory",
+			"score": 1
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": 3
+		},
+		{
+			"key": "Heroic Tale",
+			"score": 2
+		},
+		{
+			"key": "Horror",
+			"score": 1
+		},
+		{
+			"key": "Interesting Story",
+			"score": 6
+		},
+		{
+			"key": "Joyful Memories",
+			"score": 4
+		},
+		{
+			"key": "Myth",
+			"score": 1
+		},
+		{
+			"key": "Occult",
+			"score": 1
+		},
+		{
+			"key": "Reality Check",
+			"score": 1
+		},
+		{
+			"key": "Sad Memory",
+			"score": 4
+		},
+		{
+			"key": "Self Indulgent",
+			"score": 1
+		},
+		{
+			"key": "Unique Comment",
+			"score": 2
+		}
+	],
+	"memory": {
+		"potision": "pos-all",
+		"release": [
+			{
+				"key": "Effectiveness",
+				"value": "4.8%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "7.2%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "9.6%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "12.0%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "14.4%"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Attack",
+				"value": "6%"
+			},
+			{
+				"key": "Attack",
+				"value": "9%"
+			},
+			{
+				"key": "Attack",
+				"value": "12%"
+			},
+			{
+				"key": "Attack",
+				"value": "15%"
+			},
+			{
+				"key": "Attack",
+				"value": "18%"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Supersonic Kick",
+			"type": "Active",
+			"description": {
+				"text": "Attacks the enemy with a kick. When the caster is buffed, inflicts additional damage proportional to the caster's Attack.",
+				"burn": "",
+				"soul": "+1",
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+10% damage dealt"
+				],
+				"multipliers": "ATK*0.6*1*1.871\n                                        \n                                                                                    WHILE BUFFED: 50% of caster's Attack as damage, ignores 70% of def",
+				"text_ja": "敵単体に攻撃する。自身が強化状態の場合、攻撃が命中した時、自身の攻撃力に応じて対象に追加ダメージを与える。",
+				"burn_ja": ""
+			},
+			"title_ja": "無影脚"
+		},
+		{
+			"title": "Prairie Hawk",
+			"type": "Passive",
+			"description": {
+				"text": "The caster cannot trigger a critical hit, but Attack increases by 20%. Damage suffered from a critical hit decreases by 30%. When more than one damage reduction effect is granted, only the strongest effect is applied. At the start of the battle and at the end of the turn, grants a barrier to the caster for 1 turn. Barrier strength increases proportional to the caster's Attack.",
+				"burn": "",
+				"soul": null,
+				"ct": null,
+				"enhance": [
+					"+1% Attack",
+					"+2% Attack",
+					"+2% Attack",
+					"+2% Attack",
+					"+3% Attack"
+				],
+				"multipliers": "",
+				"text_ja": "攻撃力が20%UPする。攻撃時、クリティカルが発生しない。クリティカル攻撃を受けた時、ダメージが30%DOWNする。ダメージDOWN効果が重複した場合、一番高い効果のみ適用される。バトル開始時・ターン終了時、自身にシールドを1ターンの間付与する。自身の攻撃力が高いほどシールド効果がUPする。",
+				"burn_ja": ""
+			},
+			"title_ja": "突撃の構え"
+		},
+		{
+			"title": "Emperor's Flaming Strike",
+			"type": "Active",
+			"description": {
+				"text": "After dispelling all debuffs from the caster, attacks the enemy with a secret technique and grants immunity to the caster for 2 turns. When the target's max Health is greater than the caster's max Health, penetrates the target's Defense, with penetration rate increasing proportional to the difference, up to a maximum of 100%.",
+				"burn": "Grants an extra turn. (-20 Souls)",
+				"soul": "+2",
+				"ct": "5",
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"-1 turn cooldown",
+					"+10% damage dealt",
+					"+10% damage dealt"
+				],
+				"multipliers": "ATK*0.55*1*1.871\n                                        \n                                                                                    1.5% increased damage per 1% hp difference",
+				"text_ja": "自身の弱体効果をすべて解除し、敵単体に攻撃した後、自身に免疫を2ターンの間付与する。対象の防御力を貫通する。対象の最大生命力が自身の最大生命力よりも高いほど防御力を貫通し、最大100%まで貫通する。",
+				"burn_ja": "追加ターンが発生する。(魂力20消費)"
+			},
+			"title_ja": "烈火崩撃"
+		}
+	]
+}

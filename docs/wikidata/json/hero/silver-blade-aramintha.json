@@ -1,0 +1,224 @@
+{
+	"common": {
+		"name": "Silver Blade Aramintha",
+		"image": "https://epic7x.com/wp-content/uploads/2019/03/S3C2aEd.png",
+		"attribute": "light",
+		"sign": "gemini",
+		"clazz": "mage",
+		"rarity": "5",
+		"name_ja": "白銀のアラミンタ"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "15%",
+		"Critical_Hit_Damage": "150%",
+		"dual_attack": "5%",
+		"Effectiveness": "30%",
+		"Effect_Resistance": "0%",
+		"Speed": "106",
+		"Atk": "1197",
+		"HP": "4572",
+		"Def": "683"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": 5
+		},
+		{
+			"key": "Belief",
+			"score": -1
+		},
+		{
+			"key": "Bizarre Story",
+			"score": 0
+		},
+		{
+			"key": "Comforting",
+			"score": 3
+		},
+		{
+			"key": "Complain",
+			"score": 2
+		},
+		{
+			"key": "Criticism",
+			"score": -5
+		},
+		{
+			"key": "Cute Cheer",
+			"score": 6
+		},
+		{
+			"key": "Dream",
+			"score": 5
+		},
+		{
+			"key": "Food Story",
+			"score": 3
+		},
+		{
+			"key": "Gossip",
+			"score": 2
+		},
+		{
+			"key": "Happy Memory",
+			"score": 5
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": 5
+		},
+		{
+			"key": "Heroic Tale",
+			"score": 0
+		},
+		{
+			"key": "Horror",
+			"score": -1
+		},
+		{
+			"key": "Interesting Story",
+			"score": 3
+		},
+		{
+			"key": "Joyful Memories",
+			"score": 7
+		},
+		{
+			"key": "Myth",
+			"score": 2
+		},
+		{
+			"key": "Occult",
+			"score": 0
+		},
+		{
+			"key": "Reality Check",
+			"score": -5
+		},
+		{
+			"key": "Sad Memory",
+			"score": 6
+		},
+		{
+			"key": "Self Indulgent",
+			"score": -1
+		},
+		{
+			"key": "Unique Comment",
+			"score": 3
+		}
+	],
+	"memory": {
+		"potision": "pos-all",
+		"release": [
+			{
+				"key": "Effectiveness",
+				"value": "4.8%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "7.2%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "9.6%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "12.0%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "14.4%"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Attack",
+				"value": "6%"
+			},
+			{
+				"key": "Attack",
+				"value": "9%"
+			},
+			{
+				"key": "Attack",
+				"value": "12%"
+			},
+			{
+				"key": "Attack",
+				"value": "15%"
+			},
+			{
+				"key": "Attack",
+				"value": "18%"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Flame Friction",
+			"type": "Active",
+			"description": {
+				"text": "Attacks the enemy with an explosion of flame, with a 65% chance to burn for 1 turn. After attacking, when an enemy is burned, activates Flame Release as an extra attack. Flame Release: Attacks all enemies with mystic fire energy, with a 50% chance to burn for 1 turn, before increasing the caster's Combat Readiness by 25%.",
+				"burn": "Effect Chance increases to 100%, ignores Effect Resistance (-10 Souls)",
+				"soul": "+1",
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+10% effect chance",
+					"+10% damage dealt",
+					"+10% damage dealt"
+				],
+				"multipliers": "ATK*1*1*1.871",
+				"text_ja": "敵単体に攻撃し、65%の確率で火傷を1ターン付与する。攻撃後、対象が火傷状態の場合、【烈火】を発動する。烈火：敵全体に攻撃し、60%の確率で火傷を1ターンの間付与し、自身のアクションゲージを25%UPさせる。",
+				"burn_ja": "効果発生率が100%になり、効果抵抗を無視する。(魂力10消費)"
+			},
+			"title_ja": "火花"
+		},
+		{
+			"title": "Flame Release",
+			"type": "Passive",
+			"description": {
+				"text": "When an ally except for the caster uses an attack that target's all enemies, increases Combat Readinesss of the caster by 15%. Can only be activated once very 3 turns.",
+				"burn": "",
+				"soul": null,
+				"ct": null,
+				"enhance": [
+					"+0.5% Combat Readiness",
+					"+0.5% Combat Readiness",
+					"+1% Combat Readiness",
+					"+1% Combat Readiness",
+					"+2% Combat Readiness"
+				],
+				"multipliers": "ATK*0.5*1*1.871",
+				"text_ja": "自身以外の味方が全体攻撃した後、自身のアクションゲージを20%UPさせる。この効果は3ターンに1回まで発動する。",
+				"burn_ja": ""
+			},
+			"title_ja": "サブワラの炎"
+		},
+		{
+			"title": "Meteor Fall",
+			"type": "Active",
+			"description": {
+				"text": "Attacks all enemies with a giant meteor, with a 55% chance each to inflict two burn effects for 2 turns, before stunning for 1 turn. Decreases Combat Readiness of the enemy with the highest Combat Readiness by 30%.",
+				"burn": "",
+				"soul": "+2",
+				"ct": "5",
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+10% effect chance",
+					"+10% damage dealt",
+					"+10% damage dealt"
+				],
+				"multipliers": "ATK*0.9*1*1.871",
+				"text_ja": "敵全体に攻撃し、それぞれ55%の確率で2つの火傷を2ターンの間付与し、スタンを1ターンの間付与する。アクションゲージが最も高い敵のアクションゲージを30%DOWNさせる。",
+				"burn_ja": ""
+			},
+			"title_ja": "隕石落下"
+		}
+	]
+}

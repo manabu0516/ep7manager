@@ -1,0 +1,224 @@
+{
+	"common": {
+		"name": "Summer Break Charlotte",
+		"image": "https://epic7x.com/wp-content/uploads/2022/07/Summer-Break-Charlotte.png",
+		"attribute": "ice",
+		"sign": "gemini",
+		"clazz": "knight",
+		"rarity": "5",
+		"name_ja": "夏休みのシャルロッテ"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "12%",
+		"Critical_Hit_Damage": "150%",
+		"dual_attack": "5%",
+		"Effectiveness": "0%",
+		"Effect_Resistance": "0%",
+		"Speed": "6",
+		"Atk": "957",
+		"HP": "6148",
+		"Def": "634"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": null
+		},
+		{
+			"key": "Belief",
+			"score": null
+		},
+		{
+			"key": "Bizarre Story",
+			"score": null
+		},
+		{
+			"key": "Comforting",
+			"score": null
+		},
+		{
+			"key": "Complain",
+			"score": null
+		},
+		{
+			"key": "Criticism",
+			"score": null
+		},
+		{
+			"key": "Cute Cheer",
+			"score": null
+		},
+		{
+			"key": "Dream",
+			"score": null
+		},
+		{
+			"key": "Food Story",
+			"score": null
+		},
+		{
+			"key": "Gossip",
+			"score": null
+		},
+		{
+			"key": "Happy Memory",
+			"score": null
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": null
+		},
+		{
+			"key": "Heroic Tale",
+			"score": null
+		},
+		{
+			"key": "Horror",
+			"score": null
+		},
+		{
+			"key": "Interesting Story",
+			"score": null
+		},
+		{
+			"key": "Joyful Memories",
+			"score": null
+		},
+		{
+			"key": "Myth",
+			"score": null
+		},
+		{
+			"key": "Occult",
+			"score": null
+		},
+		{
+			"key": "Reality Check",
+			"score": null
+		},
+		{
+			"key": "Sad Memory",
+			"score": null
+		},
+		{
+			"key": "Self Indulgent",
+			"score": null
+		},
+		{
+			"key": "Unique Comment",
+			"score": null
+		}
+	],
+	"memory": {
+		"potision": "pos-all",
+		"release": [
+			{
+				"key": "Health",
+				"value": "3.6%"
+			},
+			{
+				"key": "Health",
+				"value": "5.4%"
+			},
+			{
+				"key": "Health",
+				"value": "7.2%"
+			},
+			{
+				"key": "Health",
+				"value": "9.0%"
+			},
+			{
+				"key": "Health",
+				"value": "10.8%"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Attack",
+				"value": "6%"
+			},
+			{
+				"key": "Attack",
+				"value": "9%"
+			},
+			{
+				"key": "Attack",
+				"value": "12%"
+			},
+			{
+				"key": "Attack",
+				"value": "15%"
+			},
+			{
+				"key": "Attack",
+				"value": "18%"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Caught a Big One",
+			"type": "Active",
+			"description": {
+				"text": "Attacks the enemy with two meaty fish and has a 50% chance to decrease Defense for 1 turn. When activated as a Dual Attack, this attack changes into an attack that targets all enemies. The changed attack does not trigger a counterattack, and increases Combat Readiness of the caster by 20%.",
+				"burn": "Attacks all enemies. This attack does not trigger a Dual Attack or a Counterattack. (-10 Souls)",
+				"soul": "+20 fighting spirit\n                                                                                +1",
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+10% effect chance",
+					"+10% damage dealt",
+					"+10% damage dealt"
+				],
+				"multipliers": "ATK*0.9*1*1.875",
+				"text_ja": "敵単体に攻撃し、50%の確率で防御力DOWNを1ターンの間付与する。連携攻撃として発動した場合、全体攻撃に変化する。変化した攻撃は反撃されず、自身のアクションゲージを20%UPさせる。",
+				"burn_ja": "敵全体に攻撃する。この攻撃は連携攻撃が発生せず、反撃されない。(魂力10消費)"
+			},
+			"title_ja": "なかなかいい魚だな"
+		},
+		{
+			"title": "An Adult's Responsibility",
+			"type": "Passive",
+			"description": {
+				"text": "Increases Critical Hit Chance by 10%. At the end of every 4 ally turns, grants enhanced Dual Attack to the caster and gains 15 Fighting Spirit. At the start of the turn, when Fighting Spirit is full, consumes all Fighting Spirit, dispelling all debuffs before increasing Attack for 2 turns and resetting skill cooldowns.",
+				"burn": "",
+				"soul": null,
+				"ct": null,
+				"enhance": [
+					"+1% Critical Hit Chance",
+					"+2% Critical Hit Chance",
+					"+2% Critical Hit Chance",
+					"+2% Critical Hit Chance",
+					"+3% Critical Hit Chance"
+				],
+				"multipliers": "",
+				"text_ja": "クリティカル発生率が10%UPする。味方のターンが4回終了するごとに自身に連携攻撃強化を付与し、【闘志】を15獲得する。ターン開始時、【闘志】が最大の場合、【闘志】をすべて消費して自身の弱体効果をすべて解除した後、攻撃力UPを2ターンの間付与し、スキルターンが0になる。",
+				"burn_ja": ""
+			},
+			"title_ja": "大人の責任感"
+		},
+		{
+			"title": "Whale, Hello There",
+			"type": "Active",
+			"description": {
+				"text": "Attacks the enemy with a pod of killer whales, stunning for 1 turn, before increasing Speed of all allies for 2 turns. Damage dealt increases proportional to the target's lost Health.",
+				"burn": "",
+				"soul": "+3",
+				"ct": "6",
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"-1 turn cooldown",
+					"+10% damage dealt",
+					"+10% damage dealt"
+				],
+				"multipliers": "ATK*1.8*1*1.875\n                                        \n                                                                                    0.35% increased damage per 1% target missing health",
+				"text_ja": "敵単体に攻撃し、スタンを1ターンの間付与した後、味方全体にスピードUPを2ターンの間付与する。対象の現在生命力が低いほどダメージがUPする。",
+				"burn_ja": ""
+			},
+			"title_ja": "そろそろ帰るぞ"
+		}
+	]
+}

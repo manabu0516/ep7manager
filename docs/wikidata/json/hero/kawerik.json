@@ -1,0 +1,224 @@
+{
+	"common": {
+		"name": "Kawerik",
+		"image": "https://epic7x.com/wp-content/uploads/2020/03/kawerik-hd.png",
+		"attribute": "fire",
+		"sign": "virgo",
+		"clazz": "mage",
+		"rarity": "5",
+		"name_ja": "カーウェリック"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "8%",
+		"Critical_Hit_Damage": "150%",
+		"dual_attack": "5%",
+		"Effectiveness": "0%",
+		"Effect_Resistance": "0%",
+		"Speed": "6",
+		"Atk": "1306",
+		"HP": "4248",
+		"Def": "652"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": 0
+		},
+		{
+			"key": "Belief",
+			"score": 7
+		},
+		{
+			"key": "Bizarre Story",
+			"score": -4
+		},
+		{
+			"key": "Comforting",
+			"score": -3
+		},
+		{
+			"key": "Complain",
+			"score": -3
+		},
+		{
+			"key": "Criticism",
+			"score": 6
+		},
+		{
+			"key": "Cute Cheer",
+			"score": 2
+		},
+		{
+			"key": "Dream",
+			"score": -1
+		},
+		{
+			"key": "Food Story",
+			"score": 0
+		},
+		{
+			"key": "Gossip",
+			"score": -2
+		},
+		{
+			"key": "Happy Memory",
+			"score": 0
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": 2
+		},
+		{
+			"key": "Heroic Tale",
+			"score": 0
+		},
+		{
+			"key": "Horror",
+			"score": 2
+		},
+		{
+			"key": "Interesting Story",
+			"score": 0
+		},
+		{
+			"key": "Joyful Memories",
+			"score": 3
+		},
+		{
+			"key": "Myth",
+			"score": -1
+		},
+		{
+			"key": "Occult",
+			"score": 2
+		},
+		{
+			"key": "Reality Check",
+			"score": 0
+		},
+		{
+			"key": "Sad Memory",
+			"score": 3
+		},
+		{
+			"key": "Self Indulgent",
+			"score": 0
+		},
+		{
+			"key": "Unique Comment",
+			"score": 3
+		}
+	],
+	"memory": {
+		"potision": "pos-all",
+		"release": [
+			{
+				"key": "Attack",
+				"value": "3.6%"
+			},
+			{
+				"key": "Attack",
+				"value": "5.4%"
+			},
+			{
+				"key": "Attack",
+				"value": "7.2%"
+			},
+			{
+				"key": "Attack",
+				"value": "9.0%"
+			},
+			{
+				"key": "Attack",
+				"value": "10.8%"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Attack",
+				"value": "6%"
+			},
+			{
+				"key": "Attack",
+				"value": "9%"
+			},
+			{
+				"key": "Attack",
+				"value": "12%"
+			},
+			{
+				"key": "Attack",
+				"value": "15%"
+			},
+			{
+				"key": "Attack",
+				"value": "18%"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Spatial Relocation",
+			"type": "Active",
+			"description": {
+				"text": "Approaches the enemy through subspace and attacks, with a 50% chance to silence for 1 turn. Damage dealt increases proportional to the caster’s Speed.",
+				"burn": "",
+				"soul": "+1",
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+10% effect chance",
+					"+5% damage dealt",
+					"+15% effect chance",
+					"+15% damage dealt"
+				],
+				"multipliers": "(ATK*0.9*1) * (1+Speed*0.00075)",
+				"text_ja": "敵単体に攻撃し、50%の確率で沈黙を1ターンの間付与する。自身のスピードが高いほどダメージがUPする。",
+				"burn_ja": ""
+			},
+			"title_ja": "空間移動"
+		},
+		{
+			"title": "Dimensional Corridor",
+			"type": "Active",
+			"description": {
+				"text": "Attacks the enemy in a dimensional corridor, with a 75% chance each to dispel two buffs before increasing skill cooldowns by 1 turn twice. Grants stealth and  increased Speed of the caster for 2 turns. Damage dealt increases proportional to the target's Speed.",
+				"burn": "Ignores enemy effect resistance. (-20 Souls)",
+				"soul": "+2",
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+10% effect chance",
+					"+5% damage dealt",
+					"+15% effect chance",
+					"+15% damage dealt"
+				],
+				"multipliers": "(ATK*1.4*1*1.871) * (1+Speed*0.003)",
+				"text_ja": "敵単体に攻撃し、それぞれ75%の確率で強化効果を2つ解除した後、2回スキルターンを1増加させる。自身に潜伏・スピードUPを2ターンの間付与する。対象のスピードが高いほどダメージがUPする。",
+				"burn_ja": "効果抵抗を無視する。(魂力20消費)"
+			},
+			"title_ja": "次元回廊"
+		},
+		{
+			"title": "Dimensional Explosion",
+			"type": "Active",
+			"description": {
+				"text": "Attacks all enemies with an explosion, silencing them for 1 turn. Penetrates Defense by 30%. Damage dealt increases proportional to the caster’s Speed.",
+				"burn": "",
+				"soul": "+3",
+				"ct": "5",
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"-1 turn cooldown",
+					"+10% damage dealt",
+					"+15% damage dealt"
+				],
+				"multipliers": "(ATK*1.4*1*1.871) * (1+Speed*0.003)",
+				"text_ja": "敵全体に攻撃し、沈黙を1ターンの間付与し、防御力を30%貫通する。自身のスピードが高いほどダメージがUPする。",
+				"burn_ja": ""
+			},
+			"title_ja": "次元の爆発"
+		}
+	]
+}

@@ -1,0 +1,224 @@
+{
+	"common": {
+		"name": "Lidica",
+		"image": "https://epic7x.com/wp-content/uploads/2019/02/lidia-full.png",
+		"attribute": "fire",
+		"sign": "virgo",
+		"clazz": "ranger",
+		"rarity": "5",
+		"name_ja": "リディカ"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "15%",
+		"Critical_Hit_Damage": "150%",
+		"dual_attack": "5%",
+		"Effectiveness": "0%",
+		"Effect_Resistance": "0%",
+		"Speed": "4",
+		"Atk": "1283",
+		"HP": "4976",
+		"Def": "536"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": 2
+		},
+		{
+			"key": "Belief",
+			"score": 5
+		},
+		{
+			"key": "Bizarre Story",
+			"score": -1
+		},
+		{
+			"key": "Comforting",
+			"score": 3
+		},
+		{
+			"key": "Complain",
+			"score": 3
+		},
+		{
+			"key": "Criticism",
+			"score": -5
+		},
+		{
+			"key": "Cute Cheer",
+			"score": 3
+		},
+		{
+			"key": "Dream",
+			"score": 4
+		},
+		{
+			"key": "Food Story",
+			"score": 4
+		},
+		{
+			"key": "Gossip",
+			"score": 0
+		},
+		{
+			"key": "Happy Memory",
+			"score": 4
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": 5
+		},
+		{
+			"key": "Heroic Tale",
+			"score": 3
+		},
+		{
+			"key": "Horror",
+			"score": 1
+		},
+		{
+			"key": "Interesting Story",
+			"score": 2
+		},
+		{
+			"key": "Joyful Memories",
+			"score": 6
+		},
+		{
+			"key": "Myth",
+			"score": 4
+		},
+		{
+			"key": "Occult",
+			"score": -2
+		},
+		{
+			"key": "Reality Check",
+			"score": -2
+		},
+		{
+			"key": "Sad Memory",
+			"score": 5
+		},
+		{
+			"key": "Self Indulgent",
+			"score": 1
+		},
+		{
+			"key": "Unique Comment",
+			"score": 5
+		}
+	],
+	"memory": {
+		"potision": "pos-tb",
+		"release": [
+			{
+				"key": "Attack",
+				"value": "4.3%"
+			},
+			{
+				"key": "Attack",
+				"value": "6.4%"
+			},
+			{
+				"key": "Attack",
+				"value": "8.6%"
+			},
+			{
+				"key": "Attack",
+				"value": "10.7%"
+			},
+			{
+				"key": "Attack",
+				"value": "12.9%"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Attack",
+				"value": "6%"
+			},
+			{
+				"key": "Attack",
+				"value": "9%"
+			},
+			{
+				"key": "Attack",
+				"value": "12%"
+			},
+			{
+				"key": "Attack",
+				"value": "15%"
+			},
+			{
+				"key": "Attack",
+				"value": "18%"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Wild Rose",
+			"type": "Active",
+			"description": {
+				"text": "Attacks with a sword, decreasing Combat Readiness by 15%. If the enemy is debuffed, decreases Combat Readiness by another 10%.",
+				"burn": "",
+				"soul": "+1",
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+10% damage dealt"
+				],
+				"multipliers": "ATK*1*1*1.871",
+				"text_ja": "敵単体に攻撃し、アクションゲージを10%DOWNさせる。対象が弱体状態の場合、アクションゲージを更に10%DOWNさせる。",
+				"burn_ja": ""
+			},
+			"title_ja": "凶暴な薔薇"
+		},
+		{
+			"title": "Thornbush",
+			"type": "Active",
+			"description": {
+				"text": "Attacks all enemies, with an 85% chance to decrease Hit Chance for 1 turn, make them unhealable for 1 turn, and dispels one buff.",
+				"burn": "Ignores effect resistance. (-10 Souls)",
+				"soul": "+2",
+				"ct": "3",
+				"enhance": [
+					"+5% damage dealt",
+					"+5% effect chance",
+					"+10% damage dealt",
+					"+10% effect chance",
+					"+15% damage dealt"
+				],
+				"multipliers": "ATK*0.7*1*1.871",
+				"text_ja": "敵全体に攻撃し、100%の確率で命中率DOWN・回復不可を1ターンの間付与し、対象の強化効果を1つ解除する。",
+				"burn_ja": "効果抵抗を無視する。(魂力10消費)"
+			},
+			"title_ja": "荊棘"
+		},
+		{
+			"title": "Public Execution",
+			"type": "Active",
+			"description": {
+				"text": "Attacks the enemy with a whip sword, decreasing buff duration by 1 turn, before decreasing Combat Readiness by 100% and decrease Speed for 2 turns. Grants the caster Skill Nullifier, negating damage received from the next attack.",
+				"burn": "",
+				"soul": "+3",
+				"ct": "5",
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"-1 turn cooldown",
+					"+10% damage dealt",
+					"+10% damage dealt"
+				],
+				"multipliers": "ATK*1.6*1*1.871",
+				"text_ja": "敵単体に攻撃し、強化効果を1ターン減少させ、アクションゲージを100%DOWNさせ、スピードDOWNを2ターンの間付与する。自身にスキルダメージ無効を1回付与する。",
+				"burn_ja": ""
+			},
+			"title_ja": "薔薇の懲戒"
+		}
+	]
+}

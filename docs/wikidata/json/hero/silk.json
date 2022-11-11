@@ -1,0 +1,232 @@
+{
+	"common": {
+		"name": "Silk",
+		"image": "https://epic7x.com/wp-content/uploads/2019/01/skil-full.png",
+		"attribute": "earth",
+		"sign": "virgo",
+		"clazz": "ranger",
+		"rarity": "4",
+		"name_ja": "シルク"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "15%",
+		"Critical_Hit_Damage": "150%",
+		"dual_attack": "5%",
+		"Effectiveness": "0%",
+		"Effect_Resistance": "0%",
+		"Speed": "4",
+		"Atk": "1188",
+		"HP": "4693",
+		"Def": "518"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": 5
+		},
+		{
+			"key": "Belief",
+			"score": 4
+		},
+		{
+			"key": "Bizarre Story",
+			"score": 2
+		},
+		{
+			"key": "Comforting",
+			"score": 8
+		},
+		{
+			"key": "Complain",
+			"score": -8
+		},
+		{
+			"key": "Criticism",
+			"score": 1
+		},
+		{
+			"key": "Cute Cheer",
+			"score": 5
+		},
+		{
+			"key": "Dream",
+			"score": 4
+		},
+		{
+			"key": "Food Story",
+			"score": 3
+		},
+		{
+			"key": "Gossip",
+			"score": 0
+		},
+		{
+			"key": "Happy Memory",
+			"score": -1
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": 5
+		},
+		{
+			"key": "Heroic Tale",
+			"score": 3
+		},
+		{
+			"key": "Horror",
+			"score": -2
+		},
+		{
+			"key": "Interesting Story",
+			"score": 0
+		},
+		{
+			"key": "Joyful Memories",
+			"score": 5
+		},
+		{
+			"key": "Myth",
+			"score": 1
+		},
+		{
+			"key": "Occult",
+			"score": 0
+		},
+		{
+			"key": "Reality Check",
+			"score": -2
+		},
+		{
+			"key": "Sad Memory",
+			"score": 3
+		},
+		{
+			"key": "Self Indulgent",
+			"score": -6
+		},
+		{
+			"key": "Unique Comment",
+			"score": 0
+		}
+	],
+	"memory": {
+		"potision": "pos-br",
+		"release": [
+			{
+				"key": "Attack",
+				"value": "2.9%"
+			},
+			{
+				"key": "Attack",
+				"value": "3.6%"
+			},
+			{
+				"key": "Attack",
+				"value": "5.8%"
+			},
+			{
+				"key": "Attack",
+				"value": "7.2%"
+			},
+			{
+				"key": "Attack",
+				"value": "8.7%"
+			},
+			{
+				"key": "Attack",
+				"value": "10.2%"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Attack",
+				"value": "4%"
+			},
+			{
+				"key": "Attack",
+				"value": "6%"
+			},
+			{
+				"key": "Attack",
+				"value": "8%"
+			},
+			{
+				"key": "Attack",
+				"value": "10%"
+			},
+			{
+				"key": "Attack",
+				"value": "12%"
+			},
+			{
+				"key": "Attack",
+				"value": "14%"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Single Shot",
+			"type": "Active",
+			"description": {
+				"text": "Shoots arrows a the enemy, decreasing their Combat Readiness by 7%. Damage dealt increases proportional to the caster's Speed.",
+				"burn": "Grants an extra turn (-20 Souls)",
+				"soul": "+1",
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+1% Combat Readiness",
+					"+5% damage dealt",
+					"+2% Combat Readiness",
+					"+10% damage dealt",
+					"+15% damage dealt"
+				],
+				"multipliers": "(ATK*1.51551) * (1+ Speed*0.00075) \n                                        \n                                                                                    Soul burn is ATK*2.104875",
+				"text_ja": "敵単体に攻撃し、アクションゲージを7%DOWNさせる。自身のスピードが高いほどダメージがUPする。",
+				"burn_ja": "追加ターンが発生する。(魂力20消費)"
+			},
+			"title_ja": "シングルショット"
+		},
+		{
+			"title": "Concentration",
+			"type": "Passive",
+			"description": {
+				"text": "Gains 1 Focus at the end of the turn, and consumes 1 Focus when attacked, increasing Combat Readiness by 15%. If the caster's stacked Focus is more than 2, Single Shot is enhanced to Automatic Fire and damage dealt is increased.",
+				"burn": "",
+				"soul": null,
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt by Automatic Fire",
+					"+5% damage dealt by Automatic Fire",
+					"+5% damage dealt by Automatic Fire",
+					"+5% damage dealt by Automatic Fire"
+				],
+				"multipliers": "",
+				"text_ja": "ターン開始時、【集中】を1獲得する。攻撃を受けた時、【集中】が1消費し、自身のアクションゲージを15%UPさせる。【集中】が2以上の時、シングルショットがバーストショットになり、ダメージがUPする。",
+				"burn_ja": ""
+			},
+			"title_ja": "クリアマインド"
+		},
+		{
+			"title": "Storm Arrow",
+			"type": "Active",
+			"description": {
+				"text": "Attacks all enemies with wind, with a 85% chance to decrease Speed for 2 turns, and granting increase Speed to all allies for 2 turns.",
+				"burn": "",
+				"soul": "+2",
+				"ct": "5",
+				"enhance": [
+					"+10% damage dealt",
+					"-1 turn cooldown",
+					"+15% effect chance",
+					"+15% damage dealt"
+				],
+				"multipliers": "(ATK*1.6698675) * (1+ Speed*0.00075)",
+				"text_ja": "敵全体に攻撃する。85%の確率でスピードDOWNを2ターンの間付与し、味方全体にスピードUPを2ターンの間付与する。",
+				"burn_ja": ""
+			},
+			"title_ja": "ストームアロー"
+		}
+	]
+}

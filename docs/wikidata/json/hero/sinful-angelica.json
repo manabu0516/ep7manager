@@ -1,0 +1,232 @@
+{
+	"common": {
+		"name": "Sinful Angelica",
+		"image": "https://epic7x.com/wp-content/uploads/2020/04/sinful-angelica-hd.png",
+		"attribute": "dark",
+		"sign": "taurus",
+		"clazz": "soul-weaver",
+		"rarity": "4",
+		"name_ja": "罪悪のアンジェリカ"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "15%",
+		"Critical_Hit_Damage": "150%",
+		"dual_attack": "5%",
+		"Effectiveness": "0%",
+		"Effect_Resistance": "30%",
+		"Speed": "6",
+		"Atk": "649",
+		"HP": "4572",
+		"Def": "631"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": 1
+		},
+		{
+			"key": "Belief",
+			"score": 6
+		},
+		{
+			"key": "Bizarre Story",
+			"score": 5
+		},
+		{
+			"key": "Comforting",
+			"score": 1
+		},
+		{
+			"key": "Complain",
+			"score": -7
+		},
+		{
+			"key": "Criticism",
+			"score": 6
+		},
+		{
+			"key": "Cute Cheer",
+			"score": 2
+		},
+		{
+			"key": "Dream",
+			"score": 5
+		},
+		{
+			"key": "Food Story",
+			"score": -1
+		},
+		{
+			"key": "Gossip",
+			"score": -3
+		},
+		{
+			"key": "Happy Memory",
+			"score": -1
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": 0
+		},
+		{
+			"key": "Heroic Tale",
+			"score": -1
+		},
+		{
+			"key": "Horror",
+			"score": 5
+		},
+		{
+			"key": "Interesting Story",
+			"score": 2
+		},
+		{
+			"key": "Joyful Memories",
+			"score": 1
+		},
+		{
+			"key": "Myth",
+			"score": 1
+		},
+		{
+			"key": "Occult",
+			"score": 5
+		},
+		{
+			"key": "Reality Check",
+			"score": 2
+		},
+		{
+			"key": "Sad Memory",
+			"score": 3
+		},
+		{
+			"key": "Self Indulgent",
+			"score": 3
+		},
+		{
+			"key": "Unique Comment",
+			"score": 6
+		}
+	],
+	"memory": {
+		"potision": "pos-tb",
+		"release": [
+			{
+				"key": "Attack",
+				"value": "2.9%"
+			},
+			{
+				"key": "Attack",
+				"value": "3.6%"
+			},
+			{
+				"key": "Attack",
+				"value": "5.8%"
+			},
+			{
+				"key": "Attack",
+				"value": "7.2%"
+			},
+			{
+				"key": "Attack",
+				"value": "8.7%"
+			},
+			{
+				"key": "Attack",
+				"value": "10.2%"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Effect Resistance",
+				"value": "6.80%"
+			},
+			{
+				"key": "Effect Resistance",
+				"value": "10.20%"
+			},
+			{
+				"key": "Effect Resistance",
+				"value": "13.60%"
+			},
+			{
+				"key": "Effect Resistance",
+				"value": "17%"
+			},
+			{
+				"key": "Effect Resistance",
+				"value": "20.40%"
+			},
+			{
+				"key": "Effect Resistance",
+				"value": "22.80%"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Debilitating Strike",
+			"type": "Active",
+			"description": {
+				"text": "Attacks with a staff, with a 65% chance to decrease Attack for 1 turn. When the caster is immortal, triggers a Dual Attack from the ally with the highest Attack.",
+				"burn": "Increases effect chance to 100% and decreases Attack of the target for 2 turns. (-10 Souls)",
+				"soul": "+1",
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+5% effect chance",
+					"+5% damage dealt",
+					"+5% effect chance",
+					"+10% damage dealt",
+					"+10% damage dealt"
+				],
+				"multipliers": "ATK*1*0.95*1.871",
+				"text_ja": "敵単体に攻撃し、65%の確率で攻撃力DOWNを1ターンの間付与する。自身が不死状態の場合、攻撃力が最も高い味方に連携攻撃を付与する。",
+				"burn_ja": "効果発生率が100%にUPし、攻撃力DOWNを2ターンの間付与する。(魂力10消費)"
+			},
+			"title_ja": "衰弱の一撃"
+		},
+		{
+			"title": "Soul Harvest",
+			"type": "Passive",
+			"description": {
+				"text": "When the caster is immortal, enemies cannot be revived and all allies recover Health every time an enemy dies. Amount recovered increases proportional to the target's max Health. Recover effect can only be activated once per turn.",
+				"burn": "",
+				"soul": null,
+				"ct": null,
+				"enhance": [
+					"+5% healing",
+					"+5% healing",
+					"+5% healing",
+					"+5% healing",
+					"+10% healing",
+					"+10% healing",
+					"+10% healing"
+				],
+				"multipliers": "Heal strength: 16-24% Target max Health",
+				"text_ja": "自身が不死状態の場合、敵は復活できず、敵が気絶した時、味方全体の生命力を回復する。回復量は対象の最大生命力が高いほどUPする。回復効果は1ターンに1回まで発生する。",
+				"burn_ja": ""
+			},
+			"title_ja": "魂の収穫"
+		},
+		{
+			"title": "Dark Salvation",
+			"type": "Active",
+			"description": {
+				"text": "Whips up a vortex of darkness and loathing, dispelling one debuff from all allies, before granting immortality to the caster for 2 turns. Grants increased Attack and Speed to all allies except for the caster for 2 turns.",
+				"burn": "",
+				"soul": "+3",
+				"ct": "5",
+				"enhance": [
+					"-1 turn cooldown"
+				],
+				"multipliers": "",
+				"text_ja": "味方全体の弱体効果を1つ解除し、自身に不死を2ターンの間付与する。自身以外の味方全体に攻撃力UP・スピードUPを2ターンの間付与する。",
+				"burn_ja": ""
+			},
+			"title_ja": "闇の救済"
+		}
+	]
+}

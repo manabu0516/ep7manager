@@ -1,0 +1,232 @@
+{
+	"common": {
+		"name": "Wanderer Silk",
+		"image": "https://epic7x.com/wp-content/uploads/2019/01/silk-full.png",
+		"attribute": "light",
+		"sign": "capricorn",
+		"clazz": "ranger",
+		"rarity": "4",
+		"name_ja": "流浪者シルク"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "15%",
+		"Critical_Hit_Damage": "150%",
+		"dual_attack": "5%",
+		"Effectiveness": "30%",
+		"Effect_Resistance": "0%",
+		"Speed": "6",
+		"Atk": "930",
+		"HP": "5380",
+		"Def": "564"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": 3
+		},
+		{
+			"key": "Belief",
+			"score": 4
+		},
+		{
+			"key": "Bizarre Story",
+			"score": -3
+		},
+		{
+			"key": "Comforting",
+			"score": 8
+		},
+		{
+			"key": "Complain",
+			"score": -3
+		},
+		{
+			"key": "Criticism",
+			"score": 1
+		},
+		{
+			"key": "Cute Cheer",
+			"score": 8
+		},
+		{
+			"key": "Dream",
+			"score": 4
+		},
+		{
+			"key": "Food Story",
+			"score": 0
+		},
+		{
+			"key": "Gossip",
+			"score": 2
+		},
+		{
+			"key": "Happy Memory",
+			"score": 2
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": 3
+		},
+		{
+			"key": "Heroic Tale",
+			"score": 3
+		},
+		{
+			"key": "Horror",
+			"score": -5
+		},
+		{
+			"key": "Interesting Story",
+			"score": 0
+		},
+		{
+			"key": "Joyful Memories",
+			"score": 2
+		},
+		{
+			"key": "Myth",
+			"score": 2
+		},
+		{
+			"key": "Occult",
+			"score": 0
+		},
+		{
+			"key": "Reality Check",
+			"score": 3
+		},
+		{
+			"key": "Sad Memory",
+			"score": 3
+		},
+		{
+			"key": "Self Indulgent",
+			"score": -3
+		},
+		{
+			"key": "Unique Comment",
+			"score": 3
+		}
+	],
+	"memory": {
+		"potision": "pos-tr",
+		"release": [
+			{
+				"key": "Speed",
+				"value": "4"
+			},
+			{
+				"key": "Speed",
+				"value": "6"
+			},
+			{
+				"key": "Speed",
+				"value": "8"
+			},
+			{
+				"key": "Speed",
+				"value": "10"
+			},
+			{
+				"key": "Speed",
+				"value": "12"
+			},
+			{
+				"key": "Speed",
+				"value": "14"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Effectiveness",
+				"value": "6.80%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "10.20%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "13.60%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "17%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "20.40%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "22.80%"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Basic Shoot",
+			"type": "Active",
+			"description": {
+				"text": "Shoots arrows at the enemy, with a 50% chance to target for 2 turns.",
+				"burn": "",
+				"soul": "+1",
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+10% damage dealt",
+					"+5% effect chance",
+					"+5% effect chance",
+					"+15% damage dealt"
+				],
+				"multipliers": "(ATK*1.871) * (1+Speed*0.00075)\n                                        \n                                                                                    0.075% self Speed (0.00075 * Speed)",
+				"text_ja": "敵単体に攻撃し、40%の確率で標的を2ターンの間付与する。",
+				"burn_ja": ""
+			},
+			"title_ja": "シングルショット"
+		},
+		{
+			"title": "Automatic Fire",
+			"type": "Active",
+			"description": {
+				"text": "Fires arrow at the enemy to attack, dispelling one buff. When the caster has a buff, triggers a dual Attack from the ally with the highest Attack.",
+				"burn": "",
+				"soul": "+1",
+				"ct": "2",
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+10% damage dealt",
+					"+10% damage dealt",
+					"+10% damage dealt"
+				],
+				"multipliers": "(ATK*1.6839) * (1+Speed*0.00075)\n                                        \n                                                                                    0.075% self Speed (0.00075 * Speed)",
+				"text_ja": "敵単体に攻撃し、強化効果を1つ解除する。自身が強化状態の場合、攻撃力が最も高い味方に連携攻撃を発生させる。",
+				"burn_ja": ""
+			},
+			"title_ja": "クリアショット"
+		},
+		{
+			"title": "Shock Arrow",
+			"type": "Active",
+			"description": {
+				"text": "Attacks the enemy with lightning arrows, inflicting silence and decreased Attack for 2 turns and decreasing Combat Readiness by 100%. Grants a barrier to the caster for 2 turns. Barrier strength increases proportional to the caster's level.",
+				"burn": "Ignores Effect Resistance. (-20 Souls)",
+				"soul": "+2",
+				"ct": "5",
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"-1 turn cooldown",
+					"+10% damage dealt",
+					"+10% damage dealt"
+				],
+				"multipliers": "(ATK*3.3012) * (1+Speed*0.001125)\n                                        \n                                                                                    0.1125% self Speed (0.001125 * Speed)",
+				"text_ja": "敵単体に攻撃し、沈黙・攻撃力DOWNを2ターンの間付与し、アクションゲージを100%DOWNさせる。更に自身にシールドを2ターンの間付与する。自身のレベルが高いほどシールド効果がUPする。",
+				"burn_ja": "効果抵抗を無視する。(魂力20消費)"
+			},
+			"title_ja": "ライトニングアロー"
+		}
+	]
+}

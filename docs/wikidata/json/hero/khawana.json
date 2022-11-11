@@ -1,0 +1,232 @@
+{
+	"common": {
+		"name": "Khawana",
+		"image": "https://epic7x.com/wp-content/uploads/2019/10/kawana-full.png",
+		"attribute": "fire",
+		"sign": "pisces",
+		"clazz": "thief",
+		"rarity": "4",
+		"name_ja": "カワナ"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "12%",
+		"Critical_Hit_Damage": "150%",
+		"dual_attack": "5%",
+		"Effectiveness": "18%",
+		"Effect_Resistance": "0%",
+		"Speed": "4",
+		"Atk": "957",
+		"HP": "4653",
+		"Def": "515"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": 2
+		},
+		{
+			"key": "Belief",
+			"score": 3
+		},
+		{
+			"key": "Bizarre Story",
+			"score": -1
+		},
+		{
+			"key": "Comforting",
+			"score": 2
+		},
+		{
+			"key": "Complain",
+			"score": 3
+		},
+		{
+			"key": "Criticism",
+			"score": 0
+		},
+		{
+			"key": "Cute Cheer",
+			"score": 4
+		},
+		{
+			"key": "Dream",
+			"score": 4
+		},
+		{
+			"key": "Food Story",
+			"score": 4
+		},
+		{
+			"key": "Gossip",
+			"score": -1
+		},
+		{
+			"key": "Happy Memory",
+			"score": 4
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": 5
+		},
+		{
+			"key": "Heroic Tale",
+			"score": 3
+		},
+		{
+			"key": "Horror",
+			"score": 1
+		},
+		{
+			"key": "Interesting Story",
+			"score": 3
+		},
+		{
+			"key": "Joyful Memories",
+			"score": 7
+		},
+		{
+			"key": "Myth",
+			"score": 1
+		},
+		{
+			"key": "Occult",
+			"score": 1
+		},
+		{
+			"key": "Reality Check",
+			"score": 0
+		},
+		{
+			"key": "Sad Memory",
+			"score": 2
+		},
+		{
+			"key": "Self Indulgent",
+			"score": 1
+		},
+		{
+			"key": "Unique Comment",
+			"score": 3
+		}
+	],
+	"memory": {
+		"potision": "pos-all",
+		"release": [
+			{
+				"key": "Health",
+				"value": "2.4%"
+			},
+			{
+				"key": "Health",
+				"value": "3.6%"
+			},
+			{
+				"key": "Health",
+				"value": "4.8%"
+			},
+			{
+				"key": "Health",
+				"value": "6.0%"
+			},
+			{
+				"key": "Health",
+				"value": "7.2%"
+			},
+			{
+				"key": "Health",
+				"value": "8.4%"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Attack",
+				"value": "4%"
+			},
+			{
+				"key": "Attack",
+				"value": "6%"
+			},
+			{
+				"key": "Attack",
+				"value": "8%"
+			},
+			{
+				"key": "Attack",
+				"value": "10%"
+			},
+			{
+				"key": "Attack",
+				"value": "12%"
+			},
+			{
+				"key": "Attack",
+				"value": "14%"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Hey There!",
+			"type": "Active",
+			"description": {
+				"text": "Attacks the enemy with sharp sickles, with a 35% chance to inflict two bleeding effects for 2 turns. If the enemy is debuffed after the attack, additional damage is inflicted.",
+				"burn": "",
+				"soul": "+1",
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+5% effect chance",
+					"+10% damage dealt",
+					"+10% effect chance",
+					"+10% damage dealt"
+				],
+				"multipliers": "ATK*1*1*1.871",
+				"text_ja": "敵単体に攻撃し、それぞれ35%の確率で2つの出血を2ターンの間付与する。攻撃後、対象が弱体状態の場合、追加ダメージが発生する。",
+				"burn_ja": ""
+			},
+			"title_ja": "急接近"
+		},
+		{
+			"title": "Casual Introduction",
+			"type": "Active",
+			"description": {
+				"text": "Attack all enemies with a flame guardian, increasing Attack of all allies for 2 turns. Grants skill nullifier to all fire elemental allies once. Damage increases proportional to the caster's Speed.",
+				"burn": "Grants an extra turn. (-20 Souls)",
+				"soul": "+2",
+				"ct": "4",
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+10% damage dealt"
+				],
+				"multipliers": "ATK*0.9*1*1.871",
+				"text_ja": "敵全体に攻撃し、味方全体に攻撃力UPを2ターンの間付与する。味方全体が火属性の場合、味方全体にスキルダメージ無効を1回付与する。自身のスピードが高いほどダメージがUPする。",
+				"burn_ja": "追加ターンが発生する。(魂力20消費)"
+			},
+			"title_ja": "挨拶代わり"
+		},
+		{
+			"title": "Rough Welcome",
+			"type": "Active",
+			"description": {
+				"text": "Attacks the enemy with a flame guardian,  dispelling two buffs before stunning for 1 turn.Increases Combat Readiness of all fire elemental allies by 20%. Damage dealt increases proportional to the caster's Speed.",
+				"burn": "",
+				"soul": "+2",
+				"ct": "5",
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"-1 turn cooldown",
+					"+10% damage dealt",
+					"+10% damage dealt"
+				],
+				"multipliers": "ATK*1.5*1*1.871",
+				"text_ja": "敵単体に攻撃し、強化効果を2つ解除し、スタンを1ターンの間付与する。味方全体が火属性の場合、味方全体のアクションゲージを20%UPさせる。自身のスピードが高いほどダメージがUPする。",
+				"burn_ja": ""
+			},
+			"title_ja": "歓迎の舞"
+		}
+	]
+}

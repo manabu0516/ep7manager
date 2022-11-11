@@ -1,0 +1,232 @@
+{
+	"common": {
+		"name": "Lots",
+		"image": "https://epic7x.com/wp-content/uploads/2019/01/lots-full.png",
+		"attribute": "earth",
+		"sign": "gemini",
+		"clazz": "soul-weaver",
+		"rarity": "4",
+		"name_ja": "ラッツ"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "15%",
+		"Critical_Hit_Damage": "150%",
+		"dual_attack": "5%",
+		"Effectiveness": "0%",
+		"Effect_Resistance": "30%",
+		"Speed": "103",
+		"Atk": "603",
+		"HP": "4945",
+		"Def": "662"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": 3
+		},
+		{
+			"key": "Belief",
+			"score": 2
+		},
+		{
+			"key": "Bizarre Story",
+			"score": -3
+		},
+		{
+			"key": "Comforting",
+			"score": 0
+		},
+		{
+			"key": "Complain",
+			"score": -2
+		},
+		{
+			"key": "Criticism",
+			"score": 0
+		},
+		{
+			"key": "Cute Cheer",
+			"score": 4
+		},
+		{
+			"key": "Dream",
+			"score": 5
+		},
+		{
+			"key": "Food Story",
+			"score": 0
+		},
+		{
+			"key": "Gossip",
+			"score": -2
+		},
+		{
+			"key": "Happy Memory",
+			"score": 3
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": 2
+		},
+		{
+			"key": "Heroic Tale",
+			"score": -2
+		},
+		{
+			"key": "Horror",
+			"score": -2
+		},
+		{
+			"key": "Interesting Story",
+			"score": 2
+		},
+		{
+			"key": "Joyful Memories",
+			"score": 6
+		},
+		{
+			"key": "Myth",
+			"score": 1
+		},
+		{
+			"key": "Occult",
+			"score": 2
+		},
+		{
+			"key": "Reality Check",
+			"score": -6
+		},
+		{
+			"key": "Sad Memory",
+			"score": 8
+		},
+		{
+			"key": "Self Indulgent",
+			"score": -1
+		},
+		{
+			"key": "Unique Comment",
+			"score": 3
+		}
+	],
+	"memory": {
+		"potision": "pos-all",
+		"release": [
+			{
+				"key": "Dual Attack Chance",
+				"value": "0.7%"
+			},
+			{
+				"key": "Dual Attack Chance",
+				"value": "1.0%"
+			},
+			{
+				"key": "Dual Attack Chance",
+				"value": "1.4%"
+			},
+			{
+				"key": "Dual Attack Chance",
+				"value": "1.7%"
+			},
+			{
+				"key": "Dual Attack Chance",
+				"value": "2.1%"
+			},
+			{
+				"key": "Dual Attack Chance",
+				"value": "2.5%"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Health",
+				"value": "4%"
+			},
+			{
+				"key": "Health",
+				"value": "6%"
+			},
+			{
+				"key": "Health",
+				"value": "8%"
+			},
+			{
+				"key": "Health",
+				"value": "10%"
+			},
+			{
+				"key": "Health",
+				"value": "12%"
+			},
+			{
+				"key": "Health",
+				"value": "14%"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Holy Light",
+			"type": "Active",
+			"description": {
+				"text": "Attacks with a light sphere, with a 50% chance to decrease Attack for 1 turn.",
+				"burn": "",
+				"soul": "+1",
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+10% effect chance",
+					"+15% effect chance",
+					"+10% damage dealt",
+					"+15% damage dealt"
+				],
+				"multipliers": "ATK*1*1*1.871",
+				"text_ja": "敵単体に攻撃し、50%の確率で攻撃力DOWNを1ターンの間付与する。",
+				"burn_ja": ""
+			},
+			"title_ja": "聖光"
+		},
+		{
+			"title": "Regen",
+			"type": "Active",
+			"description": {
+				"text": "Uses healing magic to recover Health and increase Combat Readiness by 80% of ally, before increasing caster’s Combat Readiness by 30%. Amount recovered is proportional to the ally’s max Health.",
+				"burn": "",
+				"soul": "+1",
+				"ct": "2",
+				"enhance": [
+					"+5% healing",
+					"+5% Combat Readiness",
+					"+15% healing",
+					"+5% Combat Readiness",
+					"+10% Combat Readiness"
+				],
+				"multipliers": "Heal strength: 15% target max Health",
+				"text_ja": "味方単体の生命力を回復し、アクションゲージを80%UPさせ、自身のアクションゲージを30%UPさせる。対象の最大生命力が高いほど回復量がUPする。",
+				"burn_ja": ""
+			},
+			"title_ja": "再生"
+		},
+		{
+			"title": "Serenity",
+			"type": "Active",
+			"description": {
+				"text": "Uses strengthening magic to recover Health, increase Combat Readiness by 10%, and grant continuous healing for 3 turns to all allies.",
+				"burn": "Extends buff duration by 2 turns (-20 Souls)",
+				"soul": "+2",
+				"ct": "4",
+				"enhance": [
+					"+2% Combat Readiness",
+					"+2% Combat Readiness",
+					"-1 turn cooldown",
+					"+3% Combat Readiness",
+					"+3% Combat Readiness"
+				],
+				"multipliers": "Heal strength: 10% target max Health",
+				"text_ja": "味方単体の生命力を回復し、アクションゲージを10%UPさせる。味方全体に持続回復を3ターンの間付与する。",
+				"burn_ja": "このスキルによる強化効果の持続ターンが2UPする。(魂力20消費)"
+			},
+			"title_ja": "静寂"
+		}
+	]
+}

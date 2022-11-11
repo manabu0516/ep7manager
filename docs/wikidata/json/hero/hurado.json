@@ -1,0 +1,240 @@
+{
+	"common": {
+		"name": "Hurado",
+		"image": "https://epic7x.com/wp-content/uploads/2019/01/Hurado-1.png",
+		"attribute": "dark",
+		"sign": "pisces",
+		"clazz": "mage",
+		"rarity": "3",
+		"name_ja": "ヒュラド"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "20%",
+		"Critical_Hit_Damage": "150%",
+		"dual_attack": "5%",
+		"Effectiveness": "0%",
+		"Effect_Resistance": "0%",
+		"Speed": "6",
+		"Atk": "930",
+		"HP": "4572",
+		"Def": "585"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": 5
+		},
+		{
+			"key": "Belief",
+			"score": 2
+		},
+		{
+			"key": "Bizarre Story",
+			"score": 1
+		},
+		{
+			"key": "Comforting",
+			"score": 3
+		},
+		{
+			"key": "Complain",
+			"score": 2
+		},
+		{
+			"key": "Criticism",
+			"score": 0
+		},
+		{
+			"key": "Cute Cheer",
+			"score": 6
+		},
+		{
+			"key": "Dream",
+			"score": 5
+		},
+		{
+			"key": "Food Story",
+			"score": 3
+		},
+		{
+			"key": "Gossip",
+			"score": 2
+		},
+		{
+			"key": "Happy Memory",
+			"score": 5
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": 5
+		},
+		{
+			"key": "Heroic Tale",
+			"score": 3
+		},
+		{
+			"key": "Horror",
+			"score": 1
+		},
+		{
+			"key": "Interesting Story",
+			"score": 3
+		},
+		{
+			"key": "Joyful Memories",
+			"score": 7
+		},
+		{
+			"key": "Myth",
+			"score": 2
+		},
+		{
+			"key": "Occult",
+			"score": 1
+		},
+		{
+			"key": "Reality Check",
+			"score": 0
+		},
+		{
+			"key": "Sad Memory",
+			"score": 6
+		},
+		{
+			"key": "Self Indulgent",
+			"score": 1
+		},
+		{
+			"key": "Unique Comment",
+			"score": 3
+		}
+	],
+	"memory": {
+		"potision": "pos-all",
+		"release": [
+			{
+				"key": "Health",
+				"value": "120"
+			},
+			{
+				"key": "Health",
+				"value": "180"
+			},
+			{
+				"key": "Health",
+				"value": "240"
+			},
+			{
+				"key": "Health",
+				"value": "300"
+			},
+			{
+				"key": "Health",
+				"value": "360"
+			},
+			{
+				"key": "Health",
+				"value": "420"
+			},
+			{
+				"key": "Health",
+				"value": "480"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Effectiveness",
+				"value": "4.50%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "6.80%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "9%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "11.20%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "13.50%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "15.80%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "18%"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Staff Strike",
+			"type": "Active",
+			"description": {
+				"text": "Attacks with a staff, with a 35% chance to silence for 1 turn.",
+				"burn": "",
+				"soul": "+1",
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+10% damage dealt",
+					"+5% effect chance",
+					"+10% effect chance",
+					"+15% damage dealt"
+				],
+				"multipliers": "ATK*1*0.9*1.871",
+				"text_ja": "敵単体にダメージを与え、35%の確率で沈黙を1ターンの間付与する。",
+				"burn_ja": ""
+			},
+			"title_ja": "錫杖撃"
+		},
+		{
+			"title": "Dark Magic",
+			"type": "Passive",
+			"description": {
+				"text": "Decreases amount recovered of all enemies by 35% at the beginning of battle, and increases the caster's Combat Readiness by 20% when the enemy uses a non-attack skill.",
+				"burn": "",
+				"soul": null,
+				"ct": null,
+				"enhance": [
+					"+5% healing reduction",
+					"+5% healing reduction",
+					"+5% healing reduction"
+				],
+				"multipliers": "",
+				"text_ja": "バトル中、敵全体の回復量を35％DOWNさせ、敵が攻撃以外のスキルを使用した場合、自身のアクションゲージを20%UPさせる。",
+				"burn_ja": ""
+			},
+			"title_ja": "暗黒魔法"
+		},
+		{
+			"title": "Dark Explosion",
+			"type": "Active",
+			"description": {
+				"text": "Attacks all enemies with dark magic, with a 80% chance to dispel all buffs before decreasing Combat Readiness by 15%.",
+				"burn": "Grants an extra turn. (-20 Souls)",
+				"soul": "+2",
+				"ct": "4",
+				"enhance": [
+					"+5% damage dealt",
+					"+10% effect chance",
+					"-1 turn cooldown",
+					"+10% effect chance",
+					"+10% damage dealt",
+					"+15% damage dealt"
+				],
+				"multipliers": "ATK*0.9*1*1.871",
+				"text_ja": "敵全体にダメージを与え、80%の確率ですべての強化効果を解除し、アクションゲージを15%DOWNさせる。",
+				"burn_ja": "追加ターンが発生する。(魂力20消費)"
+			},
+			"title_ja": "暗黒爆発"
+		}
+	]
+}

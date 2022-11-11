@@ -1,0 +1,232 @@
+{
+	"common": {
+		"name": "Great Chief Khawana",
+		"image": "https://epic7x.com/wp-content/uploads/2021/03/Great-Chief-Khawana.png",
+		"attribute": "dark",
+		"sign": "taurus",
+		"clazz": "warrior",
+		"rarity": "4",
+		"name_ja": "大族長カワナ"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "8%",
+		"Critical_Hit_Damage": "15%",
+		"dual_attack": "5%",
+		"Effectiveness": "0%",
+		"Effect_Resistance": "0%",
+		"Speed": "106",
+		"Atk": "1138",
+		"HP": "5421",
+		"Def": "536"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": 5
+		},
+		{
+			"key": "Belief",
+			"score": 3
+		},
+		{
+			"key": "Bizarre Story",
+			"score": 0
+		},
+		{
+			"key": "Comforting",
+			"score": 3
+		},
+		{
+			"key": "Complain",
+			"score": 1
+		},
+		{
+			"key": "Criticism",
+			"score": 3
+		},
+		{
+			"key": "Cute Cheer",
+			"score": 5
+		},
+		{
+			"key": "Dream",
+			"score": 6
+		},
+		{
+			"key": "Food Story",
+			"score": 2
+		},
+		{
+			"key": "Gossip",
+			"score": 1
+		},
+		{
+			"key": "Happy Memory",
+			"score": 4
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": 5
+		},
+		{
+			"key": "Heroic Tale",
+			"score": 2
+		},
+		{
+			"key": "Horror",
+			"score": 0
+		},
+		{
+			"key": "Interesting Story",
+			"score": 2
+		},
+		{
+			"key": "Joyful Memories",
+			"score": 4
+		},
+		{
+			"key": "Myth",
+			"score": 5
+		},
+		{
+			"key": "Occult",
+			"score": 2
+		},
+		{
+			"key": "Reality Check",
+			"score": 0
+		},
+		{
+			"key": "Sad Memory",
+			"score": 5
+		},
+		{
+			"key": "Self Indulgent",
+			"score": 2
+		},
+		{
+			"key": "Unique Comment",
+			"score": 1
+		}
+	],
+	"memory": {
+		"potision": "pos-tb",
+		"release": [
+			{
+				"key": "Health",
+				"value": "2.9%"
+			},
+			{
+				"key": "Health",
+				"value": "3.6%"
+			},
+			{
+				"key": "Health",
+				"value": "5.8%"
+			},
+			{
+				"key": "Health",
+				"value": "7.2%"
+			},
+			{
+				"key": "Health",
+				"value": "8.7%"
+			},
+			{
+				"key": "Health",
+				"value": "10.2%"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Effectiveness",
+				"value": "6.80%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "10.20%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "13.60%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "17%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "20.40%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "22.80%"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Vertical Cut",
+			"type": "Active",
+			"description": {
+				"text": "Cuts the enemy, with a 75% chance to restrict for 1 turn. Has a 75% chance to restrict for 2 turns when the target is a Light elemental enemy.",
+				"burn": "Increases damage dealt. (-10 Souls)",
+				"soul": "+1",
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+5% effect chance",
+					"+5% damage dealt",
+					"+10% effect chance",
+					"+10% damage dealt",
+					"+10% effect chance",
+					"+10% damage dealt"
+				],
+				"multipliers": "ATK*1.1*1.0*1.871 (Soul Burn: ATK*1.8*1.0*1.871)",
+				"text_ja": "敵単体に攻撃し、75%の確率で束縛を1ターンの間付与する。対象が光属性の場合、75%の確率で束縛を2ターンの間付与する。",
+				"burn_ja": "ダメージがUPする。(魂力10消費)"
+			},
+			"title_ja": "縦斬"
+		},
+		{
+			"title": "Motivation",
+			"type": "Passive",
+			"description": {
+				"text": "Increases Critical Hit Chance by 20%. When an ally is attacked by a Dual Attack, increases Attack of the caster by 25%. Increased Attack effect can stack up to 3 times.",
+				"burn": "",
+				"soul": null,
+				"ct": null,
+				"enhance": [
+					"+1% Critical Hit Chance",
+					"+1% Critical Hit Chance",
+					"+1% Critical Hit Chance",
+					"+1% Critical Hit Chance",
+					"+2% Critical Hit Chance",
+					"+2% Critical Hit Chance",
+					"+2% Critical Hit Chance"
+				],
+				"multipliers": "",
+				"text_ja": "クリティカル発生率が20%UPする。味方が連携攻撃を受けた時、自身の攻撃力が25%UPする。攻撃力UP効果は最大3回まで累積する。",
+				"burn_ja": ""
+			},
+			"title_ja": "モチベーション"
+		},
+		{
+			"title": "Great Chief's Devotion",
+			"type": "Active",
+			"description": {
+				"text": "Releases power to dispel two debuffs from all allies and grant increased Speed and a barrier for 2 turns. Barrier strength increases proportional to the caster's Attack. Grants an extra turn.",
+				"burn": "",
+				"soul": "+3",
+				"ct": "5",
+				"enhance": [
+					"-1 turn cooldown"
+				],
+				"multipliers": "",
+				"text_ja": "味方全体の弱体効果を2つ解除し、スピードUP・シールドを2ターンの間付与する。自身の攻撃力が高いほどシールド効果がUPする。追加ターンが発生する。",
+				"burn_ja": ""
+			},
+			"title_ja": "大族長の献身"
+		}
+	]
+}

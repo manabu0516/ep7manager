@@ -1,0 +1,232 @@
+{
+	"common": {
+		"name": "Rin",
+		"image": "https://epic7x.com/wp-content/uploads/2019/01/rin-full.png",
+		"attribute": "earth",
+		"sign": "virgo",
+		"clazz": "soul-weaver",
+		"rarity": "4",
+		"name_ja": "リン"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "15%",
+		"Critical_Hit_Damage": "150%",
+		"dual_attack": "5%",
+		"Effectiveness": "18%",
+		"Effect_Resistance": "0%",
+		"Speed": "6",
+		"Atk": "594",
+		"HP": "5057",
+		"Def": "691"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": 0
+		},
+		{
+			"key": "Belief",
+			"score": 6
+		},
+		{
+			"key": "Bizarre Story",
+			"score": 0
+		},
+		{
+			"key": "Comforting",
+			"score": 0
+		},
+		{
+			"key": "Complain",
+			"score": -3
+		},
+		{
+			"key": "Criticism",
+			"score": 3
+		},
+		{
+			"key": "Cute Cheer",
+			"score": 4
+		},
+		{
+			"key": "Dream",
+			"score": 4
+		},
+		{
+			"key": "Food Story",
+			"score": 1
+		},
+		{
+			"key": "Gossip",
+			"score": -1
+		},
+		{
+			"key": "Happy Memory",
+			"score": 2
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": 3
+		},
+		{
+			"key": "Heroic Tale",
+			"score": 3
+		},
+		{
+			"key": "Horror",
+			"score": 3
+		},
+		{
+			"key": "Interesting Story",
+			"score": 3
+		},
+		{
+			"key": "Joyful Memories",
+			"score": 6
+		},
+		{
+			"key": "Myth",
+			"score": 1
+		},
+		{
+			"key": "Occult",
+			"score": 4
+		},
+		{
+			"key": "Reality Check",
+			"score": -3
+		},
+		{
+			"key": "Sad Memory",
+			"score": 1
+		},
+		{
+			"key": "Self Indulgent",
+			"score": 3
+		},
+		{
+			"key": "Unique Comment",
+			"score": 3
+		}
+	],
+	"memory": {
+		"potision": "pos-lb",
+		"release": [
+			{
+				"key": "Health",
+				"value": "2.9%"
+			},
+			{
+				"key": "Health",
+				"value": "3.6%"
+			},
+			{
+				"key": "Health",
+				"value": "5.8%"
+			},
+			{
+				"key": "Health",
+				"value": "7.2%"
+			},
+			{
+				"key": "Health",
+				"value": "8.7%"
+			},
+			{
+				"key": "Health",
+				"value": "10.2%"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Health",
+				"value": "4%"
+			},
+			{
+				"key": "Health",
+				"value": "6%"
+			},
+			{
+				"key": "Health",
+				"value": "8%"
+			},
+			{
+				"key": "Health",
+				"value": "10%"
+			},
+			{
+				"key": "Health",
+				"value": "12%"
+			},
+			{
+				"key": "Health",
+				"value": "14%"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Ring Throw",
+			"type": "Active",
+			"description": {
+				"text": "Throws rings at the enemy, with a 75% chance to dispel one buff, before increasing the caster's Combat Readiness by 15%. Damage dealt increases proportional to the caster's max Health.",
+				"burn": "",
+				"soul": "+1",
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+10% damage dealt",
+					"+10% damage dealt"
+				],
+				"multipliers": "(ATK*0.7+Hp*0.05)*1.6839\n                                        \n                                                                                    5% self max Health (0.05 * Health)",
+				"text_ja": "敵単体に攻撃し、75%の確率で強化効果を1つ解除する。更に自身のアクションゲージを15%UPする。自身の最大生命力が高いほどダメージがUPする。",
+				"burn_ja": ""
+			},
+			"title_ja": "輪撃"
+		},
+		{
+			"title": "Dazzling Dance",
+			"type": "Active",
+			"description": {
+				"text": "Dazzles the enemy with a dance, with a 50% chance to decrease Defense for 2 turns, and a 50% chance to use Ring Throw. Damage dealt increases proportional to the caster's max Health.",
+				"burn": "",
+				"soul": "+2",
+				"ct": "2",
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+10% effect chance",
+					"+15% effect chance",
+					"+10% damage dealt",
+					"+10% damage dealt"
+				],
+				"multipliers": "(ATK*0.7+Hp*0.07)*1.871\n                                        \n                                                                                    Two separate sets of unique buffs it pulls one from:\n1. atk up, speed up, crit up, crit dmg up, continuous heal\n2. def up, evasion, debuff immunity",
+				"text_ja": "敵単体に攻撃し、50%の確率で防御力DOWNを2ターンの間付与する。50%の確率で【輪撃】が発動する。自身の最大生命力が高いほどダメージがUPする。",
+				"burn_ja": ""
+			},
+			"title_ja": "悪戯の舞"
+		},
+		{
+			"title": "Showtime",
+			"type": "Active",
+			"description": {
+				"text": "Heals all allies with an elegant dance, casting two random buffs for 3 turns. Amount recovered and barrier strength is proportional to the target's max Health.",
+				"burn": "Extends buff duration by 1 turn. (-10 Souls)",
+				"soul": "+2",
+				"ct": "5",
+				"enhance": [
+					"+15% healing",
+					"-1 turn cooldown",
+					"+15% healing"
+				],
+				"multipliers": "Heal strength: 20% target max Health",
+				"text_ja": "味方全体の生命力を回復し、2つ\r\nのランダム強化効果を3ターンの間付与する。対象の最大生命力が高いほど回復量がUPする。",
+				"burn_ja": "このスキルによる強化効果の持続ターンが1UPする。(魂力10消費)"
+			},
+			"title_ja": "ショータイム"
+		}
+	]
+}

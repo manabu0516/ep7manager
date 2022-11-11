@@ -1,0 +1,240 @@
+{
+	"common": {
+		"name": "Muse Rima",
+		"image": "https://epic7x.com/wp-content/uploads/2021/03/Muse-Rima-1.png",
+		"attribute": "ice",
+		"sign": "aquarius",
+		"clazz": "ranger",
+		"rarity": "3",
+		"name_ja": "ミューズリマ"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "12%",
+		"Critical_Hit_Damage": "150%",
+		"dual_attack": "5%",
+		"Effectiveness": "0%",
+		"Effect_Resistance": "0%",
+		"Speed": "4",
+		"Atk": "822",
+		"HP": "4693",
+		"Def": "561"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": 0
+		},
+		{
+			"key": "Belief",
+			"score": 6
+		},
+		{
+			"key": "Bizarre Story",
+			"score": 0
+		},
+		{
+			"key": "Comforting",
+			"score": 0
+		},
+		{
+			"key": "Complain",
+			"score": -3
+		},
+		{
+			"key": "Criticism",
+			"score": 3
+		},
+		{
+			"key": "Cute Cheer",
+			"score": 4
+		},
+		{
+			"key": "Dream",
+			"score": 4
+		},
+		{
+			"key": "Food Story",
+			"score": 1
+		},
+		{
+			"key": "Gossip",
+			"score": -1
+		},
+		{
+			"key": "Happy Memory",
+			"score": 2
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": 3
+		},
+		{
+			"key": "Heroic Tale",
+			"score": 4
+		},
+		{
+			"key": "Horror",
+			"score": 3
+		},
+		{
+			"key": "Interesting Story",
+			"score": 3
+		},
+		{
+			"key": "Joyful Memories",
+			"score": 6
+		},
+		{
+			"key": "Myth",
+			"score": 1
+		},
+		{
+			"key": "Occult",
+			"score": 4
+		},
+		{
+			"key": "Reality Check",
+			"score": -3
+		},
+		{
+			"key": "Sad Memory",
+			"score": 1
+		},
+		{
+			"key": "Self Indulgent",
+			"score": 3
+		},
+		{
+			"key": "Unique Comment",
+			"score": 3
+		}
+	],
+	"memory": {
+		"potision": "pos-all",
+		"release": [
+			{
+				"key": "Def",
+				"value": "12"
+			},
+			{
+				"key": "Def",
+				"value": "18"
+			},
+			{
+				"key": "Def",
+				"value": "24"
+			},
+			{
+				"key": "Def",
+				"value": "30"
+			},
+			{
+				"key": "Def",
+				"value": "36"
+			},
+			{
+				"key": "Def",
+				"value": "42"
+			},
+			{
+				"key": "Def",
+				"value": "48"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Effectiveness",
+				"value": "4.50%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "6.80%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "9%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "11.20%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "13.50%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "15.80%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "18%"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Quick Shot",
+			"type": "Active",
+			"description": {
+				"text": "Attacks with the quick shot of an arrow. A critical hit will decrease the caster's skill cooldown by 1 turn.",
+				"burn": "",
+				"soul": null,
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+10% damage dealt",
+					"+10% damage dealt",
+					"+15% damage dealt"
+				],
+				"multipliers": "",
+				"text_ja": "敵単体に攻撃する。この攻撃でクリティカルが発生した場合、自身のスキルターンが1減少する。",
+				"burn_ja": ""
+			},
+			"title_ja": "速射"
+		},
+		{
+			"title": "Lullaby Arrow",
+			"type": "Active",
+			"description": {
+				"text": "Shoots an arrow infused with a sleep toxin, with a 75% chance to put them to sleep for 1 turn.",
+				"burn": "",
+				"soul": null,
+				"ct": "4",
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+10% effect chance",
+					"-1 turn cooldown",
+					"+15% effect chance",
+					"+10% damage dealt",
+					"+15% damage dealt"
+				],
+				"multipliers": "",
+				"text_ja": "敵単体に攻撃し、75％の確率で睡眠を1ターンの間付与する。",
+				"burn_ja": "追加ターンが発生する。(魂力20消費)"
+			},
+			"title_ja": "催眠の矢"
+		},
+		{
+			"title": "Hopeful Hymn",
+			"type": "Active",
+			"description": {
+				"text": "Encourages an ally except for the caster, decreasing skill cooldowns by 3 turns and increasing Attack for 2 turns.",
+				"burn": "",
+				"soul": "+1",
+				"ct": "5",
+				"enhance": [
+					"+2 Soul acquired",
+					"-1 turn cooldown"
+				],
+				"multipliers": "",
+				"text_ja": "自身以外の味方単体のスキルターンを3減少させ、攻撃力UPを2ターンの間付与する。",
+				"burn_ja": ""
+			},
+			"title_ja": "希望の賛歌"
+		}
+	]
+}

@@ -1,0 +1,232 @@
+{
+	"common": {
+		"name": "Champion Zerato",
+		"image": "https://epic7x.com/wp-content/uploads/2019/01/Champion-Zerato.png",
+		"attribute": "dark",
+		"sign": "aries",
+		"clazz": "mage",
+		"rarity": "4",
+		"name_ja": "不敵のゼラト"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "12%",
+		"Critical_Hit_Damage": "150%",
+		"dual_attack": "5%",
+		"Effectiveness": "18%",
+		"Effect_Resistance": "0%",
+		"Speed": "104",
+		"Atk": "1159",
+		"HP": "4733",
+		"Def": "627"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": 1
+		},
+		{
+			"key": "Belief",
+			"score": 0
+		},
+		{
+			"key": "Bizarre Story",
+			"score": -3
+		},
+		{
+			"key": "Comforting",
+			"score": 1
+		},
+		{
+			"key": "Complain",
+			"score": -4
+		},
+		{
+			"key": "Criticism",
+			"score": 8
+		},
+		{
+			"key": "Cute Cheer",
+			"score": 6
+		},
+		{
+			"key": "Dream",
+			"score": 3
+		},
+		{
+			"key": "Food Story",
+			"score": 5
+		},
+		{
+			"key": "Gossip",
+			"score": -1
+		},
+		{
+			"key": "Happy Memory",
+			"score": 3
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": 0
+		},
+		{
+			"key": "Heroic Tale",
+			"score": 7
+		},
+		{
+			"key": "Horror",
+			"score": -2
+		},
+		{
+			"key": "Interesting Story",
+			"score": 0
+		},
+		{
+			"key": "Joyful Memories",
+			"score": 1
+		},
+		{
+			"key": "Myth",
+			"score": 9
+		},
+		{
+			"key": "Occult",
+			"score": 5
+		},
+		{
+			"key": "Reality Check",
+			"score": -3
+		},
+		{
+			"key": "Sad Memory",
+			"score": -1
+		},
+		{
+			"key": "Self Indulgent",
+			"score": -1
+		},
+		{
+			"key": "Unique Comment",
+			"score": 1
+		}
+	],
+	"memory": {
+		"potision": "pos-all",
+		"release": [
+			{
+				"key": "Attack",
+				"value": "2.4%"
+			},
+			{
+				"key": "Attack",
+				"value": "3.6%"
+			},
+			{
+				"key": "Attack",
+				"value": "4.8%"
+			},
+			{
+				"key": "Attack",
+				"value": "6.0%"
+			},
+			{
+				"key": "Attack",
+				"value": "7.2%"
+			},
+			{
+				"key": "Attack",
+				"value": "8.4%"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Effectiveness",
+				"value": "6.80%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "10.20%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "13.60%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "17%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "20.40%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "22.80%"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Earthen Rage",
+			"type": "Active",
+			"description": {
+				"text": "Attacks two enemies including the target with an earthen blast, transferring two debuffs from the caster to the enemy and recovering the caster's Health. Amount recovered increases proportional to the caster's max Health.",
+				"burn": "",
+				"soul": "+1",
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+10% damage dealt"
+				],
+				"multipliers": "ATK*1*0.95*1.871\n                                        \n                                                                                    Heals 5% of Max Health",
+				"text_ja": "対象を含む敵2体に攻撃し、自身の弱体効果を2つ転移させ、自身の生命力を回復する。自身の最大生命力が高いほど回復量がUPする。",
+				"burn_ja": ""
+			},
+			"title_ja": "大地の怒り"
+		},
+		{
+			"title": "Iron Will",
+			"type": "Passive",
+			"description": {
+				"text": "Immune to stun, sleep and decrease hit chance.. Has a 80% chance to counterattack when attacked while debuffed.",
+				"burn": "",
+				"soul": null,
+				"ct": null,
+				"enhance": [
+					"+5% activation chance",
+					"+5% activation chance",
+					"+10% activation chance"
+				],
+				"multipliers": "",
+				"text_ja": "スタン・睡眠・命中率DOWN状態にならない。攻撃を受けた時、自身が弱体状態の場合、80%の確率で反撃する。",
+				"burn_ja": ""
+			},
+			"title_ja": "強靭な意志"
+		},
+		{
+			"title": "Cataclysm",
+			"type": "Active",
+			"description": {
+				"text": "Attacks all enemies by slamming rocks, with a 60% chance each to decrease Defense and Attack for 2 turns. Increases Defense of the caster for 2 turns.",
+				"burn": "Ignores Effect Resistance. (-20 Souls)",
+				"soul": "+3",
+				"ct": "5",
+				"enhance": [
+					"+5% damage dealt",
+					"+5% effect chance",
+					"-1 turn cooldown",
+					"+10% effect chance",
+					"+10% damage dealt",
+					"+15% damage dealt"
+				],
+				"multipliers": "ATK*1*1*1.871",
+				"text_ja": "敵全体に攻撃し、60%の確率で防御力DOWN・攻撃力DOWNを2ターンの間付与する。自身に防御力UPを2ターンの間付与する。",
+				"burn_ja": "効果抵抗を無視する。(魂力20消費)"
+			},
+			"title_ja": "天災地変"
+		}
+	]
+}

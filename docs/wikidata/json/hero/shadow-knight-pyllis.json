@@ -1,0 +1,240 @@
+{
+	"common": {
+		"name": "Shadow Knight Pyllis",
+		"image": "https://epic7x.com/wp-content/uploads/2021/11/shadow-knight-pyllis.png",
+		"attribute": "dark",
+		"sign": "cancer",
+		"clazz": "knight",
+		"rarity": "3",
+		"name_ja": "黒騎士ピィリス"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "15%",
+		"Critical_Hit_Damage": "150%",
+		"dual_attack": "5%",
+		"Effectiveness": "0%",
+		"Effect_Resistance": "0%",
+		"Speed": "91",
+		"Atk": "685",
+		"HP": "6403",
+		"Def": "703"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": null
+		},
+		{
+			"key": "Belief",
+			"score": null
+		},
+		{
+			"key": "Bizarre Story",
+			"score": null
+		},
+		{
+			"key": "Comforting",
+			"score": null
+		},
+		{
+			"key": "Complain",
+			"score": null
+		},
+		{
+			"key": "Criticism",
+			"score": null
+		},
+		{
+			"key": "Cute Cheer",
+			"score": null
+		},
+		{
+			"key": "Dream",
+			"score": null
+		},
+		{
+			"key": "Food Story",
+			"score": null
+		},
+		{
+			"key": "Gossip",
+			"score": null
+		},
+		{
+			"key": "Happy Memory",
+			"score": null
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": null
+		},
+		{
+			"key": "Heroic Tale",
+			"score": null
+		},
+		{
+			"key": "Horror",
+			"score": null
+		},
+		{
+			"key": "Interesting Story",
+			"score": null
+		},
+		{
+			"key": "Joyful Memories",
+			"score": null
+		},
+		{
+			"key": "Myth",
+			"score": null
+		},
+		{
+			"key": "Occult",
+			"score": null
+		},
+		{
+			"key": "Reality Check",
+			"score": null
+		},
+		{
+			"key": "Sad Memory",
+			"score": null
+		},
+		{
+			"key": "Self Indulgent",
+			"score": null
+		},
+		{
+			"key": "Unique Comment",
+			"score": null
+		}
+	],
+	"memory": {
+		"potision": "pos-all",
+		"release": [
+			{
+				"key": "Def",
+				"value": "12"
+			},
+			{
+				"key": "Def",
+				"value": "18"
+			},
+			{
+				"key": "Def",
+				"value": "24"
+			},
+			{
+				"key": "Def",
+				"value": "30"
+			},
+			{
+				"key": "Def",
+				"value": "36"
+			},
+			{
+				"key": "Def",
+				"value": "42"
+			},
+			{
+				"key": "Def",
+				"value": "48"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Attack",
+				"value": "36"
+			},
+			{
+				"key": "Attack",
+				"value": "54"
+			},
+			{
+				"key": "Attack",
+				"value": "72"
+			},
+			{
+				"key": "Attack",
+				"value": "90"
+			},
+			{
+				"key": "Attack",
+				"value": "108"
+			},
+			{
+				"key": "Attack",
+				"value": "126"
+			},
+			{
+				"key": "Attack",
+				"value": "144"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Weakening Blow",
+			"type": "Active",
+			"description": {
+				"text": "Attacks the enemy, with a 50% chance to provoke for 1 turn. Damage dealt increases proportional to the caster's Defense.",
+				"burn": "",
+				"soul": null,
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+10% effect chance",
+					"+10% damage dealt",
+					"+15% effect chance",
+					"+15% damage dealt"
+				],
+				"multipliers": "(ATK*0.7+Def*0.5)*1.871",
+				"text_ja": "敵単体に攻撃し、50%の確率で挑発を付与する。自身の防御力が高いほどダメージがUPする。",
+				"burn_ja": ""
+			},
+			"title_ja": "挑発"
+		},
+		{
+			"title": "Will",
+			"type": "Passive",
+			"description": {
+				"text": "Increases Defense when attacked. Increases Defense of all allies for 2 turns every fourth attack received. Effect can only stack up to 3 times.",
+				"burn": "",
+				"soul": null,
+				"ct": null,
+				"enhance": [
+					"+10% additional defense increase when attacked",
+					"+10% additional defense increase when attacked",
+					"+10% additional defense increase when attacked",
+					"+10% additional defense increase when attacked",
+					"+10% additional defense increase when attacked"
+				],
+				"multipliers": "",
+				"text_ja": "攻撃を受けた時、その攻撃に伴う効果が発生する前に自身の防御力がUPする。攻撃を4回受けるごとに、4回目の攻撃に伴う効果が発生する前に味方全体に防御力UPを2ターンの間付与する。自身の防御力UP効果は最大3回まで累積する。",
+				"burn_ja": ""
+			},
+			"title_ja": "意志"
+		},
+		{
+			"title": "Perceptive Slash",
+			"type": "Active",
+			"description": {
+				"text": "Concentrates in order to dispel one debuff from all allies, before attacking the enemy, provoking for 1 turn, and granting all allies a barrier for 2 turns. Damage dealt and barrier strength increases in proportion to the caster's Defense.",
+				"burn": "Skill cooldown is decreased by 2 turns. (-10 Souls)",
+				"soul": "+2",
+				"ct": "4",
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"-1 turn cooldown",
+					"+10% damage dealt",
+					"+15% damage dealt"
+				],
+				"multipliers": "(ATK*1.3+Def*0.7)*0.95*1.77745\n                                        \n                                                                                    80% Defense for Barrier Strength",
+				"text_ja": "味方全体の弱体効果を1つ解除した後、対象に攻撃し、対象を1ターンの間付与し、味方全体にシールドを2ターンの間付与する。自身の防御力が高いほどダメージとシールド効果がUPする。",
+				"burn_ja": "スキルターンが2減少する。(魂力10消費)"
+			},
+			"title_ja": "洞察の斬撃"
+		}
+	]
+}

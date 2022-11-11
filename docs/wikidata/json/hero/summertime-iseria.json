@@ -1,0 +1,224 @@
+{
+	"common": {
+		"name": "Summertime Iseria",
+		"image": "https://epic7x.com/wp-content/uploads/2021/08/Summertime-Iseria.png",
+		"attribute": "fire",
+		"sign": "capricorn",
+		"clazz": "ranger",
+		"rarity": "5",
+		"name_ja": "南国のイセリア"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "15%",
+		"Critical_Hit_Damage": "150%",
+		"dual_attack": "5%",
+		"Effectiveness": "30%",
+		"Effect_Resistance": "0%",
+		"Speed": "6",
+		"Atk": "1354",
+		"HP": "5704",
+		"Def": "585"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": null
+		},
+		{
+			"key": "Belief",
+			"score": null
+		},
+		{
+			"key": "Bizarre Story",
+			"score": null
+		},
+		{
+			"key": "Comforting",
+			"score": null
+		},
+		{
+			"key": "Complain",
+			"score": null
+		},
+		{
+			"key": "Criticism",
+			"score": null
+		},
+		{
+			"key": "Cute Cheer",
+			"score": null
+		},
+		{
+			"key": "Dream",
+			"score": null
+		},
+		{
+			"key": "Food Story",
+			"score": null
+		},
+		{
+			"key": "Gossip",
+			"score": null
+		},
+		{
+			"key": "Happy Memory",
+			"score": null
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": null
+		},
+		{
+			"key": "Heroic Tale",
+			"score": null
+		},
+		{
+			"key": "Horror",
+			"score": null
+		},
+		{
+			"key": "Interesting Story",
+			"score": null
+		},
+		{
+			"key": "Joyful Memories",
+			"score": null
+		},
+		{
+			"key": "Myth",
+			"score": null
+		},
+		{
+			"key": "Occult",
+			"score": null
+		},
+		{
+			"key": "Reality Check",
+			"score": null
+		},
+		{
+			"key": "Sad Memory",
+			"score": null
+		},
+		{
+			"key": "Self Indulgent",
+			"score": null
+		},
+		{
+			"key": "Unique Comment",
+			"score": null
+		}
+	],
+	"memory": {
+		"potision": "pos-all",
+		"release": [
+			{
+				"key": "Attack",
+				"value": "3.6%"
+			},
+			{
+				"key": "Attack",
+				"value": "5.4%"
+			},
+			{
+				"key": "Attack",
+				"value": "7.2%"
+			},
+			{
+				"key": "Attack",
+				"value": "9.0%"
+			},
+			{
+				"key": "Attack",
+				"value": "10.8%"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Effectiveness",
+				"value": "9%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "13.50%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "18%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "22.50%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "27%"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Are you the Culprit?",
+			"type": "Active",
+			"description": {
+				"text": "Attacks the enemy with swords, with a 60% chance each to dispel two buffs.",
+				"burn": "Grants an extra turn. (-20 Souls)",
+				"soul": "+1",
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+5% effect chance",
+					"+10% damage dealt",
+					"+10% effect chance",
+					"+15% damage dealt"
+				],
+				"multipliers": "ATK*1*1*1.871",
+				"text_ja": "敵単体に攻撃し、それぞれ60%の確率で強化効果を2つ解除する。",
+				"burn_ja": "追加ターンが発生する。(魂力20消費)"
+			},
+			"title_ja": "あなたが犯人ですか？"
+		},
+		{
+			"title": "Suppression Attempt",
+			"type": "Passive",
+			"description": {
+				"text": "Does not cost any Souls to activate the caster's first Soulburn. The caster cannot trigger a critical hit, but Attack increases by 35%. After an ally except for the caster uses an attack that targets all enemies, activates Suppress!. Can only be activated once every 3 turns. Suppress!: Increases Combat Readiness of all allies by 15% and plants a bomb on two random enemies for 2 turns.",
+				"burn": "",
+				"soul": null,
+				"ct": null,
+				"enhance": [
+					"+2% Attack",
+					"+2% Attack",
+					"+3% Attack",
+					"+3% Attack",
+					"+5% Attack"
+				],
+				"multipliers": "Bomb Effect = 150% of caster's Attack as damage, ignores 70% of def",
+				"text_ja": "自身の初回の魂力解放で必要な魂力が0になる。クリティカルが発生しない。攻撃力が35%UPする。自身以外の味方が全体攻撃した後、【制圧！】を発動する。3ターンに1回まで発動する。制圧！：味方全体のアクションゲージを15%UPさせ、ランダムな敵2体に爆弾を2ターンの間付与する。",
+				"burn_ja": ""
+			},
+			"title_ja": "鎮圧を開始します"
+		},
+		{
+			"title": "Sword of Flowers!",
+			"type": "Active",
+			"description": {
+				"text": "Attacks all enemies with swords of flowers, decreasing Attack for 2 turns and increases Speed of the caster for 2 turns. At the end of the turn, detonates bombs inflicted on the enemy.",
+				"burn": "",
+				"soul": "+2",
+				"ct": "4",
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"-1 turn cooldown",
+					"+10% damage dealt",
+					"+10% damage dealt"
+				],
+				"multipliers": "ATK*1.2*1*1.871\n                                        \n                                                                                    10% increased damage on detonate via s3",
+				"text_ja": "敵全体に攻撃し、攻撃力DOWNを2ターンの間付与し、自身にスピードUPを2ターンの間付与する。ターン終了時に対象の爆弾を激爆させる。",
+				"burn_ja": ""
+			},
+			"title_ja": "花の剣よ！"
+		}
+	]
+}

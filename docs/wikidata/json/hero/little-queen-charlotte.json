@@ -1,0 +1,224 @@
+{
+	"common": {
+		"name": "Little Queen Charlotte",
+		"image": "https://epic7x.com/wp-content/uploads/2020/03/Little-Queen-Charlotte.png",
+		"attribute": "light",
+		"sign": "libra",
+		"clazz": "warrior",
+		"rarity": "5",
+		"name_ja": "若き女王シャルロッテ"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "15%",
+		"Critical_Hit_Damage": "150%",
+		"dual_attack": "5%",
+		"Effectiveness": "0%",
+		"Effect_Resistance": "0%",
+		"Speed": "109",
+		"Atk": "1119",
+		"HP": "6266",
+		"Def": "627"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": 0
+		},
+		{
+			"key": "Belief",
+			"score": 2
+		},
+		{
+			"key": "Bizarre Story",
+			"score": -2
+		},
+		{
+			"key": "Comforting",
+			"score": 1
+		},
+		{
+			"key": "Complain",
+			"score": -5
+		},
+		{
+			"key": "Criticism",
+			"score": -2
+		},
+		{
+			"key": "Cute Cheer",
+			"score": 3
+		},
+		{
+			"key": "Dream",
+			"score": 5
+		},
+		{
+			"key": "Food Story",
+			"score": 4
+		},
+		{
+			"key": "Gossip",
+			"score": -2
+		},
+		{
+			"key": "Happy Memory",
+			"score": 4
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": 6
+		},
+		{
+			"key": "Heroic Tale",
+			"score": 5
+		},
+		{
+			"key": "Horror",
+			"score": 2
+		},
+		{
+			"key": "Interesting Story",
+			"score": 2
+		},
+		{
+			"key": "Joyful Memories",
+			"score": 4
+		},
+		{
+			"key": "Myth",
+			"score": 7
+		},
+		{
+			"key": "Occult",
+			"score": 2
+		},
+		{
+			"key": "Reality Check",
+			"score": -3
+		},
+		{
+			"key": "Sad Memory",
+			"score": 2
+		},
+		{
+			"key": "Self Indulgent",
+			"score": 1
+		},
+		{
+			"key": "Unique Comment",
+			"score": 3
+		}
+	],
+	"memory": {
+		"potision": "pos-tb",
+		"release": [
+			{
+				"key": "Health",
+				"value": "4.3%"
+			},
+			{
+				"key": "Health",
+				"value": "6.4%"
+			},
+			{
+				"key": "Health",
+				"value": "8.6%"
+			},
+			{
+				"key": "Health",
+				"value": "10.7%"
+			},
+			{
+				"key": "Health",
+				"value": "12.0%"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Defense",
+				"value": "6%"
+			},
+			{
+				"key": "Defense",
+				"value": "9%"
+			},
+			{
+				"key": "Defense",
+				"value": "12%"
+			},
+			{
+				"key": "Defense",
+				"value": "15%"
+			},
+			{
+				"key": "Defense",
+				"value": "18%"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Judgment",
+			"type": "Active",
+			"description": {
+				"text": "Attacks with a giant sword before granting the caster immunity for 1 turn.",
+				"burn": "",
+				"soul": null,
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+10% damage dealt"
+				],
+				"multipliers": "ATK*1*1*1.871",
+				"text_ja": "敵単体に攻撃し、自身に弱体効果免疫を1ターンの間付与する。",
+				"burn_ja": ""
+			},
+			"title_ja": "審判の斧"
+		},
+		{
+			"title": "A Queen's Dignity",
+			"type": "Passive",
+			"description": {
+				"text": "Decreases damage suffered from a critical hit by 30%. Decreases damage suffered from a critical hit for all allies except for the caster by 10% (15%) . When more than one damage reduction effect is granted, only the strongest effect is applied. Increases Combat Readiness of the caster by 15% when the caster suffers a critical hit.",
+				"burn": "",
+				"soul": null,
+				"ct": null,
+				"enhance": [
+					"+0.5% damage reduction for allies except the caster",
+					"+0.5% damage reduction for allies except the caster",
+					"+1% damage reduction for allies except the caster",
+					"+1% damage reduction for allies except the caster",
+					"+2% damage reduction for allies except the caster"
+				],
+				"multipliers": "",
+				"text_ja": "自身がクリティカル攻撃を受けた時、ダメージが30%DOWNする。自身以外の味方がクリティカル攻撃を受けた時、ダメージが10.0%DOWNする。ダメージDOWN効果が重複した場合、一番高い効果のみ適用される。自身がクリティカル攻撃を受けた時、その攻撃に伴う効果が発生する前にアクションゲージが15%UPする。",
+				"burn_ja": ""
+			},
+			"title_ja": "王の威厳"
+		},
+		{
+			"title": "The Will of La Mare",
+			"type": "Active",
+			"description": {
+				"text": "Smashes the enemy with a sword and attacks. Penetrates Defense by 50%. When the target's a Dark elemental Hero, increases damage dealt and inflicts additional damage proportional to the caster's Attack to all enemies except for the target. Recovers Health of the caster proportional to damage dealt.",
+				"burn": "Grants an extra turn. (-20 Souls)",
+				"soul": null,
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"-1 turn cooldown",
+					"+5% damage dealt",
+					"+15% damage dealt"
+				],
+				"multipliers": "ATK*1.5*1*1.871\n                                        \n                                                                                    0.3 (Health recovered)",
+				"text_ja": "敵単体に攻撃し、与えたダメージに応じて自身の生命力を回復する。対象の防御力を50%貫通する。対象が闇属性の場合、ダメージがUPし、自身の攻撃力に応じて対象以外の敵全体に攻撃する。",
+				"burn_ja": "追加ターンが発生する。(魂力20消費)"
+			},
+			"title_ja": "ラ・マーレの決意"
+		}
+	]
+}

@@ -1,0 +1,232 @@
+{
+	"common": {
+		"name": "Romann",
+		"image": "https://epic7x.com/wp-content/uploads/2019/01/romann.png",
+		"attribute": "ice",
+		"sign": "gemini",
+		"clazz": "mage",
+		"rarity": "4",
+		"name_ja": "ローマン"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "15%",
+		"Critical_Hit_Damage": "150%",
+		"dual_attack": "5%",
+		"Effectiveness": "30%",
+		"Effect_Resistance": "0%",
+		"Speed": "105",
+		"Atk": "1109",
+		"HP": "4329",
+		"Def": "655"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": 0
+		},
+		{
+			"key": "Belief",
+			"score": 0
+		},
+		{
+			"key": "Bizarre Story",
+			"score": 0
+		},
+		{
+			"key": "Comforting",
+			"score": -2
+		},
+		{
+			"key": "Complain",
+			"score": 0
+		},
+		{
+			"key": "Criticism",
+			"score": 2
+		},
+		{
+			"key": "Cute Cheer",
+			"score": 1
+		},
+		{
+			"key": "Dream",
+			"score": 0
+		},
+		{
+			"key": "Food Story",
+			"score": 4
+		},
+		{
+			"key": "Gossip",
+			"score": 0
+		},
+		{
+			"key": "Happy Memory",
+			"score": 0
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": 0
+		},
+		{
+			"key": "Heroic Tale",
+			"score": 1
+		},
+		{
+			"key": "Horror",
+			"score": -2
+		},
+		{
+			"key": "Interesting Story",
+			"score": 2
+		},
+		{
+			"key": "Joyful Memories",
+			"score": 2
+		},
+		{
+			"key": "Myth",
+			"score": 0
+		},
+		{
+			"key": "Occult",
+			"score": 0
+		},
+		{
+			"key": "Reality Check",
+			"score": 2
+		},
+		{
+			"key": "Sad Memory",
+			"score": 0
+		},
+		{
+			"key": "Self Indulgent",
+			"score": 0
+		},
+		{
+			"key": "Unique Comment",
+			"score": 4
+		}
+	],
+	"memory": {
+		"potision": "pos-all",
+		"release": [
+			{
+				"key": "Defense",
+				"value": "2.4%"
+			},
+			{
+				"key": "Defense",
+				"value": "3.6%"
+			},
+			{
+				"key": "Defense",
+				"value": "4.8%"
+			},
+			{
+				"key": "Defense",
+				"value": "6.0%"
+			},
+			{
+				"key": "Defense",
+				"value": "7.2%"
+			},
+			{
+				"key": "Defense",
+				"value": "8.4%"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Effectiveness",
+				"value": "6.80%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "10.20%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "13.60%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "17%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "20.40%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "22.80%"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Gravity Arrow",
+			"type": "Active",
+			"description": {
+				"text": "Shoots gravity arrows at the enemy, decreasing Combat Readiness by 8%, and increasing Combat Readiness of the caster by 8%.",
+				"burn": "",
+				"soul": "+1",
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+2% Combat Readiness",
+					"+10% damage dealt",
+					"+10% damage dealt"
+				],
+				"multipliers": "ATK*1*1*1.871",
+				"text_ja": "敵単体に攻撃し、アクションゲージを8%DOWNさせる。更に自身のアクションゲージを8%UPさせる。",
+				"burn_ja": ""
+			},
+			"title_ja": "グラビティアロー"
+		},
+		{
+			"title": "Gravitation",
+			"type": "Active",
+			"description": {
+				"text": "Attacks all enemies with a magic circle, with a 50% chance each to decrease Combat Readiness by 15% four times.",
+				"burn": "Skill cooldown is decreased by 2 turns (-10 Souls)",
+				"soul": "+2",
+				"ct": "3",
+				"enhance": [
+					"+5% damage dealt",
+					"+2% Combat Readiness",
+					"+3% Combat Readiness",
+					"+10% damage dealt",
+					"+15% damage dealt"
+				],
+				"multipliers": "ATK*0.7*1*1.871",
+				"text_ja": "敵全体に攻撃し、それぞれ50%の確率でアクションゲージを15%ずつ4回DOWNさせる。",
+				"burn_ja": "スキルターンを2減少する。(魂力10消費)"
+			},
+			"title_ja": "グラビテーション"
+		},
+		{
+			"title": "Event Horizon",
+			"type": "Active",
+			"description": {
+				"text": "Shoots a powerful gravity sphere at all enemies, dispelling all buffs and increasing Combat Readiness of the caster by 50%. Damage dealt increases, the enemy is inflicted with two poison effects for 2 turns, and the caster's Combat Readiness increases by an additional 30% when the enemy is buffed.",
+				"burn": "",
+				"soul": "+2",
+				"ct": "5",
+				"enhance": [
+					"+5% damage dealt",
+					"+10% damage dealt",
+					"-1 turn cooldown",
+					"+15% damage dealt",
+					"+15% damage dealt"
+				],
+				"multipliers": "ATK*0.9*0.85*1.871\n                                        \n                                                                                    30% increased damage if target buffed",
+				"text_ja": "敵全体に攻撃し、強化効果をすべて解除し、自身のアクションゲージを50%UPさせる。対象が強化状態の場合、ダメージがUPし、2つの毒を2ターンの間付与し、アクションゲージを30%UPさせる。",
+				"burn_ja": ""
+			},
+			"title_ja": "ブラックホールドライブ"
+		}
+	]
+}

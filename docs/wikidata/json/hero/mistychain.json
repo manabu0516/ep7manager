@@ -1,0 +1,240 @@
+{
+	"common": {
+		"name": "Mistychain",
+		"image": "https://epic7x.com/wp-content/uploads/2019/01/misty-full.png",
+		"attribute": "ice",
+		"sign": "leo",
+		"clazz": "mage",
+		"rarity": "3",
+		"name_ja": "ミスティー・チェイン"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "15%",
+		"Critical_Hit_Damage": "150%",
+		"dual_attack": "5%",
+		"Effectiveness": "0%",
+		"Effect_Resistance": "0%",
+		"Speed": "6",
+		"Atk": "1244",
+		"HP": "3925",
+		"Def": "606"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": 2
+		},
+		{
+			"key": "Belief",
+			"score": 7
+		},
+		{
+			"key": "Bizarre Story",
+			"score": -3
+		},
+		{
+			"key": "Comforting",
+			"score": 5
+		},
+		{
+			"key": "Complain",
+			"score": 1
+		},
+		{
+			"key": "Criticism",
+			"score": 6
+		},
+		{
+			"key": "Cute Cheer",
+			"score": 6
+		},
+		{
+			"key": "Dream",
+			"score": 2
+		},
+		{
+			"key": "Food Story",
+			"score": 0
+		},
+		{
+			"key": "Gossip",
+			"score": 4
+		},
+		{
+			"key": "Happy Memory",
+			"score": 0
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": 3
+		},
+		{
+			"key": "Heroic Tale",
+			"score": 3
+		},
+		{
+			"key": "Horror",
+			"score": 4
+		},
+		{
+			"key": "Interesting Story",
+			"score": 1
+		},
+		{
+			"key": "Joyful Memories",
+			"score": 2
+		},
+		{
+			"key": "Myth",
+			"score": 2
+		},
+		{
+			"key": "Occult",
+			"score": -3
+		},
+		{
+			"key": "Reality Check",
+			"score": 3
+		},
+		{
+			"key": "Sad Memory",
+			"score": 0
+		},
+		{
+			"key": "Self Indulgent",
+			"score": -2
+		},
+		{
+			"key": "Unique Comment",
+			"score": 2
+		}
+	],
+	"memory": {
+		"potision": "pos-all",
+		"release": [
+			{
+				"key": "Def",
+				"value": "12"
+			},
+			{
+				"key": "Def",
+				"value": "18"
+			},
+			{
+				"key": "Def",
+				"value": "24"
+			},
+			{
+				"key": "Def",
+				"value": "30"
+			},
+			{
+				"key": "Def",
+				"value": "36"
+			},
+			{
+				"key": "Def",
+				"value": "42"
+			},
+			{
+				"key": "Def",
+				"value": "48"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Critical Hit Chance",
+				"value": "2.80%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "4.20%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "5.60%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "7%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "8.40%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "9.80%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "11.20%"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Vampirism",
+			"type": "Active",
+			"description": {
+				"text": "Claws the enemy absorbing some of the damage to heal all allies.",
+				"burn": "",
+				"soul": "+1",
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+10% damage dealt",
+					"+15% healing",
+					"+15% healing",
+					"+15% damage dealt"
+				],
+				"multipliers": "ATK*1*1*1.871\n                                        \n                                                                                    7% of damage gained as life",
+				"text_ja": "敵単体にダメージを与え、与えたダメージに応じて味方全体の生命力を回復する。",
+				"burn_ja": ""
+			},
+			"title_ja": "吸魂"
+		},
+		{
+			"title": "Curse of Banshee",
+			"type": "Active",
+			"description": {
+				"text": "Casts a spell at the enemy with a 80% chance to make them unhealable and decrease Attack for 2 turns.",
+				"burn": "",
+				"soul": null,
+				"ct": "4",
+				"enhance": [
+					"+10% damage dealt",
+					"+10% effect chance",
+					"-1 turn cooldown",
+					"+10% effect chance",
+					"+15% damage dealt"
+				],
+				"multipliers": "ATK*1.3*1.05*1.871",
+				"text_ja": "敵単体にダメージを与え、80%の確率で回復不可・攻撃力DOWNを2ターンの間付与する。",
+				"burn_ja": ""
+			},
+			"title_ja": "バンシーの呪い"
+		},
+		{
+			"title": "Life Drain",
+			"type": "Active",
+			"description": {
+				"text": "Attacks by absorbing the enemy's life force. Some of the damage dealt is absorbed to heal all allies. When the enemy is defeated, grants revive to the ally with the lowest Health for 2 turns.",
+				"burn": "Increases damage dealt. (-10 Souls)",
+				"soul": "+3",
+				"ct": "6",
+				"enhance": [
+					"+5% damage dealt",
+					"+10% damage dealt",
+					"+15% healing",
+					"+15% healing",
+					"+15% damage dealt"
+				],
+				"multipliers": "ATK*1.5*1*1.871 (2.2 soul burn)\n                                        \n                                                                                    15% of damage gained as life",
+				"text_ja": "敵単体にダメージを与え、与えたダメージに応じて味方全体の生命力を回復する。対象を気絶させた場合、生命力が最も低い味方に蘇生を2ターンの間付与する。",
+				"burn_ja": "ダメージがUPする。(魂力10消費)"
+			},
+			"title_ja": "霊魂吸収"
+		}
+	]
+}

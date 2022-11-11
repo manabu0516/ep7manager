@@ -1,0 +1,224 @@
+{
+	"common": {
+		"name": "Dark Corvus",
+		"image": "https://epic7x.com/wp-content/uploads/2019/01/Dark-Corvus-portrait.png",
+		"attribute": "dark",
+		"sign": "capricorn",
+		"clazz": "warrior",
+		"rarity": "5",
+		"name_ja": "破壊者コルヴス"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "15%",
+		"Critical_Hit_Damage": "150%",
+		"dual_attack": "5%",
+		"Effectiveness": "0%",
+		"Effect_Resistance": "0%",
+		"Speed": "102",
+		"Atk": "966",
+		"HP": "7323",
+		"Def": "657"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": -2
+		},
+		{
+			"key": "Belief",
+			"score": 2
+		},
+		{
+			"key": "Bizarre Story",
+			"score": 1
+		},
+		{
+			"key": "Comforting",
+			"score": 2
+		},
+		{
+			"key": "Complain",
+			"score": -5
+		},
+		{
+			"key": "Criticism",
+			"score": 6
+		},
+		{
+			"key": "Cute Cheer",
+			"score": -2
+		},
+		{
+			"key": "Dream",
+			"score": 2
+		},
+		{
+			"key": "Food Story",
+			"score": -2
+		},
+		{
+			"key": "Gossip",
+			"score": -6
+		},
+		{
+			"key": "Happy Memory",
+			"score": 3
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": -1
+		},
+		{
+			"key": "Heroic Tale",
+			"score": -1
+		},
+		{
+			"key": "Horror",
+			"score": -2
+		},
+		{
+			"key": "Interesting Story",
+			"score": 2
+		},
+		{
+			"key": "Joyful Memories",
+			"score": 4
+		},
+		{
+			"key": "Myth",
+			"score": -3
+		},
+		{
+			"key": "Occult",
+			"score": 7
+		},
+		{
+			"key": "Reality Check",
+			"score": 0
+		},
+		{
+			"key": "Sad Memory",
+			"score": 1
+		},
+		{
+			"key": "Self Indulgent",
+			"score": -1
+		},
+		{
+			"key": "Unique Comment",
+			"score": 2
+		}
+	],
+	"memory": {
+		"potision": "pos-tb",
+		"release": [
+			{
+				"key": "Health",
+				"value": "4.3%"
+			},
+			{
+				"key": "Health",
+				"value": "6.4%"
+			},
+			{
+				"key": "Health",
+				"value": "8.6%"
+			},
+			{
+				"key": "Health",
+				"value": "10.7%"
+			},
+			{
+				"key": "Health",
+				"value": "12.0%"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Health",
+				"value": "6%"
+			},
+			{
+				"key": "Health",
+				"value": "9%"
+			},
+			{
+				"key": "Health",
+				"value": "12%"
+			},
+			{
+				"key": "Health",
+				"value": "15%"
+			},
+			{
+				"key": "Health",
+				"value": "18%"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Shield Bash",
+			"type": "Active",
+			"description": {
+				"text": "Attacks with a shield, with a 50% chance to provoke for 1 turn, and recovers the caster's Health. Damage dealt and amount recovered increases proportional to the caster's max Health.",
+				"burn": "",
+				"soul": "+1",
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+15% healing",
+					"+10% effect chance",
+					"+10% damage dealt",
+					"+15% effect chance",
+					"+15% damage dealt"
+				],
+				"multipliers": "(ATK*0.7+Hp*0.07)*1.871\n                                        \n                                                                                    Heals 20% of damage dealt",
+				"text_ja": "敵単体に攻撃し、50%の確率で挑発を1ターンの間付与した後、自身の生命力を回復する。自身の最大生命力が高いほどダメージと回復量がUPする。",
+				"burn_ja": ""
+			},
+			"title_ja": "盾撃"
+		},
+		{
+			"title": "Ruin's Advent",
+			"type": "Passive",
+			"description": {
+				"text": "When attacked, the caster has a 70% chance of their skill cooldown being decreased by 1 turn, or 2 turns in the case of a critical hit.",
+				"burn": "",
+				"soul": null,
+				"ct": null,
+				"enhance": [
+					"+10% activation chance",
+					"+10% activation chance",
+					"+10% activation chance"
+				],
+				"multipliers": "",
+				"text_ja": "攻撃を受けた時、その攻撃に伴う効果が発生する前に70%の確率で自身のスキルターンが1減少する。クリティカル攻撃を受けた時、追加でスキルターンが1減少する。",
+				"burn_ja": ""
+			},
+			"title_ja": "滅亡の到来"
+		},
+		{
+			"title": "Devil's Descent",
+			"type": "Active",
+			"description": {
+				"text": "Attacks with a lethal hit, and absorbs some of the damage as Health. When the enemy is defeated, inflicts extinction. Damage dealt increases proportional to the caster's max Health and penetrates the target's Defense. The attack cannot trigger a critical hit. Begins the battle with a full skill cooldown count.",
+				"burn": "Increases damage dealt. (-10 Souls)",
+				"soul": "+3",
+				"ct": "9",
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"-1 turn cooldown",
+					"+5% damage dealt",
+					"+10% damage dealt",
+					"+10% damage dealt"
+				],
+				"multipliers": "0.95!\n                                        \n                                                                                     20% self max Health (34% soulburn), 50% of damage gained as life, penetrates defense",
+				"text_ja": "敵単体に攻撃し、与えたダメージに応じて自身の生命力を回復する。このスキルで敵を気絶させた場合、対象を消滅させる。自身の最大生命力が高いほどダメージがUPし、対象の防御力を貫通する。このスキルではクリティカルが発生しない。バトル開始時にスキルターンが最大の状態でスタートする。",
+				"burn_ja": "ダメージがUPする。(魂力10消費)"
+			},
+			"title_ja": "魔神降臨"
+		}
+	]
+}

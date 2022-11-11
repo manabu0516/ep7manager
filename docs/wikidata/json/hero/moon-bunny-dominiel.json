@@ -1,0 +1,232 @@
+{
+	"common": {
+		"name": "Moon Bunny Dominiel",
+		"image": "https://epic7x.com/wp-content/uploads/2022/08/moon-bunny-dominiel1.jpg",
+		"attribute": "light",
+		"sign": "taurus",
+		"clazz": "soul-weaver",
+		"rarity": "4",
+		"name_ja": "月うさぎドミニエル"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "15%",
+		"Critical_Hit_Damage": "150%",
+		"dual_attack": "5%",
+		"Effectiveness": "0%",
+		"Effect_Resistance": "30%",
+		"Speed": "6",
+		"Atk": "649",
+		"HP": "4572",
+		"Def": "631"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": null
+		},
+		{
+			"key": "Belief",
+			"score": null
+		},
+		{
+			"key": "Bizarre Story",
+			"score": null
+		},
+		{
+			"key": "Comforting",
+			"score": null
+		},
+		{
+			"key": "Complain",
+			"score": null
+		},
+		{
+			"key": "Criticism",
+			"score": null
+		},
+		{
+			"key": "Cute Cheer",
+			"score": null
+		},
+		{
+			"key": "Dream",
+			"score": null
+		},
+		{
+			"key": "Food Story",
+			"score": null
+		},
+		{
+			"key": "Gossip",
+			"score": null
+		},
+		{
+			"key": "Happy Memory",
+			"score": null
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": null
+		},
+		{
+			"key": "Heroic Tale",
+			"score": null
+		},
+		{
+			"key": "Horror",
+			"score": null
+		},
+		{
+			"key": "Interesting Story",
+			"score": null
+		},
+		{
+			"key": "Joyful Memories",
+			"score": null
+		},
+		{
+			"key": "Myth",
+			"score": null
+		},
+		{
+			"key": "Occult",
+			"score": null
+		},
+		{
+			"key": "Reality Check",
+			"score": null
+		},
+		{
+			"key": "Sad Memory",
+			"score": null
+		},
+		{
+			"key": "Self Indulgent",
+			"score": null
+		},
+		{
+			"key": "Unique Comment",
+			"score": null
+		}
+	],
+	"memory": {
+		"potision": "pos-all",
+		"release": [
+			{
+				"key": "Attack",
+				"value": "2.4%"
+			},
+			{
+				"key": "Attack",
+				"value": "3.6%"
+			},
+			{
+				"key": "Attack",
+				"value": "4.8%"
+			},
+			{
+				"key": "Attack",
+				"value": "6.0%"
+			},
+			{
+				"key": "Attack",
+				"value": "7.2%"
+			},
+			{
+				"key": "Attack",
+				"value": "8.4%"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Health",
+				"value": "4%"
+			},
+			{
+				"key": "Health",
+				"value": "6%"
+			},
+			{
+				"key": "Health",
+				"value": "8%"
+			},
+			{
+				"key": "Health",
+				"value": "10%"
+			},
+			{
+				"key": "Health",
+				"value": "12%"
+			},
+			{
+				"key": "Health",
+				"value": "14%"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Moonlight Wave",
+			"type": "Active",
+			"description": {
+				"text": "Attacks the enemy with an ethereal moonlight wave, and has a 50% chance to put them to sleep for 1 turn. This skill does not trigger a Dual Attack.",
+				"burn": "Increases the Effect Chance to 100%. (-10 Souls)",
+				"soul": "+1",
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+5% effect chance",
+					"+5% damage dealt",
+					"+5% effect chance",
+					"+10% damage dealt",
+					"+10% damage dealt"
+				],
+				"multipliers": "",
+				"text_ja": "敵単体に攻撃し、50%の確率で睡眠を1ターンの間付与する。このスキルでは連携攻撃が発生しない。",
+				"burn_ja": "効果発生率が100%になる。(魂力10消費)"
+			},
+			"title_ja": "月光の波動"
+		},
+		{
+			"title": "Flow Control",
+			"type": "Passive",
+			"description": {
+				"text": "Increases Effect Resistance by 20%. At the start of an enemy's extra turn, grants immunity and a barrier to all allies for 2 turns. Barrier strength increases proportional to the caster's max Health. Immunity and barrier effects can only be activated once every 2 turns, and only activates when the enemy is a Hero.",
+				"burn": "",
+				"soul": null,
+				"ct": null,
+				"enhance": [
+					"+5% barrier strength",
+					"+5% barrier strength",
+					"+5% barrier strength",
+					"+10% barrier strength",
+					"+10% barrier strength",
+					"+10% barrier strength"
+				],
+				"multipliers": "",
+				"text_ja": "効果抵抗率が20%UPする。敵の追加ターン開始時、味方全体に免疫・シールドを2ターンの間付与する。自身の最大生命力が高いほどシールド効果がUPする。免疫・シールド効果は2ターンに1回まで発生し、敵が英雄の場合にのみ適用される。",
+				"burn_ja": ""
+			},
+			"title_ja": "流れの制御"
+		},
+		{
+			"title": "Divination",
+			"type": "Active",
+			"description": {
+				"text": "In accordance with the divinations, increases Attack of all allies for 2 turns and Combat Readiness by 15%. Grants skill nullifier once to the caster.",
+				"burn": "",
+				"soul": "+2",
+				"ct": "4",
+				"enhance": [
+					"+2% Combat Readiness",
+					"+3% Combat Readiness",
+					"-1 turn cooldown"
+				],
+				"multipliers": "",
+				"text_ja": "味方全体に攻撃力UPを2ターンの間付与し、アクションゲージを15%UPさせる。更に自身にスキルダメージ無効を1回付与する。",
+				"burn_ja": ""
+			},
+			"title_ja": "先見の明"
+		}
+	]
+}

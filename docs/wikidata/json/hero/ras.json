@@ -1,0 +1,240 @@
+{
+	"common": {
+		"name": "Ras",
+		"image": "https://epic7x.com/wp-content/uploads/2019/01/ras-hd.png",
+		"attribute": "fire",
+		"sign": "libra",
+		"clazz": "knight",
+		"rarity": "3",
+		"name_ja": "ラス"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "15%",
+		"Critical_Hit_Damage": "150%",
+		"dual_attack": "5%",
+		"Effectiveness": "0%",
+		"Effect_Resistance": "12%",
+		"Speed": "95",
+		"Atk": "758",
+		"HP": "5826",
+		"Def": "672"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": 7
+		},
+		{
+			"key": "Belief",
+			"score": -4
+		},
+		{
+			"key": "Bizarre Story",
+			"score": -3
+		},
+		{
+			"key": "Comforting",
+			"score": 6
+		},
+		{
+			"key": "Complain",
+			"score": -2
+		},
+		{
+			"key": "Criticism",
+			"score": -8
+		},
+		{
+			"key": "Cute Cheer",
+			"score": 4
+		},
+		{
+			"key": "Dream",
+			"score": 5
+		},
+		{
+			"key": "Food Story",
+			"score": 2
+		},
+		{
+			"key": "Gossip",
+			"score": -1
+		},
+		{
+			"key": "Happy Memory",
+			"score": 6
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": 5
+		},
+		{
+			"key": "Heroic Tale",
+			"score": 0
+		},
+		{
+			"key": "Horror",
+			"score": 0
+		},
+		{
+			"key": "Interesting Story",
+			"score": 2
+		},
+		{
+			"key": "Joyful Memories",
+			"score": 6
+		},
+		{
+			"key": "Myth",
+			"score": 4
+		},
+		{
+			"key": "Occult",
+			"score": -1
+		},
+		{
+			"key": "Reality Check",
+			"score": -6
+		},
+		{
+			"key": "Sad Memory",
+			"score": 8
+		},
+		{
+			"key": "Self Indulgent",
+			"score": -3
+		},
+		{
+			"key": "Unique Comment",
+			"score": 2
+		}
+	],
+	"memory": {
+		"potision": "pos-all",
+		"release": [
+			{
+				"key": "Health",
+				"value": "120"
+			},
+			{
+				"key": "Health",
+				"value": "180"
+			},
+			{
+				"key": "Health",
+				"value": "240"
+			},
+			{
+				"key": "Health",
+				"value": "300"
+			},
+			{
+				"key": "Health",
+				"value": "360"
+			},
+			{
+				"key": "Health",
+				"value": "420"
+			},
+			{
+				"key": "Health",
+				"value": "480"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Health",
+				"value": "180"
+			},
+			{
+				"key": "Health",
+				"value": "270"
+			},
+			{
+				"key": "Health",
+				"value": "360"
+			},
+			{
+				"key": "Health",
+				"value": "450"
+			},
+			{
+				"key": "Health",
+				"value": "540"
+			},
+			{
+				"key": "Health",
+				"value": "630"
+			},
+			{
+				"key": "Health",
+				"value": "720"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "X-Slash",
+			"type": "Active",
+			"description": {
+				"text": "Attacks with a sword, with 75% chance to dispel a buff. Damage dealt increases proportional to the caster's max Health.",
+				"burn": "",
+				"soul": "+1",
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+10% damage dealt"
+				],
+				"multipliers": "(ATK*0.9+HP*0.07)*1.871",
+				"text_ja": "敵単体にダメージを与え、75%の確率で強化効果を1つ解除する。自身の最大生命力が高いほどダメージがUPする。",
+				"burn_ja": ""
+			},
+			"title_ja": "斬撃"
+		},
+		{
+			"title": "Command Strike",
+			"type": "Active",
+			"description": {
+				"text": "Attacks the enemy repeatedly, and triggers a Dual Attack from the strongest ally.",
+				"burn": "Skill cooldown is decreased by 2 turns (-10 Souls)",
+				"soul": "+2",
+				"ct": "3",
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+10% damage dealt"
+				],
+				"multipliers": "ATK*1.5*1*1.871",
+				"text_ja": "敵単体にダメージを与え、攻撃力が最も高い味方に連携攻撃を付与する。",
+				"burn_ja": "スキルターンが2減少する。(魂力10消費)"
+			},
+			"title_ja": "指揮の一撃"
+		},
+		{
+			"title": "Sword of the Heir",
+			"type": "Active",
+			"description": {
+				"text": "Strongly attacks all enemies with a swordstorm, recovering Health and increasing Defense of the caster for 2 turns. Damage dealt and amount recovered increases proportional to the caster's max Health.",
+				"burn": "",
+				"soul": "+2",
+				"ct": "4",
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+10% damage dealt"
+				],
+				"multipliers": "(ATK*0.9+HP*0.12)*1.96455",
+				"text_ja": "敵全体にダメージを与え、ダメージに応じて自身の生命力を回復し、防御力UPを2ターンの間付与する。自身の最大生命力に応じてダメージがUPする。",
+				"burn_ja": ""
+			},
+			"title_ja": "継承者の剣"
+		}
+	]
+}

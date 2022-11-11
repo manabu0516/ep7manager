@@ -23,10 +23,11 @@ class AliasManager {
             data["_name"] = key;
             data["_path"] = this.normalize(key) + '.json';
             this.normalizeKeys.push(this.normalize(key));
+            this.datamap[this.normalize(key)] = data;
 
             for (let j = 0; j < data.alias.length; j++) {
                 const alias = data.alias[j];
-                this.datamap[alias] = data;           
+                this.datamap[alias] = data;        
             }
 
             const localizeKeys = Object.keys(data.localize);

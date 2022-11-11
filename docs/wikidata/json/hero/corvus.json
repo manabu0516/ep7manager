@@ -1,0 +1,232 @@
+{
+	"common": {
+		"name": "Corvus",
+		"image": "https://epic7x.com/wp-content/uploads/2019/01/Corvus-1.png",
+		"attribute": "fire",
+		"sign": "cancer",
+		"clazz": "warrior",
+		"rarity": "4",
+		"name_ja": "コルヴス"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "15%",
+		"Critical_Hit_Damage": "150%",
+		"dual_attack": "5%",
+		"Effectiveness": "0%",
+		"Effect_Resistance": "0%",
+		"Speed": "103",
+		"Atk": "903",
+		"HP": "6635",
+		"Def": "630"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": 4
+		},
+		{
+			"key": "Belief",
+			"score": 4
+		},
+		{
+			"key": "Bizarre Story",
+			"score": 0
+		},
+		{
+			"key": "Comforting",
+			"score": 6
+		},
+		{
+			"key": "Complain",
+			"score": 2
+		},
+		{
+			"key": "Criticism",
+			"score": -3
+		},
+		{
+			"key": "Cute Cheer",
+			"score": 3
+		},
+		{
+			"key": "Dream",
+			"score": 4
+		},
+		{
+			"key": "Food Story",
+			"score": 2
+		},
+		{
+			"key": "Gossip",
+			"score": 1
+		},
+		{
+			"key": "Happy Memory",
+			"score": 4
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": 5
+		},
+		{
+			"key": "Heroic Tale",
+			"score": 3
+		},
+		{
+			"key": "Horror",
+			"score": 3
+		},
+		{
+			"key": "Interesting Story",
+			"score": 2
+		},
+		{
+			"key": "Joyful Memories",
+			"score": 5
+		},
+		{
+			"key": "Myth",
+			"score": 4
+		},
+		{
+			"key": "Occult",
+			"score": -2
+		},
+		{
+			"key": "Reality Check",
+			"score": 0
+		},
+		{
+			"key": "Sad Memory",
+			"score": 2
+		},
+		{
+			"key": "Self Indulgent",
+			"score": 2
+		},
+		{
+			"key": "Unique Comment",
+			"score": 2
+		}
+	],
+	"memory": {
+		"potision": "pos-all",
+		"release": [
+			{
+				"key": "Defense",
+				"value": "2.4%"
+			},
+			{
+				"key": "Defense",
+				"value": "3.6%"
+			},
+			{
+				"key": "Defense",
+				"value": "4.8%"
+			},
+			{
+				"key": "Defense",
+				"value": "6.0%"
+			},
+			{
+				"key": "Defense",
+				"value": "7.2%"
+			},
+			{
+				"key": "Defense",
+				"value": "8.4%"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Effect Resistance",
+				"value": "6.80%"
+			},
+			{
+				"key": "Effect Resistance",
+				"value": "10.20%"
+			},
+			{
+				"key": "Effect Resistance",
+				"value": "13.60%"
+			},
+			{
+				"key": "Effect Resistance",
+				"value": "17%"
+			},
+			{
+				"key": "Effect Resistance",
+				"value": "20.40%"
+			},
+			{
+				"key": "Effect Resistance",
+				"value": "22.80%"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Shield Slam",
+			"type": "Active",
+			"description": {
+				"text": "Shoves the enemy with a shield, with a 50% chance to transfer one debuff from the caster to the enemy. When the caster is infuriated, damage dealt is increased and the enemy is stunned for 1 turn. Damage dealt increases proportional to the caster's Defense.",
+				"burn": "",
+				"soul": "+10 fighting spirit\n                                                                                +1",
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+10% effect chance",
+					"+15% effect chance",
+					"+10% damage dealt",
+					"+10% damage dealt"
+				],
+				"multipliers": "(ATK*0.7+Def*0.9)*1.871",
+				"text_ja": "敵単体に攻撃し、50%の確率で弱体効果を1つ転移させる。自身が憤怒状態の場合はダメージがUPし、スタンを1ターンの間付与する。自身の防御力が高いほどダメージがUPする。",
+				"burn_ja": ""
+			},
+			"title_ja": "盾撃"
+		},
+		{
+			"title": "Macerate",
+			"type": "Active",
+			"description": {
+				"text": "Attacks all enemies with an iron mace, decreasing Combat Readiness by 20%. When the enemy's Combat Readiness reaches 0, stuns for 1 turn. When the caster is infuriated, doubles the amount of Combat Readiness decrease. Damage dealt increases proportional to the caster's Defense.",
+				"burn": "",
+				"soul": "+30 fighting spirit\n                                                                                +2",
+				"ct": "4",
+				"enhance": [
+					"+5% damage dealt",
+					"+2% Combat Readiness",
+					"+3% Combat Readiness",
+					"-1 turn cooldown",
+					"+5% Combat Readiness",
+					"+10% damage dealt",
+					"+15% damage dealt"
+				],
+				"multipliers": "(ATK*0.3+Def*0.7)*1.6839\n                                        \n                                                                                    70% self Defense (0.7 * Defense)",
+				"text_ja": "敵全体に攻撃し、アクションゲージを20%DOWNさせる。対象のアクションゲージが0になった時、スタンを1ターンの間付与する。自身が憤怒状態の時、アクションゲージDOWN効果が2倍になる。自身の防御力が高いほどダメージがUPする。",
+				"burn_ja": ""
+			},
+			"title_ja": "攻城鎚"
+		},
+		{
+			"title": "Fury's Advent",
+			"type": "Active",
+			"description": {
+				"text": "The caster becomes infuriated with Fighting Spirit for 3 turns, recovering Health, before granting an extra turn. Begins the first battle with 50 Fighting Spirit. Gains 10 Fighting Spirit when attacked.",
+				"burn": "Amount of Health recovered is doubled. (-20 Souls)",
+				"soul": "-100 fighting spirit\n                                                                                +2",
+				"ct": null,
+				"enhance": [
+					"Acquire +2 Soul",
+					"+20% healing"
+				],
+				"multipliers": "Heal strength: 50% self max Health",
+				"text_ja": "3ターンの間、憤怒状態になる。自身の生命力を回復し、追加ターンが発生する。初回のバトル開始時、【闘志】が50獲得する。攻撃を受けた時、闘志が10獲得する。",
+				"burn_ja": "生命力回復量が2倍になる。(魂力20消費)"
+			},
+			"title_ja": "炎神降臨"
+		}
+	]
+}

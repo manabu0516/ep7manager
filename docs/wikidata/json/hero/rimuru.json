@@ -1,0 +1,224 @@
+{
+	"common": {
+		"name": "Rimuru",
+		"image": "https://epic7x.com/wp-content/uploads/2021/10/Rimuru.png",
+		"attribute": "earth",
+		"sign": "libra",
+		"clazz": "warrior",
+		"rarity": "5",
+		"name_ja": "リムル"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "15%",
+		"Critical_Hit_Damage": "150%",
+		"dual_attack": "5%",
+		"Effectiveness": "0%",
+		"Effect_Resistance": "0%",
+		"Speed": "109",
+		"Atk": "1119",
+		"HP": "6266",
+		"Def": "627"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": 5
+		},
+		{
+			"key": "Belief",
+			"score": 0
+		},
+		{
+			"key": "Bizarre Story",
+			"score": 0
+		},
+		{
+			"key": "Comforting",
+			"score": 3
+		},
+		{
+			"key": "Complain",
+			"score": 1
+		},
+		{
+			"key": "Criticism",
+			"score": 0
+		},
+		{
+			"key": "Cute Cheer",
+			"score": 4
+		},
+		{
+			"key": "Dream",
+			"score": 3
+		},
+		{
+			"key": "Food Story",
+			"score": 4
+		},
+		{
+			"key": "Gossip",
+			"score": 1
+		},
+		{
+			"key": "Happy Memory",
+			"score": 3
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": 2
+		},
+		{
+			"key": "Heroic Tale",
+			"score": 1
+		},
+		{
+			"key": "Horror",
+			"score": 0
+		},
+		{
+			"key": "Interesting Story",
+			"score": 2
+		},
+		{
+			"key": "Joyful Memories",
+			"score": 4
+		},
+		{
+			"key": "Myth",
+			"score": 1
+		},
+		{
+			"key": "Occult",
+			"score": 0
+		},
+		{
+			"key": "Reality Check",
+			"score": 0
+		},
+		{
+			"key": "Sad Memory",
+			"score": 5
+		},
+		{
+			"key": "Self Indulgent",
+			"score": 0
+		},
+		{
+			"key": "Unique Comment",
+			"score": 1
+		}
+	],
+	"memory": {
+		"potision": "pos-all",
+		"release": [
+			{
+				"key": "Effect Resistance",
+				"value": "4.8%"
+			},
+			{
+				"key": "Effect Resistance",
+				"value": "7.2%"
+			},
+			{
+				"key": "Effect Resistance",
+				"value": "9.6%"
+			},
+			{
+				"key": "Effect Resistance",
+				"value": "12%"
+			},
+			{
+				"key": "Effect Resistance",
+				"value": "14.4%"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Attack",
+				"value": "6%"
+			},
+			{
+				"key": "Attack",
+				"value": "9%"
+			},
+			{
+				"key": "Attack",
+				"value": "12%"
+			},
+			{
+				"key": "Attack",
+				"value": "15%"
+			},
+			{
+				"key": "Attack",
+				"value": "18%"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Okay, Shall I Get Started?",
+			"type": "Active",
+			"description": {
+				"text": "Cuts the enemy to attack, granting a random buff to the caster for 1 turn. (Immunity, Increase Attack, Increase Critical Hit Resistance, Increase Effect Resistance)",
+				"burn": "",
+				"soul": "+1",
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+10% damage dealt"
+				],
+				"multipliers": "",
+				"text_ja": "敵単体に攻撃し、自身にランダム強化効果を1ターンの間付与する。(弱体効果免疫・攻撃力UP・クリティカル抵抗率UP・効果抵抗率UP)",
+				"burn_ja": ""
+			},
+			"title_ja": "よし、いくか！"
+		},
+		{
+			"title": "Analyze and Assess",
+			"type": "Passive",
+			"description": {
+				"text": "After attacking with a non-basic skill, copies two buffs when the target is buffed, regardless of whether or not the attack hits and grants their effects to all allies. This effect is not applied to undispellable buffs. When an ally is attacked by a buffed enemy, activates Be Ready! against the attacker. Can only be activated once every 3 turns. Be Ready!: Quickly approaches the enemy and attacks, increasing Combat Readiness of the caster by 30%.",
+				"burn": "",
+				"soul": null,
+				"ct": "3",
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+10% damage dealt"
+				],
+				"multipliers": "",
+				"text_ja": "基本スキル以外で攻撃した後、対象が強化状態の場合、攻撃が命中したかに関係なく、対象の強化効果を2つ複製し味方全体に付与する。複製は強化解除不可の強化効果に適用されない。味方が強化状態の敵から攻撃を受けた時、攻撃者に【覚悟しろ！】を発動する。3ターンに1回まで発生する。覚悟しろ！：敵単体に攻撃し、自身のアクションゲージを30%UPさせる。",
+				"burn_ja": ""
+			},
+			"title_ja": "おまえの能力、すべて把握した"
+		},
+		{
+			"title": "Devour It, Black Flame!",
+			"type": "Active",
+			"description": {
+				"text": "Attacks the enemy with black flame, and a successful attack will inflict 5,000 additional fixed damage to the target. Fixed damage increases proportional to the number of buffs granted to all allies, up to a maximum of 10,000 fixed damage. When the target is buffed, decreases Defense of all enemies for 2 turns. Unaffected by elemental disadvantage.",
+				"burn": "Skill cooldown is decreased by 2 turns. (-10 Souls)",
+				"soul": "+3",
+				"ct": "5",
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"-1 turn cooldown",
+					"+10% damage dealt",
+					"+10% damage dealt"
+				],
+				"multipliers": "",
+				"text_ja": "敵単体に攻撃し、命中時に追加で5000の固定ダメージを与える。味方全体の強化効果の数が多いほど固定ダメージがUPし、最大10000までUPする。対象が強化状態の場合、敵全体に防御力DOWNを2ターンの間付与する。この攻撃は属性不利の影響を受けない。",
+				"burn_ja": "スキルターンが2減少する。(魂力10消費)"
+			},
+			"title_ja": "飲み込め、黒炎！"
+		}
+	]
+}
