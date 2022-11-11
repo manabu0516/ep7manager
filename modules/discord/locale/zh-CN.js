@@ -33,6 +33,9 @@ module.exports = {
     st_teameffort : () => "Dual Attack Chance",
     st_effect_hit : () => "Effectiveness",
     st_effect_resist : () => "Effect Resistance",
+    st_label_passive : () => 'Passive',
+    st_label_soulburn : () => 'Soul Burn',
+    st_label_enhance : () => 'enhance',
 
     info_label_1 : () => "Content",
 };

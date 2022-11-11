@@ -33,6 +33,9 @@ module.exports = {
     st_teameffort : () => "連携攻撃率",
     st_effect_hit : () => "効果命中率",
     st_effect_resist : () => "効果抵抗率",
+    st_label_passive : () => 'パッシブ',
+    st_label_soulburn : () => '魂力解放',
+    st_label_enhance : () => '強化',
 
     info_label_1 : () => "内容",
 };

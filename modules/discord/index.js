@@ -6,6 +6,42 @@ const localeValue = (data, key, locale) => {
     return localeVal != undefined ? localeVal : defVal;
 };
 
+const skillDesc = (skillData, locale, localizer) => {
+    const description = skillData.description;
+
+    const text = localeValue(description, "text", locale);
+    const burn = localeValue(description, "burn", locale);
+    const ct = description.ct;
+    const enhance = description.enhance;
+    const soul = description.soul;
+    const contents = [];
+
+    if(ct !== null) {
+        contents.push("CT : " + ct);
+    }
+
+    if(skillData.type === 'Passive') {
+        contents.push("<" + localizer.st_label_passive() + '>');
+    }
+
+    if(soul !== null) {
+        contents.push(soul);
+    }
+
+    contents.push(text);
+
+    if(burn !== '') {
+        contents.push(localizer.st_label_soulburn() + ': ' + burn);
+    }
+
+    if(enhance.length > 0) {
+        contents.push("---<" +localizer.st_label_enhance()+ ">---");
+        contents.splice(contents.length, 0, ...enhance);
+    }
+
+    return contents.join("\r\n");
+};
+
 const getPageNo = (val) => {
     if(val === undefined || val === null) {
         return 1;
@@ -99,15 +135,15 @@ module.exports = async (parameter) => {
                         { name: localizer.st_health(), value: data.statusData.HP ,inline: true},
                         { name: localizer.st_speed(), value: data.statusData.Speed ,inline: true},
                         { name: localizer.st_defence(), value: data.statusData.Def ,inline: true},
-                        { name: localizer.st_crt_chance(), value: data.statusData.Critical_Hit_Chance ,inline: true},
-                        { name: localizer.st_crt_damage(), value: data.statusData.Critical_Hit_Damage ,inline: true},
-                        { name: localizer.st_effect_hit(), value: data.statusData.Effectiveness ,inline: true},
-                        { name: localizer.st_effect_resist(), value: data.statusData.Effect_Resistance ,inline: true},
-                        { name: localizer.st_teameffort(), value: data.statusData.dual_attack ,inline: true},
+                        { name: localizer.st_crt_chance(), value: data.statusData.Critical_Hit_Chance + '%',inline: true},
+                        { name: localizer.st_crt_damage(), value: data.statusData.Critical_Hit_Damage + '%',inline: true},
+                        { name: localizer.st_effect_hit(), value: data.statusData.Effectiveness + '%',inline: true},
+                        { name: localizer.st_effect_resist(), value: data.statusData.Effect_Resistance + '%',inline: true},
+                        { name: localizer.st_teameffort(), value: data.statusData.dual_attack + '%',inline: true},
                         
-                        { name: localeValue(data.skills[0], "title", context.locale), value: localeValue(data.skills[0].description, "text", context.locale)},
-                        { name: localeValue(data.skills[1], "title", context.locale), value: localeValue(data.skills[1].description, "text", context.locale)},
-                        { name: localeValue(data.skills[2], "title", context.locale), value: localeValue(data.skills[2].description, "text", context.locale)},
+                        { name: localeValue(data.skills[0], "title", context.locale), value: skillDesc(data.skills[0], context.locale, localizer)},
+                        { name: localeValue(data.skills[1], "title", context.locale), value: skillDesc(data.skills[1], context.locale, localizer)},
+                        { name: localeValue(data.skills[2], "title", context.locale), value: skillDesc(data.skills[2], context.locale, localizer)},
                     ])
                     .setImage(data.common.image);
 

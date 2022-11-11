@@ -63,7 +63,7 @@ const skillDescParse = ($, $div) => {
         const extention = $elem.hasClass("panel");
 
         if(soul === true) {
-            data.soul = $elem.text().toLocaleLowerCase().replace("souls", "").replace("soul", "").trim();
+            data.soul = mergeSpace($elem.text().toLocaleLowerCase().replace("souls", "soul")).trim();
         }
 
         if(soul === false && burn == true) {
