@@ -116,9 +116,14 @@ module.exports = async (parameter) => {
 
         parameter.discord.on("ep7-st", async (context) => {
             try {
-                const localizer = localizeManager(context.locale);
-                
                 const param = context.options.get("heroname");
+                const language = context.options.get("language");
+
+                if(language !== null) {
+                    context.locale = language.value;
+                }
+                const localizer = localizeManager(context.locale);
+
                 logger("ep7-st cmd start -- :start", {author : context.author,param  : [param]});
 
                 const aliaseData = await wikidata.callApi('alias', [param.value, false]);
