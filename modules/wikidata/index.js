@@ -22,6 +22,8 @@ class AliasManager {
 
             data["_name"] = key;
             data["_path"] = this.normalize(key) + '.json';
+            data["_normalize"] = this.normalize(key);
+
             this.normalizeKeys.push(this.normalize(key));
             this.datamap[this.normalize(key)] = data;
 

@@ -131,10 +131,10 @@ module.exports = async (parameter) => {
 
                 const enbded = context.embdedMessage()
                     .setTitle(localeValue(data.common, "name", context.locale))
-                    .setURL('https://manabu0516.github.io/wikidata/index.html#'+aliaseData["_path"])
-                    .setThumbnail(data.common.image)
-                    
-                    .setDescription(localizer.st_label_rarity(data.common.rarity) +' '+ localizer.st_label_type(data.common.attribute) +' '+ localizer.st_label_clazz(data.common.clazz))
+                    .setURL('https://manabu0516.github.io/ep7manager/wikidata/index.html#' + encodeURIComponent(aliaseData["_normalize"]))
+                    .setThumbnail(data.common.image)            
+                    .setDescription("<" + localizer.st_label_rarity(data.common.rarity) +' '
+                        + localizer.st_label_type(data.common.attribute) +' '+ localizer.st_label_clazz(data.common.clazz) + ">")
                     .addFields([
                         { name: localizer.st_attack(), value: data.statusData.Atk ,inline: true},
                         { name: localizer.st_health(), value: data.statusData.HP ,inline: true},
@@ -218,7 +218,7 @@ module.exports = async (parameter) => {
 
                 logger("ep7-score cmd start -- :start", {author : context.author,param  : [imageParam, heroNameParam]});
 
-                const aliaseData = await wikidata.callApi('alias', [heroNameParam.value, false]);
+                const aliaseData = await wikidata.callApi('alias', [heroNameParam != null ? heroNameParam.value : "", false]);
                 await context.deffer();
 
                 const heroData = aliaseData === undefined ? null : await wikidata.callApi("load", [aliaseData["_name"]]);
