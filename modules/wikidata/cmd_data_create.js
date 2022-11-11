@@ -36,6 +36,8 @@ const run = async () => {
             
             application._context.lib.fs.writeFile(path, json);
             console.log(key + " :complete.");
+
+            break;
         } catch(e) {
             console.log(key + " :error. " + e);
         }

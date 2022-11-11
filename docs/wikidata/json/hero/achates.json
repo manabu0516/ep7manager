@@ -9,11 +9,11 @@
 		"name_ja": "アカテス"
 	},
 	"statusData": {
-		"Critical_Hit_Chance": "15%",
-		"Critical_Hit_Damage": "150%",
-		"dual_attack": "5%",
-		"Effectiveness": "0%",
-		"Effect_Resistance": "30%",
+		"Critical_Hit_Chance": "15",
+		"Critical_Hit_Damage": "150",
+		"dual_attack": "5",
+		"Effectiveness": "0",
+		"Effect_Resistance": "30",
 		"Speed": "103",
 		"Atk": "603",
 		"HP": "4945",

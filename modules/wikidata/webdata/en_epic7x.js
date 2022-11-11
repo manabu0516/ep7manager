@@ -12,9 +12,19 @@ const imagePath = (text) => {
 }; 
 
 const statusValue = ($, $td) => {
-    const $awakening = $($td).find(".awakening-stat");
-    return $awakening.length === 0 ? $($td).text().trim() 
-        : $($awakening).text().trim().replace("+", "").replace("(", "").replace(")", "")
+    const $awakening = $($td).find("span");
+
+    if($awakening.length === 0) {
+        return $($td).text().trim().replace("%", "");
+    }
+
+    let counter = 0;
+    $awakening.each((idx, e) => {
+        const value = parseInt($(e).text().trim().replace("%", "").replace("+", "").replace("(", "").replace(")", ""));
+        counter += value;
+    });
+
+    return counter + '';
 };
 
 const textNodeData = (contents) => {
