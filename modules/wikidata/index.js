@@ -64,11 +64,6 @@ module.exports = async (parameter) => {
     const aliasJson = JSON.parse(await parameter.lib.fs.readFile(parameter.moduleDir + '/alias.json', 'utf8'));
     const aliasData = new AliasManager().load(aliasJson);
 
-    const listData = aliasData.entries().map(e => e + '.json');
-
-    const jsonp = '__ep7manager_load_hero(' + JSON.stringify(listData) + ', []);';
-    await parameter.lib.fs.writeFile(parameter.publicDir + '/jsonp.js', jsonp, 'utf-8');
-
     builder.addApi('entries', () => {
         return aliasData.entries();
     });

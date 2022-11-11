@@ -74,8 +74,8 @@
 
     <script type="text/x-handlebars" id="template">
         <div class="col-lg-6">
-            <a download="{{共通.名前}}.json" href="/wikidata/json/hero/{{共通.名前}}.json" class="btn btn-info" style="position: absolute;right: 50px;top: 20px;">DL</a>
-            <img style="width: 100%;" class="img-thumbnail" src="{{画像}}"/>
+            <a download="{{common.name_ja}}.json" href="/wikidata/json/hero/{{common.name}}.json" class="btn btn-info" style="position: absolute;right: 50px;top: 20px;">DL</a>
+            <img style="width: 100%;" class="img-thumbnail" src="{{common.image}}"/>
 
             <br/><br/>
 
@@ -84,15 +84,15 @@
                     <tbody>
                         <tr>
                             <td class="table-dark">名前</td>
-                            <td colspan="3"><strong>{{共通.名前}}</strong></td>
+                            <td colspan="5"><strong>{{common.name_ja}}</strong></td>
                         <tr>
                         <tr>
                             <td class="table-dark">レア</td>
-                            <td><span class="badge badge-pill badge-info">{{共通.レアリティ}}</span></td>
+                            <td><span class="badge badge-pill badge-info">{{common.rarity}}</span></td>
                             <td class="table-dark">クラス</td>
-                            <td><span class="badge badge-pill badge-info">{{共通.職業}}</span></td>
+                            <td><span class="badge badge-pill badge-info">{{common.clazz}}</span></td>
                             <td class="table-dark">属性</td>
-                            <td><span class="badge badge-pill badge-info">{{共通.属性}}</span></td>
+                            <td><span class="badge badge-pill badge-info">{{common.attribute}}</span></td>
                         </tr>
                     </tbody>
                 </thead>
@@ -111,48 +111,48 @@
                     <tbody>
                         <tr>
                             <td>攻撃力</td>
-                            <td><span class="badge badge-info">{{ステータス.攻撃力.初期値}}</span></td>
-                            <td><span class="badge badge-info">{{ステータス.攻撃力.最大値}}</span></td>
+                            <td><span class="badge badge-info">-</span></td>
+                            <td><span class="badge badge-info">{{statusData.Atk}}</span></td>
                         </tr>
                         <tr>
                             <td>生命力</td>
-                            <td><span class="badge badge-info">{{ステータス.生命力.初期値}}</span></td>
-                            <td><span class="badge badge-info">{{ステータス.生命力.最大値}}</span></td>
+                            <td><span class="badge badge-info">-</span></td>
+                            <td><span class="badge badge-info">{{statusData.HP}}</span></td>
                         </tr>
                         <tr>
                             <td>スピード</td>
-                            <td><span class="badge badge-info">{{ステータス.スピード.初期値}}</span></td>
-                            <td><span class="badge badge-info">{{ステータス.スピード.最大値}}</span></td>
+                            <td><span class="badge badge-info">-</span></td>
+                            <td><span class="badge badge-info">{{statusData.Speed}}</span></td>
                         </tr>
                         <tr>
                             <td>防御力</td>
-                            <td><span class="badge badge-info">{{ステータス.防御力.初期値}}</span></td>
-                            <td><span class="badge badge-info">{{ステータス.防御力.最大値}}</span></td>
+                            <td><span class="badge badge-info">-</span></td>
+                            <td><span class="badge badge-info">{{statusData.Def}}</span></td>
                         </tr>
                         <tr>
                             <td>クリティカル発生率</td>
-                            <td><span class="badge badge-info">{{ステータス.クリティカル発生率.初期値}}</span></td>
-                            <td><span class="badge badge-info">{{ステータス.クリティカル発生率.最大値}}</span></td>
+                            <td><span class="badge badge-info">-</span></td>
+                            <td><span class="badge badge-info">{{statusData.Critical_Hit_Chance}}</span></td>
                         </tr>
                         <tr>
                             <td>クリティカルダメージ</td>
-                            <td><span class="badge badge-info">{{ステータス.クリティカルダメージ.初期値}}</span></td>
-                            <td><span class="badge badge-info">{{ステータス.クリティカルダメージ.最大値}}</span></td>
+                            <td><span class="badge badge-info">-</span></td>
+                            <td><span class="badge badge-info">{{statusData.Critical_Hit_Damage}}</span></td>
                         </tr>
                         <tr>
                             <td>連続攻撃発生率</td>
-                            <td><span class="badge badge-info">{{ステータス.連続攻撃発生率.初期値}}</span></td>
-                            <td><span class="badge badge-info">{{ステータス.連続攻撃発生率.最大値}}</span></td>
+                            <td><span class="badge badge-info">-</span></td>
+                            <td><span class="badge badge-info">{{statusData.dual_attack}}%</span></td>
                         </tr>
                         <tr>
                             <td>効果命中率</td>
-                            <td><span class="badge badge-info">{{ステータス.効果命中率.初期値}}</span></td>
-                            <td><span class="badge badge-info">{{ステータス.効果命中率.最大値}}</span></td>
+                            <td><span class="badge badge-info">-</span></td>
+                            <td><span class="badge badge-info">{{statusData.Effectiveness}}%</span></td>
                         </tr>
                         <tr>
                             <td>効果抵抗率</td>
-                            <td><span class="badge badge-info">{{ステータス.効果命中率DOWN.初期値}}</span></td>
-                            <td><span class="badge badge-info">{{ステータス.効果命中率DOWN.最大値}}</span></td>
+                            <td><span class="badge badge-info">-</span></td>
+                            <td><span class="badge badge-info">{{statusData.Effect_Resistance}}%</span></td>
                         </tr>
                     </tbody>
                 </table>
@@ -160,34 +160,31 @@
         </div>
 
         <div class="col-lg-12">
-            {{#each スキル}}
+            {{#each skills}}
             <table class="table">
                 <tbody>
                     <tr>
                         <td style="width: 200px;" class="table-dark" rowspan="2">
-                            {{スキル名}}
+                            {{title_ja}}
                         </td>
                         <td colspan="2">
                             <strong>【スキル効果】</strong><br/>
                             <small class="form-text text-muted">
-                            {{説明}}
+                            <span class="badge badge-info">CT {{description.ct}}</span>
+                            <br/>
+                            <span class="badge badge-info">魂力獲得 {{description.soul}}</span>
+                            <br/>
+                            {{description.text_ja}}
+                            <br/>
+                            <span class="badge badge-info">魂力解放</span> {{description.burn_ja}}
                             </small>
                         </td>
                         
                     </tr>
                     <tr>
                         <td>
-                            {{#each 強化効果}}
+                            {{#each description.enhance}}
                             <small class="form-text text-muted">+ {{index @key}} : <span class="badge badge-info">{{this}}</span> </small>
-                            {{/each}}
-                        </td>
-                        <td>
-                            {{#each 強化素材}}
-                            <small class="form-text text-muted">+ {{index @key}} : 
-                                {{#each this}}
-                                <span class="badge badge-info">{{@key}}</span>×<span class="badge badge-info">{{this}}</span>
-                                {{/each}}
-                            </small>
                             {{/each}}
                         </td>
                     </tr>
@@ -202,15 +199,13 @@
                     <tr>
                         <th style="width: 140px;text-align: center;vertical-align: middle;">刻印展開</th>
                     </tr>
-                    {{#each 陣形効果.刻印展開}}
+                    {{#each memory.release}}
                     <tr>
-                        {{#each this}}
                         <td>
-                            <span class="badge badge-info">{{@key}}</span>
+                            <span class="badge badge-info">{{key}}</span>
                             +
-                            <span class="badge badge-info">{{this}}</span>
+                            <span class="badge badge-info">{{value}}</span>
                         </td>
-                        {{/each}}
                     </tr>
                     {{/each}}
                 </thead>
@@ -222,15 +217,13 @@
                     <tr>
                         <th style="width: 140px;text-align: center;vertical-align: middle;">刻印集中</th>
                     </tr>
-                    {{#each 陣形効果.刻印集中}}
+                    {{#each memory.concentration}}
                     <tr>
-                        {{#each this}}
                         <td>
-                            <span class="badge badge-info">{{@key}}</span>
+                            <span class="badge badge-info">{{key}}</span>
                             +
-                            <span class="badge badge-info">{{this}}</span>
+                            <span class="badge badge-info">{{value}}</span>
                         </td>
-                        {{/each}}
                     </tr>
                     {{/each}}
                 </thead>
@@ -262,10 +255,14 @@
     <script src="./wikidata/jsonp.js"></script>
 
     <script>
+
         $(() => {
-            window.ep7manager.heros.forEach((e) => {
-                const label = e.replace(".json", "");
-                $("#herolist").append($("<option>").attr("value", label));
+            Object.keys(window.ep7manager.heros).forEach((e) => {
+                const alias = window.ep7manager.heros[e];
+
+                const label = alias.localize.ja;
+                const value = e.replaceAll(" ", "-").toLocaleLowerCase().trim();
+                $("#herolist").append($("<option>").attr("value", value).text(label));
             });
 
             $("#hero-select").change((e) => {

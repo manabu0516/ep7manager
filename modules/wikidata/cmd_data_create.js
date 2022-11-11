@@ -40,6 +40,10 @@ const run = async () => {
             console.log(key + " :error. " + e);
         }
     }
+
+    const aliasJson = await application._context.lib.fs.readFile(wikidata.directries.moduleDir + '/alias.json', 'utf-8');
+    const jsonp = '__ep7manager_load_hero(' + aliasJson + ', []);';
+    await application._context.lib.fs.writeFile(wikidata.directries.publicDir + '/jsonp.js', jsonp, 'utf-8');
 };
 
 run();
