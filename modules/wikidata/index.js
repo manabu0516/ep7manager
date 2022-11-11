@@ -79,7 +79,7 @@ module.exports = async (parameter) => {
     });
 
     builder.addApi('normalize', (key) => {
-        const data = aliasData.get(key);
+        const data = aliasData.get(key.toLocaleLowerCase());
         return data != undefined ? data._name : key;
     });
 

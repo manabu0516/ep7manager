@@ -1,13 +1,9 @@
 
-const skillDesc = (skill) => {
-    const desc = skill["説明"].join("\r\n");
 
-    const ext = [];
-    for (let i = 0; i < skill["強化効果"].length; i++) {
-        const element = skill["強化効果"][i];
-        ext.push("+"+(i+1)+' ' + element);
-    }
-    return desc + '\r\n' + ext.join("\r\n");
+const localeValue = (data, key, locale) => {
+    const defVal = data[key];
+    const localeVal = data[key+'_'+locale];
+    return localeVal != undefined ? localeVal : defVal;
 };
 
 const getPageNo = (val) => {
@@ -84,32 +80,38 @@ module.exports = async (parameter) => {
                 const param = context.options.get("heroname");
                 logger("ep7-st cmd start -- :start", {author : context.author,param  : [param]});
 
-                const heroName = await wikidata.callApi('normalize', [param.value, false]);
-                const data = await wikidata.callApi('load', [heroName, false]);
+                const aliaseData = await wikidata.callApi('alias', [param.value, false]);
+                if(aliaseData === undefined) {
+                    logger("ep7-build cmd complete -- :notfound", {author : context.author, param  : [heroNameParam.value, pageNo]});
+                    return localizer.build_nodfound(heroNameParam.value);
+                }
+
+                const data = await wikidata.callApi('load', [aliaseData["_name"], false]);
 
                 const enbded = context.embdedMessage()
-                    .setTitle(data["共通"]["名前"])
-                    .setURL('https://manabu0516.github.io/wikidata/index.html#'+heroName)
-                    .setThumbnail(data["画像"])
-                    .setDescription(data["共通"]["レアリティ"] +' '+ data["共通"]["属性"] +' '+ data["共通"]["職業"])
+                    .setTitle(localeValue(data.common, "name", context.locale))
+                    .setURL('https://manabu0516.github.io/wikidata/index.html#'+aliaseData["_path"])
+                    .setThumbnail(data.common.image)
+                    
+                    .setDescription((data.common.rarity) +' '+ (data.common.attribute) +' '+ (data.common.clazz))
                     .addFields([
-                        { name: localizer.st_attack(), value: data["ステータス"]["攻撃力"]["最大値"] ,inline: true},
-                        { name: localizer.st_health(), value: data["ステータス"]["生命力"]["最大値"] ,inline: true},
-                        { name: localizer.st_speed(), value: data["ステータス"]["スピード"]["最大値"] ,inline: true},
-                        { name: localizer.st_defence(), value: data["ステータス"]["防御力"]["最大値"] ,inline: true},
-                        { name: localizer.st_crt_chance(), value: data["ステータス"]["クリティカル発生率"]["最大値"] ,inline: true},
-                        { name: localizer.st_crt_damage(), value: data["ステータス"]["クリティカルダメージ"]["最大値"] ,inline: true},
-                        { name: localizer.st_effect_hit(), value: data["ステータス"]["効果命中率"]["最大値"] ,inline: true},
-                        { name: localizer.st_effect_resist(), value: data["ステータス"]["効果命中率DOWN"]["最大値"] ,inline: true},
-                        { name: localizer.st_teameffort(), value: data["ステータス"]["連続攻撃発生率"]["最大値"] ,inline: true},
-
-                        { name: data["スキル"][0]["スキル名"], value: skillDesc(data["スキル"][0])},
-                        { name: data["スキル"][1]["スキル名"], value: skillDesc(data["スキル"][1])},
-                        { name: data["スキル"][2]["スキル名"], value: skillDesc(data["スキル"][2])}
+                        { name: localizer.st_attack(), value: data.statusData.Atk ,inline: true},
+                        { name: localizer.st_health(), value: data.statusData.HP ,inline: true},
+                        { name: localizer.st_speed(), value: data.statusData.Speed ,inline: true},
+                        { name: localizer.st_defence(), value: data.statusData.Def ,inline: true},
+                        { name: localizer.st_crt_chance(), value: data.statusData.Critical_Hit_Chance ,inline: true},
+                        { name: localizer.st_crt_damage(), value: data.statusData.Critical_Hit_Damage ,inline: true},
+                        { name: localizer.st_effect_hit(), value: data.statusData.Effectiveness ,inline: true},
+                        { name: localizer.st_effect_resist(), value: data.statusData.Effect_Resistance ,inline: true},
+                        { name: localizer.st_teameffort(), value: data.statusData.dual_attack ,inline: true},
+                        
+                        { name: localeValue(data.skills[0], "title", context.locale), value: localeValue(data.skills[0].description, "text", context.locale)},
+                        { name: localeValue(data.skills[1], "title", context.locale), value: localeValue(data.skills[1].description, "text", context.locale)},
+                        { name: localeValue(data.skills[2], "title", context.locale), value: localeValue(data.skills[2].description, "text", context.locale)},
                     ])
-                    .setImage(data["画像"]);
+                    .setImage(data.common.image);
 
-                logger("ep7-st cmd end -- :success", {author : context.author, name  : heroName});
+                logger("ep7-st cmd end -- :success", {author : context.author, name  : aliaseData});
                 return { embeds: [enbded] };
             } catch(e) {
                 logger("ep7-st cmd end -- :error", {author : context.author, erroe : e+""});
@@ -127,7 +129,13 @@ module.exports = async (parameter) => {
 
                 logger("ep7-build cmd start -- :start", {author : context.author,param  : [heroNameParam, pagenoParam]});
 
-                const heroName = await wikidata.callApi('normalize', [heroNameParam.value, false]);
+                const aliaseData = await wikidata.callApi('alias', [heroNameParam.value, false]);
+                if(aliaseData === undefined) {
+                    logger("ep7-build cmd complete -- :notfound", {author : context.author, param  : [heroNameParam.value, pageNo]});
+                    return localizer.build_nodfound(heroNameParam.value);
+                }
+
+                const heroName = aliaseData.localize.ja;
                 const pageNo = pagenoParam !== null ? getPageNo(pagenoParam.value) : 1;
                 const data = await tweetsearch.callApi('get', [heroName]);
 
@@ -143,11 +151,13 @@ module.exports = async (parameter) => {
                     return localizer.build_notpage(pageNo,heroName); 
                 }
 
+                const dispHeroName = aliaseData.localize[context.locale] ? aliaseData.localize[context.locale] : aliaseData['_name'];
+
                 const pageMax = sliced.length;
                 const enbded = target.map((e,i) => {
                     const pageLabel = localizer.build_page_label(pageNo,pageMax);
                     const countLabel = localizer.build_count_label(i+1);
-                    return  context.embdedMessage().setTitle(heroName +' '+ countLabel +' '+ pageLabel).setImage(e);
+                    return  context.embdedMessage().setTitle(dispHeroName +' '+ countLabel +' '+ pageLabel).setImage(e);
                 });
 
                 logger("ep7-build cmd complete -- :success", {author : context.author, target  : target});
@@ -167,19 +177,18 @@ module.exports = async (parameter) => {
 
                 logger("ep7-score cmd start -- :start", {author : context.author,param  : [imageParam, heroNameParam]});
 
-                const heroName = await wikidata.callApi('normalize', [heroNameParam !== null ? heroNameParam.value : null, false]);
-
+                const aliaseData = await wikidata.callApi('alias', [heroNameParam.value, false]);
                 await context.deffer();
+
+                const heroData = aliaseData === undefined ? null : await wikidata.callApi("load", [aliaseData["_name"]]);
+                const statusData = heroData != null ? {
+                    "攻撃力" : parseInt(heroData.statusData.Atk),
+                    "生命力" : parseInt(heroData.statusData.HP),
+                    "防御力" : parseInt(heroData.statusData.Def)
+                } : undefined;
 
                 const response = await parameter.lib.request(imageParam.attachment.url, {encoding: null});
                 const result = await ocrreader.callApi("recognize", [response]);
-                const heroData = await wikidata.callApi("load", [heroName]);
-
-                const statusData = heroData != null ? {
-                    "攻撃力" : heroData["ステータス"]["攻撃力"]["最大値"],
-                    "生命力" : heroData["ステータス"]["生命力"]["最大値"],
-                    "防御力" : heroData["ステータス"]["防御力"]["最大値"]
-                } : undefined;
 
                 const score = await ocrreader.callApi("score", [result, statusData]);
                 const enbded = context.embdedMessage()
