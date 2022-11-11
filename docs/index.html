@@ -73,7 +73,7 @@
     </footer>
 
     <script type="text/x-handlebars" id="template">
-        <div class="col-lg-6">
+        <div class="col-lg-12">
             <a download="{{common.name_ja}}.json" href="/wikidata/json/hero/{{common.name}}.json" class="btn btn-info" style="position: absolute;right: 50px;top: 20px;">DL</a>
             <img style="width: 100%;" class="img-thumbnail" src="{{common.image}}"/>
 
@@ -98,7 +98,7 @@
                 </thead>
             </table>
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-12">
             <div class="table-responsive">
                 <table class="table">
                     <thead class="thead-dark">
@@ -286,7 +286,7 @@
                     return;
                 }
 
-                fetch('./wikidata/json/hero/' + id + ".json")
+                fetch('./wikidata/json/hero/' + encodeURIComponent(id) + ".json")
                     .then((response) => response.text())
                     .then(text => JSON.parse(text))
                     .then(json => template(json))
