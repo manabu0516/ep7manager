@@ -136,7 +136,7 @@ module.exports = async (parameter) => {
 
                 const enbded = context.embdedMessage()
                     .setTitle(localeValue(data.common, "name", context.locale))
-                    .setURL('https://manabu0516.github.io/ep7manager/index.html#' + encodeURIComponent(aliaseData["_normalize"]))
+                    .setURL('https://manabu0516.github.io/ep7manager/index.html#' + aliaseData["_normalize"])
                     .setThumbnail(data.common.image)            
                     .setDescription("<" + localizer.st_label_rarity(data.common.rarity) +' '
                         + localizer.st_label_type(data.common.attribute) +' '+ localizer.st_label_clazz(data.common.clazz) + ">")
