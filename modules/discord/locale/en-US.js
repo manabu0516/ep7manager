@@ -54,9 +54,9 @@ module.exports = {
     st_label_soulburn : () => 'Soul Burn',
     st_label_enhance : () => 'enhance',
     st_label_multipliers: () => 'multipliers',
-    st_label_rarity: (key) => (key) =>  'STAR-'+key,
-    st_label_clazz: (key) => (key) =>  clazzDef[key] === undefined ? key : clazzDef[key],
-    st_label_type: (key) => (key) =>  typeDef[key] === undefined ? key : typeDef[key],
+    st_label_rarity: (key) => 'STAR-'+key,
+    st_label_clazz: (key) => clazzDef[key] === undefined ? key : clazzDef[key],
+    st_label_type: (key) => typeDef[key] === undefined ? key : typeDef[key],
     st_label_soul: (key) => key,
     st_label_enhance_type : (key) => key,
 

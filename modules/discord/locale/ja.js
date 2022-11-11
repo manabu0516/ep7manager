@@ -55,9 +55,9 @@ module.exports = {
     st_label_soulburn : () => '魂力解放',
     st_label_enhance : () => '強化',
     st_label_multipliers: () => '倍率',
-    st_label_rarity: (key) => (key) =>  'STAR-'+key,
-    st_label_clazz: (key) => (key) =>  clazzDef[key] === undefined ? key : clazzDef[key],
-    st_label_type: (key) => (key) =>  typeDef[key] === undefined ? key : typeDef[key],
+    st_label_rarity: (key) => '★'+key,
+    st_label_clazz: (key) => clazzDef[key] === undefined ? key : clazzDef[key],
+    st_label_type: (key) => typeDef[key] === undefined ? key : typeDef[key],
     st_label_soul: (key) => key.replace("soul", "魂力").replace("focus", "集中").replace("consume", "闘志"),
     st_label_enhance_type : (key) => key,
 
