@@ -36,6 +36,7 @@ module.exports = {
     st_label_passive : () => 'パッシブ',
     st_label_soulburn : () => '魂力解放',
     st_label_enhance : () => '強化',
+    st_label_multipliers: () => '倍率',
 
     info_label_1 : () => "内容",
 };

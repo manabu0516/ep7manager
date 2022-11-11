@@ -14,6 +14,7 @@ const skillDesc = (skillData, locale, localizer) => {
     const ct = description.ct;
     const enhance = description.enhance;
     const soul = description.soul;
+    const multipliers = description.multipliers;
     const contents = [];
 
     if(ct !== null) {
@@ -32,6 +33,10 @@ const skillDesc = (skillData, locale, localizer) => {
 
     if(burn !== '') {
         contents.push(localizer.st_label_soulburn() + ': ' + burn);
+    }
+
+    if(multipliers !== null) {
+        contents.push(localizer.st_label_multipliers() + ': ' + multipliers);
     }
 
     if(enhance.length > 0) {

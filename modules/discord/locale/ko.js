@@ -36,6 +36,7 @@ module.exports = {
     st_label_passive : () => 'Passive',
     st_label_soulburn : () => 'Soul Burn',
     st_label_enhance : () => 'enhance',
+    st_label_multipliers: () => 'multipliers',
 
     info_label_1 : () => "Content",
 };
