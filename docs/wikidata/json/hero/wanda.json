@@ -1,0 +1,240 @@
+{
+	"common": {
+		"name": "Wanda",
+		"image": "https://epic7x.com/wp-content/uploads/2019/01/wanda-full.png",
+		"attribute": "dark",
+		"sign": "gemini",
+		"clazz": "ranger",
+		"rarity": "3",
+		"name_ja": "ワンダ"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "15",
+		"Critical_Hit_Damage": "150",
+		"dual_attack": "5",
+		"Effectiveness": "18",
+		"Effect_Resistance": "0",
+		"Speed": "109",
+		"Atk": "1005",
+		"HP": "4693",
+		"Def": "532"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": 2
+		},
+		{
+			"key": "Belief",
+			"score": 0
+		},
+		{
+			"key": "Bizarre Story",
+			"score": 2
+		},
+		{
+			"key": "Comforting",
+			"score": 3
+		},
+		{
+			"key": "Complain",
+			"score": 5
+		},
+		{
+			"key": "Criticism",
+			"score": 5
+		},
+		{
+			"key": "Cute Cheer",
+			"score": 3
+		},
+		{
+			"key": "Dream",
+			"score": 0
+		},
+		{
+			"key": "Food Story",
+			"score": 2
+		},
+		{
+			"key": "Gossip",
+			"score": 4
+		},
+		{
+			"key": "Happy Memory",
+			"score": 2
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": -3
+		},
+		{
+			"key": "Heroic Tale",
+			"score": -1
+		},
+		{
+			"key": "Horror",
+			"score": 1
+		},
+		{
+			"key": "Interesting Story",
+			"score": 3
+		},
+		{
+			"key": "Joyful Memories",
+			"score": 5
+		},
+		{
+			"key": "Myth",
+			"score": -2
+		},
+		{
+			"key": "Occult",
+			"score": 2
+		},
+		{
+			"key": "Reality Check",
+			"score": -3
+		},
+		{
+			"key": "Sad Memory",
+			"score": 3
+		},
+		{
+			"key": "Self Indulgent",
+			"score": -4
+		},
+		{
+			"key": "Unique Comment",
+			"score": 1
+		}
+	],
+	"memory": {
+		"potision": "pos-all",
+		"release": [
+			{
+				"key": "Attack",
+				"value": "24"
+			},
+			{
+				"key": "Attack",
+				"value": "36"
+			},
+			{
+				"key": "Attack",
+				"value": "48"
+			},
+			{
+				"key": "Attack",
+				"value": "60"
+			},
+			{
+				"key": "Attack",
+				"value": "72"
+			},
+			{
+				"key": "Attack",
+				"value": "84"
+			},
+			{
+				"key": "Attack",
+				"value": "96"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Attack",
+				"value": "36"
+			},
+			{
+				"key": "Attack",
+				"value": "54"
+			},
+			{
+				"key": "Attack",
+				"value": "72"
+			},
+			{
+				"key": "Attack",
+				"value": "90"
+			},
+			{
+				"key": "Attack",
+				"value": "108"
+			},
+			{
+				"key": "Attack",
+				"value": "126"
+			},
+			{
+				"key": "Attack",
+				"value": "144"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Weak Shot",
+			"type": "Active",
+			"description": {
+				"text": "Shoots an arrow at the enemy, decreasing Combat Readiness by 15%. Damage dealt increases when the enemy is targeted.",
+				"burn": "",
+				"soul": "+1 soul",
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+2% Combat Readiness",
+					"+2% Combat Readiness",
+					"+5% damage dealt",
+					"+10% damage dealt",
+					"+15% damage dealt"
+				],
+				"multipliers": "ATK*0.9*0.95*1.871\n                                        \n                                                                                    35% increased damage if enemy has Targeted debuff",
+				"text_ja": "敵単体に攻撃し、アクションゲージを15%DOWNさせる。対象が標的状態の場合、ダメージがUPする。",
+				"burn_ja": ""
+			},
+			"title_ja": "弱点射撃"
+		},
+		{
+			"title": "Steady Aim",
+			"type": "Passive",
+			"description": {
+				"text": "Has a 80% chance to target a random enemy for 2 turns at the beginning of each turn.",
+				"burn": "",
+				"soul": null,
+				"ct": null,
+				"enhance": [
+					"+5% trigger chance",
+					"+5% trigger chance",
+					"+10% trigger chance"
+				],
+				"multipliers": "",
+				"text_ja": "毎ターン開始時にランダム対象に80%の確率で標的を2ターンの間付与する。",
+				"burn_ja": ""
+			},
+			"title_ja": "照準"
+		},
+		{
+			"title": "Fatal Shot",
+			"type": "Active",
+			"description": {
+				"text": "Attacks the enemy's vital points, with a 80% chance to stun for 2 turns.",
+				"burn": "Ignores effect resistance (-20 Souls)",
+				"soul": "+2 soul",
+				"ct": "4",
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+10% effect chance",
+					"+10% effect chance",
+					"+15% damage dealt",
+					"+15% damage dealt"
+				],
+				"multipliers": "ATK*1.8*0.9*1.871",
+				"text_ja": "敵単体にダメージを与え、80%の確率でスタンを2ターンの間付与する。",
+				"burn_ja": "効果抵抗を無視する。(魂力20消費)"
+			},
+			"title_ja": "致命的な一撃"
+		}
+	]
+}

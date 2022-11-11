@@ -41,7 +41,7 @@ const skillDesc = (skillData, locale, localizer) => {
 
     if(enhance.length > 0) {
         contents.push("---<" +localizer.st_label_enhance()+ ">---");
-        contents.splice(contents.length, 0, ...enhance);
+        contents.splice(contents.length, 0, ...enhance.map(localizer.st_label_enhance_type));
     }
 
     return contents.join("\r\n");

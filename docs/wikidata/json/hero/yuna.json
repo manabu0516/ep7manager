@@ -1,0 +1,224 @@
+{
+	"common": {
+		"name": "Yuna",
+		"image": "https://epic7x.com/wp-content/uploads/2019/01/yuna-full.png",
+		"attribute": "ice",
+		"sign": "leo",
+		"clazz": "ranger",
+		"rarity": "5",
+		"name_ja": "ユナ"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "23",
+		"Critical_Hit_Damage": "150",
+		"dual_attack": "5",
+		"Effectiveness": "0",
+		"Effect_Resistance": "0",
+		"Speed": "112",
+		"Atk": "1158",
+		"HP": "6002",
+		"Def": "553"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": 3
+		},
+		{
+			"key": "Belief",
+			"score": 1
+		},
+		{
+			"key": "Bizarre Story",
+			"score": 2
+		},
+		{
+			"key": "Comforting",
+			"score": 4
+		},
+		{
+			"key": "Complain",
+			"score": 1
+		},
+		{
+			"key": "Criticism",
+			"score": 2
+		},
+		{
+			"key": "Cute Cheer",
+			"score": 4
+		},
+		{
+			"key": "Dream",
+			"score": 2
+		},
+		{
+			"key": "Food Story",
+			"score": 1
+		},
+		{
+			"key": "Gossip",
+			"score": 4
+		},
+		{
+			"key": "Happy Memory",
+			"score": 2
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": 4
+		},
+		{
+			"key": "Heroic Tale",
+			"score": 3
+		},
+		{
+			"key": "Horror",
+			"score": -2
+		},
+		{
+			"key": "Interesting Story",
+			"score": 4
+		},
+		{
+			"key": "Joyful Memories",
+			"score": 3
+		},
+		{
+			"key": "Myth",
+			"score": 6
+		},
+		{
+			"key": "Occult",
+			"score": 4
+		},
+		{
+			"key": "Reality Check",
+			"score": 2
+		},
+		{
+			"key": "Sad Memory",
+			"score": -2
+		},
+		{
+			"key": "Self Indulgent",
+			"score": 7
+		},
+		{
+			"key": "Unique Comment",
+			"score": -3
+		}
+	],
+	"memory": {
+		"potision": "pos-lb",
+		"release": [
+			{
+				"key": "Health",
+				"value": "4.3%"
+			},
+			{
+				"key": "Health",
+				"value": "6.4%"
+			},
+			{
+				"key": "Health",
+				"value": "8.6%"
+			},
+			{
+				"key": "Health",
+				"value": "10.7%"
+			},
+			{
+				"key": "Health",
+				"value": "12.0%"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Attack",
+				"value": "6%"
+			},
+			{
+				"key": "Attack",
+				"value": "9%"
+			},
+			{
+				"key": "Attack",
+				"value": "12%"
+			},
+			{
+				"key": "Attack",
+				"value": "15%"
+			},
+			{
+				"key": "Attack",
+				"value": "18%"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Homing Laser",
+			"type": "Active",
+			"description": {
+				"text": "Attacks all enemies with a drone, increasing the caster's Combat Readiness by 6% per target, and increasing Combat Readiness of all allies except for the caster by 2%. Damage dealt increases proportional to the caster's Speed. When there are less than 3 enemies, damage dealt increases with fewer enemies.",
+				"burn": "Increases damage dealt (-10 Souls)",
+				"soul": "+1 focus +1 soul",
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+10% damage dealt",
+					"+10% damage dealt",
+					"+15% damage dealt"
+				],
+				"multipliers": "ATK*0.6*0.8*1.871\n                                        \n                                                                                    140% damage vs 2 targets, 160% vs 1 target",
+				"text_ja": "敵全体に攻撃し、自身のアクションゲージを対象の数×6%UPさせ、自身以外の味方全体のアクションゲージを対象の数×2%UPさせる。自身のスピードが高いほどダメージがUPする。更に対象が3人以下の場合、対象が少ないほどダメージがUPする。",
+				"burn_ja": "ダメージがUPする。(魂力10消費)"
+			},
+			"title_ja": "ホーミングレーザー"
+		},
+		{
+			"title": "Upgrade",
+			"type": "Active",
+			"description": {
+				"text": "Buffs all allies with a drone and increases Attack and Speed for 2 turns.",
+				"burn": "",
+				"soul": "+3 focus +1 soul",
+				"ct": "4",
+				"enhance": [
+					"Acquire +1 Soul",
+					"-1 turn cooldown"
+				],
+				"multipliers": "",
+				"text_ja": "味方全体に攻撃力UP・スピードUPを2ターンの間付与する。",
+				"burn_ja": ""
+			},
+			"title_ja": "アップグレード"
+		},
+		{
+			"title": "Meteor Cannon",
+			"type": "Active",
+			"description": {
+				"text": "Attacks all enemies with a cannon. A successful attack always activates a critical hit. When there are are three or fewer enemies, damage dealt increases with fewer enemies. Grants an extra turn to the caster.",
+				"burn": "",
+				"soul": "-5 focus +3 soul",
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+10% damage dealt",
+					"+10% damage dealt",
+					"+10% damage dealt"
+				],
+				"multipliers": "ATK*1.5*0.8*1.871\n                                        \n                                                                                    140% damage vs 2 targets, 160% vs 1 target",
+				"text_ja": "敵全体に攻撃する。命中時、クリティカルが発生する。対象が3体以下の場合、対象が少ないほどダメージがUPする。追加ターンが発生する。",
+				"burn_ja": ""
+			},
+			"title_ja": "ミーティアキャノン"
+		}
+	]
+}
