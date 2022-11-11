@@ -179,7 +179,7 @@
 			"description": {
 				"text": "Attacks the enemy, with a 30% chance to stun for 1 turn.",
 				"burn": "Effect chance increases by 60% and a successful attack always results in a critical hit. (-10 Souls)",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": null,
 				"enhance": [
 					"+10% damage dealt",
@@ -221,7 +221,7 @@
 			"description": {
 				"text": "Attacks all enemies, decreasing Speed and inflicting stigma for 2 turns. A successful attack always results in a critical hit.",
 				"burn": "",
-				"soul": "+3",
+				"soul": "+3 soul",
 				"ct": "5",
 				"enhance": [
 					"+5% damage dealt",

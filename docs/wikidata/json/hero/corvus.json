@@ -171,7 +171,7 @@
 			"description": {
 				"text": "Shoves the enemy with a shield, with a 50% chance to transfer one debuff from the caster to the enemy. When the caster is infuriated, damage dealt is increased and the enemy is stunned for 1 turn. Damage dealt increases proportional to the caster's Defense.",
 				"burn": "",
-				"soul": "+10 fighting spirit\n                                                                                +1",
+				"soul": "+10 fighting spirit +1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",
@@ -193,7 +193,7 @@
 			"description": {
 				"text": "Attacks all enemies with an iron mace, decreasing Combat Readiness by 20%. When the enemy's Combat Readiness reaches 0, stuns for 1 turn. When the caster is infuriated, doubles the amount of Combat Readiness decrease. Damage dealt increases proportional to the caster's Defense.",
 				"burn": "",
-				"soul": "+30 fighting spirit\n                                                                                +2",
+				"soul": "+30 fighting spirit +2 soul",
 				"ct": "4",
 				"enhance": [
 					"+5% damage dealt",
@@ -216,7 +216,7 @@
 			"description": {
 				"text": "The caster becomes infuriated with Fighting Spirit for 3 turns, recovering Health, before granting an extra turn. Begins the first battle with 50 Fighting Spirit. Gains 10 Fighting Spirit when attacked.",
 				"burn": "Amount of Health recovered is doubled. (-20 Souls)",
-				"soul": "-100 fighting spirit\n                                                                                +2",
+				"soul": "-100 fighting spirit +2 soul",
 				"ct": null,
 				"enhance": [
 					"Acquire +2 Soul",

@@ -171,7 +171,7 @@
 			"description": {
 				"text": "Attacks the enemy with flames, with a 65% chance to burn for 1 turn. When the caster is granted vigor, increases effect chance by 25% and inflicts one additional burn effect.",
 				"burn": "Grants an extra turn. (-20 Souls)",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",
@@ -215,7 +215,7 @@
 			"description": {
 				"text": "Attacks the enemy with an inferno, dispelling all buffs, before a 75% chance each to inflict two burn effects for 2 turns, and at the end of the turn, detonates burn effects. Ignores Effect Resistance when the caster is granted vigor.",
 				"burn": "",
-				"soul": "+2",
+				"soul": "+2 soul",
 				"ct": "4",
 				"enhance": [
 					"+10% effect chance",

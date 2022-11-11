@@ -163,7 +163,7 @@
 			"description": {
 				"text": "Attacks the enemy with an explosion of flame, with a 65% chance to burn for 1 turn. After attacking, when an enemy is burned, activates Flame Release as an extra attack. Flame Release: Attacks all enemies with mystic fire energy, with a 50% chance to burn for 1 turn, before increasing the caster's Combat Readiness by 25%.",
 				"burn": "Effect Chance increases to 100%, ignores Effect Resistance (-10 Souls)",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",
@@ -205,7 +205,7 @@
 			"description": {
 				"text": "Attacks all enemies with a giant meteor, with a 55% chance each to inflict two burn effects for 2 turns, before stunning for 1 turn. Decreases Combat Readiness of the enemy with the highest Combat Readiness by 30%.",
 				"burn": "",
-				"soul": "+2",
+				"soul": "+2 soul",
 				"ct": "5",
 				"enhance": [
 					"+5% damage dealt",

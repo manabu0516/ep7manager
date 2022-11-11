@@ -179,7 +179,7 @@
 			"description": {
 				"text": "Attacks the enemy, with a 50% chance to provoke for 1 turn. Damage dealt increases proportional to the caster's max Health.",
 				"burn": "",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% effect chance",
@@ -221,7 +221,7 @@
 			"description": {
 				"text": "Increases Attack of all allies for 2 turns. Increases Defense of the caster for 2 turns and recovers Health. Amount recovered increases proportional to the caster's max Health.",
 				"burn": "Skill cooldown is decreased by 2 turns. (-10 Souls)",
-				"soul": "+2",
+				"soul": "+2 soul",
 				"ct": "5",
 				"enhance": [
 					"+10% healing",

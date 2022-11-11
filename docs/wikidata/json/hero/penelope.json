@@ -179,7 +179,7 @@
 			"description": {
 				"text": "Attacks the enemy before increasing Attack of the caster by 15%. When an enemy is defeated, increases Combat Readiness of the caster by 75%.",
 				"burn": "Increases damage dealt. (-10 Souls)",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",
@@ -200,7 +200,7 @@
 			"description": {
 				"text": "Decreases debuff durations of all allies by 1 turn before granting a barrier to the caster for 3 turns. Grants an extra turn to the caster. Barrier strength increases proportional to the caster's Attack.",
 				"burn": "",
-				"soul": "+2",
+				"soul": "+2 soul",
 				"ct": "4",
 				"enhance": [
 					"+10% barrier strength",
@@ -221,7 +221,7 @@
 			"description": {
 				"text": "Inflicts resource reduction on the target by 100% before attacking them, with a 75% chance each to decrease Attack for 2 turns, and stun them for 1 turn. Grants stealth to the caster for 2 turns.",
 				"burn": "",
-				"soul": "+2",
+				"soul": "+2 soul",
 				"ct": "4",
 				"enhance": [
 					"+5% effect chance",

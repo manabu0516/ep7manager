@@ -171,7 +171,7 @@
 			"description": {
 				"text": "Attacks with a slingshot, with a 25% chance to stun for 1 turn.",
 				"burn": "",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",
@@ -192,7 +192,7 @@
 			"description": {
 				"text": "Attacks with a slingshot, with a 75% chance to decrease Defense for 2 turns, and 50% chance to use Sparrow Dive.",
 				"burn": "Skill cooldown is decreased by 2 turns. (-10 Souls)",
-				"soul": "+2",
+				"soul": "+2 soul",
 				"ct": "4",
 				"enhance": [
 					"+10% damage dealt",
@@ -213,7 +213,7 @@
 			"description": {
 				"text": "Racoo flies into the enemies like a bullet and attacks all of them, decreasing Speed for 2 turns, with a 75% chance to stun.",
 				"burn": "",
-				"soul": "+2",
+				"soul": "+2 soul",
 				"ct": "5",
 				"enhance": [
 					"+5% damage dealt",

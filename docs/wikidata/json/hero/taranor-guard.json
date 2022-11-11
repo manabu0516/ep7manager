@@ -179,7 +179,7 @@
 			"description": {
 				"text": "Knocks the enemy into the air with a spear, with a 50% chance to decrease Defense for 1 turn.",
 				"burn": "",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",
@@ -221,7 +221,7 @@
 			"description": {
 				"text": "Pierces the enemy's weak point with a spear, absorbing Combat Readiness by 40%.",
 				"burn": "Skill cooldown is decreased by 2 turns. (-10 Souls)",
-				"soul": "+3",
+				"soul": "+3 soul",
 				"ct": "5",
 				"enhance": [
 					"+5% damage dealt",

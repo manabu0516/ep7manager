@@ -214,7 +214,7 @@
 			"description": {
 				"text": "Attacks the enemy repeatedly, with a 75% chance to decrease Speed for 2 turns, and increases Speed of allies for 2 turns.",
 				"burn": "",
-				"soul": "+2",
+				"soul": "+2 soul",
 				"ct": "4",
 				"enhance": [
 					"+10% damage dealt",

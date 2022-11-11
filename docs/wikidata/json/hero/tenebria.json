@@ -163,7 +163,7 @@
 			"description": {
 				"text": "Attacks with an explosion of dark energy, with a 60% chance to put them to sleep for 1 turn. When the enemy is put to sleep, the caster's Combat Readiness increases by 50%. This skill does not trigger a Dual attack.",
 				"burn": "",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",
@@ -184,7 +184,7 @@
 			"description": {
 				"text": "Summons ominous thunder to attack all enemies, decreasing Combat Readiness by 20%, before decreasing Speed for 2 turns.",
 				"burn": "",
-				"soul": "+2",
+				"soul": "+2 soul",
 				"ct": "3",
 				"enhance": [
 					"+5% damage dealt",
@@ -205,7 +205,7 @@
 			"description": {
 				"text": "Drops Moon of Nightmare on all enemies, with a 70% chance to decrease Defense for 2 turns and put them to sleep for 1 turn, before increasing Attack of the caster for 2 turns.",
 				"burn": "Increases damage dealt (-10 Souls)",
-				"soul": "+3",
+				"soul": "+3 soul",
 				"ct": "5",
 				"enhance": [
 					"+10% damage dealt",

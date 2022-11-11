@@ -179,7 +179,7 @@
 			"description": {
 				"text": "Attacks with dark energy, with a 35% chance to make the enemy unhealable for 2 turns.",
 				"burn": "",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",
@@ -221,7 +221,7 @@
 			"description": {
 				"text": "Exhales powerful darkness, decreasing Combat Readiness by 25%, and making the enemy unable to be buffed and inflicts Silence for 2 turns.",
 				"burn": "Skill cooldown is decreased by 2 turns. (-10 Souls)",
-				"soul": "+2",
+				"soul": "+2 soul",
 				"ct": "4",
 				"enhance": [
 					"+10% damage dealt",

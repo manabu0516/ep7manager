@@ -171,7 +171,7 @@
 			"description": {
 				"text": "Attacks an enemy with a sharp dagger, healing the ally with the lowest Health. Amount recovered increases proportional to the damage dealt.",
 				"burn": "",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",
@@ -192,7 +192,7 @@
 			"description": {
 				"text": "Attacks all enemies with a giant gauntlet, with a 75% chance to decrease Defense for 2 turns, healing the ally with the lowest Health. A Critical Hit activates Retribution. Amount recovered increases proportional to the damage dealt.",
 				"burn": "",
-				"soul": "+2",
+				"soul": "+2 soul",
 				"ct": "3",
 				"enhance": [
 					"+5% damage dealt",
@@ -213,7 +213,7 @@
 			"description": {
 				"text": "Heals an ally and the caster with sacred power, grants Invincibility for 1 turn and increases Attack for 2 turns. Amount recovered increases proportional to the caster's Attack.",
 				"burn": "Extends the duration of Sacred Power granted to the caster by 1 turn and grants an extra turn. (-20 Souls)",
-				"soul": "+2",
+				"soul": "+2 soul",
 				"ct": "5",
 				"enhance": [
 					"+5% healing",

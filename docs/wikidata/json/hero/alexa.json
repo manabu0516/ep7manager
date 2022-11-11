@@ -179,7 +179,7 @@
 			"description": {
 				"text": "Cuts the enemy with dual-wielded swords. A critical hit will activate Lightning Bolt. Lightning Bolt can only be activated once per turn of the caster. Lightning Bolt (Acquire 1 Soul): Rapidly cuts the enemy with dual-wielded swords.",
 				"burn": "",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",
@@ -198,7 +198,7 @@
 			"description": {
 				"text": "Attacks with a cold blade with an 80% chance to inflict two Poison effects for 2 turns, and increase the caster's Combat Readiness by 30%.",
 				"burn": "Ignores effect resistance (-20 Souls)",
-				"soul": "+2",
+				"soul": "+2 soul",
 				"ct": "3",
 				"enhance": [
 					"+5% damage dealt",
@@ -220,7 +220,7 @@
 			"description": {
 				"text": "Attacks the enemy continuously, dealing damage proportional to number of debuffs inflicted on the enemy.",
 				"burn": "",
-				"soul": "+2",
+				"soul": "+2 soul",
 				"ct": "5",
 				"enhance": [
 					"+5% damage dealt",

@@ -163,7 +163,7 @@
 			"description": {
 				"text": "Has a 50% chance to seal the enemy for 2 turns, before attacking with lightning.",
 				"burn": "Increases effect chance to 100%, ignoring Effect Resistance. (-10 Souls)",
-				"soul": "+1 focus\n                                                                                +1",
+				"soul": "+1 focus +1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",
@@ -205,7 +205,7 @@
 			"description": {
 				"text": "Attacks all enemies with the power of Ilryos, with a 55% chance to decrease Defense for 2 turns, and a 75% chance to inflict two burn effects for 2 turns. Grants the caster an extra turn. This skill cannot trigger a counterattack.",
 				"burn": "",
-				"soul": "-5 focus\n                                                                                +5",
+				"soul": "-5 focus +5 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",

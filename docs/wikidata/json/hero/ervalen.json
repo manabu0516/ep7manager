@@ -163,7 +163,7 @@
 			"description": {
 				"text": "Rapidly attacks the enemy, with a 35% chance to decrease Defense for 2 turns.",
 				"burn": "",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",
@@ -184,7 +184,7 @@
 			"description": {
 				"text": "Attacks the enemy repeatedly and grants the caster immunity for 1 turn. When the enemy's max Health is greater than the caster's max Health, Combat Readiness of the caster increases proportional to the difference up to a maximum of 30%.",
 				"burn": "Increases damage dealt. (-10 Souls)",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": "2",
 				"enhance": [
 					"+5% damage dealt",
@@ -205,7 +205,7 @@
 			"description": {
 				"text": "Attacks the enemy with a sword, adopting a counterattacking stance and granting a barrier to the caster for 2 turns. When the enemy is defeated, extends buff duration of the caster by 1 turn and grants an extra turn. When the enemy's max Health is greater than the caster's max Health, damage dealt increases proportional to the difference, up to a maximum of 70%. Barrier strength increases proportional to the caster's Attack.",
 				"burn": "",
-				"soul": "+3",
+				"soul": "+3 soul",
 				"ct": "5",
 				"enhance": [
 					"+5% damage dealt",

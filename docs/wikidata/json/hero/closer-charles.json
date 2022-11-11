@@ -163,7 +163,7 @@
 			"description": {
 				"text": "Sharply cuts the enemy. When used on the caster's turn, if the caster is granted perception, uses Demolition instead of Elimination. Demolition: Attacks the enemy with a sword. Damage dealt increases proportional to the target's lost Health. When the enemy is defeated, decreases cooldown of Descent by 1 turn. This attack does not trigger a Dual Attack.",
 				"burn": "",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",
@@ -205,7 +205,7 @@
 			"description": {
 				"text": "Attacks all enemies after descending, increasing Attack of all allies for 2 turns before increasing Combat Readiness by 20%. Increases Evasion of the caster for 3 turns.",
 				"burn": "Increases damage dealt. (-10 Souls)",
-				"soul": "+3",
+				"soul": "+3 soul",
 				"ct": "5",
 				"enhance": [
 					"+5% damage dealt",

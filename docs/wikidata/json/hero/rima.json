@@ -179,7 +179,7 @@
 			"description": {
 				"text": "Attacks with a quick shooting. A critical hit will decrease the caster's skill cooldown by 1 turn.",
 				"burn": "",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",
@@ -201,7 +201,7 @@
 			"description": {
 				"text": "Shoots an arrow infused with a sleep toxin, with a 75% chance to put them to sleep for 1 turn.",
 				"burn": "Grants an extra turn. (-20 Souls)",
-				"soul": "+2",
+				"soul": "+2 soul",
 				"ct": "4",
 				"enhance": [
 					"+5% damage dealt",
@@ -224,7 +224,7 @@
 			"description": {
 				"text": "Encourages an ally, except for the caster, decreasing skill cooldown for 3 turns.",
 				"burn": "",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": "5",
 				"enhance": [
 					"Acquire +1 Soul",

@@ -163,7 +163,7 @@
 			"description": {
 				"text": "Attacks the enemy with a morning star, with a 35% change to decrease Defense for 2 turns. When the caster is granted Demon Mode, grants the caster an extra attack with this skill.",
 				"burn": "Increases effect chance to 100%. (-10 Souls)",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",
@@ -205,7 +205,7 @@
 			"description": {
 				"text": "Increases Attack of the caster for 3 turns, before leaping up to attack all enemies and decrease Hit Chance for 2 turns, before increasing Combat Readiness of the caster by 50%.",
 				"burn": "",
-				"soul": "+3",
+				"soul": "+3 soul",
 				"ct": "5",
 				"enhance": [
 					"+5% damage dealt",

@@ -163,7 +163,7 @@
 			"description": {
 				"text": "(Tamarinne) Attacks an enemy with serene melody and heals the ally with the lowest Health. Amount recovered increases proportional to the ally's max Health. Decreases cooldown of Shining Star by 1 turn.\n\n(Idol) Attacks all enemies with a beautiful voice, dispelling all buffs. Triggers a Dual Attack from the ally with the highest Attack.",
 				"burn": "Greatly recovers Health of all allies after attacking. (-20 Souls)",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",
@@ -186,7 +186,7 @@
 			"description": {
 				"text": "(Tamarinne) Heals all allies with a peaceful melody. Amount recovered increases proportional to the caster's max Health. Decreases cooldown of Shining Star by 1 turn.\n(Idol) With a powerful performance, increases Attack of all allies for 2 turns and increases Combat Readiness by 30%, recovering Health. Amount recovered increases proportional to the caster's max Health.",
 				"burn": "",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": "2",
 				"enhance": [
 					"+2% Healing/Combat Readiness",
@@ -209,7 +209,7 @@
 			"description": {
 				"text": "Before performing, dispels all debuffs inflicted on all allies and recovers the caster to max Health and grants an extra turn. The caster becomes an idol for 3 turns and performs a concert. Begins the first battle with full cooldown count.",
 				"burn": "",
-				"soul": "+2",
+				"soul": "+2 soul",
 				"ct": "9",
 				"enhance": [
 					"-1 turn cooldown"

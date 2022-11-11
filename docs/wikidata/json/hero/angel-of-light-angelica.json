@@ -171,7 +171,7 @@
 			"description": {
 				"text": "Attacks the enemy with fragments of a shimmering star, with a 50% chance to silence for 1 turn. When the target is silenced after attacking, decreases Combat Readiness of the target by 25%.",
 				"burn": "Increases effect chance to 100%. (-10 Souls)",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": null,
 				"enhance": [
 					"+10% damage dealt",
@@ -213,7 +213,7 @@
 			"description": {
 				"text": "Dispels two buffs from all enemies with holy light before a 70% chance to make them unable to be buffed for 2 turns and silencing for 1 turn.",
 				"burn": "",
-				"soul": "+3",
+				"soul": "+3 soul",
 				"ct": "5",
 				"enhance": [
 					"+5% effect chance",

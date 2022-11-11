@@ -163,7 +163,7 @@
 			"description": {
 				"text": "Takes the lead and attacks, triggering a Dual Attack from a random ally. Damage dealt increases proportional to the caster's max Health.",
 				"burn": "",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",
@@ -185,7 +185,7 @@
 			"description": {
 				"text": "Deploys a divine weapon, granting a barrier to the caster for 2 turns, before a 85% chance to provoke the enemy for 2 turns.",
 				"burn": "Ignores effect resistance. (-20 Souls)",
-				"soul": "+2",
+				"soul": "+2 soul",
 				"ct": "5",
 				"enhance": [
 					"+5% effect chance",
@@ -204,7 +204,7 @@
 			"description": {
 				"text": "Dispels all debuffs from all allies and commands the Perland Army to fire on all enemies, decreasing Combat Readiness by 25% and inflicting damage according to the Attack of the Hero with the highest Attack. Increases the caster's Combat Readiness by 50%.",
 				"burn": "",
-				"soul": "+3",
+				"soul": "+3 soul",
 				"ct": "5",
 				"enhance": [
 					"+5% damage dealt",

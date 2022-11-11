@@ -163,7 +163,7 @@
 			"description": {
 				"text": "Attacks an enemy with pillars of fire. Damage dealt increases if the enemy isn't buffed. Activates Roman Cancel when the caster's Fighting Spirit is 100 after attacking. Cannot be triggered by a counterattack. Roman Cancel: Consumes all Fighting Spirit and extends the duration of buffs granted the caster by 1 turn before granting the caster an extra turn. Acquire 20 Fighting Spirit",
 				"burn": "",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",
@@ -205,7 +205,7 @@
 			"description": {
 				"text": "Attacks with a strong punch, dispelling all buffs before making then unable to be buffed for 2 turns. Damage dealt increases proportional to the enemy's max Health. After attacking, inflicts additional damage regardless of whether or not the attack hits.",
 				"burn": "Ignores Effect Resistance. (-10 Souls)",
-				"soul": "+3",
+				"soul": "+3 soul",
 				"ct": "5",
 				"enhance": [
 					"+5% damage dealt",

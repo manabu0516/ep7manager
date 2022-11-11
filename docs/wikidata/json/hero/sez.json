@@ -163,7 +163,7 @@
 			"description": {
 				"text": "Penetrates the enemy with dark energy, making the enemy unhealable for 1 turn. Damage dealt increases proportional to the amount of enemy's lost Health.",
 				"burn": "",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",
@@ -205,7 +205,7 @@
 			"description": {
 				"text": "Inflicts lethal damage to the enemy, dealing damage proportional to the enemy's lost Health. If the enemy dies, inflicts additional damage to all enemies proportional to the caster's Attack.",
 				"burn": "Increases damage dealt. (-20 Souls)",
-				"soul": "+3",
+				"soul": "+3 soul",
 				"ct": "6",
 				"enhance": [
 					"+5% damage dealt",

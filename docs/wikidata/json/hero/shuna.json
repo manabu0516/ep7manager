@@ -163,7 +163,7 @@
 			"description": {
 				"text": "Attacks the enemy by manipulating magicules and recovers Health of the caster. Damage dealt and amount recovered increases proportional to the caster's max Health.",
 				"burn": "Grants an extra turn. (-20 Souls)",
-				"soul": "+1 focus\n                                                                                +1",
+				"soul": "+1 focus +1 soul",
 				"ct": null,
 				"enhance": [
 					"+10% damage dealt",
@@ -184,7 +184,7 @@
 			"description": {
 				"text": "Dispels two debuffs from all allies and redistributes Health of all allies to be equal before granting a barrier for 3 turns. Barrier strength increases proportional to the caster's max Health.",
 				"burn": "",
-				"soul": "+3 focus\n                                                                                +2",
+				"soul": "+3 focus +2 soul",
 				"ct": "5",
 				"enhance": [
 					"+10% barrier strength",
@@ -205,7 +205,7 @@
 			"description": {
 				"text": "Dispels two buffs from all enemies with fluttering flower petals before a 50% chance to put them to sleep for 2 turns.",
 				"burn": "",
-				"soul": "-5 focus\n                                                                                +2",
+				"soul": "-5 focus +2 soul",
 				"ct": null,
 				"enhance": [
 					"+5% effect chance",

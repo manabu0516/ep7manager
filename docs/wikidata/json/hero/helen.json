@@ -179,7 +179,7 @@
 			"description": {
 				"text": "Attacks the enemy before increasing Combat Readiness of a random ally except for the caster by 10%. Damage dealt increases proportional to the caster's Defense.",
 				"burn": "Combat Readiness increase effect will be applied to all allies. (-10 Souls)",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",
@@ -202,7 +202,7 @@
 			"description": {
 				"text": "Attacks the enemy before increasing Defense of the caster for 2 turns and recovers Health. Damage dealt increases proportional to the caster's Defense, and amount recovered increases proportional to the caster's max Health.",
 				"burn": "",
-				"soul": "+2",
+				"soul": "+2 soul",
 				"ct": "4",
 				"enhance": [
 					"+10% damage dealt",
@@ -225,7 +225,7 @@
 			"description": {
 				"text": "Adopts a counterattacking stance for 3 turns, and grants increased Speed and a barrier to all allies except for the caster for 2 turns. Barrier strength increases proportional to the caster's defense. After suffering an attack that targets all allies, decreases skill cooldown by 2 turns.",
 				"burn": "",
-				"soul": "+3",
+				"soul": "+3 soul",
 				"ct": "8",
 				"enhance": [
 					"-1 turn cooldown"

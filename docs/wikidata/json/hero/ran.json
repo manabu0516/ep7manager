@@ -163,7 +163,7 @@
 			"description": {
 				"text": "Attacks the enemy with a swordstorm. Penetrates the target's Defense by 20%. Damage dealt increases proportional to the caster's Speed.",
 				"burn": "",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",
@@ -186,7 +186,7 @@
 			"description": {
 				"text": "Grants immunity to all allies for 2 turns before increasing Attack of the caster for 2 turns. Grants an extra turn to the caster.",
 				"burn": "",
-				"soul": "+2",
+				"soul": "+2 soul",
 				"ct": "5",
 				"enhance": [
 					"-1 turn cooldown"
@@ -203,7 +203,7 @@
 			"description": {
 				"text": "Attacks all enemies with a sword, dispelling two buffs before an 80% chance to inflict stigma for 2 turns, and a 65% chance to decrease Defense for 2 turns. Grants skill nullifier once to the caster. Damage dealt increases proportional to the caster and the target's Speed.",
 				"burn": "Ignores Effect Resistance. (-20 Souls)",
-				"soul": "+2",
+				"soul": "+2 soul",
 				"ct": "5",
 				"enhance": [
 					"+5% damage dealt",

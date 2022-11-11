@@ -163,7 +163,7 @@
 			"description": {
 				"text": "Attacks with a whip, with a 65% chance to inflict a random debuff for 1 turn. Random Debuff (Silence, Decrease Defense, Decrease Attack, Unhealable)",
 				"burn": "Increases effect chance to 100% and inflicts a random debuff for 2 turns. (-10 Souls)",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",
@@ -184,7 +184,7 @@
 			"description": {
 				"text": "Calls upon a tamed monster to attack all enemies, with a 35% chance each to inflict two bleeding effects for 2 turns, and a 65% chance to stun for 1 turn.",
 				"burn": "",
-				"soul": "+2",
+				"soul": "+2 soul",
 				"ct": "4",
 				"enhance": [
 					"+5% damage dealt",
@@ -205,7 +205,7 @@
 			"description": {
 				"text": "Drives monsters forward to attack all enemies, dispelling two buffs. Grants increased Attack to all allies for 3 turns.",
 				"burn": "",
-				"soul": "+3",
+				"soul": "+3 soul",
 				"ct": "5",
 				"enhance": [
 					"+5% damage dealt",

@@ -163,7 +163,7 @@
 			"description": {
 				"text": "Attacks the enemy with a gun, with a 75% chance to steal one buff. At the end of the turn, detonates burn and bomb effects inflicted on the target.",
 				"burn": "Grants an extra turn. (-20 Souls)",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",
@@ -204,7 +204,7 @@
 			"description": {
 				"text": "Increases Attack of the caster for 3 turns and attacks all enemies with a barrage of cannon fire, inflicting burn and planting a bomb for 2 turns, before decreasing combat readiness by 30%. Increases Combat Readiness of the caster by 50%.",
 				"burn": "",
-				"soul": "+3",
+				"soul": "+3 soul",
 				"ct": "5",
 				"enhance": [
 					"+5% damage dealt",

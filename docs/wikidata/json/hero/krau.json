@@ -163,7 +163,7 @@
 			"description": {
 				"text": "Attack an enemy with a swordstorm with 50% chance to provoke for 1 turn. Damage dealt increases proportional to the caster's max Health.",
 				"burn": "",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",
@@ -185,7 +185,7 @@
 			"description": {
 				"text": "Shoves the enemy with a shield, decreasing Combat Readiness by 35%, before granting increased Defense to all allies for 2 turns. Damage dealt increases proportional to the caster's Health.",
 				"burn": "",
-				"soul": "+2",
+				"soul": "+2 soul",
 				"ct": "4",
 				"enhance": [
 					"+5% damage dealt",
@@ -208,7 +208,7 @@
 			"description": {
 				"text": "Summons the Guardian Ziegfried to attack, dealing damage proportional to the caster's lost Health, penetrating Defense. Also grants a barrier to the caster for 2 turns, with strength proportional to the caster's max Health. This attack cannot trigger a critical hit.",
 				"burn": "Grants an extra turn. (-20 Souls)",
-				"soul": "+2",
+				"soul": "+2 soul",
 				"ct": "6",
 				"enhance": [
 					"Acquire +1 Soul",

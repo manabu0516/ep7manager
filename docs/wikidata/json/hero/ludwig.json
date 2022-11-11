@@ -163,7 +163,7 @@
 			"description": {
 				"text": "Attacks with magic, with a 60% chance to steal one buff. Increases caster’s Combat Readiness by 15% if buffed.",
 				"burn": "",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",
@@ -184,7 +184,7 @@
 			"description": {
 				"text": "Attacks with light, decreasing buff duration by 1 turn before a 85% chance to stun for 1 turn. Grants the caster invincibility for 1 turn. After the attack, when the target is stunned, increases Combat Readiness of the caster by 50%.",
 				"burn": "Ignores Effect Resistance. (-20 Souls)",
-				"soul": "+2",
+				"soul": "+2 soul",
 				"ct": "4",
 				"enhance": [
 					"+5% damage dealt",
@@ -205,7 +205,7 @@
 			"description": {
 				"text": "Attacks all enemies with Nocturne magic, and when an enemy is defeated, extends the caster's buff duration by 1 turn. Penetrates the target's Defense by 30%. When the caster is invincible, penetrates the target's Defense by an additional 30%.",
 				"burn": "",
-				"soul": "+3",
+				"soul": "+3 soul",
 				"ct": "5",
 				"enhance": [
 					"+5% damage dealt",

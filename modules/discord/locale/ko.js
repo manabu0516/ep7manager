@@ -12,7 +12,24 @@ const scoreDef = {
     "クリダメ" : "Critical Damage",
     "効果命中" : "Effectiveness",
     "効果抵抗" :  "Effect Resistance"
-}
+};
+
+const clazzDef = {
+    "soul-weaver" : "soul-weaver",
+    "thief" : "thief",
+    "warrior" : "warrior",
+    "mage" : "mage",
+    "knight" : "knight",
+    "ranger" : "ranger"
+};
+
+const typeDef = {
+    "fire" : "fire",
+    "earth" : "earth",
+    "ice" : "ice",
+    "dark" : "dark",
+    "light" : "light"
+};
 
 module.exports = {
     upload_tweetText : () => "#ep7build #Epicseven",
@@ -37,6 +54,10 @@ module.exports = {
     st_label_soulburn : () => 'Soul Burn',
     st_label_enhance : () => 'enhance',
     st_label_multipliers: () => 'multipliers',
+    st_label_rarity: (key) => (key) =>  'STAR-'+key,
+    st_label_clazz: (key) => (key) =>  clazzDef[key] === undefined ? key : clazzDef[key],
+    st_label_type: (key) => (key) =>  typeDef[key] === undefined ? key : typeDef[key],
+    st_label_soul: (key) => key,
 
     info_label_1 : () => "Content",
 };

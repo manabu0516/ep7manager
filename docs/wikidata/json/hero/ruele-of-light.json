@@ -163,7 +163,7 @@
 			"description": {
 				"text": "Attacks the enemy with a staff and heals the ally with the lowest Health. Damage dealt increases proportional to the caster's max Health, and healing increases proportional to the ally's max Health.",
 				"burn": "Attacks the enemy and greatly heals all allies. Does not trigger a Dual Attack. (-20 Souls)",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",
@@ -185,7 +185,7 @@
 			"description": {
 				"text": "Summons a light pillar, dispelling all debuffs, recovering Health and granting a barrier for 2 turns. Amount recovered and barrier strength increases proportional the caster's max Health.",
 				"burn": "",
-				"soul": "+2",
+				"soul": "+2 soul",
 				"ct": "3",
 				"enhance": [
 					"+5% healing",
@@ -208,7 +208,7 @@
 			"description": {
 				"text": "Revives one dead ally with healing magic, recovering all of their Health and granting them invincibility for 1 turn. Living allies will receive the same effect after having all debuffs dispelled.",
 				"burn": "",
-				"soul": "+2",
+				"soul": "+2 soul",
 				"ct": "5",
 				"enhance": [
 					"Acquire +1 Soul",

@@ -171,7 +171,7 @@
 			"description": {
 				"text": "Ambushes the enemy, with a 75% chance to steal one buff.",
 				"burn": "Increases effect chance to 100% and steals two buffs. (-10 Souls)",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",
@@ -192,7 +192,7 @@
 			"description": {
 				"text": "Attacks the enemy with an unseen blade and grants stealth to the caster for 2 turns. At the end of the turn, detonates any bleeding effects and bombs inflicted on the target.",
 				"burn": "",
-				"soul": "+2",
+				"soul": "+2 soul",
 				"ct": "3",
 				"enhance": [
 					"+5% damage dealt",
@@ -213,7 +213,7 @@
 			"description": {
 				"text": "Attacks the enemy with a dagger and bomb, decreasing buff duration by 1 turn, inflicting bleeding and planting a bomb for 2 turns, before increasing Combat Readiness of the caster by 50%. When the target is a Fire elemental Hero, ignores Effect Resistance and increases Combat Readiness of the caster by another additional 50%.",
 				"burn": "",
-				"soul": "+2",
+				"soul": "+2 soul",
 				"ct": "5",
 				"enhance": [
 					"+5% damage dealt",

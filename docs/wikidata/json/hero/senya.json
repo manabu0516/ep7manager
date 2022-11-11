@@ -163,7 +163,7 @@
 			"description": {
 				"text": "Attacks the enemy with a spear, with a 65% chance to provoke for 1 turn. When it is not the caster's turn, effect chance increases by 25%.",
 				"burn": "",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",
@@ -205,7 +205,7 @@
 			"description": {
 				"text": "Strikes all enemies with a spear, with a 75% chance to decrease Hit Chance for 2 turns and an 60% chance to provoke for 1 turn. Adopts a counterattacking stance for 2 turns.",
 				"burn": "Skill cooldown is decreased by 2 turns. (-10 Souls)",
-				"soul": "+3",
+				"soul": "+3 soul",
 				"ct": "5",
 				"enhance": [
 					"+5% damage dealt",

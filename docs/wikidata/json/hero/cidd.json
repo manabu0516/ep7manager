@@ -171,7 +171,7 @@
 			"description": {
 				"text": "Attacks with a dagger. Damage dealt increases proportional to the caster's Speed. When the caster is granted increased Speed, uses Whirlwind instead of Relentless Strike. Whirlwind: Attacks the enemy repeatedly, decreasing Defense for 1 turn. Damage dealt increases proportional to the caster's Speed.",
 				"burn": "",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",
@@ -213,7 +213,7 @@
 			"description": {
 				"text": "Cuts with a dagger, granting an extra turn if the enemy is defeated. Attacks using an advantageous element when the caster is granted increased Speed. Damage dealt increases proportional to the caster's Speed.",
 				"burn": "Increases damage dealt. (-10 Souls)",
-				"soul": "+2",
+				"soul": "+2 soul",
 				"ct": "4",
 				"enhance": [
 					"+5% damage dealt",

@@ -163,7 +163,7 @@
 			"description": {
 				"text": "Attacks the enemy with a spear and increases Combat Readiness of the caster by 15%. Damage dealt increases proportional to the caster's Speed. When the caster is enraged, activates Tidal Crash as an extra attack. Tidal Crash can only be activated once per turn, during the caster's turn. Tidal Crash: Attacks the enemy by slashing downwards with a spear. Damage dealt increases proportional to the caster's Speed.",
 				"burn": "Increases damage dealt by Full Moon Slash (-10 Souls)",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",
@@ -203,7 +203,7 @@
 			"description": {
 				"text": "Attacks all enemies, dispelling all buffs, and increasing skill cooldown of the target with the highest Attack by 1 turn twice. Increases Speed and Attack of the caster for 2 turns. When the caster is enraged, ignores all effect resistance.",
 				"burn": "",
-				"soul": "+3",
+				"soul": "+3 soul",
 				"ct": "5",
 				"enhance": [
 					"+5% damage dealt",

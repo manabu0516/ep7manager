@@ -171,7 +171,7 @@
 			"description": {
 				"text": "Throws rings at the enemy, with a 75% chance to dispel one buff, before increasing the caster's Combat Readiness by 15%. Damage dealt increases proportional to the caster's max Health.",
 				"burn": "",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",
@@ -193,7 +193,7 @@
 			"description": {
 				"text": "Dazzles the enemy with a dance, with a 50% chance to decrease Defense for 2 turns, and a 50% chance to use Ring Throw. Damage dealt increases proportional to the caster's max Health.",
 				"burn": "",
-				"soul": "+2",
+				"soul": "+2 soul",
 				"ct": "2",
 				"enhance": [
 					"+5% damage dealt",
@@ -215,7 +215,7 @@
 			"description": {
 				"text": "Heals all allies with an elegant dance, casting two random buffs for 3 turns. Amount recovered and barrier strength is proportional to the target's max Health.",
 				"burn": "Extends buff duration by 1 turn. (-10 Souls)",
-				"soul": "+2",
+				"soul": "+2 soul",
 				"ct": "5",
 				"enhance": [
 					"+15% healing",

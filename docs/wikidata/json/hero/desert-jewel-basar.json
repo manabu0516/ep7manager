@@ -163,7 +163,7 @@
 			"description": {
 				"text": "Attacks the enemy with wind, with a 35% chance to stun for 1 turn, before recovering the Health of all allies. Amount recovered increases proportional to the target's max Health and the caster's Attack.",
 				"burn": "Increases the amount recovered. (-20 Souls)",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",
@@ -184,7 +184,7 @@
 			"description": {
 				"text": "With a sandstorm, inflicts barrier inversion on all enemies and has an 85% chance to decrease Hit Chance for 2 turns. When the target is granted a barrier, grants an extra turn to the caster. Barrier Inversion: Inverts barrier into damage. Unaffected by Effect Resistance and whether the attack hits, and applies to Heroes only.",
 				"burn": "",
-				"soul": "+2",
+				"soul": "+2 soul",
 				"ct": "4",
 				"enhance": [
 					"+5% effect chance",
@@ -205,7 +205,7 @@
 			"description": {
 				"text": "Bastet roars, dispelling all debuffs and granting immunity for 2 turns to all allies, before increasing their Combat Readiness by 20%. When this skill is available, decreases damage suffered from a critical hit by 30%. When more than one damage reduction effect is granted, only the strongest effect is applied.",
 				"burn": "",
-				"soul": "+2",
+				"soul": "+2 soul",
 				"ct": "5",
 				"enhance": [
 					"+2% combat readiness",

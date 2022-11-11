@@ -171,7 +171,7 @@
 			"description": {
 				"text": "Fires a gun while dashing towards the enemy, with a 20% chance to burn for 2 turns.",
 				"burn": "",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",
@@ -194,7 +194,7 @@
 			"description": {
 				"text": "Raises morale of all allies, granting Critical Hit Chance for 2 turns, before granting the caster an extra turn.",
 				"burn": "",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": "4",
 				"enhance": [
 					"-1 turn cooldown"
@@ -211,7 +211,7 @@
 			"description": {
 				"text": "Attacks with a fatal shot, with an 80% chance to decrease Defense for 2 turns.",
 				"burn": "Increases damage dealt. (-10 Souls)",
-				"soul": "+2",
+				"soul": "+2 soul",
 				"ct": "4",
 				"enhance": [
 					"+5% damage dealt",

@@ -163,7 +163,7 @@
 			"description": {
 				"text": "Attacks the enemy repeatedly, with a 45% chance each to inflict two bleed effects for 2 turns. A critical hit will reduce the caster's skill cooldown by 1 turn.",
 				"burn": "",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",
@@ -184,7 +184,7 @@
 			"description": {
 				"text": "Attacks the enemy with expert swordsmanship, with a 55% chance each of inflicting three bleed effects for 2 turns. One bleed effect ignores Effect Resistance. A critical hit will grant an extra turn.",
 				"burn": "",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": "4",
 				"enhance": [
 					"+5% damage dealt",
@@ -205,7 +205,7 @@
 			"description": {
 				"text": "Delivers a deadly blow, detonating any bleed effects inflicted on the enemy at the end of the turn. A critical hit increases the combat readiness of all allies by 15%.",
 				"burn": "Increase damage dealt (-10 Souls)",
-				"soul": "+2",
+				"soul": "+2 soul",
 				"ct": "7",
 				"enhance": [
 					"+5% damage dealt",

@@ -163,7 +163,7 @@
 			"description": {
 				"text": "Attacks with the power of the stars, dispelling one debuff each from two allies.",
 				"burn": "Dispels all debuffs from all allies. (-20 Souls)",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",
@@ -206,7 +206,7 @@
 			"description": {
 				"text": "Attacks all enemies with a meteor shower, granting invincibility for 1 turn and increased Effect Resistance for 2 turns to all allies.",
 				"burn": "",
-				"soul": "+3",
+				"soul": "+3 soul",
 				"ct": "6",
 				"enhance": [
 					"+5% damage dealt",

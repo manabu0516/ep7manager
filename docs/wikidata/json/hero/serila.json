@@ -171,7 +171,7 @@
 			"description": {
 				"text": "Attacks with a flame of seduction, with a 35% chance to decrease Defense for 2 turns.",
 				"burn": "",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",
@@ -192,7 +192,7 @@
 			"description": {
 				"text": "Absorbs the enemy's Attack, increasing Attack of the caster for 2 turns before recovering Health proportional to the damage dealt, with a 60% chance to decrease Attack of the enemy for 2 turns. When the enemy is defeated, cooldown does not increase.",
 				"burn": "",
-				"soul": "+2",
+				"soul": "+2 soul",
 				"ct": "4",
 				"enhance": [
 					"+10% damage dealt",
@@ -213,7 +213,7 @@
 			"description": {
 				"text": "Swallows the enemy in the flames of Chatty, the magic lantern, with a 85% chance each to inflict two burn effects for 2 turns.",
 				"burn": "",
-				"soul": "+3",
+				"soul": "+3 soul",
 				"ct": "5",
 				"enhance": [
 					"+10% damage dealt",

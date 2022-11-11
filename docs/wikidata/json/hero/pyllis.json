@@ -150,7 +150,7 @@
 			"description": {
 				"text": "Attacks the enemy, with a 50% chance to provoke for 1 turn. Damage dealt increases proportional to the caster's Defense.",
 				"burn": "",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",
@@ -192,7 +192,7 @@
 			"description": {
 				"text": "Attacks the enemy before provoking for 1 turn, and grants barrier to all allies for 2 turns. Damage dealt and barrier strength increases in proportion to the caster's Defense.",
 				"burn": "Skill cooldown is decreased by 2 turns. (-10 Souls)",
-				"soul": "+2",
+				"soul": "+2 soul",
 				"ct": "4",
 				"enhance": [
 					"+5% damage dealt",

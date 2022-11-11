@@ -178,7 +178,7 @@
 			"description": {
 				"text": "Attacks with a sword and a shield, with a 50% chance each to dispel two buffs. Damage dealt increases proportional to the caster's max Health.",
 				"burn": "",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",

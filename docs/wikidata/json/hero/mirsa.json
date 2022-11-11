@@ -179,7 +179,7 @@
 			"description": {
 				"text": "Attacks with dual-wielded swords, with a 35% chance to decrease Speed for 2 turns. Damage dealt increases proportional to the caster's Speed.",
 				"burn": "",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",
@@ -220,7 +220,7 @@
 			"description": {
 				"text": "Ambushes the target, silencing them for 2 turns. Damage dealt is proportional to the caster's Speed.",
 				"burn": "Increase damage dealt. (-10 Souls)",
-				"soul": "+2",
+				"soul": "+2 soul",
 				"ct": "5",
 				"enhance": [
 					"+5% damage dealt",

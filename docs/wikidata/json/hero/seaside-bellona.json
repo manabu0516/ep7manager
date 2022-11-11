@@ -163,7 +163,7 @@
 			"description": {
 				"text": "Attacks the enemy with a fan, with 60% chance to target the enemy for 2 turns.",
 				"burn": "",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",
@@ -204,7 +204,7 @@
 			"description": {
 				"text": "Attacks all enemies with a spray of water, with a 85% chance to make them unabled to be buffed and unhealable for 2 turns. Damage dealt increases with a critical hit.",
 				"burn": "Ignores effect resistance. (-20 Souls)",
-				"soul": "+3",
+				"soul": "+3 soul",
 				"ct": "5",
 				"enhance": [
 					"+5% damage dealt",

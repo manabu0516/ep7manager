@@ -171,7 +171,7 @@
 			"description": {
 				"text": "Attacks with a shield, with a 35% chance to stun for 1 turn. Damage dealt increases proportional to the caster's Defense. When it is not the caster's turn, this attack changes into an attack that target's all enemies.",
 				"burn": "",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",
@@ -216,7 +216,7 @@
 			"description": {
 				"text": "Uses the Shield of Light to dispel one debuff from all allies and grants increased Defense to the caster for 2 turns and barrier to all allies for 2 turns. Barrier strength increases proportional to the caster's Defense.",
 				"burn": "Extends duration of buffs granted by this skill by 1 turn. (-10 Souls)",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": "4",
 				"enhance": [
 					"Acquire +1 Soul",

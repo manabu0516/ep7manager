@@ -163,7 +163,7 @@
 			"description": {
 				"text": "Stabs the target a random number of times. Skill cooldown decreases by 1-3 turns and damage dealt increases according to the number of attacks.",
 				"burn": "Increases the number of attacks to max. (-10 Souls)",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",
@@ -205,7 +205,7 @@
 			"description": {
 				"text": "Soars into the air and hits the enemy with a spear, with a 80% chance to decrease Defense for 2 turns. Penetrates the target's Defense by 50% and attacks using an advantageous element. Acquires 5 additional Souls when the enemy is defeated.",
 				"burn": "",
-				"soul": "+5",
+				"soul": "+5 soul",
 				"ct": "10",
 				"enhance": [
 					"+5% damage dealt",

@@ -171,7 +171,7 @@
 			"description": {
 				"text": "Attacks with a morning star, with a 35% chance to decrease Defense for 2 turns.",
 				"burn": "",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",
@@ -213,7 +213,7 @@
 			"description": {
 				"text": "Attacks all enemies by spinning, inflicting two bleeding effects for 2 turns, with a 50% chance to decrease Defense for 2 turns. When the caster is enraged, damage dealt is increased.",
 				"burn": "Increases damage dealt. (-10 Souls)",
-				"soul": "+2",
+				"soul": "+2 soul",
 				"ct": "4",
 				"enhance": [
 					"+5% damage dealt",

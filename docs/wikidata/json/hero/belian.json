@@ -163,7 +163,7 @@
 			"description": {
 				"text": "Attacks all enemies with a ray, with a 50% chance to dispel one buff. When used on the caster's turn, has a 35% chance to activate Incursion as an extra attack. Damage dealt increases proportional to the caster's max Health. Incursion: Attacks all enemies, decreasing Speed and Hit Chance for 1 turn. Damage dealt increases proportional to the caster's max Health.",
 				"burn": "Increases effect chance of activating Incursion to 100%. (-10 Souls)",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",
@@ -209,7 +209,7 @@
 			"description": {
 				"text": "Attacks all enemies with the power of duties, decreasing Combat Readiness by a random amount between 20% and 40% and provokes for 1 turn. Increases Defense of the caster for 2 turns. Damage dealt increases proportional to the caster's max Health.",
 				"burn": "",
-				"soul": "+3",
+				"soul": "+3 soul",
 				"ct": "5",
 				"enhance": [
 					"-1 turn cooldown"

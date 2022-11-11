@@ -163,7 +163,7 @@
 			"description": {
 				"text": "Attacks the enemy with a fan, dealing damage proportional to the enemy's max Health. If the caster's stacked Focus is more than 5, loses all Focus and activates Razorwind Fan.",
 				"burn": "",
-				"soul": "+1 focus\n                                                                                +1",
+				"soul": "+1 focus +1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",
@@ -184,7 +184,7 @@
 			"description": {
 				"text": "Attacks all enemies by waving a fan. Damage dealt increases with more enemies. Grants the caster immunity for 1 turn after attacking.",
 				"burn": "",
-				"soul": "+1 focus\n                                                                                +2",
+				"soul": "+1 focus +2 soul",
 				"ct": "3",
 				"enhance": [
 					"+5% damage dealt",
@@ -205,7 +205,7 @@
 			"description": {
 				"text": "Attacks all enemies by creating a powerful gust of wind, with a 65% chance to decrease Defense for 2 turns. Effect chance increases by 20% when Razorwind Fan is triggered by Windbreak Fan.",
 				"burn": "Increases damage dealt. (-10 Souls)",
-				"soul": "+3 focus\n                                                                                +2",
+				"soul": "+3 focus +2 soul",
 				"ct": "6",
 				"enhance": [
 					"+5% damage dealt",

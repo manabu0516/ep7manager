@@ -163,7 +163,7 @@
 			"description": {
 				"text": "Attacks the enemy with flames, and increases Combat Readiness of the caster by 15%. When used on the caster's turn, if the caster is granted Flame Alchemist, activates Heat Wave instead of Ignite. Heat Wave: Attacks the enemy with a huge flame, and increases Combat Readiness of the caster by 30%. Penetrates the target's Defense by 50%. This skill does not trigger a Dual Attack.",
 				"burn": "Grants an extra turn. (-20 Souls)",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",
@@ -205,7 +205,7 @@
 			"description": {
 				"text": "After increasing Attack of the caster for 2 turns, attacks all enemies with a consecutive barrage of flames, and grants Flame Alchemist to the caster. When there are three or fewer enemies, damage dealt increases with fewer enemies. Consumes 80 Fighting Spirit.",
 				"burn": "",
-				"soul": "+3",
+				"soul": "+3 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",

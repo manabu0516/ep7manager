@@ -171,7 +171,7 @@
 			"description": {
 				"text": "Attacks with a slingshot, with a 35% chance to decrease Attack for 2 turns. Damage dealt is increased when the enemy is debuffed.",
 				"burn": "",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",
@@ -192,7 +192,7 @@
 			"description": {
 				"text": "Fires a shockbomb at the enemy, with an 80% chance to decrease Defense for 2 turns. Decreases skill cooldown of Go, Racoo! by 1 turn. At the end of the turn, detonates bombs inflicted on the enemy.",
 				"burn": "",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": "3",
 				"enhance": [
 					"+5% damage dealt",
@@ -213,7 +213,7 @@
 			"description": {
 				"text": "Attacks all enemies with Racoo, decreasing buff durations by 1 turn with a 75% chance each to decrease Speed  and plant a bomb for 2 turns. Grants the caster skill nullifier once.",
 				"burn": "Grants an extra turn. (-20 Souls)",
-				"soul": "+2",
+				"soul": "+2 soul",
 				"ct": "5",
 				"enhance": [
 					"+5% damage dealt",

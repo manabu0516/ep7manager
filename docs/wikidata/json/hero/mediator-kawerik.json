@@ -163,7 +163,7 @@
 			"description": {
 				"text": "Dashes toward the enemy to attack, increasing Combat Readiness  of the caster by 10% and the ally except for the caster with the highest Combat Readiness by 10%. Damage dealt increases proportional to the caster's Max Health.",
 				"burn": "",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",
@@ -185,7 +185,7 @@
 			"description": {
 				"text": "Attacks the enemy with the mediator's power, dispelling all buffs before decreasing Attack for 2 turns and granting a barrier to all allies for 2 turns. Damage dealt increases proportional to the caster's max Health. Barrier strength increases proportional to the ally's max Health.",
 				"burn": "",
-				"soul": "+2",
+				"soul": "+2 soul",
 				"ct": "4",
 				"enhance": [
 					"+5% damage dealt",
@@ -207,7 +207,7 @@
 			"description": {
 				"text": "Restores balance that has been destroyed, dispelling all debuffs from all allies and granting increased Attack and immunity for 2 turns. Increases Combat Readiness of the caster by 50%. When this skill is available at the start of the turn, decreases debuff duration of the caster by 1 turn.",
 				"burn": "Extends duration of buffs granted by this skill by 1 turn. (-10 Souls)",
-				"soul": "+3",
+				"soul": "+3 soul",
 				"ct": "7",
 				"enhance": [
 					"-1 turn cooldown",

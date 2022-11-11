@@ -163,7 +163,7 @@
 			"description": {
 				"text": "Attacks with a scythe. Damage dealt increases by 70% when the target is buffed.",
 				"burn": "Increases damage dealt. (-10 Souls)",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",
@@ -184,7 +184,7 @@
 			"description": {
 				"text": "Attacks all enemies with a scythe. Penetrates the enemy's defense by 30%, and by an additional 30% when caster is stealthed.",
 				"burn": "",
-				"soul": "+2",
+				"soul": "+2 soul",
 				"ct": "4",
 				"enhance": [
 					"+5% damage dealt",
@@ -205,7 +205,7 @@
 			"description": {
 				"text": "Leaps towards the enemy to attack, increasing skill cooldowns by 1 turn twice. Grants the caster stealth and barrier for 2 turns, before increasing Combat Readiness by 50%. A critical hit will grant a barrier to the caster for 2 turns. Barrier strength increases proportional to the caster's Attack. Damage dealt increases proportional to caster's current health.",
 				"burn": "",
-				"soul": "+3",
+				"soul": "+3 soul",
 				"ct": "5",
 				"enhance": [
 					"+5% damage dealt",

@@ -12,7 +12,25 @@ const scoreDef = {
     "クリダメ" : "クリダメ",
     "効果命中" : "効果命中",
     "効果抵抗" :  "効果抵抗"
-}
+};
+
+const clazzDef = {
+    "soul-weaver" : "プリースト",
+    "thief" : "アサシン",
+    "warrior" : "ウォリアー",
+    "mage" : "メイジ",
+    "knight" : "ナイト",
+    "ranger" : "アーチャー"
+};
+
+const typeDef = {
+    "fire" : "火",
+    "earth" : "木",
+    "ice" : "氷",
+    "dark" : "闇",
+    "light" : "光"
+};
+
 
 module.exports = {
     upload_tweetText : () => "#ep7build #エピックセブン",
@@ -37,6 +55,10 @@ module.exports = {
     st_label_soulburn : () => '魂力解放',
     st_label_enhance : () => '強化',
     st_label_multipliers: () => '倍率',
+    st_label_rarity: (key) => (key) =>  'STAR-'+key,
+    st_label_clazz: (key) => (key) =>  clazzDef[key] === undefined ? key : clazzDef[key],
+    st_label_type: (key) => (key) =>  typeDef[key] === undefined ? key : typeDef[key],
+    st_label_soul: (key) => key.replace("soul", "魂力").replace("focus", "集中").replace("consume", "闘志"),
 
     info_label_1 : () => "内容",
 };

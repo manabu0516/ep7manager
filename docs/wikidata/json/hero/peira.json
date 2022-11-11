@@ -163,7 +163,7 @@
 			"description": {
 				"text": "Slashes the enemy with sharp claws, with a 30% chance to stun for 1 turn. When the caster is granted a barrier, effect chance increases by 25%.",
 				"burn": "Increases effect chance to 100%. (-10 Souls)",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",
@@ -184,7 +184,7 @@
 			"description": {
 				"text": "Attacks all enemies with guardian spirits, decreasing buff duration by 1 turn, before restricting and making them unable to be buffed for 2 turns. Grants an extra turn to the caster.",
 				"burn": "",
-				"soul": "+2",
+				"soul": "+2 soul",
 				"ct": "6",
 				"enhance": [
 					"+5% damage dealt",
@@ -205,7 +205,7 @@
 			"description": {
 				"text": "Using the power of the Goblet of Oath, increases Attack of all allies except for the caster for 2 turns, before granting stealth, escort, and a barrier to the caster for 3 turns. Barrier strength increases proportional to the caster's level.",
 				"burn": "",
-				"soul": "+2",
+				"soul": "+2 soul",
 				"ct": "5",
 				"enhance": [
 					"+5% barrier strength",

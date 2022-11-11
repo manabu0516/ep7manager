@@ -163,7 +163,7 @@
 			"description": {
 				"text": "Swings a sword to attack the enemy and increases Combat Readiness of the caster by 20%.",
 				"burn": "",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",
@@ -184,7 +184,7 @@
 			"description": {
 				"text": "Attacks all enemies with a wave of force and dispels two buffs. Ignores Effect Resistance of any targets with Attack lower than the caster's Attack. When there are three or fewer enemies, damage dealt increases with fewer enemies.",
 				"burn": "Skill cooldown is decreased by 2 turns. (-10 Souls)",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": "3",
 				"enhance": [
 					"+5% damage dealt",
@@ -205,7 +205,7 @@
 			"description": {
 				"text": "Attacks all enemies with a sword. Penetrates Defense of the target with the highest max Health by 30%. When the caster's Attack is greater than the penetration target's Attack, penetration rate increases proportional to the difference, up to a maximum of 100%. Grants invincibility to the caster for 1 turn. This skill cannot trigger a counterattack.",
 				"burn": "",
-				"soul": "+3",
+				"soul": "+3 soul",
 				"ct": "6",
 				"enhance": [
 					"+5% damage dealt",

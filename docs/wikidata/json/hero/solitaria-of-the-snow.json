@@ -205,7 +205,7 @@
 			"description": {
 				"text": "Decreases the enemy's buff durations by 1 turn and attacks with starlight, stunning for 1 turn before decreasing Combat Readiness by 30%. Grants a barrier to the caster for 2 turns. Barrier strength increases proportional to the caster's max Health.",
 				"burn": "Extends the duration of buffs granted to the caster by Boom! Starlight Fall! by 1 turn and grants an extra turn. (-20 Souls)",
-				"soul": "+2",
+				"soul": "+2 soul",
 				"ct": "4",
 				"enhance": [
 					"+5% damage dealt",

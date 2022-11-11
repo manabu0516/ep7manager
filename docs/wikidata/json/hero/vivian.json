@@ -163,7 +163,7 @@
 			"description": {
 				"text": "Smashes the enemy with a rock, increasing the Caster's combat readiness by 10%. A critical hit will increase the Caster's combat readiness by another 10%.",
 				"burn": "",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",
@@ -186,7 +186,7 @@
 			"description": {
 				"text": "Attacks all enemies with a thunderstorm. Activate Thunder God's Cry again when an enemy is defeated. Each subsequent Thunder God's Cry activated deals decreased damage, and can be activated up to 3 times.",
 				"burn": "Increases damage dealt. (-10 Souls)",
-				"soul": "+2",
+				"soul": "+2 soul",
 				"ct": "2",
 				"enhance": [
 					"+5% damage dealt",
@@ -209,7 +209,7 @@
 			"description": {
 				"text": "Fully amplifies mana, granting immunity to all allies for 3 turns before granting increased Attack (Greater) to the caster for 3 turns while increasing Attack of all allies except for the caster for 3 turns.",
 				"burn": "",
-				"soul": "+3",
+				"soul": "+3 soul",
 				"ct": "6",
 				"enhance": [
 					"-1 turn cooldown"

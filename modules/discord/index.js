@@ -26,7 +26,7 @@ const skillDesc = (skillData, locale, localizer) => {
     }
 
     if(soul !== null) {
-        contents.push(soul);
+        contents.push(localizer.st_label_soul(soul));
     }
 
     contents.push(text);
@@ -36,7 +36,7 @@ const skillDesc = (skillData, locale, localizer) => {
     }
 
     if(multipliers !== null) {
-        contents.push(localizer.st_label_multipliers() + ': ' + multipliers);
+        contents.push("<" + localizer.st_label_multipliers() + ': ' + multipliers + '>');
     }
 
     if(enhance.length > 0) {
@@ -134,7 +134,7 @@ module.exports = async (parameter) => {
                     .setURL('https://manabu0516.github.io/wikidata/index.html#'+aliaseData["_path"])
                     .setThumbnail(data.common.image)
                     
-                    .setDescription((data.common.rarity) +' '+ (data.common.attribute) +' '+ (data.common.clazz))
+                    .setDescription(localizer.st_label_rarity(data.common.rarity) +' '+ localizer.st_label_type(data.common.attribute) +' '+ localizer.st_label_clazz(data.common.clazz))
                     .addFields([
                         { name: localizer.st_attack(), value: data.statusData.Atk ,inline: true},
                         { name: localizer.st_health(), value: data.statusData.HP ,inline: true},

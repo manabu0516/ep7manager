@@ -221,7 +221,7 @@
 			"description": {
 				"text": "Concentrates in order to dispel one debuff from all allies, before attacking the enemy, provoking for 1 turn, and granting all allies a barrier for 2 turns. Damage dealt and barrier strength increases in proportion to the caster's Defense.",
 				"burn": "Skill cooldown is decreased by 2 turns. (-10 Souls)",
-				"soul": "+2",
+				"soul": "+2 soul",
 				"ct": "4",
 				"enhance": [
 					"+5% damage dealt",

@@ -179,7 +179,7 @@
 			"description": {
 				"text": "Rapidly shoots the enemy, with a 35% chance to decrease Defense for 2 turns.",
 				"burn": "",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",
@@ -202,7 +202,7 @@
 			"description": {
 				"text": "Fires a missile at the enemy, and when the enemy is defeated, inflicts extinction. Hit Chance is increased by 15% when using this skill.",
 				"burn": "Increases damage dealt. (-10 Souls)",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": "4",
 				"enhance": [
 					"+5% damage dealt",
@@ -225,7 +225,7 @@
 			"description": {
 				"text": "Using an enhancement cube, grants the caster increased Attack (Greater) for 2 turns and an extra turn.",
 				"burn": "",
-				"soul": "+2",
+				"soul": "+2 soul",
 				"ct": "5",
 				"enhance": [
 					"-1 turn cooldown"

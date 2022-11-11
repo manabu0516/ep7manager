@@ -163,7 +163,7 @@
 			"description": {
 				"text": "Strikes and slices the enemy, with a 35% chance to make them unable to be buffed for 2 turns.",
 				"burn": "",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",
@@ -184,7 +184,7 @@
 			"description": {
 				"text": "Brutally cuts the enemy, with a 40% chance each to inflict three bleeding effects for 2 turns before increasing the caster's combat readiness by 50%. When the target is bleeding after the attack, increases Combat Readiness of the caster by an additional 50%.",
 				"burn": "",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": "3",
 				"enhance": [
 					"+5% damage dealt",
@@ -205,7 +205,7 @@
 			"description": {
 				"text": "Slashes the enemy with Cho & Mal, inflicting extinction when the enemy is defeated and decreases the caster's cooldown by 1 turn. Grants the caster Skill Nullifier, negating damage received from the next attack. Hit Chance is increased by 20% when using this skill.",
 				"burn": "Increases damage dealt. (-10 Souls)",
-				"soul": "+2",
+				"soul": "+2 soul",
 				"ct": "5",
 				"enhance": [
 					"+5% damage dealt",

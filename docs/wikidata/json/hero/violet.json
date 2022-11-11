@@ -163,7 +163,7 @@
 			"description": {
 				"text": "Attacks with a sword, with a 65% chance to decrease Attack for 1 turn. When it is not the caster's turn, increases Combat Readiness by 15% and gains double the amount of Focus.",
 				"burn": "Increases effect chance to 100% and decreases Attack of the target for 2 turns. (-10 Souls)",
-				"soul": "+1 focus\n                                                                                +1",
+				"soul": "+1 focus +1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",
@@ -186,7 +186,7 @@
 			"description": {
 				"text": "Prepares for a duel by dispelling two debuffs and granting perception for 3 turns before recovering Health by 15%. Grants an extra turn to the caster.",
 				"burn": "",
-				"soul": "+3 focus\n                                                                                +2",
+				"soul": "+3 focus +2 soul",
 				"ct": "5",
 				"enhance": [
 					"-1 turn cooldown"
@@ -203,7 +203,7 @@
 			"description": {
 				"text": "Pierces the enemy with a sword, and loses all Focus. Damage dealt increases proportional to the amount of Focus consumed. If 5 Focus is consumed, resets cooldown of Butterfly Cut. When Butterfly Cut is available, increases Evasion by 35%, and after successfully evading, counterattacks with Graceful Cut.",
 				"burn": "",
-				"soul": "+3",
+				"soul": "+3 soul",
 				"ct": "6",
 				"enhance": [
 					"+5% damage dealt",

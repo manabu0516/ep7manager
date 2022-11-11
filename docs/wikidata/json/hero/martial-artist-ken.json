@@ -163,7 +163,7 @@
 			"description": {
 				"text": "Batters the enemy with a 50% chance to decrease Attack for 1 turn.",
 				"burn": "",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt by Knockout and Dragon Flame",
@@ -204,7 +204,7 @@
 			"description": {
 				"text": "Attacks all enemies with a powerful ground pound with a 55% chance to decrease Defense for 2 turns and increase Attack of the caster for 2 turns. A successful attack always results in a critical hit.",
 				"burn": "Increases damage dealt. (-10 Souls)",
-				"soul": "+3",
+				"soul": "+3 soul",
 				"ct": "5",
 				"enhance": [
 					"+5% damage dealt",

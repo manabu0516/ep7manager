@@ -163,7 +163,7 @@
 			"description": {
 				"text": "Attacks the enemy, with a 65% chance to inflict venom for 1 turn. After attacking, when the target is inflicted with venom, increases skill cooldowns by 1 turn.",
 				"burn": "Increases the effect chance to 100%, and inflicts venom for 2 turns. (-10 Souls)",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",
@@ -205,7 +205,7 @@
 			"description": {
 				"text": "Attacks all enemies, decreasing buff durations by 1 turn before inflicting decreased Speed and venom for 2 turns. Increases Combat Readiness of the caster by 50%.",
 				"burn": "",
-				"soul": "+3",
+				"soul": "+3 soul",
 				"ct": "5",
 				"enhance": [
 					"+5% damage dealt",

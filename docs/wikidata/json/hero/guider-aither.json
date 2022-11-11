@@ -171,7 +171,7 @@
 			"description": {
 				"text": "Attacks with spirit power, with a 25% chance to decrease Speed for 2 turns.",
 				"burn": "",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",
@@ -192,7 +192,7 @@
 			"description": {
 				"text": "Attacks with spirit power, before recovering Health of all allies and granting a barrier for 2 turns. Barrier strength is proportional to the caster's Attack.",
 				"burn": "",
-				"soul": "+2",
+				"soul": "+2 soul",
 				"ct": "3",
 				"enhance": [
 					"+5% damage dealt",
@@ -213,7 +213,7 @@
 			"description": {
 				"text": "Delivers a blow to the enemy with spirit power and dispels all buffs, before increasing Attack of the ally with the highest Attack for 2 turns and increasing Combat Readiness by 50%.",
 				"burn": "Skill cooldown is decreased by 2 turns. (-10 Souls)",
-				"soul": "+2",
+				"soul": "+2 soul",
 				"ct": "5",
 				"enhance": [
 					"+5% damage dealt",

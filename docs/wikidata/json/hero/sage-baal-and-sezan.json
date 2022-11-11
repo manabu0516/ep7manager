@@ -163,7 +163,7 @@
 			"description": {
 				"text": "Summons an evil spirit, with a 50% chance to put an enemy to sleep for 1 turn. When the target is asleep after the attack, increases the caster's Combat Readiness by 20%. This skill does not trigger a Dual Attack.",
 				"burn": "",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",
@@ -184,7 +184,7 @@
 			"description": {
 				"text": "Attacks all enemies by summoning storm clouds, with a 85% chance to dispel one buff and a 70% chance to put them to sleep. If this skill is available, increases the caster's Combat Readiness by 10% at the end of the enemy's turn.",
 				"burn": "",
-				"soul": "+2",
+				"soul": "+2 soul",
 				"ct": "4",
 				"enhance": [
 					"+3% Combat Readiness",
@@ -205,7 +205,7 @@
 			"description": {
 				"text": "Attacks with an evil eye. When the enemy is defeated, silences all remaining enemies for 1 turn, before recovering the caster to max Health. Penetrates defense, but cannot trigger a critical hit. Damage dealt increases proportional to the amount of the caster's lost Health.",
 				"burn": "All skill cooldown is decreased by 2 turns. (-20 Souls)",
-				"soul": "+2",
+				"soul": "+2 soul",
 				"ct": "5",
 				"enhance": [
 					"+5% damage dealt",

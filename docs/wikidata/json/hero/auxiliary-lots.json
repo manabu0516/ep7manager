@@ -171,7 +171,7 @@
 			"description": {
 				"text": "Attacks with a magic sphere, increasing caster’s Combat Readiness by 15%.",
 				"burn": "",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",
@@ -193,7 +193,7 @@
 			"description": {
 				"text": "Injects an ally with mana, increasing Attack for 2 turns and increasing Combat Readiness by 80%, before granting the caster increased Attack for 2 turns and a 30% increase in Combat Readiness.",
 				"burn": "",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": "2",
 				"enhance": [
 					"+5% Combat Readiness",
@@ -212,7 +212,7 @@
 			"description": {
 				"text": "Attacks all enemies by releasing strong Mana, with a 50% chance to silence for 2 turns.",
 				"burn": "Grants an extra turn. (-20 Souls)",
-				"soul": "+2",
+				"soul": "+2 soul",
 				"ct": "5",
 				"enhance": [
 					"+5% damage dealt",

@@ -163,7 +163,7 @@
 			"description": {
 				"text": "Attacks the enemy with an explosion of flames, with a 35% chance to burn for 2 turns. At the end of the turn, detonates the burn effects inflicted on the target.",
 				"burn": "",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": null,
 				"enhance": [
 					"+10% damage dealt",
@@ -183,7 +183,7 @@
 			"description": {
 				"text": "Attacks all enemies with a catalytic explosion, dispelling two buffs[blue] and making them [red]unhealable[/red] for [orange]2 turns[/orange], before [blue]increasing Attack of all allies for 2 turns. For each unhealable inflicted, increases Combat Readiness of the caster by 25%.",
 				"burn": "",
-				"soul": "+2",
+				"soul": "+2 soul",
 				"ct": "4",
 				"enhance": [
 					"+5% damage dealt",
@@ -203,7 +203,7 @@
 			"description": {
 				"text": "Attacks all enemies with massive fire pillar, with a 80% chance to inflict two burn effects for 2 turns, and 30% chance to stun for 1 turn. Grants a barrier to the caster for 2 turns. Barrier strength increases proportional to the caster's Attack.",
 				"burn": "Ignore effect resistance. (-20 Souls)",
-				"soul": "+2",
+				"soul": "+2 soul",
 				"ct": "5",
 				"enhance": [
 					"+5% damage dealt",

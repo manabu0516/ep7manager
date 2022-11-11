@@ -179,7 +179,7 @@
 			"description": {
 				"text": "Attacks the enemy, with a 50% chance to decrease Attack for 1 turn.",
 				"burn": "",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",
@@ -201,7 +201,7 @@
 			"description": {
 				"text": "Attacks all enemies with Meteor Shower of Light and recovers the Health of all allies. Healing increases proportional to the ally's max Health.",
 				"burn": "",
-				"soul": "+2",
+				"soul": "+2 soul",
 				"ct": "3",
 				"enhance": [
 					"+5% damage dealt",
@@ -224,7 +224,7 @@
 			"description": {
 				"text": "Recovers Health and increases Attack and Defense of all allies for 2 turns with strengthening magic. Amount recovered increases proportional to the target's max Health.",
 				"burn": "Extends buff duration by 1 turn. (-10 Souls)",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": "5",
 				"enhance": [
 					"Acquire +1 Soul",

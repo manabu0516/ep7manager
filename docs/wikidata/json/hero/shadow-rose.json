@@ -171,7 +171,7 @@
 			"description": {
 				"text": "Attacks with a sword, with a 50% chance to decrease Defense if the target's Health is more than 50%, or a 50% chance to make them unhealable for 1 turn if the target's Health is less than 50%.",
 				"burn": "",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",
@@ -192,7 +192,7 @@
 			"description": {
 				"text": "Leaps into the air and strikes at the end enemy with a swordstorm, dispelling one buff and decreasing Defense for 2 turns.",
 				"burn": "Skill cooldown is decreased by 2 turns. (-10 Souls)",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": "3",
 				"enhance": [
 					"+5% damage dealt",
@@ -213,7 +213,7 @@
 			"description": {
 				"text": "Attacks all enemies with aura of destruction, decreasing their Combat Readiness by 25%. Increases Combat Readiness of all allies by 25%. Increases Effectiveness of the caster for 2 turns.",
 				"burn": "",
-				"soul": "+2",
+				"soul": "+2 soul",
 				"ct": "5",
 				"enhance": [
 					"+10% damage dealt",

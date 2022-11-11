@@ -163,7 +163,7 @@
 			"description": {
 				"text": "Cuts the enemy, with a 60% chance to decrease Hit Chance for 1 turn.",
 				"burn": "Grants an extra turn. (-20 Souls)",
-				"soul": "+1 focus\n                                                                                +1",
+				"soul": "+1 focus +1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",
@@ -205,7 +205,7 @@
 			"description": {
 				"text": "Increases Attack of the caster for 3 turns, before attacking with a sword. Penetrates Defense by 50%.",
 				"burn": "",
-				"soul": "+3",
+				"soul": "+3 soul",
 				"ct": "7",
 				"enhance": [
 					"+5% damage dealt",

@@ -171,7 +171,7 @@
 			"description": {
 				"text": "Mows down enemies with a great sword, with a 50% chance to provoke for 1 turn. Damage dealt increases proportional to the caster's max Health.",
 				"burn": "",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",
@@ -212,7 +212,7 @@
 			"description": {
 				"text": "Gives the command to charge, dealing damage to all enemies, with a 75% chance of stunning two random enemies for 1 turn, before increasing Attack of all allies for 2 turns. Damage dealt increases proportional to the caster's max Health.",
 				"burn": "Skill cooldown is decreased by 2 turns. (-10 Souls)",
-				"soul": "+3",
+				"soul": "+3 soul",
 				"ct": "6",
 				"enhance": [
 					"+5% damage dealt",

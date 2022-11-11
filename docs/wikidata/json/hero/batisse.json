@@ -179,7 +179,7 @@
 			"description": {
 				"text": "Hits the enemy in the face. When used against an enemy inflicted with decreased Attack, activates Rock Smash as an extra attack. Rock Smash: Attacks all enemies. This attack receives effects that are applied to the basic skill.",
 				"burn": "Activates Rock Smash even when used against an enemy without decreased Attack. (-20 Souls)",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt by Brawl and Rock Smash",
@@ -221,7 +221,7 @@
 			"description": {
 				"text": "Attacks the enemy with blindingly fast speed. When used against enemy with decreased Attack, decreases Defense for 2 turns.",
 				"burn": "",
-				"soul": "+2",
+				"soul": "+2 soul",
 				"ct": "4",
 				"enhance": [
 					"+5% damage dealt",

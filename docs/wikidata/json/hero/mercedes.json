@@ -171,7 +171,7 @@
 			"description": {
 				"text": "Attacks two enemies with shock magic before increasing Combat Readiness of the caster by 15%.",
 				"burn": "",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",
@@ -192,7 +192,7 @@
 			"description": {
 				"text": "Attacks all enemies with a light sphere, with a 55% chance to dispel one buff. If used when there are three or fewer enemies, damage dealt increases as enemies become fewer. When the caster is granted increased Attack, activates Dimensional Rupture again. When activated this way, Dimensional Rupture deals decreased damage, and can only be activated once.",
 				"burn": "Increases damage dealt. (-10 Souls)",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": "3",
 				"enhance": [
 					"+5% damage dealt",
@@ -213,7 +213,7 @@
 			"description": {
 				"text": "Releases the power of the Ancient Book to strongly attack all enemies, before increasing Attack of all allies for 2 turns. A critical hit will increase damage dealt.",
 				"burn": "",
-				"soul": "+2",
+				"soul": "+2 soul",
 				"ct": "4",
 				"enhance": [
 					"+5% damage dealt",

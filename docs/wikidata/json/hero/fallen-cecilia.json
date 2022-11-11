@@ -163,7 +163,7 @@
 			"description": {
 				"text": "Attacks with a spear of revenge, with a 85% chance to provoke for 1 turn. Damage dealt increases proportional to the caster's max Health.",
 				"burn": "",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",

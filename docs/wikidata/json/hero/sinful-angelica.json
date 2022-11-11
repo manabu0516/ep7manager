@@ -171,7 +171,7 @@
 			"description": {
 				"text": "Attacks with a staff, with a 65% chance to decrease Attack for 1 turn. When the caster is immortal, triggers a Dual Attack from the ally with the highest Attack.",
 				"burn": "Increases effect chance to 100% and decreases Attack of the target for 2 turns. (-10 Souls)",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",
@@ -217,7 +217,7 @@
 			"description": {
 				"text": "Whips up a vortex of darkness and loathing, dispelling one debuff from all allies, before granting immortality to the caster for 2 turns. Grants increased Attack and Speed to all allies except for the caster for 2 turns.",
 				"burn": "",
-				"soul": "+3",
+				"soul": "+3 soul",
 				"ct": "5",
 				"enhance": [
 					"-1 turn cooldown"

@@ -171,7 +171,7 @@
 			"description": {
 				"text": "Attacks with sharp claws, with a 35% chance to decrease Defense for 2 turns. Damage dealt increases proportional to the caster's max Health.",
 				"burn": "",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",
@@ -212,7 +212,7 @@
 			"description": {
 				"text": "Attacks all enemies with wild energy, with a 75% chance to decrease Attack for 2 turns. Recovers caster to 50% Health before granting increased Defense for 2 turns. Damage dealt increases proportional to the caster's max Health, with additional damage increase when the caster has less than 75% Health.",
 				"burn": "Increases damage dealt. (-10 Souls)",
-				"soul": "+3",
+				"soul": "+3 soul",
 				"ct": "5",
 				"enhance": [
 					"+5% damage dealt",

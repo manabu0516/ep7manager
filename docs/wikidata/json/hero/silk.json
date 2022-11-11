@@ -171,7 +171,7 @@
 			"description": {
 				"text": "Shoots arrows a the enemy, decreasing their Combat Readiness by 7%. Damage dealt increases proportional to the caster's Speed.",
 				"burn": "Grants an extra turn (-20 Souls)",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",
@@ -214,7 +214,7 @@
 			"description": {
 				"text": "Attacks all enemies with wind, with a 85% chance to decrease Speed for 2 turns, and granting increase Speed to all allies for 2 turns.",
 				"burn": "",
-				"soul": "+2",
+				"soul": "+2 soul",
 				"ct": "5",
 				"enhance": [
 					"+10% damage dealt",

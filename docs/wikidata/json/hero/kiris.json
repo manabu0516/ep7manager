@@ -179,7 +179,7 @@
 			"description": {
 				"text": "Fires a poisoned arrow at the enemy, with a 35% chance to inflict poison for 2 turns.",
 				"burn": "",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",
@@ -202,7 +202,7 @@
 			"description": {
 				"text": "Fires a corrosive volley to all enemies, extending any debuff duration by 1 turn.",
 				"burn": "Ignores effect resistance. (-20 Souls)",
-				"soul": "+2",
+				"soul": "+2 soul",
 				"ct": "5",
 				"enhance": [
 					"+5% damage dealt",
@@ -224,7 +224,7 @@
 			"description": {
 				"text": "Strengthens the caster's next attack, granting an extra turn.\nVenomous Arrow: Increases effect chance to 100% and poison effects can be stacked up to 3 times.\nCorrosive Volley: Extends debuff duration by 2 turns.",
 				"burn": "",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": "5",
 				"enhance": [
 					"Acquire +1 Soul",

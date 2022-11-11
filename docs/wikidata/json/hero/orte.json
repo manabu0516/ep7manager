@@ -179,7 +179,7 @@
 			"description": {
 				"text": "Attacks the enemy with a sword. Damage dealt increases proportional to the caster's Speed.",
 				"burn": "",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",
@@ -219,7 +219,7 @@
 			"description": {
 				"text": "Attacks the enemy with a swift swordstorm. Penetrates the target's Defense by 30%. When the Speed of the caster is greater than the Speed of the target, penetration rate increases proportional to the difference, up to a maximum of 70%. Damage dealt increases proportional to the Speed of the caster.",
 				"burn": "Decreases skill cooldown by 2 turns. (-10 Souls)",
-				"soul": "+2",
+				"soul": "+2 soul",
 				"ct": "6",
 				"enhance": [
 					"+5% damage dealt",

@@ -171,7 +171,7 @@
 			"description": {
 				"text": "Shoots gravity arrows at the enemy, decreasing Combat Readiness by 8%, and increasing Combat Readiness of the caster by 8%.",
 				"burn": "",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",
@@ -192,7 +192,7 @@
 			"description": {
 				"text": "Attacks all enemies with a magic circle, with a 50% chance each to decrease Combat Readiness by 15% four times.",
 				"burn": "Skill cooldown is decreased by 2 turns (-10 Souls)",
-				"soul": "+2",
+				"soul": "+2 soul",
 				"ct": "3",
 				"enhance": [
 					"+5% damage dealt",
@@ -213,7 +213,7 @@
 			"description": {
 				"text": "Shoots a powerful gravity sphere at all enemies, dispelling all buffs and increasing Combat Readiness of the caster by 50%. Damage dealt increases, the enemy is inflicted with two poison effects for 2 turns, and the caster's Combat Readiness increases by an additional 30% when the enemy is buffed.",
 				"burn": "",
-				"soul": "+2",
+				"soul": "+2 soul",
 				"ct": "5",
 				"enhance": [
 					"+5% damage dealt",

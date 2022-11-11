@@ -179,7 +179,7 @@
 			"description": {
 				"text": "Slams the enemy, increasing Combat Readiness of the caster by 15%. Damage dealt increases proportional to the caster's Defense.",
 				"burn": "",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",
@@ -223,7 +223,7 @@
 			"description": {
 				"text": "Fluri flies towards the enemy, with a 75% chance to dispel all buffs, before a 75% chance each to provoke and decrease Defense for 2 turns.",
 				"burn": "Ignores Effect Resistance. (-20 Souls)",
-				"soul": "+3",
+				"soul": "+3 soul",
 				"ct": "6",
 				"enhance": [
 					"+10% debuff chance",

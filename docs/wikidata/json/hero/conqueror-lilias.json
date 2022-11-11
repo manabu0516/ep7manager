@@ -163,7 +163,7 @@
 			"description": {
 				"text": "Attacks the enemy with a sword, triggering a Dual Attack from a random ally.",
 				"burn": "",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",
@@ -185,7 +185,7 @@
 			"description": {
 				"text": "Distracts the enemy, decreasing Combat Readiness by 25%, with up to a 70% chance to inflict redirected provoke for 1 turn. Grants a barrier to the caster and the ally except for the caster with the highest max Health for 2 turns. Barrier strength increases proportional to the ally's max Health.",
 				"burn": "Inflicts Redirected Provoke for 2 turns. (-10 Souls)",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": "4",
 				"enhance": [
 					"+5% effect chance",
@@ -207,7 +207,7 @@
 			"description": {
 				"text": "Encourages the Perland Army, granting vigor to all allies for 2 turns. Decreases buff duration of all enemies by 1 turn and has a 75% chance to decrease Attack for 2 turns. Grants an extra turn to the caster.",
 				"burn": "",
-				"soul": "+3",
+				"soul": "+3 soul",
 				"ct": "6",
 				"enhance": [
 					"+10% effect chance",

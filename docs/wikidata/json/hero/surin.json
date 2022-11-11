@@ -171,7 +171,7 @@
 			"description": {
 				"text": "Attacks with a chain axe. If the enemy is bleeding, causes two bleeding effects for 2 turns.",
 				"burn": "",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",
@@ -192,7 +192,7 @@
 			"description": {
 				"text": "Batters the enemy with a chain axe and inflicts two to four bleeding effects for 2 turns, decreasing Attack for 1 turn.",
 				"burn": "Grants an extra turn (-20 Souls)",
-				"soul": "+2",
+				"soul": "+2 soul",
 				"ct": "3",
 				"enhance": [
 					"+5% damage dealt",
@@ -213,7 +213,7 @@
 			"description": {
 				"text": "Triggers all the bleeding effects currently inflicted on the enemy. Damage dealt increases proportional to the number of bleeding effects inflicted on the enemy, and debuff duration is extended by 1 turn. Additionally, the caster's Combat Readiness increases by 15% per every bleeding effect inflicted on the enemy. Effect can only be applied up to 5 times.",
 				"burn": "",
-				"soul": "+2",
+				"soul": "+2 soul",
 				"ct": "5",
 				"enhance": [
 					"+10% damage dealt",

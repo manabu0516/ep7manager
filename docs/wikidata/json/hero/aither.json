@@ -179,7 +179,7 @@
 			"description": {
 				"text": "Attacks with spirit power, with a 40% chance to decrease Speed for 2 turns.",
 				"burn": "",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": null,
 				"enhance": [
 					"+10% damage dealt",
@@ -199,7 +199,7 @@
 			"description": {
 				"text": "Recovers an ally’s Health with water energy while dispelling 2 debuffs, before increasing caster's Combat Readiness by 20%. Amount recovered is proportional to the target's max Health and the caster's Attack.",
 				"burn": "Increases the amount recovered (-10 Souls)",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": "2",
 				"enhance": [
 					"+5% healing",
@@ -219,7 +219,7 @@
 			"description": {
 				"text": "Recovers Health of all allies and casts a barrier for 2 turns with spirit power. Amount recovered is proportional to the caster's Attack and the target's max Health, and barrier strength is proportional to the caster's Attack.",
 				"burn": "",
-				"soul": "+2",
+				"soul": "+2 soul",
 				"ct": "3",
 				"enhance": [
 					"+5% healing",

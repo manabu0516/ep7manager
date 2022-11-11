@@ -163,7 +163,7 @@
 			"description": {
 				"text": "Pierces the enemy, with a 40% chance to decrease Defense for 2 turns. Ignores Effect Resistance when caster is enraged. Damage increases proportional to the caster's max Health.",
 				"burn": "Increases effect chance to 100%. (-10 Souls)",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",
@@ -205,7 +205,7 @@
 			"description": {
 				"text": "Descends and attacks all enemies, inflicting injuries. The caster becomes enraged for 2 turns and recovers Health. Damage dealt and amount recovered increase proportional to the caster's max Health. The severity of injuries increases proportional to the damage dealt. Injuries decrease the max Health of the target by up to 20% every time this skill is used.",
 				"burn": "",
-				"soul": "+3",
+				"soul": "+3 soul",
 				"ct": "5",
 				"enhance": [
 					"+5% damage dealt",

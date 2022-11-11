@@ -163,7 +163,7 @@
 			"description": {
 				"text": "Rapidly fires to attack two enemies. Damage dealt increases proportional to the caster's Speed.",
 				"burn": "",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",
@@ -205,7 +205,7 @@
 			"description": {
 				"text": "Boosts firepower to attack all enemies, with a 90% chance to dispel one buff, before increasing Speed of all allies for 2 turns and increasing Attack of the caster for 2 turns.",
 				"burn": "Extends duration of buffs granted by this skill for 1 turn. (-10 Souls)",
-				"soul": "+3",
+				"soul": "+3 soul",
 				"ct": "4",
 				"enhance": [
 					"+5% damage dealt",

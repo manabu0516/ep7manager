@@ -163,7 +163,7 @@
 			"description": {
 				"text": "Emits a ray of brilliant light, increasing the caster's Combat Readiness by 10%. Effect doubles when caster is buffed.",
 				"burn": "",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",
@@ -186,7 +186,7 @@
 			"description": {
 				"text": "With the Blessing of the Goddess, dispels two debuffs from all allies and grants a barrier for 2 turns. Barrier strength increases proportional to the target's max Health.",
 				"burn": "",
-				"soul": "+2",
+				"soul": "+2 soul",
 				"ct": "4",
 				"enhance": [
 					"+5% barrier strength",
@@ -208,7 +208,7 @@
 			"description": {
 				"text": "A miracle of the Goddess manifests, increasing Attack and Critical Hit Resistance of all allies for 3 turns, before increasing the caster's Combat Readiness by 50%.",
 				"burn": "Skill cooldown is decreased by 2 turns. (-20 Souls)",
-				"soul": "+2",
+				"soul": "+2 soul",
 				"ct": "5",
 				"enhance": [
 					"Acquire +1 Soul",

@@ -116,7 +116,7 @@
 			"description": {
 				"text": "Attacks the enemy,  recovering Health proportional to the damage dealt before increasing Attack of the caster for 1 turn.",
 				"burn": "Grants an extra turn. (-20 Souls)",
-				"soul": "+1 focus\n                                                                                +1",
+				"soul": "+1 focus +1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",
@@ -158,7 +158,7 @@
 			"description": {
 				"text": "Releases mana to attack the enemy, inflicting extinction when the enemy is defeated. Increases Evasion of the caster for 3 turns. When the enemy is not an Elite or Boss monster, damage sharing effects are ignored.",
 				"burn": "",
-				"soul": "+2 focus\n                                                                                +3",
+				"soul": "+2 focus +3 soul",
 				"ct": "5",
 				"enhance": [
 					"+5% damage dealt",

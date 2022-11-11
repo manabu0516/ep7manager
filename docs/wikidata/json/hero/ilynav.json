@@ -163,7 +163,7 @@
 			"description": {
 				"text": "Attacks the enemy with a spear. Damage dealt increases proportional to the caster's max Health. When this skill is used, if it was not triggered by a Dual Attack, has a 50% chance to use Punish instead of Rush. This skill does not trigger a Dual Attack.",
 				"burn": "",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt by Rush",
@@ -184,7 +184,7 @@
 			"description": {
 				"text": "Attacks and pierces the enemy, inflicting injuries. Increases Defense of the caster for 2 turns. Damage dealt increases proportional to the caster's max Health. The severity of injuries increases proportional to the damage dealt. Injuries decrease max Health of the target by up to 20% every time this skill is used.",
 				"burn": "Skill cooldown is decreased by 2 turns. (-10 Souls)",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": "4",
 				"enhance": [
 					"+5% damage dealt",
@@ -205,7 +205,7 @@
 			"description": {
 				"text": "Attacks all enemies mercilessly and grants increased Critical Hit Damage to all allies for 2 turns and immunity to the caster for 2 turns. Damage dealt increases proportional to the caster's max Health.",
 				"burn": "",
-				"soul": "+3",
+				"soul": "+3 soul",
 				"ct": "5",
 				"enhance": [
 					"+5% damage dealt",

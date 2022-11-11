@@ -179,7 +179,7 @@
 			"description": {
 				"text": "Dashes towards the enemy to attack. When the caster is enraged, damage dealt is increased.",
 				"burn": "",
-				"soul": "20 fighting spirit\n                                                                                +1",
+				"soul": "20 fighting spirit +1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",
@@ -221,7 +221,7 @@
 			"description": {
 				"text": "Attacks the enemy, decreasing Speed for 2 turn before increasing Attack of the caster for 2 turns. When the caster is enraged, ignores Effect Resistance.",
 				"burn": "Increases damage dealt. (-10 Souls)",
-				"soul": "-100 fighting spirit\n                                                                                +2",
+				"soul": "-100 fighting spirit +2 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",

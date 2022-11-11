@@ -171,7 +171,7 @@
 			"description": {
 				"text": "Attacks with a large shield, with a 75% chance to provoke for 1 turn. Damage dealt increases proportional to the caster's Defense.",
 				"burn": "",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",
@@ -216,7 +216,7 @@
 			"description": {
 				"text": "Covers all allies with an aura of holy spirit, granting immunity for 2 turns and invincibility for 1 turn.",
 				"burn": "Skill cooldown is decreased by 2 turns. (-10 Souls)",
-				"soul": "+2",
+				"soul": "+2 soul",
 				"ct": "6",
 				"enhance": [
 					"Acquire +1 Soul",

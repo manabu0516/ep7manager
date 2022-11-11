@@ -171,7 +171,7 @@
 			"description": {
 				"text": "Cuts the enemy with a cleaver, with a 40% chance to inflict bleeding for 2 turns. After attack, there's a 30% chance to activate Quick Grill.",
 				"burn": "Grants an extra turn. (-20 Souls)",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",
@@ -193,7 +193,7 @@
 			"description": {
 				"text": "Attacks all enemies with the Glove Oven, recovering the caster's Health. When the enemy is bleeding, has a 75% chance to inflict burn for 2 turns. Amount recovered increases proportional to damage dealt.",
 				"burn": "",
-				"soul": "+2",
+				"soul": "+2 soul",
 				"ct": "4",
 				"enhance": [
 					"+5% damage dealt",
@@ -216,7 +216,7 @@
 			"description": {
 				"text": "Provides all allies with a meal, dispelling all debuffs and increasing Critical Hit Chance for 2 turns before decreasing cooldown by 1 turn. Grants the caster an extra turn. Every time an enemy dies, the cooldown for this skill decreases by 1 turn.",
 				"burn": "",
-				"soul": "+2",
+				"soul": "+2 soul",
 				"ct": "6",
 				"enhance": [
 					"Acquire +1 Soul",

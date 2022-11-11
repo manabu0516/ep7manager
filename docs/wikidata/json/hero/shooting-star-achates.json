@@ -171,7 +171,7 @@
 			"description": {
 				"text": "Attacks with a staff, with a 50% chance to decrease Hit Chance for 1 turn.",
 				"burn": "",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",
@@ -193,7 +193,7 @@
 			"description": {
 				"text": "Revives a dead ally with recovery magic and grants immortality for 1 turn. If the target is not dead, grants immortality and two random buffs for 3 turns.",
 				"burn": "Grants an extra turn (-20 Souls)",
-				"soul": "+2",
+				"soul": "+2 soul",
 				"ct": "6",
 				"enhance": [
 					"Acquire +1 Soul",
@@ -211,7 +211,7 @@
 			"description": {
 				"text": "Dispels all debuffs from the caster and the target, heals the ally with the lowest Health to the point that their Health matches the other, before healing further on top. Effect is unaffected by Health buffs or debuffs. Health recovered is proportional to the max Health of each ally.",
 				"burn": "",
-				"soul": "+2",
+				"soul": "+2 soul",
 				"ct": "4",
 				"enhance": [
 					"+5% healing",

@@ -179,7 +179,7 @@
 			"description": {
 				"text": "Attacks with a staff, with a 35% chance to silence for 1 turn.",
 				"burn": "",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",
@@ -220,7 +220,7 @@
 			"description": {
 				"text": "Attacks all enemies with dark magic, with a 80% chance to dispel all buffs before decreasing Combat Readiness by 15%.",
 				"burn": "Grants an extra turn. (-20 Souls)",
-				"soul": "+2",
+				"soul": "+2 soul",
 				"ct": "4",
 				"enhance": [
 					"+5% damage dealt",

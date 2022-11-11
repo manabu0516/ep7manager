@@ -163,7 +163,7 @@
 			"description": {
 				"text": "Attacks the enemy, increasing Combat Readiness of the caster and a random ally except for the caster by 10%.",
 				"burn": "",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",
@@ -185,7 +185,7 @@
 			"description": {
 				"text": "Selects an enemy, with a 75% chance to target them for 2 turns. Increases Attack of the ally except for the caster with the highest Attack for 2 turns, and decreases skill cooldown by 1 turn, before triggering a Dual Attack.",
 				"burn": "",
-				"soul": "+2",
+				"soul": "+2 soul",
 				"ct": "4",
 				"enhance": [
 					"+10% effect chance",
@@ -204,7 +204,7 @@
 			"description": {
 				"text": "Shoots out all wings to attack all enemies, with a 75% to decrease Speed for 2 turns, and a 50% chance to put them to sleep for 1 turn, before granting Immunity to all allies for 2 turns.",
 				"burn": "Decreases skill cooldown by 2 turns. (-10 Souls)",
-				"soul": "+3",
+				"soul": "+3 soul",
 				"ct": "5",
 				"enhance": [
 					"+5% damage dealt",

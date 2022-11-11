@@ -163,7 +163,7 @@
 			"description": {
 				"text": "Attacks by swinging a scythe, dispelling one buff. Damage dealt increases proportional to the caster's max Health.",
 				"burn": "Ignores Effect Resistance. (-10 Souls)",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",
@@ -204,7 +204,7 @@
 			"description": {
 				"text": "Attacks with a scythe, recovering Health of all allies. Penetrates Defense, but cannot trigger a critical hit. Damage dealt and amount recovered increases proportional to the caster's max Health. Decreases damage suffered by allies by 10% when this skill is available. When more than one damage reduction effect is granted, only the strongest effect is applied.",
 				"burn": "",
-				"soul": "+3",
+				"soul": "+3 soul",
 				"ct": "6",
 				"enhance": [
 					"+5% damage dealt",

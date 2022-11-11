@@ -179,7 +179,7 @@
 			"description": {
 				"text": "Attacks the enemy, with a 35% chance to decrease Defense for 2 turns. When the caster is granted increased Attack, triggers a Dual Attack from the ally with the highest Attack.",
 				"burn": "Increases effect chance to 100%. (-10 Souls)",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",
@@ -202,7 +202,7 @@
 			"description": {
 				"text": "Grants the caster skill nullifier once and increased Attack for 2 turns before increasing Attack of the ally except for the caster with the highest Attack for 2 turns. Increases Combat Readiness of the caster by 50%.",
 				"burn": "",
-				"soul": "+2",
+				"soul": "+2 soul",
 				"ct": "5",
 				"enhance": [
 					"-1 turn cooldown"
@@ -219,7 +219,7 @@
 			"description": {
 				"text": "Attacks the enemy and when the enemy is defeated, recovers the caster to max Health. When this skill is available, decreases damage suffered by 30% when attacked. When more than one damage reduction effect is granted, only the strongest effect is applied.",
 				"burn": "",
-				"soul": "+2",
+				"soul": "+2 soul",
 				"ct": "4",
 				"enhance": [
 					"+5% damage dealt",

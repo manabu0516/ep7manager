@@ -163,7 +163,7 @@
 			"description": {
 				"text": "Attacks the enemy with a spear before increasing the caster's Combat Readiness by 15%. A critical hit will double the amount of Focus gained. Damage dealt increases proportional to the caster's max health.",
 				"burn": "Grants an extra turn. (-20 Souls)",
-				"soul": "+1 focus\n                                                                                +1",
+				"soul": "+1 focus +1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",
@@ -185,7 +185,7 @@
 			"description": {
 				"text": "Attacks the enemy by wildly swinging the spear and absorbs some of the damage dealt as Health. Penetrates the enemy's Defense by 70%. When the caster's stacked Focus is 5, consumes all Focus, increasing damage dealt and resetting the cooldown of Fwooosh! Damage dealt increases proportional to the caster's max health.",
 				"burn": "",
-				"soul": "-5 focus\n                                                                                +1",
+				"soul": "-5 focus +1 soul",
 				"ct": "3",
 				"enhance": [
 					"+5% damage dealt",
@@ -204,7 +204,7 @@
 			"description": {
 				"text": "Freezes all enemies before attacking with Cream. Increases Critical Hit Resistance of all allies for 2 turns and grants the caster immunity for 2 turns. Damage dealt increases proportional to the caster's max Health. When this skill is unavailable due to cooldown reset, after an ally is attacked, has a 20% chance to counterattack.",
 				"burn": "",
-				"soul": "+3 focus\n                                                                                +3",
+				"soul": "+3 focus +3 soul",
 				"ct": "5",
 				"enhance": [
 					"+5% damage dealt",

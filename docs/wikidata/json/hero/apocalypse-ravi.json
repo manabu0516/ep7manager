@@ -163,7 +163,7 @@
 			"description": {
 				"text": "Attacks the enemy with an axe, inflicting injuries before absorbing some of the damage dealt as Health. Damage dealt increases proportional to the caster's max Health. The severity of injuries increases proportional to damage dealt. Injuries decrease max Health of the target by up to 10% every time this skill is used.",
 				"burn": "Greatly increases amount of damage dealt. Does not trigger a Dual Attack. (-20 Souls)",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",
@@ -204,7 +204,7 @@
 			"description": {
 				"text": "Delivers divine judgment down upon the enemy. When an enemy is defeated, revives one random dead ally with 30% Health and increases their Combat Readiness by 100% before granting Skill Nullifier once. Damage dealt increases proportional to the caster's max Health. Damage dealt by this skill increases every time somebody dies. Effect can only stack up to 3 times.",
 				"burn": "",
-				"soul": "+2",
+				"soul": "+2 soul",
 				"ct": "5",
 				"enhance": [
 					"+5% damage dealt",

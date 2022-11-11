@@ -163,7 +163,7 @@
 			"description": {
 				"text": "Uses the suit's energy to attack the enemy. When used on the caster's turn, has a 40% chance to grant an extra attack with the same skill. When the enemy is not an Elite or Boss monster, damage sharing effects are ignored.",
 				"burn": "Increases effect chance to 100%. (-10 Souls)",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",
@@ -184,7 +184,7 @@
 			"description": {
 				"text": "Manifests the suit's energy, increasing Combat Readiness of all allies by 15% and increasing Attack of the caster for 2 turns. Grants the caster and extra turn.",
 				"burn": "",
-				"soul": "+2",
+				"soul": "+2 soul",
 				"ct": "5",
 				"enhance": [
 					"+1% Combat Readiness",
@@ -205,7 +205,7 @@
 			"description": {
 				"text": "Transcends cosmic space to attack the enemy with dimensional energy, before granting the caster stealth for 2 turns, and increasing the Attack of all allies except the caster for 2 turns. When the enemy is defeated, inflicts extinction and decreases the caster's skill cooldown by 1 turn. Damage dealt increases proportional to the caster's Speed.",
 				"burn": "",
-				"soul": "+2",
+				"soul": "+2 soul",
 				"ct": "5",
 				"enhance": [
 					"+5% damage dealt",

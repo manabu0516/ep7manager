@@ -163,7 +163,7 @@
 			"description": {
 				"text": "Summons a mystical bow to attack the enemy, before increasing the caster's Combat Readiness by 10%. Triggers a Dual Attack from a random ally when Frost Storm is on cooldown.",
 				"burn": "",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",
@@ -184,7 +184,7 @@
 			"description": {
 				"text": "Explodes a magical sphere, stunning for 1 turn and making them unable to be buffed for 2 turns. Increases Combat Readiness of the caster by 50%.",
 				"burn": "Ignores Effect Resistance. (-20 Souls)",
-				"soul": "+2",
+				"soul": "+2 soul",
 				"ct": "4",
 				"enhance": [
 					"+5% damage dealt",
@@ -205,7 +205,7 @@
 			"description": {
 				"text": "Attacks all enemies with a raging frost storm, decrease buff durations by 1 turn, with a 75% chance each to decrease Speed and restrict for 2 turns. Grants the caster invincibility for 1 turn.. Attacks using an advantageous element.",
 				"burn": "",
-				"soul": "+3",
+				"soul": "+3 soul",
 				"ct": "5",
 				"enhance": [
 					"+5% damage dealt",

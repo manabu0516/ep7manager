@@ -179,7 +179,7 @@
 			"description": {
 				"text": "Attacks with a gatling gun, with a 65% chance to dispel one buff. Damage dealt increases proportional to the caster's Defense.",
 				"burn": "",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",
@@ -221,7 +221,7 @@
 			"description": {
 				"text": "Fires indiscriminately at all enemies, with a 60% chance to decrease Hit chance for 1 turn, before triggering counterattacks from the cater for 2 turns. Damage dealt increases proportional to the caster's defense.",
 				"burn": "Increase damage dealt (-10 Souls)",
-				"soul": "+2",
+				"soul": "+2 soul",
 				"ct": "3",
 				"enhance": [
 					"+5% damage dealt",

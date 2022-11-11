@@ -163,7 +163,7 @@
 			"description": {
 				"text": "Attacks with a flurry of strikes, with a 50% chance to decrease Defense for 2 turns. If the caster is granted Vigor, also burns target for 2 turns. Damage dealt increases proportional to the caster's max Health.",
 				"burn": "",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",
@@ -185,7 +185,7 @@
 			"description": {
 				"text": "Kicks the enemy, decreasing Defense for 2 turns before granting the caster increased Speed for 2 turns. Gains 40 Fighting Spirit when an enemy is defeated. When the caster is granted Vigor, ignores Effect Resistance. Damage dealt increases proportional to the caster's max Health.",
 				"burn": "Grants an extra turn. (-20 Souls)",
-				"soul": "+2",
+				"soul": "+2 soul",
 				"ct": "3",
 				"enhance": [
 					"+5% damage dealt",
@@ -204,7 +204,7 @@
 			"description": {
 				"text": "Delivers a powerful blow after a flurry of strikes, decreasing Attack for 2 turns and stunning for 1 turn. Grants Vigor to the caster for 3 turns. Damage dealt increases proportional to the caster's max Health. Starts the first battle with 50 Fighting Spirit, and gains 5 Fighting Spirit when attacked.",
 				"burn": "",
-				"soul": "consume 80\n                                                                                +3",
+				"soul": "consume 80 +3 soul",
 				"ct": "6",
 				"enhance": [
 					"+5% damage dealt",

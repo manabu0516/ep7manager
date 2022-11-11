@@ -163,7 +163,7 @@
 			"description": {
 				"text": "Fires at the enemy and increases the caster's Combat Readiness by 10%. Combat Readiness increase and amount of Fighting Spirit gained are doubled when the enemy is buffed.",
 				"burn": "",
-				"soul": "+20 fighting spirit\n                                                                                +1",
+				"soul": "+20 fighting spirit +1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",
@@ -205,7 +205,7 @@
 			"description": {
 				"text": "Fires at all enemies and grants all allies increased Speed for 2 turns, before increasing their Combat Readiness by 15%. When Fighting Spirit is full, consumes all Fighting Spirit to penetrate the target's Defense by 50%. This skill cannot trigger a counterattack.",
 				"burn": "Grants an extra turn. (-20 Souls)",
-				"soul": "+3",
+				"soul": "+3 soul",
 				"ct": "5",
 				"enhance": [
 					"+5% damage dealt",

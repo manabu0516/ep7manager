@@ -179,7 +179,7 @@
 			"description": {
 				"text": "Attacks with an axe, with a 35% chance to decrease Defense for 2 turns.",
 				"burn": "",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",
@@ -202,7 +202,7 @@
 			"description": {
 				"text": "Strongly slams the enemy with an axe. with a 60% chance to decrease Defense for 2 turns. A critical hit will extend any buffs granted to the caster by 1 turn.",
 				"burn": "",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": "2",
 				"enhance": [
 					"+5% damage dealt",
@@ -224,7 +224,7 @@
 			"description": {
 				"text": "Encourages allies, increasing Attack for 2 turns before increasing Combat Readiness of the caster by 50%.",
 				"burn": "Extends buff duration by 1 turn. (-10 Souls)",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": "5",
 				"enhance": [
 					"Acquire +1 Soul",

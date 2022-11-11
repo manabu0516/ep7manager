@@ -179,7 +179,7 @@
 			"description": {
 				"text": "Claws the enemy absorbing some of the damage to heal all allies.",
 				"burn": "",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",
@@ -221,7 +221,7 @@
 			"description": {
 				"text": "Attacks by absorbing the enemy's life force. Some of the damage dealt is absorbed to heal all allies. When the enemy is defeated, grants revive to the ally with the lowest Health for 2 turns.",
 				"burn": "Increases damage dealt. (-10 Souls)",
-				"soul": "+3",
+				"soul": "+3 soul",
 				"ct": "6",
 				"enhance": [
 					"+5% damage dealt",

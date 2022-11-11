@@ -179,7 +179,7 @@
 			"description": {
 				"text": "Decreases enemy's Combat Readiness by 10% after attacking them.",
 				"burn": "",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",
@@ -201,7 +201,7 @@
 			"description": {
 				"text": "Powerfully shoots an arrow at the enemy, decreasing Hit Chance for 2 turns and Combat Readiness by 30%. Damage dealt increases proportional to the enemy's max Health.",
 				"burn": "Increases damage dealt (-10 Souls)",
-				"soul": "+2",
+				"soul": "+2 soul",
 				"ct": "5",
 				"enhance": [
 					"+5% damage dealt",
@@ -224,7 +224,7 @@
 			"description": {
 				"text": "Encourages allies, dispelling one debuff. Increases Attack of the caster for 2 turns.",
 				"burn": "",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": "5",
 				"enhance": [
 					"Acquire +1 Soul",

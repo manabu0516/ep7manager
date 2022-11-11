@@ -171,7 +171,7 @@
 			"description": {
 				"text": "Attacks with a blunt weapon, with a 75% chance to provoke for 1 turn. Damage dealt increases proportional to the caster's Defense.",
 				"burn": "Provoke chance increases to 100%. (-10 Souls)",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",
@@ -213,7 +213,7 @@
 			"description": {
 				"text": "Attacks with a powerful smash. Damage dealt increases by 300% if the enemy's Health is less than 30%. Damage dealt increases proportional to the caster's Defense. Grants the caster an extra turn when the enemy is defeated.",
 				"burn": "",
-				"soul": "+2",
+				"soul": "+2 soul",
 				"ct": "5",
 				"enhance": [
 					"+5% damage dealt",

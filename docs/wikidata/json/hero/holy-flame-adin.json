@@ -178,7 +178,7 @@
 			"description": {
 				"text": "Attacks the enemy with a sword, recovering Health of the ally with the lowest Health. Amount recovered increases proportional to the damage dealt.",
 				"burn": "",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",
@@ -214,7 +214,7 @@
 			"description": {
 				"text": "Attacks the enemy repeatedly, decreasing Speed of the target for 2 turns and a 75% chance to decrease Defense for 2 turns. Grants Willful Flame to the caster for 2 turns.",
 				"burn": "",
-				"soul": "+2",
+				"soul": "+2 soul",
 				"ct": "5",
 				"enhance": [
 					"+10% damage dealt",

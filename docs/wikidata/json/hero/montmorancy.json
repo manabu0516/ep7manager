@@ -179,7 +179,7 @@
 			"description": {
 				"text": "Attack the enemy with water energy, with a 40% chance to put them to sleep for 1 turn.",
 				"burn": "",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",
@@ -200,7 +200,7 @@
 			"description": {
 				"text": "Dispels one debuff from all allies, and heals debuffed allies. Amount recovered is proportional to the ally's max Health.",
 				"burn": "",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": "2",
 				"enhance": [
 					"+5% healing",
@@ -221,7 +221,7 @@
 			"description": {
 				"text": "Recovers ally's Health and grants immunity for 2 turns, while increasing the caster's Combat Readiness by 50%. Amount recovered is proportional to the target's max Health.",
 				"burn": "All allies are affected by the effect (-20 Souls)",
-				"soul": "+2",
+				"soul": "+2 soul",
 				"ct": "3",
 				"enhance": [
 					"+5% healing",

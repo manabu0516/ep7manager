@@ -179,7 +179,7 @@
 			"description": {
 				"text": "Attacks with light energy, before a 50% chance to decrease Hit Chance for 1 turn.",
 				"burn": "",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",
@@ -200,7 +200,7 @@
 			"description": {
 				"text": "Recites the Celebration of Light, recovering the Health of all allies and granting continuous healing and increased Defense for 2 turns. Amount recovered increases proportional to the target's max Health.",
 				"burn": "Extends duration of buffs granted by this skill by 1 turn. (-10 Souls Souls)",
-				"soul": "+2",
+				"soul": "+2 soul",
 				"ct": "5",
 				"enhance": [
 					"+10% healing",
@@ -221,7 +221,7 @@
 			"description": {
 				"text": "Dispels one debuff from an ally with light magic, before recovering their Health and increasing their Combat Readiness by 50%. Amount recovered increases proportional to the target's max Health.",
 				"burn": "",
-				"soul": "+2",
+				"soul": "+2 soul",
 				"ct": "3",
 				"enhance": [
 					"+5% healing",

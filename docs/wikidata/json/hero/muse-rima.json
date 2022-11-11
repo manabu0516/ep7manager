@@ -224,7 +224,7 @@
 			"description": {
 				"text": "Encourages an ally except for the caster, decreasing skill cooldowns by 3 turns and increasing Attack for 2 turns.",
 				"burn": "",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": "5",
 				"enhance": [
 					"+2 Soul acquired",

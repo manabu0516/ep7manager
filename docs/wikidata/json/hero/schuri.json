@@ -171,7 +171,7 @@
 			"description": {
 				"text": "Attack the enemy with a pistol, with a 25% chance to inflict poison for 2 turns.",
 				"burn": "",
-				"soul": "+1 focus\n                                                                                +1",
+				"soul": "+1 focus +1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",
@@ -213,7 +213,7 @@
 			"description": {
 				"text": "Shoots all enemies with a rifle, Enhanced into Full Burst when the number of stacked Focus is more than 3. Full Burst always results in a critical hit, decreasing Combat Readiness of all enemies by 30%.",
 				"burn": "Grants an extra turn. (-20 Souls)",
-				"soul": "3 focus consumed\n                                                                                +2",
+				"soul": "3 focus consumed +2 soul",
 				"ct": "4",
 				"enhance": [
 					"+5% damage dealt",

@@ -221,7 +221,7 @@
 			"description": {
 				"text": "Punches the enemy, with an 85% chance to stun for 2 turns.",
 				"burn": "Increases damage dealt. (-10 Souls)",
-				"soul": "+2",
+				"soul": "+2 soul",
 				"ct": "4",
 				"enhance": [
 					"+5% damage dealt",

@@ -171,7 +171,7 @@
 			"description": {
 				"text": "Attacks the enemy with concentrated mana, with a 35% chance to activate Mana Burst. Effect chance is doubled when the target is silenced. Mana Burst: Attacks all enemies, decreasing Combat Readiness by a random amount between 15% and 50%.",
 				"burn": "",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",
@@ -213,7 +213,7 @@
 			"description": {
 				"text": "Attacks all enemies with condensed mana, dispelling two buffs, before a 60% chance to silence for 2 turns.",
 				"burn": "Grants an extra turn. (-20 Souls)",
-				"soul": "+3",
+				"soul": "+3 soul",
 				"ct": "5",
 				"enhance": [
 					"+5% damage dealt",

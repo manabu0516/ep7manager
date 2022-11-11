@@ -163,7 +163,7 @@
 			"description": {
 				"text": "Cuts the enemy to attack, granting a random buff to the caster for 1 turn. (Immunity, Increase Attack, Increase Critical Hit Resistance, Increase Effect Resistance)",
 				"burn": "",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",
@@ -205,7 +205,7 @@
 			"description": {
 				"text": "Attacks the enemy with black flame, and a successful attack will inflict 5,000 additional fixed damage to the target. Fixed damage increases proportional to the number of buffs granted to all allies, up to a maximum of 10,000 fixed damage. When the target is buffed, decreases Defense of all enemies for 2 turns. Unaffected by elemental disadvantage.",
 				"burn": "Skill cooldown is decreased by 2 turns. (-10 Souls)",
-				"soul": "+3",
+				"soul": "+3 soul",
 				"ct": "5",
 				"enhance": [
 					"+5% damage dealt",

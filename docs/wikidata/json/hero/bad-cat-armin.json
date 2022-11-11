@@ -171,7 +171,7 @@
 			"description": {
 				"text": "Attacks the enemy with a giant shield, with a 45% chance to provoke for 1 turn. Damage dealt increases proportional to the caster's max Health. The severity of injuries increases proportional to damage dealt. When used on the caster's turn, Are You Ready?! changes into an attack that targets all enemies. The changed attack does not trigger a Dual Attack.",
 				"burn": "",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",
@@ -213,7 +213,7 @@
 			"description": {
 				"text": "Attacks the enemy with a huge explosion, provoking for 1 turn. Increases Defense of the caster for 2 turns, and grants a barrier to all allies for 2 turns. Damage dealt and barrier strength increase proportional to the caster's max Health.",
 				"burn": "Provokes for 2 turns. (-10 Souls)",
-				"soul": "+3",
+				"soul": "+3 soul",
 				"ct": "4",
 				"enhance": [
 					"+5% damage dealt",

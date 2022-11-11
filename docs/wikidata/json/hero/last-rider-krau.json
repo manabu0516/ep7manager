@@ -163,7 +163,7 @@
 			"description": {
 				"text": "Attacks the enemy with a swordstorm, before increasing Speed of the caster for 1 turn. Damage dealt increases proportional to the caster's max Health.",
 				"burn": "",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",
@@ -205,7 +205,7 @@
 			"description": {
 				"text": "Summons Ziegfried and attacks all enemies, before granting immunity to all allies for 2 turns. Penetrates Defense, but cannot trigger a critical hit. Damage dealt increases proportional to the caster's max Health. Damage dealt increases every time this skill is used and can stack up to 3 times.",
 				"burn": "Skill cooldown is decreased by 2 turns. (-10 Souls)",
-				"soul": "+3",
+				"soul": "+3 soul",
 				"ct": "7",
 				"enhance": [
 					"+5% damage dealt",

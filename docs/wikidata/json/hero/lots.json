@@ -171,7 +171,7 @@
 			"description": {
 				"text": "Attacks with a light sphere, with a 50% chance to decrease Attack for 1 turn.",
 				"burn": "",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",
@@ -192,7 +192,7 @@
 			"description": {
 				"text": "Uses healing magic to recover Health and increase Combat Readiness by 80% of ally, before increasing caster’s Combat Readiness by 30%. Amount recovered is proportional to the ally’s max Health.",
 				"burn": "",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": "2",
 				"enhance": [
 					"+5% healing",
@@ -213,7 +213,7 @@
 			"description": {
 				"text": "Uses strengthening magic to recover Health, increase Combat Readiness by 10%, and grant continuous healing for 3 turns to all allies.",
 				"burn": "Extends buff duration by 2 turns (-20 Souls)",
-				"soul": "+2",
+				"soul": "+2 soul",
 				"ct": "4",
 				"enhance": [
 					"+2% Combat Readiness",

@@ -163,7 +163,7 @@
 			"description": {
 				"text": "Summons an evil spirit to attack two enemies, with a 35% chance to inflict poison for 2 turns.",
 				"burn": "",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": null,
 				"enhance": [
 					"+15% damage dealt",
@@ -182,7 +182,7 @@
 			"description": {
 				"text": "Summons the Cloud of Darkness to attack all enemies, dealing damage proportional to the number of debuffs inflicted on the enemy. When the enemy is defeated by this attack, the cooldown for Last Requiem is reset.",
 				"burn": "Increases damage dealt. (-10 Souls)",
-				"soul": "+2",
+				"soul": "+2 soul",
 				"ct": "3",
 				"enhance": [
 					"+5% damage dealt",
@@ -204,7 +204,7 @@
 			"description": {
 				"text": "Baal and Sezan attack all enemies with Strike Magic, with a 65% chance to decrease Speed and Defense and make them unhealable for 2 turns.",
 				"burn": "",
-				"soul": "+3",
+				"soul": "+3 soul",
 				"ct": "4",
 				"enhance": [
 					"+5% damage dealt",

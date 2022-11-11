@@ -171,7 +171,7 @@
 			"description": {
 				"text": "Strikes the enemy with a sword. A critical hit will decrease cooldown for 1 turn.",
 				"burn": "",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",
@@ -191,7 +191,7 @@
 			"description": {
 				"text": "Slashes the enemy. A critical hit will decrease Defense for 1 turn and grant an extra turn.",
 				"burn": "",
-				"soul": "+2",
+				"soul": "+2 soul",
 				"ct": "4",
 				"enhance": [
 					"+5% damage dealt",
@@ -211,7 +211,7 @@
 			"description": {
 				"text": "Cuts the enemy with lightning speed. A critical hit will increase damage.",
 				"burn": "Increases damage dealt (-10 Souls)",
-				"soul": "+3",
+				"soul": "+3 soul",
 				"ct": "7",
 				"enhance": [
 					"+5% damage dealt",

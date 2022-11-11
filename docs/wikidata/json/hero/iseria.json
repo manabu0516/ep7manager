@@ -163,7 +163,7 @@
 			"description": {
 				"text": "Throws swords at the enemy, with a 35% chance to decreases Defense for 2 turns.",
 				"burn": "Increases effect chance by 50% and increases damage dealt. Does not trigger a Dual Attack. (-10 Souls)",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",
@@ -186,7 +186,7 @@
 			"description": {
 				"text": "Resets skill cooldown of an ally except for the caster with light energy. Grants an extra turn.",
 				"burn": "",
-				"soul": "+2",
+				"soul": "+2 soul",
 				"ct": "6",
 				"enhance": [
 					"Acquire +1 Soul",
@@ -204,7 +204,7 @@
 			"description": {
 				"text": "Attacks with a giant Magic Sword, dispelling all buffs, decreasing Defense, and making them unable to be buffed for 2 turns.",
 				"burn": "",
-				"soul": "+2",
+				"soul": "+2 soul",
 				"ct": "5",
 				"enhance": [
 					"+5% damage dealt",

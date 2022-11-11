@@ -171,7 +171,7 @@
 			"description": {
 				"text": "Attacks two enemies including the target with an earthen blast, transferring two debuffs from the caster to the enemy and recovering the caster's Health. Amount recovered increases proportional to the caster's max Health.",
 				"burn": "",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",
@@ -212,7 +212,7 @@
 			"description": {
 				"text": "Attacks all enemies by slamming rocks, with a 60% chance each to decrease Defense and Attack for 2 turns. Increases Defense of the caster for 2 turns.",
 				"burn": "Ignores Effect Resistance. (-20 Souls)",
-				"soul": "+3",
+				"soul": "+3 soul",
 				"ct": "5",
 				"enhance": [
 					"+5% damage dealt",

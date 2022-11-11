@@ -171,7 +171,7 @@
 			"description": {
 				"text": "Attacks the enemy with a ball of flame, with a 25% chance to decrease Defense for 2 turns. After attacking, has a 35% chance to activate Burning Vitality. Burning Vitality: Increases Combat Readiness of the caster by 20%.",
 				"burn": "100% chance to decrease Defense. (-10 Souls)",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",
@@ -211,7 +211,7 @@
 			"description": {
 				"text": "Attacks with a fiery explosion, making the target unhealable and decreasing Defense for 2 turns.",
 				"burn": "",
-				"soul": "+2",
+				"soul": "+2 soul",
 				"ct": "4",
 				"enhance": [
 					"+5% damage dealt",

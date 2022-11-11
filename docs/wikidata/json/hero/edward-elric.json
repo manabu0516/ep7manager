@@ -163,7 +163,7 @@
 			"description": {
 				"text": "Attacks the enemy with a transmuted blade, and grants a barrier to the caster for 1 turn. Damage dealt and barrier strength increase proportional to the caster's max Health.",
 				"burn": "",
-				"soul": "+1",
+				"soul": "+1 soul",
 				"ct": null,
 				"enhance": [
 					"+5% damage dealt",
@@ -205,7 +205,7 @@
 			"description": {
 				"text": "Attacks the enemy together with Alphonse, and increases Combat Readiness of the caster by 50%. When the enemy is not an Elite or Boss monster, damage sharing effects are ignored. Damage dealt increases proportional to the caster's max Health. Damage dealt increases every time this skill is used and can stack up to 3 times.",
 				"burn": "-2 turn cooldown (-10 Souls)",
-				"soul": "+3",
+				"soul": "+3 soul",
 				"ct": "5",
 				"enhance": [
 					"+5% damage dealt",
