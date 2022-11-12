@@ -32,7 +32,7 @@ module.exports = async (parameter) => {
                 description : entries[1].trim(),
                 data : entries.slice(3).join("\r\n")
             };
-        });
+        }).reverse();
     });
 
 
