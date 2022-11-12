@@ -41,7 +41,8 @@ const skillDesc = (skillData, locale, localizer) => {
 
     if(enhance.length > 0) {
         contents.push("---<" +localizer.st_label_enhance()+ ">---");
-        contents.splice(contents.length, 0, ...enhance.map(localizer.st_label_enhance_type));
+        const translated = enhance.map(e => localizer.st_label_enhance_type(e));
+        contents.splice(contents.length, 0, ...translated);
     }
 
     return contents.join("\r\n");
@@ -63,7 +64,6 @@ const splitArray = (array, n) => {
 module.exports = async (parameter) => {
     const builder = parameter.instance();
     const logger = parameter.logger;
-
 
     const localizeManager = (() => {
         const locales = {
