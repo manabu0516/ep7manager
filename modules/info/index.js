@@ -2,8 +2,7 @@
 module.exports = async (parameter) => {
     const builder = parameter.instance();
 
-    const infos = await parameter.lib.fs.readdir(parameter.moduleDir + '/data');
-
+    const infos = (await parameter.lib.fs.readdir(parameter.moduleDir + '/data')).reverse();
 
     const parseCount = (data, def) => {
         if(data === undefined || data === null || (typeof data) !== 'number') {
@@ -20,7 +19,6 @@ module.exports = async (parameter) => {
 
         for (let i = 0; i < loopCount; i++) {
             const path = infos[i];
-
             const textData = await parameter.lib.fs.readFile(parameter.moduleDir + '/data/' + path, 'utf-8');
             result.push(textData);
         }
@@ -32,7 +30,7 @@ module.exports = async (parameter) => {
                 description : entries[1].trim(),
                 data : entries.slice(3).join("\r\n")
             };
-        }).reverse();
+        });
     });
 
 
