@@ -16,6 +16,8 @@ const run = async () => {
 
     const jsonp = '__ep7manager_load_build(' + JSON.stringify(files) + ')';
     await application._context.lib.fs.writeFile(target.directries.publicDir + '/jsonp.js', jsonp);
+
+    console.log("complete");
 };
 
 run();
