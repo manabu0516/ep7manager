@@ -1,0 +1,224 @@
+{
+	"common": {
+		"name": "ae-WINTER",
+		"image": "https://epic7x.com/wp-content/uploads/2022/11/winter-aespa-e7.png",
+		"attribute": "fire",
+		"sign": "capricorn",
+		"clazz": "thief",
+		"rarity": "5",
+		"name_ja": "ae−WINTER"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "15",
+		"Critical_Hit_Damage": "150",
+		"dual_attack": "5",
+		"Effectiveness": "30",
+		"Effect_Resistance": "0",
+		"Speed": "118",
+		"Atk": "1057",
+		"HP": "5542",
+		"Def": "532"
+	},
+	"labyrinth": [
+		{
+			"key": "Advice",
+			"score": null
+		},
+		{
+			"key": "Belief",
+			"score": null
+		},
+		{
+			"key": "Bizarre Story",
+			"score": null
+		},
+		{
+			"key": "Comforting",
+			"score": null
+		},
+		{
+			"key": "Complain",
+			"score": null
+		},
+		{
+			"key": "Criticism",
+			"score": null
+		},
+		{
+			"key": "Cute Cheer",
+			"score": null
+		},
+		{
+			"key": "Dream",
+			"score": null
+		},
+		{
+			"key": "Food Story",
+			"score": null
+		},
+		{
+			"key": "Gossip",
+			"score": null
+		},
+		{
+			"key": "Happy Memory",
+			"score": null
+		},
+		{
+			"key": "Heroic Cheer",
+			"score": null
+		},
+		{
+			"key": "Heroic Tale",
+			"score": null
+		},
+		{
+			"key": "Horror",
+			"score": null
+		},
+		{
+			"key": "Interesting Story",
+			"score": null
+		},
+		{
+			"key": "Joyful Memories",
+			"score": null
+		},
+		{
+			"key": "Myth",
+			"score": null
+		},
+		{
+			"key": "Occult",
+			"score": null
+		},
+		{
+			"key": "Reality Check",
+			"score": null
+		},
+		{
+			"key": "Sad Memory",
+			"score": null
+		},
+		{
+			"key": "Self Indulgent",
+			"score": null
+		},
+		{
+			"key": "Unique Comment",
+			"score": null
+		}
+	],
+	"memory": {
+		"potision": "pos-all",
+		"release": [
+			{
+				"key": "Attack",
+				"value": "3.6%"
+			},
+			{
+				"key": "Attack",
+				"value": "5.4%"
+			},
+			{
+				"key": "Attack",
+				"value": "7.2%"
+			},
+			{
+				"key": "Attack",
+				"value": "9.0%"
+			},
+			{
+				"key": "Attack",
+				"value": "10.8%"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Critical Hit Chance",
+				"value": "5.60%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "8.40%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "11.20%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "14%"
+			},
+			{
+				"key": "Critical Hit Chance",
+				"value": "16.8%"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Rapid Cut",
+			"type": "Active",
+			"description": {
+				"text": "Attacks the enemy with a sword and has a 30% chance to stun for 1 turn.",
+				"burn": "Increases effect chance to 100%. (-10 Souls)",
+				"soul": "+1 soul",
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+5% effect chance",
+					"+5% damage dealt",
+					"+5% effect chance",
+					"+5% damage dealt",
+					"+10% damage dealt"
+				],
+				"multipliers": "",
+				"text_ja": "敵単体に攻撃し、30%の確率でスタンを1ターンの間付与する。",
+				"burn_ja": "効果発生率が100%になる。(魂力10消費)"
+			},
+			"title_ja": "迅速な斬撃"
+		},
+		{
+			"title": "Next Level",
+			"type": "Passive",
+			"description": {
+				"text": "At the start of battle at the end of the turn, grants stealth for 1 turn. After an enemy uses a non-attack skill, dispels all debuffs from the caster and activates Level Up. The debuff dispelling effect and Level Up can only be activated once every 3 turns. \n\nLevel Up: Grants immunity to the caster for 2 turns and fully resets skill cooldown of Black Out.",
+				"burn": "",
+				"soul": null,
+				"ct": null,
+				"enhance": [
+					"-1 turn cooldown"
+				],
+				"multipliers": "",
+				"text_ja": "バトル開始時・ターン終了時、自身に潜伏を1ターンの間付与する。敵が攻撃以外のスキルを使用した後、自身の弱体効果をすべて解除し、【レベルアップ】を発動する。弱体効果解除・【レベルアップ】は3ターンに1回まで発生する。レベルアップ：自身に免疫を2ターンの間付与し、【ブラックアウト】のスキルターンが0になる。",
+				"burn_ja": ""
+			},
+			"title_ja": "ネクストレベル"
+		},
+		{
+			"title": "Black Out",
+			"type": "Active",
+			"description": {
+				"text": "Attacks the enemy with various weapons and stuns for 2 turns, and increases Combat Readiness of the caster by 50%. A critical hit will deal an additional 5000 fixed damage. Increases fixed damage by 5000 every time this skill is used, stacking up to 3 times.",
+				"burn": "",
+				"soul": "+3 soul",
+				"ct": "6",
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"-1 turn cooldown",
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+10% damage dealt",
+					"+10% damage dealt"
+				],
+				"multipliers": "",
+				"text_ja": "敵単体を攻撃し、スタンを2ターンの間付与し、自身のアクションゲージを50%UPさせる。クリティカル発生時、追加で5000の固定ダメージを与える。このスキルは使用するたびに固定ダメージが5000UPする。固定ダメージがUPする効果は最大3回まで累積する。",
+				"burn_ja": ""
+			},
+			"title_ja": "ブラックアウト"
+		}
+	]
+}

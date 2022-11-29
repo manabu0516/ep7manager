@@ -15,7 +15,6 @@ const run = async () => {
 
     const wikidata = application.wikidata;
     const entries = await wikidata.callApi("entries", []);
-
     const module_epic7x = require(wikidata.directries.moduleDir + '/webdata/en_epic7x.js');
     const module_ja_wikidata = require(wikidata.directries.moduleDir + '/webdata/ja_wikidata.js')();
 

@@ -1,0 +1,134 @@
+{
+	"common": {
+		"name": "Zio",
+		"image": "https://epic7x.com/wp-content/uploads/2022/11/zio1.png",
+		"attribute": "dark",
+		"clazz": "mage",
+		"rarity": "5",
+		"name_ja": "ジオ"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "",
+		"Critical_Hit_Damage": "",
+		"dual_attack": "",
+		"Effectiveness": "",
+		"Effect_Resistance": "",
+		"Speed": "",
+		"Atk": "",
+		"HP": "",
+		"Def": ""
+	},
+	"labyrinth": [],
+	"memory": {
+		"potision": "pos-all",
+		"release": [
+			{
+				"key": "Attack",
+				"value": "3.6%"
+			},
+			{
+				"key": "Attack",
+				"value": "5.4%"
+			},
+			{
+				"key": "Attack",
+				"value": "7.2%"
+			},
+			{
+				"key": "Attack",
+				"value": "9.0%"
+			},
+			{
+				"key": "Attack",
+				"value": "10.8%"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Effectiveness",
+				"value": "9%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "13.50%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "18%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "22.50%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "27%"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "Let Me Destroy You",
+			"type": "Active",
+			"description": {
+				"text": "Attacks the enemy with a spear, before increasing Attack of the caster for 1 turn. When the caster is defied, activates Disappear as an extra attack. Disappear can only be activated once per turn, during the caster's turn. \nDisappear: Attacks the enemy with a swordstorm, and when the enemy is defeated, increases Combat Readiness of the caster by 50%. Penetrates the target's Defense by 50%.",
+				"burn": "",
+				"soul": "+1 soul",
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+10% damage dealt"
+				],
+				"multipliers": "ATK*0.7*1*1.871\n                                        \n                                                                                    Skill 1 Proc: ATK*1*1*1.871 (50% Penetration)",
+				"text_ja": "敵単体に攻撃し、自身に攻撃力UPを1ターンの間付与する。自身が神威状態の場合、【滅せよ】を発動する。【滅せよ】は自身のターンに1回まで発動する。滅せよ：敵単体を攻撃する。このスキルで敵を気絶させた場合、自身のアクションゲージを50%UPさせる。対象の防御力を50%貫通する。",
+				"burn_ja": ""
+			},
+			"title_ja": "壊してやろう"
+		},
+		{
+			"title": "Supreme Authority",
+			"type": "Passive",
+			"description": {
+				"text": "At the start of the first battle, increases Combat Readiness by 10%. Unaffected by effects that reduce Combat Readiness increases the caster receives.",
+				"burn": "",
+				"soul": null,
+				"ct": null,
+				"enhance": [
+					"+2% Combat Readiness",
+					"+2% Combat Readiness",
+					"+2% Combat Readiness",
+					"+2% Combat Readiness",
+					"+2% Combat Readiness"
+				],
+				"multipliers": "",
+				"text_ja": "初回のバトル開始時、アクションゲージが10%UPする。自身が受けるアクションゲージ増加量をDOWNさせる効果の影響を受けない。",
+				"burn_ja": ""
+			},
+			"title_ja": "選ぶ者"
+		},
+		{
+			"title": "Bow Down Before Me",
+			"type": "Active",
+			"description": {
+				"text": "Dispels two buffs from the enemy before attacking, silencing for 1 turn and decreasing Combat Readiness by 30%. Grants deify to the caster for 3 turns. Penetrates the targets Defense by 100% and cannot trigger a critical hit. When the target is a Hero, damage dealt increases proportional to the targets current Health. \nDeify: When attacking, increases Critical Hit Chance by 50%, and when attacked, decreases damage suffered by 50%. When more than one damage reduction effect is granted, only the strongest effect is applied. Deify cannot be dispelled.",
+				"burn": "Dispels all buffs from the target. (-10 Souls)",
+				"soul": "+3 soul",
+				"ct": "6",
+				"enhance": [
+					"+2% Combat Readiness",
+					"+2% Combat Readiness",
+					"-1 turn cooldown",
+					"+2% Combat Readiness",
+					"+4% Combat Readiness"
+				],
+				"multipliers": "Proportional damage based on target current hp: 18.75% (0.1875 * Target Current Health)\n                                        \n                                                                                    Penetration: 100%",
+				"text_ja": "敵単体の強化効果を2つ解除した後、攻撃し、沈黙を1ターンの間付与し、アクションゲージを30%DOWNさせる。自身に神威を3ターンの間付与する。対象の防御力を100%貫通する。このスキルはクリティカルが発生しない。対象が英雄の場合、対象の現在生命力が高いほどダメージがUPする。",
+				"burn_ja": "対象の強化効果をすべて解除する。(魂力10消費)"
+			},
+			"title_ja": "屈服せよ"
+		}
+	]
+}

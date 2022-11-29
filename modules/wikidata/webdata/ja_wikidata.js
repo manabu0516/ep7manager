@@ -371,4 +371,6 @@ const HERO_LIST = `
 夏の弟子アレクサ,https://game8.jp/epic-seven/466088
 救済者アーディン,none
 清冽のアーディン,none
+ジオ,https://game8.jp/epic-seven/493212
+ae−WINTER,https://game8.jp/epic-seven/499442
 `

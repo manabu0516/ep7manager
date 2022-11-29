@@ -2958,5 +2958,16 @@ __ep7manager_load_hero(
         "alias" : [
             
         ]
+    },
+    "ae-winter": {
+        "localize" : {
+            "ja" : "ae−WINTER",
+            "ko" : "ae−WINTER",
+            "zh-CN" : "ae−WINTER",
+            "en-US" : "ae−WINTER"
+        },
+        "alias" : [
+            "winter", "冬"
+        ]
     }
 }, []);
