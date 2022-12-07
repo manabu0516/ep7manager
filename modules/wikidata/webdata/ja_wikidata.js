@@ -373,4 +373,5 @@ const HERO_LIST = `
 清冽のアーディン,none
 ジオ,https://game8.jp/epic-seven/493212
 ae−WINTER,https://game8.jp/epic-seven/499442
+ae−NINGNING,https://game8.jp/epic-seven/499443
 `

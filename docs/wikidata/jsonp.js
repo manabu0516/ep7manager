@@ -2969,5 +2969,16 @@ __ep7manager_load_hero(
         "alias" : [
             "winter", "冬"
         ]
+    },
+    "ae-ningning": {
+        "localize" : {
+            "ja" : "ae−NINGNING",
+            "ko" : "ae−NINGNING",
+            "zh-CN" : "ae−NINGNING",
+            "en-US" : "ae−NINGNING"
+        },
+        "alias" : [
+            "にんにん", "冬子", "冬"
+        ]
     }
 }, []);

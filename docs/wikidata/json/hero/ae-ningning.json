@@ -1,0 +1,135 @@
+{
+	"common": {
+		"name": "ae-NINGNING",
+		"image": "https://epic7x.com/wp-content/uploads/2022/11/ae-ning-ning1.png",
+		"attribute": "fire",
+		"sign": "",
+		"clazz": "soul-weaver",
+		"rarity": "5",
+		"name_ja": "ae−NINGNING"
+	},
+	"statusData": {
+		"Critical_Hit_Chance": "15",
+		"Critical_Hit_Damage": "150",
+		"dual_attack": "3",
+		"Effectiveness": "30",
+		"Effect_Resistance": "0",
+		"Speed": "114",
+		"Atk": "785",
+		"HP": "5077",
+		"Def": "634"
+	},
+	"labyrinth": [],
+	"memory": {
+		"potision": "pos-all",
+		"release": [
+			{
+				"key": "Attack",
+				"value": "3.6%"
+			},
+			{
+				"key": "Attack",
+				"value": "5.4%"
+			},
+			{
+				"key": "Attack",
+				"value": "7.2%"
+			},
+			{
+				"key": "Attack",
+				"value": "9.0%"
+			},
+			{
+				"key": "Attack",
+				"value": "10.8%"
+			}
+		],
+		"concentration": [
+			{
+				"key": "Effectiveness",
+				"value": "9%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "13.50%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "18%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "22.50%"
+			},
+			{
+				"key": "Effectiveness",
+				"value": "27%"
+			}
+		]
+	},
+	"skills": [
+		{
+			"title": "SSAMBEAR",
+			"type": "Active",
+			"description": {
+				"text": "Attacks the enemy SSAMBEAR, with a 30% chance to stun for 1 turn. After attacking, when the target is stunned, increases Combat Readiness of the caster by 20%.",
+				"burn": "Increases effect chance to 100%. (-10 Souls)",
+				"soul": "+1 soul",
+				"ct": null,
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"+10% effect chance",
+					"+10% damage dealt",
+					"+10% damage dealt"
+				],
+				"multipliers": "",
+				"text_ja": "敵単体を攻撃し、30%の確率でスタンを1ターンの間付与する。攻撃後、対象がスタン状態の場合、自身のアクションゲージを20%UPさせる。",
+				"burn_ja": "効果発生率が100%になる。(魂力10消費)"
+			},
+			"title_ja": "SSAMBEAR"
+		},
+		{
+			"title": "Butterfly Effect",
+			"type": "Active",
+			"description": {
+				"text": "Attacks the enemy, decreasing Combat Readiness by 30%. Increases Attack of the ally except for the caster with the highest Attack for 2 turns and increases Combat Readiness by 30%.",
+				"burn": "",
+				"soul": "+1 soul",
+				"ct": "3",
+				"enhance": [
+					"+5% damage dealt",
+					"+5% damage dealt",
+					"-1 turn cooldown",
+					"+10% damage dealt",
+					"+10% damage dealt"
+				],
+				"multipliers": "",
+				"text_ja": "敵単体を攻撃し、アクションゲージを30%DOWNさせる。自身以外の攻撃力が最も高い味方単体に攻撃力UPを2ターンの間付与し、アクションゲージを30%UPさせる。",
+				"burn_ja": ""
+			},
+			"title_ja": "バタフライ効果"
+		},
+		{
+			"title": "System Hacking",
+			"type": "Active",
+			"description": {
+				"text": "Hacks all enemies, inflicting barrier inversion and dispelling two buffs, before increasing Combat Readiness of the caster by 40%. When the target is granted a barrier, Combat Readiness increase amount is doubled.",
+				"burn": "",
+				"soul": "+3 soul",
+				"ct": "5",
+				"enhance": [
+					"+2% Combat Readiness",
+					"+2% Combat Readiness",
+					"-1 turn cooldown",
+					"+3% Combat Readiness",
+					"+3% Combat Readiness"
+				],
+				"multipliers": "",
+				"text_ja": "敵全体にシールド反転を発生させ、強化効果2つ解除した後、自身のアクションゲージを40%UPさせる。対象がシールド状態の場合、自身のアクションゲージの増加量が2倍になる。",
+				"burn_ja": ""
+			},
+			"title_ja": "システムハッキング"
+		}
+	]
+}
