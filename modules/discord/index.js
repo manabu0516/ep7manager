@@ -177,7 +177,7 @@ module.exports = async (parameter) => {
 
                 const aliaseData = await wikidata.callApi('alias', [heroNameParam.value, false]);
                 if(aliaseData === undefined) {
-                    logger("ep7-build cmd complete -- :notfound", {author : context.author, param  : [heroNameParam.value, pageNo]});
+                    logger("ep7-build cmd complete -- :notfound", {author : context.author, param  : [heroNameParam.value, pagenoParam]});
                     return localizer.build_nodfound(heroNameParam.value);
                 }
 
