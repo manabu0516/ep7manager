@@ -68,8 +68,9 @@ module.exports = async (parameter) => {
     builder.addApi('get', async (key) => {
         try {
             const entries = [];
-            const path = buildsDir + '/' + key;
+            const path = buildsDir + '/' + (key.toLowerCase());
             
+            console.log(path);
             const fileList = await parameter.lib.fs.readdir(path);
             for (let i = 0; i < fileList.length; i++) {
                 const f = fileList[i];
