@@ -83,7 +83,7 @@ module.exports = async (parameter) => {
 
             return entries.sort((e1, e2) => {
                 return e2.mtime - e1.mtime;
-            }).map(e => 'https://manabu0516.github.io/ep7manager/tweetsearch/' + encodeURIComponent (key) + '/' + encodeURIComponent (e.name));
+            }).map(e => 'https://manabu0516.github.io/ep7manager/tweetsearch/' + encodeURIComponent (key.toLowerCase()) + '/' + encodeURIComponent (e.name));
 
         } catch(e) {
             return [];
