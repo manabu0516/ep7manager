@@ -2980,5 +2980,27 @@
         "alias" : [
             "にんにん"
         ]
+    },
+    "ae-giselle": {
+        "localize" : {
+            "ja" : "ae−GISELLE",
+            "ko" : "ae−GISELLE",
+            "zh-CN" : "ae−GISELLE",
+            "en-US" : "ae−GISELLE"
+        },
+        "alias" : [
+            "ジセル"
+        ]
+    },
+    "ae-karina": {
+        "localize" : {
+            "ja" : "ae−KARINA",
+            "ko" : "ae−KARINA",
+            "zh-CN" : "ae−KARINA",
+            "en-US" : "ae−KARINA"
+        },
+        "alias" : [
+            "カカリナ"
+        ]
     }
 }
