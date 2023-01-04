@@ -2978,7 +2978,7 @@
             "en-US" : "ae−NINGNING"
         },
         "alias" : [
-            "にんにん"
+            "にんにん", "ningning"
         ]
     },
     "ae-giselle": {
@@ -2989,7 +2989,7 @@
             "en-US" : "ae−GISELLE"
         },
         "alias" : [
-            "ジセル"
+            "ジセル", "giselle"
         ]
     },
     "ae-karina": {
@@ -3000,7 +3000,7 @@
             "en-US" : "ae−KARINA"
         },
         "alias" : [
-            "カリナ"
+            "カリナ", "karina"
         ]
     }
 }
