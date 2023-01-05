@@ -278,6 +278,29 @@ module.exports = async (parameter) => {
             }
         });
 
+        parameter.discord.on("ep7-henkan-delete", async (context, params) => {
+            try {
+                const localizer = localizeManager(context.locale);
+                const uniqueidParam = context.options.get("uniqueid");
+                const dataidParam =  context.options.get("dataid");
+                
+                logger("ep7-henkan-delete cmd start -- :start", {author : context.author,param  : [uniqueidParam,dataidParam]});
+                const result = await salesforce.callApi.callApi("delete", [uniqueidParam.value, dataidParam.value]);
+
+                if(result.code !== 100) {
+                    logger("ep7-henkan-delete cmd error -- :success", {author : context.author, param  : [result]});
+                    return "登録エラー";
+                }
+                
+                logger("ep7-henkan-delete cmd complete -- :success", {author : context.author, param  : [result]});
+                return "削除ID:" + result.data;
+                
+            } catch(e) {
+                logger("ep7-henkan-delete cmd end -- :error", {author : context.author, erroe : e+""});
+                return "error : " + e;
+            }
+        });
+
         parameter.discord.on("ep7-henkan-put", async (context, params) => {
             try {
                 const localizer = localizeManager(context.locale);
