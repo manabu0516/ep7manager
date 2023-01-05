@@ -84,6 +84,7 @@ module.exports = async (parameter) => {
         const ocrreader = application.ocrreader;
         const tweetsearch = application.tweetsearch;
         const infoManager = application.info;
+        const salesforce = application.salesforce;
 
         parameter.discord.on("ep7-info", async (context) => {
             try {
@@ -284,9 +285,9 @@ module.exports = async (parameter) => {
                 const uniqueidParam = context.options.get("uniqueid");
                 
                 logger("ep7-henkan-get cmd start -- :start", {author : context.author,param  : [uniqueidParam]});
-                const result = await salesforce.callApi.callApi("get", [uniqueidParam.value]);
+                const result = await salesforce.callApi("get", [uniqueidParam.value]);
 
-                if(result.code !== 100) {
+                if(result.returnCode !== 100) {
                     logger("ep7-henkan-get cmd error -- :success", {author : context.author, param  : [result]});
                     return "エラー:" + result.data;
                 }
@@ -306,17 +307,18 @@ module.exports = async (parameter) => {
                 const dataidParam =  context.options.get("dataid");
                 
                 logger("ep7-henkan-delete cmd start -- :start", {author : context.author,param  : [uniqueidParam,dataidParam]});
-                const result = await salesforce.callApi.callApi("delete", [uniqueidParam.value, dataidParam.value]);
+                const result = await salesforce.callApi("delete", [uniqueidParam.value, dataidParam.value]);
 
-                if(result.code !== 100) {
+                if(result.returnCode !== 100) {
                     logger("ep7-henkan-delete cmd error -- :success", {author : context.author, param  : [result]});
                     return "エラー:" + result.data;
                 }
                 
                 logger("ep7-henkan-delete cmd complete -- :success", {author : context.author, param  : [result]});
-                return "削除ID:" + result.dataidParam.value;
+                return "削除ID:" + dataidParam.value;
                 
             } catch(e) {
+                console.log(e);
                 logger("ep7-henkan-delete cmd end -- :error", {author : context.author, erroe : e+""});
                 return "error : " + e;
             }
@@ -327,11 +329,11 @@ module.exports = async (parameter) => {
                 const localizer = localizeManager(context.locale);
 
                 const uniqueidParam = context.options.get("uniqueid");
-                const heronameParam =  context.options.get("heroname");
+                const heroNameParam =  context.options.get("heroname");
                 const posParam =  context.options.get("pos");
                 const valueParam =  context.options.get("value");
                 
-                logger("ep7-henkan-put cmd start -- :start", {author : context.author,param  : [uniqueidParam,heronameParam,posParam,valueParam]});
+                logger("ep7-henkan-put cmd start -- :start", {author : context.author,param  : [uniqueidParam,heroNameParam,posParam,valueParam]});
 
                 const aliaseData = await wikidata.callApi('alias', [heroNameParam.value, false]);
                 if(aliaseData === undefined) {
@@ -340,9 +342,9 @@ module.exports = async (parameter) => {
                 }
 
                 const heroName = aliaseData.localize.ja;
-                const result = await salesforce.callApi.callApi("post", [heroName, posParam.value, valueParam.value, uniqueidParam.value]);
+                const result = await salesforce.callApi("post", [heroName, posParam.value, valueParam.value, uniqueidParam.value]);
 
-                if(result.code !== 100) {
+                if(result.returnCode !== 100) {
                     logger("ep7-henkan-put cmd error -- :success", {author : context.author, param  : [result]});
                     return "エラー:" + result.data;
                 }
@@ -351,6 +353,7 @@ module.exports = async (parameter) => {
                 return "登録ID:" + result.data;
                 
             } catch(e) {
+                console.log(e);
                 logger("ep7-henkan-put cmd end -- :error", {author : context.author, erroe : e+""});
                 return "error : " + e;
             }

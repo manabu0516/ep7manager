@@ -17,12 +17,12 @@ module.exports = async (parameter) => {
             }
         };
         const result = await parameter.lib.request(options);
-        return result;
+        return typeof result === "string" ? JSON.parse(result) : result;
     });
 
     builder.addApi('get', async (password) => {
         const result = await parameter.lib.request("https://test707-dev-ed.develop.my.salesforce-sites.com/services/apexrest/henlanseki/get/"+password);
-        return result;
+        return typeof result === "string" ? JSON.parse(result) : result;
     });
 
     builder.addApi('delete', async (password, dataId) => {
@@ -31,7 +31,7 @@ module.exports = async (parameter) => {
             method: 'DELETE'
         };
         const result = await parameter.lib.request(options);
-        return result;
+        return typeof result === "string" ? JSON.parse(result) : result;
     });
 
     return builder;
