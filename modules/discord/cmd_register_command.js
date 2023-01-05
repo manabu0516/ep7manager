@@ -303,7 +303,7 @@ commands["ep7-henkan-put"] = {
         },
         {
             type: 3,
-            name: "target",
+            name: "pos",
             description: "Equipment location",
             description_localizations : {
                 "en-US" : "Equipment location",
@@ -323,7 +323,7 @@ commands["ep7-henkan-put"] = {
         },
         {
             type: 3,
-            name: "pos",
+            name: "value",
             description: "Option value",
             description_localizations : {
                 "en-US" : "Option value",

@@ -1,6 +1,6 @@
 
 const run = async () => {
-    const application = await require("../../application")(["salesforce"], {discord:false, twitter:false});
+    const application = await require("../../application")(["salesforce", "wikidata"], {discord:false, twitter:false});
 
     const heroName = process.argv[2];
     const bui = process.argv[3];

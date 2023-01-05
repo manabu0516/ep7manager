@@ -277,6 +277,40 @@ module.exports = async (parameter) => {
                 return "error : " + e;
             }
         });
+
+        parameter.discord.on("ep7-henkan-put", async (context, params) => {
+            try {
+                const localizer = localizeManager(context.locale);
+
+                const uniqueidParam = context.options.get("uniqueid");
+                const heronameParam =  context.options.get("heroname");
+                const posParam =  context.options.get("pos");
+                const valueParam =  context.options.get("value");
+                
+                logger("ep7-henkan-put cmd start -- :start", {author : context.author,param  : [uniqueidParam,heronameParam,posParam,valueParam]});
+
+                const aliaseData = await wikidata.callApi('alias', [heroNameParam.value, false]);
+                if(aliaseData === undefined) {
+                    logger("ep7-build cmd complete -- :notfound", {author : context.author, param  : [heroNameParam.value, pagenoParam]});
+                    return localizer.build_nodfound(heroNameParam.value);
+                }
+
+                const heroName = aliaseData.localize.ja;
+                const result = await salesforce.callApi.callApi("post", [heroName, posParam.value, valueParam.value, uniqueidParam.value]);
+
+                if(result.code !== 100) {
+                    logger("ep7-henkan-put cmd error -- :success", {author : context.author, param  : [result]});
+                    return "登録エラー";
+                }
+                
+                logger("ep7-henkan-put cmd complete -- :success", {author : context.author, param  : [result]});
+                return "登録ID:" + result.data;
+                
+            } catch(e) {
+                logger("ep7-henkan-put cmd end -- :error", {author : context.author, erroe : e+""});
+                return "error : " + e;
+            }
+        });
     });
     return builder;
 };
