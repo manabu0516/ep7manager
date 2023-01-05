@@ -278,6 +278,27 @@ module.exports = async (parameter) => {
             }
         });
 
+        parameter.discord.on("ep7-henkan-get", async (context, params) => {
+            try {
+                const localizer = localizeManager(context.locale);
+                const uniqueidParam = context.options.get("uniqueid");
+                
+                logger("ep7-henkan-get cmd start -- :start", {author : context.author,param  : [uniqueidParam]});
+                const result = await salesforce.callApi.callApi("get", [uniqueidParam.value]);
+
+                if(result.code !== 100) {
+                    logger("ep7-henkan-get cmd error -- :success", {author : context.author, param  : [result]});
+                    return "エラー:" + result.data;
+                }
+                
+                logger("ep7-henkan-get cmd complete -- :success", {author : context.author, param  : [result]});
+                return "削除ID:" + result.data;
+            } catch(e) {
+                logger("ep7-henkan-delete cmd end -- :error", {author : context.author, erroe : e+""});
+                return "error : " + e;
+            }
+        });
+
         parameter.discord.on("ep7-henkan-delete", async (context, params) => {
             try {
                 const localizer = localizeManager(context.locale);
