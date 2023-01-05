@@ -361,9 +361,9 @@ const run = async () => {
             commands["ep7-st"],
             commands["ep7-upload"],
             commands["ep7-info"],
-            commands["ep7-henkan-put"],
-            commands["ep7-henkan-get"],
-            commands["ep7-henkan-delete"]
+            //commands["ep7-henkan-put"],
+            //commands["ep7-henkan-get"],
+            //commands["ep7-henkan-delete"]
         ]);
 
         console.log("complete");
