@@ -293,7 +293,20 @@ module.exports = async (parameter) => {
                 }
                 
                 logger("ep7-henkan-get cmd complete -- :success", {author : context.author, param  : [result]});
-                return "削除ID:" + result.data;
+
+                const description = [];
+                description.push("```");
+                for (let i = 0; i < result.data.length; i++) {
+                    const e = result.data[i];
+                    description.push((i+1) + '. ' + e.Name + ' ' + e.HeroName_Expr__c + ' ' + e.bui__c + ':' + e.OptionData__c);
+                }
+                description.push("```");
+                
+                const enbded = context.embdedMessage()
+                    .setTitle('変換石管理')
+                    .setDescription(description.join("\r\n"));
+
+                return { embeds: [enbded]};
             } catch(e) {
                 logger("ep7-henkan-delete cmd end -- :error", {author : context.author, erroe : e+""});
                 return "error : " + e;
