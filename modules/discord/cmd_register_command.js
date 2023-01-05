@@ -202,6 +202,152 @@ commands ["ep7-info"] = {
     ]
 };
 
+commands["ep7-henkan-delete"] = {
+    name : "ep7-henkan-delete",
+    description : "Delete a registered conversion stone.",
+    description_localizations : {
+        "en-US" : "Delete a registered conversion stone.",
+        "zh-CN" : "Delete a registered conversion stone.",
+        "ko" : "Delete a registered conversion stone.",
+        "ja" : "登録済みの変換石を削除します。"
+    },
+
+    options : [
+        {
+            type: 3,
+            name: "uniqueid",
+            description: "Unique ID for managing data",
+            description_localizations : {
+                "en-US" : "Unique ID for managing datar",
+                "zh-CN" : "Unique ID for managing data",
+                "ko" : "Unique ID for managing data",
+                "ja" : "データを管理するための一意なID(IDをもとにユーザのデータを管理します）"
+            },
+            required : true
+        },
+        {
+            type: 3,
+            name: "dataid",
+            description: "Data ID to be deleted(Delete all by specifying all)",
+            description_localizations : {
+                "en-US" : "Data ID to be deleted(Delete all by specifying all)",
+                "zh-CN" : "Data ID to be deleted(Delete all by specifying all)",
+                "ko" : "Data ID to be deleted(Delete all by specifying all)",
+                "ja" : "削除対象のデータID(all指定で全削除)"
+            },
+            required : true
+        }
+    ]
+};
+
+commands["ep7-henkan-get"] = {
+    name : "ep7-henkan-get",
+    description : "Display registered conversion stones.",
+    description_localizations : {
+        "en-US" : "Display registered conversion stones.",
+        "zh-CN" : "Display registered conversion stones.",
+        "ko" : "Display registered conversion stones.",
+        "ja" : "登録済みの変換石を表示します。"
+    },
+
+    options : [
+        {
+            type: 3,
+            name: "uniqueid",
+            description: "Unique ID for managing data",
+            description_localizations : {
+                "en-US" : "Unique ID for managing datar",
+                "zh-CN" : "Unique ID for managing data",
+                "ko" : "Unique ID for managing data",
+                "ja" : "データを管理するための一意なID(IDをもとにユーザのデータを管理します）"
+            },
+            required : true
+        }
+    ]
+};
+
+commands["ep7-henkan-put"] = {
+    name : "ep7-henkan-put",
+    description : "This command regist conversion stones.",
+    description_localizations : {
+        "en-US" : "This command regist conversion stones.",
+        "zh-CN" : "This command regist conversion stones.",
+        "ko" : "This command regist conversion stones.",
+        "ja" : "変換石の登録を行うコマンドです"
+    },
+
+    options : [
+        {
+            type: 3,
+            name: "uniqueid",
+            description: "Unique ID for managing data",
+            description_localizations : {
+                "en-US" : "Unique ID for managing datar",
+                "zh-CN" : "Unique ID for managing data",
+                "ko" : "Unique ID for managing data",
+                "ja" : "データを管理するための一意なID(IDをもとにユーザのデータを管理します）"
+            },
+            required : true
+        },
+        {
+            type: 3,
+            name: "heroname",
+            description: "The name of the hero whose conversion stone you want to register",
+            description_localizations : {
+                "en-US" : "The name of the hero whose conversion stone you want to register",
+                "zh-CN" : "The name of the hero whose conversion stone you want to register",
+                "ko" : "The name of the hero whose conversion stone you want to register",
+                "ja" : "変換石を登録したい英雄の名称"
+            },
+            required : true
+        },
+        {
+            type: 3,
+            name: "target",
+            description: "Equipment location",
+            description_localizations : {
+                "en-US" : "Equipment location",
+                "zh-CN" : "Equipment location",
+                "ko" : "Equipment location",
+                "ja" : "装備箇所"
+            },
+            required : true,
+            choices: [
+                { name: "武器", value: "武器" },
+                { name: "頭具", value: "頭具" },
+                { name: "胴具", value: "胴具" },
+                { name: "首飾り", value: "首飾り" },
+                { name: "指輪", value: "指輪" },
+                { name: "脚具", value: "脚具" },
+            ]
+        },
+        {
+            type: 3,
+            name: "pos",
+            description: "Option value",
+            description_localizations : {
+                "en-US" : "Option value",
+                "zh-CN" : "Option value",
+                "ko" : "Equipment location",
+                "ja" : "変換オプション"
+            },
+            required : true,
+            choices: [
+                { name: "攻撃", value: "攻撃" },
+                { name: "攻撃実数", value: "攻撃実数" },
+                { name: "生命", value: "生命" },
+                { name: "生命実数", value: "生命実数" },
+                { name: "防御", value: "防御" },
+                { name: "速度", value: "速度" },
+                { name: "効果命中", value: "効果命中" },
+                { name: "効果抵抗", value: "効果抵抗" },
+                { name: "クリ発", value: "クリ発" },
+                { name: "クリダメ", value: "クリダメ" },
+            ]
+        }
+    ]
+};
+
 const run = async () => {
     const configure = require("../../configure.js");
 
@@ -214,7 +360,10 @@ const run = async () => {
             commands["ep7-build"],
             commands["ep7-st"],
             commands["ep7-upload"],
-            commands["ep7-info"]
+            commands["ep7-info"],
+            commands["ep7-henkan-put"],
+            commands["ep7-henkan-get"],
+            commands["ep7-henkan-delete"]
         ]);
 
         console.log("complete");
