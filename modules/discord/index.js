@@ -289,11 +289,11 @@ module.exports = async (parameter) => {
 
                 if(result.code !== 100) {
                     logger("ep7-henkan-delete cmd error -- :success", {author : context.author, param  : [result]});
-                    return "登録エラー";
+                    return "エラー:" + result.data;
                 }
                 
                 logger("ep7-henkan-delete cmd complete -- :success", {author : context.author, param  : [result]});
-                return "削除ID:" + result.data;
+                return "削除ID:" + result.dataidParam.value;
                 
             } catch(e) {
                 logger("ep7-henkan-delete cmd end -- :error", {author : context.author, erroe : e+""});
@@ -323,7 +323,7 @@ module.exports = async (parameter) => {
 
                 if(result.code !== 100) {
                     logger("ep7-henkan-put cmd error -- :success", {author : context.author, param  : [result]});
-                    return "登録エラー";
+                    return "エラー:" + result.data;
                 }
                 
                 logger("ep7-henkan-put cmd complete -- :success", {author : context.author, param  : [result]});
