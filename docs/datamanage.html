@@ -19,7 +19,6 @@
 
         gtag('config', 'UA-143765558-2');
     </script>
-
 </head>
 
 <body>
@@ -90,11 +89,29 @@
     <script src="https://cdn.jsdelivr.net/npm/luminous-lightbox@2.4.0/dist/luminous.min.js"></script>
 
     <script>
+        Handlebars.registerHelper('filter', function(flg) {
+            return flg ? "btn-primary" : "btn-light";
+        });
 
         $(() => {
-            
             const context = {
-                entries : []
+                entries : [],
+                filters : {
+                    "fire" : false,
+                    "ice"  : false,
+                    "earth": false,
+                    "light": false,
+                    "dark" : false,
+                    "knight": false,
+                    "warrior" : false,
+                    "thie" : false,
+                    "mage" : false,
+                    "soulweaver" : false,
+                    "ranger" : false,
+                    "star3" : false,
+                    "star4" : false,
+                    "star5" : false,
+                }
             };
             
             const updateView = async () => {
@@ -107,7 +124,7 @@
                 const response = await fetch(url, { method: 'POST'});
                 const json = await response.json();
                 context.entries = json.data;
-                renderView(context.entries);
+                renderView(context);
             };
 
             const renderView = (() => {
@@ -129,6 +146,13 @@
                 }
                 location.hash = pass;
             });
+
+            $("body").on("click", ".filter-btn", function() {
+                const key = $(this).attr("data-filter");
+                context.filters[key] = context.filters[key] === false;
+                updateView();
+            });
+
             $("#pass-input").val(location.hash.substring(1));
             updateView();
 
@@ -137,6 +161,29 @@
     </script>
 
     <script type="text/x-handlebars" id="template">
+        <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups" style="margin-bottom: 10px">
+            <div class="btn-group mr-2" role="group">
+                <button type="button" class="btn {{filter filters.fire}} filter-btn" data-filter="fire">火</button>
+                <button type="button" class="btn {{filter filters.ice}} filter-btn" data-filter="ice">氷</button>
+                <button type="button" class="btn {{filter filters.earth}} filter-btn" data-filter="earth">木</button>
+                <button type="button" class="btn {{filter filters.light}} filter-btn" data-filter="light">光</button>
+                <button type="button" class="btn {{filter filters.dark}} filter-btn" data-filter="dark">闇</button>
+            </div>
+            <div class="btn-group mr-2" role="group">
+                <button type="button" class="btn {{filter filters.knight}} filter-btn" data-filter="knight"><img style="width: 20px;" src="https://assets.epicsevendb.com/class/cm_icon_role_knight.png"></button>
+                <button type="button" class="btn {{filter filters.warrior}} filter-btn" data-filter="warrior"><img style="width: 20px;" src="https://assets.epicsevendb.com/class/cm_icon_role_warrior.png"></button>
+                <button type="button" class="btn {{filter filters.thie}} filter-btn" data-filter="thie"><img style="width: 20px;" src="https://assets.epicsevendb.com/class/cm_icon_role_thief.png"></button>
+                <button type="button" class="btn {{filter filters.mage}} filter-btn" data-filter="mage"><img style="width: 20px;" src="https://assets.epicsevendb.com/class/cm_icon_role_mage.png"></button>
+                <button type="button" class="btn {{filter filters.soulweaver}} filter-btn"data-filter="soulweaver"><img style="width: 20px;" src="https://assets.epicsevendb.com/class/cm_icon_role_soul-weaver.png"></button>
+                <button type="button" class="btn {{filter filters.ranger}} filter-btn" data-filter="ranger"><img style="width: 20px;" src="https://assets.epicsevendb.com/class/cm_icon_role_ranger.png"></button>
+            </div>
+            <div class="btn-group mr-2" role="group">
+                <button type="button" class="btn {{filter filters.star3}} filter-btn" data-filter="star3">★3</button>
+                <button type="button" class="btn {{filter filters.star4}} filter-btn" data-filter="star4">★4</button>
+                <button type="button" class="btn {{filter filters.star5}} filter-btn" data-filter="star5">★5</button>
+            </div>
+        </div>
+
         <table class="table">
             <thead>
                 <tr>
@@ -155,7 +202,7 @@
                     <th scope="col">効果抵抗</th>
                     <th scope="col">連携</th>
                 </tr>
-                {{#each this}}
+                {{#each entries}}
                 <tr>
                     <td>{{name}}</td>
                     <td>{{attr}}</td>
