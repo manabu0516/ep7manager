@@ -8,6 +8,20 @@ module.exports = async (parameter) => {
 
     const builder = parameter.instance();
 
+    builder.addApi('delete', async (password, dataid) => {
+        const options = {
+            uri: "https://test707-dev-ed.develop.my.salesforce-sites.com/services/apexrest/status/delete/"+password,
+            headers: {"Content-type": "application/json"},
+            method: 'POST',
+            json: {
+                "id": dataid,
+            }
+        };
+
+        const result = await parameter.lib.request(options);
+        return typeof result === "string" ? JSON.parse(result) : result;
+    });
+
     builder.addApi('post', async (password, dataid, heroName, status) => {
         const options = {
             uri: "https://test707-dev-ed.develop.my.salesforce-sites.com/services/apexrest/status/post/"+password,
