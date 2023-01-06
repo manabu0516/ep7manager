@@ -134,7 +134,7 @@
                 }
                 const url = "https://test707-dev-ed.develop.my.salesforce-sites.com/services/apexrest/status/get/"+pass;
 
-                const response = await fetch(url, { method: 'POST'});
+                const response = await fetch(url, { method: 'POST', cache: "no-store"});
                 const json = await response.json();
                 context.entries = json.data;
                 renderView(context);
