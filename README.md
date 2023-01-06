@@ -8,6 +8,8 @@ Discord BOTを導入するとエピックセブンに関する以下のデータ
 - 英雄のビルド画像(主にTwitterより収集)
 - 英雄のビルド画像のtwitterへの投稿(投稿元アカウントは @fmnb0516_ep7bot になります)
 - アップした装備画像のスコア表示
+- BOTの更新履歴の表示
+- 英雄のステータスデータの管理
 
 ## ■ インストールURL
 
@@ -22,9 +24,12 @@ https://discord.com/api/oauth2/authorize?client_id=1035058107899981854&permissio
 /ep7-build
 /ep7-st
 /ep7-upload
+/ep7-info
+/ep7-data
 ```
 
-詳細な利用方法は実際にコマンドを打ち込んで確認してください。
+詳細な利用方法は実際にコマンドは以下URLより確認してください。
+https://manabu0516.github.io/ep7manager/bot.html
 
 
 ## 実行環境
