@@ -233,7 +233,7 @@ commands ["ep7-data"] = {
                 "en-US" : "Specify the ID of the registered data. (unspecified at new registration)",
                 "zh-CN" : "Specify the ID of the registered data. (unspecified at new registration)",
                 "ko" : "Specify the ID of the registered data. (unspecified at new registration)",
-                "ja" : "登録したデータのIDを指定します。(新規登録時は未指定)"
+                "ja" : "登録したデータのIDを指定します。(新規登録時と全件削除時は未指定)"
             },
             required : false
         },
