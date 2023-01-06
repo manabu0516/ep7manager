@@ -299,7 +299,7 @@ module.exports = async (parameter) => {
 
                 if(dataIdParam == null && imageParam == null) {
                     logger("ep7-data cmd complete -- :requireparam", {author : context.author, param  : []});
-                    return localizer.dt_require_param('heroname or image');
+                    return localizer.dt_require_param('dataid or image');
                 }
 
                 if(command === 'post') {
