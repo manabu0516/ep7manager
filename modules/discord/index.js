@@ -300,21 +300,41 @@ module.exports = async (parameter) => {
                 if(command === 'post') {
                     const aliaseData = await wikidata.callApi('alias', [heroNameParam.value, false]);
                     const heroName = aliaseData.localize.ja;
+                    if(heroName == null) {
+                        logger("ep7-data cmd complete -- :requireparam", {author : context.author, param  : []});
+                        return localizer.dt_require_param('heroName');
+                    }
+
+                    if(aliaseData === undefined) {
+                        logger("ep7-data cmd complete -- :notfound", {author : context.author, param  : [heroNameParam.value]});
+                        return localizer.dt_hero_nodfound(heroNameParam.value);
+                    }
 
                     const statusData = await ocrreader.callApi("recognize", [response, {
                         sliceCount : 0,
                         dataCount : 9
                     }]);
                     const result = await salesforce.salesforce.callApi("post",  [userIdParam.value, dataId, heroName, statusData]);
+                    if(result.returnCode != 100) {
+                        logger("ep7-data cmd end -- :error", {author : context.author, erroe : result});
+                        return localizer.dt_invoke_error(result.message);
+                    }
+
                     logger("ep7-data cmd complete -- :success", {author : context.author, param  : [command, result]});
-                    return '登録ID : ' + result.data.Name;
+
+                    return localizer.dt_post_cmd_complete("/https://manabu0516.github.io/ep7manager/datamanage.html", result.data.Name);
                 } else if (command === 'delete') {
                     const result = await salesforce.salesforce.callApi("delete",  [userIdParam.value, dataId === "" ? 'all' : dataId]);
+                    if(result.returnCode != 100) {
+                        logger("ep7-data cmd end -- :error", {author : context.author, erroe : result});
+                        return localizer.dt_invoke_error(result.message);
+                    }
+
                     logger("ep7-data cmd complete -- :success", {author : context.author, param  : [command, result]});
-                    return '以下のデータを削除しました :\r\n' + result.data.join("\r\n");
+                    return localizer.dt_delete_cmd_complete() + ' :\r\n' + result.data.join("\r\n");
                 }
 
-                return 'コマンドが存在しません。';
+                return localizer.dt_notfound_cmd();
             } catch(e) {
                 logger("ep7-data cmd end -- :error", {author : context.author, erroe : e+""});
                 return "error : " + e;

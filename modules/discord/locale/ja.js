@@ -85,4 +85,13 @@ module.exports = {
         .replace("Fighting Spirit", "闘志"),
 
     info_label_1 : () => "内容",
+
+    dt_require_param : (name) => name + "は必須項目です",
+    dt_hero_nodfound : (name) => name + "は存在しません",
+    dt_invoke_error : (msg) => 'コマンドの実行に失敗しました。: ' + msg,
+    dt_notfound_cmd : () => 'コマンドが存在しません。',
+    dt_delete_cmd_complete : () => '以下のデータを削除しました',
+    dt_post_cmd_complete : (url, dataid) => '登録データは以下のサイトから確認できます。' + '\r\n'
+        + url + '\r\n'
+        + '登録データID: ' + dataid 
 };
