@@ -286,23 +286,28 @@ module.exports = async (parameter) => {
             try {
                 const localizer = localizeManager(context.locale);
 
-                const userIdParam =  context.options.get("userId");
-                const dataIdParam =  context.options.get("dataId");
+                const userIdParam =  context.options.get("uniqueid");
+                const dataIdParam =  context.options.get("dataid");
                 const imageParam = context.options.get("image");
-                const heroNameParam =  context.options.get("heroName");
+                const heroNameParam =  context.options.get("heroname");
 
                 logger("ep7-data cmd start -- :start", {author : context.author,param  : [userIdParam, dataIdParam,imageParam,heroNameParam]});
                 await context.deffer();
 
-                const command = imageParam.attachment.url === undefined ? 'delete' : 'post';
+                const command = imageParam === null ? 'delete' : 'post';
                 const dataId = dataIdParam != null ? dataIdParam.value : "";
+
+                if(dataIdParam == null && imageParam == null) {
+                    logger("ep7-data cmd complete -- :requireparam", {author : context.author, param  : []});
+                    return localizer.dt_require_param('heroname or image');
+                }
 
                 if(command === 'post') {
                     const aliaseData = await wikidata.callApi('alias', [heroNameParam.value, false]);
                     const heroName = aliaseData.localize.ja;
                     if(heroName == null) {
                         logger("ep7-data cmd complete -- :requireparam", {author : context.author, param  : []});
-                        return localizer.dt_require_param('heroName');
+                        return localizer.dt_require_param('heroname');
                     }
 
                     if(aliaseData === undefined) {
@@ -310,11 +315,12 @@ module.exports = async (parameter) => {
                         return localizer.dt_hero_nodfound(heroNameParam.value);
                     }
 
+                    const response = await parameter.lib.request(imageParam.attachment.url, {encoding: null});
                     const statusData = await ocrreader.callApi("recognize", [response, {
                         sliceCount : 0,
                         dataCount : 9
                     }]);
-                    const result = await salesforce.salesforce.callApi("post",  [userIdParam.value, dataId, heroName, statusData]);
+                    const result = await salesforce.callApi("post",  [userIdParam.value, dataId, heroName, statusData]);
                     if(result.returnCode != 100) {
                         logger("ep7-data cmd end -- :error", {author : context.author, erroe : result});
                         return localizer.dt_invoke_error(result.message);
@@ -322,9 +328,9 @@ module.exports = async (parameter) => {
 
                     logger("ep7-data cmd complete -- :success", {author : context.author, param  : [command, result]});
 
-                    return localizer.dt_post_cmd_complete("/https://manabu0516.github.io/ep7manager/datamanage.html", result.data.Name);
+                    return localizer.dt_post_cmd_complete("https://manabu0516.github.io/ep7manager/datamanage.html", result.data.Name);
                 } else if (command === 'delete') {
-                    const result = await salesforce.salesforce.callApi("delete",  [userIdParam.value, dataId === "" ? 'all' : dataId]);
+                    const result = await salesforce.callApi("delete",  [userIdParam.value, dataId === "" ? 'all' : dataId]);
                     if(result.returnCode != 100) {
                         logger("ep7-data cmd end -- :error", {author : context.author, erroe : result});
                         return localizer.dt_invoke_error(result.message);
@@ -336,6 +342,7 @@ module.exports = async (parameter) => {
 
                 return localizer.dt_notfound_cmd();
             } catch(e) {
+                console.log(e);
                 logger("ep7-data cmd end -- :error", {author : context.author, erroe : e+""});
                 return "error : " + e;
             }
