@@ -202,6 +202,68 @@ commands ["ep7-info"] = {
     ]
 };
 
+commands ["ep7-data"] = {
+    name : "ep7-data",
+    description : "Manage hero status information",
+    description_localizations : {
+        "en-US" : "Manage hero status information",
+        "zh-CN" : "Manage hero status information",
+        "ko" : "Manage hero status information",
+        "ja" : "英雄のステータス情報を管理します"
+    },
+
+    options : [
+        {
+            type: 3,
+            name: "uniqueid",
+            description: "Specify a unique ID to manage the registered data. Data is managed by the specified ID",
+            description_localizations : {
+                "en-US" : "Specify a unique ID to manage the registered data. Data is managed by the specified ID",
+                "zh-CN" : "Specify a unique ID to manage the registered data. Data is managed by the specified ID",
+                "ko" : "Specify a unique ID to manage the registered data. Data is managed by the specified ID",
+                "ja" : "登録したデータを管理するための一意なIDを指定します。指定したID単位でデータを管理します。"
+            },
+            required : true
+        },
+        {
+            type: 3,
+            name: "dataid",
+            description: "Specify the ID of the registered data. (unspecified at new registration)",
+            description_localizations : {
+                "en-US" : "Specify the ID of the registered data. (unspecified at new registration)",
+                "zh-CN" : "Specify the ID of the registered data. (unspecified at new registration)",
+                "ko" : "Specify the ID of the registered data. (unspecified at new registration)",
+                "ja" : "登録したデータのIDを指定します。(新規登録時は未指定)"
+            },
+            required : false
+        },
+        {
+            type: 3,
+            name: "heroname",
+            description: "The name of the hero you want to register (required only if you specify an image)",
+            description_localizations : {
+                "en-US" : "The name of the hero you want to register (required only if you specify an image)",
+                "zh-CN" : "The name of the hero you want to register (required only if you specify an image)",
+                "ko" : "The name of the hero you want to register (required only if you specify an image)",
+                "ja" : "登録したい英雄の名称(画像を指定した場合のみ必須)"
+            },
+            required : false
+        },
+        {
+            type: 11,
+            name: "image",
+            description: "Status image to upload(Delete data if not specified)",
+            description_localizations : {
+                "en-US" : "Status image to upload(Delete data if not specified)",
+                "zh-CN" : "Status image to upload(Delete data if not specified)",
+                "ko" : "Status image to upload(Delete data if not specified)",
+                "ja" : "アップロードするステータス画像(未指定の場合データを削除します)"
+            },
+            required : false
+        },
+    ]
+};
+
 const run = async () => {
     const configure = require("../../configure.js");
 
@@ -215,6 +277,7 @@ const run = async () => {
             commands["ep7-st"],
             commands["ep7-upload"],
             commands["ep7-info"],
+            commands ["ep7-data"],
         ]);
 
         console.log("complete");
