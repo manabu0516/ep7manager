@@ -48,6 +48,17 @@
     </div>
 
     <div class="container" style="padding-top: 70px;">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="form-group">
+                    <label for="pass-input">パスワード</label>
+                    <input type="text" class="form-control" id="pass-input" autocomplete="off">
+                </div>
+                <datalist id="herolist">
+                </datalist>
+            </div>
+        </div>
+
         <div class="row" id="content">
         </div>
     </div>
@@ -77,6 +88,38 @@
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/luminous-lightbox@2.4.0/dist/luminous-basic.min.css">
     <script src="https://cdn.jsdelivr.net/npm/luminous-lightbox@2.4.0/dist/luminous.min.js"></script>
+
+    <script>
+
+        $(() => {
+            const updateView = async () => {
+                const pass = location.hash.substring(1);
+                if(pass === "") {
+                    return;
+                }
+                const url = "https://test707-dev-ed.develop.my.salesforce-sites.com/services/apexrest/status/get/"+pass;
+
+                const response = await fetch(url, { method: 'POST'});
+                const json = await response.json();
+            };
+
+            window.addEventListener('hashchange', function() {
+                updateView();
+            }, false);
+
+            $("#pass-input").change((e) => {
+                const pass = $("#pass-input").val().trim();
+                if(pass === "") {
+                    return;
+                }
+                location.hash = pass;
+            });
+            $("#pass-input").val(location.hash.substring(1));
+            updateView();
+
+        });
+
+    </script>
 
 </body>
 
