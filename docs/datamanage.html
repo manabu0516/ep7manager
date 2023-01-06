@@ -92,6 +92,11 @@
     <script>
 
         $(() => {
+            
+            const context = {
+                entries : []
+            };
+            
             const updateView = async () => {
                 const pass = location.hash.substring(1);
                 if(pass === "") {
@@ -101,7 +106,17 @@
 
                 const response = await fetch(url, { method: 'POST'});
                 const json = await response.json();
+                context.entries = json.data;
+                renderView(context.entries);
             };
+
+            const renderView = (() => {
+                const template = Handlebars.compile($("#template").html());
+                return (json) => {
+                    console.log(json);
+                    $("#content").html(template(json));
+                };
+            })();
 
             window.addEventListener('hashchange', function() {
                 updateView();
@@ -119,6 +134,47 @@
 
         });
 
+    </script>
+
+    <script type="text/x-handlebars" id="template">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">属性</th>
+                    <th scope="col">職業</th>
+                    <th scope="col">レア</th>
+                    <th scope="col">名称</th>
+                    <th scope="col">攻撃</th>
+                    <th scope="col">生命</th>
+                    <th scope="col">防御</th>
+                    <th scope="col">速度</th>
+                    <th scope="col">クリ率</th>
+                    <th scope="col">クリダメ</th>
+                    <th scope="col">効果命中</th>
+                    <th scope="col">効果抵抗</th>
+                    <th scope="col">連携</th>
+                </tr>
+                {{#each this}}
+                <tr>
+                    <td>{{name}}</td>
+                    <td>{{attr}}</td>
+                    <td>{{job}}</td>
+                    <td>{{rare}}</td>
+                    <td>{{HeroName}}</td>
+                    <td>{{Attack}}</td>
+                    <td>{{Health}}</td>
+                    <td>{{Defense}}</td>
+                    <td>{{Speed}}</td>
+                    <td>{{CriticalHit}}</td>
+                    <td>{{CriticalDamage}}</td>
+                    <td>{{effect}}</td>
+                    <td>{{resist}}</td>
+                    <td>{{combination}}</td>
+                </tr>
+                {{/each}}
+            </thead>
+        </table>
     </script>
 
 </body>

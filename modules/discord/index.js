@@ -320,6 +320,8 @@ module.exports = async (parameter) => {
                         sliceCount : 0,
                         dataCount : 9
                     }]);
+
+                    await ocrreader.callApi("prepareDot",  [response]);    
                     const result = await salesforce.callApi("post",  [userIdParam.value, dataId, heroName, statusData]);
                     if(result.returnCode != 100) {
                         logger("ep7-data cmd end -- :error", {author : context.author, erroe : result});
