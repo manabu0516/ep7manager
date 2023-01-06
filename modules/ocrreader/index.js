@@ -134,6 +134,7 @@ module.exports = async (parameter) => {
     });
 
     builder.addApi('prepareDot', async (data) => {
+        console.log(data);
         Object.keys(data).forEach(k => {
             const value = data[k];
             if(value.endsWith("%")) {
