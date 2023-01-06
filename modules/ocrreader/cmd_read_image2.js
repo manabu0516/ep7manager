@@ -10,8 +10,9 @@ const run = async () => {
         sliceCount : 0,
         dataCount : 9
     }]);
-    console.log(result);
 
+    await target.callApi("prepareDot",  [result]);
+    console.log(result);
 };
 
 run();

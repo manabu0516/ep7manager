@@ -133,6 +133,17 @@ module.exports = async (parameter) => {
         return scoreData;
     });
 
+    builder.addApi('prepareDot', async (data) => {
+        Object.keys(data).forEach(k => {
+            const value = data[k];
+            if(value.endsWith("%")) {
+                const startData = value.substring(0, value.length-2);
+                const endData = value.substring(value.length-2);
+                data[k] = startData + '.' + endData;
+            }
+        });
+    });
+
     builder.addApi('recognize', async (data, optionData, lang) => {
         const resultData = {};
         const prepareData = {};
