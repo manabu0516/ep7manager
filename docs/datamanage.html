@@ -48,17 +48,6 @@
     </div>
 
     <div class="container" style="padding-top: 70px;">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="form-group">
-                    <label for="hero-select">英雄選択</label>
-                    <input type="text" class="form-control" id="hero-select" autocomplete="on" list="herolist"
-                        placeholder="名前を入力...">
-                </div>
-                <datalist id="herolist">
-                </datalist>
-            </div>
-        </div>
         <div class="row" id="content">
         </div>
     </div>
@@ -73,14 +62,6 @@
         <p>COPYRIGHT &#169; <a href="https://github.com/manabu0516/ep7manager">fmnb0516</a> ALL RIGHTS
             RESERVED. </p>
     </footer>
-
-    <script type="text/x-handlebars" id="template">
-        {{#each images}}
-        <a class="col-lg-12 luminous" style="text-align: center; padding: 20px;" href="./tweetsearch/{{this}}">
-            <img src="./tweetsearch/{{this}}" alt="" class="img-thumbnail" style="width: 100%;">
-        </q>
-        {{/each}}
-    </script>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -97,66 +78,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/luminous-lightbox@2.4.0/dist/luminous-basic.min.css">
     <script src="https://cdn.jsdelivr.net/npm/luminous-lightbox@2.4.0/dist/luminous.min.js"></script>
 
-    <script>
-        window.ep7manager = {};
-    
-        function  __ep7manager_load_build(collection) {
-            window.ep7manager.builds = collection;    
-        };
-    </script>
-    <script src="./tweetsearch/jsonp.js"></script>
-
-    <script>
-        $(() => {
-            const entries = {};
-            window.ep7manager.builds.forEach(e => {
-                const idx = e.indexOf('/');
-                const key = e.substring(0,idx);
-                const file = e.substring(idx+1);
-
-                if(entries[key] === undefined) {
-                    entries[key] = [];
-                }
-                entries[key].push(e);
-            });
-
-
-            Object.keys(entries).forEach((e) => {
-                $("#herolist").append($("<option>").attr("value", e));
-            });
-            
-            $("#hero-select").change((e) => {
-                location.hash = $(e.target).val();
-                $("#hero-select").blur();
-            });
-
-            window.addEventListener('hashchange', () => {
-                const id = decodeURI((location.hash.startsWith("#") ? location.hash.substring(1) : location.hash).trim());
-                loadPage(id);
-            });
-
-            const template = Handlebars.compile($("#template").html());
-
-            const loadPage = (id) => {
-                const images = entries[id];
-                if (images === undefined) {
-                    $("#content").empty();
-                    return;
-                }
-
-                $("#content").html(template({
-                    images : images,
-                    name : id
-                }));
-                
-                new LuminousGallery(document.querySelectorAll('.luminous'))
-            };
-
-            const id = decodeURI((location.hash.startsWith("#") ? location.hash.substring(1) : location.hash).trim());
-            $("#hero-select").val(id);
-            loadPage(id);
-        });
-    </script>
 </body>
 
 </html>
