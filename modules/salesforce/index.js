@@ -28,7 +28,6 @@ module.exports = async (parameter) => {
             }
         };
 
-        console.log(options.json);
         const result = await parameter.lib.request(options);
         return typeof result === "string" ? JSON.parse(result) : result;
     });

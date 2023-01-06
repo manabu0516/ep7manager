@@ -281,6 +281,45 @@ module.exports = async (parameter) => {
                 return "error : " + e;
             }
         });
+
+        parameter.discord.on("ep7-data", async (context, params) => {
+            try {
+                const localizer = localizeManager(context.locale);
+
+                const userIdParam =  context.options.get("userId");
+                const dataIdParam =  context.options.get("dataId");
+                const imageParam = context.options.get("image");
+                const heroNameParam =  context.options.get("heroName");
+
+                logger("ep7-data cmd start -- :start", {author : context.author,param  : [userIdParam, dataIdParam,imageParam,heroNameParam]});
+                await context.deffer();
+
+                const command = imageParam.attachment.url === undefined ? 'delete' : 'post';
+                const dataId = dataIdParam != null ? dataIdParam.value : "";
+
+                if(command === 'post') {
+                    const aliaseData = await wikidata.callApi('alias', [heroNameParam.value, false]);
+                    const heroName = aliaseData.localize.ja;
+
+                    const statusData = await ocrreader.callApi("recognize", [response, {
+                        sliceCount : 0,
+                        dataCount : 9
+                    }]);
+                    const result = await salesforce.salesforce.callApi("post",  [userIdParam.value, dataId, heroName, statusData]);
+                    logger("ep7-data cmd complete -- :success", {author : context.author, param  : [command, result]});
+                    return '登録ID : ' + result.data.Name;
+                } else if (command === 'delete') {
+                    const result = await salesforce.salesforce.callApi("delete",  [userIdParam.value, dataId === "" ? 'all' : dataId]);
+                    logger("ep7-data cmd complete -- :success", {author : context.author, param  : [command, result]});
+                    return '以下のデータを削除しました :\r\n' + result.data.join("\r\n");
+                }
+
+                return 'コマンドが存在しません。';
+            } catch(e) {
+                logger("ep7-data cmd end -- :error", {author : context.author, erroe : e+""});
+                return "error : " + e;
+            }
+        });
     });
     return builder;
 };
