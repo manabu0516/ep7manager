@@ -61,4 +61,13 @@ module.exports = {
     st_label_enhance_type : (key) => key,
 
     info_label_1 : () => "Content",
+
+    dt_require_param : (name) => name + "is a required field",
+    dt_hero_nodfound : (name) => name + " does not exist",
+    dt_invoke_error : (msg) => 'Failed to execute the command: ' + msg,
+    dt_notfound_cmd : () => 'Command does not exist',
+    dt_delete_cmd_complete : () => 'Deleted the following data',
+    dt_post_cmd_complete : (url, dataid) => 'You can check the registration data from the following site.' + '\r\n'
+        + url + '\r\n'
+        + 'Data ID: ' + dataid 
 };
