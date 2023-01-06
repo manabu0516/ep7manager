@@ -47,7 +47,7 @@
 
         <div class="row">
             <div class="col-lg-12">
-                <article class="markdown-body" id="content">
+                <article class="markdown-body" id="content" style="padding: 20px;margin-top: 10px;">
 
                 </article>
             </div>
@@ -76,11 +76,17 @@
 
             $("#bot-cmd-select").change(e => {
                 const key = $(e.target).val();
+                location.hash = key;
                 if(key === "") {
                     return;
                 }
                 updateView(key);
             });
+
+            const initial = location.hash.substring(1);
+            $("#bot-cmd-select").val(initial);
+            updateView(initial);
+
         });
 
     </script>
