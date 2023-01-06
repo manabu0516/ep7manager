@@ -18,6 +18,9 @@ localize["ja_jp"] = (() => {
     };
 
     const checkData = (text) => {
+        if(text.indexOf("連携") !== -1) {
+            return "連携";
+        }
         if(text.indexOf("攻撃") !== -1) {
             return text.indexOf("%") !== -1 ? "攻撃力" : "攻撃力_実数"; 
         }
@@ -47,7 +50,7 @@ localize["ja_jp"] = (() => {
     };
 
     return {
-        parseData : (text) => {
+        parseData : (text, sliceCount) => {
             const result = [];
         
             const data = text.split("\n")
@@ -69,7 +72,7 @@ localize["ja_jp"] = (() => {
                     value : checkValue(d, checked)
                 });
             }
-            return result.slice(1);
+            return result.slice(sliceCount);
         },
         tesseract_conf_lang : "jpn+eng",
         tesseract__whitelist: '力攻撃防御生命スピード効果命中抵抗クリティカルダメージ発生率0987654321%/',
@@ -130,7 +133,7 @@ module.exports = async (parameter) => {
         return scoreData;
     });
 
-    builder.addApi('recognize', async (data, lang) => {
+    builder.addApi('recognize', async (data, optionData, lang) => {
         const resultData = {};
         const prepareData = {};
 
@@ -151,8 +154,8 @@ module.exports = async (parameter) => {
                 lang: localizer.tesseract_conf_lang,
             });
 
-            const parsed1 = localizer.parseData(result1);
-            const parsed2 = localizer.parseData(result2);
+            const parsed1 = localizer.parseData(result1, optionData.sliceCount);
+            const parsed2 = localizer.parseData(result2, optionData.sliceCount);
 
             parsed1.concat(parsed2).forEach(e => {
                 const k = e.key;
@@ -174,11 +177,11 @@ module.exports = async (parameter) => {
             return a2.length - a1.length;
         });
 
-        if(dataKeys.length < 4) {
+        if(dataKeys.length < optionData.dataCount) {
             return resultData;
         }
 
-        dataKeys.slice(0,4).forEach(k => {
+        dataKeys.slice(0,optionData.dataCount).forEach(k => {
             const arr = prepareData[k];
             resultData[k] = arr.mode();
         });

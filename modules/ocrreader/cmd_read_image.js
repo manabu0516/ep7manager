@@ -8,7 +8,10 @@ const run = async () => {
 
     const data = await application._context.lib.fs.readFile(imagePath);
     
-    const result = await target.callApi("recognize", [data]);
+    const result = await target.callApi("recognize", [data, {
+        sliceCount : 1,
+        dataCount : 4
+    }]);
     const heroData = await application.wikidata.callApi("load", [heroName]);
 
     const statusData = heroData != null ? {

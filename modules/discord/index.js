@@ -235,7 +235,10 @@ module.exports = async (parameter) => {
                 } : undefined;
 
                 const response = await parameter.lib.request(imageParam.attachment.url, {encoding: null});
-                const result = await ocrreader.callApi("recognize", [response]);
+                const result = await ocrreader.callApi("recognize", [response, {
+                    sliceCount : 1,
+                    dataCount : 4
+                }]);
 
                 const score = await ocrreader.callApi("score", [result, statusData]);
                 const enbded = context.embdedMessage()
