@@ -303,17 +303,18 @@ module.exports = async (parameter) => {
                 }
 
                 if(command === 'post') {
-                    const aliaseData = await wikidata.callApi('alias', [heroNameParam.value, false]);
-                    const heroName = aliaseData.localize.ja;
-                    if(heroName == null) {
+                    if(heroNameParam == null) {
                         logger("ep7-data cmd complete -- :requireparam", {author : context.author, param  : []});
                         return localizer.dt_require_param('heroname');
                     }
 
+                    const aliaseData = await wikidata.callApi('alias', [heroNameParam.value, false]);
                     if(aliaseData === undefined) {
                         logger("ep7-data cmd complete -- :notfound", {author : context.author, param  : [heroNameParam.value]});
                         return localizer.dt_hero_nodfound(heroNameParam.value);
                     }
+
+                    const heroName = aliaseData.localize.ja;
 
                     const response = await parameter.lib.request(imageParam.attachment.url, {encoding: null});
                     const statusData = await ocrreader.callApi("recognize", [response, {
