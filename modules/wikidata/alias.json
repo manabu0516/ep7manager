@@ -3002,5 +3002,16 @@
         "alias" : [
             "カリナ", "karina"
         ]
+    },
+    "Death Dealer Ray": {
+        "localize" : {
+            "ja" : "死の探究者レイ",
+            "ko" : "Death Dealer Ray",
+            "zh-CN" : "Death Dealer Ray",
+            "en-US" : "Death Dealer Ray"
+        },
+        "alias" : [
+            "闇レイ"
+        ]
     }
 }
