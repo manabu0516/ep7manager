@@ -3013,5 +3013,29 @@
         "alias" : [
             "闇レイ"
         ]
+    },
+
+    "Beehoo": {
+        "localize" : {
+            "ja" : "リフ",
+            "ko" : "Beehoo",
+            "zh-CN" : "Beehoo",
+            "en-US" : "Beehoo"
+        },
+        "alias" : [
+            "リフ"
+        ]
+    },
+
+    "Peacemaker Furious": {
+        "localize" : {
+            "ja" : "均衡のフューリオス",
+            "ko" : "Peacemaker Furious",
+            "zh-CN" : "Peacemaker Furious",
+            "en-US" : "Peacemaker Furious"
+        },
+        "alias" : [
+            "闇フューリオス"
+        ]
     }
 }
