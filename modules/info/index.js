@@ -24,7 +24,7 @@ module.exports = async (parameter) => {
         }
 
         return result.map(text => {
-            const entries = text.split("\r\n");
+            const entries = text.split("\n");
             return {
                 title : entries[0].trim(),
                 description : entries[1].trim(),
