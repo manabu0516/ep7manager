@@ -28,7 +28,7 @@ module.exports = async (parameter) => {
             return {
                 title : entries[0].trim(),
                 description : entries[1].trim(),
-                data : entries.slice(3).join("\r\n")
+                data : entries.slice(3).map(e => e.trim()).join("\r\n")
             };
         });
     });
