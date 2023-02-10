@@ -24,11 +24,11 @@ module.exports = async (parameter) => {
         }
 
         return result.map(text => {
-            const entries = text.split("\n");
+            const entries = text.split("\r\n");
             return {
                 title : entries[0].trim(),
                 description : entries[1].trim(),
-                data : entries.slice(3).map(e => e.trim()).join("\r\n")
+                data : entries.slice(3).join("\r\n")
             };
         });
     });
